@@ -88,7 +88,7 @@ const SOURCES = {
   ugrcPop: source("Population", "ugrcPop"),
   census: source("Population and households", "census"),
   history: (hasYear, hasOrigin) => source(
-    [hasYear && "Founding year", hasOrigin && "name origin"].filter(Boolean).join(" and ").replace(/^n/, "N"),
+    [hasYear && "Founding", hasOrigin && "name"].filter(Boolean).join(" and ").replace(/^n/, "N"),
     // Name origins are reworded (config/origin_rewrites.json)
     "history", hasOrigin ? "Adapted from " : ""),
   phone: (withPrefixes) => source(withPrefixes ? "Area codes and phone prefixes" : "Area codes", "phone"),
