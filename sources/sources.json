@@ -13,14 +13,14 @@
     "downloaded": ""
   },
   "ugrcPop": {
-    "name": "UGRC Populated Places 2010",
+    "name": "UGRC",
     "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/PopPlacePts2010_Approx/FeatureServer",
     "publicUrl": "https://gis.utah.gov/",
     "folder": "ugrc/populated-places",
     "downloaded": ""
   },
   "ugrc": {
-    "name": "UGRC SGID",
+    "name": "UGRC",
     "url": "https://gis.utah.gov/products/sgid/",
     "publicUrl": "https://gis.utah.gov/",
     "folder": "ugrc",
