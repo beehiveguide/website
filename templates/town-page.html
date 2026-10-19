@@ -1,7 +1,5 @@
-<link
-  rel="stylesheet"
-  href="../leaflet/leaflet.css"
-/>
+<link rel="preconnect" href="https://basemap.nationalmap.gov" />
+<link rel="stylesheet" href="../leaflet/leaflet.css?v={Version}" />
 
 <div class="container container-narrow my-5">
   {Ad town-top}
@@ -20,8 +18,8 @@
         <li><strong>Area Code{s}:</strong> {Town Area Code}</li>
         <li><strong>Phone Prefix{es}:</strong> {Town Prefix}</li>
       </ul>
-      <p>
-        <a href="" class="btn btn-sm btn-light-box fw-bold mt-3 mb-3 mb-lg-0">Post Office</a>
+      <p class="mb-0">
+        <a href="" class="btn btn-sm btn-light-box fw-bold mt-3">Post Office</a>
       </p>
     </div>
     <div class="col-lg-7 order-1 mb-4 mb-lg-0">
@@ -68,10 +66,11 @@
   {Ads town-bottom}
 </div>
 
-<script src="../leaflet/leaflet.js"></script>
-<script src="../js/maps.js"></script>
+<script defer src="../leaflet/leaflet.js?v={Version}"></script>
+<script defer src="../js/maps.js?v={Version}"></script>
 <script>
-  document.querySelectorAll(".town-map").forEach(async (el) => {
+  // Runs once the deferred map scripts above have loaded
+  addEventListener("DOMContentLoaded", () => document.querySelectorAll(".town-map").forEach(async (el) => {
     const { town, state, lat, long } = el.dataset;
 
     const map = beehiveMap(el);
@@ -117,7 +116,7 @@
     } catch (err) {
       showPin();
     }
-  });
+  }));
 </script>
 <script>
   // Long phone prefix lists: "Show all prefixes" opens the full list over

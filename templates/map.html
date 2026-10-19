@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="leaflet/leaflet.css" />
+<link rel="preconnect" href="https://basemap.nationalmap.gov" />
+<link rel="stylesheet" href="leaflet/leaflet.css?v={Version}" />
 <style>
   /* Search bar on top, then the map filling the rest of the screen */
   body { display: flex; flex-direction: column; min-height: 100vh; }
@@ -45,10 +46,11 @@
   <a href="{About URL}" class="map-corner-btn btn btn-light-box font-sans">&copy; {Year} {Site Name}.</a>
 </div>
 
-<script src="leaflet/leaflet.js"></script>
-<script src="js/maps.js"></script>
+<script defer src="leaflet/leaflet.js?v={Version}"></script>
+<script defer src="js/maps.js?v={Version}"></script>
 <script>
-  (() => {
+  // Runs once the deferred map scripts above have loaded
+  addEventListener("DOMContentLoaded", () => {
     // Courthouse after the county link when the town is the county seat (not a link)
     const SEAT_ICON = {Seat Icon JSON};
     // Town popup, shared with town pages (templates/parts/town-popup.html)
@@ -170,5 +172,5 @@
       showOverview(true);
       map.fitBounds(L.latLngBounds(places.map((p) => [p[2], p[3]])), { padding: [20, 20] });
     }
-  })();
+  });
 </script>

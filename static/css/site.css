@@ -624,6 +624,12 @@ a.marker-link:focus {
   }
 }
 .consent-title { font-weight: 700; }
+/* Darker gray for "Reject all" and "Choices" so they stay readable on the
+   gradient (about 7:1) */
+.consent .btn-outline-secondary { color: #495057; border-color: #6c757d; }
+.consent .btn-outline-secondary:hover,
+.consent .btn-outline-secondary:focus { color: #fff; background-color: #6c757d; }
+.consent .link-secondary { color: #495057 !important; }
 .consent .btn-close {
   position: absolute;
   top: 0.75rem;

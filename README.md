@@ -164,7 +164,7 @@ Open the address it prints, usually [http://localhost:5000](http://localhost:500
 
 ## Deploy
 
-1. One time only: put your Firebase project ID in `.firebaserc` in place of `your-firebase-project-id`.
+1. The Firebase project is `beehiveguide-1847` (set in `.firebaserc`). Until the domain is connected, the site is at https://beehiveguide-1847.web.app.
 2. One time only: set `url` in `config/site.json` to the site's address, such as `https://example.org`, with no slash at the end. The sitemap needs it.
 3. Run:
 
@@ -172,4 +172,4 @@ Open the address it prints, usually [http://localhost:5000](http://localhost:500
    npm run deploy
    ```
 
-This builds the site and uploads `public/` to Firebase Hosting.
+This builds the site, rebuilds the pages with links that leave off ".html" (Firebase serves `kanab.html` at `/communities/kanab`), uploads `public/` to Firebase Hosting, then rebuilds the pages with ".html" links again so they still work when you open them on this computer.

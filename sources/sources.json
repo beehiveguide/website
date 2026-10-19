@@ -1,6 +1,6 @@
 {
   "gnis": {
-    "name": "USGS GNIS",
+    "name": "USGS",
     "url": "https://www.usgs.gov/u.s.-board-on-geographic-names/download-gnis-data",
     "publicUrl": "https://www.usgs.gov/programs/national-geospatial-program/national-map",
     "folder": "gnis",
@@ -40,14 +40,14 @@
     "downloaded": ""
   },
   "zone": {
-    "name": "USDA Plant Hardiness Zone Map",
+    "name": "USDA",
     "url": "https://prism.oregonstate.edu/phzm",
     "publicUrl": "https://planthardiness.ars.usda.gov/",
     "folder": "usda",
     "downloaded": ""
   },
   "precip": {
-    "name": "PRISM Climate Group",
+    "name": "PRISM",
     "url": "https://prism.oregonstate.edu/explorer/",
     "folder": "prism",
     "downloaded": ""

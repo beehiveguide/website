@@ -37,5 +37,6 @@
       "town-bottom-3": ""
     }
   },
-  "consentBanner": true
+  "consentBanner": true,
+  "gtm": "GTM-WW98M4KC"
 }

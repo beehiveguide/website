@@ -1,5 +1,15 @@
 {
   "projects": {
-    "default": "your-firebase-project-id"
-  }
+    "default": "beehiveguide-1847"
+  },
+  "targets": {
+    "beehiveguide-1847": {
+      "hosting": {
+        "main": [
+          "beehiveguide-1847"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

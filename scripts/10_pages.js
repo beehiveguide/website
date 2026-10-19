@@ -4,6 +4,7 @@
 //   node scripts/10_pages.js                     every community
 //   node scripts/10_pages.js Bluff Moab "Cedar City"
 //   node scripts/10_pages.js --out test-run      write somewhere other than public/
+//   node scripts/10_pages.js --clean-links       links without ".html" (used by npm run deploy)
 //   Names or Gaz IDs both work. A name shared by several communities builds each one.
 //
 // Writes
@@ -43,6 +44,8 @@ let outDir = paths.dirs.public;
 const wanted = [];
 for (let i = 0; i < args.length; i++) {
   if (args[i] === "--out") outDir = path.resolve(paths.dirs.root, args[++i]);
+  // Links without ".html" (for Firebase); "npm run deploy" builds this way
+  else if (args[i] === "--clean-links") site.cleanLinks = true;
   else wanted.push(args[i]);
 }
 
@@ -179,6 +182,27 @@ const CONSENT_BOX = fill(template("parts/consent.html"), {
       </div>` : "",
 }).trim();
 
+// Google Tag Manager ("gtm" in config/site.json, like "GTM-XXXX"). Loads after
+// the privacy defaults above, so its tags respect the visitor's choices.
+const GTM_HEAD = site.gtm ? `<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${esc(site.gtm)}');</script>
+<!-- End Google Tag Manager -->` : "";
+const GTM_BODY = site.gtm ? `<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${esc(site.gtm)}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->` : "";
+
+// Version tag for CSS and JavaScript links ("site.css?v=1a2b3c4d"), from the
+// files' contents. Firebase caches them for a year, so a change to any of
+// them gives every page a new tag and browsers fetch the new files.
+const VERSION = require("crypto").createHash("md5").update(
+  ["css/bootstrap.min.css", "css/site.css", "js/maps.js", "js/consent.js", "leaflet/leaflet.js", "leaflet/leaflet.css"]
+    .map((f) => fs.readFileSync(path.join(paths.dirs.root, "static", f))).join("")).digest("hex").slice(0, 8);
+
 const SHARE_LOGO = { image: "images/share-logo.png", imageAlt: `${site.name} logo` };
 function metaTags(meta, title, root) {
   const m = { ...SHARE_LOGO, ...meta };
@@ -205,7 +229,7 @@ const SITE_DESCRIPTION = `Community info for Utah. View location, population, po
 
 function wrapPage(html, title, home, root, headerShadow = "shadow", showFooter = true, meta = {}) {
   html = fill(html, adSpots());
-  const headTags = [metaTags({ description: SITE_DESCRIPTION, ...meta }, title, root), CONSENT_DEFAULTS, AD_SCRIPT].filter(Boolean);
+  const headTags = [metaTags({ description: SITE_DESCRIPTION, ...meta }, title, root), CONSENT_DEFAULTS, GTM_HEAD, AD_SCRIPT].filter(Boolean);
   let match;
   while ((match = html.match(/^\s*(<meta[^>]*\/>|<link[\s\S]*?\/>|<style>[\s\S]*?<\/style>)\s*/))) {
     headTags.push(match[1]);
@@ -218,16 +242,17 @@ function wrapPage(html, title, home, root, headerShadow = "shadow", showFooter =
   const content = (cut < 0 ? html : html.slice(0, cut)).trim();
   const scripts = cut < 0 ? "" : html.slice(cut).trim();
   html = [
+    GTM_BODY,
     header(home, headerShadow, root).trim(),
     `<main id="main" tabindex="-1">\n${content}\n</main>`,
     showFooter ? footer.trim() : "",
     site.consentBanner ? CONSENT_BOX : "",
     scripts,
-    site.consentBanner ? `<script src="${root}js/consent.js"></script>` : "",
+    site.consentBanner ? `<script defer src="${root}js/consent.js?v=${VERSION}"></script>` : "",
   ].filter(Boolean).join("\n\n");
   return fill(template("parts/document.html"), {
     "{Title}": title, "{Head}": headTags.join("\n"), "{Root}": root, "{Body}": html.trim(),
-  });
+  }).split("{Version}").join(VERSION); // version tags on CSS and JS links
 }
 
 const townTemplate = template("town-page.html");
@@ -338,7 +363,7 @@ function buildPage(t) {
       intro.length ? `\n  ${intro.join("\n  ")}` : "")
     .replace(/<li><strong>Area Code\{s\}:<\/strong> \{Town Area Code\}<\/li>\s*<li><strong>Phone Prefix\{es\}:<\/strong> \{Town Prefix\}<\/li>/,
       phoneItems || `<li>${NA}</li>`)
-    .replace(/\s*<p>\s*<a href=""[^>]*>Post Office<\/a>\s*<\/p>/, (button) =>
+    .replace(/\s*<p[^>]*>\s*<a href=""[^>]*>Post Office<\/a>\s*<\/p>/, (button) =>
       t.postOfficeUrl ? button.replace('<a href=""', `<a href="${t.postOfficeUrl}"`) : "")
     .replace("<li>{Source}</li>", sources.map((s) => `<li>${s}</li>`).join("\n    "));
 
@@ -375,7 +400,7 @@ function buildPage(t) {
   if (t.precipIn === null) html = html.replace(/\s*<p class="[^"]*">\s*<em>1991-2020 precipitation normals<\/em><\/p>/, "");
   html = html.replace(/\s*<section class="gardening[^"]*">\s*<h2[^>]*>Gardening Info<\/h2>\s*<ul class="list-unstyled mb-0">\s*<\/ul>\s*<\/section>/, "");
 
-  const leftover = html.match(/\{(?!Ads? )[A-Z][^}{]*\}/g); // ad spots are filled in wrapPage
+  const leftover = html.match(/\{(?!Ads? |Version\})[A-Z][^}{]*\}/g); // ad spots are filled in wrapPage
   if (leftover) console.warn(`  ${t.name}: unfilled ${[...new Set(leftover)].join(", ")}`);
   if (shared(t)) {
     html = html.replace(`<h1>${esc(t.name)}, Utah</h1>`, `<h1>${esc(t.name)} (${esc(t.county)}), Utah</h1>`);
