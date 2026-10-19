@@ -1,0 +1,645 @@
+/* Beehive Guide site styles. Bootstrap 5.0.2 does most of the work; this
+   file holds the site's colors, fonts and the few pieces Bootstrap doesn't
+   have. */
+
+/* ---------- Fonts ---------- */
+
+/* Web fonts: WOFF2, trimmed to Latin letters and the weights the site uses */
+/* Body: Roboto Slab, weights 300 to 700 */
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Sans serif: Roboto, weights 400 to 700, with italic */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-italic.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: italic;
+  font-display: swap;
+}
+/* Logo font: Zilla Slab, bold and bold italic only */
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("../fonts/zilla-slab-bold-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("../fonts/zilla-slab-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bs-font-sans-serif: "Roboto Slab", Georgia, serif;
+  --font-sans: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+body { font-family: var(--bs-font-sans-serif); }
+/* Sans serif text: Roboto */
+.font-sans { font-family: var(--font-sans); }
+/* Zilla Slab, the logo font (bold only) */
+.font-zilla { font-family: "Zilla Slab", Georgia, serif; }
+
+/* All headings and heading classes are bold */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
+}
+
+/* Text size between body and lead: 1.125rem (18 pixels) */
+.fs-md { font-size: 1.125rem !important; }
+
+/* ---------- Colors ---------- */
+
+/* Bootstrap 5.0 builds its colors into each class, so the classes that use
+   primary are set here too. */
+:root {
+  --bs-primary: #84231a; /* maroon with a touch of rust */
+  --bs-primary-hover: #6b1b14;
+  --bs-primary-rgb: 132, 35, 26;
+  --highlight: #cc4b0c; /* bright rust, for accents (4.6:1 with white) */
+  --dark-hover: #343a40; /* dark links and the site name on hover */
+  --icon-gray: #80878e; /* middle gray for decorative icons: 3:1 on white and on the light gradient */
+  --rule: #ced4da; /* gray of the fading rules */
+}
+a { color: var(--bs-primary); }
+/* Underlined links lose the underline on hover */
+a:hover { color: var(--bs-primary-hover); text-decoration: none; }
+.text-primary { color: var(--bs-primary) !important; }
+.bg-primary { background-color: var(--bs-primary) !important; }
+.border-primary { border-color: var(--bs-primary) !important; }
+.link-primary { color: var(--bs-primary); }
+.link-primary:hover,
+.link-primary:focus { color: var(--bs-primary-hover); }
+.bg-highlight { background-color: var(--highlight) !important; }
+/* Dark links get lighter on hover */
+.link-dark:hover,
+.link-dark:focus { color: var(--dark-hover); }
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #fff;
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+}
+/* Focus rings: primary on primary buttons, neutral gray on form fields */
+.btn-primary:focus { box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.5); }
+.form-control:focus,
+.form-select:focus {
+  border-color: #adb5bd;
+  box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25); /* secondary gray */
+}
+
+/* ---------- Shared pieces ---------- */
+
+/* Light background with a soft top-to-bottom gradient */
+.bg-light-gradient {
+  background-color: #f8f9fa;
+  background-image: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+}
+
+/* Light gradient button with a thin border and small shadow ("Post Office",
+   the county boxes, the skip link, the map corner buttons) */
+.btn-light-box {
+  color: #212529;
+  background-color: #f8f9fa;
+  background-image: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.btn-light-box:hover,
+.btn-light-box:focus {
+  color: #212529;
+  background-image: linear-gradient(to bottom, #e9ecef, #dee2e6);
+}
+
+/* Rules under headings and above the footer. All are 1px gray lines. */
+.rule-solid { border-bottom: 1px solid var(--rule); } /* Select a County */
+.rule-fade, .rule-fade-short, .rule-fade-end { border-bottom: 1px solid; }
+.rule-fade-top { border-top: 1px solid; }
+/* fades out to the right (most headings) */
+.rule-fade { border-image: linear-gradient(to right, var(--rule) 75%, transparent) 1; }
+/* fades out sooner, for narrow spots like Community Facts */
+.rule-fade-short { border-image: linear-gradient(to right, var(--rule) 35%, transparent) 1; }
+/* fades quickly at both ends (card headers) */
+.rule-fade-end { border-image: linear-gradient(to right, transparent, var(--rule) 8%, var(--rule) 92%, transparent) 1; }
+/* solid in the middle, fading toward both ends (above the footer) */
+.rule-fade-top { border-image: linear-gradient(to right, transparent, var(--rule) 15%, var(--rule) 85%, transparent) 1; }
+
+/* Box slanted like the "Guide" box in the logo (6 degrees); the text inside
+   is slanted back so it stays upright */
+.skew-box { transform: skewX(-6deg); }
+.skew-box-inner { transform: skewX(6deg); }
+
+/* Sticky header: keep linked sections (like #community-profiles) from
+   landing under it */
+[id] { scroll-margin-top: 8rem; }
+main:focus { outline: none; }
+
+/* Town pages: narrower than the standard container on large screens */
+@media (min-width: 1200px) {
+  .container-narrow { max-width: 1040px; }
+}
+
+/* Quarter steps between Bootstrap's margin-end sizes (me-0 to me-4) for
+   fine spacing between icons and text. The number is the Bootstrap step to
+   start from; q, h and tq add a quarter, half or three quarters of the way
+   to the next step. Example: me-1h sits halfway between me-1 and me-2. */
+.me-0q { margin-right: 0.0625rem !important; }
+.me-0h { margin-right: 0.125rem !important; }
+.me-0tq { margin-right: 0.1875rem !important; }
+.me-1q { margin-right: 0.3125rem !important; }
+.me-1h { margin-right: 0.375rem !important; }
+.me-1tq { margin-right: 0.4375rem !important; }
+.me-2q { margin-right: 0.625rem !important; }
+.me-2h { margin-right: 0.75rem !important; }
+.me-2tq { margin-right: 0.875rem !important; }
+.me-3q { margin-right: 1.125rem !important; }
+.me-3h { margin-right: 1.25rem !important; }
+.me-3tq { margin-right: 1.375rem !important; }
+
+/* ---------- Header ---------- */
+
+/* Site name: Zilla Slab bold italic. "Guide" ("nameBox" in config/site.json)
+   sits in a box slanted to match the italics; the text inside is slanted
+   back so it isn't slanted twice. Title and box lighten on hover. */
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Zilla Slab", Georgia, serif;
+  font-size: 2.4rem;
+  font-style: italic;
+}
+.site-title:hover,
+.site-title:focus { color: var(--dark-hover) !important; } /* beats text-reset */
+.site-title-text { line-height: 1; white-space: nowrap; }
+.site-title-box {
+  display: inline-block;
+  padding: 0.065em 0.16em 0.04em;
+  margin: -0.065em 0 -0.04em -0.02em; /* box grows without moving the text */
+  color: #fff;
+  background-color: #212529;
+  transform: skewX(-6deg); /* Zilla Slab italic angle is 6 degrees */
+}
+.site-title-box > span {
+  display: inline-block;
+  transform: skewX(6deg);
+}
+.site-title:hover .site-title-box,
+.site-title:focus .site-title-box { background-color: var(--dark-hover); }
+
+/* "Skip to main content" (btn btn-light-box): shows at the top left when
+   it gets keyboard focus */
+.skip-link:focus {
+  position: fixed !important;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1100; /* above the sticky header */
+}
+
+/* Links on the right: small, gray, sans serif, each with an icon after it */
+.site-nav { white-space: nowrap; flex-shrink: 0; }
+.site-nav a {
+  margin-left: 1.25rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus { text-decoration: underline; }
+.nav-icon {
+  width: 1em;
+  height: 1.05em;
+  margin-left: 0.3em;
+  vertical-align: -0.17em;
+}
+.nav-icon-contact {
+  width: 1.087em; /* mailbox, same height as the other icons */
+  height: 1em;
+  vertical-align: -0.12em;
+}
+.nav-icon-info { width: 0.91em; }
+/* Medium screens and smaller: the links become outlined rounded squares,
+   all the same width, with the icon centered above the word */
+@media (max-width: 991.98px) {
+  .site-nav { display: flex; } /* lines the buttons up with the site name */
+  .site-nav a {
+    display: inline-flex;
+    flex-direction: column-reverse; /* icon comes after the word in the HTML */
+    align-items: center;
+    justify-content: center;
+    width: 4.25rem;
+    padding: 0.45rem 0 0.35rem;
+    margin-left: 0.5rem;
+    font-size: 0.78rem;
+    line-height: 1.1;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus {
+    text-decoration: none;
+    background-color: #f8f9fa;
+  }
+  .site-nav .nav-icon {
+    width: auto; /* keeps each icon's shape */
+    height: 1.1rem;
+    margin: 0 0 0.25rem;
+    vertical-align: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  /* Site name grows with the screen to fill the room beside the buttons,
+     up to the height of the buttons inside their padding */
+  .site-title { font-size: clamp(1.4rem, calc((100vw - 220px) / 6.2), 1.7rem); }
+  .site-nav a {
+    width: 3.5rem;
+    padding: 0.35rem 0 0.25rem;
+    margin-left: 0.4rem;
+    font-size: 0.75rem;
+  }
+  .site-nav .nav-icon {
+    height: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+}
+@media (max-width: 359.98px) {
+  .site-title { font-size: 1.15rem; }
+  .site-nav a { margin-left: 0.3rem; font-size: 0.7rem; width: 3.2rem; }
+}
+
+/* ---------- Footer ---------- */
+
+/* Social media links: white icons in gray circles. In the footer the name
+   shows as a tooltip on hover; on the contact page it sits beside the circle. */
+.social-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  background-color: #6c757d;
+  border-radius: 50%;
+}
+a.social-circle:hover,
+a.social-circle:focus,
+.social-row:hover .social-circle,
+.social-row:focus .social-circle {
+  color: #fff;
+  background-color: var(--dark-hover);
+}
+.social-circle svg { width: 1.2rem; height: 1.2rem; }
+.social-hex svg { width: 1.375rem; height: 1.375rem; } /* logos about as tall as the names beside them */
+.social-links .social-circle { margin-left: 0.35rem; }
+/* Contact page: honeycomb instead of a circle (same point-up shape as the
+   logo), then the name */
+.social-hex {
+  width: 2.165rem; /* 0.866 of the height, a regular hexagon */
+  height: 2.5rem;
+  border-radius: 0;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.social-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.social-row:hover,
+.social-row:focus { text-decoration: underline; }
+
+/* ---------- Icons ---------- */
+
+/* Small gray icon after a heading (homepage: courthouse after "Select a
+   County", main street after "Community Profiles") */
+.heading-icon {
+  width: auto;
+  height: 0.85em;
+  margin-left: 0.25em;
+  vertical-align: -0.05em;
+  color: var(--icon-gray);
+}
+.heading-icon-wide { transform: scaleX(-1); } /* main street, mirrored */
+
+/* Small icon before a button's text (place marker on "Community Profile") */
+.btn-icon {
+  width: auto;
+  height: 0.9em;
+  vertical-align: -0.08em;
+}
+
+/* Homepage tagline icon: the outlined honeycomb with the open book, in
+   white, centered on the capital letters */
+.tagline-icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 0.25em;
+  vertical-align: -0.245em;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cpath%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%20d%3D%22M50.00%200.76%20L92.64%2025.38%20L92.64%2074.62%20L50.00%2099.24%20L7.36%2074.62%20L7.36%2025.38%20Z%20M46.10%2011.33%20Q50.00%209.08%2053.90%2011.33%20L81.54%2027.29%20Q85.44%2029.54%2085.44%2034.04%20L85.44%2065.96%20Q85.44%2070.46%2081.54%2072.71%20L53.90%2088.67%20Q50.00%2090.92%2046.10%2088.67%20L18.46%2072.71%20Q14.56%2070.46%2014.56%2065.96%20L14.56%2034.04%20Q14.56%2029.54%2018.46%2027.29%20Z%22/%3E%3Cpath%20fill%3D%22%23fff%22%20transform%3D%22translate%2850%2051%29%20scale%280.85%29%20translate%28-50%20-51%29%22%20d%3D%22M48.5%2037%20C42%2032.5%2033%2031%2024%2033.5%20L24%2063.5%20Q24%2067.5%2028%2067%20C36%2065.8%2043%2066.6%2048.5%2070.5%20Z%20M51.5%2037%20C58%2032.5%2067%2031%2076%2033.5%20L76%2063.5%20Q76%2067.5%2072%2067%20C64%2065.8%2057%2066.6%2051.5%2070.5%20Z%22/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* County seats: a small gray courthouse after the town's name in the town
+   lists and map popups (not part of the link), with its bottom on the
+   link's underline */
+.county-seat {
+  display: inline-block;
+  margin-left: 0.3em;
+}
+.county-seat-icon {
+  width: 0.92em;
+  height: 0.8em;
+  vertical-align: -0.14em;
+  color: var(--icon-gray);
+}
+/* On town pages: the honeycomb version in a gray sans serif note after the
+   name, centered on the note's capital letters */
+.county-seat-name { margin-right: 0.75rem; }
+.county-seat-note {
+  font-size: 0.5em; /* capital letters about as tall as the icon's straight sides */
+  white-space: nowrap;
+}
+.county-seat-note .county-seat-icon {
+  width: 1.44em;
+  height: 1.44em;
+  vertical-align: -0.37em;
+  color: inherit;
+}
+
+/* ---------- Town lists ---------- */
+
+/* County seat icon in the town lists: secondary gray, like text-secondary */
+.town-list .county-seat-icon { color: #6c757d; }
+
+/* The homepage town list and Nearby Communities on town pages: 1 to 4
+   columns of town links, each with a place marker as part of the link and
+   no underline until hover or keyboard focus */
+.town-list { columns: 1; font-size: 1.1rem; }
+.town-list li { break-inside: avoid; }
+@media (min-width: 576px) { .town-list { columns: 2; } }
+@media (min-width: 768px) { .town-list { columns: 3; } }
+@media (min-width: 992px) { .town-list { columns: 4; } }
+
+.town-list a,
+.marker-link {
+  transition: color 0.15s ease-in-out; /* quick fade, same speed as Bootstrap buttons */
+  display: inline-block;
+  position: relative;
+  padding-left: 0.9em; /* room for the place marker */
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+.town-list a:hover,
+.town-list a:focus,
+a.marker-link:hover,
+a.marker-link:focus {
+  color: #212529; /* dark link color, marker included */
+  text-decoration: underline;
+}
+/* Place marker (static/images/icons/marker.svg in the Drive folder), in the
+   link's color */
+.town-list a::before,
+.marker-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* centered on the line */
+  width: 0.68em;
+  height: 0.88em;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%2231%2025%2038%2049%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M50%2073%20C50%2073%2032%2055%2032%2044%20A18%2018%200%200%201%2068%2044%20C68%2055%2050%2073%2050%2073%20Z%20M50%2037.5%20A6.5%206.5%200%201%200%2050%2050.5%20A6.5%206.5%200%201%200%2050%2037.5%20Z%22/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%2231%2025%2038%2049%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M50%2073%20C50%2073%2032%2055%2032%2044%20A18%2018%200%200%201%2068%2044%20C68%2055%2050%2073%2050%2073%20Z%20M50%2037.5%20A6.5%206.5%200%201%200%2050%2050.5%20A6.5%206.5%200%201%200%2050%2037.5%20Z%22/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.marker-link.link-icon { padding-left: 1.05em; }
+/* Full-screen map popup: a link icon (Material Symbols "link 2", Apache 2.0)
+   in place of the place marker, since the town name links to its page */
+.marker-link.link-icon::before {
+  width: 0.8em;
+  height: 0.8em;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22120%20-840%20720%20720%22%3E%3Cpath%20d%3D%22M318-120q-82%200-140-58t-58-140q0-40%2015-76t43-64l134-133%2056%2056-134%20134q-17%2017-25.5%2038.5T200-318q0%2049%2034.5%2083.5T318-200q23%200%2045-8.5t39-25.5l133-134%2057%2057-134%20133q-28%2028-64%2043t-76%2015Zm79-220-57-57%20223-223%2057%2057-223%20223Zm251-28-56-57%20134-133q17-17%2025-38t8-44q0-50-34-85t-84-35q-23%200-44.5%208.5T558-726L425-592l-57-56%20134-134q28-28%2064-43t76-15q82%200%20139.5%2058T839-641q0%2039-14.5%2075T782-502L648-368Z%22%2F%3E%3C%2Fsvg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22120%20-840%20720%20720%22%3E%3Cpath%20d%3D%22M318-120q-82%200-140-58t-58-140q0-40%2015-76t43-64l134-133%2056%2056-134%20134q-17%2017-25.5%2038.5T200-318q0%2049%2034.5%2083.5T318-200q23%200%2045-8.5t39-25.5l133-134%2057%2057-134%20133q-28%2028-64%2043t-76%2015Zm79-220-57-57%20223-223%2057%2057-223%20223Zm251-28-56-57%20134-133q17-17%2025-38t8-44q0-50-34-85t-84-35q-23%200-44.5%208.5T558-726L425-592l-57-56%20134-134q28-28%2064-43t76-15q82%200%20139.5%2058T839-641q0%2039-14.5%2075T782-502L648-368Z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* ---------- Town pages ---------- */
+
+/* "Community Profile" button (btn btn-primary): keeps its color on hover; the text underlines */
+.btn-profile { transition: none; } /* changes right away, no fade */
+.btn-profile:hover,
+.btn-profile:focus,
+.btn-profile:active {
+  background-color: var(--bs-primary); /* stays the same red */
+  border-color: var(--bs-primary);
+}
+.btn-profile:hover { text-decoration: underline; }
+
+/* Long phone prefix lists start cut to about three lines and fade out at
+   the bottom; "Show all prefixes" opens them. */
+.prefix-box { position: relative; }
+.prefix-reveal {
+  position: relative;
+  max-height: 4.2em;
+  overflow: hidden;
+}
+.prefix-reveal::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.4em;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+}
+/* Opened: the full list floats over the page in a light gray gradient box
+   covering the area the closed list used. Long lists scroll inside it. */
+.prefix-reveal.is-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  max-height: 40vh;
+  overflow-y: auto;
+  padding: 0.4rem 0.5rem 0.5rem;
+  background-color: #f8f9fa;
+  background-image: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* same as bg-light-gradient */
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.prefix-reveal.is-open::after { display: none; }
+.prefix-close-row { display: none; }
+.prefix-reveal.is-open .prefix-close-row {
+  display: block;
+  /* "Close" stays in view at the bottom while the list scrolls */
+  position: sticky;
+  bottom: -0.5rem; /* reaches the box's bottom padding */
+  margin: 0 -0.5rem -0.5rem;
+  padding: 0.35rem 0.5rem 0.5rem;
+  background-color: #e9ecef; /* bottom color of the box's gradient */
+}
+/* With several area codes, each "801 Prefixes:" label is bold and
+   underlined in the open box only */
+.prefix-reveal.is-open .prefix-label {
+  font-weight: 700;
+  text-decoration: underline;
+}
+/* Text in the open box turns the regular text color for contrast on the
+   gray gradient */
+.prefix-reveal.is-open .text-secondary,
+.prefix-reveal.is-open .prefix-toggle { color: #212529 !important; }
+/* Subtle gray link; words underlined (not the icon) until hover */
+.prefix-toggle {
+  font-size: 0.8em;
+  color: #6c757d;
+  text-decoration: none;
+}
+.prefix-toggle:hover,
+.prefix-toggle:focus { color: var(--dark-hover); text-decoration: none; }
+.prefix-toggle-text { text-decoration: underline; }
+.prefix-toggle:hover .prefix-toggle-text,
+.prefix-toggle:focus-visible .prefix-toggle-text { text-decoration: none; }
+/* Plus to open; the same plus turned 45 degrees makes the x to close */
+.prefix-icon {
+  width: 0.8em;
+  height: 0.8em;
+  vertical-align: -0.05em;
+}
+.prefix-icon-close { transform: rotate(45deg); }
+
+/* ---------- Maps ---------- */
+
+/* Utah honeycomb in accent orange before "Find a community" on the full-screen map */
+.map-bar-icon {
+  width: 1.7em;
+  height: 1.7em;
+  vertical-align: -0.51em; /* centered on the capital letters */
+  color: var(--highlight);
+}
+
+/* Small button in a map's bottom-left corner (btn btn-light-box): the
+   copyright on the full-screen map, "Full-screen map" on town pages */
+.map-corner-btn {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 800;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* Town popup (both maps): a card filling the popup, with a soft shadow in
+   place of Leaflet's dark one. Links keep the site's colors instead of
+   Leaflet's blue. */
+.town-popup .leaflet-popup-content { margin: 0; }
+.town-popup .card { border-radius: 12px; overflow: hidden; }
+.town-popup .leaflet-popup-content-wrapper,
+.town-popup .leaflet-popup-tip { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+.town-popup .popup-body { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.leaflet-popup-content a { color: #212529; }
+.leaflet-popup-content a.link-secondary { color: #6c757d; }
+.leaflet-popup-content a.marker-link { color: var(--bs-primary); }
+.leaflet-popup-content a.marker-link:hover,
+.leaflet-popup-content a.marker-link:focus { color: #212529; }
+
+/* No hover fades for people who turn off motion */
+@media (prefers-reduced-motion: reduce) {
+  .town-list a, .marker-link { transition: none; }
+}
+
+/* ---------- Ads ---------- */
+
+/* Ad spots (templates/parts/ad.html): a small "Advertisement" label over a
+   banner (90px tall on wide screens, 100px on phones) or a 300 x 250 box. In setup
+   mode the box is a dashed gray placeholder that names the spot. */
+.ad-label {
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6c757d;
+  text-align: center;
+}
+.ad-box {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.ad-banner { max-width: 728px; min-height: 100px; }
+@media (min-width: 768px) { .ad-banner { min-height: 90px; } }
+.ad-large { max-width: 336px; min-height: 280px; }
+.ad-rect { max-width: 300px; min-height: 250px; }
+.ad-setup .ad-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-family: var(--font-sans);
+  color: #6c757d;
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 2px dashed #ced4da;
+}
+.ad-setup .ad-box span { font-weight: 700; }
+
+/* Privacy choices box: a small card in the bottom left corner; a strip
+   along the bottom on phones */
+.consent {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1050;
+  width: 22rem;
+  max-width: calc(100% - 2rem);
+}
+@media (max-width: 575.98px) {
+  .consent {
+    bottom: 0.5rem;
+    left: 0.5rem;
+    max-width: calc(100% - 1rem);
+    width: auto;
+    right: 0.5rem;
+  }
+}
+.consent-title { font-weight: 700; }
+.consent .btn-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.65rem;
+}
+.consent .form-check-input:checked {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/* "Privacy Choices" after the copyright: a small, quiet button */
+.footer-privacy {
+  padding: 0 0.4rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #495057; /* dark enough gray for small text on the light button */
+  vertical-align: 0.24em; /* nudged up, between centered and resting on the baseline */
+}

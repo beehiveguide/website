@@ -1,0 +1,27 @@
+<div class="container container-narrow my-5">
+  <h1>Contact</h1>
+  <p class="lead">Questions? Comments? Corrections? Shoot {Site Name} an email.</p>
+
+  <h2 class="rule-fade-short pb-2 mt-4 mb-3">Email</h2>
+  <!-- The address is put together by the script below, so bots reading the
+       page's code don't find it. Without JavaScript, the spelled-out version shows. -->
+  <p class="fs-md"><span id="email-link" data-user="{Email User}" data-domain="{Email Domain}">{Email User} at {Email Domain Spoken}</span></p>
+
+  <h2 class="rule-fade-short pb-2 mt-4 mb-3">Social media</h2>
+  <p>Follow <span class="font-sans fst-italic">{Social Handle}</span> on social media.</p>
+  <ul class="list-unstyled social-list mb-0">
+{Social List}
+  </ul>
+</div>
+
+<script>
+  // Builds the email link from its two halves
+  (() => {
+    const el = document.getElementById("email-link");
+    const address = `${el.dataset.user}@${el.dataset.domain}`;
+    const a = document.createElement("a");
+    a.href = `mailto:${address}`;
+    a.textContent = address;
+    el.replaceWith(a);
+  })();
+</script>

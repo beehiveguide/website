@@ -1,0 +1,354 @@
+[
+  {
+    "gaz_id": "2584755",
+    "name": "Big Cottonwood Canyon Resorts",
+    "county": "Salt Lake County",
+    "census_code": "05500",
+    "census_class_code": "U2",
+    "reason": "Former census-designated place; not a 2020 census place."
+  },
+  {
+    "gaz_id": "2407958",
+    "name": "Canyon Rim (historical)",
+    "county": "Salt Lake County",
+    "census_code": "10390",
+    "census_class_code": "X0",
+    "reason": "Former census-designated place; not a 2020 census place."
+  },
+  {
+    "gaz_id": "2407670",
+    "name": "Cottonwood West (historical)",
+    "county": "Salt Lake County",
+    "census_code": "16395",
+    "census_class_code": "X0",
+    "reason": "Former census-designated place; not a 2020 census place."
+  },
+  {
+    "gaz_id": "1427710",
+    "name": "East Millcreek",
+    "county": "Salt Lake County",
+    "census_code": "21550",
+    "census_class_code": "U5",
+    "reason": "Former census-designated place; now part of Millcreek city (incorporated 2016). Not a 2020 census place."
+  },
+  {
+    "gaz_id": "2408618",
+    "name": "Little Cottonwood Creek Valley (historical)",
+    "county": "Salt Lake County",
+    "census_code": "45275",
+    "census_class_code": "X0",
+    "reason": "Former census-designated place; not a 2020 census place."
+  },
+  {
+    "gaz_id": "2408878",
+    "name": "Mount Olympus (historical)",
+    "county": "Salt Lake County",
+    "census_code": "52900",
+    "census_class_code": "X0",
+    "reason": "Former census-designated place; not a 2020 census place."
+  },
+  {
+    "gaz_id": "2408948",
+    "name": "North Snyderville Basin",
+    "county": "Summit County",
+    "census_code": "55237",
+    "census_class_code": "U2",
+    "reason": "Former census-designated place; not a 2020 census place."
+  },
+  {
+    "gaz_id": "2408773",
+    "name": "South Snyderville Basin",
+    "county": "Summit County",
+    "census_code": "71125",
+    "census_class_code": "U2",
+    "reason": "Former census-designated place; not a 2020 census place."
+  },
+  {
+    "gaz_id": "1438215",
+    "name": "Anderson Junction",
+    "county": "Washington County",
+    "census_code": "01475",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437495",
+    "name": "Ballard Junction",
+    "county": "Cache County",
+    "census_code": "03360",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1438501",
+    "name": "Bear Valley Junction",
+    "county": "Garfield County",
+    "census_code": "04005",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437501",
+    "name": "Big Plain Junction",
+    "county": "Washington County",
+    "census_code": "05515",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437504",
+    "name": "Bloomington (historical)",
+    "county": "Washington County",
+    "census_code": "06535",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1437512",
+    "name": "Brendel (historical)",
+    "county": "Grand County",
+    "census_code": "07910",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1426815",
+    "name": "Columbia (historical)",
+    "county": "Carbon County",
+    "census_code": "15280",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1437530",
+    "name": "Columbia Junction",
+    "county": "Carbon County",
+    "census_code": "15390",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437540",
+    "name": "Curlew Junction",
+    "county": "Box Elder County",
+    "census_code": "17530",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437553",
+    "name": "Endot",
+    "county": "Salt Lake County",
+    "census_code": "23145",
+    "census_class_code": "U6",
+    "reason": "Railroad stop or siding, not a community."
+  },
+  {
+    "gaz_id": "1441235",
+    "name": "Fremont Junction",
+    "county": "Sevier County",
+    "census_code": "27305",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437566",
+    "name": "Garfield Junction",
+    "county": "Salt Lake County",
+    "census_code": "28065",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437584",
+    "name": "Harrisburg Junction",
+    "county": "Washington County",
+    "census_code": "33430",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437981",
+    "name": "Hillside (historical)",
+    "county": "Utah County",
+    "census_code": "35590",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1455095",
+    "name": "Hite (historical)",
+    "county": "Garfield County",
+    "census_code": "35795",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1437601",
+    "name": "Keetley Junction",
+    "county": "Summit County",
+    "census_code": "40690",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437604",
+    "name": "Kingsville Junction",
+    "county": "Weber County",
+    "census_code": "41375",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437608",
+    "name": "La Sal Junction",
+    "county": "San Juan County",
+    "census_code": "43165",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437611",
+    "name": "Lake Point Junction",
+    "county": "Tooele County",
+    "census_code": "42175",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437614",
+    "name": "Lampo Junction",
+    "county": "Box Elder County",
+    "census_code": "42805",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437617",
+    "name": "Lark (historical)",
+    "county": "Salt Lake County",
+    "census_code": "43000",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1437632",
+    "name": "Mammoth Junction",
+    "county": "Juab County",
+    "census_code": "47425",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437635",
+    "name": "Mercur (historical)",
+    "county": "Tooele County",
+    "census_code": "49270",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1437638",
+    "name": "Mills Junction",
+    "county": "Tooele County",
+    "census_code": "50315",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1443535",
+    "name": "Moark Junction",
+    "county": "Utah County",
+    "census_code": "50755",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1444112",
+    "name": "Orem Station",
+    "county": "Utah County",
+    "census_code": "57335",
+    "census_class_code": "U6",
+    "reason": "Railroad stop or siding, not a community."
+  },
+  {
+    "gaz_id": "1437660",
+    "name": "Promontory (historical)",
+    "county": "Box Elder County",
+    "census_code": "62140",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1431727",
+    "name": "Redwood (historical)",
+    "county": "Salt Lake County",
+    "census_code": "63350",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1431863",
+    "name": "Riverton Siding",
+    "county": "Salt Lake County",
+    "census_code": "64365",
+    "census_class_code": "U6",
+    "reason": "Railroad stop or siding, not a community."
+  },
+  {
+    "gaz_id": "1437697",
+    "name": "Sunnyside Junction",
+    "county": "Carbon County",
+    "census_code": "74395",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1433238",
+    "name": "Terminal",
+    "county": "Salt Lake County",
+    "census_code": "75580",
+    "census_class_code": "U6",
+    "reason": "Railroad stop or siding, not a community."
+  },
+  {
+    "gaz_id": "1438031",
+    "name": "Tintic Junction",
+    "county": "Juab County",
+    "census_code": "76530",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1446840",
+    "name": "Uintah Junction",
+    "county": "Weber County",
+    "census_code": "77960",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437716",
+    "name": "Wattis Junction",
+    "county": "Carbon County",
+    "census_code": "82290",
+    "census_class_code": "U6",
+    "reason": "Railroad or highway junction, not a community."
+  },
+  {
+    "gaz_id": "1437721",
+    "name": "White Canyon (historical)",
+    "county": "San Juan County",
+    "census_code": "83970",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  },
+  {
+    "gaz_id": "1434371",
+    "name": "Wilson (historical)",
+    "county": "Weber County",
+    "census_code": "84820",
+    "census_class_code": "U6",
+    "reason": "Marked historical in GNIS; no longer exists."
+  }
+]

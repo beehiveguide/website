@@ -1,0 +1,19 @@
+{
+  "utah_place_names": [
+    {
+      "match": { "place_name": "Belleview", "county": "Washington County" },
+      "set": { "place_name": "Bellevue" },
+      "note": "Name changed from \"Belleview\" to \"Bellevue\" to match the 1941 file."
+    },
+    {
+      "match": { "place_name": "Coonville", "county": "Salt Lake County" },
+      "set": { "place_name": "Cooleyville" },
+      "note": "Name changed from \"Coonville\" to \"Cooleyville\" to match the 1941 file."
+    },
+    {
+      "match": { "place_name": "North Salt Lake", "county": "Salt Lake County" },
+      "set": { "county": "Davis County" },
+      "note": "County changed from \"Salt Lake County\" to \"Davis County\" to match the 1941 file and its actual location."
+    }
+  ]
+}

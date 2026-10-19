@@ -1,0 +1,168 @@
+<link
+  rel="stylesheet"
+  href="../leaflet/leaflet.css"
+/>
+
+<div class="container container-narrow my-5">
+  {Ad town-top}
+  <p class="mt-5"><a href="{Community Profiles URL}" class="btn btn-primary btn-profile btn-sm fs-md fw-bold font-zilla rounded-0 border-0"><svg class="btn-icon me-1" viewBox="31 25 38 49" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M50 73 C50 73 32 55 32 44 A18 18 0 0 1 68 44 C68 55 50 73 50 73 Z M50 37.5 A6.5 6.5 0 1 0 50 50.5 A6.5 6.5 0 1 0 50 37.5 Z"/></svg>Community Profile</a></p>
+  <h1>{Town Name}, Utah</h1>
+  <p class="text-secondary mt-2 mb-2"><em>(Settled in {year})</em></p>
+  <p class="lead">{name origin}</p>
+  <div class="row mb-4">
+    <div class="col-lg-5 order-2">
+      <h2 class="rule-fade-short pb-2 mb-3">Community Facts</h2>
+      <ul class="list-unstyled mb-0">
+        <li><strong>County:</strong> {County Name}</li>
+        <li><strong>Coordinates:</strong> <a class="link-dark" href="{Map Page URL}">{Town Latitude}, {Town Longitude}</a></li>
+        <li><strong>Elevation:</strong> {Town Elevation}</li>
+        <li><strong>Population:</strong> {Town Population} <small class="text-secondary font-sans"><em>({Town Households} households)</em></small></li>
+        <li><strong>Area Code{s}:</strong> {Town Area Code}</li>
+        <li><strong>Phone Prefix{es}:</strong> {Town Prefix}</li>
+      </ul>
+      <p>
+        <a href="" class="btn btn-sm btn-light-box fw-bold mt-3 mb-3 mb-lg-0">Post Office</a>
+      </p>
+    </div>
+    <div class="col-lg-7 order-1 mb-4 mb-lg-0">
+      <div class="card shadow-sm overflow-hidden position-relative">
+        <!-- Header shows on small screens only -->
+        <h2 class="card-header h4 d-lg-none">Map</h2>
+        <div class="ratio ratio-16x9">
+          <div
+            class="town-map"
+            role="img"
+            aria-label="Aerial map of {Town Name}, Utah"
+            data-town="{Town Name}"
+            data-state="Utah"
+            data-lat="{Map Latitude}"
+            data-long="{Map Longitude}"
+          ></div>
+        </div>
+        <a href="{Map Page URL}" class="map-corner-btn btn btn-light-box font-sans">Full-screen map</a>
+      </div>
+    </div>
+  </div>
+  <section class="gardening mb-4">
+    <h2 class="rule-fade pb-2 mb-3">Gardening Info</h2>
+    <ul class="list-unstyled mb-0">
+      <li><strong>Hardiness Zone:</strong> {Town Hardiness}</li>
+      <li><strong>Annual Precipitation:</strong> {Town Precip}</li>
+    </ul>
+    <p class="mt-1 mb-0 small text-secondary font-sans"><em>1991-2020 precipitation normals</em></p>
+  </section>
+  {Ad town-middle}
+  <h2 class="h3 rule-fade pb-2 mb-3">Sources</h2>
+  <ul class="mb-4">
+    <li>{Source}</li>
+  </ul>
+  <section class="card rounded-1 mb-4">
+    <h2 class="card-header bg-white h6 fs-md rule-fade-end mb-0">Nearby Communities</h2>
+    <div class="card-body py-2">
+      <ul class="list-unstyled town-list font-zilla mb-0">
+{Nearby Items}
+      </ul>
+    </div>
+  </section>
+  <div class="bg-light-gradient p-2 border rounded-1 shadow-sm mb-0"><em>by</em> <a href="{Home URL}" class="link-dark">{Site Name}</a>. Updated {Day Month, Year}.</div>
+  {Ads town-bottom}
+</div>
+
+<script src="../leaflet/leaflet.js"></script>
+<script src="../js/maps.js"></script>
+<script>
+  document.querySelectorAll(".town-map").forEach(async (el) => {
+    const { town, state, lat, long } = el.dataset;
+
+    const map = beehiveMap(el);
+
+    // Pin at the town's coordinates; its popup (templates/parts/town-popup.html)
+    // matches the full-screen map's
+    L.marker([lat, long]).addTo(map).bindPopup(`{Town Popup}`,
+      { minWidth: 300, maxWidth: 380, className: "town-popup" });
+    // Without a town border, center on the pin
+    const showPin = () => map.setView([lat, long], 14);
+
+    const url =
+      "https://nominatim.openstreetmap.org/search?" +
+      new URLSearchParams({
+        city: town,
+        state: state,
+        country: "us",
+        format: "jsonv2",
+        polygon_geojson: 1,
+        limit: 1,
+      });
+
+    try {
+      const res = await fetch(url);
+      const [place] = await res.json();
+      const shape = place && place.geojson;
+      if (
+        shape &&
+        (shape.type === "Polygon" || shape.type === "MultiPolygon")
+      ) {
+        const border = L.geoJSON(shape, {
+          style: {
+            color: "#ffffff",
+            weight: 3,
+            opacity: 0.6,
+            fillOpacity: 0.05,
+          },
+        }).addTo(map);
+        map.fitBounds(border.getBounds());
+      } else {
+        showPin();
+      }
+    } catch (err) {
+      showPin();
+    }
+  });
+</script>
+<script>
+  // Long phone prefix lists: "Show all prefixes" opens the full list over
+  // the page; "Close", Escape or a click elsewhere closes it.
+  document.querySelectorAll(".prefix-box").forEach((box) => {
+    const panel = box.querySelector(".prefix-reveal");
+    const openBtn = box.querySelector(".prefix-open");
+    const closeBtn = box.querySelector(".prefix-close");
+    const setOpen = (open, focus) => {
+      // Hold the closed height so nothing below moves while the list is open
+      box.style.height = open ? `${box.offsetHeight}px` : "";
+      // The open box's right edge stops where the longest closed line ends
+      if (open) {
+        const boxRight = box.getBoundingClientRect().right;
+        let textRight = 0;
+        panel.querySelectorAll("small").forEach((el) => {
+          for (const r of el.getClientRects()) textRight = Math.max(textRight, r.right);
+        });
+        panel.style.right = Math.max(0, boxRight - textRight) + "px";
+      } else {
+        panel.style.right = "";
+      }
+      panel.classList.toggle("is-open", open);
+      // Grow up and down evenly from the closed list's center, but not above
+      // the top of the Community Facts list
+      if (open) {
+        const closedH = box.offsetHeight;
+        const lift = Math.max(0, (panel.offsetHeight - closedH) / 2);
+        const list = (box.closest(".col-lg-5") || box).querySelector("ul") || box; // the Community Facts list
+        const room = box.getBoundingClientRect().top - list.getBoundingClientRect().top;
+        panel.style.top = -Math.min(lift, Math.max(0, room)) + "px";
+      } else {
+        panel.style.top = "";
+        panel.scrollTop = 0; // closed view always starts at the top of the list
+      }
+      openBtn.setAttribute("aria-expanded", String(open));
+      if (focus) (open ? closeBtn : openBtn).focus({ preventScroll: true });
+    };
+    openBtn.addEventListener("click", () => setOpen(true, true));
+    closeBtn.addEventListener("click", () => setOpen(false, true));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && panel.classList.contains("is-open")) setOpen(false, true);
+    });
+    document.addEventListener("click", (e) => {
+      if (panel.classList.contains("is-open") && !box.contains(e.target)) setOpen(false, false);
+    });
+  });
+</script>

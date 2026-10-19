@@ -1,0 +1,17 @@
+# Built site (made by the scripts and deployed to Firebase from here)
+public/
+.firebase/
+
+# Build steps' working files; keep the merged data so pages can be rebuilt
+# from GitHub with scripts/10_pages.js
+build/*
+!build/communities.json
+
+# Raw data downloads are large (some over GitHub's 100 MB limit). They stay
+# on this computer; sources.json records where each one came from.
+sources/*
+!sources/sources.json
+
+# Tools and system files
+node_modules/
+.DS_Store

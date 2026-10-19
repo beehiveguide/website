@@ -1,0 +1,1759 @@
+{
+  "source": "Rewrites of name origins from Origins of Utah Place Names (1941). Wording modernized; facts unchanged. 'original' must match the book text or the rewrite is skipped.",
+  "entries": {
+    "1425039": {
+      "name": "Abraham",
+      "original": "Named for Abraham H. Cannon, Mormon Church official, one of its first settlers.",
+      "rewrite": "Named for Abraham H. Cannon, a leader in The Church of Jesus Christ of Latter-day Saints and one of its first settlers."
+    },
+    "1425050": {
+      "name": "Adamsville",
+      "original": "Named for David B. Adams, early settler.",
+      "rewrite": "Named for David B. Adams, early settler."
+    },
+    "1425097": {
+      "name": "Altonah",
+      "original": "So named because of its altitude.",
+      "rewrite": "Named for its altitude."
+    },
+    "1425831": {
+      "name": "Bluebell",
+      "original": "So named because of the prolific growth of bluebells in this region.",
+      "rewrite": "Named for the prolific growth of bluebells in the region."
+    },
+    "1425842": {
+      "name": "Bluff",
+      "original": "So named because of a long bluff south of the settlement, across the San Juan River.",
+      "rewrite": "Named for a long bluff south of the settlement, across the San Juan River."
+    },
+    "1425844": {
+      "name": "Bluffdale",
+      "original": "So named because of the high bluffs near the Jordan Narrows, not far from the settlement.",
+      "rewrite": "Named for the high bluffs near the Jordan Narrows, not far from the settlement."
+    },
+    "1425865": {
+      "name": "Bonanza",
+      "original": "So named because of the discovery of a rich deposit of gilsonite near the settlement.",
+      "rewrite": "Named for the discovery of a rich deposit of gilsonite near the settlement."
+    },
+    "1425891": {
+      "name": "Bothwell",
+      "original": "Named in honor of the builders of the Bothwell Canal, by which water was diverted from Bear River, making possible the cultivation of many additional acres of land. Formerly called Roweville, probably for a pioneer family.",
+      "rewrite": "Named for the builders of the Bothwell Canal, which diverted water from the Bear River and made it possible to cultivate many additional acres of land. Formerly called Roweville, probably for a pioneer family."
+    },
+    "1426269": {
+      "name": "Caineville",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1426344": {
+      "name": "Cannonville",
+      "original": "Named in honor of George Q. Cannon, Mormon Church official. First called Clifton because of near-by cliffs.",
+      "rewrite": "Named for George Q. Cannon, a leader in The Church of Jesus Christ of Latter-day Saints. First called Clifton because of nearby cliffs."
+    },
+    "1426380": {
+      "name": "Castle Dale",
+      "original": "So named because of the castle-like rock formations surrounding the valley. This name was selected by the Post Office Department in preference to the name, Castle Vale, suggested by the town's residents.",
+      "rewrite": "Named for the castle-like rock formations surrounding the valley. The Post Office Department chose this name over Castle Vale, the name the town's residents suggested."
+    },
+    "1426441": {
+      "name": "Cedar City",
+      "original": "So named because of the abundance of cedar (juniper) trees in the vicinity. First called Coal Creek, taking the name of the stream on which the first settlement was made. The creek derived its name from near-by deposits of coal.",
+      "rewrite": "Named for the abundance of cedar (juniper) trees in the area. First called Coal Creek, after the stream on which the first settlement was made. The creek was named for nearby coal deposits."
+    },
+    "1426506": {
+      "name": "Centerfield",
+      "original": "Outgrowth of Gunnison. So named because it is situated in the center of an open valley.",
+      "rewrite": "Outgrowth of Gunnison. Named for its location in the center of an open valley."
+    },
+    "1426539": {
+      "name": "Charleston",
+      "original": "Named for Charles Shelton, who surveyed the town for settlement.",
+      "rewrite": "Named for Charles Shelton, who surveyed the town for settlement."
+    },
+    "1426671": {
+      "name": "Clarkston",
+      "original": "Named for Israel J. Clark, its first presiding Mormon official.",
+      "rewrite": "Named for Israel J. Clark, its first presiding Latter-day Saint leader."
+    },
+    "1426675": {
+      "name": "Clawson",
+      "original": "Outgrowth of Ferron. Named for Rudger Clawson, Mormon Church official. Formerly called North Flat; and later temporarily named Kingsville for Guy King, first settler.",
+      "rewrite": "Outgrowth of Ferron. Named for Rudger Clawson, a leader in The Church of Jesus Christ of Latter-day Saints. Formerly called North Flat and later temporarily named Kingsville for Guy King, first settler."
+    },
+    "1426712": {
+      "name": "Cleveland",
+      "original": "Named in honor of Grover Cleveland, twenty-second President of the United States.",
+      "rewrite": "Named for Grover Cleveland, 22nd president of the United States."
+    },
+    "1426725": {
+      "name": "Clinton",
+      "original": "Origin of present name unknown. Formerly called Summit because of its location on the high Sand Ridge.",
+      "rewrite": "Origin of present name unknown. Formerly called Summit because of its location on the high Sand Ridge."
+    },
+    "1426770": {
+      "name": "Coalville",
+      "original": "So named because of near-by coal deposits.",
+      "rewrite": "Named for nearby coal deposits."
+    },
+    "1426865": {
+      "name": "Copperton",
+      "original": "So named by the Utah Copper Company, which built and owns the town.",
+      "rewrite": "Named by the Utah Copper Company, which built and owned the town."
+    },
+    "1427334": {
+      "name": "Delta",
+      "original": "So named because it is situated at the delta of the Sevier River.",
+      "rewrite": "Named for its location at the delta of the Sevier River."
+    },
+    "1427343": {
+      "name": "Deseret",
+      "original": "Vacated 1868 because of Indian troubles, resettled 1874.",
+      "rewrite": "Settlers left in 1868 because of conflicts with Native Americans and returned in 1874."
+    },
+    "1427473": {
+      "name": "Draper",
+      "original": "Named for William Draper, early Mormon settler. Formerly called South Willow Creek, taking the name of the stream near which it is situated.",
+      "rewrite": "Named for William Draper, early Latter-day Saint settler. Formerly called South Willow Creek, after the stream near which it is located."
+    },
+    "1427601": {
+      "name": "Duchesne",
+      "original": "This town was founded when the Uinta Indian Reservation was first opened to white settlers. First called Dora for one of the women settlers. Later temporarily renamed Theodore in honor of Theodore Roosevelt, twenty-fifth President of the United States.",
+      "rewrite": "Founded when the Uinta Indian Reservation was first opened to non-Native settlement. First called Dora for one of the women settlers. Later temporarily renamed Theodore for President Theodore Roosevelt.",
+      "flag": "Book calls Roosevelt the 25th president (he was the 26th); number dropped."
+    },
+    "1427740": {
+      "name": "Echo",
+      "original": "Derived its name from Echo Canyon, which received its name because of the resonance of the cliffs that form its walls.",
+      "rewrite": "Takes its name from Echo Canyon, which was named for the resonance of the cliffs that form its walls."
+    },
+    "1427746": {
+      "name": "Eden",
+      "original": "So named because of its beautiful location in Ogden Valley.",
+      "rewrite": "Named for its beautiful location in Ogden Valley."
+    },
+    "1427806": {
+      "name": "Elmo",
+      "original": "Origin of name uncertain. The name first suggested was Carson, but residents of the community adopted, instead, the name St. Elmo, and later shortened it to Elmo.",
+      "rewrite": "Origin of name uncertain. The name first suggested was Carson, but residents instead adopted the name St. Elmo and later shortened it to Elmo."
+    },
+    "1427809": {
+      "name": "Elwood",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1427871": {
+      "name": "Fairfield",
+      "original": "So named because of its pleasant surroundings. It was here that Colonel Albert Sidney Johnston established Camp Floyd, which he named in honor of John B. Floyd, Secretary of War under President Buchanan. The camp was later renamed Fort Crittenden, for John Jordan Crittenden, U. S. Senator from Kentucky. The town received its present name in 1861, after the troops were withdrawn to Civil War battlefields.",
+      "rewrite": "Named for its pleasant surroundings. Col. Albert Sidney Johnston established Camp Floyd here and named it for John B. Floyd, secretary of war under President Buchanan. The camp was later renamed Fort Crittenden for John Jordan Crittenden, U.S. senator from Kentucky. The town received its present name in 1861, after the troops were withdrawn to Civil War battlefields."
+    },
+    "1427897": {
+      "name": "Fayette",
+      "original": "Vacated 1866 due to Indian troubles, but soon resettled. Named for Fayette, Seneca County, New York, where the Mormon Church was organized by Joseph Smith. First called Warm Creek.",
+      "rewrite": "Settlers left in 1866 because of conflicts with Native Americans but soon returned. Named for Fayette, Seneca County, New York, where Joseph Smith organized The Church of Jesus Christ of Latter-day Saints. First called Warm Creek."
+    },
+    "1428039": {
+      "name": "Fort Duchesne",
+      "original": "Probably so named by General Crook, noted Indian fighter, because the site overlooked the Duchesne River basin.",
+      "rewrite": "Probably named by Gen. Crook, whom the 1941 book called a \"noted Indian fighter,\" because the site overlooked the Duchesne River basin."
+    },
+    "1428080": {
+      "name": "Francis",
+      "original": "Named for Francis M. Lyman, Mormon Church official.",
+      "rewrite": "Named for Francis M. Lyman, a leader in The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1428133": {
+      "name": "Garden City",
+      "original": "So named because its settlers considered it a garden spot in Bear Lake Valley.",
+      "rewrite": "Named because its settlers considered it a garden spot in Bear Lake Valley."
+    },
+    "1428146": {
+      "name": "Garland",
+      "original": "Named for William Garland, who led in construction of Bothwell Canal and establishment of the local sugar beet industry.",
+      "rewrite": "Named for William Garland, who led construction of the Bothwell Canal and establishment of the local sugar beet industry."
+    },
+    "1428153": {
+      "name": "Garrison",
+      "original": "Named for an early settler who owned a sheep and cattle ranch here.",
+      "rewrite": "Named for an early settler who owned a sheep and cattle ranch here."
+    },
+    "1428204": {
+      "name": "Glendale",
+      "original": "Vacated 1865 because of Indian troubles, resettled 1871. Named by Bishop James Leathead for his home in Scotland.",
+      "rewrite": "Settlers left in 1865 because of conflicts with Native Americans and returned in 1871. Bishop James Leathead named it for his home in Scotland."
+    },
+    "1428231": {
+      "name": "Gold Hill",
+      "original": "Named for adjacent gold deposits.",
+      "rewrite": "Named for adjacent gold deposits."
+    },
+    "1428272": {
+      "name": "Goshen",
+      "original": "Named for Goshen, Connecticutt, birthplace of Phineas W. Cook, first Mormon bishop of the community. Formerly called Sodom, Sandtown, and Mechanicsville.",
+      "rewrite": "Named for Goshen, Connecticut, birthplace of Phineas W. Cook, the community's first Latter-day Saint bishop. Formerly called Sodom, Sandtown and Mechanicsville.",
+      "flag": "Source misspells \"Connecticutt\"; corrected spelling only."
+    },
+    "1428338": {
+      "name": "Grantsville",
+      "original": "Named for George D. Grant, Nauvoo Legion military officer and early Mormon settler. Known as Twenty Wells prior to Mormon settlement. Later known as Willow Creek, taking the name of the stream from which the settlers obtained water.",
+      "rewrite": "Named for George D. Grant, Nauvoo Legion military officer and early Latter-day Saint settler. Known as Twenty Wells before Latter-day Saint settlement. Later known as Willow Creek, after the stream from which the settlers obtained water."
+    },
+    "1428398": {
+      "name": "Green River",
+      "original": "Derived its name from the Green River, near which it is situated. The stream received its name because of its color.",
+      "rewrite": "Takes its name from the Green River, near which it is located. The river was named for its color."
+    },
+    "1428406": {
+      "name": "Greenville",
+      "original": "So named because of the heavy growth of green grass on the site of the settlement. Sometimes called Pancake by local residents.",
+      "rewrite": "Named for the heavy growth of green grass on the site of the settlement. Sometimes called Pancake by local residents."
+    },
+    "1428419": {
+      "name": "Grouse Creek",
+      "original": "Derived its name from the stream near which it is situated. The creek was so named by early travelers, who found an abundance of grouse in the valley. The settlement was first called Cookesville for a family of early settlers.",
+      "rewrite": "Takes its name from the nearby stream. Early travelers named the creek for the abundance of grouse they found in the valley. The settlement was first called Cookesville for a family of early settlers."
+    },
+    "1428432": {
+      "name": "Gunnison",
+      "original": "Named in honor of Captain John W. Gunnison, army topographical engineer, who was killed by Indians near Sevier Lake in 1853.",
+      "rewrite": "Named for Capt. John W. Gunnison, Army topographical engineer, who was killed near Sevier Lake in 1853 during the Walker War.",
+      "flag": "Walker War from Wikipedia, John Williams Gunnison."
+    },
+    "1428508": {
+      "name": "Hanksville",
+      "original": "Founded by Ebenezer Hanks, and named in his honor.",
+      "rewrite": "Founded by Ebenezer Hanks and named for him."
+    },
+    "1428509": {
+      "name": "Hanna",
+      "original": "Unplatted townsite, named for William P. Hanna, its first postmaster.",
+      "rewrite": "Unplatted townsite named for William P. Hanna, its first postmaster."
+    },
+    "1428572": {
+      "name": "Hatch",
+      "original": "Named for Meltier Hatch, early settler.",
+      "rewrite": "Named for Meltier Hatch, early settler."
+    },
+    "1428654": {
+      "name": "Helper",
+      "original": "So named by the Denver and Rio Grande Western Railroad because at this point additional locomotives are necessary to help trains westward over the Soldier Summit divide. Earlier known as Pratts Siding.",
+      "rewrite": "Named by the Denver and Rio Grande Western Railroad because additional locomotives were needed here to help trains westward over the Soldier Summit divide. Earlier known as Pratts Siding."
+    },
+    "1428658": {
+      "name": "Henefer",
+      "original": "Named for two brothers, James and Richard Henefer, early settlers, who established a blacksmith shop here in 1859.",
+      "rewrite": "Named for two brothers, James and Richard Henefer, early settlers who established a blacksmith shop here in 1859."
+    },
+    "1428663": {
+      "name": "Henrieville",
+      "original": "Named for James Henrie, early Mormon settler.",
+      "rewrite": "Named for James Henrie, early Latter-day Saint settler."
+    },
+    "1428675": {
+      "name": "Herriman",
+      "original": "First called Butterfield for Thomas Butterfield, early settler. Later renamed Herriman for Henry Herriman, prominent resident.",
+      "rewrite": "First called Butterfield for Thomas Butterfield, early settler. Later renamed Herriman for Henry Herriman, prominent resident."
+    },
+    "1428681": {
+      "name": "Hiawatha",
+      "original": "Derived its name from a local coal mine which, for no apparent reason, was named for the Indian hero of Henry Wadsworth Longfellow's famous poem.",
+      "rewrite": "Takes its name from a local coal mine which, for no apparent reason, was named for the Native American hero of Henry Wadsworth Longfellow's famous poem."
+    },
+    "1428726": {
+      "name": "Hinckley",
+      "original": "Outgrowth of Deseret. Named for Ira N. Hinckley, one of its first settlers.",
+      "rewrite": "Outgrowth of Deseret. Named for Ira N. Hinckley, one of its first settlers."
+    },
+    "1428763": {
+      "name": "Holden",
+      "original": "Named in honor of Elijah E. Holden, early settler and member of the Mormon Battalion, who is said to have frozen to death in the mountains near-by. Formerly called Cedar Springs.",
+      "rewrite": "Named for Elijah E. Holden, early settler and member of the Mormon Battalion, who is said to have frozen to death in the nearby mountains. Formerly called Cedar Springs."
+    },
+    "1428800": {
+      "name": "Honeyville",
+      "original": "Two theories exist regarding the origin of this name. 1. That it was named by a beekeeper, Abraham Hunsaker, because of his interest in the honey industry. 2. That it was named by its Mormon settlers as a reminder of the Biblical land of Canaan, a land \"flowing with milk and honey.\"",
+      "rewrite": "Two theories exist about the origin of this name: one holds that beekeeper Abraham Hunsaker named it because of his interest in the honey industry; the other, that its Latter-day Saint settlers named it as a reminder of the Biblical land of Canaan, a land \"flowing with milk and honey.\""
+    },
+    "1428807": {
+      "name": "Hooper",
+      "original": "Named for William H. Hooper, early Utah delegate to Congress. Formerly called Muskrat Springs and Hooperville.",
+      "rewrite": "Named for William H. Hooper, early Utah delegate to Congress. Formerly called Muskrat Springs and Hooperville."
+    },
+    "1428927": {
+      "name": "Hoytsville",
+      "original": "Named for Samuel P. Hoyt, prominent resident. Formerly called Unionville.",
+      "rewrite": "Named for Samuel P. Hoyt, prominent resident. Formerly called Unionville."
+    },
+    "1428946": {
+      "name": "Huntington",
+      "original": "Derived its name from Huntington Creek, which is believed to have been named for an early explorer, William Huntington.",
+      "rewrite": "Takes its name from Huntington Creek, which is believed to have been named for an early explorer, William Huntington."
+    },
+    "1428949": {
+      "name": "Huntsville",
+      "original": "Named for Captain Jefferson Hunt of the Mormon Battalion.",
+      "rewrite": "Named for Capt. Jefferson Hunt of the Mormon Battalion."
+    },
+    "1428951": {
+      "name": "Hurricane",
+      "original": "Derived its name from Hurricane fault, which was so named by Erastus Snow, Mormon Church official, because he was caught here in a storm.",
+      "rewrite": "Takes its name from the Hurricane fault, which Erastus Snow, a leader in The Church of Jesus Christ of Latter-day Saints, named because he was caught here in a storm."
+    },
+    "1429067": {
+      "name": "Ivins",
+      "original": "Named for Anthony W. Ivins, Mormon Church official.",
+      "rewrite": "Named for Anthony W. Ivins, a leader in The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1429145": {
+      "name": "Jensen",
+      "original": "Named for Lars Jensen, who settled here in 1877 and began operation of a ferry on the Green River in 1885.",
+      "rewrite": "Named for Lars Jensen, who settled here in 1877 and began operation of a ferry on the Green River in 1885."
+    },
+    "1429276": {
+      "name": "Kanab",
+      "original": "Vacated 1866 because of Indian troubles, resettled 1871. Derived its name from Kanab Creek, which received its name from a Paiute Indian word meaning willow.",
+      "rewrite": "Settlers left in 1866 because of conflicts with Native Americans and returned in 1871. Takes its name from Kanab Creek, whose name comes from a Paiute word meaning willow."
+    },
+    "1429278": {
+      "name": "Kanarraville",
+      "original": "Named for Kanarra, leader of a Paiute Indian tribe.",
+      "rewrite": "Named for Kanarra, leader of a Paiute tribe."
+    },
+    "1429319": {
+      "name": "Kenilworth",
+      "original": "Said to have been so named because the topography of the surrounding country resembles that of the country around the Kenilworth Castle in Scotland.",
+      "rewrite": "Said to have been named because the surrounding country resembles the country around Kenilworth Castle in Scotland.",
+      "flag": "Kenilworth Castle is in England (Warwickshire), not Scotland; kept as in source."
+    },
+    "1429398": {
+      "name": "La Verkin",
+      "original": "Derived its name from a near-by creek, the name of which is of unknown origin.",
+      "rewrite": "Takes its name from a nearby creek whose name is of unknown origin."
+    },
+    "1429437": {
+      "name": "Lake Point",
+      "original": "So named because of its location on a point overlooking Great Salt Lake.",
+      "rewrite": "Named for its location on a point overlooking Great Salt Lake."
+    },
+    "1429446": {
+      "name": "Laketown",
+      "original": "So named because of its proximity to Bear Lake.",
+      "rewrite": "Named for its proximity to Bear Lake."
+    },
+    "1429476": {
+      "name": "Lapoint",
+      "original": "So named because of a spur projecting from the Uinta Mountains.",
+      "rewrite": "Named for a spur projecting from the Uinta Mountains."
+    },
+    "1429508": {
+      "name": "Leamington",
+      "original": "Named for a city in England.",
+      "rewrite": "Named for a city in England."
+    },
+    "1429602": {
+      "name": "Liberty",
+      "original": "Outgrowth of Eden. Name is of patriotic origin.",
+      "rewrite": "Outgrowth of Eden. The name is of patriotic origin."
+    },
+    "1430015": {
+      "name": "Lund",
+      "original": "Named for R. C. Lund, state legislator and local mine owner.",
+      "rewrite": "Named for R. C. Lund, state legislator and local mine owner."
+    },
+    "1430020": {
+      "name": "Lyman",
+      "original": "Named for Francis M. Lyman, Mormon Church official, one of its early settlers. First called Wilmoth.",
+      "rewrite": "Named for Francis M. Lyman, a leader in The Church of Jesus Christ of Latter-day Saints and one of its early settlers. First called Wilmoth."
+    },
+    "1430025": {
+      "name": "Lynndyl",
+      "original": "Origin of present name is unknown. Previously called Leamington Hill Junction and Lyn.",
+      "rewrite": "Origin of present name unknown. Previously called Leamington Hill Junction and Lyn."
+    },
+    "1430036": {
+      "name": "Maeser",
+      "original": "Named in honor of Dr. Karl G. Maeser, early president of Brigham Young University.",
+      "rewrite": "Named for Dr. Karl G. Maeser, early president of Brigham Young University.",
+      "flag": "Maeser led Brigham Young Academy (BYU's predecessor); \"president of Brigham Young University\" may need checking."
+    },
+    "1430037": {
+      "name": "Magna",
+      "original": "Derived its name from a near-by mine.",
+      "rewrite": "Takes its name from a nearby mine."
+    },
+    "1430198": {
+      "name": "Meadow",
+      "original": "So named because the site of the settlement was covered with rich meadowland.",
+      "rewrite": "Named for the rich meadowland that covered the site of the settlement."
+    },
+    "1430248": {
+      "name": "Mexican Hat",
+      "original": "Derived its name from a balanced boulder resembling a Mexican sombrero. The \"hat\" is more than 60 feet in diameter, 12 feet thick, and weighs 2,500 tons. It rests on a pedestal 200 feet above the valley floor.",
+      "rewrite": "Takes its name from a balanced boulder resembling a Mexican sombrero. The \"hat\" is more than 60 feet in diameter and 12 feet thick and weighs 2,500 tons. It rests on a pedestal 200 feet above the valley floor."
+    },
+    "1430307": {
+      "name": "Midvale",
+      "original": "Formerly called Bingham Junction and East Jordan; renamed Midvale in 1909 because it is a trading center for several small surrounding towns.",
+      "rewrite": "Formerly called Bingham Junction and East Jordan. Renamed Midvale in 1909 because it was a trading center for several small surrounding towns."
+    },
+    "1430310": {
+      "name": "Midway",
+      "original": "So named because it merged two small colonies at a new site midway between the former settlements.",
+      "rewrite": "Named because it merged two small colonies at a new site midway between the former settlements."
+    },
+    "1430317": {
+      "name": "Milford",
+      "original": "Derived its name from the fact that the early settlers forded Beaver River at a mill that stood near the town site.",
+      "rewrite": "Named because early settlers forded the Beaver River at a mill that stood near the town site."
+    },
+    "1430350": {
+      "name": "Mills",
+      "original": "So named because of the mills operated near-by.",
+      "rewrite": "Named for the mills operated nearby."
+    },
+    "1430376": {
+      "name": "Minersville",
+      "original": "So named because of the mines nearby.",
+      "rewrite": "Named for the nearby mines."
+    },
+    "1430389": {
+      "name": "Moab",
+      "original": "Vacated during Indian troubles, resettled 1876. There are two versions concerning the origin of the name: 1. That the settlement was named for a region in Palestine mentioned in the Bible. 2. That the name is a corruption of a Paiute Indian name \"Mohapa,\" meaning mosquito water, applied to this region because of the great number of mosquitoes along the Colorado River bottoms. First known as Elk Mountain Mission.",
+      "rewrite": "Settlers left during conflicts with Native Americans and returned in 1876. Two versions of the name's origin exist: one holds that the settlement was named for a region in Palestine mentioned in the Bible; the other, that the name is a corruption of the Paiute name \"Mohapa,\" meaning mosquito water, applied to the region because of the great number of mosquitoes along the Colorado River bottoms. First known as Elk Mountain Mission."
+    },
+    "1430394": {
+      "name": "Modena",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1430498": {
+      "name": "Moroni",
+      "original": "Named for the Angel Moroni, who is credited with appearing to Joseph Smith in connection with establishment of the Mormon Church. First called Mego for a friendly Indian, but renamed in 1859.",
+      "rewrite": "Named for the Angel Moroni, who is credited with appearing to Joseph Smith in connection with the establishment of The Church of Jesus Christ of Latter-day Saints. The town was first called Mego, for a Native American who was friendly with the settlers, and was renamed in 1859."
+    },
+    "1430521": {
+      "name": "Mount Emmons",
+      "original": "Derived its name from a high peak in the Uinta Mountains, north of the settlement. First called Banner.",
+      "rewrite": "Takes its name from a high peak in the Uinta Mountains, north of the settlement. First called Banner."
+    },
+    "1430522": {
+      "name": "Mount Pleasant",
+      "original": "Vacated 1853 because of Indian troubles, resettled 1859. So named because it is situated on an eminence, commanding a pleasant view of the surrounding country. Formerly called Fort Hamilton.",
+      "rewrite": "Settlers left in 1853 because of conflicts with Native Americans and returned in 1859. Named for its location on an eminence commanding a pleasant view of the surrounding country. Formerly called Fort Hamilton."
+    },
+    "1430527": {
+      "name": "Mountain Home",
+      "original": "So named because of its mountainous location.",
+      "rewrite": "Named for its mountainous location."
+    },
+    "1430626": {
+      "name": "Myton",
+      "original": "Named for a former post commander at Fort Duchesne.",
+      "rewrite": "Named for a former post commander at Fort Duchesne."
+    },
+    "1430636": {
+      "name": "Naples",
+      "original": "Named for Naples, England. Formerly called Merrill for Porter William Merrill, local church official.",
+      "rewrite": "Named for Naples, England. Formerly called Merrill for Porter William Merrill, a local church official.",
+      "flag": "Naples is in Italy, not England; check source."
+    },
+    "1430684": {
+      "name": "Neola",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1430705": {
+      "name": "Newton",
+      "original": "Outgrowth of Clarkston. So named to distinguish it from the older settlement.",
+      "rewrite": "An outgrowth of Clarkston. Named to distinguish it from the older settlement."
+    },
+    "1430939": {
+      "name": "Oasis",
+      "original": "Outgrowth of Deseret. So named because its green fields and orchards seem like an oasis in this desert country.",
+      "rewrite": "An outgrowth of Deseret. Named because its green fields and orchards seemed like an oasis in this desert country."
+    },
+    "1431015": {
+      "name": "Ophir",
+      "original": "Probably named for the region frequently mentioned in the Old Testament as the source of gold.",
+      "rewrite": "Probably named for the region often mentioned in the Old Testament as the source of gold."
+    },
+    "1431021": {
+      "name": "Orangeville",
+      "original": "Named for Orange Seely, early settler in Castle Valley. First called Upper Castle Dale.",
+      "rewrite": "Named for Orange Seely, an early settler in Castle Valley. First called Upper Castle Dale."
+    },
+    "1431023": {
+      "name": "Orderville",
+      "original": "So named because its Mormon settlers sought to establish the United Order, an experiment in communal life.",
+      "rewrite": "Named for the United Order, an experiment in communal life that its Latter-day Saint settlers sought to establish."
+    },
+    "1431039": {
+      "name": "Ouray",
+      "original": "Named for the Peace Chief of the White River Indians.",
+      "rewrite": "Named for the man the 1941 book called the \"Peace Chief of the White River Indians.\"",
+      "flag": "Original: \"Peace Chief of the White River Indians\" (tribe not named; White River Utes?). Ouray is usually associated with the Uncompahgre Utes; check."
+    },
+    "1431094": {
+      "name": "Paragonah",
+      "original": "Derived its name from Paiute Indian words meaning \"many springs\" or \"marshes.\"",
+      "rewrite": "Takes its name from Paiute words meaning \"many springs\" or \"marshes.\""
+    },
+    "1431110": {
+      "name": "Park Valley",
+      "original": "So named because of the foliage surrounding the area, giving it a park-like appearance.",
+      "rewrite": "Named for the foliage surrounding the area, which gave it a park-like appearance."
+    },
+    "1431465": {
+      "name": "Price",
+      "original": "Named for William Price, a Mormon leader.",
+      "rewrite": "Named for William Price, a Latter-day Saint leader."
+    },
+    "1431565": {
+      "name": "Randlett",
+      "original": "Abandoned temporarily, resettled 1905. Named for an Indian agent.",
+      "rewrite": "Settlers left temporarily and returned in 1905. Named for an Indian agent.",
+      "flag": "Kept \"Indian agent\" as a federal job title."
+    },
+    "1431567": {
+      "name": "Randolph",
+      "original": "Named for Randolph H. Stewart, who supervised the founding of the community.",
+      "rewrite": "Named for Randolph H. Stewart, who supervised the founding of the community."
+    },
+    "1431861": {
+      "name": "Riverside",
+      "original": "Outgrowth of Fielding. So named because it is situated on the bank of the Bear River.",
+      "rewrite": "An outgrowth of Fielding. Named for its location on the bank of the Bear River."
+    },
+    "1431862": {
+      "name": "Riverton",
+      "original": "Outgrowth of South Jordan. So named because of its proximity to the Jordan River.",
+      "rewrite": "An outgrowth of South Jordan. Named for its proximity to the Jordan River."
+    },
+    "1431946": {
+      "name": "Rockville",
+      "original": "So named because of the rocky nature of the soil. First called Adventure.",
+      "rewrite": "Named for the rocky nature of the soil. First called Adventure."
+    },
+    "1431989": {
+      "name": "Roosevelt",
+      "original": "Named in honor of Theodore Roosevelt, twenty-fifth President of the United States.",
+      "rewrite": "Named for President Theodore Roosevelt.",
+      "flag": "Book calls Roosevelt the 25th president (he was the 26th); number dropped."
+    },
+    "1432035": {
+      "name": "Roy",
+      "original": "Outgrowth of Hooper. Named by an early settler, David P. Peeples, for his son, Roy, who died here in pioneer days.",
+      "rewrite": "An outgrowth of Hooper. Named by an early settler, David P. Peeples, for his son, Roy, who died here in pioneer days."
+    },
+    "1432234": {
+      "name": "Santa Clara",
+      "original": "Derived its name from a near-by stream, which was so named by early travelers on the Old Spanish Trail.",
+      "rewrite": "Takes its name from a nearby stream, which early travelers on the Old Spanish Trail named."
+    },
+    "1432604": {
+      "name": "Snowville",
+      "original": "Named for Lorenzo Snow, fifth president of the Mormon Church.",
+      "rewrite": "Named for Lorenzo Snow, fifth president of The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1432728": {
+      "name": "South Jordan",
+      "original": "Outgrowth of West Jordan. So named to distinguish it from the older settlement.",
+      "rewrite": "An outgrowth of West Jordan. Named to distinguish it from the older settlement."
+    },
+    "1432753": {
+      "name": "South Salt Lake",
+      "original": "So named because it is south of Salt Lake City. Known briefly as Central Park.",
+      "rewrite": "Named for its location south of Salt Lake City. Known briefly as Central Park."
+    },
+    "1432849": {
+      "name": "Spring Glen",
+      "original": "So named by J. G. Gay of Spanish Fork because of its verdant appearance.",
+      "rewrite": "Named by J. G. Gay of Spanish Fork for its verdant appearance."
+    },
+    "1432867": {
+      "name": "Springdale",
+      "original": "So named because it is situated near three springs. Formerly called Oak Creek.",
+      "rewrite": "Named for its location near three springs. Formerly called Oak Creek."
+    },
+    "1432990": {
+      "name": "Stockton",
+      "original": "Named for Stockton, California, by soldiers from Colonel Patrick Edward Conner's California Volunteers, who established Camp Douglas (now Fort Douglas), near Salt Lake City.",
+      "rewrite": "Named for Stockton, California, by soldiers from Col. Patrick Edward Conner's California Volunteers, who established Camp Douglas (now Fort Douglas) near Salt Lake City."
+    },
+    "1432991": {
+      "name": "Stoddard",
+      "original": "Named for Judson L. Stoddard, who purchased the land from an Indian.",
+      "rewrite": "Named for Judson L. Stoddard, who purchased the land from a Native American."
+    },
+    "1433054": {
+      "name": "Summit",
+      "original": "So named because it is situated at the top of a mountain pass.",
+      "rewrite": "Named for its location at the top of a mountain pass."
+    },
+    "1433075": {
+      "name": "Sunset",
+      "original": "So named because it commands a view of the sunset on Great Salt Lake.",
+      "rewrite": "Named for its view of the sunset on Great Salt Lake."
+    },
+    "1433095": {
+      "name": "Sutherland",
+      "original": "Named for George Sutherland, former Associate Justice of the U. S. Supreme Court.",
+      "rewrite": "Named for George Sutherland, former associate justice of the U.S. Supreme Court."
+    },
+    "1433147": {
+      "name": "Syracuse",
+      "original": "Outgrowth of Hooper and Kaysville. Named for Syracuse, New York.",
+      "rewrite": "An outgrowth of Hooper and Kaysville. Named for Syracuse, New York."
+    },
+    "1433156": {
+      "name": "Tabiona",
+      "original": "Named for an Indian.",
+      "rewrite": "Named for a Native American."
+    },
+    "1433175": {
+      "name": "Talmage",
+      "original": "Named for James E. Talmage, Mormon Church official and former president of the University of Utah. Formerly known as Winn.",
+      "rewrite": "Named for James E. Talmage, a leader in The Church of Jesus Christ of Latter-day Saints and former president of the University of Utah. Formerly known as Winn."
+    },
+    "1433206": {
+      "name": "Taylorsville",
+      "original": "Named in honor of the Taylor family, early settlers.",
+      "rewrite": "Named in honor of the Taylor family, early settlers."
+    },
+    "1433664": {
+      "name": "Tremonton",
+      "original": "Named for Tremont, Illinois. Later renamed to avoid confusion with the town of Fremont, Wayne County.",
+      "rewrite": "Named for Tremont, Illinois. Later renamed to avoid confusion with the town of Fremont in Wayne County."
+    },
+    "1433666": {
+      "name": "Trenton",
+      "original": "Named for Trenton, New Jersey, former residence of Bishop William B. Preston.",
+      "rewrite": "Named for Trenton, New Jersey, former residence of Bishop William B. Preston."
+    },
+    "1433670": {
+      "name": "Tridell",
+      "original": "So named because it is situated at the confluence of three mountain dells. First known as Liberty.",
+      "rewrite": "Named for its location at the confluence of three mountain dells. First known as Liberty."
+    },
+    "1433790": {
+      "name": "Upalco",
+      "original": "Name coined from the initial letters of the Uintah Power and Light Company, which furnished power for the district.",
+      "rewrite": "Name coined from the initial letters of the Uintah Power and Light Company, which furnished power for the district."
+    },
+    "1433885": {
+      "name": "Vernal",
+      "original": "Received its present name in 1893 because the vegetation made it a green oasis in this arid valley. Formerly called Ashley Center for General William H. Ashley, early fur trader, whose men were in this region in the 1820's.",
+      "rewrite": "Received its present name in 1893 because the vegetation made it a green oasis in this arid valley. Formerly called Ashley Center for Gen. William H. Ashley, an early fur trader whose men were in this region in the 1820s."
+    },
+    "1433898": {
+      "name": "Virgin",
+      "original": "Derived its name from the Virgin River, which early Spaniards called the \"Rio Virgen.\" Jedediah Smith, who visited this region in 1826, attempted to rename the stream in honor of John Quincy Adams, sixth President of the United States, but the older name prevailed. The settlement was first known as Pocketville because the Indians called the valley by a name meaning \"hole\" or \"pocket.\"",
+      "rewrite": "Takes its name from the Virgin River, which early Spaniards called the \"Rio Virgen.\" Jedediah Smith, who visited this region in 1826, tried to rename the stream in honor of John Quincy Adams, sixth president of the United States, but the older name prevailed. The settlement was first known as Pocketville because Native Americans called the valley by a name meaning \"hole\" or \"pocket.\""
+    },
+    "1433942": {
+      "name": "Wanship",
+      "original": "Named for a friendly Indian chief.",
+      "rewrite": "Named for a Native American leader who was friendly with the settlers."
+    },
+    "1434038": {
+      "name": "Wellington",
+      "original": "Named for Justus Wellington Seeley, Jr., of the Emery County Court.",
+      "rewrite": "Named for Justus Wellington Seeley Jr. of the Emery County Court.",
+      "flag": "Spelled \"Seeley\" here but \"Seely\" in Orangeville entry; check."
+    },
+    "1434042": {
+      "name": "Wendover",
+      "original": "Derived its name from the old Anglo-Saxon verb \"wendan,\" meaning \"to go\" or \"to wind.\" This name was chosen because the Western Pacific Railroad, at this point, begins winding westward over the Desert Range.",
+      "rewrite": "Takes its name from the old Anglo-Saxon verb \"wendan,\" meaning \"to go\" or \"to wind.\" The name was chosen because the Western Pacific Railroad began winding westward over the Desert Range at this point."
+    },
+    "1434086": {
+      "name": "West Jordan",
+      "original": "So named because it is situated on the west bank of the Jordan River.",
+      "rewrite": "Named for its location on the west bank of the Jordan River."
+    },
+    "1434108": {
+      "name": "West Point",
+      "original": "So named because it is situated on a small peninsula extending into Great Salt Lake.",
+      "rewrite": "Named for its location on a small peninsula extending into Great Salt Lake."
+    },
+    "1434208": {
+      "name": "Whiterocks",
+      "original": "Derived its name from Whiterocks River, which was so named by Indians of the vicinity because of the many white rocks along its course.",
+      "rewrite": "Takes its name from the Whiterocks River, which local Native Americans named for the many white rocks along its course."
+    },
+    "1434458": {
+      "name": "Woodland",
+      "original": "So named because it is situated in a wooded area bordering the Provo River.",
+      "rewrite": "Named for its location in a wooded area bordering the Provo River."
+    },
+    "1434462": {
+      "name": "Woodruff",
+      "original": "Named for Wilford Woodruff, fourth president of the Mormon Church.",
+      "rewrite": "Named for Wilford Woodruff, fourth president of The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1434515": {
+      "name": "Yost",
+      "original": "Named for Charles Yost, first settler. Formerly called George Creek.",
+      "rewrite": "Named for Charles Yost, the first settler. Formerly called George Creek."
+    },
+    "1437483": {
+      "name": "Alta",
+      "original": "So named because of its altitude.",
+      "rewrite": "Named for its altitude."
+    },
+    "1437485": {
+      "name": "Amalga",
+      "original": "Derived its name from the Amalgamated Sugar Company, which operates a sugar beet factory here.",
+      "rewrite": "Named for the Amalgamated Sugar Company, which operated a sugar beet factory there."
+    },
+    "1437488": {
+      "name": "Arcadia",
+      "original": "So called because of its isolated location and the high bluffs surrounding the town.",
+      "rewrite": "Named for its isolated location and the high bluffs surrounding the town."
+    },
+    "1437493": {
+      "name": "Axtell",
+      "original": "Named for Axel Einerson, early settler.",
+      "rewrite": "Named for Axel Einerson, an early settler.",
+      "flag": "Name Axtell vs. Axel Einerson; check spelling/source."
+    },
+    "1437498": {
+      "name": "Bennett",
+      "original": "Named for John B. Bennett, early settler. Formerly called Cuneal.",
+      "rewrite": "Named for John B. Bennett, an early settler. Formerly called Cuneal."
+    },
+    "1437500": {
+      "name": "Beryl",
+      "original": "So called because of the semi-precious beryl stone said to have been found in this vicinity.",
+      "rewrite": "Named for the semiprecious beryl stone said to have been found in this vicinity."
+    },
+    "1437508": {
+      "name": "Boneta",
+      "original": "A variation of the Spanish word \"bonita,\" meaning pretty or beautiful. The town was so named by Peter B. Madsen, one of its founders.",
+      "rewrite": "A variation of the Spanish word \"bonita,\" meaning pretty or beautiful. Named by Peter B. Madsen, one of its founders."
+    },
+    "1437510": {
+      "name": "Boulder",
+      "original": "So called because of the large vari-colored boulders surrounding the town.",
+      "rewrite": "Named for the large multicolored boulders surrounding the town."
+    },
+    "1437513": {
+      "name": "Bridgeland",
+      "original": "So named because of the steel bridge which spans the Duchesne River at this point.",
+      "rewrite": "Named for the steel bridge that spans the Duchesne River at this point."
+    },
+    "1437516": {
+      "name": "Callao",
+      "original": "Named for Callao, Peru, by one of the town's residents who had visited South America. First called Willow Springs because of the numerous willows growing around near-by springs.",
+      "rewrite": "Named for Callao, Peru, by a town resident who had visited South America. First called Willow Springs for the many willows growing around nearby springs."
+    },
+    "1437517": {
+      "name": "Castle Rock",
+      "original": "So named because of a near-by rock formation which resembles a ruined castle.",
+      "rewrite": "Named for a nearby rock formation that resembles a ruined castle."
+    },
+    "1437520": {
+      "name": "Cedarview",
+      "original": "So named because of its situation on a mesa overlooking the surrounding cedar-covered ridges.",
+      "rewrite": "Named for its location on a mesa overlooking the surrounding cedar-covered ridges."
+    },
+    "1437529": {
+      "name": "Colton",
+      "original": "Named for an early resident. Earlier called Pleasant Valley Junction, because it is at the junction of the road into Pleasant Valley with the main highway between Salt Lake and Price.",
+      "rewrite": "Named for an early resident. Earlier called Pleasant Valley Junction because it was at the junction of the road into Pleasant Valley with the main highway between Salt Lake and Price."
+    },
+    "1437533": {
+      "name": "Cornish",
+      "original": "Named by the railroad which runs through the town. Known as Cannon until 1907.",
+      "rewrite": "Named by the railroad that runs through the town. Known as Cannon until 1907."
+    },
+    "1437554": {
+      "name": "Enoch",
+      "original": "Received its present name in 1884 because some of the settlers were living under the \"Order of Enoch\" (the United Order). First called Elk Horn Springs; and later renamed Johnsons Settlement for Joel E. Johnson, early settler.",
+      "rewrite": "Received its present name in 1884 because some of the settlers were living under the \"Order of Enoch\" (the United Order). First called Elk Horn Springs and later renamed Johnsons Settlement for Joel E. Johnson, an early settler."
+    },
+    "1437564": {
+      "name": "Fruitland",
+      "original": "So named by promoters to induce settlers to come into the area. Conditions, however, proved unsuitable for fruit raising, and the land is now used principally for grazing of livestock.",
+      "rewrite": "Named by promoters to attract settlers to the area. Conditions proved unsuitable for raising fruit, however, and the land became used principally for grazing livestock."
+    },
+    "1437575": {
+      "name": "Grover",
+      "original": "Named in 1888 in honor of Grover Cleveland, then President of the United States. First known as Carcass Creek because of the many animal carcasses found strewn along the creek banks.",
+      "rewrite": "Named in 1888 in honor of Grover Cleveland, then president of the United States. First known as Carcass Creek because of the many animal carcasses found strewn along the creek banks."
+    },
+    "1437576": {
+      "name": "Gunlock",
+      "original": "Named for William Hamblin, early settler, who, because of his ability as a hunter, had acquired the nickname \"Gunlock Will.\"",
+      "rewrite": "Named for William Hamblin, an early settler whose skill as a hunter had earned him the nickname \"Gunlock Will.\""
+    },
+    "1437585": {
+      "name": "Hayden",
+      "original": "Named of Hayden Peak which in turn was named for F. V. Hayden, government topographic engineer, who surveyed much of this region.",
+      "rewrite": "Named for Hayden Peak, which in turn was named for F. V. Hayden, a government topographic engineer who surveyed much of this region."
+    },
+    "1437588": {
+      "name": "Hillsdale",
+      "original": "Two theories exist as to the origin of the name Hillsdale: 1. That it was so named because it is situated in a small valley surrounded by hills. 2. That it was named for Joel Hills Johnson, an early settler.",
+      "rewrite": "Two explanations exist: one holds that it was named for its location in a small valley surrounded by hills; the other, that it was named for Joel Hills Johnson, an early settler."
+    },
+    "1437591": {
+      "name": "Howell",
+      "original": "Named in honor of U. S. Congressman Joseph Howell.",
+      "rewrite": "Named in honor of U.S. Rep. Joseph Howell."
+    },
+    "1437592": {
+      "name": "Ibapah",
+      "original": "Derived its name from the Gosiute Indian word \"Avin-pa.\" \"Avim\" means \"white clay,\" and \"pa\" means \"water.\" Also known as Deep Creek.",
+      "rewrite": "Takes its name from the Gosiute word \"Avin-pa.\" \"Avim\" means \"white clay,\" and \"pa\" means \"water.\" Also known as Deep Creek.",
+      "flag": "\"Avin-pa\" vs. \"Avim\" spelling mismatch in source; check."
+    },
+    "1437593": {
+      "name": "Independence",
+      "original": "Abandoned 1912. Origin of name unknown.",
+      "rewrite": "Abandoned in 1912. Origin of name unknown."
+    },
+    "1437594": {
+      "name": "Ioka",
+      "original": "Named for a Ute Indian chief.",
+      "rewrite": "Named for a Ute leader."
+    },
+    "1437621": {
+      "name": "Leeton",
+      "original": "Named for Henry Lee, who established a store here in 1910.",
+      "rewrite": "Named for Henry Lee, who established a store here in 1910."
+    },
+    "1437622": {
+      "name": "Leota",
+      "original": "Outgrowth of Randlett. Origin of name is unknown.",
+      "rewrite": "An outgrowth of Randlett. Origin of name unknown."
+    },
+    "1437639": {
+      "name": "Mohrland",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1437640": {
+      "name": "Molen",
+      "original": "Named for Michael W. Molen, early settler. Formerly called Lower Ferron.",
+      "rewrite": "Named for Michael W. Molen, an early settler. Formerly called Lower Ferron."
+    },
+    "1437651": {
+      "name": "Notom",
+      "original": "First called Pleasant Creek, but because there were several towns of that name, Postmaster Jergen Smith was instructed by the U. S. Post Office Department to find another name. Several names were submitted and Notom was selected. The origin of the name is unknown.",
+      "rewrite": "First called Pleasant Creek, but because several towns had that name, the U.S. Post Office Department instructed Postmaster Jergen Smith to find another name. Several names were submitted and Notom was selected. The origin of the name is unknown."
+    },
+    "1437656": {
+      "name": "Penrose",
+      "original": "Named for Charles W. Penrose, editor, poet, composer, and Mormon Church official.",
+      "rewrite": "Named for Charles W. Penrose, an editor, poet and composer and a leader in The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1437696": {
+      "name": "Sugarville",
+      "original": "So named because of the importance of the sugar beet industry. First called Omaha for Omaha, Nebraska. Later renamed Alfalfa because alfalfa was the most important crop raised by the settlers.",
+      "rewrite": "Named for the importance of the sugar beet industry. First called Omaha for Omaha, Nebraska, and later renamed Alfalfa because alfalfa was the most important crop the settlers raised."
+    },
+    "1437700": {
+      "name": "Thatcher",
+      "original": "Named for Moses Thatcher, Mormon Church official.",
+      "rewrite": "Named for Moses Thatcher, a leader in The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1437707": {
+      "name": "Trout Creek",
+      "original": "Derived its name from a near-by creek.",
+      "rewrite": "Named for a nearby creek."
+    },
+    "1437709": {
+      "name": "Upton",
+      "original": "So named because it was \"up the creek\" from Coalville. Formerly known as Huffville.",
+      "rewrite": "Named because it was \"up the creek\" from Coalville. Formerly known as Huffville."
+    },
+    "1437719": {
+      "name": "Westwater",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1437769": {
+      "name": "Gandy",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1437974": {
+      "name": "Eureka",
+      "original": "Derived its name from the Greek word meaning \"I have found it,\" and was so named because of important ore discoveries in the vicinity.",
+      "rewrite": "Takes its name from the Greek word meaning \"I have found it,\" chosen because of important ore discoveries in the vicinity."
+    },
+    "1438174": {
+      "name": "Alpine",
+      "original": "So named because of its mountainous location. Formerly called Mountainville for the same reason.",
+      "rewrite": "Named for its mountainous location. Formerly called Mountainville for the same reason."
+    },
+    "1438182": {
+      "name": "Alton",
+      "original": "Vacated during Indian troubles, resettled 1878. So named because of its altitude. Formerly called Graham, probably for a pioneer family.",
+      "rewrite": "Settlers left during conflicts with Native Americans and returned in 1878. Named for its altitude. Formerly called Graham, probably for a pioneer family."
+    },
+    "1438194": {
+      "name": "American Fork",
+      "original": "Derived its name from American Fork Creek, which flows through the town. The stream was so named in contrast to Spanish Fork Creek, 30 miles farther south. The town was formerly called Lake City because of its proximity to Utah Lake; and McArthurville, probably for an early settler.",
+      "rewrite": "Takes its name from American Fork Creek, which flows through the town. The stream was named in contrast to Spanish Fork Creek, 30 miles farther south. The town was formerly called Lake City, for its proximity to Utah Lake, and McArthurville, probably for an early settler."
+    },
+    "1438228": {
+      "name": "Annabella",
+      "original": "Named for two of the first women settlers of the town, Ann S. Roberts and Isabella Dalton. The name was first applied to a near-by spring, and later transferred to the settlement.",
+      "rewrite": "Named for two of the first women settlers of the town, Ann S. Roberts and Isabella Dalton. The name was first applied to a nearby spring and later transferred to the settlement."
+    },
+    "1438250": {
+      "name": "Antimony",
+      "original": "So named because of a near-by deposit of antimony ore. Formerly called Coyote because of the large number of coyotes in this region.",
+      "rewrite": "Named for a nearby deposit of antimony ore. Formerly called Coyote because of the large number of coyotes in the region."
+    },
+    "1438307": {
+      "name": "Aurora",
+      "original": "Named for the Roman Goddess of Dawn, because of the tinted hills surrounding the valley. First called Willow Bend because it is situated near a willowed bend of the Sevier River.",
+      "rewrite": "Named for the Roman goddess of dawn, because of the tinted hills surrounding the valley. First called Willow Bend because it is near a willowed bend of the Sevier River."
+    },
+    "1438313": {
+      "name": "Avon",
+      "original": "Named for Stratford-on-Avon, birthplace of William Shakespeare.",
+      "rewrite": "Named for Stratford-on-Avon, birthplace of William Shakespeare."
+    },
+    "1438487": {
+      "name": "Bear River City",
+      "original": "Derived its name from the Bear River, near which it is situated. The stream acquired this name because of the numerous black bears which formerly inhabited the region surrounding its headwaters.",
+      "rewrite": "Takes its name from the Bear River, near which it is located. The stream was named for the numerous black bears that once inhabited the region around its headwaters."
+    },
+    "1438510": {
+      "name": "Beaver",
+      "original": "Derived its name from the Beaver River, which flows through the town. The stream was so named because of the numerous colonies of beaver along its course.",
+      "rewrite": "Takes its name from the Beaver River, which flows through the town. The stream was named for the numerous colonies of beaver along its course."
+    },
+    "1438593": {
+      "name": "Benjamin",
+      "original": "Named for Benjamin F. Stewart, one of its founders.",
+      "rewrite": "Named for Benjamin F. Stewart, one of its founders."
+    },
+    "1438623": {
+      "name": "Bicknell",
+      "original": "Named for Thomas W. Bicknell, who, in 1914, offered a library to any town in Utah that would take his name. Two towns accepted--Thurber (Wayne County) and Grayson (San Juan County). A compromise was effected: Thurber became Bicknell, and Grayson became Blanding, taking the maiden name of Bicknell's wife.",
+      "rewrite": "Named for Thomas W. Bicknell, who in 1914 offered a library to any town in Utah that would take his name. Two towns accepted, Thurber (Wayne County) and Grayson (San Juan County). Under a compromise, Thurber became Bicknell and Grayson became Blanding, taking the maiden name of Bicknell's wife."
+    },
+    "1438817": {
+      "name": "Birdseye",
+      "original": "Derived its name from the near-by quarries of bird's-eye marble.",
+      "rewrite": "Named for the nearby quarries of bird's-eye marble."
+    },
+    "1438903": {
+      "name": "Blanding",
+      "original": "Named for the wife of Thomas W. Bicknell. Formerly called Grayson, in honor of Nellie Lyman Grayson, pioneer settler.",
+      "rewrite": "Named for the wife of Thomas W. Bicknell. Formerly called Grayson, in honor of Nellie Lyman Grayson, pioneer settler."
+    },
+    "1439039": {
+      "name": "Bountiful",
+      "original": "Named for a Book of Mormon city. Formerly called Sessions Settlement, in honor of Perrigrine Sessions, its founder.",
+      "rewrite": "Named for a Book of Mormon city. Formerly called Sessions Settlement, in honor of Perrigrine Sessions, its founder."
+    },
+    "1439109": {
+      "name": "Brigham City",
+      "original": "Named in honor of Brigham Young. First called Box Elder.",
+      "rewrite": "Named in honor of Brigham Young. First called Box Elder."
+    },
+    "1439115": {
+      "name": "Brighton",
+      "original": "A mountain resort named for Thomas W. Brighton who built some of the first houses here.",
+      "rewrite": "A mountain resort named for Thomas W. Brighton, who built some of the first houses here."
+    },
+    "1439380": {
+      "name": "Burrville",
+      "original": "Named for the Burr family, its first settlers.",
+      "rewrite": "Named for the Burr family, its first settlers."
+    },
+    "1439421": {
+      "name": "Cache Junction",
+      "original": "Outgrowth of Benson. So named because it is an important railroad junction in Cache County.",
+      "rewrite": "Outgrowth of Benson. Named for its position as an important railroad junction in Cache County."
+    },
+    "1439607": {
+      "name": "Center Creek",
+      "original": "Derived its name from the creek that flows from the central part of the mountains near the settlement.",
+      "rewrite": "Named for the creek that flows from the central part of the mountains near the settlement."
+    },
+    "1439622": {
+      "name": "Centerville",
+      "original": "So named because it is centrally located between Farmington and Bountiful.",
+      "rewrite": "Named for its central location between Farmington and Bountiful."
+    },
+    "1439624": {
+      "name": "Central",
+      "original": "So called because it occupies a central location from Enterprise, Gunlock, Veyo and Pine Valley.",
+      "rewrite": "Named for its central location relative to Enterprise, Gunlock, Veyo and Pine Valley."
+    },
+    "1439662": {
+      "name": "Chester",
+      "original": "Named for a town in England. First called Canal Creek, taking the name of the stream from which the settlement obtained irrigation water.",
+      "rewrite": "Named for a town in England. First called Canal Creek, for the stream from which the settlement obtained irrigation water."
+    },
+    "1439749": {
+      "name": "Circleville",
+      "original": "So named because of the circular-shaped valley in which it is situated.",
+      "rewrite": "Named for the circular valley in which it is located."
+    },
+    "1439788": {
+      "name": "Clear Creek",
+      "original": "So named, paradoxically, because the water is extremely muddy.",
+      "rewrite": "Named, paradoxically, because its water is extremely muddy."
+    },
+    "1439799": {
+      "name": "Clearfield",
+      "original": "Outgrowth of Syracuse. So named because it is situated in clear and open country.",
+      "rewrite": "Outgrowth of Syracuse. Named for its location in clear, open country."
+    },
+    "1439895": {
+      "name": "Collinston",
+      "original": "Named for Collins Fullmer, Utah Northern Railroad conductor. Formerly called Hampton for Ben Hampton, operator of an early toll ferry across Bear River.",
+      "rewrite": "Named for Collins Fullmer, a Utah Northern Railroad conductor. Formerly called Hampton for Ben Hampton, operator of an early toll ferry across the Bear River."
+    },
+    "1439951": {
+      "name": "Corinne",
+      "original": "Probably named for J. A. Williamson's daughter, first white child born here. Formerly called \"Burg on the Bear\" because of its proximity to the Bear River.",
+      "rewrite": "Probably named for J. A. Williamson's daughter, the first child born to settlers here. Formerly called \"Burg on the Bear\" for its proximity to the Bear River."
+    },
+    "1440063": {
+      "name": "Cove",
+      "original": "Origin of name unknown. First called Coveville. Later the name was shortened to avoid confusion with Coalville.",
+      "rewrite": "Origin of name unknown. First called Coveville; the name was later shortened to avoid confusion with Coalville."
+    },
+    "1440921": {
+      "name": "Elsinore",
+      "original": "Named for a Danish city by Joseph A. Young, early Mormon settler.",
+      "rewrite": "Named for a Danish city by Joseph A. Young, an early Latter-day Saint settler."
+    },
+    "1440926": {
+      "name": "Emery",
+      "original": "First called Muddy Creek, taking the name of the near-by stream.",
+      "rewrite": "First called Muddy Creek, for the nearby stream.",
+      "flag": "Entry does not explain the current name."
+    },
+    "1440940": {
+      "name": "Enterprise",
+      "original": "So named by early residents from Hebron who considered their new settlement an enterprising community.",
+      "rewrite": "Named by early residents from Hebron who considered their new settlement an enterprising community."
+    },
+    "1440944": {
+      "name": "Ephraim",
+      "original": "Named for a Biblical character. First called Pine Creek because of the evergreens bordering the canyon stream east of the settlement.",
+      "rewrite": "Named for a biblical figure. First called Pine Creek for the evergreens bordering the canyon stream east of the settlement."
+    },
+    "1440956": {
+      "name": "Escalante",
+      "original": "Named in honor of Francisco Silvestre Velez de Escalante, Spanish priest, who explored Utah in 1776, although the route he traveled was 150 miles to the west. First called Spud Valley.",
+      "rewrite": "Named for Francisco Silvestre Velez de Escalante, a Spanish priest who explored Utah in 1776, although the route he traveled was 150 miles to the west. First called Spud Valley."
+    },
+    "1440983": {
+      "name": "Fairview",
+      "original": "So named because it commands a picturesque view of Sanpete Valley. Formerly called North Bend because it is situated on a bend of the San Pitch River.",
+      "rewrite": "Named for its picturesque view of Sanpete Valley. Formerly called North Bend because it is located on a bend of the San Pitch River."
+    },
+    "1441004": {
+      "name": "Farmington",
+      "original": "Received its present name because of the farming activities of its residents. First called North Cottonwood because of the cottonwood trees that grew along the stream from which the settlers obtained water. Also formerly called Miller's Settlement for Daniel A. Miller, early settler.",
+      "rewrite": "Named for the farming activities of its residents. First called North Cottonwood for the cottonwood trees that grew along the stream from which the settlers obtained water. Also formerly called Miller's Settlement for Daniel A. Miller, an early settler."
+    },
+    "1441012": {
+      "name": "Farr West",
+      "original": "So named because it was west of Farr's Fort. Formerly known as West Harrisville.",
+      "rewrite": "Named for its location west of Farr's Fort. Formerly known as West Harrisville."
+    },
+    "1441026": {
+      "name": "Ferron",
+      "original": "Named in honor of A. D. Ferron, pioneer surveyor of Castle Valley.",
+      "rewrite": "Named for A. D. Ferron, pioneer surveyor of Castle Valley."
+    },
+    "1441035": {
+      "name": "Fielding",
+      "original": "Named in honor of Joseph Fielding Smith, sixth president of the Mormon Church. Formerly called South Plymouth because it is south of the older settlement of Plymouth.",
+      "rewrite": "Named for Joseph Fielding Smith, sixth president of The Church of Jesus Christ of Latter-day Saints. Formerly called South Plymouth because it is south of the older settlement of Plymouth."
+    },
+    "1441039": {
+      "name": "Fillmore",
+      "original": "Named in honor of Millard Fillmore, thirteenth President of the United States. Fillmore was the Territorial capital of Utah, 1851-56.",
+      "rewrite": "Named for Millard Fillmore, 13th president of the United States. Fillmore was the territorial capital of Utah from 1851 to 1856."
+    },
+    "1441187": {
+      "name": "Fountain Green",
+      "original": "So named because of the green meadows and a large spring on the town site. Formerly called Uintah Springs.",
+      "rewrite": "Named for the green meadows and a large spring on the town site. Formerly called Uintah Springs."
+    },
+    "1441224": {
+      "name": "Freedom",
+      "original": "Name is of patriotic origin. First called Draper for a family of early settlers.",
+      "rewrite": "The name is patriotic in origin. First called Draper for a family of early settlers."
+    },
+    "1441231": {
+      "name": "Fremont",
+      "original": "Named for John C. Fremont, U. S. Army officer, who explored Utah in the 1840's.",
+      "rewrite": "Named for John C. Fremont, a U.S. Army officer who explored Utah in the 1840s."
+    },
+    "1441249": {
+      "name": "Fruita",
+      "original": "So named because of the suitability of the soil and climate for raising fruit.",
+      "rewrite": "Named for the soil and climate, which were well suited to raising fruit."
+    },
+    "1441332": {
+      "name": "Glenwood",
+      "original": "Named for Robert Wilson Glenn, early pioneer. First called Glencove.",
+      "rewrite": "Named for Robert Wilson Glenn, an early pioneer. First called Glencove."
+    },
+    "1441617": {
+      "name": "Harrisville",
+      "original": "Named for Martin Harris, witness to the \"Book of Mormon,\" and uncle of William H. Harris, one of the first settlers of this community.",
+      "rewrite": "Named for Martin Harris, a witness to the Book of Mormon and uncle of William H. Harris, one of the first settlers of this community."
+    },
+    "1441631": {
+      "name": "Hatton",
+      "original": "Origin of present name unknown. Formerly named Petersburg for Peter Robinson, one of the first settlers of this region.",
+      "rewrite": "Origin of present name unknown. Formerly called Petersburg for Peter Robinson, one of the first settlers of the region."
+    },
+    "1441810": {
+      "name": "Holladay",
+      "original": "So named in 1911 for John Holladay, early settler on Cottonwood Creek.",
+      "rewrite": "Named in 1911 for John Holladay, an early settler on Cottonwood Creek."
+    },
+    "1441964": {
+      "name": "Hyde Park",
+      "original": "Named for William Hyde, early settler.",
+      "rewrite": "Named for William Hyde, an early settler."
+    },
+    "1441968": {
+      "name": "Hyrum",
+      "original": "Named for Hyrum Smith, brother of Joseph Smith, founder of the Mormon Church.",
+      "rewrite": "Named for Hyrum Smith, brother of Joseph Smith, founder of The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1442039": {
+      "name": "Indianola",
+      "original": "So named because the site was selected for the farms of Indians protected by the Mormon Church.",
+      "rewrite": "The name refers to the site's purpose: it was chosen for the farms of Native Americans, set up with help from The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1442224": {
+      "name": "Joseph",
+      "original": "Named for Joseph A. Young, first president of Sevier Stake of the Mormon Church.",
+      "rewrite": "Named for Joseph A. Young, first president of the Sevier Stake of The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1442250": {
+      "name": "Junction",
+      "original": "So named because of its location at the junction of the east and south forks of the Sevier River.",
+      "rewrite": "Named for its location at the junction of the east and south forks of the Sevier River."
+    },
+    "1442266": {
+      "name": "Kamas",
+      "original": "Derived its name from a Nootka Indian word \"chamas\" which, through a series of changes, became \"camass,\" a word used to identify several plants, the bulbs of which were staple food for the Indians of western United States. In a broader sense, the word is used to designate \"a small grassy plain among hills,\" which is a good description of the topography of this region. It was first called Rhoades Valley, for Thomas Rhoades, early settler; later renamed Kamas Prairie, and finally Kamas.",
+      "rewrite": "Takes its name from the Nootka word \"chamas,\" which through a series of changes became \"camass,\" a word for several plants whose bulbs were a staple food for Native Americans of the western United States. In a broader sense, the word designates \"a small grassy plain among hills,\" a good description of the topography of this region. It was first called Rhoades Valley, for Thomas Rhoades, an early settler; later renamed Kamas Prairie; and finally Kamas."
+    },
+    "1442277": {
+      "name": "Kanosh",
+      "original": "Named for Kanosh, a Pahvant Indian chief whose tribe was converted to Mormonism. The settlement was first called Corn Creek because the Indians raised corn here.",
+      "rewrite": "Named for Kanosh, a Pahvant leader whose people joined the Latter-day Saint faith. The settlement was first called Corn Creek because Native Americans raised corn here."
+    },
+    "1442285": {
+      "name": "Kaysville",
+      "original": "Received its present name following a consultation with Brigham Young, when he objected to the suggested name of Freedom, exclaiming, \"When did Kay's Ward get its freedom?\" It was originally called Kays Ward in honor of William Kay, Mormon bishop.",
+      "rewrite": "Received its present name after a consultation with Brigham Young, who objected to the suggested name of Freedom, exclaiming, \"When did Kay's Ward get its freedom?\" It was originally called Kays Ward, for William Kay, a Latter-day Saint bishop."
+    },
+    "1442334": {
+      "name": "Kingston",
+      "original": "Named for the King family, its first settlers.",
+      "rewrite": "Named for the King family, its first settlers."
+    },
+    "1442357": {
+      "name": "Koosharem",
+      "original": "Believed to have derived its name from a carrot-like plant, the roots of which were eaten by the Indians.",
+      "rewrite": "Believed to be named for a carrot-like plant whose roots were eaten by Native Americans."
+    },
+    "1442376": {
+      "name": "La Sal",
+      "original": "Derived its name from the La Sal Mountains, so named by F. V. Hayden, government surveyor.",
+      "rewrite": "Takes its name from the La Sal Mountains, named by F. V. Hayden, a government surveyor.",
+      "flag": "La Sal is a Spanish name that likely predates Hayden's survey; verify attribution."
+    },
+    "1442459": {
+      "name": "Layton",
+      "original": "Outgrowth of Kaysville. Named for Christopher Layton, member of the Mormon Battalion and early bishop of Kaysville.",
+      "rewrite": "Outgrowth of Kaysville. Named for Christopher Layton, a member of the Mormon Battalion and early bishop of Kaysville."
+    },
+    "1442480": {
+      "name": "Leeds",
+      "original": "Outgrowth of Harrisburg. Named for Leeds, England, by Mormon converts from that locality. First called Bennington, in honor of Benjamin Stringham.",
+      "rewrite": "Outgrowth of Harrisburg. Named for Leeds, England, by Latter-day Saint converts from that area. First called Bennington, in honor of Benjamin Stringham."
+    },
+    "1442553": {
+      "name": "Lehi",
+      "original": "Named for a Book of Mormon leader who is said to have brought his people from Jerusalem to colonize America.",
+      "rewrite": "Named for a Book of Mormon leader who is said to have brought his people from Jerusalem to colonize America."
+    },
+    "1442564": {
+      "name": "Levan",
+      "original": "Derived its name from the Latin word \"Levant,\" which designates the point where the sun rises--the East. Many of its first settlers came here from the abandoned settlement of Chicken Creek.",
+      "rewrite": "Takes its name from the Latin word \"Levant,\" which designates the point where the sun rises, the East. Many of its first settlers came from the abandoned settlement of Chicken Creek.",
+      "flag": "\"Levant\" is French, not Latin; verify."
+    },
+    "1442573": {
+      "name": "Lewiston",
+      "original": "Named for William H. Lewis, first Mormon bishop of the town.",
+      "rewrite": "Named for William H. Lewis, the town's first Latter-day Saint bishop."
+    },
+    "1442630": {
+      "name": "Lindon",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1442822": {
+      "name": "Loa",
+      "original": "So named because of the volcano-like appearance of a mountain near the settlement. Franklin B. Young, who had served as a Mormon missionary in the Hawaiian Island, suggested that the town be named for the volcano Mauna Loa.",
+      "rewrite": "Named for the volcano-like appearance of a nearby mountain. Franklin B. Young, who had served as a Latter-day Saint missionary in the Hawaiian Islands, suggested naming the town for the volcano Mauna Loa.",
+      "flag": "Original says \"Hawaiian Island\"; rewritten as \"Hawaiian Islands\"."
+    },
+    "1442849": {
+      "name": "Logan",
+      "original": "It derived its name from Logan's Fort, which in turn received its name from the river near which it was built. The river is said to have been named for Ephraim Logan, early trapper, who explored this region in the 1820's.",
+      "rewrite": "Takes its name from Logan's Fort, which in turn was named for the river near which it was built. The river is said to have been named for Ephraim Logan, an early trapper who explored the region in the 1820s."
+    },
+    "1443051": {
+      "name": "Lynn",
+      "original": "Corruption of Lind, the family name of a group of Swedish immigrants who were early settlers here.",
+      "rewrite": "A corruption of Lind, the family name of a group of Swedish immigrants who were early settlers here."
+    },
+    "1443126": {
+      "name": "Manila",
+      "original": "Named in 1898 by Adolph Jessen, surveyor, in commemoration of Admiral Dewey's victory over the Spanish fleet at Manila, Philippine Islands. First called Chambers, for an associate of Jessen. Also called Lewisallen.",
+      "rewrite": "Named in 1898 by Adolph Jessen, a surveyor, to commemorate Admiral Dewey's victory over the Spanish fleet at Manila, Philippine Islands. First called Chambers, for an associate of Jessen. Also called Lewisallen."
+    },
+    "1443136": {
+      "name": "Manti",
+      "original": "Named for a Book of Mormon town, at the suggestion of Isaac Morley and Brigham Young.",
+      "rewrite": "Named for a Book of Mormon town, at the suggestion of Isaac Morley and Brigham Young."
+    },
+    "1443141": {
+      "name": "Mantua",
+      "original": "Named by Lorenzo Snow, fifth president of the Mormon Church, for the town of his nativity, Mantua, Ohio. It had a number of earlier names, including Little Valley, Flaxville, and Geneva.",
+      "rewrite": "Named by Lorenzo Snow, fifth president of The Church of Jesus Christ of Latter-day Saints, for his birthplace, Mantua, Ohio. It had several earlier names, including Little Valley, Flaxville and Geneva."
+    },
+    "1443189": {
+      "name": "Mapleton",
+      "original": "Outgrowth of Springville. So named because of the wild maples in the near-by mountains.",
+      "rewrite": "Outgrowth of Springville. Named for the wild maples in the nearby mountains."
+    },
+    "1443196": {
+      "name": "Marion",
+      "original": "Named for Francis Marion Lyman, Mormon Church official, for whom the town Lyman was also named.",
+      "rewrite": "Named for Francis Marion Lyman, a leader in The Church of Jesus Christ of Latter-day Saints, for whom the town of Lyman was also named."
+    },
+    "1443220": {
+      "name": "Marysvale",
+      "original": "Named for the Virgin Mary by a group of Catholic miners.",
+      "rewrite": "Named for the Virgin Mary by a group of Catholic miners."
+    },
+    "1443237": {
+      "name": "Mayfield",
+      "original": "So named because of the pleasing appearance of the settlement. First called Arrapene, for a friendly Ute Indian chief who lived here.",
+      "rewrite": "Named for the pleasing appearance of the settlement. First called Arrapene, for a Ute leader who lived here and was friendly with the settlers."
+    },
+    "1443288": {
+      "name": "Meadowville",
+      "original": "So named because of the lush meadows surrounding the settlement.",
+      "rewrite": "Named for the lush meadows surrounding the settlement."
+    },
+    "1443385": {
+      "name": "Milburn",
+      "original": "Outgrowth of Fairview. So named because of the mills built at the mouth of a near-by canyon.",
+      "rewrite": "Outgrowth of Fairview. Named for the mills built at the mouth of a nearby canyon."
+    },
+    "1443496": {
+      "name": "Millville",
+      "original": "So named because the first sawmill in Cache Valley was operated here.",
+      "rewrite": "Named for the first sawmill in Cache Valley, which operated here."
+    },
+    "1443548": {
+      "name": "Mona",
+      "original": "Origin uncertain, but it is believed that the name is a contraction of the Italian word, Madonna.",
+      "rewrite": "Origin uncertain, but the name is believed to be a contraction of the Italian word Madonna."
+    },
+    "1443556": {
+      "name": "Monroe",
+      "original": "Vacated during Indian troubles, resettled 1870. Named in honor of James Monroe, fifth President of the United States.",
+      "rewrite": "Settlers left during conflicts with Native Americans and returned in 1870. Named for James Monroe, fifth president of the United States."
+    },
+    "1443568": {
+      "name": "Monticello",
+      "original": "Named for President Thomas Jefferson's summer residence in Virginia. Formerly called Hammond.",
+      "rewrite": "Named for President Thomas Jefferson's summer residence in Virginia. Formerly called Hammond.",
+      "flag": "Monticello was Jefferson's primary home, not a summer residence; verify."
+    },
+    "1443578": {
+      "name": "Moore",
+      "original": "Named in 1940 for L. C. Moore, who became manager of a land development project here in 1907. Formerly called Rochester for the New York home-town of M. B. Whitney, promoter of the Independent Canal and Reservoir Company, which was incorporated in 1894 to develop the land in this vicinity.",
+      "rewrite": "Named in 1940 for L. C. Moore, who became manager of a land development project here in 1907. Formerly called Rochester for the New York hometown of M. B. Whitney, promoter of the Independent Canal and Reservoir Company, which was incorporated in 1894 to develop the land in this area."
+    },
+    "1443742": {
+      "name": "Murray",
+      "original": "Named in honor of Eli H. Murray, Territorial Governor of Utah, 1880-86.",
+      "rewrite": "Named for Eli H. Murray, territorial governor of Utah from 1880 to 1886."
+    },
+    "1443793": {
+      "name": "Nephi",
+      "original": "Named for a Book of Mormon character. First called Salt Creek, taking the name of the stream near which it is situated. The stream was so named because of near-by salt deposits.",
+      "rewrite": "Named for a Book of Mormon figure. First called Salt Creek, for the stream near which it is located. The stream was named for nearby salt deposits."
+    },
+    "1443808": {
+      "name": "New Harmony",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1443812": {
+      "name": "Newcastle",
+      "original": "So named because of the castle-like formation of the mountains near the town.",
+      "rewrite": "Named for the castle-like formation of the mountains near the town."
+    },
+    "1443962": {
+      "name": "North Ogden",
+      "original": "Vacated because of Indian uprising, resettled in 1851. Outgrowth of Ogden. So named because it is north of this city.",
+      "rewrite": "Settlers left because of tensions with Native Americans and returned in 1851. Outgrowth of Ogden. Named for its location north of Ogden."
+    },
+    "1443971": {
+      "name": "North Salt Lake",
+      "original": "So named because it is north of Salt Lake City.",
+      "rewrite": "Named for its location north of Salt Lake City."
+    },
+    "1444013": {
+      "name": "Oak City",
+      "original": "Derived its name from the creek near which the town is situated.",
+      "rewrite": "Named for the creek near the town."
+    },
+    "1444043": {
+      "name": "Oakley",
+      "original": "Believed to have derived its name from the profuse growth of oak brush in the vicinity.",
+      "rewrite": "Believed to be named for the abundant oak brush in the area."
+    },
+    "1444049": {
+      "name": "Ogden",
+      "original": "Derived its name from Ogden River, which in turn was named for Peter Skene Ogden, Hudson's Bay Company brigade leader, who was in this vicinity in the 1820's. Miles Goodyear, about the winter of 1844-45, established a post here which he called Fort Buenaventura, taking the name of a mythical stream which was thought by early explorers to drain the Great Basin region, emptying into San Francisco Bay. Colonization of the area, however, did not begin until 1848, after Goodyear sold his property to the Mormon Church. The settlement was first called Brownsville for James Brown, early settler, who represented the Mormon Church in purchasing Goodyear's land and livestock. The name was changed to Ogden in 1850 when the General Assembly of Deseret created Weber County.",
+      "rewrite": "Named for the Ogden River, which in turn was named for Peter Skene Ogden, a Hudson's Bay Company brigade leader who was in the area in the 1820s. Around the winter of 1844-45, Miles Goodyear established a post here called Fort Buenaventura, after a mythical stream that early explorers thought drained the Great Basin region and emptied into San Francisco Bay. Settlement of the area did not begin until 1848, after Goodyear sold his property to The Church of Jesus Christ of Latter-day Saints. The settlement was first called Brownsville for James Brown, an early settler who represented the church in buying Goodyear's land and livestock. The name was changed to Ogden in 1850, when the General Assembly of Deseret created Weber County."
+    },
+    "1444110": {
+      "name": "Orem",
+      "original": "Named for W. C. Orem, the builder of the electric interurban railroad which runs through the town.",
+      "rewrite": "Named for W. C. Orem, builder of the electric interurban railroad that ran through the town."
+    },
+    "1444167": {
+      "name": "Palmyra",
+      "original": "Named for Palmyra, New York, birthplace of Joseph Smith, founder of the Mormon Church.",
+      "rewrite": "Named for Palmyra, New York, birthplace of Joseph Smith, founder of The Church of Jesus Christ of Latter-day Saints."
+    },
+    "1444170": {
+      "name": "Panguitch",
+      "original": "Vacated 1867 because of Indian troubles, resettled 1871. Derived its name from Panguitch Lake, which received its name from the Paiute Indian words meaning \"water\" and \"fish.\"",
+      "rewrite": "Settlers left in 1867 because of conflicts with Native Americans and returned in 1871. Named for Panguitch Lake, whose name comes from the Paiute words meaning \"water\" and \"fish.\""
+    },
+    "1444178": {
+      "name": "Paradise",
+      "original": "So named because of the beauty of its surroundings.",
+      "rewrite": "Named for the beauty of its surroundings."
+    },
+    "1444206": {
+      "name": "Park City",
+      "original": "Derived its name from Parleys Park, a near-by tract of land developed by Parley P. Pratt, Mormon pioneer and church official, who built a toll road from Park City through Parleys Canyon to Salt Lake City.",
+      "rewrite": "Takes its name from Parleys Park, a nearby tract of land developed by Parley P. Pratt, a Latter-day Saint pioneer and church leader who built a toll road from Park City through Parleys Canyon to Salt Lake City."
+    },
+    "1444224": {
+      "name": "Parowan",
+      "original": "Derived its name from an Indian word meaning \"evil water.\" First named Louisa for Louisa Beeman, one of the first Mormon women to consent to plural marriage. Although the valley was called Little Salt Lake by a band of Mormon explorers, this name was seldom used.",
+      "rewrite": "Takes its name from a Native American word meaning \"evil water.\" First named Louisa for Louisa Beeman, one of the first Latter-day Saint women to consent to plural marriage. A band of Latter-day Saint explorers called the valley Little Salt Lake, but this name was seldom used."
+    },
+    "1444252": {
+      "name": "Payson",
+      "original": "Named for James Pace, one of its founders. First called Peeteetneet for an Indian chief.",
+      "rewrite": "Named for James Pace, one of its founders. First called Peeteetneet for a Native American leader."
+    },
+    "1444282": {
+      "name": "Peoa",
+      "original": "Said to have derived its name from an Indian word meaning \"marry.\"",
+      "rewrite": "Said to take its name from a Native American word meaning \"marry.\""
+    },
+    "1444301": {
+      "name": "Peterson",
+      "original": "Named for Charles Shreeve Peterson, early settler. First called Weber City because of its proximity to Weber River.",
+      "rewrite": "Named for Charles Shreeve Peterson, an early settler. First called Weber City because of its proximity to the Weber River."
+    },
+    "1444412": {
+      "name": "Pine Valley",
+      "original": "So named because of the pine forests surrounding the settlement.",
+      "rewrite": "Named for the pine forests surrounding the settlement."
+    },
+    "1444434": {
+      "name": "Pintura",
+      "original": "Derived its name from a Spanish word meaning painting. So named because of the bright colored hills near the townsite. Formerly called Belleview because of the beautiful view presented from the dugway on the old Black Ridge wagon road.",
+      "rewrite": "Takes its name from a Spanish word meaning painting. Named for the brightly colored hills near the townsite. Formerly called Belleview for the beautiful view from the dugway on the old Black Ridge wagon road."
+    },
+    "1444471": {
+      "name": "Plain City",
+      "original": "So named because it is situated on an open plain. A consolidation of Skeen, North Weber, and Poplar.",
+      "rewrite": "Named for its location on an open plain. A consolidation of Skeen, North Weber and Poplar."
+    },
+    "1444479": {
+      "name": "Pleasant Grove",
+      "original": "So named because of the cottonwood grove on the settlement site. Formerly called Battle Creek because it was the scene of the first battle in Utah between the Indians and the Mormon settlers.",
+      "rewrite": "Named for the cottonwood grove on the settlement site. Formerly called Battle Creek because it was the scene of the first battle in Utah between Native Americans and Latter-day Saint settlers."
+    },
+    "1444486": {
+      "name": "Pleasant View",
+      "original": "Outgrowth of North Ogden. So named because it is situated on the foothills of the Wasatch Mountains and commands an excellent view of Great Salt Lake and the surrounding valley.",
+      "rewrite": "An outgrowth of North Ogden. Named for its location on the foothills of the Wasatch Mountains, which gives it an excellent view of Great Salt Lake and the surrounding valley."
+    },
+    "1444488": {
+      "name": "Plymouth",
+      "original": "Named for Plymouth, Massachusetts. Formerly called Squaretown, because the first four families of settlers built their houses on the adjoining corners of four sections of land.",
+      "rewrite": "Named for Plymouth, Massachusetts. Formerly called Squaretown because the first four families of settlers built their houses on the adjoining corners of four sections of land."
+    },
+    "1444594": {
+      "name": "Porterville",
+      "original": "Named for Sanford Porter, one of the first settlers.",
+      "rewrite": "Named for Sanford Porter, one of the first settlers."
+    },
+    "1444657": {
+      "name": "Providence",
+      "original": "So named because the early settlers felt that this section of the country had been divinely blessed. Formerly called Spring Creek, taking the early name of Providence Creek, near which the settlement is situated.",
+      "rewrite": "Named for the early settlers' belief that this section of the country had been divinely blessed. Formerly called Spring Creek, the early name of Providence Creek, near which the settlement sits."
+    },
+    "1444661": {
+      "name": "Provo",
+      "original": "Named for Etienne Provot, French-Canadian trapper, who visited this region in the 1820's. First called Fort Utah.",
+      "rewrite": "Named for Etienne Provot, a French-Canadian trapper who visited the region in the 1820s. First called Fort Utah.",
+      "flag": "Trapper's surname is usually spelled Provost; check spelling."
+    },
+    "1444843": {
+      "name": "Redmond",
+      "original": "So named because of red-colored mounds west of the town.",
+      "rewrite": "Named for the red mounds west of the town."
+    },
+    "1444889": {
+      "name": "Richfield",
+      "original": "Vacated 1867 because of Indian troubles, resettled 1870. So named because of the richness of the soil. First called Omni for a Book of Mormon character.",
+      "rewrite": "Settlers left in 1867 because of conflicts with Native Americans and returned in 1870. Named for the richness of the soil. First called Omni for a Book of Mormon character."
+    },
+    "1444892": {
+      "name": "Richmond",
+      "original": "There are two theories as to the origin of this name: 1. That it was named for Charles Coulson Rich, early settler and Mormon Church official. 2. That it was so named because of the rich loamy soil.",
+      "rewrite": "Two theories exist about the name: one holds that it was named for Charles Coulson Rich, an early settler and a leader in The Church of Jesus Christ of Latter-day Saints; the other, that it was named for the rich, loamy soil."
+    },
+    "1444992": {
+      "name": "Riverdale",
+      "original": "Outgrowth of Ogden. So named because of its proximity to Weber River. Formerly called Stringtown because the first houses were built principally along a single road in a long \"string\" extending southeast from Ogden. First called Jack Thompson's Settlement, for John C. Thompson, early settler. Also temporarily called Union.",
+      "rewrite": "An outgrowth of Ogden. Named for its proximity to the Weber River. Formerly called Stringtown because the first houses were built mainly along a single road in a long \"string\" extending southeast from Ogden. First called Jack Thompson's Settlement, for John C. Thompson, an early settler. Also temporarily called Union."
+    },
+    "1445146": {
+      "name": "Rosette",
+      "original": "So named because of the abundance of wild roses in this vicinity.",
+      "rewrite": "Named for the abundance of wild roses in the area."
+    },
+    "1445262": {
+      "name": "Salem",
+      "original": "Named for Salem (Jerusalem) Palestine. First called Pond Town because of a large natural pond near the settlement.",
+      "rewrite": "Named for Salem (Jerusalem), Palestine. First called Pond Town because of a large natural pond near the settlement."
+    },
+    "1445269": {
+      "name": "Salina",
+      "original": "Vacated 1866 because of Indian troubles, resettled 1871. Derived its name from Salina Creek, which received its name from the Spanish word meaning salt, because of the large deposits of rock salt in the vicinity.",
+      "rewrite": "Settlers left in 1866 because of conflicts with Native Americans and returned in 1871. Named for Salina Creek, whose name comes from the Spanish word meaning salt, because of the large deposits of rock salt nearby."
+    },
+    "1445329": {
+      "name": "Santaquin",
+      "original": "Named for a Ute Indian leader. Formerly called Summit Creek, taking the name of the stream that flows through the settlement.",
+      "rewrite": "Named for a Ute leader. Formerly called Summit Creek, after the stream that flows through the settlement."
+    },
+    "1445376": {
+      "name": "Scipio",
+      "original": "Named for a famous Roman warrior, at the suggestion of Brigham Young. First called Round Valley, because it is situated in a circular-shaped valley.",
+      "rewrite": "Named for a famous Roman warrior, at the suggestion of Brigham Young. First called Round Valley because it sits in a circular valley."
+    },
+    "1445380": {
+      "name": "Scofield",
+      "original": "Named for General Charles W. Scofield.",
+      "rewrite": "Named for Gen. Charles W. Scofield."
+    },
+    "1445446": {
+      "name": "Sevier",
+      "original": "So called because it is situated on the Sevier River and at the mouth of Sevier Canyon.",
+      "rewrite": "Named for its location on the Sevier River at the mouth of Sevier Canyon."
+    },
+    "1445583": {
+      "name": "Sigurd",
+      "original": "Outgrowth of Vermilion. Origin of name unknown.",
+      "rewrite": "An outgrowth of Vermilion. Origin of name unknown."
+    },
+    "1445709": {
+      "name": "Smithfield",
+      "original": "Named for John G. Smith, early settler.",
+      "rewrite": "Named for John G. Smith, an early settler."
+    },
+    "1445755": {
+      "name": "Snyderville",
+      "original": "Named for G. G. Snyder, who shipped the first ore from the Park City mining district.",
+      "rewrite": "Named for G. G. Snyder, who shipped the first ore from the Park City mining district."
+    },
+    "1445910": {
+      "name": "South Ogden",
+      "original": "Outgrowth of Ogden. So named because it is south of Ogden. Formerly called Burch Creek for a pioneer family which settled here in 1848.",
+      "rewrite": "An outgrowth of Ogden. Named for its location south of Ogden. Formerly called Burch Creek for a pioneer family that settled here in 1848."
+    },
+    "1445935": {
+      "name": "South Weber",
+      "original": "So named because it is on the south side of the Weber River.",
+      "rewrite": "Named for its location on the south side of the Weber River."
+    },
+    "1445945": {
+      "name": "Spanish Fork",
+      "original": "Derived its name from Spanish Fork Creek, which was so named because the Old Spanish Trail followed by Father Escalante in 1776 closely paralleled it.",
+      "rewrite": "Named for Spanish Fork Creek, which got its name because the Old Spanish Trail followed by Father Escalante in 1776 closely paralleled it.",
+      "flag": "Escalante's 1776 route predates the Old Spanish Trail; check wording."
+    },
+    "1445992": {
+      "name": "Spring City",
+      "original": "Vacated 1853, resettled 1859. So named because of the springs on the settlement site.",
+      "rewrite": "Settlers left in 1853 and returned in 1859. Named for the springs on the settlement site."
+    },
+    "1446051": {
+      "name": "Spring Lake",
+      "original": "So named because of a near-by small lake formed by several springs. Known as Spring Lake Villa prior to 1862.",
+      "rewrite": "Named for a small nearby lake formed by several springs. Known as Spring Lake Villa before 1862."
+    },
+    "1446057": {
+      "name": "Springville",
+      "original": "So named because of a large spring near the townsite. First called Hobble Creek for a near-by stream which was so named by a group of traders who, while camped near the creek, lost a pair of hobbles from their bell horse.",
+      "rewrite": "Named for a large spring near the townsite. First called Hobble Creek for a nearby stream, named by a group of traders who lost a pair of hobbles from their bell horse while camped near the creek."
+    },
+    "1446134": {
+      "name": "Sterling",
+      "original": "Origin of present name unknown. First named Pettyville for the Petty family, early settlers. Later called Leesburg, Buncetown, and Pettytown.",
+      "rewrite": "Origin of present name unknown. First named Pettyville for the Petty family, early settlers. Later called Leesburg, Buncetown and Pettytown."
+    },
+    "1446361": {
+      "name": "Teasdale",
+      "original": "Named for George Teasdale, Mormon Church official and early pioneer.",
+      "rewrite": "Named for George Teasdale, a leader in The Church of Jesus Christ of Latter-day Saints and an early pioneer."
+    },
+    "1446533": {
+      "name": "Thistle",
+      "original": "So named because of the prolific growth of wild thistles in this region.",
+      "rewrite": "Named for the abundant wild thistles in the region."
+    },
+    "1446655": {
+      "name": "Toquerville",
+      "original": "Named for Chief Toquer. Toquer is a Ute Indian word meaning \"black.\"",
+      "rewrite": "Named for Toquer, a Native American leader. Toquer is a Ute word meaning \"black.\"",
+      "flag": "Toquer is often described as a Paiute leader; check whether the word is Ute or Paiute."
+    },
+    "1446658": {
+      "name": "Torrey",
+      "original": "Named in honor of Colonel Torrey of Wyoming, who fought in the Spanish-American War. First called Poverty Flat.",
+      "rewrite": "Named in honor of Col. Torrey of Wyoming, who fought in the Spanish-American War. First called Poverty Flat.",
+      "flag": "Col. Jay L. Torrey's regiment reportedly never saw combat; check \"fought.\""
+    },
+    "1446722": {
+      "name": "Tropic",
+      "original": "So named because of its warm climate as compared to that of Panguitch from which its first settlers came.",
+      "rewrite": "Named for its warm climate compared with that of Panguitch, where its first settlers came from."
+    },
+    "1446835": {
+      "name": "Uintah",
+      "original": "Named for a Ute Indian tribe. First called East Weber, and later, Easton, because it was settled on the east bank of the Weber River. At first the railroad called the local station Deseret, but later changed the name to Uintah, and the town subsequently adopted the same name.",
+      "rewrite": "Named for a Ute tribe. First called East Weber, and later Easton, because it was settled on the east bank of the Weber River. The railroad at first called the local station Deseret but later changed the name to Uintah, and the town then adopted the same name."
+    },
+    "1446921": {
+      "name": "Venice",
+      "original": "Outgrowth of Glenwood. Named for Venice, Italy. First called Wallsville in honor of William Wall, early settler.",
+      "rewrite": "An outgrowth of Glenwood. Named for Venice, Italy. First called Wallsville in honor of William Wall, an early settler."
+    },
+    "1446932": {
+      "name": "Vernon",
+      "original": "Named for Joseph Vernon, early settler, who was killed by Indians.",
+      "rewrite": "Named for Joseph Vernon, an early settler said to have been killed by Native Americans.",
+      "flag": "Killing not confirmed in other sources; hedged with \"said to have been.\""
+    },
+    "1446936": {
+      "name": "Veyo",
+      "original": "Name coined from the words \"verdure\" and \"youth\" by a group of Mormon Beehive Girls.",
+      "rewrite": "Name coined from the words \"verdure\" and \"youth\" by a group of Latter-day Saint Beehive Girls."
+    },
+    "1446954": {
+      "name": "Wales",
+      "original": "Named for the British principality. Formerly called Coalville because of the early discovery of coal in this vicinity.",
+      "rewrite": "Named for the British principality. Formerly called Coalville because of the early discovery of coal in the area."
+    },
+    "1446968": {
+      "name": "Wallsburg",
+      "original": "Named for William W. Wall, early settler.",
+      "rewrite": "Named for William W. Wall, an early settler."
+    },
+    "1446995": {
+      "name": "Warren",
+      "original": "Named for Lewis Warren Shurtliff, early settler. First known as Salt Creek.",
+      "rewrite": "Named for Lewis Warren Shurtliff, an early settler. First known as Salt Creek."
+    },
+    "1447016": {
+      "name": "Washakie",
+      "original": "Named for a Shoshone leader who was friendly to the early settlers of northern Utah.",
+      "rewrite": "Named for a Shoshone leader who was friendly with the early settlers of northern Utah."
+    },
+    "1447019": {
+      "name": "Washington",
+      "original": "Named in honor of George Washington, first President of the United States.",
+      "rewrite": "Named in honor of George Washington, first president of the United States."
+    },
+    "1447103": {
+      "name": "Wellsville",
+      "original": "Named for Daniel H. Wells, pioneer settler.",
+      "rewrite": "Named for Daniel H. Wells, a pioneer settler."
+    },
+    "1447187": {
+      "name": "West Weber",
+      "original": "So named to distinguish it from East Weber and South Weber, near-by settlements. Composed of the older settlements of Alma, Weston, Taylorsville and Garland.",
+      "rewrite": "Named to distinguish it from East Weber and South Weber, nearby settlements. Made up of the older settlements of Alma, Weston, Taylorsville and Garland."
+    },
+    "1447328": {
+      "name": "Widtsoe",
+      "original": "Vacated. Named in honor of John A. Widtsoe, Mormon Church official and former president of the University of Utah. First called Windor, and later Houston.",
+      "rewrite": "Vacated. Named in honor of John A. Widtsoe, a leader in The Church of Jesus Christ of Latter-day Saints and former president of the University of Utah. First called Windor, and later Houston."
+    },
+    "1447372": {
+      "name": "Willard",
+      "original": "Named for Willard Richards, counselor to Brigham Young. First called North Willow Creek, taking the early name of the stream near which the first settlement was made.",
+      "rewrite": "Named for Willard Richards, counselor to Brigham Young. First called North Willow Creek, the early name of the stream near which the first settlement was made."
+    },
+    "1447521": {
+      "name": "Woods Cross",
+      "original": "Derived its name from a railroad crossing near the farm of Daniel C. Wood. From Woods Crossing, the name was shortened to Woods Cross.",
+      "rewrite": "Named for a railroad crossing near the farm of Daniel C. Wood. The name was shortened from Woods Crossing to Woods Cross."
+    },
+    "1449150": {
+      "name": "Vineyard",
+      "original": "Outgrowth of Lakeview. So named because early settlers devoted many acres to the raising of grapes.",
+      "rewrite": "An outgrowth of Lakeview. Named for the many acres early settlers devoted to growing grapes."
+    },
+    "1450235": {
+      "name": "Austin",
+      "original": "Origin of name unknown.",
+      "rewrite": "Origin of name unknown."
+    },
+    "1450429": {
+      "name": "Mendon",
+      "original": "Named for Mendon, Worcester County, Massachusetts, birthplace of Ezra T. Benson, first Mormon apostle to live in Cache Valley.",
+      "rewrite": "Named for Mendon, Worcester County, Massachusetts, birthplace of Ezra T. Benson, the first Latter-day Saint apostle to live in Cache Valley."
+    },
+    "1451119": {
+      "name": "Mammoth",
+      "original": "Received its name in 1870 following the discovery of rich ore in the Mammoth mine in the near-by mountains.",
+      "rewrite": "Named in 1870 after the discovery of rich ore in the Mammoth mine in the nearby mountains."
+    },
+    "1454595": {
+      "name": "Flowell",
+      "original": "So named because of a large number of flowing wells in the town. The local church and most of the homes are constructed of black volcanic rock. First known as Crystal.",
+      "rewrite": "Named for the many flowing wells in the town. The local church and most of the homes were built of black volcanic rock. First known as Crystal."
+    },
+    "1454997": {
+      "name": "Salt Lake City",
+      "original": "Derived its name from Great Salt Lake, which was so named because of the extreme salinity of its water. Until 1868 the settlement was called Great Salt Lake City.",
+      "rewrite": "Named for Great Salt Lake, which was named for the extreme salinity of its water. The settlement was called Great Salt Lake City until 1868."
+    },
+    "1455092": {
+      "name": "Deweyville",
+      "original": "Named for John C. Dewey, one of its first settlers.",
+      "rewrite": "Named for John C. Dewey, one of its first settlers."
+    },
+    "1455096": {
+      "name": "Milton",
+      "original": "So named because of a grist mill built here in 1864 by George W. Taggart and the Hinman brothers.",
+      "rewrite": "Named for a gristmill built here in 1864 by George W. Taggart and the Hinman brothers."
+    },
+    "1455098": {
+      "name": "St. George",
+      "original": "Named for George A. Smith, counselor to Brigham Young.",
+      "rewrite": "Named for George A. Smith, counselor to Brigham Young."
+    },
+    "1455150": {
+      "name": "Perry",
+      "original": "Named for the Perry family, early settlers. First called Porter Springs for Orin Porter Rockwell, early land owner. Later called Three-Mile Creek because it is near a stream three miles south of Brigham City.",
+      "rewrite": "Named for the Perry family, early settlers. First called Porter Springs for Orrin Porter Rockwell, an early landowner. Later called Three-Mile Creek because it is near a stream three miles south of Brigham City.",
+      "flag": "Book spells it Orin; corrected to Orrin."
+    },
+    "1455878": {
+      "name": "Heber",
+      "original": "Named for Heber C. Kimball, early pioneer and counselor to Brigham Young.",
+      "rewrite": "Named for Heber C. Kimball, an early pioneer and counselor to Brigham Young."
+    },
+    "1455905": {
+      "name": "Sandy",
+      "original": "So named because of the sandy nature of the soil.",
+      "rewrite": "Named for the sandy soil."
+    },
+    "1681817": {
+      "name": "Portage",
+      "original": "Named for Portage County, Ohio, birthplace of Lorenzo Snow, fifth president of the Mormon Church. Formerly called Hay Town because of the large fields of hay grown by the early settlers.",
+      "rewrite": "Named for Portage County, Ohio, birthplace of Lorenzo Snow, fifth president of The Church of Jesus Christ of Latter-day Saints. Formerly called Hay Town because of the large fields of hay grown by the early settlers."
+    },
+    "1867579": {
+      "name": "Millcreek",
+      "original": "Derived its name from the stream on which it is situated.",
+      "rewrite": "Named for the stream on which it sits."
+    },
+    "2408067": {
+      "name": "Elberta",
+      "original": "Formerly called Mount Nebo for a near-by mountain peak. In 1905 it was changed to Elberta because many orchards of Elberta peaches were planted here.",
+      "rewrite": "Formerly called Mount Nebo for a nearby mountain peak. The name was changed to Elberta in 1905 because many orchards of Elberta peaches were planted here."
+    },
+    "UGRC-beaver-dam-box-elder": {
+      "name": "Beaver Dam",
+      "original": "So named because of the beaver dams along the stream near which the settlement was established.",
+      "rewrite": "Named for the beaver dams along the stream near which the settlement was established."
+    },
+    "UGRC-cove-fort-millard": {
+      "name": "Cove Fort",
+      "original": "Built during the Indian wars of the 1860's. Believed to have received its name because of the protection and shelter of the surrounding mountains.",
+      "rewrite": "Built during conflicts with Native Americans in the 1860s. Believed to have been named for the protection and shelter of the surrounding mountains."
+    },
+    "UGRC-iosepa-tooele": {
+      "name": "Iosepa",
+      "original": "Named for a group of Mormon converts from the Hawaiian Islands who attempted to establish a settlement here. Iosepa is Hawaiian for \"Joseph\" and was selected as a name in honor of Joseph F. Smith, who served several missions to the islands and who later became president of the Mormon Church.",
+      "rewrite": "Named for a group of Latter-day Saint converts from the Hawaiian Islands who tried to establish a settlement here. Iosepa is Hawaiian for \"Joseph\" and was chosen in honor of Joseph F. Smith, who served several missions to the islands and later became president of The Church of Jesus Christ of Latter-day Saints."
+    },
+    "UGRC-pinto-washington": {
+      "name": "Pinto",
+      "original": "Spanish word for \"painted\" or \"mottled.\" So named because of the vari-colored geologic formations around the area.",
+      "rewrite": "Spanish word for \"painted\" or \"mottled.\" Named for the multicolored geologic formations in the area."
+    },
+    "UGRC-promontory-point-box-elder": {
+      "name": "Promontory Point",
+      "original": "So named because it is situated on the point of the promontory projecting into the north end of Great Salt Lake.",
+      "rewrite": "Named for its location on the point of the promontory projecting into the north end of Great Salt Lake."
+    },
+    "UGRC-stockmore-duchesne": {
+      "name": "Stockmore",
+      "original": "Origin of name uncertain.",
+      "rewrite": "Origin of name uncertain."
+    },
+    "UGRC-tintic-juab": {
+      "name": "Tintic",
+      "original": "Named for an Indian chief.",
+      "rewrite": "Named for a Native American leader."
+    },
+    "UGRC-west-warren-weber": {
+      "name": "West Warren",
+      "original": "Outgrowth of Warren. So named because it is west of the older settlement.",
+      "rewrite": "An outgrowth of Warren. Named for its location west of the older settlement."
+    },
+    "UGRC-woodrow-millard": {
+      "name": "Woodrow",
+      "original": "Named in honor of Woodrow Wilson, twenty-seventh President of the United States.",
+      "rewrite": "Named for President Woodrow Wilson.",
+      "flag": "Book calls Wilson the 27th president (he was the 28th); number dropped."
+    }
+  }
+}

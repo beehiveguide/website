@@ -1,0 +1,68 @@
+{
+  "gnis": {
+    "name": "USGS GNIS",
+    "url": "https://www.usgs.gov/u.s.-board-on-geographic-names/download-gnis-data",
+    "publicUrl": "https://www.usgs.gov/programs/national-geospatial-program/national-map",
+    "folder": "gnis",
+    "downloaded": ""
+  },
+  "census": {
+    "name": "2020 Census",
+    "url": "https://www.census.gov/data/tables/2023/dec/2020-census-dhc.html",
+    "folder": "census",
+    "downloaded": ""
+  },
+  "ugrcPop": {
+    "name": "UGRC Populated Places 2010",
+    "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/PopPlacePts2010_Approx/FeatureServer",
+    "publicUrl": "https://gis.utah.gov/",
+    "folder": "ugrc/populated-places",
+    "downloaded": ""
+  },
+  "ugrc": {
+    "name": "UGRC SGID",
+    "url": "https://gis.utah.gov/products/sgid/",
+    "publicUrl": "https://gis.utah.gov/",
+    "folder": "ugrc",
+    "downloaded": ""
+  },
+  "history": {
+    "name": "Origins of Utah Place Names",
+    "url": "https://www.familysearch.org/library/books/records/item/528621-origins-of-utah-place-names",
+    "folder": "books",
+    "downloaded": ""
+  },
+  "phone": {
+    "name": "NANPA",
+    "url": "https://nanpa.com/reports/co-code-reports/cocodes_assign",
+    "publicUrl": "https://nanpa.com/",
+    "folder": "nanpa",
+    "downloaded": ""
+  },
+  "zone": {
+    "name": "USDA Plant Hardiness Zone Map",
+    "url": "https://prism.oregonstate.edu/phzm",
+    "publicUrl": "https://planthardiness.ars.usda.gov/",
+    "folder": "usda",
+    "downloaded": ""
+  },
+  "precip": {
+    "name": "PRISM Climate Group",
+    "url": "https://prism.oregonstate.edu/explorer/",
+    "folder": "prism",
+    "downloaded": ""
+  },
+  "usps": {
+    "name": "USPS Locator",
+    "url": "https://tools.usps.com/locations/",
+    "folder": "usps",
+    "downloaded": ""
+  },
+  "censusCounties": {
+    "name": "U.S. Census Bureau county boundaries (2010, 1:20,000,000)",
+    "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html",
+    "folder": "census/county-boundaries",
+    "downloaded": "2026-10-18",
+    "note": "Utah counties filtered from the GeoJSON copy at github.com/plotly/datasets (geojson-counties-fips.json). Coarse; replace with UGRC county boundaries for detail."
+  }
+}

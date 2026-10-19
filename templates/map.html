@@ -1,0 +1,174 @@
+<link rel="stylesheet" href="leaflet/leaflet.css" />
+<style>
+  /* Search bar on top, then the map filling the rest of the screen */
+  body { display: flex; flex-direction: column; min-height: 100vh; }
+  main { display: flex; flex-direction: column; flex: 1 0 auto; min-height: 70vh; }
+  .map-wrap { position: relative; flex: 1 1 auto; }
+  #full-map { position: absolute; inset: 0; }
+  .map-bar { position: relative; z-index: 1010; } /* results drop over the map */
+  .map-search-box { position: relative; max-width: 26rem; flex: 1 1 18rem; }
+  .map-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 0 0 0.25rem 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  .map-results:empty { display: none; }
+  .map-results button {
+    display: block;
+    width: 100%;
+    padding: 0.35rem 0.75rem;
+    text-align: left;
+    background: none;
+    border: 0;
+    border-top: 1px solid #dee2e6;
+    color: #212529;
+  }
+  .map-results button:hover,
+  .map-results button:focus { background-color: #f8f9fa; }
+</style>
+
+<div class="map-bar bg-light-gradient border-bottom shadow">
+  <div class="container-fluid px-lg-5 py-2 d-flex flex-wrap align-items-center gap-2">
+    <h1 class="fs-6 fw-bold lh-base mb-0 me-2"><label for="map-search"><svg viewBox="0 0 100 100" class="map-bar-icon me-1" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M50.00 0.76 L92.64 25.38 L92.64 74.62 L50.00 99.24 L7.36 74.62 L7.36 25.38 Z M46.10 11.33 Q50.00 9.08 53.90 11.33 L81.54 27.29 Q85.44 29.54 85.44 34.04 L85.44 65.96 Q85.44 70.46 81.54 72.71 L53.90 88.67 Q50.00 90.92 46.10 88.67 L18.46 72.71 Q14.56 70.46 14.56 65.96 L14.56 34.04 Q14.56 29.54 18.46 27.29 Z"/><path fill="currentColor" fill-rule="evenodd" transform="translate(50 51) scale(1.15) translate(-50 -50)" d="M34.55 30 H53.1 V38 H65.45 V70 H34.55 Z"/></svg>Find a community</label></h1>
+    <div class="map-search-box">
+      <input id="map-search" type="search" class="form-control" placeholder="Enter a town or city name ..." autocomplete="off" />
+      <div id="map-results" class="map-results font-sans small"></div>
+    </div>
+  </div>
+</div>
+<div class="map-wrap">
+  <div id="full-map" role="region" aria-label="Map of Utah communities"></div>
+  <a href="{About URL}" class="map-corner-btn btn btn-light-box font-sans">&copy; {Year} {Site Name}.</a>
+</div>
+
+<script src="leaflet/leaflet.js"></script>
+<script src="js/maps.js"></script>
+<script>
+  (() => {
+    // Courthouse after the county link when the town is the county seat (not a link)
+    const SEAT_ICON = {Seat Icon JSON};
+    // Town popup, shared with town pages (templates/parts/town-popup.html)
+    const POPUP = {Town Popup JSON};
+    // [name, county, lat, lng, page, county seat (1 or 0)] for every community
+    const places = {Map Places JSON};
+    const map = beehiveMap("full-map", { zoomControl: false });
+    // Zoom buttons on the right so they don't sit on the panel
+    L.control.zoom({ position: "topright" }).addTo(map);
+
+    const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    const directions = (lat, lng) => [
+      ["Google Maps", `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`],
+      ["Apple Maps", `https://maps.apple.com/?daddr=${lat},${lng}`],
+      ["OpenStreetMap", `https://www.openstreetmap.org/directions?to=${lat}%2C${lng}`],
+    ].map(([n, u]) => `<a href="${u}" class="link-dark">${n}</a>`).join(" &middot; ");
+
+    // A small dot for every community; the chosen one gets a pin
+    const dots = places.map(([name, county, lat, lng], i) =>
+      L.circleMarker([lat, lng], { radius: 5, color: "#fff", weight: 1.5, fillColor: "#cc4b0c", fillOpacity: 1 })
+        .bindTooltip(esc(name))
+        .on("click", () => choose(i))
+        .addTo(map));
+    let pin;
+
+    const DOT = { radius: 5, fillOpacity: 1, opacity: 1 };
+    const resetDots = () => dots.forEach((d) => d.setStyle(DOT).setRadius(5));
+    let outline;
+    const clearCounty = () => { if (outline) { outline.remove(); outline = null; } resetDots(); };
+    const slug = (page) => page.replace(/^.*\//, "").replace(/\.html$/, "");
+
+    function choose(i, fly = true) {
+      const [name, county, lat, lng, page, seat] = places[i];
+      clearCounty();
+      showOverview(false);
+      if (pin) pin.remove();
+      if (fly) map.setView([lat, lng], 13);
+      const fillPopup = (v) => Object.entries(v).reduce((h, [k, x]) => h.split(k).join(x), POPUP);
+      pin = L.marker([lat, lng]).addTo(map)
+        .bindPopup(fillPopup({
+          "{Popup Town}": `<a href="${page}" class="marker-link link-icon font-zilla me-2">${esc(name)}, Utah</a>`,
+          "{Popup County}": `<a href="?county=${encodeURIComponent(county)}" class="link-secondary county-link" data-county="${esc(county)}">${esc(county)} County</a>`,
+          "{Popup Seat}": seat ? SEAT_ICON : "",
+          "{Popup Directions}": directions(lat, lng),
+        }), { minWidth: 300, maxWidth: 380, className: "town-popup" })
+        .openPopup();
+      history.replaceState(null, "", `?town=${encodeURIComponent(slug(page))}`);
+    }
+
+    // County view: its outline and its towns' dots highlighted
+    const outlines = {County Outlines JSON};
+    function chooseCounty(county) {
+      clearCounty();
+      showOverview(false);
+      if (pin) { pin.remove(); pin = null; }
+      const inCounty = places.map((p, i) => [p, i]).filter(([p]) => p[1] === county);
+      if (!inCounty.length) return;
+      dots.forEach((d, i) => {
+        const yes = places[i][1] === county;
+        d.setStyle(yes ? DOT : { fillOpacity: 0.35, opacity: 0.35 }).setRadius(yes ? 6 : 4);
+      });
+      const shape = outlines && outlines[county];
+      if (shape) {
+        outline = L.geoJSON(shape, { style: { color: "#fff", weight: 3, opacity: 0.9, fill: false } }).addTo(map);
+        map.fitBounds(outline.getBounds(), { padding: [20, 20] });
+      } else {
+        map.fitBounds(L.latLngBounds(inCounty.map(([p]) => [p[2], p[3]])), { padding: [40, 40] });
+      }
+      history.replaceState(null, "", `?county=${encodeURIComponent(county)}`);
+    }
+    // County links in a pin's popup switch views without reloading the page
+    document.getElementById("full-map").addEventListener("click", (e) => {
+      const c = e.target.closest(".county-link");
+      if (c) { e.preventDefault(); chooseCounty(c.dataset.county); }
+    });
+
+    // Search: town names only; Enter picks the first match
+    const search = document.getElementById("map-search");
+    const results = document.getElementById("map-results");
+    let matches = [];
+    search.addEventListener("input", () => {
+      const q = search.value.trim().toLowerCase();
+      matches = q ? places.map((p, i) => [p, i]).filter(([p]) => p[0].toLowerCase().includes(q))
+        .sort(([a], [b]) => a[0].toLowerCase().indexOf(q) - b[0].toLowerCase().indexOf(q) || a[0].localeCompare(b[0]))
+        .slice(0, 8) : [];
+      results.innerHTML = matches.map(([p, i]) =>
+        `<button type="button" data-i="${i}">${esc(p[0])} <span class="text-secondary">(${esc(p[1])})</span></button>`).join("");
+    });
+    search.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && matches.length) { e.preventDefault(); pick(matches[0][1]); }
+    });
+    results.addEventListener("click", (e) => {
+      const b = e.target.closest("button");
+      if (b) pick(Number(b.dataset.i));
+    });
+    function pick(i) {
+      search.value = "";
+      results.innerHTML = "";
+      matches = [];
+      choose(i);
+    }
+
+    // Statewide view: every county line plus a heavier state line. Shown when
+    // no town or county is picked.
+    const state = {State Outline JSON};
+    const overview = L.layerGroup();
+    if (outlines) Object.values(outlines).forEach((g) =>
+      L.geoJSON(g, { interactive: false, style: { color: "#fff", weight: 1, opacity: 0.6, fill: false } }).addTo(overview));
+    if (state) L.geoJSON(state, { interactive: false, style: { color: "#fff", weight: 3, opacity: 0.95, fill: false } }).addTo(overview);
+    const showOverview = (on) => on ? overview.addTo(map) : overview.remove();
+
+    // Start on the community or county named in the address
+    // (map.html?town=kanab or map.html?county=Kane), or show the whole state
+    const params = new URLSearchParams(location.search);
+    const start = places.findIndex((p) => slug(p[4]) === params.get("town"));
+    if (start >= 0) choose(start);
+    else if (params.get("county") && places.some((p) => p[1] === params.get("county"))) chooseCounty(params.get("county"));
+    else {
+      showOverview(true);
+      map.fitBounds(L.latLngBounds(places.map((p) => [p[2], p[3]])), { padding: [20, 20] });
+    }
+  })();
+</script>

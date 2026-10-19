@@ -1,0 +1,41 @@
+{
+  "name": "Beehive Guide",
+  "nameBox": "Guide",
+  "tagline": "Community Info for Utah",
+  "url": "https://beehiveguide.net",
+  "cleanLinks": false,
+  "prefixReveal": 15,
+  "homePhoto": "bryce-canyon-hoodoos-2",
+  "email": "beehiveguide@gmail.com",
+  "socialHandle": "@beehiveguide",
+  "social": [
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/beehiveguide/"
+    },
+    {
+      "name": "Threads",
+      "url": "https://www.threads.com/@beehiveguide"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/@beehiveguide"
+    }
+  ],
+  "ads": {
+    "mode": "off",
+    "client": "",
+    "slots": {
+      "home-top": "",
+      "home-bottom-1": "",
+      "home-bottom-2": "",
+      "home-bottom-3": "",
+      "town-top": "",
+      "town-middle": "",
+      "town-bottom-1": "",
+      "town-bottom-2": "",
+      "town-bottom-3": ""
+    }
+  },
+  "consentBanner": true
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "bryce-canyon-hoodoos",
+    "original": "../drive/photos/originals/hanna-may-_HcJ5LuKdXk-unsplash.jpg",
+    "originalWidth": 5065,
+    "originalHeight": 3377,
+    "web": {
+      "desktop": {
+        "file": "static/images/bryce-bg.webp",
+        "width": 2400,
+        "height": 1600
+      },
+      "mobile": {
+        "file": "static/images/bryce-bg-mobile.webp",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    "location": "Bryce Canyon National Park",
+    "caption": "Hoodoos in Bryce Canyon National Park.",
+    "alt": "Orange and white rock spires fill a wide canyon under a blue sky with white clouds, with pine trees in the foreground and plateaus on the horizon.",
+    "photographer": "Hanna May",
+    "photographerUrl": "https://unsplash.com/@hanna405?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "source": "Unsplash",
+    "sourceUrl": "https://unsplash.com/photos/arches-national-park-during-daytime-_HcJ5LuKdXk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "license": "Unsplash License",
+    "downloaded": "2026-10-17"
+  },
+  {
+    "id": "bryce-canyon-hoodoos-2",
+    "original": "../drive/photos/originals/isaac-martin--lMZMzz84O0-unsplash.jpg",
+    "originalWidth": 5472,
+    "originalHeight": 3648,
+    "web": {
+      "desktop": {
+        "file": "static/images/isaac-martin-bg.webp",
+        "width": 2400,
+        "height": 1600
+      },
+      "mobile": {
+        "file": "static/images/isaac-martin-bg-mobile.webp",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    "location": "Bryce Canyon National Park",
+    "caption": "Hoodoos in Bryce Canyon National Park.",
+    "alt": "Sunlit orange rock spires crowd a wide canyon under a hazy blue sky, with pine branches at the right edge and a long plateau on the horizon.",
+    "photographer": "Isaac Martin",
+    "photographerUrl": "https://unsplash.com/@isaacmartin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "source": "Unsplash",
+    "sourceUrl": "https://unsplash.com/photos/brown-rock-formation-under-blue-sky-during-daytime--lMZMzz84O0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "license": "Unsplash License",
+    "downloaded": "2026-10-17"
+  },
+  {
+    "id": "fall-maples-mountainside",
+    "original": "../drive/photos/originals/alex-moliski-eDtDXNr1YIc-unsplash.jpg",
+    "originalWidth": 6000,
+    "originalHeight": 4000,
+    "web": {
+      "desktop": {
+        "file": "static/images/alex-moliski-bg.webp",
+        "width": 2400,
+        "height": 1600
+      },
+      "mobile": {
+        "file": "static/images/alex-moliski-bg-mobile.webp",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    "location": "",
+    "tags": [
+      "fall"
+    ],
+    "caption": "Fall color on a mountainside.",
+    "alt": "Orange and gold maple trees in the foreground below a steep, tree-covered mountainside under a partly cloudy sky.",
+    "photographer": "Alex Moliski",
+    "photographerUrl": "https://unsplash.com/@alexmoliski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "source": "Unsplash",
+    "sourceUrl": "https://unsplash.com/photos/a-forest-filled-with-lots-of-trees-next-to-a-mountain-eDtDXNr1YIc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "license": "Unsplash License",
+    "downloaded": "2026-10-18"
+  },
+  {
+    "id": "cottonwoods-red-rock",
+    "original": "../drive/photos/originals/gary-yost-8qoONz-q7lE-unsplash.jpg",
+    "originalWidth": 5760,
+    "originalHeight": 3240,
+    "web": {
+      "desktop": {
+        "file": "static/images/gary-yost-bg.webp",
+        "width": 2400,
+        "height": 1350
+      },
+      "mobile": {
+        "file": "static/images/gary-yost-bg-mobile.webp",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "location": "",
+    "tags": [
+      "fall"
+    ],
+    "caption": "Fall cottonwoods below red rock cliffs.",
+    "alt": "Bright yellow cottonwood trees and dry grass in front of tall red rock cliffs and a jagged sandstone peak under a deep blue sky.",
+    "photographer": "Gary Yost",
+    "photographerUrl": "https://unsplash.com/@gyostimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "source": "Unsplash",
+    "sourceUrl": "https://unsplash.com/photos/brown-and-green-trees-near-brown-rock-formation-under-blue-sky-during-daytime-8qoONz-q7lE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "license": "Unsplash License",
+    "downloaded": "2026-10-18"
+  },
+  {
+    "id": "yellow-leaves-blue-sky",
+    "original": "../drive/photos/originals/sarah-sheedy-CC2_ZzRUFpc-unsplash.jpg",
+    "originalWidth": 6240,
+    "originalHeight": 4160,
+    "web": {
+      "desktop": {
+        "file": "static/images/sarah-sheedy-bg.webp",
+        "width": 2400,
+        "height": 1600
+      },
+      "mobile": {
+        "file": "static/images/sarah-sheedy-bg-mobile.webp",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    "location": "",
+    "tags": [
+      "fall"
+    ],
+    "caption": "Yellow leaves against a blue sky.",
+    "alt": "Looking up through branches covered in bright yellow fall leaves against a clear blue sky.",
+    "photographer": "Sarah Sheedy",
+    "photographerUrl": "https://unsplash.com/@cestmoisheedy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "source": "Unsplash",
+    "sourceUrl": "https://unsplash.com/photos/a-tree-with-yellow-leaves-and-a-blue-sky-in-the-background-CC2_ZzRUFpc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+    "license": "Unsplash License",
+    "downloaded": "2026-10-18"
+  }
+]

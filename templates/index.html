@@ -1,0 +1,323 @@
+<style>
+  /* County list gets more columns since the names are short */
+  .county-list {
+    columns: 2;
+  }
+  @media (min-width: 576px) {
+    .county-list {
+      columns: 3;
+    }
+  }
+  @media (min-width: 768px) {
+    .county-list {
+      columns: 4;
+    }
+  }
+  @media (min-width: 992px) {
+    .county-list {
+      columns: 5;
+    }
+  }
+  /* Picking a county fades out the list; the chosen one shows in a box
+     above the rule */
+  .county-list li {
+    transition: opacity 0.25s ease;
+  }
+  .county-list li.fade-out {
+    opacity: 0;
+  }
+  /* Circled x in the chosen county's top right corner */
+  .county-close {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #6c757d;
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+  /* Town list without the card look until a county is picked */
+  .card-off {
+    border-color: transparent;
+    background: none;
+  }
+  .card-off > .card-body {
+    padding: 0 !important; /* beats py-3 */
+  }
+  #county-chosen:hover .county-close { background-color: var(--dark-hover); }
+  @media (prefers-reduced-motion: reduce) {
+    .county-list li {
+      transition: none;
+    }
+  }
+  /* Phones: bigger tagline icon in the photo's top right corner, in line
+     with the page's side padding */
+  .tagline-icon-pop {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.35));
+  }
+  /* Tagline box: 1.5px slightly see-through white border; normal text
+     wrapping, but no word left alone on the last line */
+  .skew-box-inner h1,
+  .skew-box-inner p { text-wrap: pretty; }
+  .skew-box {
+    border-width: 1.5px !important;
+    border-color: rgba(255, 255, 255, 0.75) !important;
+  }
+  /* Smaller heading and tagline on phones and small tablets */
+  @media (max-width: 767.98px) {
+    .skew-box-inner h1 { font-size: 1.45rem; }
+    .skew-box-inner .lead { font-size: 1rem !important; }
+  }
+  /* Band at the top: photo from config/photos.json ("homePhoto" in
+     config/site.json). Phones get the smaller version. */
+  .home-band {
+    height: 350px; /* phones */
+    background: url("{Home Photo Mobile}") center bottom / cover no-repeat;
+  }
+  @media (min-width: 768px) {
+    .home-band {
+      height: 480px;
+      background-image: url("{Home Photo Desktop}");
+    }
+  }
+  /* With ads showing, a shorter photo on large screens so the top of the
+     content still shows below the banner ad */
+  @media (min-width: 992px) {
+    .home-band-ads {
+      height: 400px;
+    }
+  }
+  /* Parallax: the photo stays put while the page scrolls. Left off on
+     touch screens (iOS doesn't support it) and for reduced motion. */
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .home-band {
+      background-attachment: fixed;
+    }
+  }
+</style>
+
+<div class="home-band{Home Band Ads} bg-light border-bottom d-flex align-items-end pb-3 pb-md-5 position-relative">
+  <!-- Phones (under 576px, where the page container stops being a fixed
+       width and shrinks with the screen): bigger icon in the photo's top
+       right corner -->
+  <svg class="tagline-icon-pop d-sm-none" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+    <path fill="#fff" fill-rule="evenodd" d="M50.00 0.76 L92.64 25.38 L92.64 74.62 L50.00 99.24 L7.36 74.62 L7.36 25.38 Z M46.97 8.28 Q50.00 6.53 53.03 8.28 L84.61 26.52 Q87.64 28.27 87.64 31.77 L87.64 68.23 Q87.64 71.73 84.61 73.48 L53.03 91.72 Q50.00 93.47 46.97 91.72 L15.39 73.48 Q12.36 71.73 12.36 68.23 L12.36 31.77 Q12.36 28.27 15.39 26.52 Z"/>
+    <path fill="#fff" transform="translate(50 51) scale(0.85) translate(-50 -51)" d="M48.5 37 C42 32.5 33 31 24 33.5 L24 63.5 Q24 67.5 28 67 C36 65.8 43 66.6 48.5 70.5 Z M51.5 37 C58 32.5 67 31 76 33.5 L76 63.5 Q76 67.5 72 67 C64 65.8 57 66.6 51.5 70.5 Z"/>
+  </svg>
+  <div class="container px-4">
+    <div
+      class="skew-box d-inline-block bg-highlight px-4 pb-3 text-white shadow-lg border border-1 border-white rounded-1"
+      style="padding-top: 0.75rem"
+    >
+      <div class="skew-box-inner fst-italic">
+        <h1 class="h2 mb-1">
+          {Tagline Start}<span class="text-nowrap"
+            >{Tagline Last}<span
+              class="tagline-icon d-none d-sm-inline-block"
+              aria-hidden="true"
+            ></span
+          ></span>
+        </h1>
+        <p class="lead fs-md fw-normal mb-0">
+          Living In, Moving to and Visiting&nbsp;the&nbsp;Mountain&nbsp;West
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{Home Top Ad}
+<div class="container {Home Content Margin}">
+  <section id="community-profiles">
+    <div class="bg-light-gradient border rounded shadow-sm p-4 mb-4">
+      <h2 class="mt-0">Community Profiles<svg viewBox="5.5 39.5 68 31" class="heading-icon heading-icon-wide" aria-hidden="true" focusable="false"> <defs><mask id="ma" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><rect width="100" height="100" fill="#fff"/><path d="M34 69 V54.5 H32 L43 44 L46 46.86 V44.5 H49 V49.73 L54 54.5 H52 V69 Z" fill="#000" stroke="#000" stroke-width="3" stroke-linejoin="round"/></mask><mask id="ms" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><rect width="100" height="100" fill="#fff"/><path d="M17.52 69.00 L17.52 56.95 L16.53 56.95 L19.02 50.47 L25.00 46.00 L30.97 50.47 L33.47 56.95 L32.46 56.95 L32.46 69.00 Z" fill="#000" stroke="#000" stroke-width="4" stroke-linejoin="round"/><rect x="0" y="50.5" width="20" height="2" fill="#000"/></mask></defs><path fill="currentColor" mask="url(#ms)" d="M6.5 69 V50.5 A5 5 0 0 1 16.5 50.5 V69 Z"/><path fill="currentColor" fill-rule="evenodd" mask="url(#ma)" d="M17.52 69.00 L17.52 56.95 L16.53 56.95 L19.02 50.47 L25.00 46.00 L30.97 50.47 L33.47 56.95 L32.46 56.95 L32.46 69.00 Z M23.25 50.98 L26.75 50.98 L26.75 56.50 L23.25 56.50 Z M22.00 69.00 L22.00 62.50 L28.00 62.50 L28.00 69.00 Z M52.5 69 V44 H51.5 V41.5 H71.5 V44 H70.5 V69 Z M54.5 47 H58.0 V51.5 H54.5 Z M59.75 47 H63.25 V51.5 H59.75 Z M65 47 H68.5 V51.5 H65 Z M54.5 56.5 H58.0 V61.0 H54.5 Z M59.75 56.5 H63.25 V61.0 H59.75 Z M65 56.5 H68.5 V61.0 H65 Z"/><path fill="currentColor" fill-rule="evenodd" d="M34 69 V54.5 H32 L43 44 L46 46.86 V44.5 H49 V49.73 L54 54.5 H52 V69 Z M37 57.5 H41 V62 H37 Z M45 57.5 H49 V62 H45 Z"/> </svg></h2>
+      <label for="profile-search" class="form-label"
+        >Search by community name and/or filter by county</label
+      >
+      <input
+        id="profile-search"
+        type="search"
+        class="form-control form-control-lg"
+        placeholder="Enter a town or city name ..."
+        autocomplete="off"
+      />
+    </div>
+
+    <!-- Heading and rule. Above the rule, the heading gives way to the
+         chosen county's box, or to the button while searching. -->
+    <div id="county-heading" class="rule-solid pb-2 mb-3">
+      <h3 id="county-title" class="mb-0">Select a County<svg viewBox="27 30 46 40" class="heading-icon" aria-hidden="true" focusable="false"> <path fill="currentColor" fill-rule="evenodd" d="M50 30 L72 41 H28 Z M30 41 H70 V44.5 H30 Z M33 47 H39 V63 H33 Z M47 47 H53 V63 H47 Z M61 47 H67 V63 H61 Z M27 65.5 H73 V70 H27 Z"/> </svg></h3>
+      <button
+        type="button"
+        id="county-chosen"
+        class="btn btn-light-box fw-bold position-relative mb-2"
+        aria-label="Clear county"
+        hidden
+      >
+        <span id="county-chosen-name"></span
+        ><span class="county-close" aria-hidden="true">&times;</span>
+      </button>
+      <button
+        type="button"
+        id="county-toggle"
+        class="btn btn-light-box fw-bold mb-2"
+        aria-expanded="false"
+        aria-controls="county-list"
+        hidden
+      >
+        Filter by county
+      </button>
+    </div>
+    <ul id="county-list" class="list-unstyled county-list fs-md fw-bold mb-4">
+      {County Links}
+    </ul>
+    <p id="profile-message" class="text-secondary" hidden>
+      No communities match your search.
+    </p>
+    <!-- With a county picked, its towns sit in a card like Nearby
+         Communities on town pages, its top border where the rule was -->
+    <div id="profile-card" class="card rounded-1 card-off">
+      <div class="card-body py-3">
+        <ul id="profile-list" class="list-unstyled town-list font-zilla mb-0">
+          {Profile Items}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {Ads home-bottom}
+</div>
+
+<script>
+  // Clicking a county fades out the county list and shows the chosen county
+  // in a box above the rule. Its communities show below. The circled x in
+  // the box's corner clears the county and brings the list back. Typing searches town names only,
+  // across every county (or just the chosen county's).
+  (() => {
+    let county = "";
+    // While searching with no county picked, the list folds into a
+    // "Filter by county" button; clicking it opens the list again.
+    let expanded = false;
+    const toggle = document.getElementById("county-toggle");
+    const title = document.getElementById("county-title");
+    const chosenBox = document.getElementById("county-chosen");
+    const chosenName = document.getElementById("county-chosen-name");
+    // Clicking anywhere else on the page also clears the county, except in
+    // the search box, the town list or the county list
+    document.addEventListener("click", (e) => {
+      if (!county) return;
+      if (
+        e.target.closest(
+          "#county-chosen, #profile-search, #profile-card, #county-list",
+        )
+      )
+        return;
+      county = "";
+      update();
+    });
+    // The whole chosen-county box clears the county, not just its x
+    chosenBox.addEventListener("click", () => {
+      county = "";
+      update();
+    });
+    let listTimer;
+    toggle.addEventListener("click", () => {
+      expanded = true;
+      update();
+    });
+    const search = document.getElementById("profile-search");
+    const message = document.getElementById("profile-message");
+    const items = document.querySelectorAll("#profile-list li");
+    const countyList = document.getElementById("county-list");
+    countyList.addEventListener("click", (e) => {
+      const link = e.target.closest("li a");
+      if (!link) return;
+      e.preventDefault();
+      county = link.parentElement.dataset.county;
+      update();
+      // Scroll to the chosen county's button, with its towns below it (stops
+      // below the sticky header). Waits for the county list to fade out.
+      const reduce = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      setTimeout(() => {
+        document
+          .getElementById("county-chosen")
+          .scrollIntoView({
+            behavior: reduce ? "auto" : "smooth",
+            block: "start",
+          });
+      }, 260);
+    });
+    function update() {
+      const c = county;
+      const q = search.value.trim().toLowerCase();
+      if (!q) expanded = false;
+      const folded = !c && Boolean(q) && !expanded;
+      title.hidden = folded || Boolean(c);
+      chosenBox.hidden = !c;
+      // With a county picked, the card's top border takes the rule's place,
+      // and the rule above the ads isn't needed
+      const heading = document.getElementById("county-heading");
+      heading.classList.toggle("rule-solid", !c);
+      heading.classList.toggle("mb-3", !c);
+      const adsRule = document.getElementById("home-ads-rule");
+      if (adsRule) adsRule.hidden = Boolean(c);
+      const card = document.getElementById("profile-card");
+      card.classList.toggle("card-off", !c);
+      card.classList.toggle("shadow-sm", Boolean(c));
+      chosenBox.setAttribute(
+        "aria-label",
+        c ? `Clear county: ${c} County` : "Clear county",
+      );
+      chosenName.textContent = c ? `${c} County` : "";
+      clearTimeout(listTimer);
+      if (c)
+        listTimer = setTimeout(() => {
+          countyList.hidden = true;
+        }, 250);
+      else countyList.hidden = folded;
+      toggle.hidden = !folded;
+      toggle.setAttribute("aria-expanded", String(!folded));
+      let shown = 0;
+      items.forEach((li) => {
+        const match =
+          Boolean(c || q) &&
+          (!c || li.dataset.county === c) &&
+          (!q || li.dataset.name.includes(q)); // town names only, not counties
+        li.hidden = !match;
+        // County shows after the name only when no county is picked
+        li.querySelector(".county-suffix").hidden = Boolean(c);
+        if (match) shown++;
+      });
+      countyList.querySelectorAll("li").forEach((li) => {
+        clearTimeout(li.fadeTimer);
+        if (c) {
+          // Fade out, then take it out of the list
+          if (li.hidden) return;
+          li.classList.add("fade-out");
+          li.fadeTimer = setTimeout(() => {
+            li.hidden = true;
+          }, 250);
+        } else if (li.hidden || li.classList.contains("fade-out")) {
+          // Bring it back and fade it in
+          li.hidden = false;
+          requestAnimationFrame(() =>
+            requestAnimationFrame(() => li.classList.remove("fade-out")),
+          );
+        }
+      });
+      message.hidden = !(c || q) || shown > 0;
+    }
+    search.addEventListener("input", update);
+    update();
+  })();
+</script>
