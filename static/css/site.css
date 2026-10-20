@@ -443,11 +443,14 @@ a.marker-link:focus {
 
 /* "Community Profile" button (btn btn-primary): keeps its color on hover; the text underlines */
 .btn-profile { transition: none; } /* changes right away, no fade */
+/* Highlight rust, staying the same on hover; only the underline changes */
+.btn-profile,
 .btn-profile:hover,
 .btn-profile:focus,
 .btn-profile:active {
-  background-color: var(--bs-primary); /* stays the same red */
-  border-color: var(--bs-primary);
+  color: #fff;
+  background-color: var(--highlight);
+  border-color: var(--highlight);
 }
 .btn-profile:hover { text-decoration: underline; }
 
