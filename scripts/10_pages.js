@@ -108,7 +108,7 @@ const header = (home, shadow, root) => fill(template("parts/header.html"), { "{H
 // shared by the footer and the contact page
 const socialIcon = (s) => template(`parts/icons/${s.name.toLowerCase()}.svg`).trim();
 const footer = fill(template("parts/footer.html"), { "{Year}": now.getFullYear(), "{Site Name}": esc(site.name),
-  "{Privacy Link}": site.consentBanner ? `<button type="button" class="footer-privacy btn btn-light btn-sm border font-sans" data-consent-open>Privacy Choices</button>` : "",
+  "{Privacy Link}": site.consentBanner ? `<button type="button" class="footer-privacy btn btn-light btn-sm border font-sans" style="vertical-align: middle; position: relative; top: -0.11rem;" data-consent-open>Privacy Choices</button>` : "",
   "{Social Handle}": esc(site.socialHandle),
   "{Social Links}": site.social.map((s) => `<a href="${esc(s.url)}" class="social-circle" title="${esc(s.name)}" aria-label="${esc(s.name)}">${socialIcon(s)}</a>`).join("\n      ") });
 

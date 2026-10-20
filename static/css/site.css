@@ -642,13 +642,14 @@ a.marker-link:focus {
 
 /* "Privacy Choices" on its own line: under the copyright on wide screens,
    below the social icons on phones. A small, quiet button. */
+/* Privacy Choices: a small light button after the copyright, centered on
+   the copyright's capital letters (between their baseline and top) */
 .footer-privacy {
   padding: 0 0.4rem;
   font-size: 0.75rem;
   line-height: 1.5;
   color: #495057; /* dark enough gray for small text on the light button */
 }
-
 
 /* ---------- Search hints (home page, phones) ---------- */
 .search-hints-box { position: relative; }
