@@ -693,3 +693,9 @@ a.marker-link:focus {
   .search-room { padding-bottom: 100vh; }
   #profile-search { scroll-margin-top: 6.5rem; }
 }
+
+/* Phones: more room between the copyright line and the social icons
+   when they wrap */
+@media (max-width: 767.98px) {
+  footer .container { row-gap: 0.75rem; }
+}
