@@ -2,8 +2,10 @@
 <link rel="stylesheet" href="leaflet/leaflet.css?v={Version}" />
 <style>
   /* Search bar on top, then the map filling the rest of the screen */
-  body { display: flex; flex-direction: column; min-height: 100vh; }
-  main { display: flex; flex-direction: column; flex: 1 0 auto; min-height: 70vh; }
+  /* Exactly the screen's height (dvh leaves out phone browser toolbars), so
+     the page itself doesn't scroll */
+  body { display: flex; flex-direction: column; height: 100vh; height: 100dvh; }
+  main { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; }
   .map-wrap { position: relative; flex: 1 1 auto; }
   #full-map { position: absolute; inset: 0; }
   .map-bar { position: relative; z-index: 1010; } /* results drop over the map */
