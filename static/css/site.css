@@ -366,7 +366,7 @@ a.social-circle:focus,
   margin-left: 0.3em;
 }
 .county-seat-icon {
-  width: 0.92em;
+  width: 0.81em;
   height: 0.8em;
   vertical-align: -0.14em;
   color: var(--icon-gray);
@@ -645,4 +645,48 @@ a.marker-link:focus {
   font-size: 0.75rem;
   line-height: 1.5;
   color: #495057; /* dark enough gray for small text on the light button */
+}
+
+
+/* ---------- Search hints (home page, phones) ---------- */
+.search-hints-box { position: relative; }
+.search-hints {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  max-height: calc(4 * (2.5rem + 1px)); /* four towns; the rest scroll */
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background-color: #fff;
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.search-hints:empty { display: none; }
+.search-hints::-webkit-scrollbar { display: none; }
+.search-hints { scrollbar-width: none; }
+.search-hints-bar {
+  position: absolute;
+  right: 4px;
+  width: 4px;
+  z-index: 1001;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+.search-hints a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid #dee2e6;
+  color: #212529;
+  text-decoration: none;
+}
+.search-hints a:hover,
+.search-hints a:focus { background-color: #f8f9fa; }
+@media (max-width: 767.98px) {
+  .searching #profile-card { display: none; }
+  /* Room below so the search box can slide up under the header */
+  .search-room { padding-bottom: 100vh; }
+  #profile-search { scroll-margin-top: 6.5rem; }
 }

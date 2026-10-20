@@ -274,12 +274,12 @@ const TOWN_POPUP = template("parts/town-popup.html").trim();
 // County seats get a small courthouse (courthouse-simple.svg in the Drive
 // folder's icons) after the name, just outside the link, in the town lists and
 // map popups. Screen readers hear "county seat" instead.
-const SEAT_ICON = '<svg class="county-seat-icon" viewBox="27 30 46 40" aria-hidden="true" focusable="false">' +
-  '<path fill="currentColor" d="M50 30 L72 41 H28 Z M30 41 H70 V44.5 H30 Z M33 47 H39 V63 H33 Z M47 47 H53 V63 H47 Z M61 47 H67 V63 H61 Z M27 65.5 H73 V70 H27 Z"/></svg>';
+const SEAT_ICON = '<svg class="county-seat-icon" viewBox="29.76 30 40.48 40" aria-hidden="true" focusable="false">' +
+  '<path fill="currentColor" d="M50 30 L69.36 41 H30.64 Z M32.4 41 H67.6 V44.5 H32.4 Z M35.04 47 H40.32 V62.5 H35.04 Z M47.36 47 H52.64 V62.5 H47.36 Z M59.68 47 H64.96 V62.5 H59.68 Z M31.52 64.5 H68.48 V70 H31.52 Z"/></svg>';
 // Town pages use the honeycomb version (courthouse-simple-hex.svg) in the note after the name
 const SEAT_HEX = '<svg class="county-seat-icon me-1" viewBox="0 0 100 100" aria-hidden="true" focusable="false">' +
   '<path fill="currentColor" fill-rule="evenodd" d="M50.00 0.76 L92.64 25.38 L92.64 74.62 L50.00 99.24 L7.36 74.62 L7.36 25.38 Z M46.10 11.33 Q50.00 9.08 53.90 11.33 L81.54 27.29 Q85.44 29.54 85.44 34.04 L85.44 65.96 Q85.44 70.46 81.54 72.71 L53.90 88.67 Q50.00 90.92 46.10 88.67 L18.46 72.71 Q14.56 70.46 14.56 65.96 L14.56 34.04 Q14.56 29.54 18.46 27.29 Z"/>' +
-  '<path fill="currentColor" fill-rule="evenodd" transform="translate(50 51) scale(0.95) translate(-50 -50)" d="M50 30 L72 41 H28 Z M30 41 H70 V44.5 H30 Z M33 47 H39 V63 H33 Z M47 47 H53 V63 H47 Z M61 47 H67 V63 H61 Z M27 65.5 H73 V70 H27 Z"/></svg>';
+  '<path fill="currentColor" fill-rule="evenodd" transform="translate(50 51) scale(0.95) translate(-50 -50)" d="M50 30 L69.36 41 H30.64 Z M32.4 41 H67.6 V44.5 H32.4 Z M35.04 47 H40.32 V62.5 H35.04 Z M47.36 47 H52.64 V62.5 H47.36 Z M59.68 47 H64.96 V62.5 H59.68 Z M31.52 64.5 H68.48 V70 H31.52 Z"/></svg>';
 const COUNTY_SEAT = `<span class="county-seat" title="County seat">${SEAT_ICON}<span class="visually-hidden">(county seat)</span></span>`;
 
 // One full-screen map page for all communities: map.html?town=<name>

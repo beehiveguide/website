@@ -143,13 +143,20 @@
       <label for="profile-search" class="form-label"
         >Search by community name and/or filter by county</label
       >
+      <div class="search-hints-box">
       <input
         id="profile-search"
         type="search"
         class="form-control form-control-lg"
         placeholder="Enter a town or city name ..."
         autocomplete="off"
+        aria-controls="profile-hints"
       />
+      <!-- Phones: matching towns drop down under the box, since the
+           keyboard covers the list below. Long lists scroll. -->
+      <div id="profile-hints" class="search-hints font-sans d-md-none"></div>
+      <div id="hints-bar" class="search-hints-bar d-md-none" aria-hidden="true" hidden></div>
+      </div>
     </div>
 
     <!-- Heading and rule. Above the rule, the heading gives way to the
@@ -316,7 +323,67 @@
         }
       });
       message.hidden = !(c || q) || shown > 0;
+      // Phone hints: every match, best (name starts with it) first
+      const found = q ? [...items].filter((li) => !li.hidden)
+        .sort((a, b) => a.dataset.name.indexOf(q) - b.dataset.name.indexOf(q) || a.dataset.name.localeCompare(b.dataset.name)) : [];
+      hints.innerHTML = found.map((li) => {
+        const a = li.querySelector("a");
+        return `<a href="${a.getAttribute("href")}">${a.firstChild.textContent} <span class="text-secondary">(${li.dataset.county})</span></a>`;
+      }).join("");
+      hints.scrollTop = 0;
+      fitHints();
+      // Phones show matches in the hints only, not in the list below
+      document.getElementById("community-profiles").classList.toggle("searching", Boolean(q));
     }
+    const hints = document.getElementById("profile-hints");
+    // Tapping elsewhere closes the hints; tapping the box again brings them back
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".search-hints-box")) { hints.hidden = true; drawBar(); }
+    });
+    search.addEventListener("focus", () => { hints.hidden = false; });
+    // Phones: the box slides up under the header, and the hints stretch
+    // down to the top of the keyboard
+    const phone = window.matchMedia("(max-width: 767.98px)");
+    const vv = window.visualViewport;
+    function fitHints() {
+      if (!phone.matches || !vv) return;
+      const room = vv.height - (search.getBoundingClientRect().bottom - vv.offsetTop) - 8;
+      // Four towns tall, or less if the keyboard leaves less room
+      const four = hints.firstElementChild ? hints.firstElementChild.offsetHeight * 4 : 0;
+      hints.style.maxHeight = Math.min(four || room, Math.max(room, 120)) + "px";
+      drawBar();
+    }
+    // A thin scroll bar drawn over the hints' right edge, since phones hide
+    // theirs until you scroll
+    const bar = document.getElementById("hints-bar");
+    function drawBar() {
+      const h = hints.clientHeight, full = hints.scrollHeight;
+      bar.hidden = hints.hidden || !h || full <= h + 1;
+      if (bar.hidden) return;
+      const size = Math.max(h * h / full, 24);
+      bar.style.height = size + "px";
+      bar.style.top = hints.offsetTop + 4 + (h - size - 8) * hints.scrollTop / (full - h) + "px";
+    }
+    hints.addEventListener("scroll", drawBar);
+    search.addEventListener("focus", () => {
+      if (!phone.matches) return;
+      document.getElementById("community-profiles").classList.add("search-room");
+      setTimeout(() => {
+        search.scrollIntoView({ block: "start", behavior: "smooth" });
+        setTimeout(fitHints, 400);
+      }, 300);
+    });
+    if (vv) {
+      vv.addEventListener("resize", fitHints);
+      vv.addEventListener("scroll", fitHints);
+    }
+    search.addEventListener("blur", () => {
+      setTimeout(() => {
+        if (document.activeElement !== search)
+          document.getElementById("community-profiles").classList.remove("search-room");
+      }, 300);
+    });
+    search.addEventListener("input", () => { hints.hidden = false; });
     search.addEventListener("input", update);
     update();
   })();
