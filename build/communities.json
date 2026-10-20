@@ -2162,7 +2162,7 @@
     "countySeat": false,
     "lat": 41.81004,
     "lng": -112.05765,
-    "elevationFt": null,
+    "elevationFt": 4544,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -4820,7 +4820,7 @@
     "countySeat": false,
     "lat": 37.5234,
     "lng": -110.72103,
-    "elevationFt": null,
+    "elevationFt": 3819,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -7156,7 +7156,7 @@
     "countySeat": false,
     "lat": 41.98267,
     "lng": -113.27318,
-    "elevationFt": null,
+    "elevationFt": 5587,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -8651,7 +8651,7 @@
     "countySeat": false,
     "lat": 38.60321,
     "lng": -112.58507,
-    "elevationFt": null,
+    "elevationFt": 5986,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -10877,7 +10877,7 @@
     "countySeat": false,
     "lat": 39.5335503,
     "lng": -110.4327945,
-    "elevationFt": null,
+    "elevationFt": 6296,
     "censusCode": "20890",
     "censusClass": "X1",
     "population": {
@@ -13794,7 +13794,7 @@
     "countySeat": false,
     "lat": 39.83892,
     "lng": -113.39193,
-    "elevationFt": null,
+    "elevationFt": 4357,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -15230,7 +15230,7 @@
     "countySeat": false,
     "lat": 37.00941,
     "lng": -110.2029,
-    "elevationFt": null,
+    "elevationFt": 5190,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -20415,7 +20415,7 @@
     "countySeat": false,
     "lat": 40.53714,
     "lng": -112.74441,
-    "elevationFt": null,
+    "elevationFt": 4398,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -25205,7 +25205,7 @@
     "countySeat": false,
     "lat": 37.1033,
     "lng": -109.55178,
-    "elevationFt": null,
+    "elevationFt": 4741,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -27960,7 +27960,7 @@
     "countySeat": false,
     "lat": 40.6110589,
     "lng": -111.8999353,
-    "elevationFt": null,
+    "elevationFt": 4383,
     "censusCode": "49710",
     "censusClass": "P1",
     "population": {
@@ -28240,7 +28240,7 @@
     "countySeat": false,
     "lat": 40.5121772,
     "lng": -111.4743545,
-    "elevationFt": null,
+    "elevationFt": 5594,
     "censusCode": "49820",
     "censusClass": "P1",
     "population": {
@@ -28389,7 +28389,7 @@
     "countySeat": false,
     "lat": 39.70417,
     "lng": -111.42496,
-    "elevationFt": null,
+    "elevationFt": 6365,
     "censusCode": "49930",
     "censusClass": "U6",
     "population": {
@@ -28424,7 +28424,7 @@
     "countySeat": false,
     "lat": 38.3969108,
     "lng": -113.0107892,
-    "elevationFt": null,
+    "elevationFt": 4964,
     "censusCode": "50040",
     "censusClass": "P1",
     "population": {
@@ -28572,7 +28572,7 @@
     "countySeat": false,
     "lat": 40.69771,
     "lng": -111.83061,
-    "elevationFt": null,
+    "elevationFt": 4285,
     "censusCode": "50150",
     "censusClass": "P1",
     "population": {
@@ -28850,7 +28850,7 @@
     "countySeat": false,
     "lat": 39.48276,
     "lng": -112.02798,
-    "elevationFt": null,
+    "elevationFt": 4954,
     "censusCode": "50260",
     "censusClass": "U6",
     "population": {
@@ -28885,7 +28885,7 @@
     "countySeat": false,
     "lat": 41.6815987,
     "lng": -111.8229982,
-    "elevationFt": null,
+    "elevationFt": 4616,
     "censusCode": "50370",
     "censusClass": "P1",
     "population": {
@@ -28990,7 +28990,7 @@
     "countySeat": false,
     "lat": 41.05995,
     "lng": -111.73108,
-    "elevationFt": null,
+    "elevationFt": 5013,
     "censusCode": "50480",
     "censusClass": "U6",
     "population": {
@@ -29040,7 +29040,7 @@
     "countySeat": false,
     "lat": 38.2141363,
     "lng": -112.9235621,
-    "elevationFt": null,
+    "elevationFt": 5282,
     "censusCode": "50590",
     "censusClass": "P1",
     "population": {
@@ -29422,7 +29422,7 @@
     "countySeat": false,
     "lat": 37.79892,
     "lng": -113.92425,
-    "elevationFt": 5466,
+    "elevationFt": 5476,
     "censusCode": "50810",
     "censusClass": "U5",
     "population": {
@@ -29471,7 +29471,7 @@
     "countySeat": false,
     "lat": 39.44027,
     "lng": -111.01513,
-    "elevationFt": null,
+    "elevationFt": 7185,
     "censusCode": "50920",
     "censusClass": "U6",
     "population": {
@@ -29506,7 +29506,7 @@
     "countySeat": false,
     "lat": 39.08828,
     "lng": -111.07354,
-    "elevationFt": null,
+    "elevationFt": 5764,
     "censusCode": "51030",
     "censusClass": "U6",
     "population": {
@@ -29541,7 +29541,7 @@
     "countySeat": false,
     "lat": 39.8160656,
     "lng": -111.8554907,
-    "elevationFt": null,
+    "elevationFt": 4974,
     "censusCode": "51140",
     "censusClass": "P1",
     "population": {
@@ -29633,7 +29633,7 @@
     "countySeat": false,
     "lat": 40.41716,
     "lng": -110.10542,
-    "elevationFt": null,
+    "elevationFt": 5928,
     "censusCode": "51250",
     "censusClass": "U6",
     "population": {
@@ -29675,7 +29675,7 @@
     "countySeat": false,
     "lat": 38.6299724,
     "lng": -112.1207573,
-    "elevationFt": null,
+    "elevationFt": 5394,
     "censusCode": "51360",
     "censusClass": "P1",
     "population": {
@@ -29815,7 +29815,7 @@
     "countySeat": false,
     "lat": 37.27206,
     "lng": -109.33969,
-    "elevationFt": 4413,
+    "elevationFt": 4423,
     "censusCode": "51470",
     "censusClass": "U5",
     "population": {
@@ -30115,7 +30115,7 @@
     "countySeat": false,
     "lat": 38.96668,
     "lng": -111.15354,
-    "elevationFt": null,
+    "elevationFt": 6247,
     "censusCode": "51800",
     "censusClass": "U6",
     "population": {
@@ -30373,7 +30373,7 @@
     "countySeat": false,
     "lat": 39.5249615,
     "lng": -111.5904725,
-    "elevationFt": null,
+    "elevationFt": 5531,
     "censusCode": "52130",
     "censusClass": "P1",
     "population": {
@@ -30482,7 +30482,7 @@
     "countySeat": false,
     "lat": 40.34776,
     "lng": -110.27512,
-    "elevationFt": null,
+    "elevationFt": 6293,
     "censusCode": "52845",
     "censusClass": "U6",
     "population": {
@@ -30529,7 +30529,7 @@
     "countySeat": false,
     "lat": 39.5469073,
     "lng": -111.4554659,
-    "elevationFt": null,
+    "elevationFt": 5925,
     "censusCode": "53010",
     "censusClass": "P1",
     "population": {
@@ -30726,7 +30726,7 @@
     "countySeat": false,
     "lat": 41.14305,
     "lng": -111.79158,
-    "elevationFt": 4918,
+    "elevationFt": 4879,
     "censusCode": "52460",
     "censusClass": "U5",
     "population": {
@@ -30813,7 +30813,7 @@
     "countySeat": false,
     "lat": 40.39916,
     "lng": -110.38853,
-    "elevationFt": null,
+    "elevationFt": 7005,
     "censusCode": "52570",
     "censusClass": "U6",
     "population": {
@@ -30863,7 +30863,7 @@
     "countySeat": false,
     "lat": 40.6668916,
     "lng": -111.8879909,
-    "elevationFt": null,
+    "elevationFt": 4301,
     "censusCode": "53230",
     "censusClass": "P1",
     "population": {
@@ -31408,7 +31408,7 @@
     "countySeat": false,
     "lat": 40.1944043,
     "lng": -110.0618168,
-    "elevationFt": null,
+    "elevationFt": 5085,
     "censusCode": "53340",
     "censusClass": "P1",
     "population": {
@@ -31520,7 +31520,7 @@
     "countySeat": false,
     "lat": 40.4269052,
     "lng": -109.4993022,
-    "elevationFt": null,
+    "elevationFt": 5230,
     "censusCode": "53560",
     "censusClass": "P1",
     "population": {
@@ -31591,7 +31591,7 @@
     "countySeat": false,
     "lat": 37.0194,
     "lng": -110.7913,
-    "elevationFt": 5876,
+    "elevationFt": 6020,
     "censusCode": "53890",
     "censusClass": "U5",
     "population": {
@@ -31635,7 +31635,7 @@
     "countySeat": false,
     "lat": 40.43326,
     "lng": -110.02992,
-    "elevationFt": 6037,
+    "elevationFt": 6020,
     "censusCode": "54110",
     "censusClass": "U5",
     "population": {
@@ -31897,7 +31897,7 @@
     "countySeat": false,
     "lat": 41.36885,
     "lng": -112.04159,
-    "elevationFt": null,
+    "elevationFt": 4265,
     "censusCode": "54275",
     "censusClass": "U6",
     "population": {
@@ -31939,7 +31939,7 @@
     "countySeat": false,
     "lat": 37.4794243,
     "lng": -113.3096739,
-    "elevationFt": null,
+    "elevationFt": 5312,
     "censusCode": "54440",
     "censusClass": "P1",
     "population": {
@@ -32030,7 +32030,7 @@
     "countySeat": false,
     "lat": 37.66668,
     "lng": -113.54941,
-    "elevationFt": 5259,
+    "elevationFt": 5312,
     "censusCode": "54330",
     "censusClass": "U5",
     "population": {
@@ -32101,7 +32101,7 @@
     "countySeat": false,
     "lat": 41.8627046,
     "lng": -111.9907837,
-    "elevationFt": null,
+    "elevationFt": 4534,
     "censusCode": "54550",
     "censusClass": "P1",
     "population": {
@@ -32194,7 +32194,7 @@
     "countySeat": false,
     "lat": 41.6743765,
     "lng": -111.8329984,
-    "elevationFt": null,
+    "elevationFt": 4554,
     "censusCode": "54660",
     "censusClass": "P1",
     "population": {
@@ -32336,7 +32336,7 @@
     "countySeat": false,
     "lat": 38.33712,
     "lng": -112.57764,
-    "elevationFt": null,
+    "elevationFt": 6447,
     "censusCode": "54880",
     "censusClass": "U6",
     "population": {
@@ -32371,7 +32371,7 @@
     "countySeat": false,
     "lat": 41.7693747,
     "lng": -111.8046654,
-    "elevationFt": null,
+    "elevationFt": 4692,
     "censusCode": "54990",
     "censusClass": "P1",
     "population": {
@@ -32551,7 +32551,7 @@
     "countySeat": false,
     "lat": 41.3071645,
     "lng": -111.9602196,
-    "elevationFt": null,
+    "elevationFt": 4495,
     "censusCode": "55100",
     "censusClass": "P1",
     "population": {
@@ -32735,7 +32735,7 @@
     "countySeat": false,
     "lat": 40.8485564,
     "lng": -111.9068824,
-    "elevationFt": null,
+    "elevationFt": 4337,
     "censusCode": "55210",
     "censusClass": "P1",
     "population": {
@@ -32948,7 +32948,7 @@
     "countySeat": false,
     "lat": 38.23329,
     "lng": -111.11853,
-    "elevationFt": null,
+    "elevationFt": 5236,
     "censusCode": "55320",
     "censusClass": "U6",
     "population": {
@@ -32983,7 +32983,7 @@
     "countySeat": false,
     "lat": 39.3749562,
     "lng": -112.3354978,
-    "elevationFt": null,
+    "elevationFt": 5112,
     "censusCode": "55430",
     "censusClass": "P1",
     "population": {
@@ -33064,7 +33064,7 @@
     "countySeat": false,
     "lat": 40.7146722,
     "lng": -111.300744,
-    "elevationFt": null,
+    "elevationFt": 6434,
     "censusCode": "55650",
     "censusClass": "P1",
     "population": {
@@ -33147,7 +33147,7 @@
     "countySeat": false,
     "lat": 39.29386,
     "lng": -112.62829,
-    "elevationFt": 4596,
+    "elevationFt": 4590,
     "censusCode": "55760",
     "censusClass": "U5",
     "population": {
@@ -34631,7 +34631,7 @@
     "countySeat": false,
     "lat": 41.25325,
     "lng": -111.87639,
-    "elevationFt": null,
+    "elevationFt": 4829,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -34718,7 +34718,7 @@
     "countySeat": false,
     "lat": 40.3693901,
     "lng": -112.2585566,
-    "elevationFt": 6581,
+    "elevationFt": 6496,
     "censusCode": "56750",
     "censusClass": "P1",
     "population": {
@@ -34774,7 +34774,7 @@
     "countySeat": false,
     "lat": 39.227191,
     "lng": -111.0535024,
-    "elevationFt": null,
+    "elevationFt": 5778,
     "censusCode": "56860",
     "censusClass": "P1",
     "population": {
@@ -34884,7 +34884,7 @@
     "countySeat": false,
     "lat": 37.2758168,
     "lng": -112.6377101,
-    "elevationFt": null,
+    "elevationFt": 5449,
     "censusCode": "57080",
     "censusClass": "P1",
     "population": {
@@ -34993,7 +34993,7 @@
     "countySeat": false,
     "lat": 40.2968979,
     "lng": -111.6946475,
-    "elevationFt": null,
+    "elevationFt": 4774,
     "censusCode": "57300",
     "censusClass": "P1",
     "population": {
@@ -35931,7 +35931,7 @@
     "countySeat": false,
     "lat": 40.08917,
     "lng": -109.67741,
-    "elevationFt": null,
+    "elevationFt": 4675,
     "censusCode": "57410",
     "censusClass": "U6",
     "population": {
@@ -35966,7 +35966,7 @@
     "countySeat": false,
     "lat": 40.14026,
     "lng": -111.69887,
-    "elevationFt": 4531,
+    "elevationFt": 4524,
     "censusCode": "57630",
     "censusClass": "U5",
     "population": {
@@ -36179,7 +36179,7 @@
     "countySeat": false,
     "lat": 41.5688234,
     "lng": -111.8379975,
-    "elevationFt": null,
+    "elevationFt": 4902,
     "censusCode": "57850",
     "censusClass": "P1",
     "population": {
@@ -36257,7 +36257,7 @@
     "countySeat": false,
     "lat": 37.8858079,
     "lng": -112.7752206,
-    "elevationFt": null,
+    "elevationFt": 5879,
     "censusCode": "57960",
     "censusClass": "P1",
     "population": {
@@ -36328,7 +36328,7 @@
     "countySeat": false,
     "lat": 40.6460622,
     "lng": -111.4979729,
-    "elevationFt": null,
+    "elevationFt": 7034,
     "censusCode": "58070",
     "censusClass": "P1",
     "population": {
@@ -36757,7 +36757,7 @@
     "countySeat": false,
     "lat": 41.81742,
     "lng": -113.32914,
-    "elevationFt": null,
+    "elevationFt": 5548,
     "censusCode": "58290",
     "censusClass": "U6",
     "population": {
@@ -36961,7 +36961,7 @@
     "countySeat": false,
     "lat": 40.0443989,
     "lng": -111.7321518,
-    "elevationFt": null,
+    "elevationFt": 4656,
     "censusCode": "58730",
     "censusClass": "P1",
     "population": {
@@ -37233,7 +37233,7 @@
     "countySeat": false,
     "lat": 41.65074,
     "lng": -112.3016,
-    "elevationFt": null,
+    "elevationFt": 4268,
     "censusCode": "59170",
     "censusClass": "U6",
     "population": {
@@ -37283,7 +37283,7 @@
     "countySeat": false,
     "lat": 40.72466,
     "lng": -111.34186,
-    "elevationFt": 6234,
+    "elevationFt": 6191,
     "censusCode": "59280",
     "censusClass": "U5",
     "population": {
@@ -37342,7 +37342,7 @@
     "countySeat": false,
     "lat": 41.4649365,
     "lng": -112.0324456,
-    "elevationFt": null,
+    "elevationFt": 4370,
     "censusCode": "59390",
     "censusClass": "P1",
     "population": {
@@ -37489,7 +37489,7 @@
     "countySeat": false,
     "lat": 41.76914,
     "lng": -111.98159,
-    "elevationFt": null,
+    "elevationFt": 4475,
     "censusCode": "59610",
     "censusClass": "U3",
     "population": {
@@ -37524,7 +37524,7 @@
     "countySeat": false,
     "lat": 41.11805,
     "lng": -111.76768,
-    "elevationFt": null,
+    "elevationFt": 4885,
     "censusCode": "59720",
     "censusClass": "U6",
     "population": {
@@ -37574,7 +37574,7 @@
     "countySeat": false,
     "lat": 39.4217,
     "lng": -111.5591,
-    "elevationFt": null,
+    "elevationFt": 5564,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -37609,7 +37609,7 @@
     "countySeat": false,
     "lat": 37.39109,
     "lng": -113.5141,
-    "elevationFt": 6542,
+    "elevationFt": 6535,
     "censusCode": "60270",
     "censusClass": "U5",
     "population": {
@@ -37675,7 +37675,7 @@
     "countySeat": false,
     "lat": 40.93621,
     "lng": -111.14926,
-    "elevationFt": null,
+    "elevationFt": 6526,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -37710,7 +37710,7 @@
     "countySeat": false,
     "lat": 37.53531,
     "lng": -113.52222,
-    "elevationFt": null,
+    "elevationFt": 6063,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -37753,7 +37753,7 @@
     "countySeat": false,
     "lat": 37.34078,
     "lng": -113.27407,
-    "elevationFt": null,
+    "elevationFt": 4088,
     "censusCode": "60490",
     "censusClass": "U6",
     "population": {
@@ -37796,7 +37796,7 @@
     "countySeat": false,
     "lat": 41.2979981,
     "lng": -112.0860538,
-    "elevationFt": null,
+    "elevationFt": 4245,
     "censusCode": "60710",
     "censusClass": "P1",
     "population": {
@@ -37942,7 +37942,7 @@
     "countySeat": false,
     "lat": 40.3641184,
     "lng": -111.73854,
-    "elevationFt": null,
+    "elevationFt": 4629,
     "censusCode": "60930",
     "censusClass": "P1",
     "population": {
@@ -38313,7 +38313,7 @@
     "countySeat": false,
     "lat": 41.3182755,
     "lng": -111.9921649,
-    "elevationFt": null,
+    "elevationFt": 4396,
     "censusCode": "61150",
     "censusClass": "P1",
     "population": {
@@ -38449,7 +38449,7 @@
     "countySeat": false,
     "lat": 41.8754813,
     "lng": -112.1441223,
-    "elevationFt": null,
+    "elevationFt": 4488,
     "censusCode": "61260",
     "censusClass": "P1",
     "population": {
@@ -38507,7 +38507,7 @@
     "countySeat": false,
     "lat": 41.9754794,
     "lng": -112.2071828,
-    "elevationFt": null,
+    "elevationFt": 4367,
     "censusCode": "61590",
     "censusClass": "P1",
     "population": {
@@ -38561,7 +38561,7 @@
     "countySeat": false,
     "lat": 40.98135,
     "lng": -111.67828,
-    "elevationFt": null,
+    "elevationFt": 5151,
     "censusCode": "61700",
     "censusClass": "U6",
     "population": {
@@ -38980,7 +38980,7 @@
     "countySeat": false,
     "lat": 41.22466,
     "lng": -112.40723,
-    "elevationFt": null,
+    "elevationFt": 4211,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -39015,7 +39015,7 @@
     "countySeat": false,
     "lat": 41.7063204,
     "lng": -111.817165,
-    "elevationFt": null,
+    "elevationFt": 4596,
     "censusCode": "62360",
     "censusClass": "P1",
     "population": {
@@ -40270,7 +40270,7 @@
     "countySeat": false,
     "lat": 37.0622,
     "lng": -110.7654,
-    "elevationFt": null,
+    "elevationFt": 5604,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -40305,7 +40305,7 @@
     "countySeat": false,
     "lat": 40.23277,
     "lng": -109.80761,
-    "elevationFt": 4846,
+    "elevationFt": 4816,
     "censusCode": "62910",
     "censusClass": "U5",
     "population": {
@@ -40490,7 +40490,7 @@
     "countySeat": false,
     "lat": 39.0060727,
     "lng": -111.8618705,
-    "elevationFt": null,
+    "elevationFt": 5105,
     "censusCode": "63240",
     "censusClass": "P1",
     "population": {
@@ -40889,7 +40889,7 @@
     "countySeat": false,
     "lat": 41.9227056,
     "lng": -111.8135571,
-    "elevationFt": null,
+    "elevationFt": 4610,
     "censusCode": "63680",
     "censusClass": "P1",
     "population": {
@@ -40998,7 +40998,7 @@
     "countySeat": false,
     "lat": 41.00885,
     "lng": -111.69018,
-    "elevationFt": null,
+    "elevationFt": 5115,
     "censusCode": "63790",
     "censusClass": "U6",
     "population": {
@@ -41048,7 +41048,7 @@
     "countySeat": false,
     "lat": 41.7215978,
     "lng": -111.821332,
-    "elevationFt": null,
+    "elevationFt": 4580,
     "censusCode": "64120",
     "censusClass": "P1",
     "population": {
@@ -41112,7 +41112,7 @@
     "countySeat": false,
     "lat": 40.37636,
     "lng": -111.55576,
-    "elevationFt": null,
+    "elevationFt": 5284,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -41147,7 +41147,7 @@
     "countySeat": false,
     "lat": 41.1768888,
     "lng": -112.0038311,
-    "elevationFt": null,
+    "elevationFt": 4370,
     "censusCode": "64010",
     "censusClass": "P1",
     "population": {
@@ -41289,7 +41289,7 @@
     "countySeat": false,
     "lat": 41.78883,
     "lng": -112.1489,
-    "elevationFt": 4367,
+    "elevationFt": 4364,
     "censusCode": "64230",
     "censusClass": "U5",
     "population": {
@@ -41348,7 +41348,7 @@
     "countySeat": false,
     "lat": 40.521893,
     "lng": -111.9391023,
-    "elevationFt": null,
+    "elevationFt": 4442,
     "censusCode": "64340",
     "censusClass": "P1",
     "population": {
@@ -41889,7 +41889,7 @@
     "countySeat": false,
     "lat": 37.1610939,
     "lng": -113.0382745,
-    "elevationFt": null,
+    "elevationFt": 3747,
     "censusCode": "64560",
     "censusClass": "P1",
     "population": {
@@ -41953,7 +41953,7 @@
     "countySeat": false,
     "lat": 39.9249543,
     "lng": -111.8271568,
-    "elevationFt": null,
+    "elevationFt": 4984,
     "censusCode": "64590",
     "censusClass": "P1",
     "population": {
@@ -42003,7 +42003,7 @@
     "countySeat": false,
     "lat": 40.299403,
     "lng": -109.9887605,
-    "elevationFt": null,
+    "elevationFt": 5095,
     "censusCode": "64670",
     "censusClass": "P1",
     "population": {
@@ -42289,7 +42289,7 @@
     "countySeat": false,
     "lat": 41.81852,
     "lng": -113.41304,
-    "elevationFt": null,
+    "elevationFt": 5686,
     "censusCode": "64890",
     "censusClass": "U6",
     "population": {
@@ -42324,7 +42324,7 @@
     "countySeat": false,
     "lat": 41.1616108,
     "lng": -112.0263313,
-    "elevationFt": null,
+    "elevationFt": 4541,
     "censusCode": "65110",
     "censusClass": "P1",
     "population": {
@@ -42713,7 +42713,7 @@
     "countySeat": false,
     "lat": 40.3629996,
     "lng": -112.4505084,
-    "elevationFt": null,
+    "elevationFt": 5043,
     "censusCode": "65240",
     "censusClass": "P1",
     "population": {
@@ -42775,7 +42775,7 @@
     "countySeat": false,
     "lat": 41.77135,
     "lng": -111.12106,
-    "elevationFt": null,
+    "elevationFt": 6250,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -42810,7 +42810,7 @@
     "countySeat": false,
     "lat": 40.0530105,
     "lng": -111.673536,
-    "elevationFt": null,
+    "elevationFt": 4610,
     "censusCode": "65770",
     "censusClass": "P1",
     "population": {
@@ -43031,7 +43031,7 @@
     "countySeat": false,
     "lat": 38.9577407,
     "lng": -111.859925,
-    "elevationFt": null,
+    "elevationFt": 5161,
     "censusCode": "65880",
     "censusClass": "P1",
     "population": {
@@ -46063,7 +46063,7 @@
     "countySeat": false,
     "lat": 40.61746,
     "lng": -111.21384,
-    "elevationFt": 7454,
+    "elevationFt": 6857,
     "censusCode": "67400",
     "censusClass": "U5",
     "population": {
@@ -46099,7 +46099,7 @@
     "countySeat": false,
     "lat": 40.5916147,
     "lng": -111.8841013,
-    "elevationFt": null,
+    "elevationFt": 4465,
     "censusCode": "67440",
     "censusClass": "C4",
     "population": {
@@ -47053,7 +47053,7 @@
     "countySeat": false,
     "lat": 37.1330355,
     "lng": -113.6541266,
-    "elevationFt": null,
+    "elevationFt": 2759,
     "censusCode": "67660",
     "censusClass": "P1",
     "population": {
@@ -47167,7 +47167,7 @@
     "countySeat": false,
     "lat": 39.9755101,
     "lng": -111.7852106,
-    "elevationFt": null,
+    "elevationFt": 4970,
     "censusCode": "67770",
     "censusClass": "P1",
     "population": {
@@ -47349,7 +47349,7 @@
     "countySeat": false,
     "lat": 40.3491173,
     "lng": -111.9046567,
-    "elevationFt": null,
+    "elevationFt": 4498,
     "censusCode": "67825",
     "censusClass": "P1",
     "population": {
@@ -48105,7 +48105,7 @@
     "countySeat": false,
     "lat": 39.24496,
     "lng": -112.1041015,
-    "elevationFt": null,
+    "elevationFt": 5315,
     "censusCode": "67880",
     "censusClass": "P1",
     "population": {
@@ -48186,7 +48186,7 @@
     "countySeat": false,
     "lat": 39.7241289,
     "lng": -111.1607272,
-    "elevationFt": null,
+    "elevationFt": 7713,
     "censusCode": "67990",
     "censusClass": "P1",
     "population": {
@@ -48248,7 +48248,7 @@
     "countySeat": false,
     "lat": 38.59144,
     "lng": -112.26097,
-    "elevationFt": null,
+    "elevationFt": 5584,
     "censusCode": "68210",
     "censusClass": "U6",
     "population": {
@@ -48298,7 +48298,7 @@
     "countySeat": false,
     "lat": 37.18082,
     "lng": -113.76073,
-    "elevationFt": null,
+    "elevationFt": 3219,
     "censusCode": "68540",
     "censusClass": "U6",
     "population": {
@@ -48333,7 +48333,7 @@
     "countySeat": false,
     "lat": 38.8405211,
     "lng": -111.9677038,
-    "elevationFt": null,
+    "elevationFt": 5226,
     "censusCode": "68650",
     "censusClass": "P1",
     "population": {
@@ -48442,7 +48442,7 @@
     "countySeat": false,
     "lat": 41.8382622,
     "lng": -111.8327229,
-    "elevationFt": null,
+    "elevationFt": 4603,
     "censusCode": "69640",
     "censusClass": "P1",
     "population": {
@@ -48664,7 +48664,7 @@
     "countySeat": false,
     "lat": 41.9654755,
     "lng": -112.7097012,
-    "elevationFt": null,
+    "elevationFt": 4547,
     "censusCode": "69970",
     "censusClass": "P1",
     "population": {
@@ -48748,7 +48748,7 @@
     "countySeat": false,
     "lat": 40.72715,
     "lng": -111.54348,
-    "elevationFt": 6483,
+    "elevationFt": 6604,
     "censusCode": "70190",
     "censusClass": "U5",
     "population": {
@@ -48812,7 +48812,7 @@
     "countySeat": false,
     "lat": 40.5621704,
     "lng": -111.929658,
-    "elevationFt": null,
+    "elevationFt": 4446,
     "censusCode": "70850",
     "censusClass": "P1",
     "population": {
@@ -49662,7 +49662,7 @@
     "countySeat": false,
     "lat": 41.1918886,
     "lng": -111.9713304,
-    "elevationFt": null,
+    "elevationFt": 4449,
     "censusCode": "70960",
     "censusClass": "P1",
     "population": {
@@ -49873,7 +49873,7 @@
     "countySeat": false,
     "lat": 40.7188354,
     "lng": -111.8882691,
-    "elevationFt": null,
+    "elevationFt": 4255,
     "censusCode": "71070",
     "censusClass": "P1",
     "population": {
@@ -50071,7 +50071,7 @@
     "countySeat": false,
     "lat": 41.1324438,
     "lng": -111.9302184,
-    "elevationFt": null,
+    "elevationFt": 4511,
     "censusCode": "71180",
     "censusClass": "P1",
     "population": {
@@ -50215,7 +50215,7 @@
     "countySeat": false,
     "lat": 41.36325,
     "lng": -112.03579,
-    "elevationFt": 4278,
+    "elevationFt": 4331,
     "censusCode": "71255",
     "censusClass": "U5",
     "population": {
@@ -50273,7 +50273,7 @@
     "countySeat": false,
     "lat": 40.114955,
     "lng": -111.654923,
-    "elevationFt": null,
+    "elevationFt": 4577,
     "censusCode": "71290",
     "censusClass": "P1",
     "population": {
@@ -50795,7 +50795,7 @@
     "countySeat": false,
     "lat": 38.49329,
     "lng": -109.45848,
-    "elevationFt": 5131,
+    "elevationFt": 4800,
     "censusCode": "71455",
     "censusClass": "U5",
     "population": {
@@ -50843,7 +50843,7 @@
     "countySeat": false,
     "lat": 39.4824631,
     "lng": -111.4960236,
-    "elevationFt": null,
+    "elevationFt": 5827,
     "censusCode": "71730",
     "censusClass": "P1",
     "population": {
@@ -51010,7 +51010,7 @@
     "countySeat": false,
     "lat": 40.0010658,
     "lng": -111.7463199,
-    "elevationFt": null,
+    "elevationFt": 4738,
     "censusCode": "72170",
     "censusClass": "P1",
     "population": {
@@ -51062,7 +51062,7 @@
     "countySeat": false,
     "lat": 37.1888714,
     "lng": -112.9985515,
-    "elevationFt": null,
+    "elevationFt": 3907,
     "censusCode": "71840",
     "censusClass": "P1",
     "population": {
@@ -51147,7 +51147,7 @@
     "countySeat": false,
     "lat": 40.32806,
     "lng": -111.62437,
-    "elevationFt": null,
+    "elevationFt": 4974,
     "censusCode": "71950",
     "censusClass": "U6",
     "population": {
@@ -51189,7 +51189,7 @@
     "countySeat": false,
     "lat": 40.1652335,
     "lng": -111.6107526,
-    "elevationFt": null,
+    "elevationFt": 4580,
     "censusCode": "72280",
     "censusClass": "P1",
     "population": {
@@ -51660,7 +51660,7 @@
     "countySeat": true,
     "lat": 37.1041476,
     "lng": -113.5841233,
-    "elevationFt": null,
+    "elevationFt": 2697,
     "censusCode": "65330",
     "censusClass": "P1",
     "population": {
@@ -52422,7 +52422,7 @@
     "countySeat": false,
     "lat": 41.99382,
     "lng": -113.41915,
-    "elevationFt": null,
+    "elevationFt": 5768,
     "censusCode": "72610",
     "censusClass": "U6",
     "population": {
@@ -52465,7 +52465,7 @@
     "countySeat": false,
     "lat": 40.63775,
     "lng": -112.29609,
-    "elevationFt": 4278,
+    "elevationFt": 4291,
     "censusCode": "72720",
     "censusClass": "U5",
     "population": {
@@ -52597,7 +52597,7 @@
     "countySeat": false,
     "lat": 39.1935732,
     "lng": -111.69242,
-    "elevationFt": null,
+    "elevationFt": 5574,
     "censusCode": "72940",
     "censusClass": "P1",
     "population": {
@@ -52670,7 +52670,7 @@
     "countySeat": false,
     "lat": 40.44637,
     "lng": -110.81543,
-    "elevationFt": null,
+    "elevationFt": 6969,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -52712,7 +52712,7 @@
     "countySeat": false,
     "lat": 40.452722,
     "lng": -112.3607824,
-    "elevationFt": null,
+    "elevationFt": 5118,
     "censusCode": "73050",
     "censusClass": "P1",
     "population": {
@@ -52778,7 +52778,7 @@
     "countySeat": false,
     "lat": 41.06685,
     "lng": -111.71138,
-    "elevationFt": null,
+    "elevationFt": 5023,
     "censusCode": "73160",
     "censusClass": "U6",
     "population": {
@@ -52813,7 +52813,7 @@
     "countySeat": false,
     "lat": 39.46526,
     "lng": -112.6494,
-    "elevationFt": null,
+    "elevationFt": 4583,
     "censusCode": "73820",
     "censusClass": "U6",
     "population": {
@@ -52848,7 +52848,7 @@
     "countySeat": false,
     "lat": 37.80108,
     "lng": -112.93639,
-    "elevationFt": 5994,
+    "elevationFt": 5988,
     "censusCode": "74040",
     "censusClass": "U5",
     "population": {
@@ -52907,7 +52907,7 @@
     "countySeat": false,
     "lat": 40.7457808,
     "lng": -111.6115928,
-    "elevationFt": 6781,
+    "elevationFt": 6883,
     "censusCode": "74095",
     "censusClass": "U5",
     "population": {
@@ -52965,7 +52965,7 @@
     "countySeat": false,
     "lat": 38.05767,
     "lng": -109.11788,
-    "elevationFt": null,
+    "elevationFt": 7128,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -53000,7 +53000,7 @@
     "countySeat": false,
     "lat": 40.393038,
     "lng": -111.581569,
-    "elevationFt": 6594,
+    "elevationFt": 6148,
     "censusCode": "74260",
     "censusClass": "U6",
     "population": {
@@ -53043,7 +53043,7 @@
     "countySeat": false,
     "lat": 41.1363328,
     "lng": -112.0310537,
-    "elevationFt": null,
+    "elevationFt": 4511,
     "censusCode": "74480",
     "censusClass": "P1",
     "population": {
@@ -53218,7 +53218,7 @@
     "countySeat": false,
     "lat": 41.0893878,
     "lng": -112.0646657,
-    "elevationFt": null,
+    "elevationFt": 4285,
     "censusCode": "74810",
     "censusClass": "P1",
     "population": {
@@ -53578,7 +53578,7 @@
     "countySeat": false,
     "lat": 40.354437,
     "lng": -110.710076,
-    "elevationFt": null,
+    "elevationFt": 6522,
     "censusCode": "74920",
     "censusClass": "P1",
     "population": {
@@ -53670,7 +53670,7 @@
     "countySeat": false,
     "lat": 41.05965,
     "lng": -111.59187,
-    "elevationFt": null,
+    "elevationFt": 5200,
     "censusCode": "75030",
     "censusClass": "U6",
     "population": {
@@ -53705,7 +53705,7 @@
     "countySeat": false,
     "lat": 40.33996,
     "lng": -110.42742,
-    "elevationFt": null,
+    "elevationFt": 6831,
     "censusCode": "75140",
     "censusClass": "U6",
     "population": {
@@ -53755,7 +53755,7 @@
     "countySeat": false,
     "lat": 40.6677248,
     "lng": -111.9388258,
-    "elevationFt": null,
+    "elevationFt": 4301,
     "censusCode": "75360",
     "censusClass": "P1",
     "population": {
@@ -54290,7 +54290,7 @@
     "countySeat": false,
     "lat": 38.28609,
     "lng": -111.47745,
-    "elevationFt": 7093,
+    "elevationFt": 7146,
     "censusCode": "75470",
     "censusClass": "U5",
     "population": {
@@ -54349,7 +54349,7 @@
     "countySeat": false,
     "lat": 40.32135,
     "lng": -112.62661,
-    "elevationFt": null,
+    "elevationFt": 5217,
     "censusCode": "75690",
     "censusClass": "U6",
     "population": {
@@ -54391,7 +54391,7 @@
     "countySeat": false,
     "lat": 41.69383,
     "lng": -112.2941,
-    "elevationFt": 5013,
+    "elevationFt": 4331,
     "censusCode": "75800",
     "censusClass": "U5",
     "population": {
@@ -54446,7 +54446,7 @@
     "countySeat": false,
     "lat": 39.99136,
     "lng": -111.49826,
-    "elevationFt": null,
+    "elevationFt": 5043,
     "censusCode": "76020",
     "censusClass": "U6",
     "population": {
@@ -54481,7 +54481,7 @@
     "countySeat": false,
     "lat": 38.97108,
     "lng": -109.71379,
-    "elevationFt": 5082,
+    "elevationFt": 5138,
     "censusCode": "76180",
     "censusClass": "U5",
     "population": {
@@ -54534,7 +54534,7 @@
     "countySeat": false,
     "lat": 37.675,
     "lng": -110.69651,
-    "elevationFt": null,
+    "elevationFt": 4265,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -54595,7 +54595,7 @@
     "countySeat": false,
     "lat": 40.47326,
     "lng": -111.24764,
-    "elevationFt": 7762,
+    "elevationFt": 7717,
     "censusCode": "76280",
     "censusClass": "U5",
     "population": {
@@ -54638,7 +54638,7 @@
     "countySeat": false,
     "lat": 39.92725,
     "lng": -112.16178,
-    "elevationFt": null,
+    "elevationFt": 5899,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -55224,7 +55224,7 @@
     "countySeat": false,
     "lat": 37.2533157,
     "lng": -113.2846707,
-    "elevationFt": null,
+    "elevationFt": 3383,
     "censusCode": "76900",
     "censusClass": "P1",
     "population": {
@@ -55302,7 +55302,7 @@
     "countySeat": false,
     "lat": 38.2988691,
     "lng": -111.4190654,
-    "elevationFt": null,
+    "elevationFt": 6837,
     "censusCode": "77010",
     "censusClass": "P1",
     "population": {
@@ -55381,7 +55381,7 @@
     "countySeat": false,
     "lat": 41.7118728,
     "lng": -112.1655079,
-    "elevationFt": null,
+    "elevationFt": 4324,
     "censusCode": "77120",
     "censusClass": "P1",
     "population": {
@@ -55568,7 +55568,7 @@
     "countySeat": false,
     "lat": 41.9177043,
     "lng": -111.94245,
-    "elevationFt": null,
+    "elevationFt": 4462,
     "censusCode": "77230",
     "censusClass": "P1",
     "population": {
@@ -55634,7 +55634,7 @@
     "countySeat": false,
     "lat": 40.45357,
     "lng": -109.84992,
-    "elevationFt": null,
+    "elevationFt": 5636,
     "censusCode": "77450",
     "censusClass": "U6",
     "population": {
@@ -55684,7 +55684,7 @@
     "countySeat": false,
     "lat": 37.6252615,
     "lng": -112.0821359,
-    "elevationFt": null,
+    "elevationFt": 6309,
     "censusCode": "77560",
     "censusClass": "P1",
     "population": {
@@ -55791,7 +55791,7 @@
     "countySeat": false,
     "lat": 39.68946,
     "lng": -113.82851,
-    "elevationFt": null,
+    "elevationFt": 4701,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -55856,7 +55856,7 @@
     "countySeat": false,
     "lat": 37.2030566,
     "lng": -109.6065087,
-    "elevationFt": 4577,
+    "elevationFt": 4580,
     "censusCode": "77697",
     "censusClass": "U5",
     "population": {
@@ -55899,7 +55899,7 @@
     "countySeat": false,
     "lat": 37.85736,
     "lng": -109.06385,
-    "elevationFt": null,
+    "elevationFt": 6762,
     "censusCode": "77780",
     "censusClass": "U6",
     "population": {
@@ -55934,7 +55934,7 @@
     "countySeat": false,
     "lat": 41.1441105,
     "lng": -111.9232738,
-    "elevationFt": null,
+    "elevationFt": 4534,
     "censusCode": "77890",
     "censusClass": "P1",
     "population": {
@@ -56006,7 +56006,7 @@
     "countySeat": false,
     "lat": 40.27806,
     "lng": -110.21822,
-    "elevationFt": null,
+    "elevationFt": 5755,
     "censusCode": "78550",
     "censusClass": "U6",
     "population": {
@@ -56056,7 +56056,7 @@
     "countySeat": false,
     "lat": 40.96355,
     "lng": -111.23546,
-    "elevationFt": null,
+    "elevationFt": 6165,
     "censusCode": "78770",
     "censusClass": "U6",
     "population": {
@@ -56099,7 +56099,7 @@
     "countySeat": false,
     "lat": 40.27106,
     "lng": -110.43212,
-    "elevationFt": null,
+    "elevationFt": 5869,
     "censusCode": "79060",
     "censusClass": "U6",
     "population": {
@@ -56134,7 +56134,7 @@
     "countySeat": false,
     "lat": 38.80027,
     "lng": -112.00637,
-    "elevationFt": null,
+    "elevationFt": 5223,
     "censusCode": "79870",
     "censusClass": "U6",
     "population": {
@@ -56620,7 +56620,7 @@
     "countySeat": false,
     "lat": 40.0921678,
     "lng": -112.4335642,
-    "elevationFt": null,
+    "elevationFt": 5515,
     "censusCode": "80200",
     "censusClass": "P1",
     "population": {
@@ -56709,7 +56709,7 @@
     "countySeat": false,
     "lat": 37.33808,
     "lng": -113.69301,
-    "elevationFt": 4469,
+    "elevationFt": 4475,
     "censusCode": "80310",
     "censusClass": "U5",
     "population": {
@@ -56780,7 +56780,7 @@
     "countySeat": false,
     "lat": 40.297037,
     "lng": -111.746702,
-    "elevationFt": null,
+    "elevationFt": 4524,
     "censusCode": "80420",
     "censusClass": "P1",
     "population": {
@@ -56902,7 +56902,7 @@
     "countySeat": false,
     "lat": 37.208316,
     "lng": -113.1882792,
-    "elevationFt": null,
+    "elevationFt": 3615,
     "censusCode": "80530",
     "censusClass": "P1",
     "population": {
@@ -56987,7 +56987,7 @@
     "countySeat": false,
     "lat": 40.35496,
     "lng": -111.57406,
-    "elevationFt": null,
+    "elevationFt": 5200,
     "censusCode": "80640",
     "censusClass": "U6",
     "population": {
@@ -57029,7 +57029,7 @@
     "countySeat": false,
     "lat": 39.4869056,
     "lng": -111.6351961,
-    "elevationFt": null,
+    "elevationFt": 5627,
     "censusCode": "80860",
     "censusClass": "P1",
     "population": {
@@ -57102,7 +57102,7 @@
     "countySeat": false,
     "lat": 40.3877339,
     "lng": -111.4224058,
-    "elevationFt": null,
+    "elevationFt": 5679,
     "censusCode": "80970",
     "censusClass": "P1",
     "population": {
@@ -57168,7 +57168,7 @@
     "countySeat": false,
     "lat": 40.81185,
     "lng": -111.40746,
-    "elevationFt": 6093,
+    "elevationFt": 5886,
     "censusCode": "81190",
     "censusClass": "U5",
     "population": {
@@ -57233,7 +57233,7 @@
     "countySeat": false,
     "lat": 41.28355,
     "lng": -112.12219,
-    "elevationFt": null,
+    "elevationFt": 4222,
     "censusCode": "81410",
     "censusClass": "U6",
     "population": {
@@ -57290,7 +57290,7 @@
     "countySeat": false,
     "lat": 41.94413,
     "lng": -112.21721,
-    "elevationFt": null,
+    "elevationFt": 4380,
     "censusCode": "81740",
     "censusClass": "U6",
     "population": {
@@ -57333,7 +57333,7 @@
     "countySeat": false,
     "lat": 37.1305373,
     "lng": -113.5082867,
-    "elevationFt": null,
+    "elevationFt": 2792,
     "censusCode": "81960",
     "censusClass": "P1",
     "population": {
@@ -57576,7 +57576,7 @@
     "countySeat": false,
     "lat": 41.172722,
     "lng": -111.9766083,
-    "elevationFt": null,
+    "elevationFt": 4606,
     "censusCode": "82070",
     "censusClass": "P1",
     "population": {
@@ -57711,7 +57711,7 @@
     "countySeat": false,
     "lat": 39.5424659,
     "lng": -110.7354343,
-    "elevationFt": null,
+    "elevationFt": 5413,
     "censusCode": "82510",
     "censusClass": "P1",
     "population": {
@@ -57821,7 +57821,7 @@
     "countySeat": false,
     "lat": 41.6385432,
     "lng": -111.9338342,
-    "elevationFt": null,
+    "elevationFt": 4547,
     "censusCode": "82620",
     "censusClass": "P1",
     "population": {
@@ -57959,7 +57959,7 @@
     "countySeat": false,
     "lat": 40.7371524,
     "lng": -114.0375102,
-    "elevationFt": null,
+    "elevationFt": 4291,
     "censusCode": "82730",
     "censusClass": "P1",
     "population": {
@@ -58069,7 +58069,7 @@
     "countySeat": false,
     "lat": 40.8938339,
     "lng": -111.9018828,
-    "elevationFt": null,
+    "elevationFt": 4268,
     "censusCode": "82840",
     "censusClass": "P1",
     "population": {
@@ -58168,7 +58168,7 @@
     "countySeat": false,
     "lat": 41.2029998,
     "lng": -112.0510533,
-    "elevationFt": null,
+    "elevationFt": 4272,
     "censusCode": "82930",
     "censusClass": "P1",
     "population": {
@@ -58356,7 +58356,7 @@
     "countySeat": false,
     "lat": 40.6096698,
     "lng": -111.9391031,
-    "elevationFt": null,
+    "elevationFt": 4377,
     "censusCode": "82950",
     "censusClass": "P1",
     "population": {
@@ -59420,7 +59420,7 @@
     "countySeat": false,
     "lat": 40.06076,
     "lng": -111.78828,
-    "elevationFt": 4564,
+    "elevationFt": 4544,
     "censusCode": "83252",
     "censusClass": "U5",
     "population": {
@@ -59465,7 +59465,7 @@
     "countySeat": false,
     "lat": 41.1182767,
     "lng": -112.08411,
-    "elevationFt": null,
+    "elevationFt": 4314,
     "censusCode": "83390",
     "censusClass": "P1",
     "population": {
@@ -59633,7 +59633,7 @@
     "countySeat": false,
     "lat": 40.6916132,
     "lng": -112.0010501,
-    "elevationFt": null,
+    "elevationFt": 4304,
     "censusCode": "83470",
     "censusClass": "P1",
     "population": {
@@ -60688,7 +60688,7 @@
     "countySeat": false,
     "lat": 41.25025,
     "lng": -112.15249,
-    "elevationFt": null,
+    "elevationFt": 4223,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -60738,7 +60738,7 @@
     "countySeat": false,
     "lat": 41.24885,
     "lng": -112.07829,
-    "elevationFt": null,
+    "elevationFt": 4239,
     "censusCode": "83720",
     "censusClass": "U6",
     "population": {
@@ -60832,7 +60832,7 @@
     "countySeat": false,
     "lat": 39.07829,
     "lng": -109.11238,
-    "elevationFt": null,
+    "elevationFt": 4311,
     "censusCode": "83610",
     "censusClass": "U6",
     "population": {
@@ -60867,7 +60867,7 @@
     "countySeat": false,
     "lat": 40.56668,
     "lng": -111.86366,
-    "elevationFt": 4564,
+    "elevationFt": 4573,
     "censusCode": "84050",
     "censusClass": "P1",
     "population": {
@@ -60937,7 +60937,7 @@
     "countySeat": false,
     "lat": 41.86353,
     "lng": -111.77389,
-    "elevationFt": null,
+    "elevationFt": 5331,
     "censusCode": "84075",
     "censusClass": "U6",
     "population": {
@@ -60972,7 +60972,7 @@
     "countySeat": false,
     "lat": 37.46581,
     "lng": -109.46759,
-    "elevationFt": 5276,
+    "elevationFt": 5305,
     "censusCode": "84095",
     "censusClass": "U5",
     "population": {
@@ -61021,7 +61021,7 @@
     "countySeat": false,
     "lat": 37.1336,
     "lng": -109.28208,
-    "elevationFt": null,
+    "elevationFt": 5574,
     "censusCode": "84100",
     "censusClass": "U6",
     "population": {
@@ -61056,7 +61056,7 @@
     "countySeat": false,
     "lat": 37.21141,
     "lng": -109.29288,
-    "elevationFt": null,
+    "elevationFt": 4751,
     "censusCode": "84125",
     "censusClass": "U6",
     "population": {
@@ -61098,7 +61098,7 @@
     "countySeat": false,
     "lat": 40.46806,
     "lng": -109.93072,
-    "elevationFt": 6063,
+    "elevationFt": 6033,
     "censusCode": "84160",
     "censusClass": "U5",
     "population": {
@@ -61173,7 +61173,7 @@
     "countySeat": false,
     "lat": 40.94965,
     "lng": -111.65768,
-    "elevationFt": null,
+    "elevationFt": 5262,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -61208,7 +61208,7 @@
     "countySeat": false,
     "lat": 37.83219,
     "lng": -111.99546,
-    "elevationFt": null,
+    "elevationFt": 7605,
     "censusCode": "84325",
     "censusClass": "U6",
     "population": {
@@ -61251,7 +61251,7 @@
     "countySeat": false,
     "lat": 41.4091053,
     "lng": -112.0360557,
-    "elevationFt": null,
+    "elevationFt": 4350,
     "censusCode": "84710",
     "censusClass": "P1",
     "population": {
@@ -61376,7 +61376,7 @@
     "countySeat": false,
     "lat": 41.3332735,
     "lng": -111.8271618,
-    "elevationFt": null,
+    "elevationFt": 5331,
     "censusCode": "84950",
     "censusClass": "P4",
     "population": {
@@ -61428,7 +61428,7 @@
     "countySeat": false,
     "lat": 40.58136,
     "lng": -111.22714,
-    "elevationFt": 6749,
+    "elevationFt": 6722,
     "censusCode": "85040",
     "censusClass": "U5",
     "population": {
@@ -61487,7 +61487,7 @@
     "countySeat": false,
     "lat": 40.015322,
     "lng": -111.648682,
-    "elevationFt": null,
+    "elevationFt": 5574,
     "censusCode": "85050",
     "censusClass": "P1",
     "population": {
@@ -61553,7 +61553,7 @@
     "countySeat": false,
     "lat": 39.43325,
     "lng": -112.63335,
-    "elevationFt": null,
+    "elevationFt": 4609,
     "censusCode": "",
     "censusClass": "",
     "population": {
@@ -61588,7 +61588,7 @@
     "countySeat": false,
     "lat": 41.5218878,
     "lng": -111.1624159,
-    "elevationFt": null,
+    "elevationFt": 6339,
     "censusCode": "85260",
     "censusClass": "P1",
     "population": {
@@ -61680,7 +61680,7 @@
     "countySeat": false,
     "lat": 40.8716119,
     "lng": -111.89216,
-    "elevationFt": null,
+    "elevationFt": 4373,
     "censusCode": "85370",
     "censusClass": "P1",
     "population": {
@@ -61849,7 +61849,7 @@
     "countySeat": false,
     "lat": 41.96072,
     "lng": -113.54225,
-    "elevationFt": null,
+    "elevationFt": 5974,
     "censusCode": "85590",
     "censusClass": "U6",
     "population": {
@@ -61892,7 +61892,7 @@
     "countySeat": false,
     "lat": 37.25079,
     "lng": -112.95639,
-    "elevationFt": null,
+    "elevationFt": 4278,
     "censusCode": "",
     "censusClass": "",
     "population": {

@@ -64,5 +64,12 @@
     "folder": "census/county-boundaries",
     "downloaded": "2026-10-18",
     "note": "Utah counties filtered from the GeoJSON copy at github.com/plotly/datasets (geojson-counties-fips.json). Coarse; replace with UGRC county boundaries for detail."
+  },
+  "epqs": {
+    "name": "USGS",
+    "url": "https://epqs.nationalmap.gov/v1/docs",
+    "publicUrl": "https://www.usgs.gov/programs/national-geospatial-program/national-map",
+    "folder": "usgs-epqs",
+    "downloaded": "2026-10-20"
   }
 }

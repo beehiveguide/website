@@ -234,9 +234,7 @@ main:focus { outline: none; }
   vertical-align: -0.17em;
 }
 .nav-icon-contact {
-  width: 1.087em; /* mailbox, same height as the other icons */
-  height: 1em;
-  vertical-align: -0.12em;
+  width: 1.05em; /* envelope, same height as the other icons */
 }
 .nav-icon-info { width: 0.91em; }
 /* Medium screens and smaller: the links become outlined rounded squares,
@@ -312,7 +310,7 @@ a.social-circle:focus,
 }
 .social-circle svg { width: 1.2rem; height: 1.2rem; }
 .social-hex svg { width: 1.375rem; height: 1.375rem; } /* logos about as tall as the names beside them */
-.social-links .social-circle { margin-left: 0.35rem; }
+.social-links { gap: 0.4rem; }
 /* Contact page: honeycomb instead of a circle (same point-up shape as the
    logo), then the name */
 .social-hex {
@@ -341,7 +339,6 @@ a.social-circle:focus,
   vertical-align: -0.05em;
   color: var(--icon-gray);
 }
-.heading-icon-wide { transform: scaleX(-1); } /* main street, mirrored */
 
 /* Small icon before a button's text (place marker on "Community Profile") */
 .btn-icon {
@@ -604,12 +601,12 @@ a.marker-link:focus {
 }
 .ad-setup .ad-box span { font-weight: 700; }
 
-/* Privacy choices box: a small card in the bottom left corner; a strip
+/* Privacy choices box: a small card in the bottom right corner; a strip
    along the bottom on phones */
 .consent {
   position: fixed;
   bottom: 1rem;
-  left: 1rem;
+  right: 1rem;
   z-index: 1050;
   width: 22rem;
   max-width: calc(100% - 2rem);
@@ -641,11 +638,11 @@ a.marker-link:focus {
   border-color: #6c757d;
 }
 
-/* "Privacy Choices" after the copyright: a small, quiet button */
+/* "Privacy Choices" on its own line: under the copyright on wide screens,
+   below the social icons on phones. A small, quiet button. */
 .footer-privacy {
   padding: 0 0.4rem;
   font-size: 0.75rem;
   line-height: 1.5;
   color: #495057; /* dark enough gray for small text on the light button */
-  vertical-align: 0.24em; /* nudged up, between centered and resting on the baseline */
 }

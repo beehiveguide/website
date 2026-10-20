@@ -1,0 +1,5 @@
+[
+  { "name": "Tintic", "county": "Juab", "gaz_id": "1438031", "note": "GNIS lists it as Tintic Junction, at the same point as UGRC's Tintic." },
+  { "name": "Zion", "county": "Washington", "gaz_id": "1434529", "note": "GNIS lists it as Zion Lodge, at the same point as UGRC's Zion." },
+  { "name": "Ogden Canyon", "county": "Weber", "gaz_id": "1453587", "note": "GNIS's Ogden Canyon Wildwood Estates, about 0.4 miles from UGRC's Ogden Canyon point." }
+]

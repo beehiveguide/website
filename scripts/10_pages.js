@@ -172,14 +172,26 @@ gtag("consent", "default", { analytics_storage: "denied", ad_storage: "denied", 
 
 // The box asks about ads only when ads are set up or on; otherwise just analytics.
 const CONSENT_ADS = ADS.mode !== "off";
+// With ads, "Choices" opens a switch for each kind; with analytics only, the
+// two buttons say it all, so there are no switches.
 const CONSENT_BOX = fill(template("parts/consent.html"), {
   "{Consent Text}": CONSENT_ADS
     ? "This site uses cookies for analytics and advertising. Set your preferences for each."
     : "This site uses cookies for analytics. Set your preference.",
-  "{Consent Ads Switch}": CONSENT_ADS ? `<div class="form-check form-switch">
+  "{Consent Options}": CONSENT_ADS ? `    <div id="consent-options" class="consent-options small mb-2" hidden>
+      <div class="form-check form-switch mb-1">
+        <input class="form-check-input" type="checkbox" id="consent-analytics" />
+        <label class="form-check-label" for="consent-analytics"><strong>Analytics</strong>: visits and usage</label>
+      </div>
+      <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" id="consent-ads" />
         <label class="form-check-label" for="consent-ads"><strong>Ads</strong>: personalized ads and ad measurement</label>
-      </div>` : "",
+      </div>
+    </div>` : "",
+  "{Consent Choices Button}": CONSENT_ADS ? `
+      <button type="button" class="btn btn-sm btn-link link-secondary px-1" id="consent-more" aria-expanded="false" aria-controls="consent-options">Choices</button>` : "",
+  "{Reject Label}": CONSENT_ADS ? "Reject all" : "Reject",
+  "{Accept Label}": CONSENT_ADS ? "Accept all" : "Accept",
 }).trim();
 
 // Google Tag Manager ("gtm" in config/site.json, like "GTM-XXXX"). Loads after

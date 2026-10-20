@@ -80,6 +80,7 @@ function parseCsvLine(line) {
 
 // --- Elevations from GNIS search exports, by feature ID.
 const elevations = {};
+const elevationsByName = {};
 // Any GNIS search export in sources/gnis/search-exports/, whatever its name.
 const elevFiles = paths.sourceFiles(path.join("gnis", "search-exports"), /\.csv$/i);
 let elevFileCount = 0;
@@ -93,7 +94,20 @@ for (const file of elevFiles) {
   for (const line of lines.slice(1)) {
     const c = parseCsvLine(line);
     const elev = parseFloat(c[elevIdx]);
-    if (!isNaN(elev)) elevations[c[idIdx]] = String(elev);
+    if (!isNaN(elev)) {
+      elevations[c[idIdx]] = String(elev);
+      // Also by name and county, for places whose kept record has a different
+      // Gaz ID than the exported one ("East Carbon City" -> "EASTCARBON|CARBON")
+      // Only places, not valleys, capes or streams that share a name
+      const cls = c[h.indexOf("Class")];
+      if (cls === "Populated Place" || cls === "Census" || cls === "Civil") {
+        const full = c[h.indexOf("Feature Name")];
+        const county = c[h.indexOf("County")].toUpperCase().replace(/ COUNTY$/, "").replace(/[^A-Z]/g, "");
+        for (const name of [full, full.replace(/ (City|Town|Census Designated Place)$/i, "")]) {
+          elevationsByName[`${name.toUpperCase().replace(/[^A-Z]/g, "")}|${county}`] ??= String(elev);
+        }
+      }
+    }
   }
 }
 
@@ -282,6 +296,34 @@ for (const row of rows) {
   row["Feature Name"] = name;
   row.Latitude = String(u.lat);
   row.Longitude = String(u.lng);
+}
+
+// Rule 5, last try: a place still without elevation takes it from an
+// exported record with the same name in the same county.
+for (const row of rows) {
+  if (row.Elevation) continue;
+  const key = `${row["Feature Name"].toUpperCase().replace(/[^A-Z]/g, "")}|${row.County.toUpperCase().replace(/ COUNTY$/, "").replace(/[^A-Z]/g, "")}`;
+  if (elevationsByName[key]) row.Elevation = elevationsByName[key];
+}
+
+// Places whose GNIS record goes by another name (config/elevation_matches.json):
+// take the elevation from that record's Gaz ID.
+const matchesPath = paths.config("elevation_matches.json");
+const elevMatches = fs.existsSync(matchesPath) ? JSON.parse(fs.readFileSync(matchesPath, "utf8")) : [];
+for (const row of rows) {
+  if (row.Elevation) continue;
+  const m = elevMatches.find((x) => x.name === row["Feature Name"] && `${x.county} County` === row.County);
+  if (m && elevations[m.gaz_id]) row.Elevation = elevations[m.gaz_id];
+}
+
+// Places GNIS doesn't list: elevation from USGS's Elevation Point Query
+// Service at the place's point (sources/usgs-epqs/epqs_elevations.json, feet)
+const epqsPath = paths.source("usgs-epqs", "epqs_elevations.json");
+const epqs = fs.existsSync(epqsPath) ? JSON.parse(fs.readFileSync(epqsPath, "utf8")).places : [];
+for (const row of rows) {
+  if (row.Elevation) continue;
+  const e = epqs.find((x) => x.name === row["Feature Name"] && `${x.county} County` === row.County);
+  if (e) row.Elevation = String(Math.round(e.feet / 3.28084 * 10) / 10); // to meters, like GNIS
 }
 
 // Rule 6: drop anything on the excluded list.

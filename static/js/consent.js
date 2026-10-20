@@ -1,4 +1,5 @@
-// Privacy choices. The Ads switch is there only when ads are set up.
+// Privacy choices. Switches (under "Choices") are there only when ads are
+// set up; with analytics only, the box has just Accept and Reject.
 // Saves the visitor's pick in this browser and passes it to
 // Google tags (Consent Mode: Analytics, Ads, AdSense, Tag Manager) and
 // Microsoft Clarity. Until someone picks, analytics and ad cookies stay off
@@ -40,12 +41,13 @@
   };
   const open = (showOptions) => {
     const c = read() || { analytics: false, ads: false };
-    analytics.checked = c.analytics;
+    if (analytics) analytics.checked = c.analytics;
     if (ads) ads.checked = c.ads;
     toggleOptions(showOptions);
     box.hidden = false;
   };
   const toggleOptions = (show) => {
+    if (!opts) return; // analytics only: no switches
     opts.hidden = !show;
     more.hidden = show;
     more.setAttribute("aria-expanded", String(show));
@@ -57,24 +59,19 @@
       const v = b.dataset.consent;
       if (v === "accept") choose({ analytics: true, ads: Boolean(ads) }); // ads only when asked
       if (v === "reject") choose({ analytics: false, ads: false });
-      // Closing without picking: cookies stay off, and the box waits for the
-      // next visit
-      if (v === "close") {
-        try { sessionStorage.setItem(KEY, "closed"); } catch (e) {}
-        box.hidden = true;
-      }
+      // Closing keeps the choice already saved (from earlier, or from the
+      // switches); with nothing saved yet, it counts as no to everything.
+      if (v === "close") choose(read() || { analytics: false, ads: false });
     }
   });
-  more.addEventListener("click", () => toggleOptions(true));
+  more?.addEventListener("click", () => toggleOptions(true));
   // Each switch takes effect (and is saved) as soon as it's flipped
   [analytics, ads].filter(Boolean).forEach((s) =>
-    s.addEventListener("change", () => store({ analytics: analytics.checked, ads: Boolean(ads?.checked) })));
+    s.addEventListener("change", () => store({ analytics: Boolean(analytics?.checked), ads: Boolean(ads?.checked) })));
   document.querySelectorAll("[data-consent-open]").forEach((a) =>
     a.addEventListener("click", (e) => { e.preventDefault(); open(true); }));
 
   const saved = read();
-  let closed = false;
-  try { closed = sessionStorage.getItem(KEY) === "closed"; } catch (e) {}
   if (saved) apply(saved);
-  else if (!closed) open(false);
+  else open(false);
 })();
