@@ -18,6 +18,18 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
   .map-results:empty { display: none; }
+  /* Phones: the heading hides (screen readers still hear it) and the
+     search box says "Find a community" instead */
+  @media (max-width: 767.98px) {
+    .map-title {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+    }
+  }
   .map-results button {
     display: block;
     width: 100%;
@@ -34,7 +46,7 @@
 
 <div class="map-bar bg-light-gradient border-bottom shadow">
   <div class="container-fluid px-lg-5 py-2 d-flex flex-wrap align-items-center gap-2">
-    <h1 class="fs-6 fw-bold lh-base mb-0 me-2"><label for="map-search"><svg viewBox="0 0 100 100" class="map-bar-icon me-1" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M50.00 0.76 L92.64 25.38 L92.64 74.62 L50.00 99.24 L7.36 74.62 L7.36 25.38 Z M46.10 11.33 Q50.00 9.08 53.90 11.33 L81.54 27.29 Q85.44 29.54 85.44 34.04 L85.44 65.96 Q85.44 70.46 81.54 72.71 L53.90 88.67 Q50.00 90.92 46.10 88.67 L18.46 72.71 Q14.56 70.46 14.56 65.96 L14.56 34.04 Q14.56 29.54 18.46 27.29 Z"/><path fill="currentColor" fill-rule="evenodd" transform="translate(50 51) scale(1.15) translate(-50 -50)" d="M34.55 30 H53.1 V38 H65.45 V70 H34.55 Z"/></svg>Find a community</label></h1>
+    <h1 class="map-title fs-6 fw-bold lh-base mb-0 me-2"><label for="map-search"><svg viewBox="0 0 100 100" class="map-bar-icon me-1" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M50.00 0.76 L92.64 25.38 L92.64 74.62 L50.00 99.24 L7.36 74.62 L7.36 25.38 Z M46.10 11.33 Q50.00 9.08 53.90 11.33 L81.54 27.29 Q85.44 29.54 85.44 34.04 L85.44 65.96 Q85.44 70.46 81.54 72.71 L53.90 88.67 Q50.00 90.92 46.10 88.67 L18.46 72.71 Q14.56 70.46 14.56 65.96 L14.56 34.04 Q14.56 29.54 18.46 27.29 Z"/><path fill="currentColor" fill-rule="evenodd" transform="translate(50 51) scale(1.15) translate(-50 -50)" d="M34.55 30 H53.1 V38 H65.45 V70 H34.55 Z"/></svg>Find a community</label></h1>
     <div class="map-search-box">
       <input id="map-search" type="search" class="form-control" placeholder="Enter a town or city name ..." autocomplete="off" />
       <div id="map-results" class="map-results font-sans small"></div>
@@ -57,7 +69,12 @@
     const POPUP = {Town Popup JSON};
     // [name, county, lat, lng, page, county seat (1 or 0)] for every community
     const places = {Map Places JSON};
-    const map = beehiveMap("full-map", { zoomControl: false });
+    // Dots draw on a canvas, which lets a tap a little off a dot still pick
+    // it (fingers are bigger than the dots)
+    const map = beehiveMap("full-map", {
+      zoomControl: false,
+      renderer: L.canvas({ tolerance: L.Browser.mobile ? 10 : 2 }),
+    });
     // Zoom buttons on the right so they don't sit on the panel
     L.control.zoom({ position: "topright" }).addTo(map);
 
@@ -129,6 +146,7 @@
 
     // Search: town names only; Enter picks the first match
     const search = document.getElementById("map-search");
+    if (window.matchMedia("(max-width: 767.98px)").matches) search.placeholder = "Find a community ...";
     const results = document.getElementById("map-results");
     let matches = [];
     search.addEventListener("input", () => {

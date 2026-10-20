@@ -390,12 +390,11 @@ a.social-circle:focus,
 /* County seat icon in the town lists: secondary gray, like text-secondary */
 .town-list .county-seat-icon { color: #6c757d; }
 
-/* The homepage town list and Nearby Communities on town pages: 1 to 4
+/* The homepage town list and Nearby Communities on town pages: 2 to 4
    columns of town links, each with a place marker as part of the link and
    no underline until hover or keyboard focus */
-.town-list { columns: 1; font-size: 1.1rem; }
+.town-list { columns: 2; font-size: 1.1rem; }
 .town-list li { break-inside: avoid; }
-@media (min-width: 576px) { .town-list { columns: 2; } }
 @media (min-width: 768px) { .town-list { columns: 3; } }
 @media (min-width: 992px) { .town-list { columns: 4; } }
 
