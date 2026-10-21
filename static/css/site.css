@@ -589,10 +589,11 @@ a.social-circle:focus {
 
 .town-list a,
 .marker-link {
-  transition: color 0.15s ease-in-out; /* quick fade, same speed as Bootstrap buttons */
-  display: inline-block;
+  transition: color 0.15s ease-in-out;
+  display: inline-block; /* allows padding and positioning across multiple lines */
+  line-height: 1.25; /* tightens line spacing when text splits */
   position: relative;
-  padding-left: 0.9em; /* room for the place marker */
+  padding-left: 0.9em; /* reserves space for the placemarker */
   color: var(--bs-primary);
   text-decoration: none;
 }
@@ -605,13 +606,13 @@ a.marker-link:focus {
 }
 /* Place marker (static/images/icons/marker.svg in the Drive folder), in the
    link's color */
+/* Position the generated marker icon relative to the first line's baseline */
 .town-list a::before,
 .marker-link::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%); /* centered on the line */
+  top: 0.15em; /* aligns icon baseline with line 1 text */
   width: 0.68em;
   height: 0.88em;
   background-color: currentColor;
