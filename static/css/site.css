@@ -287,17 +287,7 @@ main:focus {
 /* ---------- Header ---------- */
 
 .heading-container {
-  width: 100%;
-  padding-left: 3rem !important; /* Retains px-5 horizontal inset on standard displays */
-  padding-right: 3rem !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 1600px) {
-  .heading-container {
-    max-width: 1500px; /* Caps header width on ultra-wide viewports */
-  }
+  max-width: 1707 px;
 }
 
 /* Site name: Zilla Slab bold italic. "Guide" ("nameBox" in config/site.json)
