@@ -661,7 +661,8 @@ function buildPage(t) {
     "shadow",
     true,
     {
-      description: `Community profile for ${place}, in ${t.county} County. Location, population, postal, phone and gardening info.`,
+      // description: `Community profile for ${place}, in ${t.county} County. Location, population, postal, phone and gardening info.`,
+      description: `Community profile for ${esc(t.name)}, Utah, in ${t.county} County. Location, population, postal, phone and gardening info.`,
       path: `communities/${fileName(t)}`,
       jsonLd: {
         "@type": "Place",
