@@ -287,7 +287,7 @@ main:focus {
 /* ---------- Header ---------- */
 
 .heading-container {
-  max-width: 1707 px;
+  max-width: 1472px !important;
 }
 
 /* Site name: Zilla Slab bold italic. "Guide" ("nameBox" in config/site.json)
