@@ -625,6 +625,15 @@ function buildPage(t) {
     }),
   });
 
+  // Drop the "(N households)" note when there's no household count.
+  html = html.replace(
+    new RegExp(
+      `\\s*<small[^>]*>\\s*<em>\\(${NA} households\\)</em>\\s*</small\\s*>`,
+      "g",
+    ),
+    "",
+  );
+
   // Leave out anything not available: drop its line, then adjust or drop the
   // climate normals note, then drop the whole Gardening Info section if empty.
   html = html.replace(new RegExp(`\\s*<li>[^\\n]*${NA}[^\\n]*</li>`, "g"), "");
