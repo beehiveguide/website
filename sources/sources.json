@@ -46,11 +46,18 @@
     "folder": "usda",
     "downloaded": ""
   },
-  "precip": {
+  "prism": {
     "name": "PRISM",
     "url": "https://prism.oregonstate.edu/explorer/",
     "folder": "prism",
-    "downloaded": ""
+    "downloaded": "2026-10-22"
+  },
+  "noaa": {
+    "name": "NOAA",
+    "url": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
+    "publicUrl": "https://noaa.gov/",
+    "folder": "noaa",
+    "downloaded": "2026-10-22"
   },
   "usps": {
     "name": "USPS Locator",
