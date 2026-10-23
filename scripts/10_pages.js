@@ -625,6 +625,15 @@ function buildPage(t) {
     }),
   });
 
+  // Drop the whole Population line when there's no population.
+  html = html.replace(
+    new RegExp(
+      `\\s*<li>\\s*<strong>Population:</strong>\\s*${NA}[\\s\\S]*?</li>`,
+      "g",
+    ),
+    "",
+  );
+
   // Drop the "(N households)" note when there's no household count.
   html = html.replace(
     new RegExp(
