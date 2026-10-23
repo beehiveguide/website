@@ -485,14 +485,14 @@ function nearbyItems(t) {
 }
 
 function buildPage(t) {
-  const sources = [SOURCES.gnis(t.elevationFt !== null)];
+  const src = { gnis: SOURCES.gnis(t.elevationFt !== null) };
   const pop = t.population;
   const ph = t.phone;
 
   // Settled year (own paragraph) and name origin (lead paragraph)
   const intro = [];
   if (t.founded || t.origin) {
-    sources.push(SOURCES.history(!!t.founded, !!t.origin));
+    src.history = SOURCES.history(!!t.founded, !!t.origin);
     // "Settled 1890" -> "(Settled in 1890)"
     if (t.founded)
       intro.push(
@@ -501,10 +501,10 @@ function buildPage(t) {
     if (t.origin)
       intro.push(`<p class="lead mb-4 mb-lg-3">${esc(t.origin)}</p>`);
   }
-  if (pop) sources.push(SOURCES[pop.source]);
-  if (t.hardinessZone) sources.push(SOURCES.zone);
-  if (t.precipIn !== null) sources.push(SOURCES.precip);
-  if (t.freezeFreeDays !== undefined) sources.push(SOURCES.freeze);
+  if (pop) src.pop = SOURCES[pop.source];
+  if (t.hardinessZone) src.zone = SOURCES.zone;
+  if (t.precipIn !== null) src.precip = SOURCES.precip;
+  if (t.freezeFreeDays !== undefined) src.freeze = SOURCES.freeze;
 
   // Phone: one "Area Code" line ("801/385" when there are several), then the
   // prefixes under it. With several area codes, each gets its own labeled
@@ -549,8 +549,19 @@ function buildPage(t) {
             }</li>
           </ul>
         </li>`;
-    sources.push(SOURCES.phone(showPrefixes));
+    src.phone = SOURCES.phone(showPrefixes);
   }
+
+  // Sources listed in the order their data appears on the page
+  const sources = [
+    src.history,
+    src.gnis,
+    src.pop,
+    src.phone,
+    src.zone,
+    src.precip,
+    src.freeze,
+  ].filter(Boolean);
 
   let html = townTemplate;
   if (pop && pop.source === "ugrcPop") {
