@@ -20,7 +20,7 @@
     "phone": null,
     "zip": "84635",
     "hardinessZone": "6a",
-    "precipIn": 8.2,
+    "precipIn": 8.27,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -55,7 +55,7 @@
     "phone": null,
     "zip": "84731",
     "hardinessZone": "6a",
-    "precipIn": 11.82,
+    "precipIn": 11.8,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -99,7 +99,10 @@
     "phone": null,
     "zip": "84004",
     "hardinessZone": "7a",
-    "precipIn": 20.56,
+    "precipIn": 19.4,
+    "freezeFreeDays": 159,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -346,7 +349,10 @@
     },
     "zip": "84092",
     "hardinessZone": "6b",
-    "precipIn": 48.97,
+    "precipIn": 48.42,
+    "freezeFreeDays": 98,
+    "lastSpringFreeze": "June 11",
+    "firstFallFreeze": "Sept. 18",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -430,7 +436,10 @@
     },
     "zip": "84001",
     "hardinessZone": "5b",
-    "precipIn": 9.98,
+    "precipIn": 9.66,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 23",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1352845",
     "schools": {
       "schools": {
@@ -519,7 +528,10 @@
     "phone": null,
     "zip": "84710",
     "hardinessZone": "6a",
-    "precipIn": 18.97,
+    "precipIn": 17.33,
+    "freezeFreeDays": 120,
+    "lastSpringFreeze": "June 1",
+    "firstFallFreeze": "Sept. 30",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440004",
     "schools": null,
     "places": {
@@ -589,7 +601,10 @@
     "phone": null,
     "zip": "84002",
     "hardinessZone": "6a",
-    "precipIn": 11.11,
+    "precipIn": 10.39,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 23",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -640,7 +655,10 @@
     "phone": null,
     "zip": "84335",
     "hardinessZone": "6a",
-    "precipIn": 16.8,
+    "precipIn": 16.56,
+    "freezeFreeDays": 121,
+    "lastSpringFreeze": "May 17",
+    "firstFallFreeze": "Sept. 18",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -709,7 +727,10 @@
     },
     "zip": "84003",
     "hardinessZone": "6a",
-    "precipIn": 14.74,
+    "precipIn": 14.75,
+    "freezeFreeDays": 188,
+    "lastSpringFreeze": "April 17",
+    "firstFallFreeze": "Oct. 25",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1352950",
     "schools": {
       "schools": {
@@ -1250,7 +1271,7 @@
     "phone": null,
     "zip": "84510",
     "hardinessZone": "",
-    "precipIn": 7.38,
+    "precipIn": 7.32,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -1285,7 +1306,10 @@
     "phone": null,
     "zip": "84712",
     "hardinessZone": "5b",
-    "precipIn": 9.32,
+    "precipIn": 9.05,
+    "freezeFreeDays": 85,
+    "lastSpringFreeze": "June 17",
+    "firstFallFreeze": "Sept. 12",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -1321,7 +1345,10 @@
     "phone": null,
     "zip": "84711",
     "hardinessZone": "6a",
-    "precipIn": 9.33,
+    "precipIn": 8.95,
+    "freezeFreeDays": 125,
+    "lastSpringFreeze": "May 21",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1353108",
     "schools": null,
     "places": {
@@ -1390,7 +1417,7 @@
     },
     "zip": "84712",
     "hardinessZone": "5b",
-    "precipIn": 8.8,
+    "precipIn": 8.71,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440006",
     "schools": null,
     "places": {
@@ -1466,7 +1493,7 @@
     },
     "zip": "84737",
     "hardinessZone": "8b",
-    "precipIn": 14.47,
+    "precipIn": 14.41,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -1515,7 +1542,7 @@
     "phone": null,
     "zip": "84029",
     "hardinessZone": "7a",
-    "precipIn": 10.49,
+    "precipIn": 10.58,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -1550,7 +1577,7 @@
     "phone": null,
     "zip": "84021",
     "hardinessZone": "6a",
-    "precipIn": 8.5,
+    "precipIn": 8.25,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -1592,7 +1619,10 @@
     "phone": null,
     "zip": "84604",
     "hardinessZone": "6b",
-    "precipIn": 36.94,
+    "precipIn": 39.5,
+    "freezeFreeDays": 138,
+    "lastSpringFreeze": "May 17",
+    "firstFallFreeze": "Oct. 5",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -1635,7 +1665,7 @@
     "phone": null,
     "zip": "84620",
     "hardinessZone": "6a",
-    "precipIn": 9.8,
+    "precipIn": 9.25,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1353707",
     "schools": null,
     "places": {
@@ -1717,7 +1747,7 @@
     "phone": null,
     "zip": "84754",
     "hardinessZone": "6a",
-    "precipIn": 9.23,
+    "precipIn": 9.07,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -1760,7 +1790,7 @@
     "phone": null,
     "zip": "84328",
     "hardinessZone": "6a",
-    "precipIn": 22.49,
+    "precipIn": 22.05,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -1795,7 +1825,7 @@
     "phone": null,
     "zip": "84621",
     "hardinessZone": "6a",
-    "precipIn": 10.44,
+    "precipIn": 10.42,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -1859,7 +1889,10 @@
     "phone": null,
     "zip": "84066",
     "hardinessZone": "5b",
-    "precipIn": 7.46,
+    "precipIn": 7.43,
+    "freezeFreeDays": 121,
+    "lastSpringFreeze": "May 23",
+    "firstFallFreeze": "Sept. 22",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -1921,7 +1954,7 @@
     },
     "zip": "84301",
     "hardinessZone": "6b",
-    "precipIn": 15.95,
+    "precipIn": 15.91,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1354324",
     "schools": {
       "schools": {
@@ -1997,7 +2030,7 @@
     },
     "zip": "84713",
     "hardinessZone": "6a",
-    "precipIn": 12.58,
+    "precipIn": 12.34,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1354369",
     "schools": {
       "schools": {
@@ -2175,6 +2208,9 @@
     "zip": "84306",
     "hardinessZone": "6a",
     "precipIn": null,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -2225,7 +2261,7 @@
     "phone": null,
     "zip": "84660",
     "hardinessZone": "6a",
-    "precipIn": 15.73,
+    "precipIn": 15.63,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -2273,7 +2309,7 @@
     "phone": null,
     "zip": "84066",
     "hardinessZone": "5b",
-    "precipIn": 8.35,
+    "precipIn": 8.4,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -2309,7 +2345,10 @@
     "phone": null,
     "zip": "84335",
     "hardinessZone": "6a",
-    "precipIn": 16.04,
+    "precipIn": 16.17,
+    "freezeFreeDays": 144,
+    "lastSpringFreeze": "May 8",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -2369,7 +2408,7 @@
     },
     "zip": "84714",
     "hardinessZone": "5b",
-    "precipIn": 11.22,
+    "precipIn": 11.15,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -2420,7 +2459,10 @@
     "phone": null,
     "zip": "84714",
     "hardinessZone": "5b",
-    "precipIn": 11.83,
+    "precipIn": 11.8,
+    "freezeFreeDays": 110,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 20",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -2488,7 +2530,7 @@
     },
     "zip": "84715",
     "hardinessZone": "6a",
-    "precipIn": 9.33,
+    "precipIn": 9.17,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1354882",
     "schools": {
       "schools": {
@@ -2606,7 +2648,10 @@
     },
     "zip": "84741",
     "hardinessZone": "7a",
-    "precipIn": 7.1,
+    "precipIn": 7.03,
+    "freezeFreeDays": 204,
+    "lastSpringFreeze": "April 8",
+    "firstFallFreeze": "Nov. 1",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -2688,7 +2733,7 @@
     "phone": null,
     "zip": "84629",
     "hardinessZone": "5b",
-    "precipIn": 17.38,
+    "precipIn": 16.48,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -2727,7 +2772,10 @@
     },
     "zip": "84511",
     "hardinessZone": "7a",
-    "precipIn": 13.07,
+    "precipIn": 13.24,
+    "freezeFreeDays": 174,
+    "lastSpringFreeze": "April 28",
+    "firstFallFreeze": "Oct. 21",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355137",
     "schools": {
       "schools": {
@@ -2936,7 +2984,10 @@
     "phone": null,
     "zip": "84007",
     "hardinessZone": "5b",
-    "precipIn": 9.65,
+    "precipIn": 9.45,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 23",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355270",
     "schools": null,
     "places": {
@@ -2990,7 +3041,10 @@
     },
     "zip": "84512",
     "hardinessZone": "7a",
-    "precipIn": 7.25,
+    "precipIn": 7.11,
+    "freezeFreeDays": 172,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 13",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355283",
     "schools": {
       "schools": {
@@ -3090,7 +3144,10 @@
     "phone": null,
     "zip": "84065",
     "hardinessZone": "7a",
-    "precipIn": 16.8,
+    "precipIn": 16.49,
+    "freezeFreeDays": 185,
+    "lastSpringFreeze": "April 18",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -3340,7 +3397,7 @@
     "phone": null,
     "zip": "84008",
     "hardinessZone": "6a",
-    "precipIn": 8.95,
+    "precipIn": 9.12,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -3375,7 +3432,10 @@
     "phone": null,
     "zip": "84051",
     "hardinessZone": "6a",
-    "precipIn": 10.18,
+    "precipIn": 9.99,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 23",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -3417,7 +3477,10 @@
     "phone": null,
     "zip": "84337",
     "hardinessZone": "6b",
-    "precipIn": 15.2,
+    "precipIn": 15.21,
+    "freezeFreeDays": 175,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 17",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -3476,7 +3539,10 @@
     },
     "zip": "84716",
     "hardinessZone": "7a",
-    "precipIn": 11.97,
+    "precipIn": 11.87,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 4",
+    "firstFallFreeze": "Oct. 14",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440008",
     "schools": {
       "schools": {
@@ -3560,7 +3626,10 @@
     },
     "zip": "84010",
     "hardinessZone": "6b",
-    "precipIn": 21.92,
+    "precipIn": 20.01,
+    "freezeFreeDays": 178,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355500",
     "schools": {
       "schools": {
@@ -4119,7 +4188,10 @@
     },
     "zip": "84719",
     "hardinessZone": "6a",
-    "precipIn": 31.63,
+    "precipIn": 32.96,
+    "freezeFreeDays": 82,
+    "lastSpringFreeze": "June 21",
+    "firstFallFreeze": "Sept. 12",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440010",
     "schools": null,
     "places": null,
@@ -4173,7 +4245,7 @@
     "phone": null,
     "zip": "84021",
     "hardinessZone": "6a",
-    "precipIn": 8.53,
+    "precipIn": 8.26,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -4232,7 +4304,10 @@
     },
     "zip": "84302",
     "hardinessZone": "6b",
-    "precipIn": 22.43,
+    "precipIn": 18.4,
+    "freezeFreeDays": 150,
+    "lastSpringFreeze": "May 5",
+    "firstFallFreeze": "Oct. 5",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355849",
     "schools": {
       "schools": {
@@ -4696,7 +4771,10 @@
     "phone": null,
     "zip": "84121",
     "hardinessZone": "6a",
-    "precipIn": 43.47,
+    "precipIn": 41.1,
+    "freezeFreeDays": 98,
+    "lastSpringFreeze": "June 11",
+    "firstFallFreeze": "Sept. 18",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -4758,7 +4836,10 @@
     },
     "zip": "84764",
     "hardinessZone": "6a",
-    "precipIn": 16.24,
+    "precipIn": 16.23,
+    "freezeFreeDays": 125,
+    "lastSpringFreeze": "May 23",
+    "firstFallFreeze": "Sept. 27",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -4833,6 +4914,9 @@
     "zip": "84533",
     "hardinessZone": "8a",
     "precipIn": null,
+    "freezeFreeDays": 227,
+    "lastSpringFreeze": "March 25",
+    "firstFallFreeze": "Nov. 10",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -4881,7 +4965,10 @@
     "phone": null,
     "zip": "84744",
     "hardinessZone": "6a",
-    "precipIn": 13.44,
+    "precipIn": 11.27,
+    "freezeFreeDays": 104,
+    "lastSpringFreeze": "June 6",
+    "firstFallFreeze": "Sept. 21",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -4925,7 +5012,10 @@
     "phone": null,
     "zip": "84304",
     "hardinessZone": "6a",
-    "precipIn": 16.32,
+    "precipIn": 16.33,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -4960,7 +5050,10 @@
     "phone": null,
     "zip": "84304",
     "hardinessZone": "6a",
-    "precipIn": null,
+    "precipIn": 16.16,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -4998,7 +5091,7 @@
     },
     "zip": "84775",
     "hardinessZone": "7a",
-    "precipIn": 7.27,
+    "precipIn": 7.18,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -5033,7 +5126,10 @@
     "phone": null,
     "zip": "84034",
     "hardinessZone": "6b",
-    "precipIn": 6.41,
+    "precipIn": 6.44,
+    "freezeFreeDays": 135,
+    "lastSpringFreeze": "May 14",
+    "firstFallFreeze": "Sept. 28",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -5080,7 +5176,7 @@
     },
     "zip": "84718",
     "hardinessZone": "6a",
-    "precipIn": 11.94,
+    "precipIn": 11.54,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440013",
     "schools": null,
     "places": {
@@ -5146,7 +5242,10 @@
     "phone": null,
     "zip": "84501",
     "hardinessZone": "6a",
-    "precipIn": 10,
+    "precipIn": 9.64,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -5196,7 +5295,7 @@
     "phone": null,
     "zip": "84660",
     "hardinessZone": "6a",
-    "precipIn": 21.88,
+    "precipIn": 20.54,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -5242,7 +5341,10 @@
     },
     "zip": "84513",
     "hardinessZone": "6a",
-    "precipIn": 7.88,
+    "precipIn": 7.92,
+    "freezeFreeDays": 128,
+    "lastSpringFreeze": "May 18",
+    "firstFallFreeze": "Sept. 27",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1357251",
     "schools": {
       "schools": {
@@ -5376,7 +5478,7 @@
     "phone": null,
     "zip": "84024",
     "hardinessZone": "6a",
-    "precipIn": 16.51,
+    "precipIn": 14.78,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -5412,7 +5514,10 @@
     "phone": null,
     "zip": "84532",
     "hardinessZone": "7a",
-    "precipIn": 12.99,
+    "precipIn": 10.23,
+    "freezeFreeDays": 185,
+    "lastSpringFreeze": "April 17",
+    "firstFallFreeze": "Oct. 23",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -5486,7 +5591,10 @@
     },
     "zip": "84720",
     "hardinessZone": "6b",
-    "precipIn": 14.18,
+    "precipIn": 13.11,
+    "freezeFreeDays": 159,
+    "lastSpringFreeze": "May 4",
+    "firstFallFreeze": "Oct. 13",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1357356",
     "schools": {
       "schools": {
@@ -5978,7 +6086,10 @@
     "phone": null,
     "zip": "84013",
     "hardinessZone": "6a",
-    "precipIn": 18.31,
+    "precipIn": 14.17,
+    "freezeFreeDays": 103,
+    "lastSpringFreeze": "June 2",
+    "firstFallFreeze": "Sept. 16",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -6071,7 +6182,7 @@
     "phone": null,
     "zip": "84720",
     "hardinessZone": "6b",
-    "precipIn": 23.11,
+    "precipIn": 18.96,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -6114,7 +6225,10 @@
     "phone": null,
     "zip": "84062",
     "hardinessZone": "7a",
-    "precipIn": 19.84,
+    "precipIn": 18.83,
+    "freezeFreeDays": 188,
+    "lastSpringFreeze": "April 17",
+    "firstFallFreeze": "Oct. 25",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -6303,7 +6417,7 @@
     "phone": null,
     "zip": "84066",
     "hardinessZone": "5b",
-    "precipIn": 8.52,
+    "precipIn": 8.26,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -6353,7 +6467,7 @@
     "phone": null,
     "zip": "84032",
     "hardinessZone": "6a",
-    "precipIn": 18.38,
+    "precipIn": 16.98,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -6396,7 +6510,7 @@
     "phone": null,
     "zip": "84622",
     "hardinessZone": "6a",
-    "precipIn": 10.25,
+    "precipIn": 10.29,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -6475,7 +6589,10 @@
     "phone": null,
     "zip": "84014",
     "hardinessZone": "6b",
-    "precipIn": 21.92,
+    "precipIn": 21.31,
+    "freezeFreeDays": 178,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1357482",
     "schools": {
       "schools": {
@@ -6708,7 +6825,7 @@
     "phone": null,
     "zip": "84722",
     "hardinessZone": "6b",
-    "precipIn": 15.93,
+    "precipIn": 15.68,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -6766,7 +6883,10 @@
     "phone": null,
     "zip": "84754",
     "hardinessZone": "6a",
-    "precipIn": 8.67,
+    "precipIn": 8.68,
+    "freezeFreeDays": 125,
+    "lastSpringFreeze": "May 21",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -6824,7 +6944,10 @@
     "phone": null,
     "zip": "84032",
     "hardinessZone": "6a",
-    "precipIn": 17.81,
+    "precipIn": 16.24,
+    "freezeFreeDays": 106,
+    "lastSpringFreeze": "June 4",
+    "firstFallFreeze": "Sept. 20",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -6889,7 +7012,10 @@
     "phone": null,
     "zip": "84623",
     "hardinessZone": "5b",
-    "precipIn": 10.5,
+    "precipIn": 10.4,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 26",
+    "firstFallFreeze": "Sept. 25",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -6949,7 +7075,10 @@
     },
     "zip": "84723",
     "hardinessZone": "5b",
-    "precipIn": 9.54,
+    "precipIn": 9.37,
+    "freezeFreeDays": 125,
+    "lastSpringFreeze": "May 23",
+    "firstFallFreeze": "Sept. 27",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358076",
     "schools": {
       "schools": {
@@ -7045,7 +7174,7 @@
     "phone": null,
     "zip": "84305",
     "hardinessZone": "6a",
-    "precipIn": 17.17,
+    "precipIn": 17.22,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358203",
     "schools": null,
     "places": {
@@ -7118,7 +7247,10 @@
     "phone": null,
     "zip": "84516",
     "hardinessZone": "6a",
-    "precipIn": 8.39,
+    "precipIn": 8.53,
+    "freezeFreeDays": 156,
+    "lastSpringFreeze": "May 6",
+    "firstFallFreeze": "Oct. 10",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358228",
     "schools": null,
     "places": {
@@ -7212,7 +7344,7 @@
     "phone": null,
     "zip": "84526",
     "hardinessZone": "6a",
-    "precipIn": 27.99,
+    "precipIn": 25.04,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -7251,7 +7383,7 @@
     },
     "zip": "84015",
     "hardinessZone": "7a",
-    "precipIn": 19.17,
+    "precipIn": 19.51,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358284",
     "schools": {
       "schools": {
@@ -7684,7 +7816,10 @@
     "phone": null,
     "zip": "84015",
     "hardinessZone": "7a",
-    "precipIn": 19.17,
+    "precipIn": 18.69,
+    "freezeFreeDays": 180,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -7888,7 +8023,10 @@
     },
     "zip": "84017",
     "hardinessZone": "5b",
-    "precipIn": 15.66,
+    "precipIn": 15.37,
+    "freezeFreeDays": 95,
+    "lastSpringFreeze": "June 7",
+    "firstFallFreeze": "Sept. 12",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358501",
     "schools": {
       "schools": {
@@ -8022,7 +8160,10 @@
     "phone": null,
     "zip": "84321",
     "hardinessZone": "6a",
-    "precipIn": 17.41,
+    "precipIn": 17.31,
+    "freezeFreeDays": 138,
+    "lastSpringFreeze": "May 12",
+    "firstFallFreeze": "Sept. 28",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -8057,7 +8198,10 @@
     "phone": null,
     "zip": "84306",
     "hardinessZone": "6a",
-    "precipIn": 16.25,
+    "precipIn": 16.47,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -8099,7 +8243,7 @@
     "phone": null,
     "zip": "84660",
     "hardinessZone": "6a",
-    "precipIn": 16.03,
+    "precipIn": 16.47,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -8135,7 +8279,7 @@
     "phone": null,
     "zip": "84006",
     "hardinessZone": "7a",
-    "precipIn": 19.07,
+    "precipIn": 18.92,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -8213,7 +8357,10 @@
     "phone": null,
     "zip": "84307",
     "hardinessZone": "6b",
-    "precipIn": 15.81,
+    "precipIn": 16.08,
+    "freezeFreeDays": 150,
+    "lastSpringFreeze": "May 5",
+    "firstFallFreeze": "Oct. 5",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1359260",
     "schools": {
       "schools": {
@@ -8297,7 +8444,10 @@
     "phone": null,
     "zip": "84308",
     "hardinessZone": "6a",
-    "precipIn": 16.52,
+    "precipIn": 16.17,
+    "freezeFreeDays": 121,
+    "lastSpringFreeze": "May 17",
+    "firstFallFreeze": "Sept. 18",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -8348,7 +8498,10 @@
     "phone": null,
     "zip": "84121",
     "hardinessZone": "6a",
-    "precipIn": 23.76,
+    "precipIn": 20.83,
+    "freezeFreeDays": 174,
+    "lastSpringFreeze": "April 29",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -8612,7 +8765,10 @@
     "phone": null,
     "zip": "84320",
     "hardinessZone": "6a",
-    "precipIn": 20.72,
+    "precipIn": 18.43,
+    "freezeFreeDays": 143,
+    "lastSpringFreeze": "May 11",
+    "firstFallFreeze": "Oct. 5",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -8698,7 +8854,7 @@
     "phone": null,
     "zip": "84018",
     "hardinessZone": "6a",
-    "precipIn": 20.7,
+    "precipIn": 20.57,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -8749,7 +8905,10 @@
     "phone": null,
     "zip": "84783",
     "hardinessZone": "8a",
-    "precipIn": 13.7,
+    "precipIn": 13.6,
+    "freezeFreeDays": 207,
+    "lastSpringFreeze": "April 9",
+    "firstFallFreeze": "Nov. 5",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -8799,7 +8958,10 @@
     "phone": null,
     "zip": "84032",
     "hardinessZone": "6a",
-    "precipIn": 18.25,
+    "precipIn": 16.41,
+    "freezeFreeDays": 106,
+    "lastSpringFreeze": "June 4",
+    "firstFallFreeze": "Sept. 20",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -8845,7 +9007,10 @@
     },
     "zip": "84624",
     "hardinessZone": "6a",
-    "precipIn": 8.67,
+    "precipIn": 8.7,
+    "freezeFreeDays": 137,
+    "lastSpringFreeze": "May 16",
+    "firstFallFreeze": "Sept. 29",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1360636",
     "schools": {
       "schools": {
@@ -9071,7 +9236,10 @@
     "phone": null,
     "zip": "84624",
     "hardinessZone": "6a",
-    "precipIn": 8.37,
+    "precipIn": 8.38,
+    "freezeFreeDays": 137,
+    "lastSpringFreeze": "May 14",
+    "firstFallFreeze": "Sept. 30",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -9122,7 +9290,10 @@
     "phone": null,
     "zip": "84309",
     "hardinessZone": "6b",
-    "precipIn": 19.72,
+    "precipIn": 17.45,
+    "freezeFreeDays": 175,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 17",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -9188,7 +9359,10 @@
     "phone": null,
     "zip": "84020",
     "hardinessZone": "7a",
-    "precipIn": 17.93,
+    "precipIn": 17.59,
+    "freezeFreeDays": 185,
+    "lastSpringFreeze": "April 18",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361288",
     "schools": {
       "schools": {
@@ -9796,7 +9970,10 @@
     "phone": null,
     "zip": "84078",
     "hardinessZone": "5b",
-    "precipIn": 14.27,
+    "precipIn": 13.55,
+    "freezeFreeDays": 143,
+    "lastSpringFreeze": "May 15",
+    "firstFallFreeze": "Oct. 5",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -9835,7 +10012,10 @@
     },
     "zip": "84021",
     "hardinessZone": "6a",
-    "precipIn": 9.55,
+    "precipIn": 9.38,
+    "freezeFreeDays": 150,
+    "lastSpringFreeze": "May 6",
+    "firstFallFreeze": "Oct. 5",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361381",
     "schools": {
       "schools": {
@@ -9980,7 +10160,7 @@
     },
     "zip": "84022",
     "hardinessZone": "6b",
-    "precipIn": 11.31,
+    "precipIn": 11.44,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361402",
     "schools": {
       "schools": {
@@ -10082,7 +10262,10 @@
     },
     "zip": "84023",
     "hardinessZone": "5b",
-    "precipIn": 11.58,
+    "precipIn": 11.56,
+    "freezeFreeDays": 120,
+    "lastSpringFreeze": "May 26",
+    "firstFallFreeze": "Sept. 23",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361534",
     "schools": {
       "schools": {
@@ -10171,7 +10354,7 @@
     },
     "zip": "84005",
     "hardinessZone": "6b",
-    "precipIn": 14.72,
+    "precipIn": 13.79,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -10847,7 +11030,7 @@
     "phone": null,
     "zip": "84098",
     "hardinessZone": "5b",
-    "precipIn": 21.4,
+    "precipIn": 20.71,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -10890,7 +11073,10 @@
     "phone": null,
     "zip": "84520",
     "hardinessZone": "6b",
-    "precipIn": null,
+    "precipIn": 13,
+    "freezeFreeDays": 159,
+    "lastSpringFreeze": "May 5",
+    "firstFallFreeze": "Oct. 15",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361679",
     "schools": null,
     "places": {
@@ -10972,7 +11158,7 @@
     "phone": null,
     "zip": "84535",
     "hardinessZone": "6b",
-    "precipIn": 14.31,
+    "precipIn": 14.33,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -11028,7 +11214,10 @@
     "phone": null,
     "zip": "84024",
     "hardinessZone": "6a",
-    "precipIn": 17.51,
+    "precipIn": 14.91,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 30",
+    "firstFallFreeze": "Sept. 18",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1442045",
     "schools": null,
     "places": {
@@ -11079,7 +11268,10 @@
     "phone": null,
     "zip": "84310",
     "hardinessZone": "6a",
-    "precipIn": 23.69,
+    "precipIn": 23.61,
+    "freezeFreeDays": 125,
+    "lastSpringFreeze": "May 22",
+    "firstFallFreeze": "Sept. 26",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362041",
     "schools": {
       "schools": {
@@ -11186,7 +11378,7 @@
     "phone": null,
     "zip": "84626",
     "hardinessZone": "6b",
-    "precipIn": 11.72,
+    "precipIn": 11.71,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440026",
     "schools": null,
     "places": {
@@ -11244,7 +11436,7 @@
     "phone": null,
     "zip": "84651",
     "hardinessZone": "6b",
-    "precipIn": 21.54,
+    "precipIn": 19.36,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -11307,7 +11499,7 @@
     "phone": null,
     "zip": "84521",
     "hardinessZone": "6a",
-    "precipIn": 8.8,
+    "precipIn": 8.79,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362457",
     "schools": null,
     "places": {
@@ -11384,7 +11576,7 @@
     "phone": null,
     "zip": "84724",
     "hardinessZone": "6a",
-    "precipIn": 9.56,
+    "precipIn": 9.5,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362495",
     "schools": {
       "schools": {
@@ -11470,7 +11662,10 @@
     "phone": null,
     "zip": "84337",
     "hardinessZone": "6b",
-    "precipIn": 16.34,
+    "precipIn": 16.19,
+    "freezeFreeDays": 175,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 17",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -11529,7 +11724,7 @@
     "phone": null,
     "zip": "84522",
     "hardinessZone": "6b",
-    "precipIn": 9.54,
+    "precipIn": 9.64,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362547",
     "schools": null,
     "places": {
@@ -11629,7 +11824,10 @@
     "phone": null,
     "zip": "84108",
     "hardinessZone": "6b",
-    "precipIn": 25.6,
+    "precipIn": 25.31,
+    "freezeFreeDays": 158,
+    "lastSpringFreeze": "May 7",
+    "firstFallFreeze": "Oct. 14",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -11671,7 +11869,7 @@
     "phone": null,
     "zip": "84024",
     "hardinessZone": "6a",
-    "precipIn": 16.27,
+    "precipIn": 15.71,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -11715,7 +11913,7 @@
     "phone": null,
     "zip": "84721",
     "hardinessZone": "6b",
-    "precipIn": 12.12,
+    "precipIn": 12.1,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -11842,7 +12040,10 @@
     "phone": null,
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 23.31,
+    "precipIn": 21.77,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 25",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -11897,7 +12098,10 @@
     },
     "zip": "84725",
     "hardinessZone": "7a",
-    "precipIn": 15.1,
+    "precipIn": 15.2,
+    "freezeFreeDays": 132,
+    "lastSpringFreeze": "May 21",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362656",
     "schools": {
       "schools": {
@@ -12022,7 +12226,10 @@
     },
     "zip": "84627",
     "hardinessZone": "6a",
-    "precipIn": 11.62,
+    "precipIn": 11.69,
+    "freezeFreeDays": 113,
+    "lastSpringFreeze": "May 28",
+    "firstFallFreeze": "Sept. 20",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362671",
     "schools": {
       "schools": {
@@ -12205,7 +12412,7 @@
     "phone": null,
     "zip": "84074",
     "hardinessZone": "7a",
-    "precipIn": 16.81,
+    "precipIn": 16.58,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -12281,7 +12488,10 @@
     },
     "zip": "84726",
     "hardinessZone": "7a",
-    "precipIn": 10.56,
+    "precipIn": 10.6,
+    "freezeFreeDays": 155,
+    "lastSpringFreeze": "May 8",
+    "firstFallFreeze": "Oct. 10",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362716",
     "schools": {
       "schools": {
@@ -12395,7 +12605,10 @@
     "phone": null,
     "zip": "84728",
     "hardinessZone": "6a",
-    "precipIn": 6.5,
+    "precipIn": 6.57,
+    "freezeFreeDays": 140,
+    "lastSpringFreeze": "May 12",
+    "firstFallFreeze": "Oct. 1",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -12459,7 +12672,7 @@
     "phone": null,
     "zip": "84313",
     "hardinessZone": "6b",
-    "precipIn": 10.78,
+    "precipIn": 10.88,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -12498,7 +12711,7 @@
     },
     "zip": "84628",
     "hardinessZone": "6b",
-    "precipIn": 18.17,
+    "precipIn": 18.44,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362818",
     "schools": {
       "schools": {
@@ -12626,7 +12839,7 @@
     "phone": null,
     "zip": "84337",
     "hardinessZone": "6b",
-    "precipIn": 15.62,
+    "precipIn": 15.55,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -12670,6 +12883,9 @@
     "zip": "84013",
     "hardinessZone": "6a",
     "precipIn": 12.49,
+    "freezeFreeDays": 103,
+    "lastSpringFreeze": "June 2",
+    "firstFallFreeze": "Sept. 16",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -12745,7 +12961,7 @@
     },
     "zip": "84629",
     "hardinessZone": "5b",
-    "precipIn": 15.96,
+    "precipIn": 15.57,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363051",
     "schools": {
       "schools": {
@@ -12859,7 +13075,10 @@
     },
     "zip": "84025",
     "hardinessZone": "7b",
-    "precipIn": 28.34,
+    "precipIn": 22.81,
+    "freezeFreeDays": 181,
+    "lastSpringFreeze": "April 19",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363179",
     "schools": {
       "schools": {
@@ -13213,7 +13432,10 @@
     "phone": null,
     "zip": "84404",
     "hardinessZone": "7a",
-    "precipIn": 17.57,
+    "precipIn": 17.8,
+    "freezeFreeDays": 177,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 18",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -13347,7 +13569,7 @@
     "phone": null,
     "zip": "84630",
     "hardinessZone": "6b",
-    "precipIn": 10.35,
+    "precipIn": 10.56,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -13406,7 +13628,10 @@
     "phone": null,
     "zip": "84523",
     "hardinessZone": "6b",
-    "precipIn": 8.41,
+    "precipIn": 8.44,
+    "freezeFreeDays": 156,
+    "lastSpringFreeze": "May 6",
+    "firstFallFreeze": "Oct. 10",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363342",
     "schools": {
       "schools": {
@@ -13547,7 +13772,10 @@
     },
     "zip": "84311",
     "hardinessZone": "6a",
-    "precipIn": 15.05,
+    "precipIn": 15.51,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363357",
     "schools": {
       "schools": {
@@ -13623,7 +13851,10 @@
     },
     "zip": "84631",
     "hardinessZone": "6a",
-    "precipIn": 15.3,
+    "precipIn": 15.49,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 4",
+    "firstFallFreeze": "Oct. 14",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363377",
     "schools": {
       "schools": {
@@ -13807,6 +14038,9 @@
     "zip": "84083",
     "hardinessZone": "6b",
     "precipIn": null,
+    "freezeFreeDays": 169,
+    "lastSpringFreeze": "April 26",
+    "firstFallFreeze": "Oct. 14",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -13842,7 +14076,7 @@
     "phone": null,
     "zip": "84023",
     "hardinessZone": "5b",
-    "precipIn": 12.96,
+    "precipIn": 11.95,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -13884,7 +14118,7 @@
     "phone": null,
     "zip": "84631",
     "hardinessZone": "6a",
-    "precipIn": 11.84,
+    "precipIn": 11.61,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -13920,7 +14154,10 @@
     "phone": null,
     "zip": "84026",
     "hardinessZone": "5b",
-    "precipIn": 6.72,
+    "precipIn": 6.46,
+    "freezeFreeDays": 135,
+    "lastSpringFreeze": "May 19",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363767",
     "schools": {
       "schools": {
@@ -13995,7 +14232,7 @@
     },
     "zip": "84632",
     "hardinessZone": "5b",
-    "precipIn": 13.18,
+    "precipIn": 13.36,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363900",
     "schools": {
       "schools": {
@@ -14076,7 +14313,10 @@
     "phone": null,
     "zip": "84036",
     "hardinessZone": "5b",
-    "precipIn": 16.69,
+    "precipIn": 16.8,
+    "freezeFreeDays": 100,
+    "lastSpringFreeze": "June 5",
+    "firstFallFreeze": "Sept. 17",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -14134,7 +14374,10 @@
     "phone": null,
     "zip": "84646",
     "hardinessZone": "5b",
-    "precipIn": 16.71,
+    "precipIn": 12.9,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 26",
+    "firstFallFreeze": "Sept. 25",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -14178,7 +14421,10 @@
     "phone": null,
     "zip": "84747",
     "hardinessZone": "6a",
-    "precipIn": 11.56,
+    "precipIn": 10.6,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 21",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -14237,7 +14483,10 @@
     "phone": null,
     "zip": "84037",
     "hardinessZone": "7b",
-    "precipIn": 22.59,
+    "precipIn": 24.52,
+    "freezeFreeDays": 181,
+    "lastSpringFreeze": "April 19",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -14330,7 +14579,10 @@
     "phone": null,
     "zip": "84775",
     "hardinessZone": "7a",
-    "precipIn": 8.22,
+    "precipIn": 8.07,
+    "freezeFreeDays": 192,
+    "lastSpringFreeze": "April 18",
+    "firstFallFreeze": "Oct. 28",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -14375,7 +14627,7 @@
     },
     "zip": "84027",
     "hardinessZone": "6a",
-    "precipIn": 13.4,
+    "precipIn": 13.5,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -14432,7 +14684,7 @@
     "phone": null,
     "zip": "84533",
     "hardinessZone": "8a",
-    "precipIn": 10.64,
+    "precipIn": 9.74,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -14467,7 +14719,7 @@
     "phone": null,
     "zip": "84728",
     "hardinessZone": "6a",
-    "precipIn": 7.47,
+    "precipIn": 7.29,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -14503,7 +14755,7 @@
     "phone": null,
     "zip": "84028",
     "hardinessZone": "5a",
-    "precipIn": 13.91,
+    "precipIn": 14.13,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -14542,7 +14794,10 @@
     },
     "zip": "84028",
     "hardinessZone": "5a",
-    "precipIn": 14.02,
+    "precipIn": 14,
+    "freezeFreeDays": 140,
+    "lastSpringFreeze": "May 15",
+    "firstFallFreeze": "Oct. 4",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1364420",
     "schools": null,
     "places": {
@@ -14649,7 +14904,10 @@
     "phone": null,
     "zip": "84312",
     "hardinessZone": "6b",
-    "precipIn": 16.48,
+    "precipIn": 16.37,
+    "freezeFreeDays": 175,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 17",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1364467",
     "schools": {
       "schools": {
@@ -14773,7 +15031,7 @@
     },
     "zip": "84728",
     "hardinessZone": "6a",
-    "precipIn": 8.65,
+    "precipIn": 8.24,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1364497",
     "schools": {
       "schools": {
@@ -14844,7 +15102,7 @@
     "phone": null,
     "zip": "84655",
     "hardinessZone": "6b",
-    "precipIn": 16.39,
+    "precipIn": 16.16,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -14923,7 +15181,10 @@
     "phone": null,
     "zip": "84729",
     "hardinessZone": "6b",
-    "precipIn": 16.75,
+    "precipIn": 16.44,
+    "freezeFreeDays": 144,
+    "lastSpringFreeze": "May 15",
+    "firstFallFreeze": "Oct. 8",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1364944",
     "schools": null,
     "places": {
@@ -14996,7 +15257,10 @@
     "phone": null,
     "zip": "84730",
     "hardinessZone": "6a",
-    "precipIn": 9.38,
+    "precipIn": 9.22,
+    "freezeFreeDays": 125,
+    "lastSpringFreeze": "May 21",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440028",
     "schools": null,
     "places": {
@@ -15066,7 +15330,7 @@
     "phone": null,
     "zip": "84034",
     "hardinessZone": "6b",
-    "precipIn": 10.44,
+    "precipIn": 10.38,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -15105,7 +15369,7 @@
     },
     "zip": "84633",
     "hardinessZone": "6b",
-    "precipIn": 12.53,
+    "precipIn": 13.07,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365200",
     "schools": {
       "schools": {
@@ -15200,7 +15464,7 @@
     "phone": null,
     "zip": "84083",
     "hardinessZone": "6b",
-    "precipIn": 10.9,
+    "precipIn": 10.78,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -15278,7 +15542,10 @@
     "phone": null,
     "zip": "84092",
     "hardinessZone": "6b",
-    "precipIn": 25.1,
+    "precipIn": 22.22,
+    "freezeFreeDays": 174,
+    "lastSpringFreeze": "April 29",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -15336,7 +15603,10 @@
     "phone": null,
     "zip": "84029",
     "hardinessZone": "7a",
-    "precipIn": 11.68,
+    "precipIn": 11.62,
+    "freezeFreeDays": 164,
+    "lastSpringFreeze": "May 2",
+    "firstFallFreeze": "Oct. 14",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365411",
     "schools": {
       "schools": {
@@ -15682,7 +15952,7 @@
     "phone": null,
     "zip": "84731",
     "hardinessZone": "6a",
-    "precipIn": 11.88,
+    "precipIn": 11.82,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -15733,7 +16003,7 @@
     "phone": null,
     "zip": "84732",
     "hardinessZone": "5b",
-    "precipIn": 9.77,
+    "precipIn": 9.83,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -15778,7 +16048,10 @@
     },
     "zip": "84313",
     "hardinessZone": "6b",
-    "precipIn": 11.58,
+    "precipIn": 11.46,
+    "freezeFreeDays": 104,
+    "lastSpringFreeze": "June 4",
+    "firstFallFreeze": "Sept. 17",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440220",
     "schools": {
       "schools": {
@@ -15863,7 +16136,7 @@
     "phone": null,
     "zip": "84773",
     "hardinessZone": "6a",
-    "precipIn": 11.92,
+    "precipIn": 11.09,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -15906,7 +16179,7 @@
     "phone": null,
     "zip": "84733",
     "hardinessZone": "8a",
-    "precipIn": 11.7,
+    "precipIn": 10.91,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -15985,7 +16258,7 @@
     },
     "zip": "84634",
     "hardinessZone": "6a",
-    "precipIn": 10.62,
+    "precipIn": 10.61,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365861",
     "schools": {
       "schools": {
@@ -16113,7 +16386,10 @@
     "phone": null,
     "zip": "84026",
     "hardinessZone": "5b",
-    "precipIn": 6.56,
+    "precipIn": 6.79,
+    "freezeFreeDays": 135,
+    "lastSpringFreeze": "May 19",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -16152,7 +16428,10 @@
     },
     "zip": "84531",
     "hardinessZone": "7b",
-    "precipIn": 6.61,
+    "precipIn": 6.66,
+    "freezeFreeDays": 201,
+    "lastSpringFreeze": "April 11",
+    "firstFallFreeze": "Oct. 30",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -16198,6 +16477,9 @@
     "zip": "84533",
     "hardinessZone": "8a",
     "precipIn": 5.91,
+    "freezeFreeDays": 227,
+    "lastSpringFreeze": "March 25",
+    "firstFallFreeze": "Nov. 10",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -16247,7 +16529,7 @@
     "phone": null,
     "zip": "84720",
     "hardinessZone": "6b",
-    "precipIn": 12.79,
+    "precipIn": 12.97,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -16289,7 +16571,7 @@
     "phone": null,
     "zip": "84714",
     "hardinessZone": "5b",
-    "precipIn": 14.18,
+    "precipIn": 14.2,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -16328,7 +16610,10 @@
     },
     "zip": "84734",
     "hardinessZone": "7a",
-    "precipIn": 6.47,
+    "precipIn": 6.4,
+    "freezeFreeDays": 149,
+    "lastSpringFreeze": "May 5",
+    "firstFallFreeze": "Oct. 3",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366141",
     "schools": {
       "schools": {
@@ -16432,7 +16717,7 @@
     "phone": null,
     "zip": "84031",
     "hardinessZone": "5a",
-    "precipIn": 15.5,
+    "precipIn": 14.27,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -16475,7 +16760,10 @@
     "phone": null,
     "zip": "84404",
     "hardinessZone": "7a",
-    "precipIn": 18.66,
+    "precipIn": 18.77,
+    "freezeFreeDays": 184,
+    "lastSpringFreeze": "April 21",
+    "firstFallFreeze": "Oct. 23",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -16576,7 +16864,7 @@
     },
     "zip": "84735",
     "hardinessZone": "6a",
-    "precipIn": 13.5,
+    "precipIn": 13.4,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366457",
     "schools": null,
     "places": {
@@ -16653,7 +16941,7 @@
     "phone": null,
     "zip": "84637",
     "hardinessZone": "6b",
-    "precipIn": 13.61,
+    "precipIn": 13.31,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -16688,7 +16976,10 @@
     "phone": null,
     "zip": "84066",
     "hardinessZone": "5b",
-    "precipIn": 9.05,
+    "precipIn": 9.36,
+    "freezeFreeDays": 130,
+    "lastSpringFreeze": "May 19",
+    "firstFallFreeze": "Sept. 29",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -16734,7 +17025,10 @@
     },
     "zip": "84032",
     "hardinessZone": "6a",
-    "precipIn": 15.37,
+    "precipIn": 15.31,
+    "freezeFreeDays": 106,
+    "lastSpringFreeze": "June 4",
+    "firstFallFreeze": "Sept. 20",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366620",
     "schools": {
       "schools": {
@@ -17100,7 +17394,7 @@
     "phone": null,
     "zip": "84526",
     "hardinessZone": "6a",
-    "precipIn": 10.8,
+    "precipIn": 11.11,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366683",
     "schools": {
       "schools": {
@@ -17277,7 +17571,10 @@
     "phone": null,
     "zip": "84033",
     "hardinessZone": "6a",
-    "precipIn": 17.01,
+    "precipIn": 17.2,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 30",
+    "firstFallFreeze": "Sept. 18",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366731",
     "schools": null,
     "places": {
@@ -17343,7 +17640,10 @@
     "phone": null,
     "zip": "84736",
     "hardinessZone": "6b",
-    "precipIn": 12.17,
+    "precipIn": 11.77,
+    "freezeFreeDays": 116,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 28",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366746",
     "schools": null,
     "places": {
@@ -17409,7 +17709,7 @@
     "phone": null,
     "zip": "84096",
     "hardinessZone": "7a",
-    "precipIn": 18.36,
+    "precipIn": 18.59,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -17880,7 +18180,7 @@
     "phone": null,
     "zip": "84501",
     "hardinessZone": "6a",
-    "precipIn": 13.38,
+    "precipIn": 13.56,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -17924,7 +18224,7 @@
     "phone": null,
     "zip": "84036",
     "hardinessZone": "5b",
-    "precipIn": 20.87,
+    "precipIn": 21.26,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -17975,7 +18275,10 @@
     "phone": null,
     "zip": "84004",
     "hardinessZone": "7a",
-    "precipIn": 22.13,
+    "precipIn": 20.33,
+    "freezeFreeDays": 159,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -18430,7 +18733,7 @@
     },
     "zip": "84784",
     "hardinessZone": "7a",
-    "precipIn": 14.22,
+    "precipIn": 13.69,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -18503,7 +18806,7 @@
     "phone": null,
     "zip": "84759",
     "hardinessZone": "6a",
-    "precipIn": 13.09,
+    "precipIn": 12.71,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -18539,7 +18842,10 @@
     "phone": null,
     "zip": "84635",
     "hardinessZone": "6a",
-    "precipIn": 8.42,
+    "precipIn": 8.41,
+    "freezeFreeDays": 137,
+    "lastSpringFreeze": "May 14",
+    "firstFallFreeze": "Sept. 30",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367070",
     "schools": null,
     "places": {
@@ -18612,7 +18918,7 @@
     "phone": null,
     "zip": "84663",
     "hardinessZone": "6b",
-    "precipIn": 24.43,
+    "precipIn": 23.78,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -18651,7 +18957,7 @@
     },
     "zip": "84636",
     "hardinessZone": "6a",
-    "precipIn": 14.36,
+    "precipIn": 13.68,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1442432",
     "schools": {
       "schools": {
@@ -18737,7 +19043,7 @@
     "phone": null,
     "zip": "84117",
     "hardinessZone": "7b",
-    "precipIn": 19.18,
+    "precipIn": 19.6,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440036",
     "schools": {
       "schools": {
@@ -18992,7 +19298,7 @@
     "phone": null,
     "zip": "84314",
     "hardinessZone": "6b",
-    "precipIn": 16.95,
+    "precipIn": 16.83,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367333",
     "schools": {
       "schools": {
@@ -19206,7 +19512,7 @@
     },
     "zip": "84316",
     "hardinessZone": "6a",
-    "precipIn": 13.62,
+    "precipIn": 13.6,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1449432",
     "schools": null,
     "places": {
@@ -19272,7 +19578,10 @@
     "phone": null,
     "zip": "84017",
     "hardinessZone": "5b",
-    "precipIn": 16.06,
+    "precipIn": 15.78,
+    "freezeFreeDays": 95,
+    "lastSpringFreeze": "June 7",
+    "firstFallFreeze": "Sept. 12",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -19331,7 +19640,7 @@
     "phone": null,
     "zip": "84528",
     "hardinessZone": "6a",
-    "precipIn": 8.67,
+    "precipIn": 8.59,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367667",
     "schools": {
       "schools": {
@@ -19473,7 +19782,10 @@
     "phone": null,
     "zip": "84317",
     "hardinessZone": "6a",
-    "precipIn": 21.98,
+    "precipIn": 21.96,
+    "freezeFreeDays": 102,
+    "lastSpringFreeze": "June 4",
+    "firstFallFreeze": "Sept. 16",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367694",
     "schools": {
       "schools": {
@@ -19571,7 +19883,10 @@
     "phone": null,
     "zip": "84737",
     "hardinessZone": "8b",
-    "precipIn": 11.37,
+    "precipIn": 11.24,
+    "freezeFreeDays": 217,
+    "lastSpringFreeze": "April 1",
+    "firstFallFreeze": "Nov. 5",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367712",
     "schools": {
       "schools": {
@@ -19852,7 +20167,10 @@
     "phone": null,
     "zip": "84318",
     "hardinessZone": "6a",
-    "precipIn": 17.35,
+    "precipIn": 18.58,
+    "freezeFreeDays": 144,
+    "lastSpringFreeze": "May 8",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367778",
     "schools": {
       "schools": {
@@ -19973,7 +20291,10 @@
     "phone": null,
     "zip": "84319",
     "hardinessZone": "6a",
-    "precipIn": 19.64,
+    "precipIn": 18.75,
+    "freezeFreeDays": 138,
+    "lastSpringFreeze": "May 12",
+    "firstFallFreeze": "Sept. 28",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367792",
     "schools": {
       "schools": {
@@ -20131,7 +20452,10 @@
     },
     "zip": "84034",
     "hardinessZone": "6b",
-    "precipIn": 10.22,
+    "precipIn": 10.36,
+    "freezeFreeDays": 86,
+    "lastSpringFreeze": "June 14",
+    "firstFallFreeze": "Sept. 8",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -20208,7 +20532,10 @@
     "phone": null,
     "zip": "84052",
     "hardinessZone": "5b",
-    "precipIn": 6.95,
+    "precipIn": 7.13,
+    "freezeFreeDays": 121,
+    "lastSpringFreeze": "May 23",
+    "firstFallFreeze": "Sept. 22",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -20251,7 +20578,7 @@
     "phone": null,
     "zip": "84032",
     "hardinessZone": "6a",
-    "precipIn": 28.86,
+    "precipIn": 29.26,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -20330,7 +20657,10 @@
     "phone": null,
     "zip": "84049",
     "hardinessZone": "6a",
-    "precipIn": 19.35,
+    "precipIn": 20.43,
+    "freezeFreeDays": 101,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 11",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -20372,7 +20702,7 @@
     "phone": null,
     "zip": "84066",
     "hardinessZone": "5b",
-    "precipIn": 7.87,
+    "precipIn": 7.86,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -20470,7 +20800,7 @@
     "phone": null,
     "zip": "84720",
     "hardinessZone": "6b",
-    "precipIn": 17.69,
+    "precipIn": 17.03,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -20506,7 +20836,7 @@
     "phone": null,
     "zip": "84738",
     "hardinessZone": "8b",
-    "precipIn": 9.45,
+    "precipIn": 9.38,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440038",
     "schools": {
       "schools": {
@@ -20663,7 +20993,10 @@
     "phone": null,
     "zip": "84035",
     "hardinessZone": "5b",
-    "precipIn": 8.25,
+    "precipIn": 8.27,
+    "freezeFreeDays": 126,
+    "lastSpringFreeze": "May 20",
+    "firstFallFreeze": "Sept. 25",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368394",
     "schools": null,
     "places": {
@@ -20731,7 +21064,7 @@
     },
     "zip": "84032",
     "hardinessZone": "6a",
-    "precipIn": 20.67,
+    "precipIn": 20.88,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -20767,7 +21100,7 @@
     "phone": null,
     "zip": "84739",
     "hardinessZone": "6a",
-    "precipIn": 9.01,
+    "precipIn": 8.8,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -20825,7 +21158,7 @@
     "phone": null,
     "zip": "84740",
     "hardinessZone": "6a",
-    "precipIn": 9.34,
+    "precipIn": 9.21,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368610",
     "schools": {
       "schools": {
@@ -20943,7 +21276,10 @@
     },
     "zip": "84036",
     "hardinessZone": "5b",
-    "precipIn": 16.69,
+    "precipIn": 16.5,
+    "freezeFreeDays": 100,
+    "lastSpringFreeze": "June 5",
+    "firstFallFreeze": "Sept. 17",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368655",
     "schools": {
       "schools": {
@@ -21094,7 +21430,10 @@
     },
     "zip": "84741",
     "hardinessZone": "7a",
-    "precipIn": 14.82,
+    "precipIn": 14.72,
+    "freezeFreeDays": 175,
+    "lastSpringFreeze": "April 29",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368662",
     "schools": {
       "schools": {
@@ -21290,7 +21629,7 @@
     "phone": null,
     "zip": "84742",
     "hardinessZone": "6b",
-    "precipIn": 13.93,
+    "precipIn": 13.24,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -21359,7 +21698,7 @@
     },
     "zip": "84637",
     "hardinessZone": "6b",
-    "precipIn": 15.75,
+    "precipIn": 15.37,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368679",
     "schools": null,
     "places": {
@@ -21421,7 +21760,10 @@
     },
     "zip": "84037",
     "hardinessZone": "7b",
-    "precipIn": 20.07,
+    "precipIn": 20.72,
+    "freezeFreeDays": 181,
+    "lastSpringFreeze": "April 19",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368734",
     "schools": {
       "schools": {
@@ -21879,7 +22221,7 @@
     "phone": null,
     "zip": "84118",
     "hardinessZone": "7b",
-    "precipIn": 17.61,
+    "precipIn": 17.84,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -22158,7 +22500,7 @@
     "phone": null,
     "zip": "84529",
     "hardinessZone": "6b",
-    "precipIn": 18.05,
+    "precipIn": 15.11,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -22201,7 +22543,7 @@
     "phone": null,
     "zip": "84743",
     "hardinessZone": "5b",
-    "precipIn": 9.46,
+    "precipIn": 9.44,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -22262,7 +22604,10 @@
     },
     "zip": "84744",
     "hardinessZone": "6a",
-    "precipIn": 10.11,
+    "precipIn": 9.99,
+    "freezeFreeDays": 104,
+    "lastSpringFreeze": "June 6",
+    "firstFallFreeze": "Sept. 21",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440042",
     "schools": {
       "schools": {
@@ -22361,7 +22706,10 @@
     },
     "zip": "84530",
     "hardinessZone": "7a",
-    "precipIn": 12.87,
+    "precipIn": 13.28,
+    "freezeFreeDays": 141,
+    "lastSpringFreeze": "May 17",
+    "firstFallFreeze": "Oct. 6",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369422",
     "schools": {
       "schools": {
@@ -22448,7 +22796,10 @@
     "phone": null,
     "zip": "84745",
     "hardinessZone": "8a",
-    "precipIn": 12.1,
+    "precipIn": 11.71,
+    "freezeFreeDays": 217,
+    "lastSpringFreeze": "April 1",
+    "firstFallFreeze": "Nov. 5",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369434",
     "schools": {
       "schools": {
@@ -22548,7 +22899,10 @@
     "phone": null,
     "zip": "84074",
     "hardinessZone": "7a",
-    "precipIn": 18.83,
+    "precipIn": 17,
+    "freezeFreeDays": 213,
+    "lastSpringFreeze": "April 3",
+    "firstFallFreeze": "Nov. 4",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -22611,7 +22965,7 @@
     "phone": null,
     "zip": "84660",
     "hardinessZone": "6a",
-    "precipIn": 14.99,
+    "precipIn": 15.08,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -22656,7 +23010,10 @@
     "phone": null,
     "zip": "84038",
     "hardinessZone": "5b",
-    "precipIn": 12.61,
+    "precipIn": 13.24,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 28",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369692",
     "schools": {
       "schools": {
@@ -22755,7 +23112,7 @@
     },
     "zip": "84039",
     "hardinessZone": "5b",
-    "precipIn": 9.28,
+    "precipIn": 8.92,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369870",
     "schools": {
       "schools": {
@@ -22835,7 +23192,7 @@
     "phone": null,
     "zip": "84528",
     "hardinessZone": "6a",
-    "precipIn": 8.28,
+    "precipIn": 8.23,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -22878,7 +23235,10 @@
     "phone": null,
     "zip": "84041",
     "hardinessZone": "7a",
-    "precipIn": 20.07,
+    "precipIn": 19.63,
+    "freezeFreeDays": 181,
+    "lastSpringFreeze": "April 19",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370013",
     "schools": {
       "schools": {
@@ -23638,7 +23998,7 @@
     "phone": null,
     "zip": "84638",
     "hardinessZone": "6a",
-    "precipIn": 10.93,
+    "precipIn": 11.03,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440044",
     "schools": null,
     "places": {
@@ -23704,7 +24064,7 @@
     "phone": null,
     "zip": "84746",
     "hardinessZone": "8b",
-    "precipIn": 11.83,
+    "precipIn": 11.27,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440045",
     "schools": null,
     "places": {
@@ -23784,7 +24144,7 @@
     "phone": null,
     "zip": "84066",
     "hardinessZone": "5b",
-    "precipIn": 8.35,
+    "precipIn": 8.61,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -23823,7 +24183,10 @@
     },
     "zip": "84043",
     "hardinessZone": "7a",
-    "precipIn": 13.97,
+    "precipIn": 14.01,
+    "freezeFreeDays": 159,
+    "lastSpringFreeze": "April 30",
+    "firstFallFreeze": "Oct. 9",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370151",
     "schools": {
       "schools": {
@@ -24658,7 +25021,10 @@
     "phone": null,
     "zip": "84063",
     "hardinessZone": "5b",
-    "precipIn": 7.45,
+    "precipIn": 7.36,
+    "freezeFreeDays": 152,
+    "lastSpringFreeze": "May 2",
+    "firstFallFreeze": "Oct. 3",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -24701,7 +25067,10 @@
     "phone": null,
     "zip": "84639",
     "hardinessZone": "6a",
-    "precipIn": 14.27,
+    "precipIn": 14.29,
+    "freezeFreeDays": 148,
+    "lastSpringFreeze": "May 10",
+    "firstFallFreeze": "Oct. 7",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370299",
     "schools": null,
     "places": {
@@ -24767,7 +25136,7 @@
     "phone": null,
     "zip": "84320",
     "hardinessZone": "6a",
-    "precipIn": 17.02,
+    "precipIn": 17.43,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370340",
     "schools": {
       "schools": {
@@ -24861,7 +25230,7 @@
     "phone": null,
     "zip": "84310",
     "hardinessZone": "6a",
-    "precipIn": 28.51,
+    "precipIn": 25.22,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -24925,7 +25294,10 @@
     "phone": null,
     "zip": "84074",
     "hardinessZone": "7a",
-    "precipIn": 18.94,
+    "precipIn": 18.16,
+    "freezeFreeDays": 165,
+    "lastSpringFreeze": "May 2",
+    "firstFallFreeze": "Oct. 16",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -24968,7 +25340,10 @@
     "phone": null,
     "zip": "84042",
     "hardinessZone": "7a",
-    "precipIn": 16.36,
+    "precipIn": 15.51,
+    "freezeFreeDays": 188,
+    "lastSpringFreeze": "April 17",
+    "firstFallFreeze": "Oct. 25",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -25252,7 +25627,10 @@
     "phone": null,
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 19.97,
+    "precipIn": 20.83,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 25",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -25291,7 +25669,10 @@
     },
     "zip": "84747",
     "hardinessZone": "6a",
-    "precipIn": 9.07,
+    "precipIn": 8.86,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 21",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370725",
     "schools": {
       "schools": {
@@ -25425,7 +25806,10 @@
     },
     "zip": "84321",
     "hardinessZone": "6a",
-    "precipIn": 17.43,
+    "precipIn": 17.45,
+    "freezeFreeDays": 145,
+    "lastSpringFreeze": "May 8",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370786",
     "schools": {
       "schools": {
@@ -26041,7 +26425,7 @@
     "phone": null,
     "zip": "84710",
     "hardinessZone": "6a",
-    "precipIn": 20.06,
+    "precipIn": 20.24,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -26076,7 +26460,7 @@
     "phone": null,
     "zip": "84721",
     "hardinessZone": "6b",
-    "precipIn": 10.26,
+    "precipIn": 10.3,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -26112,7 +26496,10 @@
     "phone": null,
     "zip": "84749",
     "hardinessZone": "6a",
-    "precipIn": 9.76,
+    "precipIn": 8.95,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 21",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1371215",
     "schools": null,
     "places": {
@@ -26189,7 +26576,7 @@
     "phone": null,
     "zip": "84329",
     "hardinessZone": "6a",
-    "precipIn": 15.54,
+    "precipIn": 14.51,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -26236,7 +26623,7 @@
     },
     "zip": "84640",
     "hardinessZone": "6a",
-    "precipIn": 10.36,
+    "precipIn": 10.25,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -26301,7 +26688,10 @@
     "phone": null,
     "zip": "84078",
     "hardinessZone": "5b",
-    "precipIn": 9.66,
+    "precipIn": 9.62,
+    "freezeFreeDays": 150,
+    "lastSpringFreeze": "May 7",
+    "firstFallFreeze": "Oct. 6",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -26371,7 +26761,7 @@
     "phone": null,
     "zip": "84044",
     "hardinessZone": "7b",
-    "precipIn": 16.42,
+    "precipIn": 16.68,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1371406",
     "schools": {
       "schools": {
@@ -26635,7 +27025,7 @@
     "phone": null,
     "zip": "84628",
     "hardinessZone": "6b",
-    "precipIn": 17.05,
+    "precipIn": 17.6,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -26677,7 +27067,7 @@
     "phone": null,
     "zip": "84713",
     "hardinessZone": "6a",
-    "precipIn": 13.17,
+    "precipIn": 12.76,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -26723,7 +27113,10 @@
     },
     "zip": "84046",
     "hardinessZone": "5b",
-    "precipIn": 9.67,
+    "precipIn": 9.81,
+    "freezeFreeDays": 128,
+    "lastSpringFreeze": "May 22",
+    "firstFallFreeze": "Sept. 29",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1371647",
     "schools": {
       "schools": {
@@ -26830,7 +27223,10 @@
     },
     "zip": "84642",
     "hardinessZone": "6a",
-    "precipIn": 14.99,
+    "precipIn": 12.38,
+    "freezeFreeDays": 146,
+    "lastSpringFreeze": "May 11",
+    "firstFallFreeze": "Oct. 6",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1371718",
     "schools": {
       "schools": {
@@ -27000,7 +27396,7 @@
     "phone": null,
     "zip": "84324",
     "hardinessZone": "6a",
-    "precipIn": 27.96,
+    "precipIn": 26.53,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -27077,7 +27473,10 @@
     "phone": null,
     "zip": "84664",
     "hardinessZone": "7a",
-    "precipIn": 17.75,
+    "precipIn": 17.53,
+    "freezeFreeDays": 174,
+    "lastSpringFreeze": "April 25",
+    "firstFallFreeze": "Oct. 18",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -27303,7 +27702,10 @@
     "phone": null,
     "zip": "84036",
     "hardinessZone": "5b",
-    "precipIn": 16.66,
+    "precipIn": 16.47,
+    "freezeFreeDays": 100,
+    "lastSpringFreeze": "June 5",
+    "firstFallFreeze": "Sept. 17",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -27362,7 +27764,10 @@
     "phone": null,
     "zip": "84404",
     "hardinessZone": "7a",
-    "precipIn": 17.69,
+    "precipIn": 17.8,
+    "freezeFreeDays": 177,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 18",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -27462,7 +27867,7 @@
     "phone": null,
     "zip": "84074",
     "hardinessZone": "7a",
-    "precipIn": 15.25,
+    "precipIn": 14.06,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -27501,7 +27906,10 @@
     },
     "zip": "84750",
     "hardinessZone": "6a",
-    "precipIn": 9.83,
+    "precipIn": 8.12,
+    "freezeFreeDays": 123,
+    "lastSpringFreeze": "May 24",
+    "firstFallFreeze": "Sept. 25",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1372059",
     "schools": {
       "schools": {
@@ -27623,7 +28031,7 @@
     "phone": null,
     "zip": "84643",
     "hardinessZone": "6a",
-    "precipIn": 12.46,
+    "precipIn": 12.34,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1372219",
     "schools": null,
     "places": {
@@ -27697,7 +28105,7 @@
     },
     "zip": "84644",
     "hardinessZone": "6b",
-    "precipIn": 13.14,
+    "precipIn": 13.2,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1372474",
     "schools": null,
     "places": {
@@ -27769,7 +28177,10 @@
     "phone": null,
     "zip": "84038",
     "hardinessZone": "5b",
-    "precipIn": 18.88,
+    "precipIn": 14.77,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 28",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -27805,7 +28216,7 @@
     "phone": null,
     "zip": "84325",
     "hardinessZone": "6a",
-    "precipIn": 17.04,
+    "precipIn": 17.27,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1372693",
     "schools": {
       "schools": {
@@ -27914,7 +28325,10 @@
     },
     "zip": "84531",
     "hardinessZone": "7b",
-    "precipIn": 6.62,
+    "precipIn": 6.54,
+    "freezeFreeDays": 201,
+    "lastSpringFreeze": "April 11",
+    "firstFallFreeze": "Oct. 30",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440047",
     "schools": null,
     "places": {
@@ -27976,7 +28390,7 @@
     },
     "zip": "84047",
     "hardinessZone": "7b",
-    "precipIn": 16.8,
+    "precipIn": 17.3,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373021",
     "schools": {
       "schools": {
@@ -28253,7 +28667,10 @@
     "phone": null,
     "zip": "84049",
     "hardinessZone": "6a",
-    "precipIn": 15.74,
+    "precipIn": 17.07,
+    "freezeFreeDays": 106,
+    "lastSpringFreeze": "June 4",
+    "firstFallFreeze": "Sept. 20",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373034",
     "schools": {
       "schools": {
@@ -28401,7 +28818,7 @@
     "phone": null,
     "zip": "84629",
     "hardinessZone": "5b",
-    "precipIn": 17.43,
+    "precipIn": 16.3,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -28440,7 +28857,10 @@
     },
     "zip": "84751",
     "hardinessZone": "6a",
-    "precipIn": 10.49,
+    "precipIn": 10.43,
+    "freezeFreeDays": 144,
+    "lastSpringFreeze": "May 10",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373095",
     "schools": {
       "schools": {
@@ -28585,7 +29005,7 @@
     "phone": null,
     "zip": "84109",
     "hardinessZone": "6b",
-    "precipIn": 16.63,
+    "precipIn": 16.16,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -28862,7 +29282,7 @@
     "phone": null,
     "zip": "84639",
     "hardinessZone": "6a",
-    "precipIn": 12.56,
+    "precipIn": 12.84,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -28898,7 +29318,10 @@
     "phone": null,
     "zip": "84326",
     "hardinessZone": "6a",
-    "precipIn": 18.23,
+    "precipIn": 17.9,
+    "freezeFreeDays": 138,
+    "lastSpringFreeze": "May 12",
+    "firstFallFreeze": "Sept. 28",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373219",
     "schools": {
       "schools": {
@@ -29002,7 +29425,10 @@
     "phone": null,
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 24.72,
+    "precipIn": 22.16,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 25",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -29056,7 +29482,7 @@
     },
     "zip": "84752",
     "hardinessZone": "6a",
-    "precipIn": 11.73,
+    "precipIn": 11.43,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373308",
     "schools": {
       "schools": {
@@ -29172,7 +29598,10 @@
     },
     "zip": "84532",
     "hardinessZone": "7a",
-    "precipIn": 9.14,
+    "precipIn": 8.9,
+    "freezeFreeDays": 192,
+    "lastSpringFreeze": "April 11",
+    "firstFallFreeze": "Oct. 23",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373423",
     "schools": {
       "schools": {
@@ -29435,7 +29864,10 @@
     "phone": null,
     "zip": "84753",
     "hardinessZone": "7a",
-    "precipIn": 11.97,
+    "precipIn": 12.04,
+    "freezeFreeDays": 136,
+    "lastSpringFreeze": "May 20",
+    "firstFallFreeze": "Oct. 3",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -29483,7 +29915,7 @@
     "phone": null,
     "zip": "84528",
     "hardinessZone": "6a",
-    "precipIn": 13.63,
+    "precipIn": 14.66,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -29519,6 +29951,9 @@
     "zip": "84523",
     "hardinessZone": "6b",
     "precipIn": 8.24,
+    "freezeFreeDays": 156,
+    "lastSpringFreeze": "May 6",
+    "firstFallFreeze": "Oct. 10",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -29554,7 +29989,7 @@
     "phone": null,
     "zip": "84645",
     "hardinessZone": "6b",
-    "precipIn": 15.59,
+    "precipIn": 15.09,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373484",
     "schools": {
       "schools": {
@@ -29645,7 +30080,10 @@
     "phone": null,
     "zip": "84066",
     "hardinessZone": "5b",
-    "precipIn": 9.61,
+    "precipIn": 9.31,
+    "freezeFreeDays": 130,
+    "lastSpringFreeze": "May 19",
+    "firstFallFreeze": "Sept. 29",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -29691,7 +30129,7 @@
     },
     "zip": "84754",
     "hardinessZone": "6a",
-    "precipIn": 9.61,
+    "precipIn": 9.53,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373535",
     "schools": {
       "schools": {
@@ -29828,7 +30266,7 @@
     "phone": null,
     "zip": "84534",
     "hardinessZone": "7a",
-    "precipIn": 7.25,
+    "precipIn": 7.15,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440005",
     "schools": {
       "schools": {
@@ -29934,7 +30372,10 @@
     },
     "zip": "84535",
     "hardinessZone": "6b",
-    "precipIn": 15.93,
+    "precipIn": 16.21,
+    "freezeFreeDays": 133,
+    "lastSpringFreeze": "May 19",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373646",
     "schools": {
       "schools": {
@@ -30127,7 +30568,7 @@
     "phone": null,
     "zip": "84522",
     "hardinessZone": "6b",
-    "precipIn": 9.5,
+    "precipIn": 9.4,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -30166,7 +30607,10 @@
     },
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 19.04,
+    "precipIn": 18.53,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 25",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373775",
     "schools": {
       "schools": {
@@ -30389,7 +30833,10 @@
     },
     "zip": "84646",
     "hardinessZone": "5b",
-    "precipIn": 10.46,
+    "precipIn": 10.03,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 26",
+    "firstFallFreeze": "Sept. 25",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373817",
     "schools": {
       "schools": {
@@ -30494,7 +30941,10 @@
     "phone": null,
     "zip": "84001",
     "hardinessZone": "5b",
-    "precipIn": 9.43,
+    "precipIn": 9.51,
+    "freezeFreeDays": 112,
+    "lastSpringFreeze": "May 31",
+    "firstFallFreeze": "Sept. 23",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -30545,7 +30995,7 @@
     },
     "zip": "84647",
     "hardinessZone": "5b",
-    "precipIn": 14.23,
+    "precipIn": 14.27,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374054",
     "schools": {
       "schools": {
@@ -30739,7 +31189,7 @@
     "phone": null,
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 24.52,
+    "precipIn": 23.27,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -30825,7 +31275,7 @@
     "phone": null,
     "zip": "84051",
     "hardinessZone": "6a",
-    "precipIn": 12.64,
+    "precipIn": 12.36,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -30879,7 +31329,7 @@
     },
     "zip": "84107",
     "hardinessZone": "7b",
-    "precipIn": 16.63,
+    "precipIn": 15.78,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440053",
     "schools": {
       "schools": {
@@ -31421,7 +31871,10 @@
     "phone": null,
     "zip": "84052",
     "hardinessZone": "5b",
-    "precipIn": 6.99,
+    "precipIn": 6.91,
+    "freezeFreeDays": 149,
+    "lastSpringFreeze": "May 7",
+    "firstFallFreeze": "Oct. 5",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374328",
     "schools": {
       "schools": {
@@ -31533,7 +31986,10 @@
     "phone": null,
     "zip": "84078",
     "hardinessZone": "5b",
-    "precipIn": 8.35,
+    "precipIn": 8.3,
+    "freezeFreeDays": 153,
+    "lastSpringFreeze": "May 6",
+    "firstFallFreeze": "Oct. 7",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -31604,7 +32060,7 @@
     "phone": null,
     "zip": "84536",
     "hardinessZone": "8a",
-    "precipIn": 9.67,
+    "precipIn": 9.9,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -31651,7 +32107,10 @@
     },
     "zip": "84053",
     "hardinessZone": "6a",
-    "precipIn": 9.27,
+    "precipIn": 9.56,
+    "freezeFreeDays": 130,
+    "lastSpringFreeze": "May 19",
+    "firstFallFreeze": "Sept. 29",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374575",
     "schools": {
       "schools": {
@@ -31735,7 +32194,10 @@
     },
     "zip": "84648",
     "hardinessZone": "6a",
-    "precipIn": 14.25,
+    "precipIn": 14.12,
+    "freezeFreeDays": 156,
+    "lastSpringFreeze": "May 6",
+    "firstFallFreeze": "Oct. 10",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374583",
     "schools": {
       "schools": {
@@ -31909,7 +32371,7 @@
     "phone": null,
     "zip": "84340",
     "hardinessZone": "7a",
-    "precipIn": 18.89,
+    "precipIn": 17.93,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -31952,7 +32414,10 @@
     "phone": null,
     "zip": "84757",
     "hardinessZone": "7a",
-    "precipIn": 17,
+    "precipIn": 16.5,
+    "freezeFreeDays": 155,
+    "lastSpringFreeze": "May 9",
+    "firstFallFreeze": "Oct. 11",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374727",
     "schools": {
       "schools": {
@@ -32043,7 +32508,7 @@
     "phone": null,
     "zip": "84756",
     "hardinessZone": "5b",
-    "precipIn": 13.82,
+    "precipIn": 13.56,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -32114,7 +32579,10 @@
     "phone": null,
     "zip": "84327",
     "hardinessZone": "6a",
-    "precipIn": 16.65,
+    "precipIn": 16.5,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1375043",
     "schools": {
       "schools": {
@@ -32207,7 +32675,10 @@
     "phone": null,
     "zip": "84321",
     "hardinessZone": "6a",
-    "precipIn": 18.23,
+    "precipIn": 17.54,
+    "freezeFreeDays": 138,
+    "lastSpringFreeze": "May 12",
+    "firstFallFreeze": "Sept. 28",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -32348,7 +32819,7 @@
     "phone": null,
     "zip": "84713",
     "hardinessZone": "6a",
-    "precipIn": 14.1,
+    "precipIn": 14.36,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -32384,7 +32855,10 @@
     "phone": null,
     "zip": "84341",
     "hardinessZone": "6a",
-    "precipIn": 21.69,
+    "precipIn": 18.68,
+    "freezeFreeDays": 166,
+    "lastSpringFreeze": "April 30",
+    "firstFallFreeze": "Oct. 16",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -32564,7 +33038,10 @@
     "phone": null,
     "zip": "84414",
     "hardinessZone": "6b",
-    "precipIn": 22.26,
+    "precipIn": 22.21,
+    "freezeFreeDays": 186,
+    "lastSpringFreeze": "April 19",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -32748,7 +33225,10 @@
     "phone": null,
     "zip": "84054",
     "hardinessZone": "7b",
-    "precipIn": 19.73,
+    "precipIn": 20.15,
+    "freezeFreeDays": 178,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440054",
     "schools": {
       "schools": {
@@ -32960,7 +33440,7 @@
     "phone": null,
     "zip": "84775",
     "hardinessZone": "7a",
-    "precipIn": 7.69,
+    "precipIn": 7.8,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -32999,7 +33479,10 @@
     },
     "zip": "84649",
     "hardinessZone": "6b",
-    "precipIn": 13.55,
+    "precipIn": 13.56,
+    "freezeFreeDays": 162,
+    "lastSpringFreeze": "May 2",
+    "firstFallFreeze": "Oct. 13",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1375700",
     "schools": null,
     "places": {
@@ -33077,7 +33560,7 @@
     "phone": null,
     "zip": "84055",
     "hardinessZone": "5b",
-    "precipIn": 16.75,
+    "precipIn": 16.68,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1375801",
     "schools": null,
     "places": {
@@ -33160,7 +33643,10 @@
     "phone": null,
     "zip": "84624",
     "hardinessZone": "6a",
-    "precipIn": 8.45,
+    "precipIn": 8.43,
+    "freezeFreeDays": 137,
+    "lastSpringFreeze": "May 14",
+    "firstFallFreeze": "Sept. 30",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -33214,7 +33700,10 @@
     },
     "zip": "84401",
     "hardinessZone": "7a",
-    "precipIn": 20.13,
+    "precipIn": 18.49,
+    "freezeFreeDays": 184,
+    "lastSpringFreeze": "April 21",
+    "firstFallFreeze": "Oct. 23",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384892",
     "schools": {
       "schools": {
@@ -34644,6 +35133,9 @@
     "zip": "84401",
     "hardinessZone": "7a",
     "precipIn": null,
+    "freezeFreeDays": 125,
+    "lastSpringFreeze": "May 22",
+    "firstFallFreeze": "Sept. 26",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -34679,7 +35171,7 @@
     "phone": null,
     "zip": "84536",
     "hardinessZone": "8a",
-    "precipIn": 6.66,
+    "precipIn": 6.68,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -34731,7 +35223,7 @@
     "phone": null,
     "zip": "84071",
     "hardinessZone": "6b",
-    "precipIn": 32.29,
+    "precipIn": 30.43,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -34787,7 +35279,10 @@
     "phone": null,
     "zip": "84537",
     "hardinessZone": "6a",
-    "precipIn": 8.24,
+    "precipIn": 8.45,
+    "freezeFreeDays": 128,
+    "lastSpringFreeze": "May 18",
+    "firstFallFreeze": "Sept. 27",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376227",
     "schools": {
       "schools": {
@@ -34900,7 +35395,10 @@
     },
     "zip": "84758",
     "hardinessZone": "6b",
-    "precipIn": 16.35,
+    "precipIn": 15.79,
+    "freezeFreeDays": 144,
+    "lastSpringFreeze": "May 15",
+    "firstFallFreeze": "Oct. 8",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376247",
     "schools": {
       "schools": {
@@ -35006,7 +35504,10 @@
     "phone": null,
     "zip": "84058",
     "hardinessZone": "7a",
-    "precipIn": 15.02,
+    "precipIn": 16.03,
+    "freezeFreeDays": 182,
+    "lastSpringFreeze": "April 19",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376261",
     "schools": {
       "schools": {
@@ -35943,7 +36444,10 @@
     "phone": null,
     "zip": "84063",
     "hardinessZone": "5b",
-    "precipIn": 7.12,
+    "precipIn": 7.11,
+    "freezeFreeDays": 152,
+    "lastSpringFreeze": "May 2",
+    "firstFallFreeze": "Oct. 3",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -35979,7 +36483,7 @@
     "phone": null,
     "zip": "84660",
     "hardinessZone": "6a",
-    "precipIn": 15.28,
+    "precipIn": 15.1,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -36027,7 +36531,10 @@
     },
     "zip": "84759",
     "hardinessZone": "6a",
-    "precipIn": 10.56,
+    "precipIn": 10.77,
+    "freezeFreeDays": 90,
+    "lastSpringFreeze": "June 12",
+    "firstFallFreeze": "Sept. 12",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376719",
     "schools": {
       "schools": {
@@ -36192,7 +36699,7 @@
     "phone": null,
     "zip": "84328",
     "hardinessZone": "6a",
-    "precipIn": 20.82,
+    "precipIn": 20.6,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376754",
     "schools": null,
     "places": {
@@ -36270,7 +36777,7 @@
     "phone": null,
     "zip": "84760",
     "hardinessZone": "6a",
-    "precipIn": 12.46,
+    "precipIn": 12.41,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440057",
     "schools": null,
     "places": {
@@ -36344,7 +36851,10 @@
     },
     "zip": "84060",
     "hardinessZone": "6a",
-    "precipIn": 22.16,
+    "precipIn": 23.83,
+    "freezeFreeDays": 117,
+    "lastSpringFreeze": "May 29",
+    "firstFallFreeze": "Sept. 25",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376796",
     "schools": {
       "schools": {
@@ -36772,7 +37282,10 @@
     },
     "zip": "84329",
     "hardinessZone": "6a",
-    "precipIn": 12.86,
+    "precipIn": 12.19,
+    "freezeFreeDays": 132,
+    "lastSpringFreeze": "May 21",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376825",
     "schools": {
       "schools": {
@@ -36854,7 +37367,7 @@
     },
     "zip": "84761",
     "hardinessZone": "6a",
-    "precipIn": 13.57,
+    "precipIn": 12.89,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376887",
     "schools": {
       "schools": {
@@ -36977,7 +37490,7 @@
     },
     "zip": "84651",
     "hardinessZone": "6b",
-    "precipIn": 16.32,
+    "precipIn": 16.67,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1377023",
     "schools": {
       "schools": {
@@ -37245,7 +37758,7 @@
     "phone": null,
     "zip": "84337",
     "hardinessZone": "6b",
-    "precipIn": 15.22,
+    "precipIn": 15.03,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -37296,7 +37809,7 @@
     "phone": null,
     "zip": "84061",
     "hardinessZone": "5b",
-    "precipIn": 16.83,
+    "precipIn": 16.74,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -37355,7 +37868,10 @@
     "phone": null,
     "zip": "84302",
     "hardinessZone": "6b",
-    "precipIn": 19.87,
+    "precipIn": 20.22,
+    "freezeFreeDays": 150,
+    "lastSpringFreeze": "May 5",
+    "firstFallFreeze": "Oct. 5",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -37466,7 +37982,7 @@
     "phone": null,
     "zip": "84325",
     "hardinessZone": "6a",
-    "precipIn": 16.8,
+    "precipIn": 16.59,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -37501,7 +38017,7 @@
     "phone": null,
     "zip": "84325",
     "hardinessZone": "6a",
-    "precipIn": null,
+    "precipIn": 16.58,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -37536,7 +38052,7 @@
     "phone": null,
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 23.72,
+    "precipIn": 23.17,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -37587,6 +38103,9 @@
     "zip": "84623",
     "hardinessZone": "5b",
     "precipIn": null,
+    "freezeFreeDays": 113,
+    "lastSpringFreeze": "May 28",
+    "firstFallFreeze": "Sept. 20",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -37622,7 +38141,7 @@
     "phone": null,
     "zip": "84781",
     "hardinessZone": "6b",
-    "precipIn": 22.26,
+    "precipIn": 20.09,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -37765,7 +38284,7 @@
     "phone": null,
     "zip": "84757",
     "hardinessZone": "7a",
-    "precipIn": 13.49,
+    "precipIn": 13.52,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -37809,7 +38328,7 @@
     "phone": null,
     "zip": "84404",
     "hardinessZone": "7a",
-    "precipIn": 17.06,
+    "precipIn": 17.01,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -37958,7 +38477,10 @@
     },
     "zip": "84062",
     "hardinessZone": "7a",
-    "precipIn": 15.73,
+    "precipIn": 15.3,
+    "freezeFreeDays": 188,
+    "lastSpringFreeze": "April 17",
+    "firstFallFreeze": "Oct. 25",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1377792",
     "schools": {
       "schools": {
@@ -38326,7 +38848,7 @@
     "phone": null,
     "zip": "84414",
     "hardinessZone": "6b",
-    "precipIn": 23.55,
+    "precipIn": 20.53,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -38462,7 +38984,7 @@
     "phone": null,
     "zip": "84330",
     "hardinessZone": "6a",
-    "precipIn": 15.95,
+    "precipIn": 14.96,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1377868",
     "schools": null,
     "places": {
@@ -38523,7 +39045,7 @@
     },
     "zip": "84331",
     "hardinessZone": "6a",
-    "precipIn": 14.8,
+    "precipIn": 14.81,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -38573,7 +39095,7 @@
     "phone": null,
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 19.58,
+    "precipIn": 20.23,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -38620,7 +39142,7 @@
     },
     "zip": "84501",
     "hardinessZone": "6a",
-    "precipIn": 8.93,
+    "precipIn": 9.09,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378398",
     "schools": {
       "schools": {
@@ -39028,7 +39550,10 @@
     "phone": null,
     "zip": "84332",
     "hardinessZone": "6a",
-    "precipIn": 17.59,
+    "precipIn": 18.81,
+    "freezeFreeDays": 166,
+    "lastSpringFreeze": "April 30",
+    "firstFallFreeze": "Oct. 16",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378495",
     "schools": {
       "schools": {
@@ -39213,7 +39738,10 @@
     },
     "zip": "84601",
     "hardinessZone": "7a",
-    "precipIn": 16.39,
+    "precipIn": 15.75,
+    "freezeFreeDays": 185,
+    "lastSpringFreeze": "April 18",
+    "firstFallFreeze": "Oct. 21",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378504",
     "schools": {
       "schools": {
@@ -40321,7 +40849,10 @@
     },
     "zip": "84063",
     "hardinessZone": "5b",
-    "precipIn": 7.11,
+    "precipIn": 6.89,
+    "freezeFreeDays": 135,
+    "lastSpringFreeze": "May 19",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -40387,7 +40918,10 @@
     },
     "zip": "84064",
     "hardinessZone": "4a",
-    "precipIn": 13.73,
+    "precipIn": 14,
+    "freezeFreeDays": 76,
+    "lastSpringFreeze": "June 14",
+    "firstFallFreeze": "Sept. 1",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378792",
     "schools": {
       "schools": {
@@ -40503,7 +41037,7 @@
     "phone": null,
     "zip": "84652",
     "hardinessZone": "6a",
-    "precipIn": 10.24,
+    "precipIn": 10.29,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378998",
     "schools": null,
     "places": {
@@ -40587,7 +41121,10 @@
     },
     "zip": "84701",
     "hardinessZone": "6a",
-    "precipIn": 9.62,
+    "precipIn": 8.52,
+    "freezeFreeDays": 125,
+    "lastSpringFreeze": "May 21",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379215",
     "schools": {
       "schools": {
@@ -40902,7 +41439,10 @@
     "phone": null,
     "zip": "84333",
     "hardinessZone": "6a",
-    "precipIn": 18.16,
+    "precipIn": 19.11,
+    "freezeFreeDays": 143,
+    "lastSpringFreeze": "May 11",
+    "firstFallFreeze": "Oct. 5",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379259",
     "schools": {
       "schools": {
@@ -41010,7 +41550,10 @@
     "phone": null,
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 21.16,
+    "precipIn": 19.61,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 25",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -41061,7 +41604,10 @@
     "phone": null,
     "zip": "84321",
     "hardinessZone": "6a",
-    "precipIn": 17.59,
+    "precipIn": 17.92,
+    "freezeFreeDays": 166,
+    "lastSpringFreeze": "April 30",
+    "firstFallFreeze": "Oct. 16",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -41125,6 +41671,9 @@
     "zip": "84604",
     "hardinessZone": "6b",
     "precipIn": null,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 28",
+    "firstFallFreeze": "Sept. 23",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -41160,7 +41709,10 @@
     "phone": null,
     "zip": "84405",
     "hardinessZone": "7a",
-    "precipIn": 19.71,
+    "precipIn": 19.14,
+    "freezeFreeDays": 180,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -41302,7 +41854,7 @@
     "phone": null,
     "zip": "84334",
     "hardinessZone": "6b",
-    "precipIn": 16.24,
+    "precipIn": 16.03,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379470",
     "schools": null,
     "places": {
@@ -41361,7 +41913,10 @@
     "phone": null,
     "zip": "84065",
     "hardinessZone": "7a",
-    "precipIn": 17.37,
+    "precipIn": 16.86,
+    "freezeFreeDays": 185,
+    "lastSpringFreeze": "April 18",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379496",
     "schools": {
       "schools": {
@@ -41902,7 +42457,10 @@
     "phone": null,
     "zip": "84763",
     "hardinessZone": "8a",
-    "precipIn": 13.76,
+    "precipIn": 13.55,
+    "freezeFreeDays": 202,
+    "lastSpringFreeze": "April 13",
+    "firstFallFreeze": "Nov. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440059",
     "schools": null,
     "places": {
@@ -41966,7 +42524,10 @@
     "phone": null,
     "zip": "84645",
     "hardinessZone": "6b",
-    "precipIn": 17.21,
+    "precipIn": 17.24,
+    "freezeFreeDays": 157,
+    "lastSpringFreeze": "May 4",
+    "firstFallFreeze": "Oct. 11",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -42019,7 +42580,10 @@
     },
     "zip": "84066",
     "hardinessZone": "5b",
-    "precipIn": 7.45,
+    "precipIn": 7.5,
+    "freezeFreeDays": 121,
+    "lastSpringFreeze": "May 23",
+    "firstFallFreeze": "Sept. 22",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379833",
     "schools": {
       "schools": {
@@ -42301,7 +42865,10 @@
     "phone": null,
     "zip": "84329",
     "hardinessZone": "6a",
-    "precipIn": 12.78,
+    "precipIn": 11.67,
+    "freezeFreeDays": 132,
+    "lastSpringFreeze": "May 21",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -42337,7 +42904,10 @@
     "phone": null,
     "zip": "84067",
     "hardinessZone": "7a",
-    "precipIn": 18.75,
+    "precipIn": 19.7,
+    "freezeFreeDays": 180,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380022",
     "schools": {
       "schools": {
@@ -42729,7 +43299,7 @@
     },
     "zip": "84069",
     "hardinessZone": "6a",
-    "precipIn": 13.22,
+    "precipIn": 12.88,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380103",
     "schools": null,
     "places": {
@@ -42823,7 +43393,10 @@
     "phone": null,
     "zip": "84653",
     "hardinessZone": "7a",
-    "precipIn": 17.63,
+    "precipIn": 17.06,
+    "freezeFreeDays": 174,
+    "lastSpringFreeze": "April 25",
+    "firstFallFreeze": "Oct. 18",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380475",
     "schools": {
       "schools": {
@@ -43047,7 +43620,7 @@
     },
     "zip": "84654",
     "hardinessZone": "6a",
-    "precipIn": 10.4,
+    "precipIn": 10.56,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380505",
     "schools": {
       "schools": {
@@ -43206,7 +43779,10 @@
     },
     "zip": "84111",
     "hardinessZone": "7b",
-    "precipIn": 17.8,
+    "precipIn": 16.55,
+    "freezeFreeDays": 224,
+    "lastSpringFreeze": "March 31",
+    "firstFallFreeze": "Nov. 8",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1383850",
     "schools": {
       "schools": {
@@ -46076,7 +46652,7 @@
     "phone": null,
     "zip": "84036",
     "hardinessZone": "5b",
-    "precipIn": 24.08,
+    "precipIn": 22.61,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -46112,7 +46688,7 @@
     "phone": null,
     "zip": "84070",
     "hardinessZone": "7b",
-    "precipIn": 18.36,
+    "precipIn": 17.88,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380712",
     "schools": {
       "schools": {
@@ -47066,7 +47642,10 @@
     "phone": null,
     "zip": "84765",
     "hardinessZone": "8a",
-    "precipIn": 8.91,
+    "precipIn": 8.61,
+    "freezeFreeDays": 239,
+    "lastSpringFreeze": "March 14",
+    "firstFallFreeze": "Nov. 10",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380744",
     "schools": {
       "schools": {
@@ -47180,7 +47759,10 @@
     "phone": null,
     "zip": "84655",
     "hardinessZone": "6b",
-    "precipIn": 17.54,
+    "precipIn": 17.1,
+    "freezeFreeDays": 157,
+    "lastSpringFreeze": "May 4",
+    "firstFallFreeze": "Oct. 11",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380780",
     "schools": {
       "schools": {
@@ -47362,7 +47944,10 @@
     "phone": null,
     "zip": "84045",
     "hardinessZone": "7a",
-    "precipIn": 13.82,
+    "precipIn": 13.34,
+    "freezeFreeDays": 159,
+    "lastSpringFreeze": "April 30",
+    "firstFallFreeze": "Oct. 9",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -48121,7 +48706,10 @@
     },
     "zip": "84656",
     "hardinessZone": "5b",
-    "precipIn": 13.78,
+    "precipIn": 13.02,
+    "freezeFreeDays": 122,
+    "lastSpringFreeze": "May 22",
+    "firstFallFreeze": "Sept. 25",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -48202,7 +48790,7 @@
     },
     "zip": "84526",
     "hardinessZone": "6a",
-    "precipIn": 18.45,
+    "precipIn": 15.48,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -48260,7 +48848,7 @@
     "phone": null,
     "zip": "84766",
     "hardinessZone": "6a",
-    "precipIn": 9.71,
+    "precipIn": 9.48,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -48310,7 +48898,7 @@
     "phone": null,
     "zip": "84733",
     "hardinessZone": "8a",
-    "precipIn": 10.24,
+    "precipIn": 9.94,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -48346,7 +48934,7 @@
     "phone": null,
     "zip": "84657",
     "hardinessZone": "6a",
-    "precipIn": 9.55,
+    "precipIn": 9.26,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -48412,7 +49000,7 @@
     "phone": null,
     "zip": "84098",
     "hardinessZone": "5b",
-    "precipIn": 21.75,
+    "precipIn": 21.92,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -48455,7 +49043,10 @@
     "phone": null,
     "zip": "84335",
     "hardinessZone": "6a",
-    "precipIn": 18.41,
+    "precipIn": 18.56,
+    "freezeFreeDays": 144,
+    "lastSpringFreeze": "May 8",
+    "firstFallFreeze": "Oct. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1381877",
     "schools": {
       "schools": {
@@ -48680,7 +49271,7 @@
     },
     "zip": "84336",
     "hardinessZone": "6a",
-    "precipIn": 12.29,
+    "precipIn": 12.13,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1381950",
     "schools": {
       "schools": {
@@ -48761,7 +49352,7 @@
     "phone": null,
     "zip": "84098",
     "hardinessZone": "5b",
-    "precipIn": 22.16,
+    "precipIn": 22.41,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -48825,7 +49416,7 @@
     "phone": null,
     "zip": "84095",
     "hardinessZone": "7a",
-    "precipIn": 16.94,
+    "precipIn": 17.18,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440308",
     "schools": {
       "schools": {
@@ -49675,7 +50266,10 @@
     "phone": null,
     "zip": "84403",
     "hardinessZone": "6b",
-    "precipIn": 20.13,
+    "precipIn": 19.24,
+    "freezeFreeDays": 180,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -49886,7 +50480,10 @@
     "phone": null,
     "zip": "84115",
     "hardinessZone": "7b",
-    "precipIn": 16.26,
+    "precipIn": 15.37,
+    "freezeFreeDays": 224,
+    "lastSpringFreeze": "March 31",
+    "firstFallFreeze": "Nov. 8",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440064",
     "schools": null,
     "places": {
@@ -50084,7 +50681,7 @@
     "phone": null,
     "zip": "84405",
     "hardinessZone": "7a",
-    "precipIn": 23.58,
+    "precipIn": 20.95,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -50228,7 +50825,7 @@
     "phone": null,
     "zip": "84340",
     "hardinessZone": "7a",
-    "precipIn": 18.89,
+    "precipIn": 19.23,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -50289,7 +50886,10 @@
     },
     "zip": "84660",
     "hardinessZone": "6a",
-    "precipIn": 15.59,
+    "precipIn": 15.82,
+    "freezeFreeDays": 174,
+    "lastSpringFreeze": "April 25",
+    "firstFallFreeze": "Oct. 18",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382419",
     "schools": {
       "schools": {
@@ -50808,7 +51408,7 @@
     "phone": null,
     "zip": "84532",
     "hardinessZone": "7a",
-    "precipIn": 10.69,
+    "precipIn": 10.57,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -50856,7 +51456,7 @@
     "phone": null,
     "zip": "84662",
     "hardinessZone": "6a",
-    "precipIn": 12.24,
+    "precipIn": 12.53,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382520",
     "schools": {
       "schools": {
@@ -50954,7 +51554,7 @@
     "phone": null,
     "zip": "84526",
     "hardinessZone": "6a",
-    "precipIn": 11.35,
+    "precipIn": 10.4,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -51023,7 +51623,7 @@
     "phone": null,
     "zip": "84651",
     "hardinessZone": "6b",
-    "precipIn": 17.93,
+    "precipIn": 17.5,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -51075,7 +51675,10 @@
     "phone": null,
     "zip": "84767",
     "hardinessZone": "6b",
-    "precipIn": 16.35,
+    "precipIn": 14.67,
+    "freezeFreeDays": 202,
+    "lastSpringFreeze": "April 13",
+    "firstFallFreeze": "Nov. 2",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382566",
     "schools": {
       "schools": {
@@ -51159,7 +51762,7 @@
     "phone": null,
     "zip": "84604",
     "hardinessZone": "6b",
-    "precipIn": 25.53,
+    "precipIn": 23.34,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -51205,7 +51808,7 @@
     },
     "zip": "84663",
     "hardinessZone": "6b",
-    "precipIn": 15.62,
+    "precipIn": 16.22,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382625",
     "schools": {
       "schools": {
@@ -51676,7 +52279,10 @@
     },
     "zip": "84770",
     "hardinessZone": "8b",
-    "precipIn": 8.12,
+    "precipIn": 8.33,
+    "freezeFreeDays": 239,
+    "lastSpringFreeze": "March 14",
+    "firstFallFreeze": "Nov. 10",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361149",
     "schools": {
       "schools": {
@@ -52434,7 +53040,7 @@
     "phone": null,
     "zip": "83342",
     "hardinessZone": "6a",
-    "precipIn": 12.68,
+    "precipIn": 12.82,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -52478,7 +53084,7 @@
     "phone": null,
     "zip": "84074",
     "hardinessZone": "7a",
-    "precipIn": 16.81,
+    "precipIn": 16.46,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -52610,7 +53216,7 @@
     "phone": null,
     "zip": "84665",
     "hardinessZone": "6a",
-    "precipIn": 11.96,
+    "precipIn": 12.25,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440067",
     "schools": null,
     "places": {
@@ -52725,7 +53331,7 @@
     "phone": null,
     "zip": "84071",
     "hardinessZone": "6b",
-    "precipIn": 16.09,
+    "precipIn": 16.22,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1383630",
     "schools": null,
     "places": {
@@ -52790,7 +53396,10 @@
     "phone": null,
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 21.88,
+    "precipIn": 19.84,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 25",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -52825,7 +53434,7 @@
     "phone": null,
     "zip": "84624",
     "hardinessZone": "6a",
-    "precipIn": 7.7,
+    "precipIn": 7.57,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -52861,7 +53470,7 @@
     "phone": null,
     "zip": "84772",
     "hardinessZone": "6b",
-    "precipIn": 13.97,
+    "precipIn": 12.41,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440068",
     "schools": null,
     "places": {
@@ -52920,7 +53529,7 @@
     "phone": null,
     "zip": "84098",
     "hardinessZone": "5b",
-    "precipIn": 32.53,
+    "precipIn": 32.36,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -53013,7 +53622,7 @@
     "phone": null,
     "zip": "84604",
     "hardinessZone": "6b",
-    "precipIn": 36.32,
+    "precipIn": 39.93,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -53056,7 +53665,10 @@
     "phone": null,
     "zip": "84015",
     "hardinessZone": "7a",
-    "precipIn": 19.17,
+    "precipIn": 19.63,
+    "freezeFreeDays": 180,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -53179,7 +53791,10 @@
     "phone": null,
     "zip": "84624",
     "hardinessZone": "6a",
-    "precipIn": 8.3,
+    "precipIn": 8.12,
+    "freezeFreeDays": 137,
+    "lastSpringFreeze": "May 16",
+    "firstFallFreeze": "Sept. 29",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -53231,7 +53846,7 @@
     "phone": null,
     "zip": "84075",
     "hardinessZone": "7b",
-    "precipIn": 17.68,
+    "precipIn": 17.95,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -53594,7 +54209,7 @@
     },
     "zip": "84072",
     "hardinessZone": "6a",
-    "precipIn": 13.44,
+    "precipIn": 12.77,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384185",
     "schools": {
       "schools": {
@@ -53682,7 +54297,7 @@
     "phone": null,
     "zip": "84050",
     "hardinessZone": "6a",
-    "precipIn": 22.85,
+    "precipIn": 23.33,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -53717,7 +54332,7 @@
     "phone": null,
     "zip": "84073",
     "hardinessZone": "6a",
-    "precipIn": 11.14,
+    "precipIn": 11.31,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -53768,7 +54383,7 @@
     "phone": null,
     "zip": "84123",
     "hardinessZone": "7b",
-    "precipIn": 16.9,
+    "precipIn": 16.6,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -54303,7 +54918,7 @@
     "phone": null,
     "zip": "84773",
     "hardinessZone": "6a",
-    "precipIn": 10.35,
+    "precipIn": 10.69,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384356",
     "schools": null,
     "places": {
@@ -54361,7 +54976,7 @@
     "phone": null,
     "zip": "84022",
     "hardinessZone": "6b",
-    "precipIn": 14.93,
+    "precipIn": 14.28,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -54407,7 +55022,7 @@
     },
     "zip": "84337",
     "hardinessZone": "6b",
-    "precipIn": 15.54,
+    "precipIn": 15.22,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -54458,7 +55073,7 @@
     "phone": null,
     "zip": "84629",
     "hardinessZone": "5b",
-    "precipIn": 20.19,
+    "precipIn": 19.88,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -54497,7 +55112,7 @@
     },
     "zip": "84540",
     "hardinessZone": "6b",
-    "precipIn": 10.12,
+    "precipIn": 10.52,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -54608,7 +55223,7 @@
     "phone": null,
     "zip": "84032",
     "hardinessZone": "6a",
-    "precipIn": 28.46,
+    "precipIn": 25.98,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -54696,7 +55311,10 @@
     },
     "zip": "84074",
     "hardinessZone": "7a",
-    "precipIn": 18.44,
+    "precipIn": 18.57,
+    "freezeFreeDays": 165,
+    "lastSpringFreeze": "May 2",
+    "firstFallFreeze": "Oct. 16",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384818",
     "schools": {
       "schools": {
@@ -55237,7 +55855,10 @@
     "phone": null,
     "zip": "84774",
     "hardinessZone": "8b",
-    "precipIn": 11.87,
+    "precipIn": 11.97,
+    "freezeFreeDays": 217,
+    "lastSpringFreeze": "April 1",
+    "firstFallFreeze": "Nov. 5",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384840",
     "schools": {
       "schools": {
@@ -55315,7 +55936,7 @@
     "phone": null,
     "zip": "84775",
     "hardinessZone": "7a",
-    "precipIn": 10.07,
+    "precipIn": 10.24,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -55398,6 +56019,9 @@
     "zip": "84337",
     "hardinessZone": "6b",
     "precipIn": 16.16,
+    "freezeFreeDays": 175,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 17",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384964",
     "schools": {
       "schools": {
@@ -55581,7 +56205,10 @@
     "phone": null,
     "zip": "84338",
     "hardinessZone": "5b",
-    "precipIn": 17.21,
+    "precipIn": 17.11,
+    "freezeFreeDays": 121,
+    "lastSpringFreeze": "May 17",
+    "firstFallFreeze": "Sept. 18",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384976",
     "schools": null,
     "places": {
@@ -55646,7 +56273,7 @@
     "phone": null,
     "zip": "84076",
     "hardinessZone": "5b",
-    "precipIn": 9.4,
+    "precipIn": 9.08,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440072",
     "schools": null,
     "places": {
@@ -55697,7 +56324,7 @@
     "phone": null,
     "zip": "84776",
     "hardinessZone": "6a",
-    "precipIn": 12.59,
+    "precipIn": 12.45,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1385038",
     "schools": {
       "schools": {
@@ -55803,7 +56430,7 @@
     "phone": null,
     "zip": "84083",
     "hardinessZone": "6b",
-    "precipIn": null,
+    "precipIn": 6.85,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -55869,7 +56496,7 @@
     "phone": null,
     "zip": "84512",
     "hardinessZone": "7a",
-    "precipIn": 7.1,
+    "precipIn": 7.16,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -55911,7 +56538,7 @@
     "phone": null,
     "zip": "84535",
     "hardinessZone": "6b",
-    "precipIn": 13.42,
+    "precipIn": 12.76,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -55947,7 +56574,7 @@
     "phone": null,
     "zip": "84405",
     "hardinessZone": "7a",
-    "precipIn": 23.58,
+    "precipIn": 21.78,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -56018,7 +56645,7 @@
     "phone": null,
     "zip": "84007",
     "hardinessZone": "5b",
-    "precipIn": 8.98,
+    "precipIn": 8.83,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -56068,7 +56695,7 @@
     "phone": null,
     "zip": "84017",
     "hardinessZone": "5b",
-    "precipIn": 15.75,
+    "precipIn": 15.53,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -56111,7 +56738,7 @@
     "phone": null,
     "zip": "84021",
     "hardinessZone": "6a",
-    "precipIn": 10.32,
+    "precipIn": 9.69,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -56146,7 +56773,10 @@
     "phone": null,
     "zip": "84701",
     "hardinessZone": "6a",
-    "precipIn": 9.18,
+    "precipIn": 9.04,
+    "freezeFreeDays": 125,
+    "lastSpringFreeze": "May 21",
+    "firstFallFreeze": "Sept. 24",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -56193,7 +56823,10 @@
     },
     "zip": "84078",
     "hardinessZone": "5b",
-    "precipIn": 8.83,
+    "precipIn": 8.58,
+    "freezeFreeDays": 150,
+    "lastSpringFreeze": "May 7",
+    "firstFallFreeze": "Oct. 6",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1385847",
     "schools": {
       "schools": {
@@ -56636,7 +57269,10 @@
     },
     "zip": "84080",
     "hardinessZone": "6b",
-    "precipIn": 11.03,
+    "precipIn": 10.77,
+    "freezeFreeDays": 110,
+    "lastSpringFreeze": "June 1",
+    "firstFallFreeze": "Sept. 20",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1385851",
     "schools": {
       "schools": {
@@ -56722,7 +57358,10 @@
     "phone": null,
     "zip": "84782",
     "hardinessZone": "7b",
-    "precipIn": 12.86,
+    "precipIn": 13.14,
+    "freezeFreeDays": 207,
+    "lastSpringFreeze": "April 9",
+    "firstFallFreeze": "Nov. 5",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440336",
     "schools": null,
     "places": {
@@ -56793,7 +57432,10 @@
     "phone": null,
     "zip": "84059",
     "hardinessZone": "7a",
-    "precipIn": 13.34,
+    "precipIn": 13.31,
+    "freezeFreeDays": 182,
+    "lastSpringFreeze": "April 19",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -56915,7 +57557,7 @@
     "phone": null,
     "zip": "84779",
     "hardinessZone": "6b",
-    "precipIn": 12.39,
+    "precipIn": 12.11,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -56999,7 +57641,10 @@
     "phone": null,
     "zip": "84604",
     "hardinessZone": "6b",
-    "precipIn": 36.32,
+    "precipIn": 28.47,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 28",
+    "firstFallFreeze": "Sept. 23",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -57042,7 +57687,10 @@
     "phone": null,
     "zip": "84667",
     "hardinessZone": "5b",
-    "precipIn": 10.95,
+    "precipIn": 11.49,
+    "freezeFreeDays": 119,
+    "lastSpringFreeze": "May 26",
+    "firstFallFreeze": "Sept. 25",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -57115,7 +57763,7 @@
     "phone": null,
     "zip": "84082",
     "hardinessZone": "6a",
-    "precipIn": 18.89,
+    "precipIn": 17.91,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386287",
     "schools": null,
     "places": {
@@ -57181,7 +57829,10 @@
     "phone": null,
     "zip": "84017",
     "hardinessZone": "5b",
-    "precipIn": 17.69,
+    "precipIn": 16.13,
+    "freezeFreeDays": 92,
+    "lastSpringFreeze": "June 11",
+    "firstFallFreeze": "Sept. 12",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -57245,7 +57896,7 @@
     "phone": null,
     "zip": "84404",
     "hardinessZone": "7a",
-    "precipIn": 16.38,
+    "precipIn": 16.45,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -57302,7 +57953,7 @@
     "phone": null,
     "zip": "84331",
     "hardinessZone": "6a",
-    "precipIn": 14.8,
+    "precipIn": 14.7,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -57346,7 +57997,7 @@
     "phone": null,
     "zip": "84780",
     "hardinessZone": "8b",
-    "precipIn": 8.49,
+    "precipIn": 8.59,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386526",
     "schools": {
       "schools": {
@@ -57589,7 +58240,10 @@
     "phone": null,
     "zip": "84405",
     "hardinessZone": "7a",
-    "precipIn": 21.61,
+    "precipIn": 20.42,
+    "freezeFreeDays": 180,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -57724,7 +58378,10 @@
     "phone": null,
     "zip": "84542",
     "hardinessZone": "6a",
-    "precipIn": 8.92,
+    "precipIn": 9.02,
+    "freezeFreeDays": 122,
+    "lastSpringFreeze": "May 27",
+    "firstFallFreeze": "Sept. 26",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386866",
     "schools": {
       "schools": {
@@ -57834,7 +58491,10 @@
     "phone": null,
     "zip": "84339",
     "hardinessZone": "6a",
-    "precipIn": 18.67,
+    "precipIn": 18.02,
+    "freezeFreeDays": 138,
+    "lastSpringFreeze": "May 12",
+    "firstFallFreeze": "Sept. 28",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386893",
     "schools": {
       "schools": {
@@ -57975,7 +58635,10 @@
     },
     "zip": "84083",
     "hardinessZone": "6b",
-    "precipIn": 6.43,
+    "precipIn": 5.51,
+    "freezeFreeDays": 188,
+    "lastSpringFreeze": "April 18",
+    "firstFallFreeze": "Oct. 23",
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386908",
     "schools": {
       "schools": {
@@ -58082,7 +58745,10 @@
     "phone": null,
     "zip": "84087",
     "hardinessZone": "7b",
-    "precipIn": 18.58,
+    "precipIn": 19.24,
+    "freezeFreeDays": 178,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -58181,7 +58847,10 @@
     "phone": null,
     "zip": "84401",
     "hardinessZone": "7a",
-    "precipIn": 17.91,
+    "precipIn": 17.8,
+    "freezeFreeDays": 180,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 22",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -58369,7 +59038,7 @@
     "phone": null,
     "zip": "84088",
     "hardinessZone": "7b",
-    "precipIn": 17.2,
+    "precipIn": 17.14,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1387070",
     "schools": {
       "schools": {
@@ -59433,7 +60102,7 @@
     "phone": null,
     "zip": "84651",
     "hardinessZone": "6b",
-    "precipIn": 16.78,
+    "precipIn": 16.46,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -59478,7 +60147,7 @@
     "phone": null,
     "zip": "84015",
     "hardinessZone": "7a",
-    "precipIn": 17.75,
+    "precipIn": 17.76,
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -59646,7 +60315,7 @@
     "phone": null,
     "zip": "84120",
     "hardinessZone": "7b",
-    "precipIn": 16.38,
+    "precipIn": 16.83,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440076",
     "schools": {
       "schools": {
@@ -60750,7 +61419,10 @@
     "phone": null,
     "zip": "84404",
     "hardinessZone": "7a",
-    "precipIn": 17.33,
+    "precipIn": 17.44,
+    "freezeFreeDays": 177,
+    "lastSpringFreeze": "April 22",
+    "firstFallFreeze": "Oct. 18",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -60793,7 +61465,10 @@
     "phone": null,
     "zip": "84501",
     "hardinessZone": "6a",
-    "precipIn": 10,
+    "precipIn": 9.52,
+    "freezeFreeDays": 160,
+    "lastSpringFreeze": "May 3",
+    "firstFallFreeze": "Oct. 12",
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -60844,7 +61519,7 @@
     "phone": null,
     "zip": "84532",
     "hardinessZone": "7a",
-    "precipIn": 9.5,
+    "precipIn": 9.34,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -60880,7 +61555,7 @@
     "phone": null,
     "zip": "84094",
     "hardinessZone": "7b",
-    "precipIn": 18.36,
+    "precipIn": 18.78,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -60949,7 +61624,7 @@
     "phone": null,
     "zip": "84335",
     "hardinessZone": "6a",
-    "precipIn": 24.55,
+    "precipIn": 25.65,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -60985,7 +61660,7 @@
     "phone": null,
     "zip": "84511",
     "hardinessZone": "7a",
-    "precipIn": 9.33,
+    "precipIn": 9.51,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -61033,7 +61708,7 @@
     "phone": null,
     "zip": "84510",
     "hardinessZone": "",
-    "precipIn": 8.41,
+    "precipIn": 8.36,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -61068,7 +61743,7 @@
     "phone": null,
     "zip": "84534",
     "hardinessZone": "7a",
-    "precipIn": 7.47,
+    "precipIn": 7.46,
     "postOfficeUrl": "",
     "schools": null,
     "places": null,
@@ -61111,7 +61786,7 @@
     "phone": null,
     "zip": "84085",
     "hardinessZone": "6a",
-    "precipIn": 9.73,
+    "precipIn": 9.87,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1387567",
     "schools": {
       "schools": {
@@ -61220,7 +61895,7 @@
     "phone": null,
     "zip": "84764",
     "hardinessZone": "6a",
-    "precipIn": 12.15,
+    "precipIn": 12.34,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -61264,7 +61939,7 @@
     "phone": null,
     "zip": "84340",
     "hardinessZone": "7a",
-    "precipIn": 20.16,
+    "precipIn": 21.09,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1387713",
     "schools": {
       "schools": {
@@ -61389,7 +62064,7 @@
     "phone": null,
     "zip": "84310",
     "hardinessZone": "6a",
-    "precipIn": 26.75,
+    "precipIn": 27.27,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -61441,7 +62116,7 @@
     "phone": null,
     "zip": "84036",
     "hardinessZone": "5b",
-    "precipIn": 23.11,
+    "precipIn": 20.52,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -61500,7 +62175,7 @@
     "phone": null,
     "zip": "84653",
     "hardinessZone": "7a",
-    "precipIn": 21.54,
+    "precipIn": 20.87,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -61601,7 +62276,7 @@
     "phone": null,
     "zip": "84086",
     "hardinessZone": "5a",
-    "precipIn": 11.52,
+    "precipIn": 11.11,
     "postOfficeUrl": "https://tools.usps.com/locations/details/1388222",
     "schools": {
       "schools": {},
@@ -61693,7 +62368,10 @@
     "phone": null,
     "zip": "84010",
     "hardinessZone": "6b",
-    "precipIn": 21.92,
+    "precipIn": 20.39,
+    "freezeFreeDays": 178,
+    "lastSpringFreeze": "April 24",
+    "firstFallFreeze": "Oct. 19",
     "postOfficeUrl": "",
     "schools": {
       "schools": {
@@ -61861,7 +62539,7 @@
     "phone": null,
     "zip": "83342",
     "hardinessZone": "6a",
-    "precipIn": 13.41,
+    "precipIn": 13.07,
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -61905,6 +62583,9 @@
     "zip": "84767",
     "hardinessZone": "6b",
     "precipIn": null,
+    "freezeFreeDays": 202,
+    "lastSpringFreeze": "April 13",
+    "firstFallFreeze": "Nov. 2",
     "postOfficeUrl": "",
     "schools": null,
     "places": null,

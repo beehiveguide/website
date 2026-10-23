@@ -19,6 +19,7 @@
 const fs = require("fs");
 const path = require("path");
 const paths = require("./lib/paths");
+const { AP_MONTHS } = require("./lib/ap_months");
 
 const site = paths.readJson(paths.config("site.json"));
 const SOURCE_LIST = paths.readJson(paths.source("sources.json"));
@@ -66,20 +67,7 @@ const esc = (s) =>
     .replace(/"/g, "&quot;");
 const num = (n) => Number(n).toLocaleString("en-US");
 const NA = "Not available";
-const MONTHS = [
-  "Jan.",
-  "Feb.",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "Aug.",
-  "Sept.",
-  "Oct.",
-  "Nov.",
-  "Dec.",
-];
+const MONTHS = Object.values(AP_MONTHS);
 const now = new Date();
 const updated = `${MONTHS[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`; // AP style
 const slug = (s) =>
@@ -138,7 +126,8 @@ const SOURCES = {
       "phone",
     ),
   zone: source("Hardiness zone", "zone"),
-  precip: source("Annual precipitation", "precip"),
+  precip: source("Annual precipitation", "prism"),
+  freeze: source("Freeze-free days", "noaa"),
 };
 
 // Shared header and footer. home: link from the page to the homepage.
@@ -515,6 +504,7 @@ function buildPage(t) {
   if (pop) sources.push(SOURCES[pop.source]);
   if (t.hardinessZone) sources.push(SOURCES.zone);
   if (t.precipIn !== null) sources.push(SOURCES.precip);
+  if (t.freezeFreeDays !== undefined) sources.push(SOURCES.freeze);
 
   // Phone: one "Area Code" line ("801/385" when there are several), then the
   // prefixes under it. With several area codes, each gets its own labeled
@@ -606,6 +596,10 @@ function buildPage(t) {
       pop && pop.households !== undefined ? num(pop.households) : NA,
     "{Town Hardiness}": t.hardinessZone || NA,
     "{Town Precip}": t.precipIn !== null ? `${t.precipIn.toFixed(1)} in.` : NA,
+    "{Town Freeze}":
+      t.freezeFreeDays !== undefined
+        ? `${t.freezeFreeDays} <small class="text-secondary font-sans"><em>(${t.lastSpringFreeze}&ndash;${t.firstFallFreeze})</em></small>`
+        : NA,
     "{Day Month, Year}": updated,
     "{Site Name}": esc(site.name),
     "{Home URL}": link("../index.html"),
@@ -620,14 +614,27 @@ function buildPage(t) {
     }),
   });
 
-  // Leave out anything not available: drop its line, then the precipitation
-  // note if there's no precipitation, then the whole Gardening Info section if empty.
+  // Leave out anything not available: drop its line, then adjust or drop the
+  // climate normals note, then drop the whole Gardening Info section if empty.
   html = html.replace(new RegExp(`\\s*<li>[^\\n]*${NA}[^\\n]*</li>`, "g"), "");
-  if (t.precipIn === null)
+
+  if (t.precipIn === null && t.freezeFreeDays === undefined) {
     html = html.replace(
-      /\s*<p class="[^"]*">\s*<em>1991-2020 precipitation normals<\/em><\/p>/,
+      /\s*<p class="[^"]*">\s*<em>1991-2020 precipitation and freeze normals<\/em>\s*<\/p>/,
       "",
     );
+  } else if (t.precipIn === null) {
+    html = html.replace(
+      "1991-2020 precipitation and freeze normals",
+      "1991-2020 freeze normals",
+    );
+  } else if (t.freezeFreeDays === undefined) {
+    html = html.replace(
+      "1991-2020 precipitation and freeze normals",
+      "1991-2020 precipitation normals",
+    );
+  }
+
   html = html.replace(
     /\s*<section class="gardening[^"]*">\s*<h2[^>]*>Gardening Info<\/h2>\s*<ul class="list-unstyled mb-0">\s*<\/ul>\s*<\/section>/,
     "",
@@ -661,7 +668,6 @@ function buildPage(t) {
     "shadow",
     true,
     {
-      // description: `Community profile for ${place}, in ${t.county} County. Location, population, postal, phone and gardening info.`,
       description: `Community profile for ${esc(t.name)}, Utah, in ${t.county} County. Location, population, postal, phone and gardening info.`,
       path: `communities/${fileName(t)}`,
       jsonLd: {

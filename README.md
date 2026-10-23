@@ -6,7 +6,7 @@ Run every command below from this `website` folder. You need Node.js (version 18
 
 ## Folders
 
-- `sources/` has the raw downloads used to build the site. Each source has its own folder. When a source takes more than one download (PRISM, GNIS search exports), those files share a subfolder.
+- `sources/` has the raw downloads used to build the site. Each source has its own folder. When a source takes more than one download (PRISM, NOAA, GNIS search exports), those files share a subfolder.
 - `sources/sources.json` has each source's name, link and download date. Page citations use the names and links.
 - `config/` has the files you edit by hand:
   - `site.json` holds the site name, tagline, web address, link style and phone prefix limits.
@@ -14,7 +14,7 @@ Run every command below from this `website` folder. You need Node.js (version 18
   - `included_places.json` lists places to keep even when UGRC doesn't list them.
   - `corrections.json` has fixes to source data, so the source files stay as downloaded.
   - `photos.json` lists each photo: its original, web versions, caption, alt text and credit.
-- `scripts/` has the build steps, numbered in the order they run.
+- `scripts/` has the build steps, numbered in the order they run. `scripts/lib/` has the helpers the steps share. `scripts/tools/` has tools you run by hand that aren't part of the build, such as `filter_utah_stations.js` (see the NOAA note under Update a source).
 - `templates/` has the HTML for the town pages, index, 404 page, header and footer.
 - `static/` has files copied into the site as is: web fonts trimmed to Latin as WOFF2 (`static/fonts/`: Roboto Slab, Roboto and Zilla Slab), Bootstrap 5.0.2 and the site stylesheet (`static/css/`), Leaflet 1.9.4 for the maps (`static/leaflet/`) and web-sized photos (`static/images/`). Original downloads stay in `sources/fonts/`, `sources/libraries/` and `sources/photos/originals/`.
 - `build/` holds the intermediate files. It's made by the scripts, so don't edit it.
@@ -114,14 +114,26 @@ git push
 | UGRC SGID layers (GeoJSON)                                   | `sources/ugrc/`                  | Schools, parks, post offices, ZIP areas and more     |
 | UGRC Populated Places 2010                                   | `sources/ugrc/populated-places/` | Which unincorporated places to keep, 2010 population |
 | NANPA central office codes (`CoCodeAssignment...txt`)        | `sources/nanpa/`                 | Area codes, prefixes                                 |
-| PRISM 1991-2020 normals (CSV)                                | `sources/prism/normals/`         | Annual precipitation                                 |
+| PRISM 1991-2020 normals (CSV)                                | `sources/prism/monthly_normals/` | Annual precipitation                                 |
+| NOAA 1991-2020 annual/seasonal normals, by station (CSV)     | `sources/noaa/multivariate_annual_normals/` | Freeze-free days, last spring and first fall freeze |
 | USDA hardiness zones by ZIP (`phzm_us_zipcode_2023.csv`)     | `sources/usda/`                  | Hardiness zone                                       |
 | USPS post office pages (`post_office_urls.json`)             | `sources/usps/`                  | Post Office button                                   |
 | Origins of Utah Place Names (`utah_place_names.json`)        | `sources/books/`                 | Founding year, name origin                           |
 
 Notes:
 
-- **PRISM:** PRISM takes at most 500 locations per batch. Upload lists live in `sources/prism/locations/`. After a build, `build/prism_locations_needed.csv` lists the communities still missing precipitation. Upload that file to PRISM and add the result to `sources/prism/normals/`.
+- **PRISM:** PRISM takes at most 500 locations per batch. Upload lists live in `sources/prism/locations/`. After a build, `build/prism_locations_needed.csv` lists the communities still missing precipitation. Upload that file to PRISM and add the result to `sources/prism/monthly_normals/`.
+- **NOAA:** Freeze data comes from NOAA's 1991-2020 Annual/Seasonal Normals. To update:
+  1. Download the by-station archive (`us-climate-normals_1991-2020_..._annualseasonal_multivariate_by-station_....tar.gz`) from https://www.ncei.noaa.gov/data/normals-annualseasonal/1991-2020/archive/ into `downloads/`.
+  2. Extract the CSVs into `sources/noaa/multivariate_annual_normals/`.
+  3. Remove the non-Utah stations:
+
+     ```sh
+     node scripts/tools/filter_utah_stations.js sources/noaa/multivariate_annual_normals
+     ```
+
+     This keeps files whose station name ends in ", UT US" and **deletes the rest**. It can't be undone, so re-extract the archive if something goes wrong. It deletes nothing if no Utah files match.
+  4. Build. `08b_freeze.js` uses NOAA's 50% dates for a 32°F freeze and gives a community a station's numbers only if the station is within 8 km and 100 m of elevation. Communities with no station that close get no freeze data, and the page leaves out that line. The limits are set at the top of the script, and the build prints each match so you can check it.
 - **UGRC:** Keep the layer name at the start of the file name, like `Schools_PreKto12_...geojson`.
 - **Fixing a value in a source:** Don't edit the source file. Add the fix to `config/corrections.json` with a note on why.
 
