@@ -1,0 +1,7 @@
+{
+  "_note": "Tribal police for each reservation (by its Census name), named as in UGRC's law enforcement layer. A community inside a reservation's outer boundary lists that department; the layer's own tribal areas cover only scattered trust land. Reservations with no tribal police department in the layer are left out.",
+  "Uintah and Ouray Reservation": "Ute Tribal Police Department",
+  "Navajo Nation Reservation": "Navajo Nation Police Department",
+  "Goshute Reservation": "Goshute Tribal Police Department",
+  "Ute Mountain Reservation": "Towaoc Tribal Police Department"
+}

@@ -989,3 +989,38 @@ a.marker-link:focus {
     row-gap: 0.75rem;
   }
 }
+
+/* Community Services: long park and library lists in three columns (two on phones) */
+.col-list {
+  columns: 3;
+  column-gap: 2rem;
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+.col-list li {
+  break-inside: avoid;
+}
+@media (max-width: 575.98px) {
+  .col-list {
+    columns: 2;
+  }
+}
+.schools-table {
+  margin-bottom: 0;
+}
+
+/* Coordinates link: primary color, dark on hover like the community links */
+.coord-link {
+  transition: color 0.15s ease-in-out;
+}
+.coord-link:hover,
+.coord-link:focus {
+  color: #212529;
+}
+/* Map pin in front of the coordinates link */
+.coord-icon {
+  width: 0.7em;
+  height: 0.9em;
+  margin-right: 0.2em;
+  vertical-align: -0.1em;
+}

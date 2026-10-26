@@ -14,6 +14,11 @@ Run every command below from this `website` folder. You need Node.js (version 18
   - `included_places.json` lists places to keep even when UGRC doesn't list them.
   - `corrections.json` has fixes to source data, so the source files stay as downloaded.
   - `landform_words.json` has the plain words the soil paragraph uses for soil survey landforms ("fan remnants" -> "on foothill slopes"). Landforms that share a phrase count together. The build warns about any landform not listed.
+  - `higher_ed_names.json` has college names to use where dropping UGRC's dash ("Utah State University - Beaver Campus") reads badly.
+  - `tribal_police.json` names the tribal police for each reservation.
+  - `tribal_first.json` lists tribal communities (besides the Navajo Nation) where tribal police come first and the sheriff "also has jurisdiction over crimes by non-Native people."
+  - `school_districts.json` has each school district's full name ("Duchesne County School District") and website, by UGRC's short name.
+  - `higher_ed_urls.json` has college and university websites, by name, for ones UGRC lists without one.
   - `photos.json` lists each photo: its original, web versions, caption, alt text and credit.
 - `scripts/` has the build steps, numbered in the order they run. `scripts/lib/` has the helpers the steps share. `scripts/tools/` has tools you run by hand that aren't part of the build, such as `filter_utah_stations.js` (see the NOAA note under Update a source).
 - `templates/` has the HTML for the town pages, index, 404 page, header and footer.
@@ -120,6 +125,7 @@ git push
 | USDA hardiness zones by ZIP (`phzm_us_zipcode_2023.csv`)     | `sources/usda/`                  | Hardiness zone                                       |
 | USDA gSSURGO soils, clipped to town boundaries (`town_soils.json`) | `sources/usda/ssurgo/` | Soil paragraph (places with a Census boundary only) |
 | Census TIGER/Line places (`tl_2025_49_place.zip`) | `sources/census/place-boundaries/` | Town and CDP polygons for the soil clip |
+| Census reservations (`FederalAmericanIndianReservations_Utah.geojson`) | `sources/census/reservations/` | Tribal police for places inside a reservation |
 | USPS post office pages (`post_office_urls.json`)             | `sources/usps/`                  | Post Office button                                   |
 | Origins of Utah Place Names (`utah_place_names.json`)        | `sources/books/`                 | Founding year, name origin                           |
 
@@ -150,9 +156,12 @@ Notes:
   - pH: area-weighted average, with the range from the lowest low and highest high. Levels are the NRCS soil reaction classes. The end with more land is named first.
   - Water: classes are the common soil-judging classes for a 60-inch profile divided by 60 (0.05, 0.10, 0.15, 0.20 in./in.), in `scripts/lib/soil_words.js`.
   - Place notes ("on floodplains") only mark outliers: a texture, pH end, drainage class or water level mostly on a landform other than the ones the opening names.
+  - Towns at 8,500 feet or higher (Brian Head, Brighton) get no Growing Info section at all. The limit is `GROWING_MAX_FT` in `10_pages.js`.
   - The paragraph runs: textures, bedrock, pH, salt and organic matter, then water (drainage, retention, water table, flooding), with farmland rating last. It also covers topsoil salt (NRCS salinity classes), organic matter, farmland rating (prime, prime if irrigated, statewide importance), and limits: bedrock within 20 inches or a water table within 2 feet on 10% or more, and occasional or more frequent flooding on 5% or more. Each names the landform most of it is on, when half or more is on one.
   - The pH sentence starts "Estimated topsoil alkalinity" (average above 7.3), "acidity" (below 6.6) or "pH" (neutral), covering the average and both ends. When 15% or more of town is mapped as urban land (no soil data), a last sentence says so.
 - **UGRC:** Keep the layer name at the start of the file name, like `Schools_PreKto12_...geojson`.
+- **Community services:** The sections below Growing Info (each with its own heading) come from the UGRC layers through `04_schools.js`, `05_places.js` and `06_services.js`, and are written by `servicesHtml()` in `10_pages.js`. It runs public safety (police and fire), library, parks and cemeteries, PreK-12 schools, higher education, then health care (hospitals only), and leaves out empty parts. Parks, libraries and cemeteries past `BIG_LIST` (5) become a three-column list, PreK-12 schools are one paragraph up to `SCHOOL_ONE_PARAGRAPH` (8), then a paragraph for elementary schools and one for middle and high schools, each opening with a count ("Vernal has a preschool and five elementary schools."), and past `SCHOOL_TABLE_MIN` (15) a table. A tally of schools by level leads whenever a level has more than one school. Fewer are written as sentences; a small town's one cemetery follows its parks in the same paragraph ("It also has the Mendon City Cemetery, which dates to 1860."). Left out: residential treatment and online schools, college classes in jails and prisons, single graves in the cemetery layer, and fire training and logistics centers. Parks named only "Park," "Ball Park" and the like are counted in the sentence for small towns and left off long lists. College websites missing from UGRC go in `config/higher_ed_urls.json`. School district full names and websites are in `config/school_districts.json`.
+- **Reservations:** Census reservation boundaries come from TIGERweb (https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/AIANNHA/MapServer, layer 2), queried for Utah and saved as GeoJSON. `06_services.js` gives every community inside a reservation that reservation's tribal police (`config/tribal_police.json`). UGRC's own tribal police areas cover only scattered trust land, so they aren't used.
 - **Fixing a value in a source:** Don't edit the source file. Add the fix to `config/corrections.json` with a note on why.
 
 ## Build

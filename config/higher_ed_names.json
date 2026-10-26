@@ -1,0 +1,7 @@
+{
+  "_note": "Names to use for colleges whose UGRC name doesn't read well once its dash is dropped. Every other \"College - Campus\" name just loses the dash (\"Utah State University Beaver Campus\"). Keyed by the UGRC name.",
+  "Weber State - Downtown": "Weber State Downtown",
+  "Weber State - Farmington Station": "Weber State Farmington Station",
+  "Mountainland Technical College - Utah Valley University Wasatch Campus": "Mountainland Technical College at Utah Valley University Wasatch Campus",
+  "Southwest Technical College - Beaver High School Instructional Service Center": "Southwest Technical College Instructional Service Center at Beaver High School"
+}

@@ -5,7 +5,8 @@
 //   Culinary water Active community water systems (SYSTEMTYPE C) whose service
 //                  area contains the community's point. Linked to Utah Division
 //                  of Water Rights.
-//   Law            Law enforcement boundaries that contain the community's point.
+//   Law            Law enforcement boundaries that contain the community's point,
+//                  with tribal police by reservation (see below).
 //   Fire area      Fire response areas that contain the community's point. Uses
 //                  any sources/ugrc/FireResponseAreas*.geojson; blank until one is added.
 //   Fire stations  Fire stations whose city field matches the community.
@@ -18,7 +19,8 @@ const {
   nameKey, makeFinder, fixUrl, readGeoJson, makeAreaFinder, listCommunities, findGeoJson,
 } = require("./lib/communities");
 
-const outputPath = require("./lib/paths").build("services.json");
+const paths = require("./lib/paths");
+const outputPath = paths.build("services.json");
 const census = JSON.parse(fs.readFileSync(require("./lib/paths").build("census.json"), "utf8"));
 const communities = listCommunities();
 const output = {};
@@ -59,6 +61,50 @@ addAreas(
   readGeoJson("LawEnforcementBoundaries"),
   (f) => ({ name: titleCase((f.properties.DsplayName || f.properties.NAME).trim()), note: "", url: "" }),
 );
+
+// --- Tribal police by reservation. UGRC's tribal police areas cover only
+// scattered trust land, so a town's point lands in one by chance (Mount
+// Emmons but not Roosevelt). Instead, every community inside a reservation's
+// outer boundary (Census) gets that reservation's tribal police
+// (config/tribal_police.json), and the point-based tribal entries are dropped.
+{
+  const TRIBAL = /tribal|navajo nation/i;
+  const tribalPolice = paths.readJson(paths.config("tribal_police.json"));
+  const tribalFirst = new Set(paths.readJson(paths.config("tribal_first.json")).places);
+  // "Duchesne County" by Gaz ID, from build/communities.csv
+  const countyOf = {};
+  {
+    const [head, ...rows] = fs.readFileSync(paths.build("communities.csv"), "utf8").trim().split(/\r?\n/);
+    const h = head.split(",");
+    for (const row of rows) {
+      const c = row.split(",");
+      countyOf[c[h.indexOf("Gaz ID")]] = c[h.indexOf("County")];
+    }
+  }
+  const resFile = paths.sourceFiles("census/reservations", /\.geojson$/)[0];
+  const findReservations = makeAreaFinder(JSON.parse(fs.readFileSync(resFile, "utf8")).features);
+  for (const c of communities) {
+    const e = entry(c.id);
+    const law = (e.law || []).filter((l) => !TRIBAL.test(l.name));
+    const reservations = findReservations(c.lng, c.lat).map((f) => f.properties.NAME);
+    // Where the layer gave only tribal police, the county sheriff still covers
+    // everyone else ("Myton", "Fort Duchesne")
+    if (reservations.length && !law.length && countyOf[c.id])
+      law.push({ name: `${countyOf[c.id]} Sheriffs Office`, note: "", url: "" });
+    // note: the reservation, for "serves tribal land on the … Reservation"
+    // first: tribal police lead the page (all of the Navajo Nation, plus the
+    // tribal communities in config/tribal_first.json)
+    for (const r of reservations)
+      if (tribalPolice[r])
+        law.push({
+          name: tribalPolice[r], note: r, url: "", tribal: true,
+          first: /^Navajo Nation/.test(r) || tribalFirst.has(c.name),
+        });
+    if (reservations.length) e.reservations = reservations;
+    count("reservations", reservations.length > 0);
+    if (law.length) e.law = law;
+  }
+}
 
 if (findGeoJson("FireResponseAreas")) {
   addAreas(

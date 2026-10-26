@@ -101,7 +101,7 @@ const source = (items, key, prefix = "") => {
   // "url" in sources.json is where the data was downloaded; "publicUrl" (when
   // set) is the public-facing page readers are sent to instead.
   const href = s.publicUrl || s.url;
-  return `<strong>${items}:</strong> ${prefix}${href ? `<a href="${href}" class="link-dark">${esc(s.name)}</a>` : esc(s.name)}`;
+  return `<strong>${items}:</strong> ${prefix}${href ? `<a href="${href}">${esc(s.name)}</a>` : esc(s.name)}`;
 };
 // Soil paragraph (build/soil.json via 09_merge.js), under an h3 in Gardening
 // Info. Only towns with a UGRC boundary have soil data.
@@ -167,8 +167,15 @@ function soilHtml(t) {
   // "In the foothills" and "on mountainsides" keep "slopes" from repeating.
   const OPENING_WORDS = { "on foothill slopes": "in the foothills", "on mountain slopes": "on mountainsides" };
   const forms = s.arableForms.map((f) => OPENING_WORDS[f] || f);
+  // "on valley floors and benches above streams", but "in the foothills and on
+  // floodplains" when the two take different words
+  const joinPlaces = ([a, b]) => {
+    if (!b) return a;
+    const pa = a.split(" ")[0], pb = b.split(" ")[0];
+    return pa === pb && (pa === "on" || pa === "in") ? `${a} and ${b.slice(pb.length + 1)}` : `${a} and ${b}`;
+  };
   const opening = forms.length
-    ? `Slopes suitable for cultivation lie mostly ${esc(forms.join(" and ").replace(/ and (on|in) /, " and "))}, with soils including`
+    ? `Slopes suitable for cultivation lie mostly ${esc(joinPlaces(forms))}, with soils including`
     : `Slopes suitable for cultivation have soils including`;
   // Salt, organic matter, farmland rating and limits.
   // Percentages are shares of the slopes suitable for cultivation.
@@ -190,14 +197,17 @@ function soilHtml(t) {
   } else if (f.statewide > 0) {
     farm.push(`${about(f.statewide)} of this land rates as farmland of statewide importance.`);
   }
-  if (s.bedrock) bedrockText.push(`Bedrock lies within 20 inches on about ${s.bedrock.pct}%${mostly(s.bedrock)}.`);
+  // Shares of this land: "about 18%", or "nearly all of this land" at 95% or more
+  const share = (pct) => (pct >= 95 ? "nearly all of this land" : `about ${pct}%`);
+  const cap = (text) => text[0].toUpperCase() + text.slice(1);
+  if (s.bedrock) bedrockText.push(`Bedrock lies within 20 inches on ${share(s.bedrock.pct)}${mostly(s.bedrock)}.`);
   // A high water table and flooding in the same place share a sentence
   const wt = s.waterTable, fl = s.flooding;
   if (wt && fl && wt.landform && wt.landform === fl.landform && Math.abs(wt.pct - fl.pct) <= 5)
-    wet.push(`About ${Math.max(wt.pct, fl.pct)}%${mostly(wt)}, has a high water table (within 2 feet) and floods occasionally or more often.`);
+    wet.push(`${cap(share(Math.max(wt.pct, fl.pct)))}${mostly(wt)}, has a high water table (within 2 feet) and floods occasionally or more often.`);
   else {
-    if (wt) wet.push(`A high water table (within 2 feet) affects about ${wt.pct}%${mostly(wt)}.`);
-    if (fl) wet.push(`About ${fl.pct}% floods occasionally or more often${mostly(fl)}.`);
+    if (wt) wet.push(`A high water table (within 2 feet) affects ${share(wt.pct)}${mostly(wt)}.`);
+    if (fl) wet.push(`${cap(share(fl.pct))} floods occasionally or more often${mostly(fl)}.`);
   }
 
   // Built-over towns end with how much was left out (urban land has no soil data)
@@ -209,7 +219,10 @@ function soilHtml(t) {
   // matter, then water (drainage, retention, water table, flooding), with the
   // farmland rating last as a summary
   const sentences = [
-    `${opening} ${textures}.`,
+    // One texture at 95% or more: "with soils that are nearly all loam"
+    s.textures[0].pct >= 95
+      ? `${opening.replace(/soils including$/, "soils that are")} nearly all ${esc(s.textures[0].texture)}.`
+      : `${opening} ${textures}.`,
     ...bedrockText,
     `Estimated topsoil ${phSubject}, ${phText}.`,
     ...chem,
@@ -247,6 +260,9 @@ const SOURCES = {
   precip: source("Annual precipitation", "prism"),
   freeze: source("Freeze-free days", "noaa"),
   soil: source("Soil properties", "soil"),
+  reservations: source("Reservation boundaries", "censusReservations"),
+  // "Police, fire, parks and schools": only the Community Services sections shown
+  ugrc: (shown) => source(capFirst(listText(shown)), "ugrc"),
 };
 
 // Shared header and footer. home: link from the page to the homepage.
@@ -603,7 +619,503 @@ function nearbyItems(t) {
     .join("\n");
 }
 
+// --- Community services (schools, places and services from 09_merge.js),
+// below Growing Info, each part under its own h2. Sections run public safety
+// (police and fire), library, parks and cemeteries, PreK-12 schools, higher
+// education, then health care (hospitals only); each is left out when empty.
+// Most are sentences. Parks, libraries and cemeteries past BIG_LIST become a three-column list, and
+// PreK-12 schools past SCHOOL_ONE_PARAGRAPH get a paragraph per level, and
+// past SCHOOL_TABLE_MIN a table with a level column.
+const BIG_LIST = 5;
+const NUMBER_WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+// AP style: spell out one through nine
+const countWord = (n) => (n < 10 ? NUMBER_WORDS[n] : num(n));
+const plural = (n, word, words = `${word}s`) => `${countWord(n)} ${n === 1 ? word : words}`;
+const capFirst = (s) => s[0].toUpperCase() + s.slice(1);
+const nameLink = (item) =>
+  item.url ? `<a href="${esc(item.url)}">${esc(item.name)}</a>` : esc(item.name);
+// "the city", "the town" or "the community" (CDPs and places the census doesn't list)
+const placeWord = (t) =>
+  t.placeType === "city" ? "the city" : t.placeType === "town" ? "the town" : "the community";
+// UGRC names come in title case ("Fire And Rescue", "Sheriffs Office")
+const tidyName = (s) =>
+  s
+    .replace(/(?!^)\b(And|Of|The|For|At)\b/g, (w) => w.toLowerCase())
+    .replace(/\bSheriffs\b/g, "Sheriff's")
+    .replace(/\bDod\b/g, "DOD")
+    .replace(/\bAtk\b/g, "ATK");
+// "the Logan Police Department", but "Brian Head Public Safety"
+const withThe = (name) =>
+  /^the /i.test(name) || !/(Department|Office|District|Authority|Agency|Services?|Facility|Corps)( \d+)?$/.test(name)
+    ? name
+    : `the ${name}`;
+const uniqueBy = (items, key) => {
+  const seen = new Set();
+  return items.filter((i) => !seen.has(key(i)) && seen.add(key(i)));
+};
+
+// Police agencies serving a place: ["the Logan Police Department"]
+function policeAgencies(t) {
+  const law = ((t.services && t.services.law) || []).map((l) => tidyName(l.name));
+  if (!law.length) return [];
+  // A city's own department covers it; the sheriff covers places without one.
+  // Tribal police (Ute, Navajo Nation, Goshute) work alongside either one on
+  // reservation land, so they never replace the sheriff.
+  const TRIBAL = /tribal|navajo nation/i;
+  const local = law.filter((n) => !/Sheriff/i.test(n) && !TRIBAL.test(n));
+  const main = local.length ? local : law.filter((n) => /Sheriff/i.test(n));
+  return main.map(withThe).map(esc);
+}
+
+// Tribal police get their own sentence, since they cover tribal land rather
+// than the whole place: "The Ute Tribal Police Department has jurisdiction
+// over tribal land within the Uintah and Ouray Reservation."
+function tribalPoliceText(t) {
+  return ((t.services && t.services.law) || [])
+    .filter((l) => l.tribal)
+    // "on the Uintah and Ouray Reservation", but "in the Navajo Nation"
+    .map((l) => {
+      // Hagen v. Utah (1994) shrank the Uintah and Ouray Reservation, so
+      // tribal jurisdiction there is tribal land rather than everything inside
+      // its outer boundary.
+      // The Navajo Nation's reservation was never shrunk, so it covers all of it
+      const scope = /^Navajo Nation/.test(l.note)
+        ? "within the nation's boundaries"
+        : `over tribal land within the ${esc(l.note)}`;
+      return `${capFirst(esc(withThe(tidyName(l.name))))} has jurisdiction ${scope}.`;
+    })
+    .join(" ");
+}
+
+function fireText(t) {
+  const stations = (t.services && t.services.fireStations) || [];
+  if (!stations.length) return { serving: [], sentences: [] };
+  // Stations grouped by department: "Logan Fire Department Station 70" and
+  // "Beaver County Fire District 1 - Headquarters" give the department name.
+  const groups = new Map();
+  let loose = 0;
+  const FIRE_WORDS = /fire|rescue|emergency|\bems\b|safety/i;
+  for (const s of stations) {
+    // Training centers, logistics and the like aren't stations
+    if (/training|logistic|\beoc\b|academy|national guard/i.test(s.name)) continue;
+    // "Canyonlands National Park - Needles Fire District": the part naming the
+    // department. Two towns sharing one ("Lapoint - Tridell Fire Department")
+    // are joined with a hyphen.
+    const segs = tidyName(s.name).split(/\s+-\s+/);
+    let i = segs.findIndex((x) => FIRE_WORDS.test(x));
+    if (i < 0) i = 0;
+    let dept = segs[i];
+    if (i === 1 && !segs[0].includes(" ")) dept = `${segs[0]}-${dept}`;
+    dept = dept.replace(/\s+Station\b.*$/i, "").trim();
+    // "Lone Peak Fire District Alpine" -> "Lone Peak Fire District"
+    if (dept.endsWith(` ${t.name}`)) dept = dept.slice(0, -(t.name.length + 1));
+    // Stations named only for a place ("Bullfrog") are counted, not named
+    if (!FIRE_WORDS.test(dept)) {
+      loose++;
+      continue;
+    }
+    groups.set(dept, (groups.get(dept) || 0) + 1);
+  }
+  const town = esc(t.name);
+  // A town's own one-station department: "The Randolph Fire Department
+  // provides fire protection." A town's own bigger department: "The Logan Fire Department has
+  // three stations." Others say where: "The Cache County Fire District has a
+  // station in Logan."
+  const serving = [];
+  const sentences = [];
+  // The town's own department: "Randolph Fire Department", "Cedar City Fire",
+  // "Antimony Volunteer Fire Department", but not "Beaver County Fire District"
+  const ownRe = new RegExp(`^${t.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}( City| Town)? (Volunteer )?Fire\\b`);
+  for (const [dept, n] of groups) {
+    const name = esc(withThe(dept));
+    const own = ownRe.test(dept);
+    if (own && n === 1) sentences.push(`${capFirst(name)} provides fire protection.`);
+    else if (own) sentences.push(`${capFirst(name)} has ${plural(n, "station")}.`);
+    else sentences.push(`${capFirst(name)} has ${n === 1 ? "a station" : plural(n, "station")} in ${town}.`);
+  }
+  if (loose)
+    sentences.push(
+      groups.size
+        ? `${town} also has ${loose === 1 ? "another fire station" : plural(loose, "other fire station")}.`
+        : `${town} has ${loose === 1 ? "a fire station" : plural(loose, "fire station")}.`,
+    );
+  return { serving, sentences };
+}
+
+// Police, tribal police, then fire, each in its own sentences, one paragraph: "The Rich
+// County Sheriff's Office serves the town. The Randolph Fire Department
+// provides fire protection."
+function safetyText(t) {
+  const police = policeAgencies(t);
+  const first = police.length
+    ? `${capFirst(listText(police))} ${police.length > 1 ? "serve" : "serves"} ${placeWord(t)}.`
+    : "";
+  // In the Navajo Nation and tribal communities (config/tribal_first.json),
+  // tribal police are the main police, so they go first
+  const tribal = tribalPoliceText(t);
+  const navajoFirst = ((t.services && t.services.law) || []).some((l) => l.first);
+  // On tribal land the county handles crimes by non-Native people
+  // (United States v. McBratney, 1882; Oklahoma v. Castro-Huerta, 2022)
+  const county = navajoFirst && police.length
+    ? `${capFirst(listText(police))} also ${police.length > 1 ? "have" : "has"} jurisdiction over crimes by non-Native people.`
+    : first;
+  // Elsewhere on a reservation the local police still cover the place, and on
+  // tribal land only crimes by non-Native people: "The Roosevelt Police
+  // Department serves the city. The Ute Tribal Police Department has
+  // jurisdiction over tribal land within the Uintah and Ouray Reservation,
+  // while city police have jurisdiction over crimes by non-Native people
+  // there."
+  const localShort = police.some((n) => /Sheriff/i.test(n))
+    ? "the sheriff's office has"
+    : `${t.placeType === "town" ? "town" : "city"} police have`;
+  const shared =
+    !navajoFirst && tribal && police.length
+      ? `${tribal.replace(/\.$/, "")}, while ${localShort} jurisdiction over crimes by non-Native people there.`
+      : "";
+  const policeText = navajoFirst ? [tribal, county] : shared ? [first, shared] : [first, tribal];
+  const text = [...policeText, ...fireText(t).sentences]
+    .filter(Boolean)
+    .join(" ");
+  return text ? `<p>${text}</p>` : "";
+}
+
+// "Main Branch, Salt Lake City Public Library" -> "Main Branch of the Salt
+// Lake City Public Library"; "Holladay Library, Salt Lake County Library" ->
+// "Holladay Library". Bookmobiles are noted.
+function libraryHtml(t) {
+  const shownNames = [];
+  const libs = ((t.places && t.places.libraries) || []).map((l) => {
+    const [own, system] = l.name.split(/,\s*/);
+    let name = system && /Branch$/.test(own) ? `${own} of the ${system}` : own;
+    // Tribal libraries listed by tribe: "Ute Indian Tribe library"
+    if (/tribal/i.test(l.note) && !/librar/i.test(name)) name += " Library";
+    // Noted unless the name already says so ("Iron County Bookmobile")
+    const note =
+      /bookmobile/i.test(l.note) && !/bookmobile/i.test(name) ? " (bookmobile)" : "";
+    shownNames.push(name);
+    return nameLink({ ...l, name }) + note;
+  });
+  if (!libs.length) return "";
+  if (libs.length > BIG_LIST)
+    return `<ul class="col-list">\n      ${libs.map((l) => `<li>${l}</li>`).join("\n      ")}\n    </ul>`;
+  // "The Logan Library", "the Cleveland Branch of the Emery County Library
+  // System": "the" goes before names that end in a word like Library
+  const withThe = libs.map((l, i) => {
+    const name = shownNames[i];
+    return /^the /i.test(name) || !/(Library|Libraries|Branch|System|Bookmobile|Center|Room|Headquarters)$| Library at /.test(name) ? l : `the ${l}`;
+  });
+  return `<p>${capFirst(listText(withThe))} ${libs.length > 1 ? "serve" : "serves"} ${placeWord(t)}.</p>`;
+}
+
+function cemeteryHtml(t) {
+  const list = uniqueBy((t.places && t.places.cemeteries) || [], (c) => c.name.toLowerCase());
+  if (!list.length) return "";
+  if (list.length === 1) {
+    const c = list[0];
+    return `<p>${c.year ? `${esc(c.name)} dates to ${c.year}.` : `${esc(c.name)} serves ${placeWord(t)}.`}</p>`;
+  }
+  const items = list.map((c) => esc(c.name) + (c.year ? ` (${c.year})` : ""));
+  if (list.length > BIG_LIST)
+    return `<ul class="col-list">\n      ${items.map((c) => `<li>${c}</li>`).join("\n      ")}\n    </ul>`;
+  return `<p>Cemeteries include ${listText(items)}.</p>`;
+}
+
+// Generic park names are counted by kind ("three ballparks"); plain "Park"
+// counts toward the total only.
+const PARK_KINDS = { "ball park": "ballpark", ballpark: "ballpark", "sports park": "sports park" };
+// Parks: a three-column list past BIG_LIST, otherwise what follows "Beaver
+// has": "five parks, including three ballparks and a sports park". inList
+// says whether every park is named in the phrase ("two parks, A and B").
+function parkParts(t) {
+  const parks = (t.places && t.places.parks) || [];
+  const named = uniqueBy(parks.filter((p) => !p.generic), (p) => p.name.toLowerCase());
+  const generic = parks.filter((p) => p.generic);
+  if (!named.length && !generic.length) return null;
+  if (named.length > BIG_LIST) {
+    // Unnamed parks aren't mentioned under a list
+    const items = named.map((p) => `<li>${esc(p.name)}</li>`).join("\n      ");
+    return { list: `<ul class="col-list">\n      ${items}\n    </ul>` };
+  }
+  const total = named.length + generic.length;
+  const kinds = {};
+  for (const p of generic) {
+    const kind = PARK_KINDS[p.name.toLowerCase()];
+    if (kind) kinds[kind] = (kinds[kind] || 0) + 1;
+  }
+  const parts = [
+    ...named.map((p) => esc(p.name)),
+    ...Object.entries(kinds).map(([kind, n]) => (n === 1 ? `a ${kind}` : plural(n, kind))),
+  ];
+  const listed = named.length + Object.values(kinds).reduce((a, b) => a + b, 0);
+  if (total === 1) return { head: "one park", rest: named.length ? parts[0] : "", inList: true };
+  if (!parts.length) return { head: plural(total, "park"), rest: "", inList: false };
+  return { head: plural(total, "park"), rest: listText(parts), inList: listed === total };
+}
+
+// Parks and Cemeteries. Small towns with one cemetery: "Beaver has five
+// parks, including three ballparks and a sports park. It also has the
+// Mountain View Cemetery, which dates to 1856." Otherwise the park sentence
+// or list comes first, with the cemetery sentence or list below it.
+// "Parks and Cemeteries", or just "Parks", "Park", "Cemeteries" or "Cemetery"
+// when a town has only one kind
+function parksCemeteriesTitle(t) {
+  const parks = parkParts(t);
+  const cems = uniqueBy((t.places && t.places.cemeteries) || [], (c) => c.name.toLowerCase());
+  if (parks && cems.length) return "Parks and Cemeteries";
+  if (parks) return parks.head === "one park" ? "Park" : "Parks";
+  return cems.length === 1 ? "Cemetery" : "Cemeteries";
+}
+
+function parksCemeteriesHtml(t) {
+  const town = esc(t.name);
+  const parks = parkParts(t);
+  const cems = uniqueBy((t.places && t.places.cemeteries) || [], (c) => c.name.toLowerCase());
+  const out = [];
+  if (parks && parks.list) out.push(parks.list);
+  else if (parks) {
+    const join = (sep) => (parks.rest ? `${parks.head}${sep}${parks.rest}` : parks.head);
+    // Parks, then the town's one cemetery in a second sentence: "Mendon has
+    // two parks. It also has the Mendon City Cemetery, which dates to 1860."
+    if (cems.length === 1) {
+      const c = cems[0];
+      const the = /^the /i.test(c.name) ? "" : "the ";
+      const cem = c.year ? `${the}${esc(c.name)}, which dates to ${c.year}` : `${the}${esc(c.name)}`;
+      return `<p>${town} has ${join(parks.inList ? (parks.head === "one park" ? ", " : ": ") : ", including ")}. It also has ${cem}.</p>`;
+    }
+    out.push(`<p>${town} has ${join(parks.inList ? (parks.head === "one park" ? ", " : ": ") : ", including ")}.</p>`);
+  }
+  const cemHtml = cemeteryHtml(t);
+  if (!cemHtml) return out.join("\n    ");
+  if (!out.length) return cemHtml;
+  // Two lists: each gets a small heading so they don't run together
+  if (parks.list && cemHtml.startsWith("<ul"))
+    return `<h3 class="h4 mt-0 mb-2">Parks</h3>\n    ${parks.list}\n    <h3 class="h4 mt-3 mb-2">Cemeteries</h3>\n    ${cemHtml}`;
+  // Two sentences share a paragraph
+  if (!parks.list && cemHtml.startsWith("<p>"))
+    return out[0].replace(/<\/p>$/, ` ${cemHtml.slice(3)}`);
+  return `${out[0]}\n    ${cemHtml.replace(/^<(p|ul)( class="|>)/, (m, tag, rest) => (rest === ">" ? `<${tag} class="mt-3">` : `<${tag} class="mt-3 `))}`;
+}
+
+// 1st, 2nd, 3rd, 4th ... 11th, 12th
+const ordinal = (n) => `${n}${n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th"}`;
+const gradeNum = (g) => (g === "PK" ? -1 : g === "K" ? 0 : Number(g) || 0);
+// PreK-12 schools: one paragraph up to SCHOOL_ONE_PARAGRAPH, a paragraph per
+// level up to SCHOOL_TABLE_MIN, then a table
+const SCHOOL_ONE_PARAGRAPH = 8;
+const SCHOOL_TABLE_MIN = 15;
+const LEVELS = { PREK: "Preschool", ELEM: "Elementary", MID: "Middle", HIGH: "High", K12: "K-12" };
+const LEVEL_ORDER = ["Preschool", "Elementary", "Middle", "High", "K-12", "Other"];
+const KIND_ORDER = { District: 0, Charter: 1, Private: 2 };
+function schoolsHtml(t) {
+  const s = t.schools;
+  if (!s) return { k12: "", higher: "" };
+  const all = Object.entries(s.schools || {})
+    .flatMap(([level, list]) =>
+      list.map((x) => ({
+        ...x,
+        level: LEVELS[level] || (x.high === "PK" ? "Preschool" : "Other"),
+        // "PreK–5", "K–5", "9–12" (en dash, as HTML)
+        grades: [x.low, x.high]
+          .filter((g, i, arr) => i === 0 || g !== arr[0])
+          .map((g) => (g === "PK" ? "PreK" : esc(g)))
+          .join("&ndash;"),
+        // In sentences: "kindergarten–6th", "prekindergarten" (AP lowercase)
+        gradesText: [x.low, x.high]
+          .filter((g, i, arr) => i === 0 || g !== arr[0])
+          .map((g) =>
+            g === "PK" ? "prekindergarten" : g === "K" ? "kindergarten" : Number(g) ? ordinal(Number(g)) : esc(g),
+          )
+          .join("&ndash;"),
+        kind: x.leaType === "District" ? x.lea : x.leaType || "Other",
+      })),
+    )
+    .sort(
+      (a, b) =>
+        LEVEL_ORDER.indexOf(a.level) - LEVEL_ORDER.indexOf(b.level) ||
+        (KIND_ORDER[a.leaType] ?? 3) - (KIND_ORDER[b.leaType] ?? 3) ||
+        a.kind.localeCompare(b.kind) ||
+        // Lower grades first (Young Intermediate, 6-7, before Box Elder Middle, 8-9)
+        gradeNum(a.low) - gradeNum(b.low) ||
+        a.name.localeCompare(b.name),
+    );
+  const higher = s.higherEd || [];
+  const higherText = higher.length
+    ? `${listText(higher.map(nameLink))} ${higher.length > 1 ? "are" : "is"} located in ${esc(t.name)}.`
+    : "";
+  const out = { k12: "", higher: higherText ? `<p>${higherText}</p>` : "" };
+  if (!all.length) return out;
+  const NOUNS = {
+    Preschool: ["preschool", "preschools"], Elementary: ["elementary school", "elementary schools"],
+    Middle: ["middle school", "middle schools"], High: ["high school", "high schools"],
+    "K-12": ["K&ndash;12 school", "K&ndash;12 schools"], Other: ["other school", "other schools"],
+  };
+  const tally = (key) => {
+    const m = new Map();
+    for (const x of all) m.set(key(x), (m.get(key(x)) || 0) + 1);
+    return m;
+  };
+  // "a middle school" and "an elementary school" rather than "one"
+  // "a preschool, five elementary schools and a middle school" for a list of schools
+  const levelsOf = (list) => {
+    const m = new Map();
+    for (const x of list) m.set(x.level, (m.get(x.level) || 0) + 1);
+    return [...m].map(([lv, n]) =>
+      n > 1 || lv === "Other" ? plural(n, ...NOUNS[lv]) : `${/^[aeiou]/.test(NOUNS[lv][0]) ? "an" : "a"} ${NOUNS[lv][0]}`,
+    );
+  };
+  const levels = levelsOf(all);
+  // "Roosevelt has four elementary schools, one middle school and one high school."
+  // "The city of Logan", "The town of Alta"; other places go by name
+  const townHas = `${t.placeType === "city" || t.placeType === "town" ? `The ${t.placeType} of ` : ""}${esc(t.name)} has`;
+  const levelTally = `${townHas} ${listText(levels)}.`;
+  // A tally leads when any level has more than one school
+  const showTally = [...tally((x) => x.level).values()].some((n) => n > 1);
+  if (all.length > SCHOOL_TABLE_MIN) {
+    const rows = all
+      .map(
+        (x) =>
+          `<tr><th scope="row" class="fw-normal">${nameLink(x)}${x.alt ? " (alternative)" : ""}</th><td>${esc(x.level)}</td><td>${x.grades}</td><td>${esc(x.leaType === "District" ? x.leaShort || x.kind : x.kind)}</td></tr>`,
+      )
+      .join("\n          ");
+    // Tally above the table: "Logan has five preschools, 11 elementary
+    // schools, one middle school and four high schools. Logan City
+    // District runs 12, Cache District runs two, four are charter schools and
+    // five are private schools."
+    const kinds = [...tally((x) => x.kind)]
+      .sort((a, b) => (a[0] === "Charter" || a[0] === "Private") - (b[0] === "Charter" || b[0] === "Private") || b[1] - a[1])
+      .map(([kind, n]) =>
+        kind === "Charter" || kind === "Private" || kind === "Other"
+          ? `${countWord(n)} ${n === 1 ? "is a" : "are"} ${kind.toLowerCase()} school${n === 1 ? "" : "s"}`
+          : `the ${nameLink({ name: kind, url: (all.find((x) => x.kind === kind) || {}).leaUrl })} runs ${countWord(n)}`,
+      );
+    const summary = `<p>${levelTally} ${capFirst(listText(kinds))}.</p>`;
+    out.k12 = `${summary}
+    <div class="table-responsive">
+      <table class="table table-sm schools-table">
+        <thead><tr><th scope="col">School</th><th scope="col">Level</th><th scope="col">Grades</th><th scope="col">District or Type</th></tr></thead>
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>
+    </div>`;
+  } else {
+    // Sentences: one per district, then charter and private schools
+    const item = (x) => `${nameLink(x)} (${x.gradesText}${x.alt ? ", alternative" : ""})`;
+    const sentencesFor = (list) => {
+      const byKind = new Map();
+      for (const x of list) byKind.set(x.kind, [...(byKind.get(x.kind) || []), x]);
+      return [...byKind].map(([kind, group]) => {
+        const names = listText(group.map(item));
+        // "East School (PK-5) and Union High (9-12) are in the Duchesne County
+        // School District."
+        if (group[0].leaType === "District")
+          return `${names} ${group.length === 1 ? "is" : "are"} located in the ${nameLink({ name: kind, url: group[0].leaUrl })}.`;
+        const label = kind === "Charter" ? "charter" : kind === "Private" ? "private" : "other";
+        return group.length === 1 ? `${names} is a ${label} school.` : `${capFirst(label)} schools are ${names}.`;
+      });
+    };
+    // One school in a paragraph shares the opening sentence: "Additionally,
+    // it has a K–12 school, Terra Academy (K–12), which is a charter school."
+    const which = (x) =>
+      x.leaType === "District"
+        ? `which is located in the ${nameLink({ name: x.kind, url: x.leaUrl })}`
+        : `which is a ${x.kind === "Charter" ? "charter" : x.kind === "Private" ? "private" : "other"} school`;
+    // Up to SCHOOL_ONE_PARAGRAPH schools: one paragraph. More: a paragraph
+    // for elementary and one for middle and high schools, each led in bold.
+    if (all.length <= SCHOOL_ONE_PARAGRAPH) {
+      // A count leads: by level when a level has more than one school
+      // ("The city of Roosevelt has four elementary schools…"), otherwise
+      // in all ("The city of Beaver has three schools."). One school shares
+      // the sentence: "Neola has one school, Neola School (K–5), which is in…"
+      if (all.length === 1)
+        out.k12 = `<p>${townHas} one school, ${item(all[0])}, ${which(all[0])}.</p>`;
+      // All in one district (or all charter, or all private): one sentence,
+      // "The city of Beaver has three schools, A (pre-K), B (K–6) and C
+      // (7–12), which are located in the Beaver County School District."
+      else if (new Set(all.map((x) => x.kind)).size === 1) {
+        const x = all[0];
+        const where =
+          x.leaType === "District"
+            ? `located in the ${nameLink({ name: x.kind, url: x.leaUrl })}`
+            : `${x.kind === "Charter" ? "charter" : x.kind === "Private" ? "private" : "other"} schools`;
+        const count = showTally ? listText(levels) : plural(all.length, "school");
+        out.k12 = `<p>${townHas} ${count}: ${listText(all.map(item))}, which are ${where}.</p>`;
+      } else
+        out.k12 = `<p>${[showTally ? levelTally : `${townHas} ${plural(all.length, "school")}.`, ...sentencesFor(all)].join(" ")}</p>`;
+      return out;
+    }
+    const LEVEL_GROUPS = {
+      Preschool: "Preschool and elementary", Elementary: "Preschool and elementary",
+      // Middle, junior high and high schools share a paragraph
+      Middle: "Middle and high school", High: "Middle and high school", "K-12": "K&ndash;12", Other: "Other",
+    };
+    const byLevel = new Map();
+    for (const x of all) {
+      const g = LEVEL_GROUPS[x.level];
+      byLevel.set(g, [...(byLevel.get(g) || []), x]);
+    }
+    // Each paragraph opens with what it covers: "Vernal has a preschool and
+    // five elementary schools." then "The city also has two middle schools and
+    // two high schools." ("It also has" for places that aren't a city or town)
+    // Third and later paragraphs: "Additionally, it has"
+    const also = t.placeType === "city" || t.placeType === "town" ? `The ${t.placeType} also has` : "It also has";
+    const opener = (i) => (i === 0 ? townHas : i === 1 ? also : "Additionally, it has");
+    out.k12 = [...byLevel]
+      .map(([, list], i) =>
+        list.length === 1
+          ? // "a K–12 school, Terra Academy," without repeating "(K–12)"
+            `<p>${opener(i)} ${listText(levelsOf(list))}, ${list[0].level === "K-12" && list[0].grades === "K&ndash;12" && !list[0].alt ? nameLink(list[0]) : item(list[0])}, ${which(list[0])}.</p>`
+          : `<p>${opener(i)} ${listText(levelsOf(list))}. ${sentencesFor(list).join(" ")}</p>`,
+      )
+      .join("\n    ");
+    return out;
+  }
+  return out;
+}
+
+function hospitalText(t) {
+  const list = (t.places && t.places.hospitals) || [];
+  if (!list.length) return "";
+  return `${listText(list.map(nameLink))} ${list.length > 1 ? "serve" : "serves"} the area.`;
+}
+
+// Returns { html, shown } where shown names the sections for the source line.
+function servicesHtml(t) {
+  const p = (text) => (text ? `<p>${text}</p>` : "");
+  const schools = schoolsHtml(t);
+  const safety = safetyText(t);
+  const sections = [
+    // Police and fire share a paragraph
+    ["Public Safety", "police, fire", safety],
+    ["Library", "libraries", libraryHtml(t)],
+    [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t)],
+    ["Schools (Prekindergarten&ndash;12th Grade)", "schools", schools.k12],
+    ["Higher Education", "colleges", schools.higher],
+    ["Health Care", "hospitals", p(hospitalText(t))],
+  ].filter(([, , body]) => body);
+  if (!sections.length) return { html: "", shown: [] };
+  // Each part is its own section with an h2, styled like Growing Info
+  const html = sections
+    .map(
+      ([title, word, body]) => `<section class="services services-${slug(word)} mb-4">
+    <h2 class="rule-fade pb-2 mb-3">${title}</h2>
+    ${body}
+  </section>`,
+    )
+    .join("\n  ");
+  return {
+    html,
+    shown: sections.map(([, word]) => word),
+  };
+}
+
+// Mountain resort towns this high (Brian Head, Brighton) get no Growing Info
+// section: no hardiness zone, precipitation, freeze or soil lines.
+const GROWING_MAX_FT = 8500;
+
 function buildPage(t) {
+  if (t.elevationFt !== null && t.elevationFt >= GROWING_MAX_FT)
+    t = { ...t, hardinessZone: "", precipIn: null, freezeFreeDays: undefined, soil: null };
   const src = { gnis: SOURCES.gnis(t.elevationFt !== null) };
   const pop = t.population;
   const ph = t.phone;
@@ -625,6 +1137,11 @@ function buildPage(t) {
   if (t.precipIn !== null) src.precip = SOURCES.precip;
   if (t.freezeFreeDays !== undefined) src.freeze = SOURCES.freeze;
   if (t.soil) src.soil = SOURCES.soil;
+  const services = servicesHtml(t);
+  if (services.shown.length) src.ugrc = SOURCES.ugrc(services.shown);
+  // Tribal police come from the reservation boundaries
+  if (((t.services && t.services.law) || []).some((l) => /tribal|navajo nation/i.test(l.name)))
+    src.reservations = SOURCES.reservations;
 
   // Phone: one "Area Code" line ("801/385" when there are several), then the
   // prefixes under it. With several area codes, each gets its own labeled
@@ -637,26 +1154,38 @@ function buildPage(t) {
   const showPrefixes = Boolean(ph);
   if (ph) {
     const codes = ph.areaCodes.split(", ");
-    const groups =
-      codes.length === 1
-        ? [[codes[0], ph.prefixes]]
-        : ph.prefixes.split("\n").map((line) => line.split(": "));
+    // Prefixes, then mobile carriers' prefixes on their own line(s):
+    // "Prefixes: 722, 725" and "Mobile: 724, 401"
+    const parse = (str) =>
+      !str ? [] : codes.length === 1 ? [[codes[0], str]] : str.split("\n").map((line) => line.split(": "));
+    // One line per area code: "Prefixes: 722, 725 | Mobile: 724, 401" (the pipe
+    // is hidden from screen readers)
+    const mobileBy = Object.fromEntries(parse(ph.mobile));
+    const plainBy = Object.fromEntries(parse(ph.prefixes));
+    const groups = codes
+      .filter((c) => plainBy[c] || mobileBy[c])
+      .map((c) => [c, plainBy[c] || "", mobileBy[c] || ""]);
     const label = (code, list) =>
       `${codes.length > 1 ? `${esc(code)} ` : ""}Prefix${list.includes(",") ? "es" : ""}:`;
-    const total = groups.reduce((n, [, list]) => n + list.split(",").length, 0);
+    const count = (list) => (list ? list.split(",").length : 0);
+    const total = groups.reduce((n, [, list, mob]) => n + count(list) + count(mob), 0);
     const long = total > site.prefixReveal;
-    const line = (code, list) =>
-      `<small class="text-secondary font-sans"><em${codes.length > 1 ? ' class="prefix-label"' : ""}>${label(code, list)}</em> ${esc(list)}</small>`;
+    const line = (code, list, mobile) => {
+      const em = (text) => `<em${codes.length > 1 ? ' class="prefix-label"' : ""}>${text}</em>`;
+      const mobLabel = `${!list && codes.length > 1 ? `${esc(code)} ` : ""}Mobile:`;
+      const parts = [list && `${em(label(code, list))} ${esc(list)}`, mobile && `${em(mobLabel)} ${esc(mobile)}`];
+      return `<small class="text-secondary font-sans">${parts.filter(Boolean).join(' <span aria-hidden="true">|</span> ')}</small>`;
+    };
     // In the fold-out box each group is its own block with a little space
     // between; otherwise groups are just separate lines
     const text = long
       ? groups
           .map(
-            ([code, list], i) =>
-              `<div${i < groups.length - 1 ? ' class="mb-2"' : ""}>${line(code, list)}</div>`,
+            ([code, list, mobile], i) =>
+              `<div${i < groups.length - 1 ? ' class="mb-2"' : ""}>${line(code, list, mobile)}</div>`,
           )
           .join("")
-      : groups.map(([code, list]) => line(code, list)).join("<br />");
+      : groups.map(([code, list, mobile]) => line(code, list, mobile)).join("<br />");
     phoneItems = `<li><strong>Area Code${codes.length > 1 ? "s" : ""}:</strong> ${codes.map(esc).join("/")}
           <ul class="list-unstyled mb-0">
             <li>${
@@ -682,6 +1211,8 @@ function buildPage(t) {
     src.precip,
     src.freeze,
     src.soil,
+    src.ugrc,
+    src.reservations,
   ].filter(Boolean);
 
   let html = townTemplate;
@@ -733,6 +1264,7 @@ function buildPage(t) {
         ? `${t.freezeFreeDays} <small class="text-secondary font-sans"><em>(${t.lastSpringFreeze}&ndash;${t.firstFallFreeze})</em></small>`
         : NA,
     "{Town Soil}": soilHtml(t),
+    "{Town Services}": services.html,
     "{Day Month, Year}": updated,
     "{Site Name}": esc(site.name),
     "{Home URL}": link("../index.html"),

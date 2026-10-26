@@ -31,7 +31,18 @@
         <li><strong>County:</strong> {County Name}</li>
         <li>
           <strong>Coordinates:</strong>
-          <a class="link-dark" href="{Map Page URL}"
+          <a class="coord-link" href="{Map Page URL}"
+            ><svg
+              class="coord-icon"
+              viewBox="31 25 38 49"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M50 73 C50 73 32 55 32 44 A18 18 0 0 1 68 44 C68 55 50 73 50 73 Z M50 37.5 A6.5 6.5 0 1 0 50 50.5 A6.5 6.5 0 1 0 50 37.5 Z"
+              /></svg
             >{Town Latitude}, {Town Longitude}</a
           >
         </li>
@@ -60,6 +71,7 @@
             aria-label="Aerial map of {Town Name}, Utah"
             data-town="{Town Name}"
             data-state="Utah"
+            data-county="{County Name}"
             data-lat="{Map Latitude}"
             data-long="{Map Longitude}"
           ></div>
@@ -84,6 +96,7 @@
     </p>
     {Town Soil}
   </section>
+  {Town Services}
   {Ad town-middle}
   <h2 class="h3 rule-fade pb-2 mb-3">Sources</h2>
   <ul class="mb-4 pb-2">
@@ -112,7 +125,7 @@
   // Runs once the deferred map scripts above have loaded
   addEventListener("DOMContentLoaded", () =>
     document.querySelectorAll(".town-map").forEach(async (el) => {
-      const { town, state, lat, long } = el.dataset;
+      const { town, state, county, lat, long } = el.dataset;
 
       const map = beehiveMap(el);
 
@@ -130,6 +143,7 @@
         "https://nominatim.openstreetmap.org/search?" +
         new URLSearchParams({
           city: town,
+          county: `${county} County`,
           state: state,
           country: "us",
           format: "jsonv2",
@@ -141,18 +155,20 @@
         const res = await fetch(url);
         const [place] = await res.json();
         const shape = place && place.geojson;
-        if (
+        // Only draw the border when it's around the pin. Places that share a
+        // name (two Independences) can return the other town's border.
+        const border =
           shape &&
-          (shape.type === "Polygon" || shape.type === "MultiPolygon")
-        ) {
-          const border = L.geoJSON(shape, {
-            style: {
-              color: "#ffffff",
-              weight: 3,
-              opacity: 0.6,
-              fillOpacity: 0.05,
-            },
-          }).addTo(map);
+          (shape.type === "Polygon" || shape.type === "MultiPolygon") &&
+          L.geoJSON(shape);
+        if (border && border.getBounds().pad(0.2).contains([lat, long])) {
+          border.setStyle({
+            color: "#ffffff",
+            weight: 3,
+            opacity: 0.6,
+            fillOpacity: 0.05,
+          });
+          border.addTo(map);
           map.fitBounds(border.getBounds());
         } else {
           showPin();

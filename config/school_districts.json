@@ -1,0 +1,167 @@
+{
+  "_note": "Each school district's full name and website, keyed by its LEAName in UGRC's PreK-12 schools layer. Names are what each district calls itself on its own website (title, header or footer); websites are from the Utah State Board of Education district directory (schools.utah.gov/schooldistricts). Checked October 2026. A district missing here shows as UGRC names it.",
+  "Alpine District": {
+    "name": "Alpine School District",
+    "url": "https://www.alpineschools.org/"
+  },
+  "Beaver District": {
+    "name": "Beaver County School District",
+    "url": "http://www.beaver.k12.ut.us/"
+  },
+  "Box Elder District": {
+    "name": "Box Elder School District",
+    "url": "http://www.besd.net/"
+  },
+  "Cache District": {
+    "name": "Cache County School District",
+    "url": "http://www.ccsdut.org/"
+  },
+  "Canyons District": {
+    "name": "Canyons School District",
+    "url": "http://www.canyonsdistrict.org/"
+  },
+  "Carbon District": {
+    "name": "Carbon School District",
+    "url": "http://www.carbonschools.org/"
+  },
+  "Daggett District": {
+    "name": "Daggett School District",
+    "url": "http://www.dsdf.org/"
+  },
+  "Davis District": {
+    "name": "Davis School District",
+    "url": "https://davis.k12.ut.us/"
+  },
+  "Duchesne District": {
+    "name": "Duchesne County School District",
+    "url": "http://www.dcsd.org/"
+  },
+  "Emery District": {
+    "name": "Emery County School District",
+    "url": "https://www.emeryschools.org/"
+  },
+  "Garfield District": {
+    "name": "Garfield County School District",
+    "url": "http://www.garfk12.org/"
+  },
+  "Grand District": {
+    "name": "Grand County School District",
+    "url": "http://www.grandschools.org/"
+  },
+  "Granite District": {
+    "name": "Granite School District",
+    "url": "http://www.graniteschools.org/"
+  },
+  "Iron District": {
+    "name": "Iron County School District",
+    "url": "http://www.irondistrict.org/"
+  },
+  "Jordan District": {
+    "name": "Jordan School District",
+    "url": "http://www.jordandistrict.org/"
+  },
+  "Juab District": {
+    "name": "Juab School District",
+    "url": "http://www.juabsd.org/"
+  },
+  "Kane District": {
+    "name": "Kane County School District",
+    "url": "http://www.kane.k12.ut.us/"
+  },
+  "Logan City District": {
+    "name": "Logan City School District",
+    "url": "http://www.loganschools.org/"
+  },
+  "Millard District": {
+    "name": "Millard School District",
+    "url": "http://www.millardk12.org/"
+  },
+  "Morgan District": {
+    "name": "Morgan School District",
+    "url": "http://www.morgansd.org/"
+  },
+  "Murray District": {
+    "name": "Murray City School District",
+    "url": "http://www.murrayschools.org/"
+  },
+  "Nebo District": {
+    "name": "Nebo School District",
+    "url": "http://www.nebo.edu/"
+  },
+  "North Sanpete District": {
+    "name": "North Sanpete School District",
+    "url": "http://www.nsanpete.org/"
+  },
+  "North Summit District": {
+    "name": "North Summit School District",
+    "url": "http://www.nsummit.org/"
+  },
+  "Ogden City District": {
+    "name": "Ogden School District",
+    "url": "http://www.ogdensd.org/"
+  },
+  "Park City District": {
+    "name": "Park City School District",
+    "url": "https://www.pcschools.us/"
+  },
+  "Piute District": {
+    "name": "Piute County School District",
+    "url": "https://www.piutesd.gov/"
+  },
+  "Provo District": {
+    "name": "Provo City School District",
+    "url": "http://www.provo.edu/"
+  },
+  "Rich District": {
+    "name": "Rich School District",
+    "url": "http://www.richschool.org/"
+  },
+  "Salt Lake District": {
+    "name": "Salt Lake City School District",
+    "url": "http://www.slcschools.org/"
+  },
+  "San Juan District": {
+    "name": "San Juan School District",
+    "url": "http://www.sjsd.org/"
+  },
+  "Sevier District": {
+    "name": "Sevier School District",
+    "url": "http://www.seviersd.org/"
+  },
+  "South Sanpete District": {
+    "name": "South Sanpete School District",
+    "url": "http://www.ssanpete.org/"
+  },
+  "South Summit District": {
+    "name": "South Summit School District",
+    "url": "http://www.ssummit.org/"
+  },
+  "Tintic District": {
+    "name": "Tintic School District",
+    "url": "http://www.tintic.k12.ut.us/"
+  },
+  "Tooele District": {
+    "name": "Tooele County School District",
+    "url": "http://www.tooeleschools.org/"
+  },
+  "Uintah District": {
+    "name": "Uintah School District",
+    "url": "http://www.uintah.net/"
+  },
+  "Wasatch District": {
+    "name": "Wasatch County School District",
+    "url": "http://www.wasatch.edu/"
+  },
+  "Washington District": {
+    "name": "Washington County School District",
+    "url": "http://www.washk12.org/"
+  },
+  "Wayne District": {
+    "name": "Wayne School District",
+    "url": "http://www.waynesd.org/"
+  },
+  "Weber District": {
+    "name": "Weber School District",
+    "url": "http://www.wsd.net/"
+  }
+}

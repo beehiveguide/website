@@ -86,5 +86,13 @@
     "folder": "usda/ssurgo",
     "downloaded": "2026-10-25",
     "note": "gSSURGO Utah, clipped to Census TIGER/Line place boundaries by scripts/tools/clip_ssurgo.py."
+  },
+  "censusReservations": {
+    "name": "U.S. Census Bureau",
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/AIANNHA/MapServer/2",
+    "publicUrl": "https://www.census.gov/programs-surveys/geography.html",
+    "folder": "census/reservations",
+    "downloaded": "2026-10-26",
+    "note": "Federal American Indian Reservations from TIGERweb (AIANNHA layer 2), queried for Utah, simplified to 0.001 degree and saved as GeoJSON in the browser."
   }
 }

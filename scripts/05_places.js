@@ -72,22 +72,36 @@ for (const f of readGeoJson("LicensedHealthCareFacilities")) {
   add("hospitals", p.CITY, f.geometry, { name: p.FACILITY_NAME.trim(), note: "", url: "" });
 }
 
-// --- Parks (planned "Future" parks left out).
+// --- Parks (planned "Future" parks left out). A park in more than one piece
+// ("Northwest Park" and "Northwest Park Phase 2") counts once, kept once per
+// community in 10_pages.js. Generic names ("Park", "Ball Park") are marked
+// generic: the page counts them instead of listing them.
+const GENERIC_PARKS = new Set(["park", "ball park", "ballpark", "sports park", "public park"]);
 for (const f of readGeoJson("UtahParksLocal")) {
   const p = f.properties;
   if (p.STATUS === "Future" || !p.NAME) continue;
+  const name = p.NAME.trim().replace(/\s+/g, " ").replace(/\s+Phase\s+\w+$/i, "");
   const notes = [];
   if (p.TYPE && p.TYPE !== "Park") notes.push(p.TYPE);
-  add("parks", p.CITY, f.geometry, { name: p.NAME.trim(), note: notes.join(", "), url: "" });
+  add("parks", p.CITY, f.geometry, {
+    name, note: notes.join(", "), url: "", generic: GENERIC_PARKS.has(name.toLowerCase()),
+  });
 }
 
-// --- Cemeteries (name linked to its map location)
+// --- Cemeteries (name linked to its map location). Single graves listed in
+// the layer ("Ephraims Grave") are left out. A town name tacked on the end
+// ("Mountain View Cemetery - Beaver") is dropped. year: first burial or
+// founding year, when known.
 for (const f of readGeoJson("Cemeteries")) {
   const p = f.properties;
+  if (/\bgrave\b/i.test(p.Cemetery) && !/cemetery|graveyard/i.test(p.Cemetery)) continue;
+  const year = String(p.Year_Established_First_Burial || "").match(/\b(1[6-9]|20)\d\d\b(?!'?s)/); // not "1800's"
   // Link to its location on Google Maps
   const [lng, lat] = f.geometry ? f.geometry.coordinates : [];
   const url = lat && lng ? `https://www.google.com/maps?q=${lat.toFixed(6)},${lng.toFixed(6)}` : "";
-  add("cemeteries", p.City, f.geometry, { name: p.Cemetery.trim(), note: "", url });
+  add("cemeteries", p.City, f.geometry, {
+    name: p.Cemetery.trim().replace(/\s+-\s+[^-]+$/, ""), note: "", url, year: year ? year[0] : "",
+  });
 }
 
 // --- Libraries (type shown when not a regular public library)

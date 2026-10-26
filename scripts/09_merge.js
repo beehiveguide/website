@@ -121,6 +121,9 @@ const records = rows.map((t) => {
     elevationFt: t.Elevation ? Math.round(Number(t.Elevation) * 3.28084) : null,
     censusCode: t["Census Code"],
     censusClass: t["Census Classification Code"],
+    // From the 2020 Census place name ("Logan city", "Alta town"): city, town,
+    // metro township or CDP. Blank for places the census doesn't list.
+    placeType: cen ? (cen.name.match(/\b(city|town|metro township|CDP)$/) || [])[1] || "" : "",
     population: cen
       ? { count: cen.pop, households: cen.households, source: "census" }
       : ugrcPopulation[id] !== undefined
