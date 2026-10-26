@@ -796,7 +796,7 @@ function libraryHtml(t) {
     const name = shownNames[i];
     return /^the /i.test(name) || !/(Library|Libraries|Branch|System|Bookmobile|Center|Room|Headquarters)$| Library at /.test(name) ? l : `the ${l}`;
   });
-  return `<p>${capFirst(listText(withThe))} ${libs.length > 1 ? "serve" : "serves"} ${placeWord(t)}.</p>`;
+  return `<p>${capFirst(listText(withThe))} ${libs.length > 1 ? "serve" : "serves"} the community.</p>`;
 }
 
 function cemeteryHtml(t) {
