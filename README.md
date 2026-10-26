@@ -13,6 +13,7 @@ Run every command below from this `website` folder. You need Node.js (version 18
   - `excluded_places.json` lists places to leave out.
   - `included_places.json` lists places to keep even when UGRC doesn't list them.
   - `corrections.json` has fixes to source data, so the source files stay as downloaded.
+  - `landform_words.json` has the plain words the soil paragraph uses for soil survey landforms ("fan remnants" -> "on foothill slopes"). Landforms that share a phrase count together. The build warns about any landform not listed.
   - `photos.json` lists each photo: its original, web versions, caption, alt text and credit.
 - `scripts/` has the build steps, numbered in the order they run. `scripts/lib/` has the helpers the steps share. `scripts/tools/` has tools you run by hand that aren't part of the build, such as `filter_utah_stations.js` (see the NOAA note under Update a source).
 - `templates/` has the HTML for the town pages, index, 404 page, header and footer.
@@ -117,6 +118,8 @@ git push
 | PRISM 1991-2020 normals (CSV)                                | `sources/prism/monthly_normals/` | Annual precipitation                                 |
 | NOAA 1991-2020 annual/seasonal normals, by station (CSV)     | `sources/noaa/multivariate_annual_normals/` | Freeze-free days, last spring and first fall freeze |
 | USDA hardiness zones by ZIP (`phzm_us_zipcode_2023.csv`)     | `sources/usda/`                  | Hardiness zone                                       |
+| USDA gSSURGO soils, clipped to town boundaries (`town_soils.json`) | `sources/usda/ssurgo/` | Soil paragraph (places with a Census boundary only) |
+| Census TIGER/Line places (`tl_2025_49_place.zip`) | `sources/census/place-boundaries/` | Town and CDP polygons for the soil clip |
 | USPS post office pages (`post_office_urls.json`)             | `sources/usps/`                  | Post Office button                                   |
 | Origins of Utah Place Names (`utah_place_names.json`)        | `sources/books/`                 | Founding year, name origin                           |
 
@@ -134,6 +137,20 @@ Notes:
 
      This keeps files whose station name ends in ", UT US" and **deletes the rest**. It can't be undone, so re-extract the archive if something goes wrong. It deletes nothing if no Utah files match.
   4. Build. `08b_freeze.js` uses NOAA's 50% dates for a 32°F freeze and gives a community a station's numbers only if the station is within 8 km and 100 m of elevation. Communities with no station that close get no freeze data, and the page leaves out that line. The limits are set at the top of the script, and the build prints each match so you can check it.
+- **Soil (gSSURGO):** The full Utah geodatabase is over 1 GB, so only the soils inside Census place boundaries (cities, towns and CDPs) are kept. To update:
+  1. Download `gSSURGO_UT` from https://www.nrcs.usda.gov/resources/data-and-reports/gridded-soil-survey-geographic-gssurgo-database into `downloads/` and unzip it.
+  2. Install the tools once: `pip install geopandas pyogrio`
+  3. Run `python3 scripts/tools/clip_ssurgo.py ../downloads/gSSURGO_UT.gdb`. It writes `sources/usda/ssurgo/town_soils.json` (about 6 MB). It takes about 2 minutes.
+  4. Move the `.gdb` and `.7z` to `trash/`, then build.
+
+  How the soil paragraph works (`08c_soil.js` makes `build/soil.json`; `10_pages.js` writes the text; limits are at the top of `08c_soil.js`):
+  - Only soils with a 0-8% representative slope count ("slopes suitable for gardening"), weighted by acres in town. Edge slivers under 1% are left out. Towns with under 10 such acres get no paragraph.
+  - Topsoil is the top mineral layer. Leaf litter (O horizons) is skipped in `clip_ssurgo.py`.
+  - Textures: up to 3 that cover 10% or more. The opening names where the land lies: one landform with 60% or more, or the top two when together they hold 60%.
+  - pH: area-weighted average, with the range from the lowest low and highest high. Levels are the NRCS soil reaction classes. The end with more land is named first.
+  - Water: classes are the common soil-judging classes for a 60-inch profile divided by 60 (0.05, 0.10, 0.15, 0.20 in./in.), in `scripts/lib/soil_words.js`.
+  - Place notes ("on floodplains") only mark outliers: a texture, pH end, drainage class or water level mostly on a landform other than the ones the opening names.
+  - The pH sentence starts "Estimated topsoil alkalinity" (average above 7.3), "acidity" (below 6.6) or "pH" (neutral), covering the average and both ends. When 15% or more of town is mapped as urban land (no soil data), a last sentence says so.
 - **UGRC:** Keep the layer name at the start of the file name, like `Schools_PreKto12_...geojson`.
 - **Fixing a value in a source:** Don't edit the source file. Add the fix to `config/corrections.json` with a note on why.
 

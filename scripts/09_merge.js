@@ -23,6 +23,7 @@ const history = read("history.json");
 const phone = read("phone.json");
 const precip = read("precip.json");
 const freeze = paths.readJson(paths.build("freeze.json"), {});
+const soil = paths.readJson(paths.build("soil.json"));
 const schools = read("schools.json");
 const places = read("places.json");
 const services = read("services.json");
@@ -134,6 +135,7 @@ const records = rows.map((t) => {
     freezeFreeDays: freeze[id] ? freeze[id].freezeFreeDays : undefined,
     lastSpringFreeze: freeze[id] ? freeze[id].lastSpringFreeze : undefined,
     firstFallFreeze: freeze[id] ? freeze[id].firstFallFreeze : undefined,
+    soil: soil[id] || null,
     postOfficeUrl: po ? po.url : "",
     schools: schools[id] || null,
     places: places[id] || null,
@@ -149,5 +151,5 @@ console.log(
 console.log(`  County seats: ${count((r) => r.countySeat)}`);
 console.log(
   `  Population: ${count((r) => r.population)}, hardiness zone: ${count((r) => r.hardinessZone)}, ` +
-    `precipitation: ${count((r) => r.precipIn !== null)}, freeze: ${count((r) => r.freezeFreeDays !== undefined)}, post office: ${count((r) => r.postOfficeUrl)}`,
+    `precipitation: ${count((r) => r.precipIn !== null)}, freeze: ${count((r) => r.freezeFreeDays !== undefined)}, soil: ${count((r) => r.soil)}, post office: ${count((r) => r.postOfficeUrl)}`,
 );

@@ -103,6 +103,82 @@ const source = (items, key, prefix = "") => {
   const href = s.publicUrl || s.url;
   return `<strong>${items}:</strong> ${prefix}${href ? `<a href="${href}" class="link-dark">${esc(s.name)}</a>` : esc(s.name)}`;
 };
+// Soil paragraph (build/soil.json via 09_merge.js), under an h3 in Gardening
+// Info. Only towns with a UGRC boundary have soil data.
+const listText = (items) =>
+  items.length < 2 ? items.join("") : `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
+const { phLevel, awcWord } = require("./lib/soil_words");
+function soilHtml(t) {
+  const s = t.soil;
+  if (!s) return "";
+  // Place notes mark outliers only (08c_soil.js) and mean "mostly there".
+  // Textures: "loamy fine sand on benches (14%)". The last two sharing a place
+  // read "sandy loam (19%) and loam (10%), both on valley floors".
+  const tx = s.textures;
+  const n = tx.length;
+  const shareLast = n >= 2 && tx[n - 1].landform && tx[n - 1].landform === tx[n - 2].landform;
+  const items = tx.map((x, i) =>
+    x.landform && !(shareLast && i >= n - 2)
+      ? `${esc(x.texture)} ${esc(x.landform)} (${x.pct}%)`
+      : `${esc(x.texture)} (${x.pct}%)`);
+  const textures = shareLast
+    ? `${n > 2 ? `${items.slice(0, -2).join(", ")}, ` : ""}${items[n - 2]} and ${items[n - 1]}, both ${esc(tx[n - 1].landform)}`
+    : listText(items);
+  // "running from slightly alkaline on floodplains (pH 7.4) to strongly
+  // alkaline (pH 9.0)", or "staying neutral (pH 6.8 to 7.2)" when both ends
+  // share a level
+  const low = phLevel(s.phMin), high = phLevel(s.phMax);
+  const lo = s.phMin.toFixed(1), hi = s.phMax.toFixed(1);
+  const at = (where) => (where ? ` ${esc(where)}` : "");
+  // Name pH by the side the average falls on: "alkalinity averages pH 8.2",
+  // "acidity averages pH 6.4", or "pH averages 7.0" when neutral (6.6-7.3)
+  const avg = s.phAvg.toFixed(1);
+  const phSubject = s.phAvg > 7.3 ? `alkalinity averages pH ${avg}` : s.phAvg < 6.6 ? `acidity averages pH ${avg}` : `pH averages ${avg}`;
+  // The end with more land comes first: "running from strongly alkaline
+  // (pH 9.0) down to neutral in washes (pH 6.6)"
+  const lowEnd = `${low}${at(s.phMinWhere)} (pH ${lo})`;
+  const highEnd = `${high}${at(s.phMaxWhere)} (pH ${hi})`;
+  const phText = low === high
+    ? `staying ${low} (pH ${lo} to ${hi})`
+    : s.phHighFirst
+      ? `running from ${highEnd} down to ${lowEnd}`
+      : `running from ${lowEnd} to ${highEnd}`;
+  // Drainage and water outliers get their own sentence:
+  // "However, floodplains are mostly poorly drained, and benches hold less water."
+  // A place phrase as a subject: "on floodplains" -> "floodplains"
+  const placeNoun = (form) =>
+    form.startsWith("between ") ? `areas ${form}` : form.replace(/^(on|in) /, "");
+  const dv = s.drainageVariation;
+  const v = s.awcVariation;
+  const water = v && `hold ${v.awc < s.awcAvg ? "less" : "more"} water`;
+  const clauses = [];
+  if (dv && v && dv.landform === v.landform)
+    clauses.push(`${placeNoun(dv.landform)} are mostly ${dv.drainage} and ${water}`);
+  else {
+    if (dv) clauses.push(`${placeNoun(dv.landform)} are mostly ${dv.drainage}`);
+    if (v) clauses.push(`${placeNoun(v.landform)} ${water}`);
+  }
+  // Outliers run against the sentence before, so they start with "However,"
+  const outliers = clauses.length ? ` However, ${esc(clauses.join(", and "))}.` : "";
+  // The opening says where the town's gardenable (0-8% slope) land lies, from
+  // 08c_soil.js: "Slopes suitable for gardening in Hanksville lie mostly in
+  // the foothills, with soils including...". Spread-out towns: "Slopes
+  // suitable for gardening in Moab have soils including...".
+  // "In the foothills" and "on mountainsides" keep "slopes" from repeating.
+  const OPENING_WORDS = { "on foothill slopes": "in the foothills", "on mountain slopes": "on mountainsides" };
+  const forms = s.arableForms.map((f) => OPENING_WORDS[f] || f);
+  const opening = forms.length
+    ? `Slopes suitable for gardening in ${esc(t.name)} lie mostly ${esc(forms.join(" and ").replace(/ and (on|in) /, " and "))}, with soils including`
+    : `Slopes suitable for gardening in ${esc(t.name)} have soils including`;
+  // Built-over towns end with how much was left out (urban land has no soil data)
+  const urban = s.urbanPct >= 15 ? ` About ${s.urbanPct}% of ${esc(t.name)} is built over and not included.` : "";
+  // Soil covers arable terrain only, 0-8% slope (08c_soil.js).
+  // Left out for now; add back after the textures and "water retention":
+  //   " (0&ndash;8% slope)"   `(${s.awcAvg.toFixed(2)} in./in.)`
+  return `<h3 class="soil-heading h4 mt-4 mb-2">Soil Properties</h3>
+    <p class="mb-0">${opening} ${textures}. Estimated topsoil ${phSubject}, ${phText}. Soils are mostly ${esc(s.drainage)} with ${s.awcDesc}.${outliers}${urban}</p>`;
+}
+
 // Sources only appear for data the page shows, and their bold label
 // names only what's shown (for example "Location" when there's no elevation).
 const SOURCES = {
@@ -128,6 +204,7 @@ const SOURCES = {
   zone: source("Hardiness zone", "zone"),
   precip: source("Annual precipitation", "prism"),
   freeze: source("Freeze-free days", "noaa"),
+  soil: source("Soil properties", "soil"),
 };
 
 // Shared header and footer. home: link from the page to the homepage.
@@ -428,8 +505,8 @@ const townTemplate = template("town-page.html");
 const TOWN_POPUP = template("parts/town-popup.html").trim();
 
 // County seats get a small courthouse (courthouse-simple.svg in the Drive
-// folder's icons) after the name, just outside the link, in the town lists and
-// map popups. Screen readers hear "county seat" instead.
+// folder's icons) after the name: inside the link in the town lists, just
+// outside it in map popups. Screen readers hear "county seat" instead.
 const SEAT_ICON =
   '<svg class="county-seat-icon" viewBox="29.76 30 40.48 40" aria-hidden="true" focusable="false">' +
   '<path fill="currentColor" d="M50 30 L69.36 41 H30.64 Z M32.4 41 H67.6 V44.5 H32.4 Z M35.04 47 H40.32 V62.5 H35.04 Z M47.36 47 H52.64 V62.5 H47.36 Z M59.68 47 H64.96 V62.5 H59.68 Z M31.52 64.5 H68.48 V70 H31.52 Z"/></svg>';
@@ -479,7 +556,7 @@ function nearbyItems(t) {
     .slice(0, NEARBY_COUNT)
     .map(
       ({ o }) =>
-        `      <li><a href="${link(fileName(o))}">${esc(o.name)}</a>${o.countySeat ? COUNTY_SEAT : ""}</li>`,
+        `      <li><a href="${link(fileName(o))}">${esc(o.name)}${o.countySeat ? COUNTY_SEAT : ""}</a></li>`,
     )
     .join("\n");
 }
@@ -505,6 +582,7 @@ function buildPage(t) {
   if (t.hardinessZone) src.zone = SOURCES.zone;
   if (t.precipIn !== null) src.precip = SOURCES.precip;
   if (t.freezeFreeDays !== undefined) src.freeze = SOURCES.freeze;
+  if (t.soil) src.soil = SOURCES.soil;
 
   // Phone: one "Area Code" line ("801/385" when there are several), then the
   // prefixes under it. With several area codes, each gets its own labeled
@@ -561,6 +639,7 @@ function buildPage(t) {
     src.zone,
     src.precip,
     src.freeze,
+    src.soil,
   ].filter(Boolean);
 
   let html = townTemplate;
@@ -611,6 +690,7 @@ function buildPage(t) {
       t.freezeFreeDays !== undefined
         ? `${t.freezeFreeDays} <small class="text-secondary font-sans"><em>(${t.lastSpringFreeze}&ndash;${t.firstFallFreeze})</em></small>`
         : NA,
+    "{Town Soil}": soilHtml(t),
     "{Day Month, Year}": updated,
     "{Site Name}": esc(site.name),
     "{Home URL}": link("../index.html"),
@@ -668,6 +748,8 @@ function buildPage(t) {
     /\s*<section class="gardening[^"]*">\s*<h2[^>]*>Gardening Info<\/h2>\s*<ul class="list-unstyled mb-0">\s*<\/ul>\s*<\/section>/,
     "",
   );
+  // Soil but no climate lines: drop the empty list above the soil text
+  html = html.replace(/\s*<ul class="list-unstyled mb-0">\s*<\/ul>(\s*<h3 class="soil-heading)/, "$1");
 
   const leftover = html.match(/\{(?!Ads? |Version\})[A-Z][^}{]*\}/g); // ad spots are filled in wrapPage
   if (leftover)
@@ -784,7 +866,7 @@ const countyLinks = counties
 const items = pages
   .map(
     (p) =>
-      `      <li data-county="${esc(p.county)}" data-name="${esc(p.name.toLowerCase())}" hidden><a href="${link(`communities/${fileName(p)}`)}">${esc(p.name)}<span class="county-suffix"> (${esc(p.county)})</span></a>${p.countySeat ? COUNTY_SEAT : ""}</li>`,
+      `      <li data-county="${esc(p.county)}" data-name="${esc(p.name.toLowerCase())}" hidden><a href="${link(`communities/${fileName(p)}`)}">${esc(p.name)}<span class="county-suffix"> (${esc(p.county)})</span>${p.countySeat ? COUNTY_SEAT : ""}</a></li>`,
   )
   .join("\n");
 const indexHtml = fill(template("index.html"), {

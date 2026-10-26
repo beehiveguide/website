@@ -13,6 +13,7 @@ const steps = [
   "07_history.js", // build/history.json (founding, name origin)
   "08a_precip.js", // build/precip.json (annual precipitation)
   "08b_freeze.js", // build/freeze.json (freeze-free days)
+  "08c_soil.js", // build/soil.json (topsoil in town boundaries)
   "09_merge.js", // build/communities.json (one record per community)
   "10_pages.js", // public/ (pages, index, 404, sitemap)
 ];

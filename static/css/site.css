@@ -531,8 +531,8 @@ a.social-circle:focus {
 }
 
 /* County seats: a small gray courthouse after the town's name in the town
-   lists and map popups (not part of the link), with its bottom on the
-   link's underline */
+   lists (part of the link) and map popups (not part of the link), with its
+   bottom on the link's underline */
 .county-seat {
   display: inline-block;
   margin-left: 0.3em;
@@ -561,9 +561,15 @@ a.social-circle:focus {
 
 /* ---------- Town lists ---------- */
 
-/* County seat icon in the town lists: secondary gray, like text-secondary */
+/* County seat icon in the town lists: dark gray. It's part of the link, so
+   on hover and focus it takes the link's hover color with the name. */
 .town-list .county-seat-icon {
-  color: #6c757d;
+  color: #495057;
+  transition: color 0.15s ease-in-out;
+}
+.town-list a:hover .county-seat-icon,
+.town-list a:focus .county-seat-icon {
+  color: #212529;
 }
 
 /* The homepage town list and Nearby Communities on town pages: 2 to 4
@@ -802,7 +808,8 @@ a.marker-link:focus {
 /* No hover fades for people who turn off motion */
 @media (prefers-reduced-motion: reduce) {
   .town-list a,
-  .marker-link {
+  .marker-link,
+  .town-list .county-seat-icon {
     transition: none;
   }
 }

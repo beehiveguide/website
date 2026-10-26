@@ -78,5 +78,13 @@
     "publicUrl": "https://www.usgs.gov/programs/national-geospatial-program/national-map",
     "folder": "usgs-epqs",
     "downloaded": "2026-10-20"
+  },
+  "soil": {
+    "name": "NRCS",
+    "url": "https://www.nrcs.usda.gov/resources/data-and-reports/gridded-soil-survey-geographic-gssurgo-database",
+    "publicUrl": "https://websoilsurvey.nrcs.usda.gov/",
+    "folder": "usda/ssurgo",
+    "downloaded": "2026-10-25",
+    "note": "gSSURGO Utah, clipped to Census TIGER/Line place boundaries by scripts/tools/clip_ssurgo.py."
   }
 }
