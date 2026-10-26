@@ -144,12 +144,13 @@ Notes:
   4. Move the `.gdb` and `.7z` to `trash/`, then build.
 
   How the soil paragraph works (`08c_soil.js` makes `build/soil.json`; `10_pages.js` writes the text; limits are at the top of `08c_soil.js`):
-  - Only soils with a 0-8% representative slope count ("slopes suitable for gardening"), weighted by acres in town. Edge slivers under 1% are left out. Towns with under 10 such acres get no paragraph.
+  - Only soils with a 0-8% representative slope count ("slopes suitable for cultivation"), weighted by acres in town. Edge slivers under 1% are left out. Towns with under 10 such acres get no paragraph.
   - Topsoil is the top mineral layer. Leaf litter (O horizons) is skipped in `clip_ssurgo.py`.
   - Textures: up to 3 that cover 10% or more. The opening names where the land lies: one landform with 60% or more, or the top two when together they hold 60%.
   - pH: area-weighted average, with the range from the lowest low and highest high. Levels are the NRCS soil reaction classes. The end with more land is named first.
   - Water: classes are the common soil-judging classes for a 60-inch profile divided by 60 (0.05, 0.10, 0.15, 0.20 in./in.), in `scripts/lib/soil_words.js`.
   - Place notes ("on floodplains") only mark outliers: a texture, pH end, drainage class or water level mostly on a landform other than the ones the opening names.
+  - The paragraph runs: textures, bedrock, pH, salt and organic matter, then water (drainage, retention, water table, flooding), with farmland rating last. It also covers topsoil salt (NRCS salinity classes), organic matter, farmland rating (prime, prime if irrigated, statewide importance), and limits: bedrock within 20 inches or a water table within 2 feet on 10% or more, and occasional or more frequent flooding on 5% or more. Each names the landform most of it is on, when half or more is on one.
   - The pH sentence starts "Estimated topsoil alkalinity" (average above 7.3), "acidity" (below 6.6) or "pH" (neutral), covering the average and both ends. When 15% or more of town is mapped as urban land (no soil data), a last sentence says so.
 - **UGRC:** Keep the layer name at the start of the file name, like `Schools_PreKto12_...geojson`.
 - **Fixing a value in a source:** Don't edit the source file. Add the fix to `config/corrections.json` with a note on why.

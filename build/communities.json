@@ -144,7 +144,18 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 72,
+        "primeIfIrrigated": 72,
+        "statewide": 19
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -520,7 +531,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 36
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1352845",
     "schools": {
@@ -653,7 +675,24 @@
       },
       "awcAvg": 0.19,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 22
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 13,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 13,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440004",
     "schools": null,
@@ -813,7 +852,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.7,
+      "saltVariation": null,
+      "omAvg": 2,
+      "farmland": {
+        "prime": 82,
+        "primeIfIrrigated": 82,
+        "statewide": 8
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -926,7 +976,24 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.4,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 87,
+        "primeIfIrrigated": 87,
+        "statewide": 8
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 13,
+        "landform": null
+      },
+      "flooding": {
+        "pct": 52,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1352950",
     "schools": {
@@ -1508,7 +1575,28 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.3,
+      "saltVariation": {
+        "ec": 7.5,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 47
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 15,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 15,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -1623,7 +1711,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 59,
+        "primeIfIrrigated": 59,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1353108",
     "schools": null,
@@ -1732,7 +1831,25 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.3,
+      "saltVariation": {
+        "ec": 3,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.3,
+      "farmland": {
+        "prime": 15,
+        "primeIfIrrigated": 15,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 16,
+        "landform": "on floodplains"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440006",
     "schools": null,
@@ -1845,7 +1962,21 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.1,
+      "saltVariation": null,
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 46,
+        "primeIfIrrigated": 46,
+        "statewide": 15
+      },
+      "bedrock": {
+        "pct": 21,
+        "landform": "on mesas"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -2058,7 +2189,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.4,
+      "saltVariation": null,
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 78,
+        "primeIfIrrigated": 78,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1353707",
     "schools": null,
@@ -2222,7 +2364,21 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 3.5,
+      "farmland": {
+        "prime": 36,
+        "primeIfIrrigated": 36,
+        "statewide": 52
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 6,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -2362,7 +2518,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.6,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 66,
+        "primeIfIrrigated": 66,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -2460,7 +2627,25 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.4,
+      "saltVariation": {
+        "ec": 3,
+        "level": "very slightly saline",
+        "landform": "on foothill slopes"
+      },
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 84,
+        "primeIfIrrigated": 84,
+        "statewide": 4
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 5,
+        "landform": "on benches above streams"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1354324",
     "schools": {
@@ -2563,7 +2748,21 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 24,
+        "primeIfIrrigated": 24,
+        "statewide": 71
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 10,
+        "landform": "on floodplains"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1354369",
     "schools": {
@@ -2835,7 +3034,18 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.7,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 68,
+        "primeIfIrrigated": 68,
+        "statewide": 27
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -2960,7 +3170,24 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.7,
+      "saltVariation": null,
+      "omAvg": 3.8,
+      "farmland": {
+        "prime": 25,
+        "primeIfIrrigated": 25,
+        "statewide": 32
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 18,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 20,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -3107,7 +3334,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 10,
+        "primeIfIrrigated": 10,
+        "statewide": 87
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -3207,7 +3445,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 1.4,
+      "farmland": {
+        "prime": 21,
+        "primeIfIrrigated": 21,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1354882",
     "schools": {
@@ -3361,7 +3610,24 @@
       "drainageVariation": null,
       "awcAvg": 0.1,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 0.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 14,
+        "landform": "on plateaus"
+      },
+      "waterTable": null,
+      "flooding": {
+        "pct": 8,
+        "landform": "on valley floors"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -3518,7 +3784,21 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 70
+      },
+      "bedrock": {
+        "pct": 16,
+        "landform": "on mesas"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355137",
     "schools": {
@@ -3770,7 +4050,25 @@
       },
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": {
+        "ec": 4.1,
+        "level": "slightly saline",
+        "landform": "on valley floors"
+      },
+      "omAvg": 1.2,
+      "farmland": {
+        "prime": 2,
+        "primeIfIrrigated": 2,
+        "statewide": 7
+      },
+      "bedrock": {
+        "pct": 17,
+        "landform": "on rock benches"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355270",
     "schools": null,
@@ -3859,7 +4157,25 @@
       "drainageVariation": null,
       "awcAvg": 0.1,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.5,
+      "saltVariation": {
+        "ec": 4,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 28,
+        "primeIfIrrigated": 28,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 10,
+        "landform": null
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355283",
     "schools": {
@@ -4003,7 +4319,22 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.9,
+      "saltVariation": {
+        "ec": 12,
+        "level": "moderately saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 55,
+        "primeIfIrrigated": 55,
+        "statewide": 17
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -4280,7 +4611,21 @@
       "drainageVariation": null,
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 95,
+        "landform": "in washes"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -4465,7 +4810,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 1.1,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440008",
     "schools": {
@@ -4584,7 +4940,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.4,
+      "saltVariation": null,
+      "omAvg": 3.3,
+      "farmland": {
+        "prime": 59,
+        "primeIfIrrigated": 59,
+        "statewide": 5
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355500",
     "schools": {
@@ -5186,7 +5553,24 @@
       },
       "awcAvg": 0.2,
       "awcDesc": "very high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 6.2,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 100,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 100,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440010",
     "schools": null,
@@ -5344,7 +5728,24 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 14,
+      "saltVariation": null,
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 27,
+        "primeIfIrrigated": 27,
+        "statewide": 9
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 48,
+        "landform": "on old lake bottoms"
+      },
+      "flooding": {
+        "pct": 23,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355849",
     "schools": {
@@ -5841,7 +6242,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 7.1,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 100
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 100,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -5947,7 +6362,21 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.4,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 14,
+        "landform": "on rock benches"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -6162,7 +6591,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.7,
+      "saltVariation": null,
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 18,
+        "primeIfIrrigated": 18,
+        "statewide": 18
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -6366,7 +6806,18 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 1,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440013",
     "schools": null,
@@ -6465,7 +6916,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4,
+      "saltVariation": null,
+      "omAvg": 1.8,
+      "farmland": {
+        "prime": 85,
+        "primeIfIrrigated": 85,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 12,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -6602,7 +7067,22 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2,
+      "saltVariation": {
+        "ec": 4.4,
+        "level": "slightly saline",
+        "landform": "on valley floors"
+      },
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 31,
+        "primeIfIrrigated": 31,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1357251",
     "schools": {
@@ -6820,6 +7300,20 @@
       "awcVariation": {
         "awc": 0.18,
         "landform": "on floodplains"
+      },
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 1,
+      "farmland": {
+        "prime": 42,
+        "primeIfIrrigated": 42,
+        "statewide": 8
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 38,
+        "landform": "on valley floors"
       }
     },
     "postOfficeUrl": "",
@@ -6935,7 +7429,18 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 64,
+        "primeIfIrrigated": 64,
+        "statewide": 27
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1357356",
     "schools": {
@@ -7467,7 +7972,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.3,
+      "saltVariation": null,
+      "omAvg": 1.8,
+      "farmland": {
+        "prime": 38,
+        "primeIfIrrigated": 38,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -7644,7 +8160,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 72,
+        "primeIfIrrigated": 72,
+        "statewide": 23
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -7956,7 +8483,18 @@
       "drainageVariation": null,
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.7,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 75,
+        "primeIfIrrigated": 75,
+        "statewide": 25
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -8076,7 +8614,28 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 8.4,
+      "saltVariation": {
+        "ec": 39,
+        "level": "strongly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 4.6,
+      "farmland": {
+        "prime": 46,
+        "primeIfIrrigated": 46,
+        "statewide": 10
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 24,
+        "landform": "on old lake bottoms"
+      },
+      "flooding": {
+        "pct": 20,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1357482",
     "schools": {
@@ -8347,7 +8906,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 1.2,
+      "farmland": {
+        "prime": 44,
+        "primeIfIrrigated": 44,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -8448,7 +9018,22 @@
       "awcVariation": {
         "awc": 0.09,
         "landform": "on floodplains"
-      }
+      },
+      "ecAvg": 2.9,
+      "saltVariation": {
+        "ec": 11.5,
+        "level": "moderately saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 81,
+        "primeIfIrrigated": 81,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -8544,7 +9129,21 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.1,
+      "saltVariation": null,
+      "omAvg": 4.1,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 90
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 10,
+        "landform": "in canyons"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -8712,7 +9311,22 @@
       "awcVariation": {
         "awc": 0.11,
         "landform": "on benches above streams"
-      }
+      },
+      "ecAvg": 1.4,
+      "saltVariation": {
+        "ec": 3,
+        "level": "very slightly saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 51,
+        "primeIfIrrigated": 51,
+        "statewide": 30
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358076",
     "schools": {
@@ -8840,7 +9454,18 @@
       "drainageVariation": null,
       "awcAvg": 0.19,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 3.5,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 32
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358203",
     "schools": null,
@@ -8957,7 +9582,22 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3,
+      "saltVariation": {
+        "ec": 10.3,
+        "level": "moderately saline",
+        "landform": "on valley floors"
+      },
+      "omAvg": 2,
+      "farmland": {
+        "prime": 42,
+        "primeIfIrrigated": 42,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358228",
     "schools": null,
@@ -9082,7 +9722,18 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 6.4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -9153,7 +9804,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 98,
+        "primeIfIrrigated": 98,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358284",
     "schools": {
@@ -9525,6 +10187,27 @@
       "awcVariation": {
         "awc": 0.08,
         "landform": "on hills"
+      },
+      "ecAvg": 12.7,
+      "saltVariation": {
+        "ec": 27,
+        "level": "strongly saline",
+        "landform": "on hills"
+      },
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 50,
+        "primeIfIrrigated": 50,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 19,
+        "landform": "on valley floors"
+      },
+      "flooding": {
+        "pct": 8,
+        "landform": "on valley floors"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358335",
@@ -9665,7 +10348,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 2.1,
+      "farmland": {
+        "prime": 82,
+        "primeIfIrrigated": 82,
+        "statewide": 3
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -9908,7 +10602,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.4,
+      "saltVariation": null,
+      "omAvg": 5.1,
+      "farmland": {
+        "prime": 33,
+        "primeIfIrrigated": 33,
+        "statewide": 67
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 56,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358501",
     "schools": {
@@ -10276,7 +10984,28 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 5.1,
+      "saltVariation": {
+        "ec": 17.7,
+        "level": "strongly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 3.5,
+      "farmland": {
+        "prime": 5,
+        "primeIfIrrigated": 5,
+        "statewide": 2
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 11,
+        "landform": "on old lake bottoms"
+      },
+      "flooding": {
+        "pct": 9,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1359260",
     "schools": {
@@ -10406,7 +11135,18 @@
       "awcVariation": {
         "awc": 0.08,
         "landform": "on benches above streams"
-      }
+      },
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 70,
+        "primeIfIrrigated": 70,
+        "statewide": 7
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -10500,7 +11240,18 @@
       },
       "awcAvg": 0.09,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 1.8,
+      "farmland": {
+        "prime": 19,
+        "primeIfIrrigated": 19,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -10804,7 +11555,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 47,
+        "primeIfIrrigated": 47,
+        "statewide": 53
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -10983,7 +11745,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.4,
+      "saltVariation": null,
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -11076,7 +11849,18 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 3.9,
+      "farmland": {
+        "prime": 12,
+        "primeIfIrrigated": 12,
+        "statewide": 88
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -11163,7 +11947,18 @@
       "drainageVariation": null,
       "awcAvg": 0.09,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 11.3,
+      "saltVariation": null,
+      "omAvg": 1.2,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 32
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1360636",
     "schools": {
@@ -11429,7 +12224,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 11.3,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 80
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -11521,7 +12327,18 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.3,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 59,
+        "primeIfIrrigated": 59,
+        "statewide": 34
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -11631,7 +12448,22 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.6,
+      "saltVariation": {
+        "ec": 6.4,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 24
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361288",
     "schools": {
@@ -12320,7 +13152,24 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 1.7,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 11,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 11,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361381",
     "schools": {
@@ -12492,7 +13341,22 @@
       "drainageVariation": null,
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.4,
+      "saltVariation": {
+        "ec": 3,
+        "level": "very slightly saline",
+        "landform": "on foothill slopes"
+      },
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 100
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361402",
     "schools": {
@@ -12725,7 +13589,22 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.3,
+      "saltVariation": {
+        "ec": 2.5,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.8,
+      "farmland": {
+        "prime": 35,
+        "primeIfIrrigated": 35,
+        "statewide": 20
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -13436,7 +14315,21 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 4.4,
+      "farmland": {
+        "prime": 14,
+        "primeIfIrrigated": 14,
+        "statewide": 81
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 11,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -13509,7 +14402,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 84,
+        "primeIfIrrigated": 84,
+        "statewide": 3
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361679",
     "schools": null,
@@ -13686,7 +14590,21 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.1,
+      "saltVariation": null,
+      "omAvg": 5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 42
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 42,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1442045",
     "schools": null,
@@ -13773,7 +14691,24 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 2.7,
+      "farmland": {
+        "prime": 74,
+        "primeIfIrrigated": 74,
+        "statewide": 26
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 21,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 26,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362041",
     "schools": {
@@ -13917,7 +14852,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 1.4,
+      "farmland": {
+        "prime": 87,
+        "primeIfIrrigated": 87,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440026",
     "schools": null,
@@ -14016,7 +14962,18 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.5,
+      "saltVariation": null,
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 40,
+        "primeIfIrrigated": 40,
+        "statewide": 29
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -14117,7 +15074,25 @@
       "awcVariation": {
         "awc": 0.08,
         "landform": "on valley floors"
-      }
+      },
+      "ecAvg": 8,
+      "saltVariation": {
+        "ec": 42.9,
+        "level": "strongly saline",
+        "landform": "on valley floors"
+      },
+      "omAvg": 2.1,
+      "farmland": {
+        "prime": 3,
+        "primeIfIrrigated": 3,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 70,
+        "landform": "on hills"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362457",
     "schools": null,
@@ -14234,7 +15209,18 @@
       "awcVariation": {
         "awc": 0.12,
         "landform": "on benches above streams"
-      }
+      },
+      "ecAvg": 2.4,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 100,
+        "primeIfIrrigated": 100,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362495",
     "schools": {
@@ -14364,7 +15350,22 @@
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": {
+        "ec": 2.3,
+        "level": "very slightly saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 59,
+        "primeIfIrrigated": 59,
+        "statewide": 37
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -14456,7 +15457,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 10.6,
+      "saltVariation": null,
+      "omAvg": 1.8,
+      "farmland": {
+        "prime": 30,
+        "primeIfIrrigated": 30,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362547",
     "schools": null,
@@ -14586,7 +15598,21 @@
       "drainageVariation": null,
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 100,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -14710,7 +15736,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.4,
+      "saltVariation": null,
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 25
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -14873,7 +15910,24 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 4.4,
+      "farmland": {
+        "prime": 83,
+        "primeIfIrrigated": 83,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 17,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 25,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -14969,7 +16023,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.1,
+      "saltVariation": null,
+      "omAvg": 1.8,
+      "farmland": {
+        "prime": 46,
+        "primeIfIrrigated": 46,
+        "statewide": 21
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362656",
     "schools": {
@@ -15135,7 +16200,21 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.5,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 81
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 5,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362671",
     "schools": {
@@ -15353,7 +16432,25 @@
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 5.8,
+      "saltVariation": {
+        "ec": 24,
+        "level": "strongly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 55
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 41,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -15464,7 +16561,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 1.4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362716",
     "schools": {
@@ -15897,7 +17005,24 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.6,
+      "saltVariation": null,
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 40,
+        "primeIfIrrigated": 40,
+        "statewide": 33
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 16,
+        "landform": "in low spots"
+      },
+      "flooding": {
+        "pct": 16,
+        "landform": "in low spots"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -16013,7 +17138,28 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.3,
+      "saltVariation": {
+        "ec": 5.6,
+        "level": "slightly saline",
+        "landform": "on valley floors"
+      },
+      "omAvg": 2.7,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 48
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 27,
+        "landform": "on valley floors"
+      },
+      "flooding": {
+        "pct": 27,
+        "landform": "on valley floors"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363051",
     "schools": {
@@ -16168,7 +17314,21 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.4,
+      "saltVariation": null,
+      "omAvg": 4.4,
+      "farmland": {
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 5
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 15,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363179",
     "schools": {
@@ -16566,7 +17726,28 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.7,
+      "saltVariation": {
+        "ec": 14.5,
+        "level": "moderately saline",
+        "landform": "in low spots"
+      },
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 57,
+        "primeIfIrrigated": 57,
+        "statewide": 8
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 28,
+        "landform": "in low spots"
+      },
+      "flooding": {
+        "pct": 26,
+        "landform": "in low spots"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -16736,7 +17917,22 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.1,
+      "saltVariation": {
+        "ec": 5.8,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 8,
+        "primeIfIrrigated": 8,
+        "statewide": 86
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -16831,7 +18027,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.9,
+      "saltVariation": null,
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363342",
     "schools": {
@@ -17002,7 +18209,18 @@
       "drainageVariation": null,
       "awcAvg": 0.19,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 100,
+        "primeIfIrrigated": 100,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363357",
     "schools": {
@@ -17118,7 +18336,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 2,
+      "farmland": {
+        "prime": 11,
+        "primeIfIrrigated": 11,
+        "statewide": 11
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363377",
     "schools": {
@@ -17460,7 +18689,21 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.4,
+      "saltVariation": null,
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 56,
+        "primeIfIrrigated": 56,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 11,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363767",
     "schools": {
@@ -17572,7 +18815,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 5,
+        "primeIfIrrigated": 5,
+        "statewide": 74
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363900",
     "schools": {
@@ -17691,7 +18945,24 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 4.2,
+      "farmland": {
+        "prime": 90,
+        "primeIfIrrigated": 90,
+        "statewide": 10
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 10,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 8,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -17840,7 +19111,24 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.5,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 6,
+        "primeIfIrrigated": 6,
+        "statewide": 56
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 14,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 38,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -17935,7 +19223,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.3,
+      "saltVariation": null,
+      "omAvg": 3.2,
+      "farmland": {
+        "prime": 70,
+        "primeIfIrrigated": 70,
+        "statewide": 2
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -18236,7 +19535,24 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 53,
+        "primeIfIrrigated": 53,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 26,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 26,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -18317,6 +19633,23 @@
       "awcVariation": {
         "awc": 0.08,
         "landform": "on old lakeshore benches"
+      },
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 2.7,
+      "farmland": {
+        "prime": 47,
+        "primeIfIrrigated": 47,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 44,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 31,
+        "landform": "on floodplains"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1364420",
@@ -18463,7 +19796,18 @@
       },
       "awcAvg": 0.19,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 52,
+        "primeIfIrrigated": 52,
+        "statewide": 44
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1364467",
     "schools": {
@@ -18697,7 +20041,28 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 7.4,
+      "saltVariation": {
+        "ec": 26,
+        "level": "strongly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 1.4,
+      "farmland": {
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 24
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 16,
+        "landform": "on old lake bottoms"
+      },
+      "flooding": {
+        "pct": 16,
+        "landform": "on old lake bottoms"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -18820,7 +20185,24 @@
       },
       "awcAvg": 0.19,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.1,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 12
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 45,
+        "landform": null
+      },
+      "flooding": {
+        "pct": 45,
+        "landform": null
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1364944",
     "schools": null,
@@ -18934,7 +20316,18 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.7,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 91,
+        "primeIfIrrigated": 91,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440028",
     "schools": null,
@@ -19076,7 +20469,22 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 6.1,
+      "saltVariation": {
+        "ec": 9.3,
+        "level": "moderately saline",
+        "landform": "on old lakeshore benches"
+      },
+      "omAvg": 1,
+      "farmland": {
+        "prime": 50,
+        "primeIfIrrigated": 50,
+        "statewide": 22
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365200",
     "schools": {
@@ -19295,7 +20703,18 @@
       },
       "awcAvg": 0.08,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.5,
+      "saltVariation": null,
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -19394,7 +20813,24 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.8,
+      "saltVariation": null,
+      "omAvg": 1.7,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 65
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 17,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 8,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365411",
     "schools": {
@@ -19630,7 +21066,21 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 6,
+      "saltVariation": null,
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 6,
+        "primeIfIrrigated": 6,
+        "statewide": 5
+      },
+      "bedrock": {
+        "pct": 52,
+        "landform": "on plains"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365543",
     "schools": {
@@ -20117,7 +21567,25 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.3,
+      "saltVariation": {
+        "ec": 2.3,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.3,
+      "farmland": {
+        "prime": 3,
+        "primeIfIrrigated": 3,
+        "statewide": 89
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 7,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365861",
     "schools": {
@@ -20329,7 +21797,21 @@
       "drainageVariation": null,
       "awcAvg": 0.09,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.4,
+      "saltVariation": null,
+      "omAvg": 0.7,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 38,
+        "landform": "on rock benches"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -20409,7 +21891,21 @@
       "drainageVariation": null,
       "awcAvg": 0.09,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 34,
+        "landform": "on plateaus"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -20588,6 +22084,26 @@
       "awcVariation": {
         "awc": 0.07,
         "landform": "on benches"
+      },
+      "ecAvg": 4.7,
+      "saltVariation": null,
+      "omAvg": 1.1,
+      "farmland": {
+        "prime": 45,
+        "primeIfIrrigated": 45,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 18,
+        "landform": "on benches"
+      },
+      "waterTable": {
+        "pct": 21,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 21,
+        "landform": "on floodplains"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366141",
@@ -20779,7 +22295,24 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.8,
+      "saltVariation": null,
+      "omAvg": 3.7,
+      "farmland": {
+        "prime": 24,
+        "primeIfIrrigated": 24,
+        "statewide": 56
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 28,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 8,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -20913,7 +22446,21 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.3,
+      "saltVariation": null,
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 28,
+        "landform": "on floodplains"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366457",
     "schools": null,
@@ -21116,7 +22663,24 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 4.2,
+      "farmland": {
+        "prime": 50,
+        "primeIfIrrigated": 50,
+        "statewide": 45
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 10,
+        "landform": "on benches above streams"
+      },
+      "flooding": {
+        "pct": 10,
+        "landform": "on benches above streams"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366620",
     "schools": {
@@ -21509,7 +23073,18 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 2,
+      "farmland": {
+        "prime": 100,
+        "primeIfIrrigated": 100,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366683",
     "schools": {
@@ -21724,7 +23299,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.3,
+      "saltVariation": null,
+      "omAvg": 5.8,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 88
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 88,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366731",
     "schools": null,
@@ -21831,7 +23420,18 @@
       "awcVariation": {
         "awc": 0.09,
         "landform": "on floodplains"
-      }
+      },
+      "ecAvg": 1.4,
+      "saltVariation": null,
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366746",
     "schools": null,
@@ -21937,7 +23537,22 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.7,
+      "saltVariation": {
+        "ec": 5.9,
+        "level": "slightly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 61,
+        "primeIfIrrigated": 61,
+        "statewide": 8
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -22483,7 +24098,24 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 4.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 71
+      },
+      "bedrock": {
+        "pct": 29,
+        "landform": "on benches above streams"
+      },
+      "waterTable": {
+        "pct": 71,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -22574,6 +24206,20 @@
       "awcDesc": "moderate water retention",
       "awcVariation": {
         "awc": 0.07,
+        "landform": "on floodplains"
+      },
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 89,
+        "primeIfIrrigated": 89,
+        "statewide": 6
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 7,
         "landform": "on floodplains"
       }
     },
@@ -23062,7 +24708,18 @@
       "drainageVariation": null,
       "awcAvg": 0.1,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.1,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -23215,7 +24872,18 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 9.5,
+      "saltVariation": null,
+      "omAvg": 1.4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 92
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367070",
     "schools": null,
@@ -23355,7 +25023,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 100
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1442432",
     "schools": {
@@ -23481,7 +25160,25 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.5,
+      "saltVariation": {
+        "ec": 4.9,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 52,
+        "primeIfIrrigated": 52,
+        "statewide": 3
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 9,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440036",
     "schools": {
@@ -23777,7 +25474,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.5,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 58,
+        "primeIfIrrigated": 58,
+        "statewide": 31
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 10,
+        "landform": "on old lake bottoms"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367333",
     "schools": {
@@ -23902,7 +25613,24 @@
       },
       "awcAvg": 0.1,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 20.5,
+      "saltVariation": null,
+      "omAvg": 1.4,
+      "farmland": {
+        "prime": 9,
+        "primeIfIrrigated": 9,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 44,
+        "landform": "on old lake bottoms"
+      },
+      "flooding": {
+        "pct": 13,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367355",
     "schools": {
@@ -24060,7 +25788,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.6,
+      "saltVariation": null,
+      "omAvg": 3.2,
+      "farmland": {
+        "prime": 59,
+        "primeIfIrrigated": 59,
+        "statewide": 5
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1449432",
     "schools": null,
@@ -24160,7 +25899,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.3,
+      "saltVariation": null,
+      "omAvg": 5.8,
+      "farmland": {
+        "prime": 28,
+        "primeIfIrrigated": 28,
+        "statewide": 72
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 72,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -24257,7 +26010,27 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 17.4,
+      "saltVariation": null,
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 31,
+        "primeIfIrrigated": 31,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 15,
+        "landform": "on hills"
+      },
+      "waterTable": {
+        "pct": 15,
+        "landform": "on valley floors"
+      },
+      "flooding": {
+        "pct": 7,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367667",
     "schools": {
@@ -24440,7 +26213,24 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.3,
+      "saltVariation": null,
+      "omAvg": 3.3,
+      "farmland": {
+        "prime": 78,
+        "primeIfIrrigated": 78,
+        "statewide": 22
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 15,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 37,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367694",
     "schools": {
@@ -24582,7 +26372,22 @@
       "awcVariation": {
         "awc": 0.17,
         "landform": "on floodplains"
-      }
+      },
+      "ecAvg": 1.2,
+      "saltVariation": {
+        "ec": 2,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 46,
+        "primeIfIrrigated": 46,
+        "statewide": 2
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367712",
     "schools": {
@@ -24906,7 +26711,18 @@
       },
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.4,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 46,
+        "primeIfIrrigated": 46,
+        "statewide": 50
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367778",
     "schools": {
@@ -25070,7 +26886,21 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.9,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 47
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 5,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367792",
     "schools": {
@@ -25389,7 +27219,21 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 4.4,
+      "farmland": {
+        "prime": 41,
+        "primeIfIrrigated": 41,
+        "statewide": 21
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 31,
+        "landform": "in canyons"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -25688,7 +27532,21 @@
       },
       "awcAvg": 0.1,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 0.6,
+      "farmland": {
+        "prime": 72,
+        "primeIfIrrigated": 72,
+        "statewide": 7
+      },
+      "bedrock": {
+        "pct": 11,
+        "landform": "on mountain slopes"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440038",
     "schools": {
@@ -25883,7 +27741,28 @@
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.2,
+      "saltVariation": {
+        "ec": 6.6,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.3,
+      "farmland": {
+        "prime": 67,
+        "primeIfIrrigated": 67,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 13,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 14,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368394",
     "schools": null,
@@ -26020,7 +27899,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.6,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 99,
+        "primeIfIrrigated": 99,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -26116,7 +28006,24 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.4,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 18,
+        "primeIfIrrigated": 18,
+        "statewide": 16
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 16,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 11,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368610",
     "schools": {
@@ -26275,7 +28182,24 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 5.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 54
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 44,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 44,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368655",
     "schools": {
@@ -26467,7 +28391,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 80,
+        "primeIfIrrigated": 80,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368662",
     "schools": {
@@ -26696,7 +28631,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.4,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 58,
+        "primeIfIrrigated": 58,
+        "statewide": 42
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -26797,7 +28743,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 1.7,
+      "farmland": {
+        "prime": 62,
+        "primeIfIrrigated": 62,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368679",
     "schools": null,
@@ -26902,7 +28859,21 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.3,
+      "saltVariation": null,
+      "omAvg": 3.7,
+      "farmland": {
+        "prime": 79,
+        "primeIfIrrigated": 79,
+        "statewide": 8
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 11,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368734",
     "schools": {
@@ -27397,7 +29368,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 54,
+        "primeIfIrrigated": 54,
+        "statewide": 46
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -27758,7 +29740,21 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.7,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 14,
+        "primeIfIrrigated": 14,
+        "statewide": 17
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 20,
+        "landform": "on floodplains"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -27854,7 +29850,18 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 55,
+        "primeIfIrrigated": 55,
+        "statewide": 40
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440042",
     "schools": {
@@ -27994,7 +30001,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.9,
+      "saltVariation": null,
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 5,
+        "primeIfIrrigated": 5,
+        "statewide": 35
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369422",
     "schools": {
@@ -28117,7 +30135,28 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.5,
+      "saltVariation": {
+        "ec": 2.1,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 50,
+        "primeIfIrrigated": 50,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 39,
+        "landform": "on mountain slopes"
+      },
+      "waterTable": null,
+      "flooding": {
+        "pct": 6,
+        "landform": "in low spots"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369434",
     "schools": {
@@ -28247,7 +30286,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.4,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 98
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -28350,7 +30400,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.1,
+      "saltVariation": null,
+      "omAvg": 2.7,
+      "farmland": {
+        "prime": 41,
+        "primeIfIrrigated": 41,
+        "statewide": 53
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 8,
+        "landform": null
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -28431,7 +30495,24 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 50,
+        "primeIfIrrigated": 50,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 14,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 12,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369692",
     "schools": {
@@ -28567,7 +30648,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.2,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 92,
+        "primeIfIrrigated": 92,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369870",
     "schools": {
@@ -28726,7 +30818,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 87,
+        "primeIfIrrigated": 87,
+        "statewide": 2
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370013",
     "schools": {
@@ -29527,7 +31630,25 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.8,
+      "saltVariation": {
+        "ec": 3,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.1,
+      "farmland": {
+        "prime": 52,
+        "primeIfIrrigated": 52,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 7,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440044",
     "schools": null,
@@ -29631,7 +31752,18 @@
       "drainageVariation": null,
       "awcAvg": 0.08,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 26,
+        "primeIfIrrigated": 26,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440045",
     "schools": null,
@@ -29789,7 +31921,21 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.9,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 72,
+        "primeIfIrrigated": 72,
+        "statewide": 23
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 8,
+        "landform": null
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370151",
     "schools": {
@@ -30707,7 +32853,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.1,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 100,
+        "primeIfIrrigated": 100,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370299",
     "schools": null,
@@ -30808,7 +32965,18 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.4,
+      "saltVariation": null,
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 82,
+        "primeIfIrrigated": 82,
+        "statewide": 7
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370340",
     "schools": {
@@ -30940,7 +33108,24 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 61,
+        "primeIfIrrigated": 61,
+        "statewide": 39
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 12,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 39,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -31095,7 +33280,28 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.8,
+      "saltVariation": {
+        "ec": 6.3,
+        "level": "slightly saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 3.2,
+      "farmland": {
+        "prime": 70,
+        "primeIfIrrigated": 70,
+        "statewide": 24
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 20,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 20,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -31463,7 +33669,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.4,
+      "saltVariation": null,
+      "omAvg": 1.4,
+      "farmland": {
+        "prime": 11,
+        "primeIfIrrigated": 11,
+        "statewide": 72
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370725",
     "schools": {
@@ -31640,7 +33857,28 @@
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.8,
+      "saltVariation": {
+        "ec": 5,
+        "level": "slightly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 3.8,
+      "farmland": {
+        "prime": 21,
+        "primeIfIrrigated": 21,
+        "statewide": 60
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 16,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 16,
+        "landform": null
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370786",
     "schools": {
@@ -32359,7 +34597,22 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": {
+        "ec": 2,
+        "level": "very slightly saline",
+        "landform": "on hills"
+      },
+      "omAvg": 1.2,
+      "farmland": {
+        "prime": 91,
+        "primeIfIrrigated": 91,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1371215",
     "schools": null,
@@ -32525,7 +34778,18 @@
       },
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.3,
+      "saltVariation": null,
+      "omAvg": 1.2,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -32633,7 +34897,25 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.6,
+      "saltVariation": {
+        "ec": 2.7,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1,
+      "farmland": {
+        "prime": 72,
+        "primeIfIrrigated": 72,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 21,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -32746,7 +35028,21 @@
       "awcVariation": {
         "awc": 0.17,
         "landform": "on foothill slopes"
-      }
+      },
+      "ecAvg": 42.3,
+      "saltVariation": null,
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 20,
+        "primeIfIrrigated": 20,
+        "statewide": 7
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 63,
+        "landform": "on old lake bottoms"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1371406",
     "schools": {
@@ -33135,7 +35431,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 82
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1371647",
     "schools": {
@@ -33283,7 +35590,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.9,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 4,
+        "primeIfIrrigated": 4,
+        "statewide": 84
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1371718",
     "schools": {
@@ -33494,7 +35812,22 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": {
+        "ec": 5,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 3.2,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 51
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -33611,7 +35944,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 93,
+        "primeIfIrrigated": 93,
+        "statewide": 2
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -33876,7 +36220,24 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.1,
+      "saltVariation": null,
+      "omAvg": 4.9,
+      "farmland": {
+        "prime": 26,
+        "primeIfIrrigated": 26,
+        "statewide": 74
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 29,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 29,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -33978,7 +36339,22 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.7,
+      "saltVariation": {
+        "ec": 4,
+        "level": "slightly saline",
+        "landform": "on old lakeshore benches"
+      },
+      "omAvg": 4.1,
+      "farmland": {
+        "prime": 69,
+        "primeIfIrrigated": 69,
+        "statewide": 5
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -34159,7 +36535,24 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.4,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 4,
+        "primeIfIrrigated": 4,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 24,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 11,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1372059",
     "schools": {
@@ -34314,7 +36707,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.2,
+      "saltVariation": null,
+      "omAvg": 1.4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 41
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1372219",
     "schools": null,
@@ -34426,7 +36830,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 20,
+        "primeIfIrrigated": 20,
+        "statewide": 80
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1372474",
     "schools": null,
@@ -34573,7 +36988,18 @@
       "awcVariation": {
         "awc": 0.09,
         "landform": "on benches above streams"
-      }
+      },
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 67,
+        "primeIfIrrigated": 67,
+        "statewide": 30
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1372693",
     "schools": {
@@ -34712,7 +37138,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440047",
     "schools": null,
@@ -34817,7 +37254,22 @@
       "awcVariation": {
         "awc": 0.07,
         "landform": "on foothill slopes"
-      }
+      },
+      "ecAvg": 1.5,
+      "saltVariation": {
+        "ec": 7.2,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 3,
+      "farmland": {
+        "prime": 74,
+        "primeIfIrrigated": 74,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373021",
     "schools": {
@@ -35132,7 +37584,27 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 5,
+      "farmland": {
+        "prime": 14,
+        "primeIfIrrigated": 14,
+        "statewide": 50
+      },
+      "bedrock": {
+        "pct": 33,
+        "landform": "on benches above streams"
+      },
+      "waterTable": {
+        "pct": 24,
+        "landform": "on benches above streams"
+      },
+      "flooding": {
+        "pct": 20,
+        "landform": "on benches above streams"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373034",
     "schools": {
@@ -35361,7 +37833,18 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 6
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373095",
     "schools": {
@@ -35546,7 +38029,22 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.9,
+      "saltVariation": {
+        "ec": 4.8,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 88,
+        "primeIfIrrigated": 88,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -35903,7 +38401,21 @@
       },
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 17,
+        "primeIfIrrigated": 17,
+        "statewide": 72
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 11,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373219",
     "schools": {
@@ -36102,7 +38614,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 1.2,
+      "farmland": {
+        "prime": 2,
+        "primeIfIrrigated": 2,
+        "statewide": 17
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373308",
     "schools": {
@@ -36256,7 +38779,21 @@
       "drainageVariation": null,
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 1,
+      "farmland": {
+        "prime": 38,
+        "primeIfIrrigated": 38,
+        "statewide": 6
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 42,
+        "landform": "on valley floors"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373423",
     "schools": {
@@ -36559,7 +39096,18 @@
       "drainageVariation": null,
       "awcAvg": 0.09,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.4,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 10,
+        "primeIfIrrigated": 10,
+        "statewide": 37
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -36720,7 +39268,22 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": {
+        "ec": 4,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 2.1,
+      "farmland": {
+        "prime": 42,
+        "primeIfIrrigated": 42,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373484",
     "schools": {
@@ -36902,7 +39465,18 @@
       "awcVariation": {
         "awc": 0.06,
         "landform": "on valley floors"
-      }
+      },
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 2.1,
+      "farmland": {
+        "prime": 50,
+        "primeIfIrrigated": 50,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373535",
     "schools": {
@@ -37074,7 +39648,24 @@
       "drainageVariation": null,
       "awcAvg": 0.1,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.6,
+      "saltVariation": null,
+      "omAvg": 0.6,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 11
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 23,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 23,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440005",
     "schools": {
@@ -37218,7 +39809,18 @@
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 7,
+        "primeIfIrrigated": 7,
+        "statewide": 84
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373646",
     "schools": {
@@ -37485,7 +40087,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 3.4,
+      "farmland": {
+        "prime": 91,
+        "primeIfIrrigated": 91,
+        "statewide": 9
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 25,
+        "landform": "on benches above streams"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373775",
     "schools": {
@@ -37752,7 +40368,21 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.6,
+      "saltVariation": null,
+      "omAvg": 1.7,
+      "farmland": {
+        "prime": 28,
+        "primeIfIrrigated": 28,
+        "statewide": 52
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 5,
+        "landform": "on valley floors"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373817",
     "schools": {
@@ -37949,7 +40579,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 60
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374054",
     "schools": {
@@ -38184,7 +40825,24 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.3,
+      "saltVariation": null,
+      "omAvg": 3.4,
+      "farmland": {
+        "prime": 57,
+        "primeIfIrrigated": 57,
+        "statewide": 36
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 12,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 43,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -38363,7 +41021,21 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.8,
+      "saltVariation": null,
+      "omAvg": 2.1,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 13
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 33,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440053",
     "schools": {
@@ -38943,7 +41615,28 @@
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.6,
+      "saltVariation": {
+        "ec": 5.6,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 64,
+        "primeIfIrrigated": 64,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 36,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 6,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374328",
     "schools": {
@@ -39089,7 +41782,25 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4,
+      "saltVariation": {
+        "ec": 9.1,
+        "level": "moderately saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.2,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 7,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -39193,7 +41904,18 @@
       "drainageVariation": null,
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 1.7,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 45
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -39281,7 +42003,21 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.5,
+      "saltVariation": null,
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 59
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 16,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374575",
     "schools": {
@@ -39400,7 +42136,22 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": {
+        "ec": 3,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 86,
+        "primeIfIrrigated": 86,
+        "statewide": 2
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374583",
     "schools": {
@@ -39653,7 +42404,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 100,
+        "primeIfIrrigated": 100,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374727",
     "schools": {
@@ -39781,7 +42543,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 60,
+        "primeIfIrrigated": 60,
+        "statewide": 37
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -39887,7 +42660,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 95,
+        "primeIfIrrigated": 95,
+        "statewide": 5
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1375043",
     "schools": {
@@ -40023,7 +42807,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 36,
+        "primeIfIrrigated": 36,
+        "statewide": 58
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 6,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -40242,7 +43040,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.3,
+      "saltVariation": null,
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 43
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -40466,7 +43275,21 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 3.6,
+      "farmland": {
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 32
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 7,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -40688,7 +43511,24 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 9,
+      "saltVariation": null,
+      "omAvg": 2.7,
+      "farmland": {
+        "prime": 30,
+        "primeIfIrrigated": 30,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 19,
+        "landform": "on old lake bottoms"
+      },
+      "flooding": {
+        "pct": 8,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440054",
     "schools": {
@@ -40975,7 +43815,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 0.9,
+      "farmland": {
+        "prime": 59,
+        "primeIfIrrigated": 59,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1375700",
     "schools": null,
@@ -41088,7 +43939,21 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 4.9,
+      "farmland": {
+        "prime": 37,
+        "primeIfIrrigated": 37,
+        "statewide": 32
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 32,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1375801",
     "schools": null,
@@ -41201,7 +44066,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 7.6,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 92
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -41293,7 +44169,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.9,
+      "saltVariation": null,
+      "omAvg": 3.3,
+      "farmland": {
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 27
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384892",
     "schools": {
@@ -42803,7 +45690,18 @@
       },
       "awcAvg": 0.09,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 0.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -42945,7 +45843,22 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.8,
+      "saltVariation": {
+        "ec": 15.4,
+        "level": "moderately saline",
+        "landform": "on valley floors"
+      },
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 55,
+        "primeIfIrrigated": 55,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376227",
     "schools": {
@@ -43096,7 +46009,21 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 1.3,
+      "farmland": {
+        "prime": 37,
+        "primeIfIrrigated": 37,
+        "statewide": 15
+      },
+      "bedrock": {
+        "pct": 40,
+        "landform": "on sandy flats"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376247",
     "schools": {
@@ -43242,7 +46169,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.9,
+      "saltVariation": null,
+      "omAvg": 2.1,
+      "farmland": {
+        "prime": 88,
+        "primeIfIrrigated": 88,
+        "statewide": 9
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376261",
     "schools": {
@@ -44259,7 +47197,21 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.1,
+      "saltVariation": null,
+      "omAvg": 2.7,
+      "farmland": {
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 52
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 8,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -44343,7 +47295,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 2,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376719",
     "schools": {
@@ -44543,7 +47506,18 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 36,
+        "primeIfIrrigated": 36,
+        "statewide": 64
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376754",
     "schools": null,
@@ -44648,7 +47622,18 @@
       "drainageVariation": null,
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 100,
+        "primeIfIrrigated": 100,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440057",
     "schools": null,
@@ -44760,7 +47745,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 5.9,
+      "farmland": {
+        "prime": 27,
+        "primeIfIrrigated": 27,
+        "statewide": 73
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 12,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376796",
     "schools": {
@@ -45309,7 +48308,18 @@
       "awcVariation": {
         "awc": 0.1,
         "landform": "on benches above streams"
-      }
+      },
+      "ecAvg": 0.1,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 68,
+        "primeIfIrrigated": 68,
+        "statewide": 32
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376887",
     "schools": {
@@ -45469,7 +48479,21 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.5,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 81,
+        "primeIfIrrigated": 81,
+        "statewide": 8
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 6,
+        "landform": "on foothill slopes"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1377023",
     "schools": {
@@ -45820,7 +48844,24 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.1,
+      "saltVariation": null,
+      "omAvg": 6.6,
+      "farmland": {
+        "prime": 18,
+        "primeIfIrrigated": 18,
+        "statewide": 82
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 82,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 42,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -45923,7 +48964,28 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.1,
+      "saltVariation": {
+        "ec": 8.4,
+        "level": "moderately saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 4.2,
+      "farmland": {
+        "prime": 38,
+        "primeIfIrrigated": 38,
+        "statewide": 34
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 45,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 18,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -46071,7 +49133,21 @@
       "drainageVariation": null,
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.1,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 48,
+        "primeIfIrrigated": 48,
+        "statewide": 6
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 5,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -46270,7 +49346,24 @@
       "drainageVariation": null,
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 100,
+        "landform": "on valley floors"
+      },
+      "flooding": {
+        "pct": 100,
+        "landform": "on valley floors"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -46501,7 +49594,24 @@
       },
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 13.2,
+      "saltVariation": null,
+      "omAvg": 2.1,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 25,
+        "landform": null
+      },
+      "flooding": {
+        "pct": 28,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -46691,7 +49801,25 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": {
+        "ec": 5,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 3.4,
+      "farmland": {
+        "prime": 95,
+        "primeIfIrrigated": 95,
+        "statewide": 5
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 13,
+        "landform": null
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1377792",
     "schools": {
@@ -47096,7 +50224,24 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.5,
+      "saltVariation": null,
+      "omAvg": 3.4,
+      "farmland": {
+        "prime": 25,
+        "primeIfIrrigated": 25,
+        "statewide": 19
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 15,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 8,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -47267,7 +50412,18 @@
       "awcVariation": {
         "awc": 0.11,
         "landform": "on benches above streams"
-      }
+      },
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 60,
+        "primeIfIrrigated": 60,
+        "statewide": 37
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1377868",
     "schools": null,
@@ -47359,7 +50515,18 @@
       "awcVariation": {
         "awc": 0.11,
         "landform": "on benches above streams"
-      }
+      },
+      "ecAvg": 1.5,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 69,
+        "primeIfIrrigated": 69,
+        "statewide": 15
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -47487,7 +50654,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.8,
+      "saltVariation": null,
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 91,
+        "primeIfIrrigated": 91,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 6,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378398",
     "schools": {
@@ -47936,7 +51117,18 @@
       "drainageVariation": null,
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 2.7,
+      "farmland": {
+        "prime": 21,
+        "primeIfIrrigated": 21,
+        "statewide": 79
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378495",
     "schools": {
@@ -48159,7 +51351,24 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3,
+      "saltVariation": null,
+      "omAvg": 4.2,
+      "farmland": {
+        "prime": 45,
+        "primeIfIrrigated": 45,
+        "statewide": 26
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 27,
+        "landform": "on valley floors"
+      },
+      "flooding": {
+        "pct": 43,
+        "landform": null
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378504",
     "schools": {
@@ -49312,7 +52521,24 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.9,
+      "saltVariation": null,
+      "omAvg": 1.4,
+      "farmland": {
+        "prime": 22,
+        "primeIfIrrigated": 22,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 10,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 10,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -49416,7 +52642,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 55,
+        "primeIfIrrigated": 55,
+        "statewide": 4
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 9,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378792",
     "schools": {
@@ -49572,7 +52812,18 @@
       },
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 9.5,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 22,
+        "primeIfIrrigated": 22,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378998",
     "schools": null,
@@ -49696,7 +52947,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.5,
+      "saltVariation": null,
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 84,
+        "primeIfIrrigated": 84,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379215",
     "schools": {
@@ -50046,7 +53308,18 @@
       "drainageVariation": null,
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 74,
+        "primeIfIrrigated": 74,
+        "statewide": 21
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379259",
     "schools": {
@@ -50252,7 +53525,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 61,
+        "primeIfIrrigated": 61,
+        "statewide": 33
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 6,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -50396,7 +53683,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 3.2,
+      "farmland": {
+        "prime": 64,
+        "primeIfIrrigated": 64,
+        "statewide": 36
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -50573,7 +53871,22 @@
       },
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": {
+        "ec": 2,
+        "level": "very slightly saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 86,
+        "primeIfIrrigated": 86,
+        "statewide": 3
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379470",
     "schools": null,
@@ -50671,7 +53984,22 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2,
+      "saltVariation": {
+        "ec": 5.4,
+        "level": "slightly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 81,
+        "primeIfIrrigated": 81,
+        "statewide": 12
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379496",
     "schools": {
@@ -51259,6 +54587,30 @@
       "awcVariation": {
         "awc": 0.07,
         "landform": "in low spots"
+      },
+      "ecAvg": 0.6,
+      "saltVariation": {
+        "ec": 2,
+        "level": "very slightly saline",
+        "landform": "in low spots"
+      },
+      "omAvg": 1.1,
+      "farmland": {
+        "prime": 34,
+        "primeIfIrrigated": 34,
+        "statewide": 4
+      },
+      "bedrock": {
+        "pct": 41,
+        "landform": "on mesas"
+      },
+      "waterTable": {
+        "pct": 21,
+        "landform": "in low spots"
+      },
+      "flooding": {
+        "pct": 21,
+        "landform": "in low spots"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440059",
@@ -51363,7 +54715,22 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": {
+        "ec": 3,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 84,
+        "primeIfIrrigated": 84,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -51457,7 +54824,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.1,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 52,
+        "primeIfIrrigated": 52,
+        "statewide": 13
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1379833",
     "schools": {
@@ -51817,7 +55195,18 @@
       },
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.5,
+      "saltVariation": null,
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 67,
+        "primeIfIrrigated": 67,
+        "statewide": 12
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380022",
     "schools": {
@@ -52244,7 +55633,25 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.8,
+      "saltVariation": {
+        "ec": 8.2,
+        "level": "moderately saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 91
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 9,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380103",
     "schools": null,
@@ -52377,7 +55784,21 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.4,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 59,
+        "primeIfIrrigated": 59,
+        "statewide": 16
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 6,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380475",
     "schools": {
@@ -52640,7 +56061,22 @@
       "awcVariation": {
         "awc": 0.09,
         "landform": "on floodplains"
-      }
+      },
+      "ecAvg": 2.6,
+      "saltVariation": {
+        "ec": 4.1,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 32,
+        "primeIfIrrigated": 32,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380505",
     "schools": {
@@ -52842,6 +56278,23 @@
       "awcVariation": {
         "awc": 0.17,
         "landform": "on floodplains"
+      },
+      "ecAvg": 31.8,
+      "saltVariation": null,
+      "omAvg": 2,
+      "farmland": {
+        "prime": 11,
+        "primeIfIrrigated": 11,
+        "statewide": 25
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 30,
+        "landform": "on old lake bottoms"
+      },
+      "flooding": {
+        "pct": 6,
+        "landform": "on old lakeshore benches"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1383850",
@@ -55747,7 +59200,21 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 5.4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 19
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 19,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -55821,7 +59288,18 @@
       "drainageVariation": null,
       "awcAvg": 0.1,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 2.1,
+      "farmland": {
+        "prime": 24,
+        "primeIfIrrigated": 24,
+        "statewide": 6
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380712",
     "schools": {
@@ -56819,7 +60297,25 @@
       },
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.3,
+      "saltVariation": {
+        "ec": 2.2,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 83,
+        "primeIfIrrigated": 83,
+        "statewide": 4
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 7,
+        "landform": "in low spots"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380744",
     "schools": {
@@ -56974,7 +60470,21 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.9,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 92,
+        "primeIfIrrigated": 92,
+        "statewide": 2
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 20,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380780",
     "schools": {
@@ -57197,7 +60707,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.7,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 61,
+        "primeIfIrrigated": 61,
+        "statewide": 2
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -57992,7 +61513,18 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 13,
+        "primeIfIrrigated": 13,
+        "statewide": 87
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -58103,7 +61635,18 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 6.6,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -58284,7 +61827,22 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.9,
+      "saltVariation": {
+        "ec": 12.5,
+        "level": "moderately saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.7,
+      "farmland": {
+        "prime": 74,
+        "primeIfIrrigated": 74,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -58385,7 +61943,18 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 4.8,
+      "farmland": {
+        "prime": 54,
+        "primeIfIrrigated": 54,
+        "statewide": 46
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -58466,7 +62035,18 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 40,
+        "primeIfIrrigated": 40,
+        "statewide": 60
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1381877",
     "schools": {
@@ -58726,7 +62306,25 @@
       },
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.5,
+      "saltVariation": {
+        "ec": 5,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 3.2,
+      "farmland": {
+        "prime": 84,
+        "primeIfIrrigated": 84,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 13,
+        "landform": "on floodplains"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1381950",
     "schools": {
@@ -58839,7 +62437,21 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 5.3,
+      "farmland": {
+        "prime": 4,
+        "primeIfIrrigated": 4,
+        "statewide": 96
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 10,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -58943,7 +62555,22 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.9,
+      "saltVariation": {
+        "ec": 4.2,
+        "level": "slightly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 76,
+        "primeIfIrrigated": 76,
+        "statewide": 15
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440308",
     "schools": {
@@ -59831,7 +63458,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 47,
+        "primeIfIrrigated": 47,
+        "statewide": 15
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -60083,7 +63721,21 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.5,
+      "saltVariation": null,
+      "omAvg": 3.7,
+      "farmland": {
+        "prime": 90,
+        "primeIfIrrigated": 90,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 6,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440064",
     "schools": null,
@@ -60319,7 +63971,18 @@
       "drainageVariation": null,
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 56,
+        "primeIfIrrigated": 56,
+        "statewide": 31
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -60503,7 +64166,28 @@
       },
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4,
+      "saltVariation": {
+        "ec": 5,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 3.1,
+      "farmland": {
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 32
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 27,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 24,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -60605,7 +64289,21 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.6,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 73,
+        "primeIfIrrigated": 73,
+        "statewide": 14
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 14,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382419",
     "schools": {
@@ -61159,7 +64857,21 @@
       "drainageVariation": null,
       "awcAvg": 0.1,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 1,
+      "farmland": {
+        "prime": 10,
+        "primeIfIrrigated": 10,
+        "statewide": 2
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 26,
+        "landform": null
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -61239,7 +64951,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.6,
+      "saltVariation": null,
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 10
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382520",
     "schools": {
@@ -61365,7 +65088,25 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.6,
+      "saltVariation": {
+        "ec": 5,
+        "level": "slightly saline",
+        "landform": "on hillsides"
+      },
+      "omAvg": 1.7,
+      "farmland": {
+        "prime": 89,
+        "primeIfIrrigated": 89,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 6,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -61474,7 +65215,24 @@
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 2.7,
+      "farmland": {
+        "prime": 68,
+        "primeIfIrrigated": 68,
+        "statewide": 21
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 14,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 9,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -61567,6 +65325,27 @@
       "awcDesc": "moderate water retention",
       "awcVariation": {
         "awc": 0.07,
+        "landform": "in low spots"
+      },
+      "ecAvg": 0.7,
+      "saltVariation": {
+        "ec": 2.1,
+        "level": "very slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 1.1,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 12,
+        "landform": "in low spots"
+      },
+      "flooding": {
+        "pct": 12,
         "landform": "in low spots"
       }
     },
@@ -61734,7 +65513,24 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.3,
+      "saltVariation": null,
+      "omAvg": 3.3,
+      "farmland": {
+        "prime": 59,
+        "primeIfIrrigated": 59,
+        "statewide": 29
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 25,
+        "landform": "on foothill slopes"
+      },
+      "flooding": {
+        "pct": 36,
+        "landform": null
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382625",
     "schools": {
@@ -62243,7 +66039,24 @@
       "drainageVariation": null,
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.4,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 54,
+        "primeIfIrrigated": 54,
+        "statewide": 5
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 13,
+        "landform": "in low spots"
+      },
+      "flooding": {
+        "pct": 11,
+        "landform": "in low spots"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361149",
     "schools": {
@@ -63081,7 +66894,25 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.9,
+      "saltVariation": {
+        "ec": 10,
+        "level": "moderately saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 82
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 18,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -63254,7 +67085,18 @@
       "awcVariation": {
         "awc": 0.09,
         "landform": "on ridges"
-      }
+      },
+      "ecAvg": 1.6,
+      "saltVariation": null,
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 8
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440067",
     "schools": null,
@@ -63403,7 +67245,18 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 99
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1383630",
     "schools": null,
@@ -63576,7 +67429,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.6,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 100,
+        "primeIfIrrigated": 100,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440068",
     "schools": null,
@@ -63665,7 +67529,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 4.3,
+      "farmland": {
+        "prime": 65,
+        "primeIfIrrigated": 65,
+        "statewide": 35
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 35,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -63844,7 +67722,18 @@
       "drainageVariation": null,
       "awcAvg": 0.1,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.4,
+      "saltVariation": null,
+      "omAvg": 2.1,
+      "farmland": {
+        "prime": 78,
+        "primeIfIrrigated": 78,
+        "statewide": 14
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -64008,7 +67897,18 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 9.6,
+      "saltVariation": null,
+      "omAvg": 1.2,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 97
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -64092,7 +67992,21 @@
       "drainageVariation": null,
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.6,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 64,
+        "primeIfIrrigated": 64,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 34,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -64482,7 +68396,18 @@
       "drainageVariation": null,
       "awcAvg": 0.21,
       "awcDesc": "very high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.5,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384185",
     "schools": {
@@ -64698,7 +68623,22 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.4,
+      "saltVariation": {
+        "ec": 6.6,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 72,
+        "primeIfIrrigated": 72,
+        "statewide": 19
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -65273,7 +69213,18 @@
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 1.3,
+      "farmland": {
+        "prime": 98,
+        "primeIfIrrigated": 98,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384356",
     "schools": null,
@@ -65419,7 +69370,18 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.9,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 42
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -65548,7 +69510,21 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 5.2,
+      "saltVariation": null,
+      "omAvg": 0.5,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 30
+      },
+      "bedrock": {
+        "pct": 21,
+        "landform": "on plains"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -65687,7 +69663,21 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 100,
+        "landform": "in canyons"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -65812,7 +69802,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 2.9,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 100
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384818",
     "schools": {
@@ -66391,7 +70392,21 @@
       "drainageVariation": null,
       "awcAvg": 0.1,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.7,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 19,
+        "primeIfIrrigated": 19,
+        "statewide": 0
+      },
+      "bedrock": {
+        "pct": 21,
+        "landform": "on mountain slopes"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384840",
     "schools": {
@@ -66501,7 +70516,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 1.5,
+      "farmland": {
+        "prime": 99,
+        "primeIfIrrigated": 99,
+        "statewide": 1
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -66621,7 +70647,18 @@
       },
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 2.6,
+      "farmland": {
+        "prime": 22,
+        "primeIfIrrigated": 22,
+        "statewide": 74
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384964",
     "schools": {
@@ -66845,7 +70882,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.7,
+      "saltVariation": null,
+      "omAvg": 2,
+      "farmland": {
+        "prime": 62,
+        "primeIfIrrigated": 62,
+        "statewide": 11
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1384976",
     "schools": null,
@@ -67005,6 +71053,20 @@
       "awcVariation": {
         "awc": 0.09,
         "landform": "on floodplains"
+      },
+      "ecAvg": 2.1,
+      "saltVariation": null,
+      "omAvg": 1.1,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 16,
+        "landform": "on foothill slopes"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1385038",
@@ -67214,7 +71276,21 @@
       },
       "awcAvg": 0.08,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 0.3,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 7,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -67326,7 +71402,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.9,
+      "saltVariation": null,
+      "omAvg": 3.5,
+      "farmland": {
+        "prime": 75,
+        "primeIfIrrigated": 75,
+        "statewide": 25
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -67618,7 +71705,25 @@
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 2.4,
+      "saltVariation": {
+        "ec": 5,
+        "level": "slightly saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 1.1,
+      "farmland": {
+        "prime": 72,
+        "primeIfIrrigated": 72,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 5,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1385847",
     "schools": {
@@ -68099,7 +72204,22 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.6,
+      "saltVariation": {
+        "ec": 10,
+        "level": "moderately saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 2.2,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 100
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1385851",
     "schools": {
@@ -68225,7 +72345,18 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 19,
+        "primeIfIrrigated": 19,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440336",
     "schools": null,
@@ -68336,7 +72467,25 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.7,
+      "saltVariation": {
+        "ec": 4.4,
+        "level": "slightly saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 41
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 34,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": {
@@ -68493,7 +72642,27 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.8,
+      "saltVariation": null,
+      "omAvg": 0.6,
+      "farmland": {
+        "prime": 25,
+        "primeIfIrrigated": 25,
+        "statewide": 3
+      },
+      "bedrock": {
+        "pct": 35,
+        "landform": "on mountain slopes"
+      },
+      "waterTable": {
+        "pct": 15,
+        "landform": "in low spots"
+      },
+      "flooding": {
+        "pct": 15,
+        "landform": "in low spots"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -68659,7 +72828,18 @@
       "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.8,
+      "saltVariation": null,
+      "omAvg": 1,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 99
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -68767,7 +72947,24 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": null,
+      "omAvg": 3.9,
+      "farmland": {
+        "prime": 83,
+        "primeIfIrrigated": 83,
+        "statewide": 17
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 24,
+        "landform": "on benches above streams"
+      },
+      "flooding": {
+        "pct": 24,
+        "landform": "on benches above streams"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386287",
     "schools": null,
@@ -68867,7 +73064,21 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.3,
+      "saltVariation": null,
+      "omAvg": 5.8,
+      "farmland": {
+        "prime": 17,
+        "primeIfIrrigated": 17,
+        "statewide": 75
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 75,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -69069,7 +73280,21 @@
       "drainageVariation": null,
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.4,
+      "saltVariation": null,
+      "omAvg": 0.8,
+      "farmland": {
+        "prime": 58,
+        "primeIfIrrigated": 58,
+        "statewide": 5
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 5,
+        "landform": "in low spots"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386526",
     "schools": {
@@ -69347,7 +73572,18 @@
       "drainageVariation": null,
       "awcAvg": 0.08,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.2,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 8,
+        "primeIfIrrigated": 8,
+        "statewide": 62
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -69515,7 +73751,21 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.3,
+      "saltVariation": null,
+      "omAvg": 1.2,
+      "farmland": {
+        "prime": 79,
+        "primeIfIrrigated": 79,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 9,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386866",
     "schools": {
@@ -69665,7 +73915,18 @@
       "drainageVariation": null,
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.1,
+      "saltVariation": null,
+      "omAvg": 3.1,
+      "farmland": {
+        "prime": 61,
+        "primeIfIrrigated": 61,
+        "statewide": 39
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386893",
     "schools": {
@@ -69847,6 +74108,23 @@
       "awcVariation": {
         "awc": 0.07,
         "landform": "on foothill slopes"
+      },
+      "ecAvg": 18.6,
+      "saltVariation": null,
+      "omAvg": 0.6,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 78,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 64,
+        "landform": "on old lakeshore benches"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386908",
@@ -69998,6 +74276,27 @@
       "awcVariation": {
         "awc": 0.1,
         "landform": "on old lake bottoms"
+      },
+      "ecAvg": 6.7,
+      "saltVariation": {
+        "ec": 46.7,
+        "level": "strongly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 5.5,
+      "farmland": {
+        "prime": 32,
+        "primeIfIrrigated": 32,
+        "statewide": 25
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 45,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 44,
+        "landform": "on old lakeshore benches"
       }
     },
     "postOfficeUrl": "",
@@ -70140,7 +74439,21 @@
       },
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 4.9,
+      "saltVariation": null,
+      "omAvg": 1.8,
+      "farmland": {
+        "prime": 37,
+        "primeIfIrrigated": 37,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 18,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -70368,7 +74681,22 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.5,
+      "saltVariation": {
+        "ec": 3.9,
+        "level": "very slightly saline",
+        "landform": "on old lake bottoms"
+      },
+      "omAvg": 2.3,
+      "farmland": {
+        "prime": 78,
+        "primeIfIrrigated": 78,
+        "statewide": 12
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1387070",
     "schools": {
@@ -71467,7 +75795,28 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.2,
+      "saltVariation": {
+        "ec": 8.6,
+        "level": "moderately saline",
+        "landform": "on benches above streams"
+      },
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 64,
+        "primeIfIrrigated": 64,
+        "statewide": 24
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 14,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 7,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -71552,7 +75901,21 @@
       },
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.8,
+      "saltVariation": null,
+      "omAvg": 1.9,
+      "farmland": {
+        "prime": 70,
+        "primeIfIrrigated": 70,
+        "statewide": 4
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 11,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -71762,6 +76125,20 @@
       "awcDesc": "moderate water retention",
       "awcVariation": {
         "awc": 0.18,
+        "landform": "on floodplains"
+      },
+      "ecAvg": 10.8,
+      "saltVariation": null,
+      "omAvg": 2.5,
+      "farmland": {
+        "prime": 34,
+        "primeIfIrrigated": 34,
+        "statewide": 39
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 10,
         "landform": "on floodplains"
       }
     },
@@ -72955,7 +77332,21 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 5.7,
+      "saltVariation": null,
+      "omAvg": 1.8,
+      "farmland": {
+        "prime": 50,
+        "primeIfIrrigated": 50,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 26,
+        "landform": "on foothill slopes"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -73070,7 +77461,18 @@
       "drainageVariation": null,
       "awcAvg": 0.07,
       "awcDesc": "low water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 2.4,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -73208,7 +77610,21 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 66
+      },
+      "bedrock": {
+        "pct": 31,
+        "landform": "on mesas"
+      },
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -73372,7 +77788,28 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.2,
+      "saltVariation": {
+        "ec": 2,
+        "level": "very slightly saline",
+        "landform": "on foothill slopes"
+      },
+      "omAvg": 2,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 38,
+        "landform": "on floodplains"
+      },
+      "flooding": {
+        "pct": 55,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1387567",
     "schools": {
@@ -73565,7 +78002,28 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1.6,
+      "saltVariation": {
+        "ec": 5,
+        "level": "slightly saline",
+        "landform": "on floodplains"
+      },
+      "omAvg": 3.7,
+      "farmland": {
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 31
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 33,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 16,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1387713",
     "schools": {
@@ -73723,7 +78181,21 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 3,
+      "farmland": {
+        "prime": 67,
+        "primeIfIrrigated": 67,
+        "statewide": 33
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": {
+        "pct": 33,
+        "landform": "on floodplains"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -73811,7 +78283,21 @@
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 5.8,
+      "farmland": {
+        "prime": 38,
+        "primeIfIrrigated": 38,
+        "statewide": 62
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 62,
+        "landform": "on benches above streams"
+      },
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -73907,7 +78393,18 @@
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 0.5,
+      "saltVariation": null,
+      "omAvg": 2.8,
+      "farmland": {
+        "prime": 80,
+        "primeIfIrrigated": 80,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -74039,7 +78536,18 @@
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 3.2,
+      "farmland": {
+        "prime": 89,
+        "primeIfIrrigated": 89,
+        "statewide": 0
+      },
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1388222",
     "schools": {
@@ -74171,7 +78679,24 @@
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
-      "awcVariation": null
+      "awcVariation": null,
+      "ecAvg": 3.7,
+      "saltVariation": null,
+      "omAvg": 4.5,
+      "farmland": {
+        "prime": 42,
+        "primeIfIrrigated": 42,
+        "statewide": 6
+      },
+      "bedrock": null,
+      "waterTable": {
+        "pct": 24,
+        "landform": "on old lakeshore benches"
+      },
+      "flooding": {
+        "pct": 26,
+        "landform": "on old lakeshore benches"
+      }
     },
     "postOfficeUrl": "",
     "schools": {

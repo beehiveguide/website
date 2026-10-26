@@ -3,7 +3,9 @@
 Writes sources/usda/ssurgo/town_soils.json: for every Census place boundary
 (cities, towns and census-designated places),
 the soil components that fall inside it, with their acres in town and the
-surface-horizon values 08c_soil.js needs. Everything outside the town
+surface-horizon values 08c_soil.js needs (texture, pH, water capacity,
+organic matter, salinity) and map unit limits (farmland class, bedrock and
+water table depth, flooding). Everything outside the town
 boundaries is left out, so the big geodatabase isn't needed after this runs.
 
 Run by hand (not part of npm run build), from the website folder:
@@ -47,7 +49,10 @@ def table(name, cols):
     return pyogrio.read_dataframe(gdb, layer=name, columns=cols, read_geometry=False)
 
 mukeys = set(town_mu.MUKEY)
-mapunit = table("mapunit", ["mukey", "muname"])
+mapunit = table("mapunit", ["mukey", "muname", "farmlndcl"])
+# Map unit limits: shallowest bedrock and water table (cm), main flooding frequency
+muagg = table("muaggatt", ["mukey", "brockdepmin", "wtdepannmin", "flodfreqdcd"])
+mapunit = mapunit.merge(muagg, on="mukey", how="left")
 comp = table("component", ["mukey", "cokey", "compname", "comppct_r", "compkind", "majcompflag",
                            "slope_l", "slope_r", "slope_h", "drainagecl", "geomdesc"])
 comp = comp[comp.mukey.isin(mukeys)]
@@ -62,7 +67,8 @@ landform = dict(zip(geo.cokey, geo.geomfname))
 # Surface horizon: the top mineral horizon with a pH and water capacity.
 # Organic (O) horizons are leaf litter on top of the soil, so they're skipped.
 hz = table("chorizon", ["cokey", "chkey", "hzname", "desgnmaster", "hzdept_r", "hzdepb_r",
-                        "ph1to1h2o_l", "ph1to1h2o_r", "ph1to1h2o_h", "awc_r"])
+                        "ph1to1h2o_l", "ph1to1h2o_r", "ph1to1h2o_h", "awc_r",
+                        "om_r", "ec_r"])
 hz = hz[hz.cokey.isin(cokeys) & hz.ph1to1h2o_r.notna() & hz.awc_r.notna()]
 organic = (hz.desgnmaster == "O") | hz.hzname.fillna("").str.match(r"^\d*O")
 hz = hz[~organic]
@@ -93,6 +99,12 @@ for (name, gnis, fips), group in town_mu.groupby(["NAME", "GNIS", "FIPS"]):
                 "texture": val(c.texdesc),
                 "ph": [val(c.ph1to1h2o_l), val(c.ph1to1h2o_r), val(c.ph1to1h2o_h)],
                 "awc": val(c.awc_r),
+                "om": val(c.om_r),  # organic matter, % by weight
+                "ec": val(c.ec_r),  # salinity, dS/m
+                "farmland": c.farmlndcl,
+                "bedrockCm": val(c.brockdepmin),
+                "waterTableCm": val(c.wtdepannmin),
+                "flooding": c.flodfreqdcd,
             })
     out.append({"name": name, "gnis": gnis, "fips": fips,
                 "townAcres": round(float(town_area[(name, gnis, fips)]), 1),

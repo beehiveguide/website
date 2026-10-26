@@ -23,4 +23,12 @@ const awcWord = (a) =>
   a < 0.05 ? "very low" : a < 0.1 ? "low" : a < 0.15 ? "moderate" : a < 0.2 ? "high" : "very high";
 const awcDesc = (a) => `${awcWord(a)} ${a < 0.15 ? "water retention" : "water capacity"}`;
 
-module.exports = { phLevel, awcWord, awcDesc };
+// NRCS salinity classes, by electrical conductivity (dS/m)
+const saltLevel = (ec) =>
+  ec < 2 ? "nonsaline" : ec < 4 ? "very slightly saline" : ec < 8 ? "slightly saline" : ec < 16 ? "moderately saline" : "strongly saline";
+
+// Organic matter classes (% by weight), as used in USDA county soil survey reports
+const omLevel = (om) =>
+  om < 0.5 ? "very low" : om < 1 ? "low" : om < 2 ? "moderately low" : om < 4 ? "moderate" : om < 8 ? "high" : "very high";
+
+module.exports = { phLevel, awcWord, awcDesc, saltLevel, omLevel };

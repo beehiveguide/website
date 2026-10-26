@@ -107,7 +107,7 @@ const source = (items, key, prefix = "") => {
 // Info. Only towns with a UGRC boundary have soil data.
 const listText = (items) =>
   items.length < 2 ? items.join("") : `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
-const { phLevel, awcWord } = require("./lib/soil_words");
+const { phLevel, saltLevel, omLevel } = require("./lib/soil_words");
 function soilHtml(t) {
   const s = t.soil;
   if (!s) return "";
@@ -161,22 +161,64 @@ function soilHtml(t) {
   // Outliers run against the sentence before, so they start with "However,"
   const outliers = clauses.length ? ` However, ${esc(clauses.join(", and "))}.` : "";
   // The opening says where the town's gardenable (0-8% slope) land lies, from
-  // 08c_soil.js: "Slopes suitable for gardening in Hanksville lie mostly in
+  // 08c_soil.js: "Slopes suitable for cultivation lie mostly in
   // the foothills, with soils including...". Spread-out towns: "Slopes
-  // suitable for gardening in Moab have soils including...".
+  // suitable for cultivation have soils including...".
   // "In the foothills" and "on mountainsides" keep "slopes" from repeating.
   const OPENING_WORDS = { "on foothill slopes": "in the foothills", "on mountain slopes": "on mountainsides" };
   const forms = s.arableForms.map((f) => OPENING_WORDS[f] || f);
   const opening = forms.length
-    ? `Slopes suitable for gardening in ${esc(t.name)} lie mostly ${esc(forms.join(" and ").replace(/ and (on|in) /, " and "))}, with soils including`
-    : `Slopes suitable for gardening in ${esc(t.name)} have soils including`;
+    ? `Slopes suitable for cultivation lie mostly ${esc(forms.join(" and ").replace(/ and (on|in) /, " and "))}, with soils including`
+    : `Slopes suitable for cultivation have soils including`;
+  // Salt, organic matter, farmland rating and limits.
+  // Percentages are shares of the slopes suitable for cultivation.
+  const mostly = (p) => (p.landform ? `, mostly ${esc(p.landform)}` : "");
+  const chem = [], farm = [], bedrockText = [], wet = [];
+  if (s.ecAvg !== null && s.omAvg !== null) {
+    const sv = s.saltVariation;
+    chem.push(
+      `Topsoil is typically ${saltLevel(s.ecAvg)}${sv ? `, but ${sv.level} ${esc(sv.landform)}` : ""}, with ${omLevel(s.omAvg)} organic matter (${s.omAvg.toFixed(1)}%).`,
+    );
+  }
+  const f = s.farmland;
+  const about = (pct) => (pct >= 95 ? "Nearly all" : `About ${pct}%`);
+  if (f.prime > 0) {
+    const prime = f.primeIfIrrigated >= f.prime * 0.8 ? "prime farmland if irrigated" : "prime farmland";
+    farm.push(
+      `${about(f.prime)} of this land rates as ${prime}${f.statewide >= 10 ? `, and ${f.statewide}% as farmland of statewide importance` : ""}.`,
+    );
+  } else if (f.statewide > 0) {
+    farm.push(`${about(f.statewide)} of this land rates as farmland of statewide importance.`);
+  }
+  if (s.bedrock) bedrockText.push(`Bedrock lies within 20 inches on about ${s.bedrock.pct}%${mostly(s.bedrock)}.`);
+  // A high water table and flooding in the same place share a sentence
+  const wt = s.waterTable, fl = s.flooding;
+  if (wt && fl && wt.landform && wt.landform === fl.landform && Math.abs(wt.pct - fl.pct) <= 5)
+    wet.push(`About ${Math.max(wt.pct, fl.pct)}%${mostly(wt)}, has a high water table (within 2 feet) and floods occasionally or more often.`);
+  else {
+    if (wt) wet.push(`A high water table (within 2 feet) affects about ${wt.pct}%${mostly(wt)}.`);
+    if (fl) wet.push(`About ${fl.pct}% floods occasionally or more often${mostly(fl)}.`);
+  }
+
   // Built-over towns end with how much was left out (urban land has no soil data)
   const urban = s.urbanPct >= 15 ? ` About ${s.urbanPct}% of ${esc(t.name)} is built over and not included.` : "";
   // Soil covers arable terrain only, 0-8% slope (08c_soil.js).
   // Left out for now; add back after the textures and "water retention":
   //   " (0&ndash;8% slope)"   `(${s.awcAvg.toFixed(2)} in./in.)`
+  // One paragraph: where and what the soil is, bedrock, pH, salt and organic
+  // matter, then water (drainage, retention, water table, flooding), with the
+  // farmland rating last as a summary
+  const sentences = [
+    `${opening} ${textures}.`,
+    ...bedrockText,
+    `Estimated topsoil ${phSubject}, ${phText}.`,
+    ...chem,
+    `These soils are mostly ${esc(s.drainage)} with ${s.awcDesc}.${outliers}`,
+    ...wet,
+    ...farm,
+  ];
   return `<h3 class="soil-heading h4 mt-4 mb-2">Soil Properties</h3>
-    <p class="mb-0">${opening} ${textures}. Estimated topsoil ${phSubject}, ${phText}. Soils are mostly ${esc(s.drainage)} with ${s.awcDesc}.${outliers}${urban}</p>`;
+    <p class="mb-0">${sentences.join(" ")}${urban}</p>`;
 }
 
 // Sources only appear for data the page shows, and their bold label
@@ -724,7 +766,7 @@ function buildPage(t) {
   );
 
   // Leave out anything not available: drop its line, then adjust or drop the
-  // climate normals note, then drop the whole Gardening Info section if empty.
+  // climate normals note, then drop the whole Growing Info section if empty.
   html = html.replace(new RegExp(`\\s*<li>[^\\n]*${NA}[^\\n]*</li>`, "g"), "");
 
   if (t.precipIn === null && t.freezeFreeDays === undefined) {
@@ -745,7 +787,7 @@ function buildPage(t) {
   }
 
   html = html.replace(
-    /\s*<section class="gardening[^"]*">\s*<h2[^>]*>Gardening Info<\/h2>\s*<ul class="list-unstyled mb-0">\s*<\/ul>\s*<\/section>/,
+    /\s*<section class="gardening[^"]*">\s*<h2[^>]*>Growing Info<\/h2>\s*<ul class="list-unstyled mb-0">\s*<\/ul>\s*<\/section>/,
     "",
   );
   // Soil but no climate lines: drop the empty list above the soil text

@@ -13,7 +13,7 @@
 const fs = require("fs");
 const paths = require("./lib/paths");
 const { nameKey } = require("./lib/communities");
-const { phLevel, awcWord, awcDesc } = require("./lib/soil_words");
+const { phLevel, awcWord, awcDesc, saltLevel } = require("./lib/soil_words");
 
 const MAX_SLOPE = 8; // percent; "arable terrain"
 const MIN_ARABLE_ACRES = 10; // towns with less arable land get no soil text
@@ -24,6 +24,10 @@ const LANDFORM_SHARE = 0.05; // a landform must cover 5% of arable acres to be n
 const TEXTURE_LANDFORM_SHARE = 0.5; // a texture names its main landform when half its acres are on it
 const MAIN_FORM_SHARE = 0.6; // place notes only when one landform holds 60% of arable acres
 const AWC_DIFF = 0.05;
+const LIMIT_SHARE = 0.1; // shallow bedrock or a high water table is noted on 10% of arable acres or more
+const FLOOD_SHARE = 0.05; // occasional or more frequent flooding is noted on 5% or more
+const BEDROCK_CM = 51; // 20 inches
+const WATER_TABLE_CM = 61; // 2 feet
 const OUTLIER_SHARE = 0.25; // pH extremes are noted when they cover under 25% of arable acres // in./in. from the town average to count as a drop or spike
 
 const towns = paths.readJson(paths.source("usda", "ssurgo", "town_soils.json"));
@@ -163,6 +167,43 @@ for (const town of towns) {
       awcVariation = { awc: round(awc, 2), landform: l.k };
   }
 
+  // Salinity and organic matter (topsoil, area-weighted)
+  const withEc = arable.filter((c) => c.ec !== null);
+  const ecAvg = withEc.length ? wavg(withEc, (c) => c.ec) : null;
+  let saltVariation = null;
+  if (ecAvg !== null)
+    for (const l of landforms) {
+      if (l.share < LANDFORM_SHARE) continue;
+      const list = l.list.filter((c) => c.ec !== null);
+      if (!list.length) continue;
+      const ec = wavg(list, (c) => c.ec);
+      if (ec > ecAvg && saltLevel(ec) !== saltLevel(ecAvg) &&
+          (!saltVariation || ec > saltVariation.ec))
+        saltVariation = { ec: round(ec, 1), level: saltLevel(ec), landform: l.k };
+    }
+  const withOm = arable.filter((c) => c.om !== null);
+  const omAvg = withOm.length ? round(wavg(withOm, (c) => c.om), 1) : null;
+
+  // Share of arable acres matching a test, and the landform most of it is on
+  // (when half or more is on one)
+  const part = (test) => {
+    const list = arable.filter(test);
+    const acres = list.reduce((s, c) => s + c.acres, 0);
+    const forms = {};
+    for (const c of list) if (c.landform) forms[c.landform] = (forms[c.landform] || 0) + c.acres;
+    const [form, formAcres] = Object.entries(forms).sort((a, b) => b[1] - a[1])[0] || [];
+    return { pct: Math.round((100 * acres) / total), landform: form && formAcres / acres >= 0.5 ? form : null };
+  };
+  const farmland = {
+    prime: part((c) => /^(prime|all areas are prime)/i.test(c.farmland || "")).pct,
+    primeIfIrrigated: part((c) => /^prime farmland if irrigated/i.test(c.farmland || "")).pct,
+    statewide: part((c) => /^farmland of statewide/i.test(c.farmland || "")).pct,
+  };
+  const keep = (p, min) => (p.pct >= min * 100 ? p : null);
+  const bedrock = keep(part((c) => c.bedrockCm !== null && c.bedrockCm < BEDROCK_CM), LIMIT_SHARE);
+  const waterTable = keep(part((c) => c.waterTableCm !== null && c.waterTableCm < WATER_TABLE_CM), LIMIT_SHARE);
+  const flooding = keep(part((c) => /^(occasional|frequent|very frequent)$/i.test(c.flooding || "")), FLOOD_SHARE);
+
   output[id] = {
     town: town.name,
     arableAcres: Math.round(total),
@@ -191,6 +232,13 @@ for (const town of towns) {
     awcAvg: round(awcAvg, 2),
     awcDesc: awcDesc(awcAvg),
     awcVariation,
+    ecAvg: ecAvg === null ? null : round(ecAvg, 1),
+    saltVariation,
+    omAvg,
+    farmland,
+    bedrock, // { pct, landform } with bedrock within 20 in., or null
+    waterTable, // { pct, landform } with a water table within 2 ft., or null
+    flooding, // { pct, landform } flooding occasionally or more often, or null
   };
 }
 
