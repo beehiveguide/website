@@ -718,6 +718,11 @@ a.marker-link:focus {
   font-weight: 700;
   text-decoration: underline;
 }
+/* "Mobile:" after the pipe, and "Prefixes:" with one area code, in the open
+   box: underlined, not bold */
+.prefix-reveal.is-open .mobile-label {
+  text-decoration: underline;
+}
 /* Text in the open box turns the regular text color for contrast on the
    gray gradient */
 .prefix-reveal.is-open .text-secondary,
@@ -1007,6 +1012,10 @@ a.marker-link:focus {
 }
 .schools-table {
   margin-bottom: 0;
+}
+/* Header row: the same light gray line as the other rows, but thicker */
+.schools-table > :not(:last-child) > :last-child > * {
+  border-bottom: 2px solid #dee2e6;
 }
 
 /* Coordinates link: primary color, dark on hover like the community links */

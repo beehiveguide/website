@@ -955,7 +955,18 @@ function schoolsHtml(t) {
   const higherText = higher.length
     ? `${listText(higher.map(nameLink))} ${higher.length > 1 ? "are" : "is"} located in ${placeWord(t)}.`
     : "";
-  const out = { k12: "", higher: higherText ? `<p>${higherText}</p>` : "", count: all.length };
+  // The town's grade range for the heading: "Kindergarten–5th Grade",
+  // "Prekindergarten–12th Grade"
+  const lows = all.map((x) => x.low).filter(Boolean), highs = all.map((x) => x.high).filter(Boolean);
+  const lowest = lows.sort((a, b) => gradeNum(a) - gradeNum(b))[0];
+  const highest = highs.sort((a, b) => gradeNum(b) - gradeNum(a))[0];
+  const headWord = (g) => (g === "PK" ? "Prekindergarten" : g === "K" ? "Kindergarten" : `${ordinal(Number(g))} Grade`);
+  const range = !lowest
+    ? ""
+    : lowest === highest
+      ? headWord(lowest)
+      : `${headWord(lowest).replace(/ Grade$/, "")}&ndash;${headWord(highest)}`;
+  const out = { k12: "", higher: higherText ? `<p>${higherText}</p>` : "", count: all.length, range };
   if (!all.length) return out;
   const NOUNS = {
     Preschool: ["preschool", "preschools"], Elementary: ["elementary school", "elementary schools"],
@@ -979,7 +990,9 @@ function schoolsHtml(t) {
   const levels = levelsOf(all);
   // "Roosevelt has four elementary schools, one middle school and one high school."
   // "The city of Logan", "The town of Alta"; other places go by name
-  const townHas = `${t.placeType === "city" || t.placeType === "town" ? `The ${t.placeType} of ` : ""}${esc(t.name)} has`;
+  // "Bear River City" and "Big Water Town" already say it
+  const sayType = (t.placeType === "city" || t.placeType === "town") && !/ (City|Town)$/i.test(t.name);
+  const townHas = `${sayType ? `The ${t.placeType} of ` : ""}${esc(t.name)} has`;
   const levelTally = `${townHas} ${listText(levels)}.`;
   // A tally leads when any level has more than one school
   const showTally = [...tally((x) => x.level).values()].some((n) => n > 1);
@@ -1103,7 +1116,7 @@ function servicesHtml(t) {
     // "Library" or "Libraries", "School" or "Schools", by how many there are
     [((t.places && t.places.libraries) || []).length > 1 ? "Libraries" : "Library", "libraries", libraryHtml(t)],
     [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t)],
-    [`School${schools.count === 1 ? "" : "s"} (Prekindergarten&ndash;12th Grade)`, "schools", schools.k12],
+    [`School${schools.count === 1 ? "" : "s"}${schools.range ? ` (${schools.range})` : ""}`, "schools", schools.k12],
     ["Higher Education", "colleges", schools.higher],
     ["Health Care", "hospitals", p(hospitalText(t))],
   ].filter(([, , body]) => body);
@@ -1186,10 +1199,13 @@ function buildPage(t) {
     const long = total > site.prefixReveal;
     const line = (code, list, mobile) => {
       // The area code label ("801 Prefixes:") is bold in the open box; a
-      // "Mobile:" after the pipe isn't, unless it starts the line
+      // "Mobile:" after the pipe isn't, unless it starts the line; it's only
+      // underlined there (mobile-label)
       const em = (text, bold) => `<em${codes.length > 1 && bold ? ' class="prefix-label"' : ""}>${text}</em>`;
       const mobLabel = `${!list && codes.length > 1 ? `${esc(code)} ` : ""}Mobile:`;
-      const parts = [list && `${em(label(code, list), true)} ${esc(list)}`, mobile && `${em(mobLabel, !list)} ${esc(mobile)}`];
+      // One area code: "Prefixes:" is underlined (not bold) in the open box too
+      const prefixEm = codes.length > 1 ? em(label(code, list), true) : `<em class="mobile-label">${label(code, list)}</em>`;
+      const parts = [list && `${prefixEm} ${esc(list)}`, mobile && `${em(mobLabel, !list).replace("<em", list ? '<em class="mobile-label"' : "<em")} ${esc(mobile)}`];
       return `<small class="text-secondary font-sans">${parts.filter(Boolean).join(' <span aria-hidden="true">|</span> ')}</small>`;
     };
     // In the fold-out box each group is its own block with a little space
