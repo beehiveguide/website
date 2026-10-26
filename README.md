@@ -150,7 +150,7 @@ Notes:
   4. Move the `.gdb` and `.7z` to `trash/`, then build.
 
   How the soil paragraph works (`08c_soil.js` makes `build/soil.json`; `10_pages.js` writes the text; limits are at the top of `08c_soil.js`):
-  - Only soils with a 0-8% representative slope count ("slopes suitable for cultivation"), weighted by acres in town. Edge slivers under 1% are left out. Towns with under 10 such acres get no paragraph.
+  - Only soils with a 0-8% representative slope count ("slopes most suitable for cultivation"), weighted by acres in town. Edge slivers under 1% are left out. Towns with under 10 such acres get no paragraph.
   - Topsoil is the top mineral layer. Leaf litter (O horizons) is skipped in `clip_ssurgo.py`.
   - Textures: up to 3 that cover 10% or more. The opening names where the land lies: one landform with 60% or more, or the top two when together they hold 60%.
   - pH: area-weighted average, with the range from the lowest low and highest high. Levels are the NRCS soil reaction classes. The end with more land is named first.

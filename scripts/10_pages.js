@@ -164,7 +164,7 @@ function soilHtml(t) {
   // Outliers run against the sentence before, so they start with "However,"
   const outliers = clauses.length ? ` However, ${esc(clauses.join(", and "))}.` : "";
   // The opening says where the town's gardenable (0-8% slope) land lies, from
-  // 08c_soil.js: "Slopes suitable for cultivation lie mostly in
+  // 08c_soil.js: "Slopes most suitable for cultivation lie primarily in
   // the foothills, with soils including...". Spread-out towns: "Slopes
   // suitable for cultivation have soils including...".
   // "In the foothills" and "on mountainsides" keep "slopes" from repeating.
@@ -178,10 +178,10 @@ function soilHtml(t) {
     return pa === pb && (pa === "on" || pa === "in") ? `${a} and ${b.slice(pb.length + 1)}` : `${a} and ${b}`;
   };
   const opening = forms.length
-    ? `Slopes suitable for cultivation lie mostly ${esc(joinPlaces(forms))}, with soils including`
-    : `Slopes suitable for cultivation have soils including`;
+    ? `Slopes most suitable for cultivation lie primarily ${esc(joinPlaces(forms))}, with soils including`
+    : `Slopes most suitable for cultivation have soils including`;
   // Salt, organic matter, farmland rating and limits.
-  // Percentages are shares of the slopes suitable for cultivation.
+  // Percentages are shares of the slopes most suitable for cultivation.
   const mostly = (p) => (p.landform ? `, mostly ${esc(p.landform)}` : "");
   const chem = [], farm = [], bedrockText = [], wet = [];
   if (s.ecAvg !== null && s.omAvg !== null) {
