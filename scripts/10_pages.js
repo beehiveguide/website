@@ -1022,7 +1022,7 @@ function schoolsHtml(t) {
         // "East School (PK-5) and Union High (9-12) are in the Duchesne County
         // School District."
         if (group[0].leaType === "District")
-          return `${names} ${group.length === 1 ? "is" : "are"} located in the ${nameLink({ name: kind, url: group[0].leaUrl })}.`;
+          return `${names} ${group.length === 1 ? "is" : "are"} part of the ${nameLink({ name: kind, url: group[0].leaUrl })}.`;
         const label = kind === "Charter" ? "charter" : kind === "Private" ? "private" : "other";
         return group.length === 1 ? `${names} is a ${label} school.` : `${capFirst(label)} schools are ${names}.`;
       });
@@ -1031,7 +1031,7 @@ function schoolsHtml(t) {
     // it has a K–12 school, Terra Academy (K–12), which is a charter school."
     const which = (x) =>
       x.leaType === "District"
-        ? `which is located in the ${nameLink({ name: x.kind, url: x.leaUrl })}`
+        ? `which is part of the ${nameLink({ name: x.kind, url: x.leaUrl })}`
         : `which is a ${x.kind === "Charter" ? "charter" : x.kind === "Private" ? "private" : "other"} school`;
     // Up to SCHOOL_ONE_PARAGRAPH schools: one paragraph. More: a paragraph
     // for elementary and one for middle and high schools, each led in bold.
@@ -1044,12 +1044,12 @@ function schoolsHtml(t) {
         out.k12 = `<p>${townHas} one school, ${item(all[0])}, ${which(all[0])}.</p>`;
       // All in one district (or all charter, or all private): one sentence,
       // "The city of Beaver has three schools, A (pre-K), B (K–6) and C
-      // (7–12), which are located in the Beaver County School District."
+      // (7–12), which are part of the Beaver County School District."
       else if (new Set(all.map((x) => x.kind)).size === 1) {
         const x = all[0];
         const where =
           x.leaType === "District"
-            ? `located in the ${nameLink({ name: x.kind, url: x.leaUrl })}`
+            ? `part of the ${nameLink({ name: x.kind, url: x.leaUrl })}`
             : `${x.kind === "Charter" ? "charter" : x.kind === "Private" ? "private" : "other"} schools`;
         const count = showTally ? listText(levels) : plural(all.length, "school");
         out.k12 = `<p>${townHas} ${count}: ${listText(all.map(item))}, which are ${where}.</p>`;
