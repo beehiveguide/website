@@ -101,7 +101,10 @@ const source = (items, key, prefix = "") => {
   // "url" in sources.json is where the data was downloaded; "publicUrl" (when
   // set) is the public-facing page readers are sent to instead.
   const href = s.publicUrl || s.url;
-  return `<strong>${items}:</strong> ${prefix}${href ? `<a href="${href}">${esc(s.name)}</a>` : esc(s.name)}`;
+  // A license (sources.json "license": { name, url }) follows after a comma:
+  // "UGRC, CC-BY-4.0"
+  const license = s.license ? `, <a href="${s.license.url}">${esc(s.license.name)}</a>` : "";
+  return `<strong>${items}:</strong> ${prefix}${href ? `<a href="${href}">${esc(s.name)}</a>` : esc(s.name)}${license}`;
 };
 // Soil paragraph (build/soil.json via 09_merge.js), under an h3 in Gardening
 // Info. Only towns with a UGRC boundary have soil data.

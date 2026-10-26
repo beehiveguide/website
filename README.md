@@ -7,7 +7,7 @@ Run every command below from this `website` folder. You need Node.js (version 18
 ## Folders
 
 - `sources/` has the raw downloads used to build the site. Each source has its own folder. When a source takes more than one download (PRISM, NOAA, GNIS search exports), those files share a subfolder.
-- `sources/sources.json` has each source's name, link and download date. Page citations use the names and links.
+- `sources/sources.json` has each source's name, link and download date. Page citations use the names and links. A source with a `license` (name and link) shows it after the name and a comma, like "UGRC, CC-BY-4.0."
 - `config/` has the files you edit by hand:
   - `site.json` holds the site name, tagline, web address, link style and phone prefix limits.
   - `excluded_places.json` lists places to leave out.

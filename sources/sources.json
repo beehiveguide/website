@@ -15,16 +15,24 @@
   "ugrcPop": {
     "name": "UGRC",
     "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/PopPlacePts2010_Approx/FeatureServer",
-    "publicUrl": "https://gis.utah.gov/",
+    "publicUrl": "https://gis.utah.gov/products/sgid/categories/",
     "folder": "ugrc/populated-places",
-    "downloaded": ""
+    "downloaded": "",
+    "license": {
+      "name": "CC-BY-4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   "ugrc": {
     "name": "UGRC",
     "url": "https://gis.utah.gov/products/sgid/",
-    "publicUrl": "https://gis.utah.gov/",
+    "publicUrl": "https://gis.utah.gov/products/sgid/categories/",
     "folder": "ugrc",
-    "downloaded": ""
+    "downloaded": "",
+    "license": {
+      "name": "CC-BY-4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
   },
   "history": {
     "name": "Origins of Utah Place Names",
