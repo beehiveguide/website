@@ -826,7 +826,28 @@ function parkParts(t) {
   if (named.length > BIG_LIST) {
     // Unnamed parks aren't mentioned under a list
     const items = named.map((p) => `<li>${esc(p.name)}</li>`).join("\n      ");
-    return { list: `<ul class="col-list">\n      ${items}\n    </ul>` };
+    // A count leads the list: "Logan has 27 parks:". When more than half have
+    // a type (UGRC's TYPE, kept as the note), the types are counted: "Logan
+    // has 27 parks, including 17 neighborhood parks, six community parks and
+    // five mini parks."
+    const types = {};
+    for (const p of named) if (p.note) types[p.note] = (types[p.note] || 0) + 1;
+    const typed = Object.values(types).reduce((a, b) => a + b, 0);
+    // Only types with two or more parks are named, to keep it short
+    const common = Object.entries(types)
+      .filter(([, n]) => n > 1)
+      .sort((a, b) => b[1] - a[1])
+      .map(([type, n]) => {
+        const word = esc(type.toLowerCase().replace(/^special use/, "special-use"));
+        return plural(n, word, /s$/.test(word) ? word : `${word}s`);
+      });
+    const lead =
+      typed > named.length / 2 && common.length
+        ? `${esc(t.name)} has ${plural(named.length, "park")}, including ${listText(common)}.`
+        : `${esc(t.name)} has ${plural(named.length, "park")}:`;
+    return {
+      list: `<p class="mb-2">${lead}</p>\n    <ul class="col-list">\n      ${items}\n    </ul>`,
+    };
   }
   const total = named.length + generic.length;
   const kinds = {};
