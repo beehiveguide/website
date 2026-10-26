@@ -955,7 +955,7 @@ function schoolsHtml(t) {
   const higherText = higher.length
     ? `${listText(higher.map(nameLink))} ${higher.length > 1 ? "are" : "is"} located in ${placeWord(t)}.`
     : "";
-  const out = { k12: "", higher: higherText ? `<p>${higherText}</p>` : "" };
+  const out = { k12: "", higher: higherText ? `<p>${higherText}</p>` : "", count: all.length };
   if (!all.length) return out;
   const NOUNS = {
     Preschool: ["preschool", "preschools"], Elementary: ["elementary school", "elementary schools"],
@@ -1100,9 +1100,10 @@ function servicesHtml(t) {
   const sections = [
     // Police and fire share a paragraph
     ["Public Safety", "police, fire", safety],
-    ["Library", "libraries", libraryHtml(t)],
+    // "Library" or "Libraries", "School" or "Schools", by how many there are
+    [((t.places && t.places.libraries) || []).length > 1 ? "Libraries" : "Library", "libraries", libraryHtml(t)],
     [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t)],
-    ["Schools (Prekindergarten&ndash;12th Grade)", "schools", schools.k12],
+    [`School${schools.count === 1 ? "" : "s"} (Prekindergarten&ndash;12th Grade)`, "schools", schools.k12],
     ["Higher Education", "colleges", schools.higher],
     ["Health Care", "hospitals", p(hospitalText(t))],
   ].filter(([, , body]) => body);
