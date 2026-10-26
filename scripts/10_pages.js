@@ -759,20 +759,9 @@ function safetyText(t) {
   const county = navajoFirst && police.length
     ? `${capFirst(listText(police))} also ${police.length > 1 ? "have" : "has"} jurisdiction over crimes by non-Native people.`
     : first;
-  // Elsewhere on a reservation the local police still cover the place, and on
-  // tribal land only crimes by non-Native people: "The Roosevelt Police
-  // Department serves the city. The Ute Tribal Police Department has
-  // jurisdiction over tribal land within the Uintah and Ouray Reservation,
-  // while city police have jurisdiction over crimes by non-Native people
-  // there."
-  const localShort = police.some((n) => /Sheriff/i.test(n))
-    ? "the sheriff's office has"
-    : `${t.placeType === "town" ? "town" : "city"} police have`;
-  const shared =
-    !navajoFirst && tribal && police.length
-      ? `${tribal.replace(/\.$/, "")}, while ${localShort} jurisdiction over crimes by non-Native people there.`
-      : "";
-  const policeText = navajoFirst ? [tribal, county] : shared ? [first, shared] : [first, tribal];
+  // Elsewhere on a reservation the local police come first, then the tribal
+  // police sentence on its own
+  const policeText = navajoFirst ? [tribal, county] : [first, tribal];
   const text = [...policeText, ...fireText(t).sentences]
     .filter(Boolean)
     .join(" ");
