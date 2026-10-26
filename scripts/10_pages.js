@@ -929,7 +929,7 @@ function schoolsHtml(t) {
     );
   const higher = s.higherEd || [];
   const higherText = higher.length
-    ? `${listText(higher.map(nameLink))} ${higher.length > 1 ? "are" : "is"} located in ${esc(t.name)}.`
+    ? `${listText(higher.map(nameLink))} ${higher.length > 1 ? "are" : "is"} located in ${placeWord(t)}.`
     : "";
   const out = { k12: "", higher: higherText ? `<p>${higherText}</p>` : "" };
   if (!all.length) return out;
