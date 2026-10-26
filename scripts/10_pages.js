@@ -172,10 +172,17 @@ function soilHtml(t) {
   const forms = s.arableForms.map((f) => OPENING_WORDS[f] || f);
   // "on valley floors and benches above streams", but "in the foothills and on
   // floodplains" when the two take different words
+  // Each place gets the town's: "on the city's old lakeshore benches and valley
+  // floors", "on the town's floodplains and in its foothills" ("the area's"
+  // for places that aren't a city or town)
+  const owner = t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}'s` : "the area's";
+  const own = (form, who) => form.replace(/^(on|in) (the )?/, `$1 ${who} `);
   const joinPlaces = ([a, b]) => {
-    if (!b) return a;
+    if (!b) return own(a, owner);
     const pa = a.split(" ")[0], pb = b.split(" ")[0];
-    return pa === pb && (pa === "on" || pa === "in") ? `${a} and ${b.slice(pb.length + 1)}` : `${a} and ${b}`;
+    return pa === pb && (pa === "on" || pa === "in")
+      ? `${own(a, owner)} and ${b.slice(pb.length + 1).replace(/^the /, "")}`
+      : `${own(a, owner)} and ${own(b, "its")}`;
   };
   const opening = forms.length
     ? `Land with slopes most suitable for cultivation lies primarily ${esc(joinPlaces(forms))}, with soils including`
