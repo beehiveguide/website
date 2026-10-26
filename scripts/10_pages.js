@@ -1163,9 +1163,11 @@ function buildPage(t) {
     const total = groups.reduce((n, [, list, mob]) => n + count(list) + count(mob), 0);
     const long = total > site.prefixReveal;
     const line = (code, list, mobile) => {
-      const em = (text) => `<em${codes.length > 1 ? ' class="prefix-label"' : ""}>${text}</em>`;
+      // The area code label ("801 Prefixes:") is bold in the open box; a
+      // "Mobile:" after the pipe isn't, unless it starts the line
+      const em = (text, bold) => `<em${codes.length > 1 && bold ? ' class="prefix-label"' : ""}>${text}</em>`;
       const mobLabel = `${!list && codes.length > 1 ? `${esc(code)} ` : ""}Mobile:`;
-      const parts = [list && `${em(label(code, list))} ${esc(list)}`, mobile && `${em(mobLabel)} ${esc(mobile)}`];
+      const parts = [list && `${em(label(code, list), true)} ${esc(list)}`, mobile && `${em(mobLabel, !list)} ${esc(mobile)}`];
       return `<small class="text-secondary font-sans">${parts.filter(Boolean).join(' <span aria-hidden="true">|</span> ')}</small>`;
     };
     // In the fold-out box each group is its own block with a little space
