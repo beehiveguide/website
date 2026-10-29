@@ -339,13 +339,14 @@ const AD_SHAPES = {
   rect: { label: "300 &times; 250", format: "rectangle" },
 };
 const AD_SPOTS = {
-  "home-top": "banner",
-  "home-bottom-1": "large",
+  "home-top-resp": "banner",
+  "home-bottom-1-resp": "large",
   "home-bottom-2": "large",
   "home-bottom-3": "large",
-  "town-top": "banner",
+  "town-top-resp": "banner",
   "town-middle": "banner",
-  "town-bottom-1": "rect",
+  "town-lower": "banner",
+  "town-bottom-1-resp": "rect",
   "town-bottom-2": "rect",
   "town-bottom-3": "rect",
 };
@@ -374,14 +375,15 @@ function adRow(spots, cols, rowClass) {
   return `<div class="row justify-content-center g-4 ${rowClass}">\n${ads.map((ad, i) => `  <div class="${cols[i]}">${ad}</div>`).join("\n")}\n</div>`;
 }
 const adSpots = () => ({
-  "{Ad home-top}": adSpot("home-top"),
-  "{Ad town-top}": adSpot("town-top"),
+  "{Ad home-top-resp}": adSpot("home-top-resp"),
+  "{Ad town-top-resp}": adSpot("town-top-resp"),
   "{Ad town-middle}": adSpot("town-middle", "mb-5 d-none d-md-block"), // not on phones
+  "{Ad town-lower}": adSpot("town-lower", "mb-5 d-none d-md-block"), // not on phones
   // On home, a rule sets the ads apart from the town list
   "{Ads home-bottom}": ((row) =>
     row && `<hr id="home-ads-rule" class="mt-5 mb-0">\n${row}`)(
     adRow(
-      ["home-bottom-1", "home-bottom-2", "home-bottom-3"],
+      ["home-bottom-1-resp", "home-bottom-2", "home-bottom-3"],
       [
         "col-md-6 col-xl-4",
         "col-md-6 col-xl-4 d-none d-md-block",
@@ -391,7 +393,7 @@ const adSpots = () => ({
     ),
   ),
   "{Ads town-bottom}": adRow(
-    ["town-bottom-1", "town-bottom-2", "town-bottom-3"],
+    ["town-bottom-1-resp", "town-bottom-2", "town-bottom-3"],
     [
       "col-md-6 col-xl-4",
       "col-md-6 col-xl-4 d-none d-md-block",
@@ -1124,18 +1126,17 @@ function servicesHtml(t) {
     ["Higher Education", "colleges", schools.higher],
     ["Health Care", "hospitals", p(hospitalText(t))],
   ].filter(([, , body]) => body);
-  if (!sections.length) return { html: "", shown: [] };
+  if (!sections.length) return { html: "", parts: [], shown: [] };
   // Each part is its own section with an h2, styled like Growing Info
-  const html = sections
-    .map(
-      ([title, word, body]) => `<section class="services services-${slug(word)} mb-4">
+  const parts = sections.map(
+    ([title, word, body]) => `<section class="services services-${slug(word)} mb-4">
     <h2 class="rule-fade pb-2 mb-3">${title}</h2>
     ${body}
   </section>`,
-    )
-    .join("\n  ");
+  );
   return {
-    html,
+    html: parts.join("\n  "),
+    parts,
     shown: sections.map(([, word]) => word),
   };
 }
@@ -1143,6 +1144,55 @@ function servicesHtml(t) {
 // Mountain resort towns this high (Brian Head, Brighton) get no Growing Info
 // section: no hardiness zone, precipitation, freeze or soil lines.
 const GROWING_MAX_FT = 8500;
+// Town page ads go between sections (Growing Info, Public Safety, Library
+// ...), by how many sections the page has: "after" lists the section each ad
+// follows (0 = before the first, Infinity = after the last, above Sources,
+// "sources" = below the Sources list, "schools" = right before the Schools
+// section, or above Sources if the page has none).
+// The first is the main ad (town-middle), the
+// second the optional one (town-lower). Pages with more sections than listed
+// use the last rule.
+const TOWN_AD_RULES = [
+  { sections: 1, after: ["sources"] },
+  { sections: 2, after: ["sources"] },
+  { sections: 3, after: ["sources"] },
+  { sections: 4, after: ["sources"] },
+  { sections: 5, after: [0, "sources"] }, // and 6 or more
+];
+const TOWN_AD_SPOTS = ["town-middle", "town-lower"];
+// Service sections with the town's ad spots placed between them, plus the
+// spots (if any) that go above Growing Info and below the Sources list
+function servicesWithAds(services, hasGrowing) {
+  const count = services.parts.length + (hasGrowing ? 1 : 0);
+  const out = [...services.parts];
+  if (!count) return { html: "", beforeGrowing: "", afterSources: "" };
+  const rule =
+    TOWN_AD_RULES.find((r) => r.sections === count) ||
+    TOWN_AD_RULES[TOWN_AD_RULES.length - 1];
+  // "schools": the position right before the Schools section
+  const schoolsAt = services.shown.indexOf("schools");
+  const spots = rule.after.map((after, i) => [
+    after === "schools" ? (schoolsAt >= 0 ? schoolsAt + (hasGrowing ? 1 : 0) : Infinity) : after,
+    `{Ad ${TOWN_AD_SPOTS[i]}}`,
+  ]);
+  // Before the first section: above Growing Info when the page has it
+  const beforeGrowing = hasGrowing
+    ? spots.filter(([after]) => after === 0).map(([, spot]) => spot).join("\n  ")
+    : "";
+  // Insert from the end so earlier positions don't shift
+  spots
+    .filter(([after]) => after !== "sources" && !(hasGrowing && after === 0))
+    .map(([after, spot]) => [Math.min(after - (hasGrowing ? 1 : 0), out.length), spot])
+    .reverse()
+    .forEach(([at, spot]) => {
+      if (at >= 0) out.splice(at, 0, spot);
+    });
+  return {
+    html: out.join("\n  "),
+    beforeGrowing,
+    afterSources: spots.filter(([after]) => after === "sources").map(([, spot]) => spot).join("\n  "),
+  };
+}
 
 function buildPage(t) {
   if (t.elevationFt !== null && t.elevationFt >= GROWING_MAX_FT)
@@ -1169,6 +1219,10 @@ function buildPage(t) {
   if (t.freezeFreeDays !== undefined) src.freeze = SOURCES.freeze;
   if (t.soil) src.soil = SOURCES.soil;
   const services = servicesHtml(t);
+  const withAds = servicesWithAds(
+    services,
+    Boolean(t.hardinessZone || t.precipIn !== null || t.freezeFreeDays !== undefined || soilHtml(t)),
+  );
   if (services.shown.length) src.ugrc = SOURCES.ugrc(services.shown);
   // Tribal police come from the reservation boundaries
   if (((t.services && t.services.law) || []).some((l) => /tribal|navajo nation/i.test(l.name)))
@@ -1300,7 +1354,10 @@ function buildPage(t) {
         ? `${t.freezeFreeDays} <small class="text-secondary font-sans"><em>(${t.lastSpringFreeze}&ndash;${t.firstFallFreeze})</em></small>`
         : NA,
     "{Town Soil}": soilHtml(t),
-    "{Town Services}": services.html,
+    // Service sections, with the ads between sections (TOWN_AD_RULES)
+    "{Town Services}": withAds.html,
+    "{Ad After Sources}": withAds.afterSources,
+    "{Ad Before Growing}": withAds.beforeGrowing,
     "{Day Month, Year}": updated,
     "{Site Name}": esc(site.name),
     "{Home URL}": link("../index.html"),
@@ -1483,12 +1540,12 @@ const indexHtml = fill(template("index.html"), {
   "{Home Photo Desktop}": homePhoto.desktop,
   // Room for ads only where a spot will show (a placeholder in "setup",
   // or a slot ID in "on"), so spots without IDs leave no blank space
-  "{Home Band Ads}": adSpot("home-top") ? " home-band-ads" : "",
+  "{Home Band Ads}": adSpot("home-top-resp") ? " home-band-ads" : "",
   // Ad-free, the content sits closer to the photo and the footer
-  "{Home Top Ad}": adSpot("home-top")
-    ? `<div class="container pt-4">${adSpot("home-top")}</div>`
+  "{Home Top Ad}": adSpot("home-top-resp")
+    ? `<div class="container pt-4">${adSpot("home-top-resp")}</div>`
     : "",
-  "{Home Content Margin}": ["home-top", "home-bottom-1", "home-bottom-2", "home-bottom-3"].some((n) => adSpot(n))
+  "{Home Content Margin}": ["home-top-resp", "home-bottom-1-resp", "home-bottom-2", "home-bottom-3"].some((n) => adSpot(n))
     ? "my-5" // 48px gaps, like town pages
     : "mt-5 mb-4",
   "{Home Photo Mobile}": homePhoto.mobile,

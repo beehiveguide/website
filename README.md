@@ -168,7 +168,24 @@ Notes:
 
 - `ads` in `config/site.json` sets the ad mode: `"off"` (no ads), `"setup"` (gray placeholders where ads will go) or `"on"` (Google AdSense). `client` is the AdSense publisher ID (`ca-pub-...`), and each spot under `slots` needs its ad unit's slot ID before it shows.
 - The AdSense script (`adsbygoogle.js`) loads through Google Tag Manager (`gtm` in `config/site.json`), not from the build. In Tag Manager it's a Custom HTML tag with the All Pages trigger and "No additional consent required." AdSense reads the visitor's privacy choices itself.
+- Town page ads go between sections, counting Growing Info as a section. 1 to 4 sections: below the Sources list. 5 or more: above Growing Info and below the Sources list. The first ad on a page is the main one (`town-middle`), the second the optional one (`town-lower`). The rules are `TOWN_AD_RULES` in `10_pages.js`.
 - `static/ads.txt` lists the AdSense account and is copied to the site root.
+- AdSense ad units, made and waiting for site approval. To turn ads on, put each ID in its spot under `slots` in `config/site.json`. Spots ending in `-resp` also show on phones.
+
+  | Spot                 | Shape      | Slot ID    |
+  | -------------------- | ---------- | ---------- |
+  | `home-top-resp`      | Horizontal | 8059604717 |
+  | `town-top-resp`      | Horizontal | 9852740521 |
+  | `town-middle`        | Horizontal | 6746523046 |
+  | `town-lower`         | Horizontal | 5433441375 |
+  | `home-bottom-1-resp` | Square     | 6143887815 |
+  | `home-bottom-2`      | Square     | 5692461678 |
+  | `home-bottom-3`      | Square     | 4217270460 |
+  | `town-bottom-1-resp` | Square     | 9480497592 |
+  | `town-bottom-2`      | Square     | 6651862118 |
+  | `town-bottom-3`      | Square     | 7265397797 |
+
+  Test units, not used: Test Horizontal 8285554161, Test Square 1654686306, Test 2482563146.
 - With `consentBanner` on, the privacy defaults load in the head before Tag Manager, so every Google tag starts with analytics and ad cookies off until the visitor picks.
 
 ## Build

@@ -26,13 +26,14 @@
     "mode": "on",
     "client": "ca-pub-1799304604924619",
     "slots": {
-      "home-top": "",
-      "home-bottom-1": "",
+      "home-top-resp": "",
+      "home-bottom-1-resp": "",
       "home-bottom-2": "",
       "home-bottom-3": "",
-      "town-top": "",
+      "town-top-resp": "",
       "town-middle": "",
-      "town-bottom-1": "",
+      "town-lower": "",
+      "town-bottom-1-resp": "",
       "town-bottom-2": "",
       "town-bottom-3": ""
     }
