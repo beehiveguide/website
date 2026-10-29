@@ -777,6 +777,24 @@ a.marker-link:focus {
   padding: 0.15rem 0.5rem;
   font-size: 0.75rem;
 }
+/* Map page: copyright and Privacy Choices side by side in the corner */
+.map-corner {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 800;
+  display: flex;
+  gap: 0.25rem;
+}
+.map-corner .map-corner-btn {
+  position: static;
+}
+/* Phones: above the map credits, which would otherwise overlap */
+@media (max-width: 767.98px) {
+  .map-corner {
+    bottom: 1.75rem;
+  }
+}
 
 /* Town popup (both maps): a card filling the popup, with a soft shadow in
    place of Leaflet's dark one. Links keep the site's colors instead of

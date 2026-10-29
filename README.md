@@ -164,6 +164,13 @@ Notes:
 - **Reservations:** Census reservation boundaries come from TIGERweb (https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/AIANNHA/MapServer, layer 2), queried for Utah and saved as GeoJSON. `06_services.js` gives every community inside a reservation that reservation's tribal police (`config/tribal_police.json`). UGRC's own tribal police areas cover only scattered trust land, so they aren't used.
 - **Fixing a value in a source:** Don't edit the source file. Add the fix to `config/corrections.json` with a note on why.
 
+## Ads and Tag Manager
+
+- `ads` in `config/site.json` sets the ad mode: `"off"` (no ads), `"setup"` (gray placeholders where ads will go) or `"on"` (Google AdSense). `client` is the AdSense publisher ID (`ca-pub-...`), and each spot under `slots` needs its ad unit's slot ID before it shows.
+- The AdSense script (`adsbygoogle.js`) loads through Google Tag Manager (`gtm` in `config/site.json`), not from the build. In Tag Manager it's a Custom HTML tag with the All Pages trigger and "No additional consent required." AdSense reads the visitor's privacy choices itself.
+- `static/ads.txt` lists the AdSense account and is copied to the site root.
+- With `consentBanner` on, the privacy defaults load in the head before Tag Manager, so every Google tag starts with analytics and ad cookies off until the visitor picks.
+
 ## Build
 
 ```sh

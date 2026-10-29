@@ -23,8 +23,8 @@
     }
   ],
   "ads": {
-    "mode": "off",
-    "client": "",
+    "mode": "on",
+    "client": "ca-pub-1799304604924619",
     "slots": {
       "home-top": "",
       "home-bottom-1": "",

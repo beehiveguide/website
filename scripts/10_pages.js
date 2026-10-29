@@ -400,10 +400,8 @@ const adSpots = () => ({
     "mt-3",
   ),
 });
-const AD_SCRIPT =
-  ADS.mode === "on" && ADS.client
-    ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(ADS.client)}" crossorigin="anonymous"></script>`
-    : "";
+// The AdSense script itself (adsbygoogle.js) loads through Google Tag Manager
+// as a Custom HTML tag, not from here. The ad units above still need "client".
 
 // Privacy choices ("consentBanner" in config/site.json): analytics and ad
 // cookies start off for every Google tag (Consent Mode) until the visitor
@@ -528,7 +526,6 @@ function wrapPage(
     metaTags({ description: SITE_DESCRIPTION, ...meta }, title, root),
     CONSENT_DEFAULTS,
     GTM_HEAD,
-    AD_SCRIPT,
   ].filter(Boolean);
   let match;
   while (
@@ -1484,13 +1481,16 @@ const items = pages
   .join("\n");
 const indexHtml = fill(template("index.html"), {
   "{Home Photo Desktop}": homePhoto.desktop,
-  "{Home Band Ads}": ADS.mode === "off" ? "" : " home-band-ads",
+  // Room for ads only where a spot will show (a placeholder in "setup",
+  // or a slot ID in "on"), so spots without IDs leave no blank space
+  "{Home Band Ads}": adSpot("home-top") ? " home-band-ads" : "",
   // Ad-free, the content sits closer to the photo and the footer
-  "{Home Top Ad}":
-    ADS.mode === "off"
-      ? ""
-      : `<div class="container pt-4">${adSpot("home-top")}</div>`,
-  "{Home Content Margin}": ADS.mode === "off" ? "mt-5 mb-4" : "my-5", // 48px gaps, like town pages
+  "{Home Top Ad}": adSpot("home-top")
+    ? `<div class="container pt-4">${adSpot("home-top")}</div>`
+    : "",
+  "{Home Content Margin}": ["home-top", "home-bottom-1", "home-bottom-2", "home-bottom-3"].some((n) => adSpot(n))
+    ? "my-5" // 48px gaps, like town pages
+    : "mt-5 mb-4",
   "{Home Photo Mobile}": homePhoto.mobile,
   // The tagline's last word stays on the same line as the icon after it
   "{Tagline Start}": esc(site.tagline).replace(/\S+$/, ""),
@@ -1668,6 +1668,10 @@ function stateOutlineJson() {
         "{Year}": now.getFullYear(),
         "{Site Name}": esc(site.name),
         "{About URL}": link("about.html"),
+        // Reopens the privacy box (no footer on this page)
+        "{Privacy Button}": site.consentBanner
+          ? `\n    <button type="button" class="map-corner-btn btn btn-secondary font-sans" data-consent-open>Privacy Choices</button>`
+          : "",
       }),
       `Map of Utah Communities | ${esc(site.name)}`,
       link("index.html"),
