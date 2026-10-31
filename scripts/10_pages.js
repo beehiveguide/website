@@ -271,7 +271,7 @@ const SOURCES = {
   freeze: source("Freeze-free days", "noaa"),
   soil: source("Soil properties", "soil"),
   reservations: source("Reservation boundaries", "censusReservations"),
-  // "Police, fire, parks and schools": only the Community Services sections shown
+  // "Law enforcement, fire, park and school": only the Community Services sections shown
   ugrc: (shown) => source(capFirst(listText(shown)), "ugrc"),
 };
 
@@ -1111,22 +1111,29 @@ function hospitalText(t) {
   return `${listText(list.map(nameLink))} ${list.length > 1 ? "serve" : "serves"} the area.`;
 }
 
-// Returns { html, shown } where shown names the sections for the source line.
+// Parks and cemeteries source words: ["park", "cemetery"], or just the one shown
+function parksCemeteriesLabels(t) {
+  const cems = (t.places && t.places.cemeteries) || [];
+  return [parkParts(t) && "park", cems.length && "cemetery"].filter(Boolean);
+}
+
+// Returns { html, shown, labels }: shown names the sections (for ads); labels
+// are the words for the source line ("law enforcement", "fire", "park" ...).
 function servicesHtml(t) {
   const p = (text) => (text ? `<p>${text}</p>` : "");
   const schools = schoolsHtml(t);
   const safety = safetyText(t);
   const sections = [
     // Police and fire share a paragraph
-    ["Public Safety", "police, fire", safety],
+    ["Public Safety", "police, fire", safety, ["law enforcement", "fire"]],
     // "Library" or "Libraries", "School" or "Schools", by how many there are
-    [((t.places && t.places.libraries) || []).length > 1 ? "Libraries" : "Library", "libraries", libraryHtml(t)],
-    [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t)],
-    [`School${schools.count === 1 ? "" : "s"}${schools.range ? ` (${schools.range})` : ""}`, "schools", schools.k12],
-    ["Higher Education", "colleges", schools.higher],
-    ["Health Care", "hospitals", p(hospitalText(t))],
+    [((t.places && t.places.libraries) || []).length > 1 ? "Libraries" : "Library", "libraries", libraryHtml(t), ["library"]],
+    [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t), parksCemeteriesLabels(t)],
+    [`School${schools.count === 1 ? "" : "s"}${schools.range ? ` (${schools.range})` : ""}`, "schools", schools.k12, ["school"]],
+    ["Higher Education", "colleges", schools.higher, ["college"]],
+    ["Health Care", "hospitals", p(hospitalText(t)), ["hospital"]],
   ].filter(([, , body]) => body);
-  if (!sections.length) return { html: "", parts: [], shown: [] };
+  if (!sections.length) return { html: "", parts: [], shown: [], labels: [] };
   // Each part is its own section with an h2, styled like Growing Info
   const parts = sections.map(
     ([title, word, body]) => `<section class="services services-${slug(word)} mb-4">
@@ -1138,6 +1145,7 @@ function servicesHtml(t) {
     html: parts.join("\n  "),
     parts,
     shown: sections.map(([, word]) => word),
+    labels: sections.flatMap(([, , , labels]) => labels),
   };
 }
 
@@ -1223,10 +1231,9 @@ function buildPage(t) {
     services,
     Boolean(t.hardinessZone || t.precipIn !== null || t.freezeFreeDays !== undefined || soilHtml(t)),
   );
-  if (services.shown.length) src.ugrc = SOURCES.ugrc(services.shown);
-  // Tribal police come from the reservation boundaries
-  if (((t.services && t.services.law) || []).some((l) => /tribal|navajo nation/i.test(l.name)))
-    src.reservations = SOURCES.reservations;
+  if (services.labels.length) src.ugrc = SOURCES.ugrc(services.labels);
+  // Tribal police come from Census reservation boundaries; no source line for
+  // them, since readers wouldn't know what it referred to
 
   // Phone: one "Area Code" line ("801/385" when there are several), then the
   // prefixes under it. With several area codes, each gets its own labeled
@@ -1308,7 +1315,7 @@ function buildPage(t) {
   let html = townTemplate;
   if (pop && pop.source === "ugrcPop") {
     html = html.replace(
-      /<li><strong>Population:<\/strong> \{Town Population\} <small[^\n]*<\/li>/,
+      /<li>\s*<strong>Population:<\/strong> \{Town Population\}\s*<small[\s\S]*?<\/small\s*>\s*<\/li>/,
       `<li><strong>Population:</strong> ${num(pop.count)} <small class="text-secondary font-sans"><em>(2010 est.)</em></small></li>`,
     );
   }
