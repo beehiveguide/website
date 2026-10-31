@@ -1065,7 +1065,12 @@ function schoolsHtml(t) {
       // ("The city of Roosevelt has four elementary schools…"), otherwise
       // in all ("The city of Beaver has three schools."). One school shares
       // the sentence: "Neola has one school, Neola School (K–5), which is in…"
-      if (all.length === 1)
+      // Three or fewer schools: no count, just who runs them: "Escalante
+      // School (prekindergarten–6th) and Escalante High (7th–12th) are part
+      // of the Garfield County School District."
+      if (all.length <= 3)
+        out.k12 = `<p>${sentencesFor(all).join(" ")}</p>`;
+      else if (all.length === 1)
         out.k12 = `<p>${townHas} one school, ${item(all[0])}, ${which(all[0])}.</p>`;
       // All in one district (or all charter, or all private): one sentence,
       // "The city of Beaver has three schools, A (pre-K), B (K–6) and C
