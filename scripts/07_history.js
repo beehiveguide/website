@@ -53,14 +53,17 @@ for (const line of lines.slice(1)) {
   if (!p) continue;
   const id = c[h.indexOf("Gaz ID")];
   let origin = cleanOrigin(p.name_origin);
+  // Other sources a reworded origin also draws on ("alsoFrom": sources.json keys)
+  let originSources = [];
   // Reworded origins (config/origin_rewrites.json). Used only while the book
   // text still matches what was reworded, so a changed source isn't hidden.
   const rw = rewrites[id];
   if (rw && origin) {
-    if (rw.original === origin) { origin = rw.rewrite; reworded++; }
+    if (rw.original === origin) { origin = rw.rewrite; originSources = rw.alsoFrom || []; reworded++; }
     else console.warn(`  Rewrite skipped, book text changed: ${rw.name}`);
   }
   output[id] = { founded: (p.founded || "").trim(), origin };
+  if (originSources.length) output[id].originSources = originSources;
 }
 
 fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));

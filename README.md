@@ -13,6 +13,7 @@ Run every command below from this `website` folder. You need Node.js (version 18
   - `excluded_places.json` lists places to leave out.
   - `included_places.json` lists places to keep even when UGRC doesn't list them.
   - `corrections.json` has fixes to source data, so the source files stay as downloaded.
+  - `origin_rewrites.json` has the reworded name origins. Each entry keeps the book's `original` text, and its `rewrite` is used only while the book still says the same thing. An empty `rewrite` hides the origin. `"alsoFrom": ["vanCott"]` adds a second source to the town's citation line ("Adapted from Origins of Utah Place Names and Utah Place Names") for origins that use details from Van Cott's book.
   - `landform_words.json` has the plain words the soil paragraph uses for soil survey landforms ("fan remnants" -> "on foothill slopes"). Landforms that share a phrase count together. The build warns about any landform not listed.
   - `higher_ed_names.json` has college names to use where dropping UGRC's dash ("Utah State University - Beaver Campus") reads badly.
   - `tribal_police.json` names the tribal police for each reservation.
@@ -128,6 +129,7 @@ git push
 | Census reservations (`FederalAmericanIndianReservations_Utah.geojson`) | `sources/census/reservations/` | Tribal police for places inside a reservation |
 | USPS post office pages (`post_office_urls.json`)             | `sources/usps/`                  | Post Office button                                   |
 | Origins of Utah Place Names (`utah_place_names.json`)        | `sources/books/`                 | Founding year, name origin                           |
+| Utah Place Names (Van Cott, 1990), read through Online Utah's town histories | None (not downloaded) | Extra name origin details (`alsoFrom`) |
 
 Notes:
 

@@ -653,7 +653,10 @@
     "1433942": {
       "name": "Wanship",
       "original": "Named for a friendly Indian chief.",
-      "rewrite": "Named for a tribal leader who was friendly with the settlers."
+      "rewrite": "Named for Wanship, a Shoshone leader who was friendly with the settlers. His name is said to mean \"good man.\"",
+      "alsoFrom": [
+        "vanCott"
+      ]
     },
     "1434038": {
       "name": "Wellington",
@@ -679,7 +682,10 @@
     "1434208": {
       "name": "Whiterocks",
       "original": "Derived its name from Whiterocks River, which was so named by Indians of the vicinity because of the many white rocks along its course.",
-      "rewrite": "Takes its name from the Whiterocks River, said to have been called that by local Native people because of the many white rocks along its course."
+      "rewrite": "Takes its name from the Whiterocks River, said to have been called that by local Ute people because of the many white rocks along its course.",
+      "alsoFrom": [
+        "vanCott"
+      ]
     },
     "1434458": {
       "name": "Woodland",
@@ -1548,8 +1554,11 @@
     "1446655": {
       "name": "Toquerville",
       "original": "Named for Chief Toquer. Toquer is a Ute Indian word meaning \"black.\"",
-      "rewrite": "Named for Toquer, a Native leader. Toquer is a Ute word meaning \"black.\"",
-      "flag": "Toquer is often described as a Paiute leader; check whether the word is Ute or Paiute."
+      "rewrite": "Named for Toquer, chief of a Paiute band on lower Ash Creek. His name is said to mean \"black.\"",
+      "flag": "Toquer is often described as a Paiute leader; check whether the word is Ute or Paiute.",
+      "alsoFrom": [
+        "vanCott"
+      ]
     },
     "1446658": {
       "name": "Torrey",
@@ -1742,7 +1751,10 @@
     "UGRC-tintic-juab": {
       "name": "Tintic",
       "original": "Named for an Indian chief.",
-      "rewrite": "Named for a tribal leader."
+      "rewrite": "Named for Tintic, leader of a small Goshute band that lived west of Utah Lake.",
+      "alsoFrom": [
+        "vanCott"
+      ]
     },
     "UGRC-west-warren-weber": {
       "name": "West Warren",

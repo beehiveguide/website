@@ -40,6 +40,13 @@
     "folder": "books",
     "downloaded": ""
   },
+  "vanCott": {
+    "name": "Utah Place Names",
+    "url": "https://uofupress.com/books/utah-place-names/",
+    "note": "John W. Van Cott (University of Utah Press, 1990). Used through Online Utah (onlineutah.us), whose town histories draw on it.",
+    "folder": "",
+    "downloaded": ""
+  },
   "phone": {
     "name": "NANPA",
     "url": "https://nanpa.com/reports/co-code-reports/cocodes_assign",

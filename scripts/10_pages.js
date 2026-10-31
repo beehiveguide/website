@@ -251,7 +251,9 @@ const SOURCES = {
     source(hasElev ? "Location and elevation" : "Location", "gnis"),
   ugrcPop: source("Population", "ugrcPop"),
   census: source("Population and households", "census"),
-  history: (hasYear, hasOrigin) =>
+  // also: other sources the name origin draws on ("alsoFrom" in
+  // config/origin_rewrites.json), linked after the book: "... and Utah Place Names"
+  history: (hasYear, hasOrigin, also = []) =>
     source(
       [hasYear && "Founding", hasOrigin && "name"]
         .filter(Boolean)
@@ -260,7 +262,11 @@ const SOURCES = {
       // Name origins are reworded (config/origin_rewrites.json)
       "history",
       hasOrigin ? "Adapted from " : "",
-    ),
+    ).replace(/<\/li>$|$/, (end) =>
+      also
+        .map((k) => SOURCE_LIST[k])
+        .map((x) => ` and <a href="${x.publicUrl || x.url}">${esc(x.name)}</a>`)
+        .join("") + end),
   phone: (withPrefixes) =>
     source(
       withPrefixes ? "Area codes and phone prefixes" : "Area codes",
@@ -1212,7 +1218,7 @@ function buildPage(t) {
   // Settled year (own paragraph) and name origin (lead paragraph)
   const intro = [];
   if (t.founded || t.origin) {
-    src.history = SOURCES.history(!!t.founded, !!t.origin);
+    src.history = SOURCES.history(!!t.founded, !!t.origin, t.origin ? t.originSources || [] : []);
     // "Settled 1890" -> "(Settled in 1890)"
     if (t.founded)
       intro.push(

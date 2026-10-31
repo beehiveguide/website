@@ -131,6 +131,7 @@ const records = rows.map((t) => {
         : null,
     founded: history[id]?.founded || "",
     origin: history[id]?.origin || "",
+    originSources: history[id]?.originSources || [],
     phone: phone[id] || null,
     zip,
     hardinessZone: zones[zip] || "",
