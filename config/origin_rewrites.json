@@ -44,7 +44,7 @@
     "1426269": {
       "name": "Caineville",
       "original": "Origin of name unknown.",
-      "rewrite": "Origin of name unknown."
+      "rewrite": ""
     },
     "1426344": {
       "name": "Cannonville",
@@ -109,7 +109,7 @@
     "1427343": {
       "name": "Deseret",
       "original": "Vacated 1868 because of Indian troubles, resettled 1874.",
-      "rewrite": "Settlers left in 1868 because of conflicts with Native Americans and returned in 1874."
+      "rewrite": ""
     },
     "1427473": {
       "name": "Draper",
@@ -150,12 +150,12 @@
     "1427897": {
       "name": "Fayette",
       "original": "Vacated 1866 due to Indian troubles, but soon resettled. Named for Fayette, Seneca County, New York, where the Mormon Church was organized by Joseph Smith. First called Warm Creek.",
-      "rewrite": "Settlers left in 1866 because of conflicts with Native Americans but soon returned. Named for Fayette, Seneca County, New York, where Joseph Smith organized The Church of Jesus Christ of Latter-day Saints. First called Warm Creek."
+      "rewrite": "Named for Fayette, Seneca County, New York, where Joseph Smith organized The Church of Jesus Christ of Latter-day Saints. First called Warm Creek."
     },
     "1428039": {
       "name": "Fort Duchesne",
       "original": "Probably so named by General Crook, noted Indian fighter, because the site overlooked the Duchesne River basin.",
-      "rewrite": "Probably named by Gen. Crook, whom the 1941 book called a \"noted Indian fighter,\" because the site overlooked the Duchesne River basin."
+      "rewrite": "Probably named by Gen. Crook, once called a \"noted Indian fighter,\" because the site overlooked the Duchesne River basin."
     },
     "1428080": {
       "name": "Francis",
@@ -180,7 +180,7 @@
     "1428204": {
       "name": "Glendale",
       "original": "Vacated 1865 because of Indian troubles, resettled 1871. Named by Bishop James Leathead for his home in Scotland.",
-      "rewrite": "Settlers left in 1865 because of conflicts with Native Americans and returned in 1871. Bishop James Leathead named it for his home in Scotland."
+      "rewrite": "Settlers left in 1865 because of conflicts with Native people and returned in 1871. Bishop James Leathead named it for his home in Scotland."
     },
     "1428231": {
       "name": "Gold Hill",
@@ -206,7 +206,7 @@
     "1428406": {
       "name": "Greenville",
       "original": "So named because of the heavy growth of green grass on the site of the settlement. Sometimes called Pancake by local residents.",
-      "rewrite": "Named for the heavy growth of green grass on the site of the settlement. Sometimes called Pancake by local residents."
+      "rewrite": "Named for the heavy growth of green grass on the site of the settlement. Said to have been called Pancake by local residents."
     },
     "1428419": {
       "name": "Grouse Creek",
@@ -312,7 +312,7 @@
     "1429276": {
       "name": "Kanab",
       "original": "Vacated 1866 because of Indian troubles, resettled 1871. Derived its name from Kanab Creek, which received its name from a Paiute Indian word meaning willow.",
-      "rewrite": "Settlers left in 1866 because of conflicts with Native Americans and returned in 1871. Takes its name from Kanab Creek, whose name comes from a Paiute word meaning willow."
+      "rewrite": "Takes its name from Kanab Creek, whose name comes from a Paiute word meaning willow."
     },
     "1429278": {
       "name": "Kanarraville",
@@ -419,12 +419,12 @@
     "1430389": {
       "name": "Moab",
       "original": "Vacated during Indian troubles, resettled 1876. There are two versions concerning the origin of the name: 1. That the settlement was named for a region in Palestine mentioned in the Bible. 2. That the name is a corruption of a Paiute Indian name \"Mohapa,\" meaning mosquito water, applied to this region because of the great number of mosquitoes along the Colorado River bottoms. First known as Elk Mountain Mission.",
-      "rewrite": "Settlers left during conflicts with Native Americans and returned in 1876. Two versions of the name's origin exist: one holds that the settlement was named for a region in Palestine mentioned in the Bible; the other, that the name is a corruption of the Paiute name \"Mohapa,\" meaning mosquito water, applied to the region because of the great number of mosquitoes along the Colorado River bottoms. First known as Elk Mountain Mission."
+      "rewrite": "Two versions of the name's origin exist: one holds that the settlement was named for a region in Palestine mentioned in the Bible; the other, that the name is a corruption of the Paiute name \"Mohapa,\" meaning mosquito water, applied to the region because of the great number of mosquitoes along the Colorado River bottoms. First known as Elk Mountain Mission."
     },
     "1430394": {
       "name": "Modena",
       "original": "Origin of name unknown.",
-      "rewrite": "Origin of name unknown."
+      "rewrite": ""
     },
     "1430498": {
       "name": "Moroni",
@@ -439,7 +439,7 @@
     "1430522": {
       "name": "Mount Pleasant",
       "original": "Vacated 1853 because of Indian troubles, resettled 1859. So named because it is situated on an eminence, commanding a pleasant view of the surrounding country. Formerly called Fort Hamilton.",
-      "rewrite": "Settlers left in 1853 because of conflicts with Native Americans and returned in 1859. Named for its location on an eminence commanding a pleasant view of the surrounding country. Formerly called Fort Hamilton."
+      "rewrite": "Named for its location on an eminence commanding a pleasant view of the surrounding country. Formerly called Fort Hamilton."
     },
     "1430527": {
       "name": "Mountain Home",
@@ -460,7 +460,7 @@
     "1430684": {
       "name": "Neola",
       "original": "Origin of name unknown.",
-      "rewrite": "Origin of name unknown."
+      "rewrite": ""
     },
     "1430705": {
       "name": "Newton",
@@ -490,7 +490,7 @@
     "1431039": {
       "name": "Ouray",
       "original": "Named for the Peace Chief of the White River Indians.",
-      "rewrite": "Named for the man the 1941 book called the \"Peace Chief of the White River Indians.\"",
+      "rewrite": "Named for the man called the \"Peace Chief of the White River Indians.\"",
       "flag": "Original: \"Peace Chief of the White River Indians\" (tribe not named; White River Utes?). Ouray is usually associated with the Uncompahgre Utes; check."
     },
     "1431094": {
@@ -648,12 +648,12 @@
     "1433898": {
       "name": "Virgin",
       "original": "Derived its name from the Virgin River, which early Spaniards called the \"Rio Virgen.\" Jedediah Smith, who visited this region in 1826, attempted to rename the stream in honor of John Quincy Adams, sixth President of the United States, but the older name prevailed. The settlement was first known as Pocketville because the Indians called the valley by a name meaning \"hole\" or \"pocket.\"",
-      "rewrite": "Takes its name from the Virgin River, which early Spaniards called the \"Rio Virgen.\" Jedediah Smith, who visited this region in 1826, tried to rename the stream in honor of John Quincy Adams, sixth president of the United States, but the older name prevailed. The settlement was first known as Pocketville because Native Americans called the valley by a name meaning \"hole\" or \"pocket.\""
+      "rewrite": "Takes its name from the Virgin River, which early Spaniards called the \"Rio Virgen.\" Jedediah Smith, who visited this region in 1826, tried to rename the stream in honor of John Quincy Adams, sixth president of the United States, but the older name prevailed. The settlement was first known as Pocketville because Indigenous people called the valley by a name meaning \"hole\" or \"pocket.\""
     },
     "1433942": {
       "name": "Wanship",
       "original": "Named for a friendly Indian chief.",
-      "rewrite": "Named for a Native American leader who was friendly with the settlers."
+      "rewrite": "Named for a tribal leader who was friendly with the settlers."
     },
     "1434038": {
       "name": "Wellington",
@@ -679,7 +679,7 @@
     "1434208": {
       "name": "Whiterocks",
       "original": "Derived its name from Whiterocks River, which was so named by Indians of the vicinity because of the many white rocks along its course.",
-      "rewrite": "Takes its name from the Whiterocks River, which local Native Americans named for the many white rocks along its course."
+      "rewrite": "Takes its name from the Whiterocks River, said to have been called that by local Native people because of the many white rocks along its course."
     },
     "1434458": {
       "name": "Woodland",
@@ -831,7 +831,7 @@
     "1437639": {
       "name": "Mohrland",
       "original": "Origin of name unknown.",
-      "rewrite": "Origin of name unknown."
+      "rewrite": ""
     },
     "1437640": {
       "name": "Molen",
@@ -891,7 +891,7 @@
     "1438182": {
       "name": "Alton",
       "original": "Vacated during Indian troubles, resettled 1878. So named because of its altitude. Formerly called Graham, probably for a pioneer family.",
-      "rewrite": "Settlers left during conflicts with Native Americans and returned in 1878. Named for its altitude. Formerly called Graham, probably for a pioneer family."
+      "rewrite": "Named for its altitude. Formerly called Graham, probably for a pioneer family."
     },
     "1438194": {
       "name": "American Fork",
@@ -1132,7 +1132,7 @@
     "1442039": {
       "name": "Indianola",
       "original": "So named because the site was selected for the farms of Indians protected by the Mormon Church.",
-      "rewrite": "The name refers to the site's purpose: it was chosen for the farms of Native Americans, set up with help from The Church of Jesus Christ of Latter-day Saints."
+      "rewrite": "The name refers to the site's purpose: it was chosen for the farms of Indigenous people, set up with help from The Church of Jesus Christ of Latter-day Saints."
     },
     "1442224": {
       "name": "Joseph",
@@ -1147,12 +1147,12 @@
     "1442266": {
       "name": "Kamas",
       "original": "Derived its name from a Nootka Indian word \"chamas\" which, through a series of changes, became \"camass,\" a word used to identify several plants, the bulbs of which were staple food for the Indians of western United States. In a broader sense, the word is used to designate \"a small grassy plain among hills,\" which is a good description of the topography of this region. It was first called Rhoades Valley, for Thomas Rhoades, early settler; later renamed Kamas Prairie, and finally Kamas.",
-      "rewrite": "Takes its name from the Nootka word \"chamas,\" which through a series of changes became \"camass,\" a word for several plants whose bulbs were a staple food for Native Americans of the western United States. In a broader sense, the word designates \"a small grassy plain among hills,\" a good description of the topography of this region. It was first called Rhoades Valley, for Thomas Rhoades, an early settler; later renamed Kamas Prairie; and finally Kamas."
+      "rewrite": "Takes its name from the Nootka word \"chamas,\" which through a series of changes became \"camass,\" a word for several plants whose bulbs were a staple food for Indigenous peoples of the western United States. In a broader sense, the word designates \"a small grassy plain among hills,\" a good description of the topography of this region. It was first called Rhoades Valley, for Thomas Rhoades, an early settler; later renamed Kamas Prairie; and finally Kamas."
     },
     "1442277": {
       "name": "Kanosh",
       "original": "Named for Kanosh, a Pahvant Indian chief whose tribe was converted to Mormonism. The settlement was first called Corn Creek because the Indians raised corn here.",
-      "rewrite": "Named for Kanosh, a Pahvant leader whose people joined the Latter-day Saint faith. The settlement was first called Corn Creek because Native Americans raised corn here."
+      "rewrite": "Named for Kanosh, a Pahvant leader whose people joined the Latter-day Saint faith. The settlement was first called Corn Creek because Native farmers raised corn here."
     },
     "1442285": {
       "name": "Kaysville",
@@ -1167,7 +1167,7 @@
     "1442357": {
       "name": "Koosharem",
       "original": "Believed to have derived its name from a carrot-like plant, the roots of which were eaten by the Indians.",
-      "rewrite": "Believed to be named for a carrot-like plant whose roots were eaten by Native Americans."
+      "rewrite": "Believed to be named for a carrot-like plant whose roots were eaten by Indigenous people."
     },
     "1442376": {
       "name": "La Sal",
@@ -1225,7 +1225,7 @@
     "1443126": {
       "name": "Manila",
       "original": "Named in 1898 by Adolph Jessen, surveyor, in commemoration of Admiral Dewey's victory over the Spanish fleet at Manila, Philippine Islands. First called Chambers, for an associate of Jessen. Also called Lewisallen.",
-      "rewrite": "Named in 1898 by Adolph Jessen, a surveyor, to commemorate Admiral Dewey's victory over the Spanish fleet at Manila, Philippine Islands. First called Chambers, for an associate of Jessen. Also called Lewisallen."
+      "rewrite": "Named in 1898 by Adolph Jessen, a surveyor, to commemorate Admiral Dewey's victory over the Spanish fleet at Manila, Philippine Islands. First called Chambers, for an associate of Jessen. Once also called Lewisallen."
     },
     "1443136": {
       "name": "Manti",
@@ -1280,7 +1280,7 @@
     "1443556": {
       "name": "Monroe",
       "original": "Vacated during Indian troubles, resettled 1870. Named in honor of James Monroe, fifth President of the United States.",
-      "rewrite": "Settlers left during conflicts with Native Americans and returned in 1870. Named for James Monroe, fifth president of the United States."
+      "rewrite": "Settlers left during conflicts with Indigenous people and returned in 1870. Named for James Monroe, fifth president of the United States."
     },
     "1443568": {
       "name": "Monticello",
@@ -1306,7 +1306,7 @@
     "1443808": {
       "name": "New Harmony",
       "original": "Origin of name unknown.",
-      "rewrite": "Origin of name unknown."
+      "rewrite": ""
     },
     "1443812": {
       "name": "Newcastle",
@@ -1316,7 +1316,7 @@
     "1443962": {
       "name": "North Ogden",
       "original": "Vacated because of Indian uprising, resettled in 1851. Outgrowth of Ogden. So named because it is north of this city.",
-      "rewrite": "Settlers left because of tensions with Native Americans and returned in 1851. Outgrowth of Ogden. Named for its location north of Ogden."
+      "rewrite": "Outgrowth of Ogden. Named for its location north of Ogden."
     },
     "1443971": {
       "name": "North Salt Lake",
@@ -1366,12 +1366,12 @@
     "1444224": {
       "name": "Parowan",
       "original": "Derived its name from an Indian word meaning \"evil water.\" First named Louisa for Louisa Beeman, one of the first Mormon women to consent to plural marriage. Although the valley was called Little Salt Lake by a band of Mormon explorers, this name was seldom used.",
-      "rewrite": "Takes its name from a Native American word meaning \"evil water.\" First named Louisa for Louisa Beeman, one of the first Latter-day Saint women to consent to plural marriage. A band of Latter-day Saint explorers called the valley Little Salt Lake, but this name was seldom used."
+      "rewrite": "Takes its name from a Native word meaning \"evil water.\" First named Louisa for Louisa Beeman, one of the first Latter-day Saint women to consent to plural marriage. A band of Latter-day Saint explorers called the valley Little Salt Lake, but this name was seldom used."
     },
     "1444252": {
       "name": "Payson",
       "original": "Named for James Pace, one of its founders. First called Peeteetneet for an Indian chief.",
-      "rewrite": "Named for James Pace, one of its founders. First called Peeteetneet for a Native American leader."
+      "rewrite": "Named for James Pace, one of its founders. First called Peeteetneet for a Native leader."
     },
     "1444282": {
       "name": "Peoa",
@@ -1401,7 +1401,7 @@
     "1444479": {
       "name": "Pleasant Grove",
       "original": "So named because of the cottonwood grove on the settlement site. Formerly called Battle Creek because it was the scene of the first battle in Utah between the Indians and the Mormon settlers.",
-      "rewrite": "Named for the cottonwood grove on the settlement site. Formerly called Battle Creek because it was the scene of the first battle in Utah between Native Americans and Latter-day Saint settlers."
+      "rewrite": "Named for the cottonwood grove on the settlement site. Formerly called Battle Creek because it was the scene of the first battle in Utah between Indigenous people and Latter-day Saint settlers."
     },
     "1444486": {
       "name": "Pleasant View",
@@ -1437,7 +1437,7 @@
     "1444889": {
       "name": "Richfield",
       "original": "Vacated 1867 because of Indian troubles, resettled 1870. So named because of the richness of the soil. First called Omni for a Book of Mormon character.",
-      "rewrite": "Settlers left in 1867 because of conflicts with Native Americans and returned in 1870. Named for the richness of the soil. First called Omni for a Book of Mormon character."
+      "rewrite": "Named for the richness of the soil. First called Omni for a Book of Mormon character."
     },
     "1444892": {
       "name": "Richmond",
@@ -1548,7 +1548,7 @@
     "1446655": {
       "name": "Toquerville",
       "original": "Named for Chief Toquer. Toquer is a Ute Indian word meaning \"black.\"",
-      "rewrite": "Named for Toquer, a Native American leader. Toquer is a Ute word meaning \"black.\"",
+      "rewrite": "Named for Toquer, a Native leader. Toquer is a Ute word meaning \"black.\"",
       "flag": "Toquer is often described as a Paiute leader; check whether the word is Ute or Paiute."
     },
     "1446658": {
@@ -1641,7 +1641,7 @@
     "1450235": {
       "name": "Austin",
       "original": "Origin of name unknown.",
-      "rewrite": "Origin of name unknown."
+      "rewrite": ""
     },
     "1450429": {
       "name": "Mendon",
@@ -1737,12 +1737,12 @@
     "UGRC-stockmore-duchesne": {
       "name": "Stockmore",
       "original": "Origin of name uncertain.",
-      "rewrite": "Origin of name uncertain."
+      "rewrite": ""
     },
     "UGRC-tintic-juab": {
       "name": "Tintic",
       "original": "Named for an Indian chief.",
-      "rewrite": "Named for a Native American leader."
+      "rewrite": "Named for a tribal leader."
     },
     "UGRC-west-warren-weber": {
       "name": "West Warren",
