@@ -101,9 +101,9 @@ const source = (items, key, prefix = "") => {
   // "url" in sources.json is where the data was downloaded; "publicUrl" (when
   // set) is the public-facing page readers are sent to instead.
   const href = s.publicUrl || s.url;
-  // A license (sources.json "license": { name, url }) follows after a comma:
-  // "UGRC, CC-BY-4.0"
-  const license = s.license ? `, <a href="${s.license.url}">${esc(s.license.name)}</a>` : "";
+  // A license (sources.json "license": { name, url }) follows as a small gray
+  // sans serif link in parentheses: "UGRC <small>(CC-BY-4.0)</small>"
+  const license = s.license ? ` <small class="font-sans fst-italic text-secondary">(<a href="${s.license.url}" class="link-secondary">${esc(s.license.name)}</a>)</small>` : "";
   return `<strong>${items}:</strong> ${prefix}${href ? `<a href="${href}">${esc(s.name)}</a>` : esc(s.name)}${license}`;
 };
 // Soil paragraph (build/soil.json via 09_merge.js), under an h3 in Gardening
