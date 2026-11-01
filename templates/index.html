@@ -1,7 +1,7 @@
 <style>
   /* County map: a picker beside the county list on wider screens; small
-     versions show the chosen county on the heading (phones) and in the
-     chosen county's box */
+       versions show the chosen county on the heading (phones) and in the
+       chosen county's box */
   .cmap path {
     fill: var(--icon-gray);
     transition: fill 0.3s ease;
@@ -19,7 +19,7 @@
     fill: var(--dark-hover);
   }
   .cmap.has-pick path:not(.on) {
-    fill: var(--icon-gray);
+    fill: var(--icon-gray); /* Bootstrap secondary gray */
   }
   .chosen-map path {
     stroke: rgba(255, 255, 255, 0.4);
@@ -27,20 +27,21 @@
     stroke-linejoin: bevel;
   }
   /* The chosen county sits on top of its neighbors' outlines, a little
-     fattened, so small ones like Salt Lake and Piute still show */
+       fattened, so small ones like Salt Lake and Piute still show */
   .chosen-map path.on {
-    fill: var(--highlight);
-    stroke: var(--highlight);
+    fill: var(--bs-dark); /* Bootstrap dark */
+    stroke: var(--bs-dark);
     stroke-width: 1.4;
     stroke-linejoin: round;
   }
-  /* A light gray ring just outside it, drawn by a copy underneath */
+  /* A light gray ring just outside it, drawn by a copy underneath  */
   .chosen-map path.halo {
     fill: #dee2e6;
     stroke: #dee2e6;
     stroke-width: 2.6;
     stroke-linejoin: round;
   }
+
   /* Both stay inside Utah (and out of the Great Salt Lake), so border counties don't bulge past the state line */
   .chosen-map path.halo {
     clip-path: url(#ut-clip);
@@ -66,7 +67,7 @@
     text-decoration-thickness: 2px;
   }
   /* Not Bootstrap columns: the list's text columns and the map share one
-     grid of equal columns, so the map is exactly one column wide */
+       grid of equal columns, so the map is exactly one column wide */
   @media (min-width: 768px) {
     .county-pick {
       display: grid;
