@@ -180,7 +180,7 @@
     "1428204": {
       "name": "Glendale",
       "original": "Vacated 1865 because of Indian troubles, resettled 1871. Named by Bishop James Leathead for his home in Scotland.",
-      "rewrite": "Settlers left in 1865 because of conflicts with Native people and returned in 1871. Bishop James Leathead named it for his home in Scotland."
+      "rewrite": "Bishop James Leathead named it for his home in Scotland."
     },
     "1428231": {
       "name": "Gold Hill",
@@ -811,7 +811,7 @@
     "1437592": {
       "name": "Ibapah",
       "original": "Derived its name from the Gosiute Indian word \"Avin-pa.\" \"Avim\" means \"white clay,\" and \"pa\" means \"water.\" Also known as Deep Creek.",
-      "rewrite": "Takes its name from the Gosiute word \"Avin-pa.\" \"Avim\" means \"white clay,\" and \"pa\" means \"water.\" Also known as Deep Creek.",
+      "rewrite": "Takes its name from the Goshute word \"Avin-pa.\" \"Avim\" means \"white clay,\" and \"pa\" means \"water.\" Also known as Deep Creek.",
       "flag": "\"Avin-pa\" vs. \"Avim\" spelling mismatch in source; check."
     },
     "1437593": {
@@ -1286,7 +1286,7 @@
     "1443556": {
       "name": "Monroe",
       "original": "Vacated during Indian troubles, resettled 1870. Named in honor of James Monroe, fifth President of the United States.",
-      "rewrite": "Settlers left during conflicts with Indigenous people and returned in 1870. Named for James Monroe, fifth president of the United States."
+      "rewrite": "Named for James Monroe, fifth president of the United States."
     },
     "1443568": {
       "name": "Monticello",
@@ -1357,7 +1357,7 @@
     "1444170": {
       "name": "Panguitch",
       "original": "Vacated 1867 because of Indian troubles, resettled 1871. Derived its name from Panguitch Lake, which received its name from the Paiute Indian words meaning \"water\" and \"fish.\"",
-      "rewrite": "Settlers left in 1867 because of conflicts with Native Americans and returned in 1871. Named for Panguitch Lake, whose name comes from the Paiute words meaning \"water\" and \"fish.\""
+      "rewrite": "Named for Panguitch Lake, whose name comes from the Paiute words meaning \"water\" and \"fish.\""
     },
     "1444178": {
       "name": "Paradise",
@@ -1407,7 +1407,7 @@
     "1444479": {
       "name": "Pleasant Grove",
       "original": "So named because of the cottonwood grove on the settlement site. Formerly called Battle Creek because it was the scene of the first battle in Utah between the Indians and the Mormon settlers.",
-      "rewrite": "Named for the cottonwood grove on the settlement site. Formerly called Battle Creek because it was the scene of the first battle in Utah between Indigenous people and Latter-day Saint settlers."
+      "rewrite": "Named for the cottonwood grove on the settlement site. Formerly called Battle Creek because it was the scene of the first battle in Utah between Natives and Latter-day Saint settlers."
     },
     "1444486": {
       "name": "Pleasant View",
@@ -1468,7 +1468,7 @@
     "1445269": {
       "name": "Salina",
       "original": "Vacated 1866 because of Indian troubles, resettled 1871. Derived its name from Salina Creek, which received its name from the Spanish word meaning salt, because of the large deposits of rock salt in the vicinity.",
-      "rewrite": "Settlers left in 1866 because of conflicts with Native Americans and returned in 1871. Named for Salina Creek, whose name comes from the Spanish word meaning salt, because of the large deposits of rock salt nearby."
+      "rewrite": "Named for Salina Creek, whose name comes from the Spanish word meaning salt, because of the large deposits of rock salt nearby."
     },
     "1445329": {
       "name": "Santaquin",
@@ -1766,6 +1766,11 @@
       "original": "Named in honor of Woodrow Wilson, twenty-seventh President of the United States.",
       "rewrite": "Named for President Woodrow Wilson.",
       "flag": "Book calls Wilson the 27th president (he was the 28th); number dropped."
+    },
+    "2408988": {
+      "name": "Oljato",
+      "original": "Derived its name from a Navajo Indian word meaning \"moonlight water.\"",
+      "rewrite": "Derived its name from a Navajo word meaning \"moonlight water.\""
     }
   }
 }
