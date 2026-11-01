@@ -10,7 +10,7 @@
   .chosen-map path { stroke: rgba(255, 255, 255, 0.4); stroke-width: 0.3; stroke-linejoin: bevel; }
   /* The chosen county sits on top of its neighbors' outlines, a little
      fattened, so small ones like Salt Lake and Piute still show */
-  .chosen-map path.on { fill: var(--bs-primary); stroke: var(--bs-primary); stroke-width: 1.4; stroke-linejoin: round; }
+  .chosen-map path.on { fill: var(--highlight); stroke: var(--highlight); stroke-width: 1.4; stroke-linejoin: round; }
   /* A light gray ring just outside it, drawn by a copy underneath */
   .chosen-map path.halo { fill: #dee2e6; stroke: #dee2e6; stroke-width: 2.6; stroke-linejoin: round; }
   /* Both stay inside Utah (and out of the Great Salt Lake), so border counties don't bulge past the state line */
@@ -500,5 +500,35 @@
         p.parentNode.appendChild(p);
       });
     }).observe(name, { childList: true, characterData: true, subtree: true });
+  })();
+</script>
+<script>
+  // Tagline box: size the heading (text and icon together) so its line is
+  // exactly as wide as the line below it. Only when both fit on one line;
+  // on narrow screens where the text wraps, the normal sizes stay.
+  (() => {
+    const box = document.querySelector(".skew-box-inner");
+    if (!box) return;
+    const h1 = box.querySelector("h1"), p = box.querySelector("p");
+    const textWidth = (el) => { const r = document.createRange(); r.selectNodeContents(el); return r.getBoundingClientRect().width; };
+    const lines = (el) => { const r = document.createRange(); r.selectNodeContents(el); return new Set([...r.getClientRects()].map((x) => Math.round(x.top))).size; };
+    function fit() {
+      h1.style.fontSize = "";
+      h1.style.whiteSpace = "";
+      if (lines(p) > 1) return;
+      h1.style.whiteSpace = "nowrap";
+      const base = parseFloat(getComputedStyle(h1).fontSize);
+      const want = textWidth(p);
+      // two passes: the icon's spacing doesn't scale perfectly with the text
+      for (let i = 0; i < 2; i++) {
+        const size = parseFloat(getComputedStyle(h1).fontSize);
+        h1.style.fontSize = (size * want / textWidth(h1)) + "px";
+      }
+      // back to normal if it would no longer fit the box
+      if (box.getBoundingClientRect().width < textWidth(h1) - 1) { h1.style.fontSize = ""; h1.style.whiteSpace = ""; }
+    }
+    fit();
+    if (document.fonts) document.fonts.ready.then(fit);
+    window.addEventListener("resize", fit);
   })();
 </script>
