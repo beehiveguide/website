@@ -22584,7 +22584,7 @@
           "note": "Goshute Reservation",
           "url": "",
           "tribal": true,
-          "first": false
+          "first": true
         }
       ],
       "reservations": [
@@ -87406,7 +87406,7 @@
           "note": "Ute Mountain Reservation",
           "url": "",
           "tribal": true,
-          "first": false
+          "first": true
         }
       ],
       "reservations": [
