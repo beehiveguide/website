@@ -588,6 +588,7 @@ const VERSION = require("crypto")
       "css/site.css",
       "js/maps.js",
       "js/consent.js",
+      "js/schools.js",
       "leaflet/leaflet.js",
       "leaflet/leaflet.css",
     ]
@@ -1145,7 +1146,7 @@ function schoolsHtml(t) {
     const rows = all
       .map(
         (x) =>
-          `<tr><th scope="row" class="fw-normal">${nameLink(x)}${x.alt ? " (alternative)" : ""}</th><td>${esc(x.level)}</td><td>${x.grades}</td><td>${esc(x.leaType === "District" ? x.leaShort || x.kind : x.kind)}</td></tr>`,
+          `<tr data-level="${esc(x.level)}" data-kind="${esc(x.leaType === "District" ? x.leaShort || x.kind : x.kind)}"><th scope="row" class="fw-normal">${nameLink(x)}${x.alt ? " (alternative)" : ""}</th><td>${esc(x.level)}</td><td>${x.grades}</td><td>${esc(x.leaType === "District" ? x.leaShort || x.kind : x.kind)}</td></tr>`,
       )
       .join("\n          ");
     // Tally above the table: "Logan has five preschools, 11 elementary
@@ -1160,15 +1161,34 @@ function schoolsHtml(t) {
           : `the ${nameLink({ name: kind, url: (all.find((x) => x.kind === kind) || {}).leaUrl })} runs ${countWord(n)}`,
       );
     const summary = `<p>${levelTally} ${capFirst(listText(kinds))}.</p>`;
+    // Search and filters (static/js/schools.js fills the menus from the rows)
+    const id = `schools-${slug(t.name)}`;
     out.k12 = `${summary}
+    <div class="schools-tools row g-2 mb-2 font-sans" data-table="${id}" hidden>
+      <div class="col-md-6">
+        <label for="${id}-search" class="visually-hidden">Search schools</label>
+        <input id="${id}-search" type="search" class="form-control form-control-sm" placeholder="Search schools ..." autocomplete="off" />
+      </div>
+      <div class="col-6 col-md-3">
+        <label for="${id}-level" class="visually-hidden">Level</label>
+        <select id="${id}-level" class="form-select form-select-sm" data-filter="level"><option value="">All levels</option></select>
+      </div>
+      <div class="col-6 col-md-3">
+        <label for="${id}-kind" class="visually-hidden">District or type</label>
+        <select id="${id}-kind" class="form-select form-select-sm" data-filter="kind"><option value="">All districts and types</option></select>
+      </div>
+      <p class="schools-count small text-secondary mb-0" aria-live="polite"></p>
+    </div>
     <div class="table-responsive">
-      <table class="table table-sm schools-table">
-        <thead><tr><th scope="col">School</th><th scope="col">Level</th><th scope="col">Grades</th><th scope="col">District or Type</th></tr></thead>
+      <table id="${id}" class="table table-sm table-striped schools-table">
+        <thead class="table-dark"><tr><th scope="col">School</th><th scope="col">Level</th><th scope="col">Grades</th><th scope="col">District or Type</th></tr></thead>
         <tbody>
           ${rows}
         </tbody>
       </table>
-    </div>`;
+      <p class="schools-none text-secondary" hidden>No schools match.</p>
+    </div>
+    <script defer src="../js/schools.js?v=${VERSION}"></script>`;
   } else {
     // Sentences: one per district, then charter and private schools
     const item = (x) => `${nameLink(x)} (${x.gradesText}${x.alt ? ", alternative" : ""})`;

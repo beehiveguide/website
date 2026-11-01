@@ -1044,9 +1044,14 @@ a.marker-link:focus {
 .schools-table {
   margin-bottom: 0;
 }
-/* Header row: the same light gray line as the other rows, but thicker */
+/* Header row: charcoal (like the site name on hover) with white text, no
+   line under it */
 .schools-table > :not(:last-child) > :last-child > * {
-  border-bottom: 2px solid #dee2e6;
+  border-bottom: 0;
+}
+.schools-table thead.table-dark {
+  --bs-table-bg: var(--dark-hover);
+  border-color: var(--dark-hover);
 }
 
 /* Coordinates link: primary color, dark on hover like the community links */
