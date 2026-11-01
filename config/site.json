@@ -35,7 +35,16 @@
       "town-lower": "",
       "town-bottom-1-resp": "",
       "town-bottom-2": "",
-      "town-bottom-3": ""
+      "town-bottom-3": "",
+      "blog-top-resp": "",
+      "blog-bottom-1-resp": "",
+      "blog-bottom-2": "",
+      "blog-bottom-3": "",
+      "post-top-resp": "",
+      "post-bottom-1-resp": "",
+      "post-bottom-2": "",
+      "post-bottom-3": "",
+      "post-side": ""
     }
   },
   "consentBanner": true,

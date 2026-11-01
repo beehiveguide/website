@@ -89,11 +89,38 @@
       ["OpenStreetMap", `https://www.openstreetmap.org/directions?to=${lat}%2C${lng}`],
     ].map(([n, u]) => `<a href="${u}" class="link-dark">${n}</a>`).join(" &middot; ");
 
+    // Dots are small hexagons with rounded corners, point up like the
+    // logo's, drawn on the canvas. Sized to cover about the same area as a
+    // circle of the same radius; taps still use the circle around it.
+    const HexMarker = L.CircleMarker.extend({
+      _updatePath() {
+        const r = this._renderer;
+        if (!r._drawing || this._empty()) return;
+        const ctx = r._ctx, p = this._point, R = this._radius * 1.12;
+        const pts = [];
+        for (let k = 0; k < 6; k++) {
+          const a = (Math.PI / 3) * k - Math.PI / 2;
+          pts.push([p.x + R * Math.cos(a), p.y + R * Math.sin(a)]);
+        }
+        // Start halfway along the last side, then round each corner
+        ctx.beginPath();
+        ctx.moveTo((pts[5][0] + pts[0][0]) / 2, (pts[5][1] + pts[0][1]) / 2);
+        for (let k = 0; k < 6; k++) {
+          const [x1, y1] = pts[k], [x2, y2] = pts[(k + 1) % 6];
+          ctx.arcTo(x1, y1, x2, y2, R * 0.3);
+        }
+        ctx.closePath();
+        ctx.lineJoin = "round";
+        r._fillStroke(ctx, this);
+      },
+    });
+
     // A small dot for every community; the chosen one gets a pin
     const dots = places.map(([name, county, lat, lng], i) =>
-      L.circleMarker([lat, lng], { radius: 5, color: "#fff", weight: 1.5, fillColor: "#cc4b0c", fillOpacity: 1 })
+      new HexMarker([lat, lng], { radius: 5, color: "#fff", weight: 1.5, fillColor: "#cc4b0c", fillOpacity: 1 })
         .bindTooltip(esc(name))
-        .on("click", () => choose(i))
+        // Stops here so the map's own click (leaving county view) doesn't fire
+        .on("click", (e) => { L.DomEvent.stopPropagation(e); choose(i); })
         .addTo(map));
     let pin;
 
@@ -102,6 +129,8 @@
     let outline;
     const clearCounty = () => { if (outline) { outline.remove(); outline = null; } resetDots(); };
     const slug = (page) => page.replace(/^.*\//, "").replace(/\.html$/, "");
+    // "Box Elder" -> "box-elder"
+    const countySlug = (c) => c.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
 
     function choose(i, fly = true) {
       const [name, county, lat, lng, page, seat] = places[i];
@@ -113,7 +142,7 @@
       pin = L.marker([lat, lng]).addTo(map)
         .bindPopup(fillPopup({
           "{Popup Town}": `<a href="${page}" class="marker-link link-icon font-zilla me-2">${esc(name)}, Utah</a>`,
-          "{Popup County}": `<a href="?county=${encodeURIComponent(county)}" class="link-secondary county-link" data-county="${esc(county)}">${esc(county)} County</a>`,
+          "{Popup County}": `<a href="?county=${countySlug(county)}" class="link-secondary county-link" data-county="${esc(county)}">${esc(county)} County</a>`,
           "{Popup Seat}": seat ? SEAT_ICON : "",
           "{Popup Directions}": directions(lat, lng),
         }), { minWidth: 300, maxWidth: 380, className: "town-popup" })
@@ -123,8 +152,10 @@
 
     // County view: its outline and its towns' dots highlighted
     const outlines = {County Outlines JSON};
+    let currentCounty = null;
     function chooseCounty(county) {
       clearCounty();
+      currentCounty = county;
       showOverview(false);
       if (pin) { pin.remove(); pin = null; }
       const inCounty = places.map((p, i) => [p, i]).filter(([p]) => p[1] === county);
@@ -135,13 +166,41 @@
       });
       const shape = outlines && outlines[county];
       if (shape) {
-        outline = L.geoJSON(shape, { style: { color: "#fff", weight: 3, opacity: 0.9, fill: false } }).addTo(map);
+        // Not clickable, so taps reach the town dots inside it
+        outline = L.geoJSON(shape, { interactive: false, style: { color: "#fff", weight: 3, opacity: 0.9, fill: false } }).addTo(map);
         map.fitBounds(outline.getBounds(), { padding: [20, 20] });
       } else {
         map.fitBounds(L.latLngBounds(inCounty.map(([p]) => [p[2], p[3]])), { padding: [40, 40] });
       }
-      history.replaceState(null, "", `?county=${encodeURIComponent(county)}`);
+      history.replaceState(null, "", `?county=${countySlug(county)}`);
     }
+    // In county view, a click outside the county goes back to the whole
+    // state's view (the map stays where it is)
+    const inside = (latlng, rings) =>
+      rings.some((ring) => {
+        let isIn = false;
+        for (let a = 0, b = ring.length - 1; a < ring.length; b = a++) {
+          const [x1, y1] = ring[a], [x2, y2] = ring[b];
+          if (y1 > latlng.lat !== y2 > latlng.lat &&
+              latlng.lng < ((x2 - x1) * (latlng.lat - y1)) / (y2 - y1) + x1) isIn = !isIn;
+        }
+        return isIn;
+      });
+    const ringsOf = (g) => {
+      const geom = g.type === "Feature" ? g.geometry : g.type === "FeatureCollection" ? null : g;
+      if (!geom) return g.features.flatMap(ringsOf);
+      return geom.type === "Polygon" ? [geom.coordinates[0]] : geom.type === "MultiPolygon" ? geom.coordinates.map((p) => p[0]) : [];
+    };
+    map.on("click", (e) => {
+      if (!outline || !currentCounty) return;
+      const shape = outlines && outlines[currentCounty];
+      if (shape && inside(e.latlng, ringsOf(shape))) return;
+      clearCounty();
+      currentCounty = null;
+      showOverview(true);
+      history.replaceState(null, "", location.pathname);
+    });
+
     // County links in a pin's popup switch views without reloading the page
     document.getElementById("full-map").addEventListener("click", (e) => {
       const c = e.target.closest(".county-link");
@@ -186,10 +245,14 @@
 
     // Start on the community or county named in the address
     // (map.html?town=kanab or map.html?county=Kane), or show the whole state
+    // County names match loosely: ?county=cache, ?county=box-elder and
+    // ?county=Box%20Elder all work
     const params = new URLSearchParams(location.search);
     const start = places.findIndex((p) => slug(p[4]) === params.get("town"));
+    const wantCounty = params.get("county") && countySlug(params.get("county").replace(/[- ]county$/i, ""));
+    const startCounty = wantCounty && (places.find((p) => countySlug(p[1]) === wantCounty) || [])[1];
     if (start >= 0) choose(start);
-    else if (params.get("county") && places.some((p) => p[1] === params.get("county"))) chooseCounty(params.get("county"));
+    else if (startCounty) chooseCounty(startCounty);
     else {
       showOverview(true);
       map.fitBounds(L.latLngBounds(places.map((p) => [p[2], p[3]])), { padding: [20, 20] });

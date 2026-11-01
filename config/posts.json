@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "chokecherries-natures-bittersweet-staple",
+    "title": "Nature's Bittersweet Staple: Chokecherry's Importance Across Habitats and Cultures",
+    "date": "2026-10-31",
+    "author": "Beehive Guide",
+    "lead": "Chokecherries feed birds, bears and bees. They've also long been a staple food for Native American tribes and frontier settlers.",
+    "topics": [
+      "Native Plants"
+    ],
+    "photo": "ripe-chokecherries",
+    "shareImage": "images/share-chokecherries.jpg"
+  },
+  {
+    "slug": "is-chicory-a-weed",
+    "title": "Is Chicory a Weed? How to Identify It, What It's Used For and How to Control It",
+    "date": "2026-10-31",
+    "author": "Beehive Guide",
+    "lead": "Chicory's blue flowers brighten roadsides across the country, but some states call it a noxious weed. Learn how to spot it, what it's good for and how to keep it in check.",
+    "topics": [
+      "Weeds"
+    ],
+    "photo": "chicory-flowers",
+    "shareImage": "images/share-chicory.jpg"
+  }
+]

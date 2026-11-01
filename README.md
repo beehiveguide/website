@@ -21,6 +21,8 @@ Run every command below from this `website` folder. You need Node.js (version 18
   - `school_districts.json` has each school district's full name ("Duchesne County School District") and website, by UGRC's short name.
   - `higher_ed_urls.json` has college and university websites, by name, for ones UGRC lists without one.
   - `photos.json` lists each photo: its original, web versions, caption, alt text and credit.
+- `config/posts.json` lists the blog posts (see Blog below).
+- `posts/` has each blog post's body as HTML, one file per post.
 - `scripts/` has the build steps, numbered in the order they run. `scripts/lib/` has the helpers the steps share. `scripts/tools/` has tools you run by hand that aren't part of the build, such as `filter_utah_stations.js` (see the NOAA note under Update a source).
 - `templates/` has the HTML for the town pages, index, 404 page, header and footer.
 - `static/` has files copied into the site as is: web fonts trimmed to Latin as WOFF2 (`static/fonts/`: Roboto Slab, Roboto and Zilla Slab), Bootstrap 5.0.2 and the site stylesheet (`static/css/`), Leaflet 1.9.4 for the maps (`static/leaflet/`) and web-sized photos (`static/images/`). Original downloads stay in `sources/fonts/`, `sources/libraries/` and `sources/photos/originals/`.
@@ -165,6 +167,18 @@ Notes:
 - **Community services:** The sections below Growing Info (each with its own heading) come from the UGRC layers through `04_schools.js`, `05_places.js` and `06_services.js`, and are written by `servicesHtml()` in `10_pages.js`. It runs public safety (police and fire), library, parks and cemeteries, PreK-12 schools, higher education, then health care (hospitals only), and leaves out empty parts. Parks, libraries and cemeteries past `BIG_LIST` (5) become a three-column list, PreK-12 schools are one paragraph up to `SCHOOL_ONE_PARAGRAPH` (8), then a paragraph for elementary schools and one for middle and high schools, each opening with a count ("Vernal has a preschool and five elementary schools."), and past `SCHOOL_TABLE_MIN` (15) a table. A tally of schools by level leads whenever a level has more than one school. Fewer are written as sentences; a small town's one cemetery follows its parks in the same paragraph ("It also has the Mendon City Cemetery, which dates to 1860."). Left out: residential treatment and online schools, college classes in jails and prisons, single graves in the cemetery layer, and fire training and logistics centers. Parks named only "Park," "Ball Park" and the like are counted in the sentence for small towns and left off long lists. College websites missing from UGRC go in `config/higher_ed_urls.json`. School district full names and websites are in `config/school_districts.json`.
 - **Reservations:** Census reservation boundaries come from TIGERweb (https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/AIANNHA/MapServer, layer 2), queried for Utah and saved as GeoJSON. `06_services.js` gives every community inside a reservation that reservation's tribal police (`config/tribal_police.json`). UGRC's own tribal police areas cover only scattered trust land, so they aren't used.
 - **Fixing a value in a source:** Don't edit the source file. Add the fix to `config/corrections.json` with a note on why.
+
+## Blog
+
+Blog pages are at `blog/` (`blog/index.html` lists the posts, newest first).
+
+To add a post:
+
+1. Put the photos' originals in `../drive/photos/originals/` and make web versions in `static/images/blog/`: `<id>.webp` at full size and `<id>-640.webp` 640 pixels wide.
+2. Add each photo to `config/photos.json` with its caption, alt text and `photographer`. The credit reads "Photo: <photographer>." Add `photographerUrl` to link the name and `source` to add "/Flickr" or the like.
+3. Add the post to `config/posts.json`: `slug` (its file name), `title`, `date` (`2026-11-01`), `author`, `lead` (a short summary shown in larger type above the article, on the blog page and as the search and sharing description), `photo` (the top photo's id) and `shareImage` (a 1200 x 630 JPEG in `static/images/`). Add `updated` with a date after a big change.
+4. Write the body in `posts/<slug>.html` as plain HTML with `<h2>` and `<h3>` headings. Put `{Photo id}` on its own line for a photo and `{Video youtubeId | caption | credit}` for a YouTube video. The credit, like "Bureau of Land Management/YouTube," links to the video on YouTube.
+5. Run `npm run pages`.
 
 ## Ads and Tag Manager
 

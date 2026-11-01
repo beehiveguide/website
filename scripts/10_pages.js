@@ -11,6 +11,7 @@
 //   communities/<name>.html  one page per community (templates/town-page.html)
 //   index.html                    search and county list (templates/index.html)
 //   about.html, contact.html      (templates/about.html, templates/contact.html)
+//   blog/index.html, blog/<slug>.html  (config/posts.json, posts/, templates/blog.html, templates/post.html)
 //   404.html                      (templates/404.html)
 //   sitemap.xml
 //   everything in static/ (fonts, CSS, images, map script), copied as is
@@ -370,6 +371,7 @@ const header = (home, shadow, root) =>
     "{Header Shadow}": shadow,
     "{About URL}": link(`${root}about.html`),
     "{Contact URL}": link(`${root}contact.html`),
+    "{Blog URL}": link(`${root}blog/index.html`),
     "{Map URL}": link(`${root}map.html`),
     "{Site Name}": `<span class="site-title-text">${siteTitle}</span>`,
   });
@@ -429,6 +431,15 @@ const AD_SPOTS = {
   "town-bottom-1-resp": "rect",
   "town-bottom-2": "rect",
   "town-bottom-3": "rect",
+  "blog-top-resp": "banner",
+  "blog-bottom-1-resp": "rect",
+  "blog-bottom-2": "rect",
+  "blog-bottom-3": "rect",
+  "post-top-resp": "banner",
+  "post-bottom-1-resp": "rect",
+  "post-bottom-2": "rect",
+  "post-bottom-3": "rect",
+  "post-side": "rect",
 };
 function adSpot(name, margin = "mb-4") {
   const shapeName = AD_SPOTS[name],
@@ -471,6 +482,32 @@ const adSpots = () => ({
       ],
       "mt-4 pb-3 mb-4",
     ),
+  ),
+  // Blog page: a banner above the heading, squares below the post list
+  "{Ad blog-top-resp}": adSpot("blog-top-resp", "mb-5"),
+  "{Ads blog-bottom}": adRow(
+    ["blog-bottom-1-resp", "blog-bottom-2", "blog-bottom-3"],
+    [
+      "col-md-6 col-xl-4",
+      "col-md-6 col-xl-4 d-none d-md-block",
+      "col-xl-4 d-none d-xl-block",
+    ],
+    "mt-4",
+  ),
+  // Blog posts: a banner above the Blog button, like town pages, and
+  // squares across the bottom
+  "{Ad post-top-resp}": adSpot("post-top-resp"),
+  // In the sidebar, below the tags; wide screens only, so phones get just
+  // the one square at the bottom
+  "{Ad post-side}": adSpot("post-side", "mb-4 d-none d-lg-block"),
+  "{Ads post-bottom}": adRow(
+    ["post-bottom-1-resp", "post-bottom-2", "post-bottom-3"],
+    [
+      "col-md-6 col-xl-4",
+      "col-md-6 col-xl-4 d-none d-md-block",
+      "col-xl-4 d-none d-xl-block",
+    ],
+    "mt-4",
   ),
   "{Ads town-bottom}": adRow(
     ["town-bottom-1-resp", "town-bottom-2", "town-bottom-3"],
@@ -574,7 +611,7 @@ function metaTags(meta, title, root) {
     m.path !== undefined && full(m.path)
       ? `<link rel="canonical" href="${esc(full(m.path))}" />`
       : "",
-    `<meta property="og:type" content="website" />`,
+    `<meta property="og:type" content="${m.ogType || "website"}" />`,
     `<meta property="og:site_name" content="${esc(site.name)}" />`,
     `<meta property="og:title" content="${title}" />`,
     `<meta property="og:description" content="${esc(m.description)}" />`,
@@ -586,6 +623,22 @@ function metaTags(meta, title, root) {
     `<meta property="og:image:height" content="630" />`,
     `<meta property="og:image:alt" content="${esc(m.imageAlt)}" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
+    // Blog posts: author, keywords and article tags (m.article)
+    ...(m.article
+      ? [
+          `<meta name="author" content="${esc(m.article.author)}" />`,
+          m.article.tags.length
+            ? `<meta name="keywords" content="${esc(m.article.tags.join(", "))}" />`
+            : "",
+          `<meta property="article:published_time" content="${m.article.published}" />`,
+          m.article.modified
+            ? `<meta property="article:modified_time" content="${m.article.modified}" />`
+            : "",
+          ...m.article.tags.map(
+            (t) => `<meta property="article:tag" content="${esc(t)}" />`,
+          ),
+        ]
+      : []),
     m.jsonLd
       ? `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", ...m.jsonLd }).replace(/</g, "\\u003c")}</script>`
       : "",
@@ -882,7 +935,7 @@ function libraryHtml(t) {
     const name = shownNames[i];
     return /^the /i.test(name) || !/(Library|Libraries|Branch|System|Bookmobile|Center|Room|Headquarters)$| Library at /.test(name) ? l : `the ${l}`;
   });
-  return `<p>${capFirst(listText(withThe))} ${libs.length > 1 ? "serve" : "serves"} the community.</p>`;
+  return `<p>${capFirst(listText(withThe))} ${libs.length > 1 ? "are" : "is"} located in ${placeWord(t)}.</p>`;
 }
 
 function cemeteryHtml(t) {
@@ -890,7 +943,9 @@ function cemeteryHtml(t) {
   if (!list.length) return "";
   if (list.length === 1) {
     const c = list[0];
-    return `<p>${c.year ? `${esc(c.name)} dates to ${c.year}.` : `${esc(c.name)} serves ${placeWord(t)}.`}</p>`;
+    // "The Redmond Cemetery, located in the city, dates to 1876."
+    const name = /Cemetery$/.test(c.name) && !/^the /i.test(c.name) ? `The ${esc(c.name)}` : esc(c.name);
+    return `<p>${name}${c.year ? `, located in ${placeWord(t)}, dates to ${c.year}.` : ` is located in ${placeWord(t)}.`}</p>`;
   }
   const items = list.map((c) => esc(c.name) + (c.year ? ` (${c.year})` : ""));
   if (list.length > BIG_LIST)
@@ -904,8 +959,14 @@ const PARK_KINDS = { "ball park": "ballpark", ballpark: "ballpark", "sports park
 // Parks: a three-column list past BIG_LIST, otherwise what follows "Beaver
 // has": "five parks, including three ballparks and a sports park". inList
 // says whether every park is named in the phrase ("two parks, A and B").
+// "City Park", "Town Park" or "Community Park", alone or after the town's
+// name ("Aurora City Park"), says nothing new, so it's counted, not named
+const plainParkName = (t, name) =>
+  new RegExp(`^(${t.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} )?(city|town|community) park$`, "i").test(name.trim());
 function parkParts(t) {
-  const parks = (t.places && t.places.parks) || [];
+  const parks = ((t.places && t.places.parks) || []).map((p) =>
+    !p.generic && plainParkName(t, p.name) ? { ...p, generic: true } : p,
+  );
   const named = uniqueBy(parks.filter((p) => !p.generic), (p) => p.name.toLowerCase());
   const generic = parks.filter((p) => p.generic);
   if (!named.length && !generic.length) return null;
@@ -973,14 +1034,10 @@ function parksCemeteriesHtml(t) {
   if (parks && parks.list) out.push(parks.list);
   else if (parks) {
     const join = (sep) => (parks.rest ? `${parks.head}${sep}${parks.rest}` : parks.head);
-    // Parks, then the town's one cemetery in a second sentence: "Mendon has
-    // two parks. It also has the Mendon City Cemetery, which dates to 1860."
-    if (cems.length === 1) {
-      const c = cems[0];
-      const the = /^the /i.test(c.name) ? "" : "the ";
-      const cem = c.year ? `${the}${esc(c.name)}, which dates to ${c.year}` : `${the}${esc(c.name)}`;
-      return `<p>${town} has ${join(parks.inList ? (parks.head === "one park" ? ", " : ": ") : ", including ")}. It also has ${cem}.</p>`;
-    }
+    // Parks, then the town's one cemetery in a second sentence: "Redmond has
+    // four parks. The Redmond Cemetery, located in the city, dates to 1876."
+    if (cems.length === 1)
+      return `<p>${town} has ${join(parks.inList ? (parks.head === "one park" ? ", " : ": ") : ", including ")}. ${cemeteryHtml(t).replace(/^<p>|<\/p>$/g, "")}</p>`;
     out.push(`<p>${town} has ${join(parks.inList ? (parks.head === "one park" ? ", " : ": ") : ", including ")}.</p>`);
   }
   const cemHtml = cemeteryHtml(t);
@@ -1458,7 +1515,7 @@ function buildPage(t) {
     "{Map Page URL}": mapUrl(t, "../"),
     "{Town Popup}": fill(TOWN_POPUP, {
       "{Popup Town}": `<span class="marker-link text-body font-zilla me-2">${esc(t.name)}, Utah</span>`,
-      "{Popup County}": `<a href="${link("../map.html")}?county=${encodeURIComponent(t.county)}" class="link-secondary">${esc(t.county)} County</a>`,
+      "{Popup County}": `<a href="${link("../map.html")}?county=${slug(t.county)}" class="link-secondary">${esc(t.county)} County</a>`,
       "{Popup Seat}": t.countySeat ? COUNTY_SEAT : "",
       "{Popup Directions}": directionsLinks(t),
     }),
@@ -1640,24 +1697,117 @@ const items = pages
       `      <li data-county="${esc(p.county)}" data-name="${esc(p.name.toLowerCase())}" hidden><a href="${link(`communities/${fileName(p)}`)}">${esc(p.name)}<span class="county-suffix"> (${esc(p.county)})</span>${p.countySeat ? COUNTY_SEAT : ""}</a></li>`,
   )
   .join("\n");
+// --- Blog (config/posts.json lists the posts; each post's body is
+// posts/<slug>.html). Bodies are plain HTML with two tokens for media:
+//   {Photo id}                     a photo from config/photos.json with its
+//                                  caption and "Photo: <photographer>/<source>."
+//   {Video youtubeId | caption | credit}  a YouTube video in YouTube's
+//                                  privacy-enhanced mode (no cookies until play),
+//                                  credited "Video: <credit>." with the credit
+//                                  linked to the video on YouTube
+const posts = (
+  fs.existsSync(paths.config("posts.json"))
+    ? paths.readJson(paths.config("posts.json"))
+    : []
+)
+  .map((p, i) => ({ ...p, order: i }))
+  // Newest first; posts with the same date go in reverse order of the list
+  .sort((a, b) => b.date.localeCompare(a.date) || b.order - a.order);
+const postPhoto = (id) => {
+  const p = photos.find((x) => x.id === id);
+  if (!p) throw new Error(`Photo "${id}" not found in config/photos.json`);
+  return p;
+};
+// root: path from the page to the site root. lead: the photo at the top of a
+// post loads right away; the rest wait until they're scrolled near.
+// A photo not yet in config/photos.json is left out with a warning, so a
+// post can go up before its photo is ready.
+function photoFigure(id, root, lead = false) {
+  if (!photos.some((x) => x.id === id)) {
+    console.warn(`  Photo "${id}" isn't in config/photos.json yet; left out`);
+    return "";
+  }
+  const p = postPhoto(id);
+  const d = p.web.desktop,
+    m = p.web.mobile;
+  // "Photo: Alan Levine/Flickr." with "Alan Levine/Flickr" linked to photographerUrl
+  const who = `${esc(p.photographer)}${p.source ? `/${esc(p.source)}` : ""}`;
+  const credit = p.photographer
+    ? ` Photo: ${p.photographerUrl ? `<a href="${esc(p.photographerUrl)}" class="link-secondary">${who}</a>` : who}.`
+    : "";
+  return `<figure class="post-figure">
+  <img src="${root}${photoPath(d.file)}" srcset="${root}${photoPath(m.file)} ${m.width}w, ${root}${photoPath(d.file)} ${d.width}w" sizes="(max-width: 800px) 100vw, 768px" width="${d.width}" height="${d.height}" alt="${esc(p.alt)}"${lead ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async" />
+  <figcaption>${esc(p.caption)}${credit}</figcaption>
+</figure>`;
+}
+// Topic pills ("topics" in config/posts.json)
+const tagPills = (p, margin) =>
+  p.topics && p.topics.length
+    ? `<p class="post-tags ${margin}">${p.topics.map((t) => `<span class="badge rounded tag-pill">${esc(t)}</span>`).join(" ")}</p>`
+    : "";
+function videoFigure(spec) {
+  const [id, caption, credit] = spec.split("|").map((x) => x.trim());
+  return `<figure class="post-figure">
+  <div class="ratio ratio-16x9"><iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}" title="${esc(caption)}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+  <figcaption>${esc(caption)}${credit ? ` Video: <a href="https://www.youtube.com/watch?v=${esc(id)}" class="link-secondary">${esc(credit)}</a>.` : ""}</figcaption>
+</figure>`;
+}
+// Homepage: the newest blog posts as small media items above Community
+// Profiles, in a light gradient card
+const HOME_POSTS = 2;
+const homeBlog = posts.length
+  ? `<section class="mb-4" aria-labelledby="home-blog-title">
+    <div class="home-blog card bg-light-gradient shadow-sm rounded-1">
+    <div class="card-header bg-transparent d-flex justify-content-between align-items-baseline">
+      <h2 id="home-blog-title" class="h6 fs-md mb-0">${esc(site.name)} Blog</h2>
+      <a href="${link("blog/index.html")}" class="home-blog-more link-secondary font-sans small fst-italic text-decoration-none"><span class="text-decoration-underline">View the blog</span> &raquo;</a>
+    </div>
+    <div class="card-body py-3">
+    <div class="row gx-0 gx-md-5 gy-2">
+${posts
+  .slice(0, HOME_POSTS)
+  .map((p) => {
+    const ph =
+      p.photo && photos.some((x) => x.id === p.photo) ? postPhoto(p.photo) : null;
+    const img = ph
+      ? `<img src="${photoPath(ph.web.mobile.file)}" width="60" height="60" alt="" loading="lazy" decoding="async" class="home-blog-thumb flex-shrink-0 rounded-1 me-2" />`
+      : "";
+    return `      <div class="col-md-6">
+        <a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-center text-reset text-decoration-none">
+          ${img}<span><span class="home-blog-title d-block fw-bold lh-sm">${esc(p.title)}</span><small class="text-secondary font-sans">${apDate(p.date)}</small></span>
+        </a>
+      </div>`;
+  })
+  .join("\n")}
+    </div>
+    </div>
+    </div>
+  </section>`
+  : "";
 const indexHtml = fill(template("index.html"), {
   "{Home Photo Desktop}": homePhoto.desktop,
-  // Room for ads only where a spot will show (a placeholder in "setup",
-  // or a slot ID in "on"), so spots without IDs leave no blank space
+  // With a top ad showing, a shorter photo on large screens so the ad
+  // doesn't push the page's content out of view
   "{Home Band Ads}": adSpot("home-top-resp") ? " home-band-ads" : "",
-  // Ad-free, the content sits closer to the photo and the footer
+  // Top ad, between the photo and the blog previews. Spots without an ID
+  // leave no blank space.
   "{Home Top Ad}": adSpot("home-top-resp")
     ? `<div class="container pt-4">${adSpot("home-top-resp")}</div>`
     : "",
-  "{Home Content Margin}": ["home-top-resp", "home-bottom-1-resp", "home-bottom-2", "home-bottom-3"].some((n) => adSpot(n))
-    ? "my-5" // 48px gaps, like town pages
-    : "mt-5 mb-4",
+  // Ad-free, the content sits closer to the photo and the footer
+  // Under the top ad: the ad's own margin (24px) plus 8px above the content
+  "{Home Content Margin}": adSpot("home-top-resp")
+    ? "mt-2 mb-5"
+    : ["home-bottom-1-resp", "home-bottom-2", "home-bottom-3"].some((n) => adSpot(n))
+      ? "my-5" // 48px gaps, like town pages
+      : "mt-5 mb-4",
   "{Home Photo Mobile}": homePhoto.mobile,
   // The tagline's last word stays on the same line as the icon after it
   "{Tagline Start}": esc(site.tagline).replace(/\S+$/, ""),
   "{Tagline Last}": esc(site.tagline).match(/\S+$/)[0],
   "{County Links}": countyLinks,
   "{Profile Items}": items,
+  "{Home Blog}": homeBlog,
 });
 fs.writeFileSync(
   path.join(outDir, "index.html"),
@@ -1729,6 +1879,130 @@ fs.writeFileSync(
     },
   ),
 );
+
+{
+  const blogDir = path.join(outDir, "blog");
+  fs.mkdirSync(blogDir, { recursive: true });
+  for (const p of posts) {
+    const body = fs
+      .readFileSync(path.join(paths.dirs.root, "posts", `${p.slug}.html`), "utf8")
+      .replace(/\{Photo ([\w-]+)\}/g, (_, id) => photoFigure(id, "../"))
+      .replace(/\{Video ([^}]+)\}/g, (_, x) => videoFigure(x))
+      .trim();
+    const lead =
+      p.photo && photos.some((x) => x.id === p.photo) ? postPhoto(p.photo) : null;
+    fs.writeFileSync(
+      path.join(blogDir, `${p.slug}.html`),
+      wrapPage(
+        fill(template("post.html"), {
+          "{Blog URL}": link("index.html"),
+          "{Site Name}": esc(site.name),
+          "{Post Title}": esc(p.title),
+          // The post's tags, below Recent Posts in the sidebar
+          "{Post Tags}": tagPills(p, "mb-4"),
+          "{Post Date ISO}": p.date,
+          "{Post Date}": apDate(p.date),
+          // "by Beehive Guide" links home, like the town pages
+          "{Post Author}":
+            (p.author || site.name) === site.name
+              ? `<a href="${link("../index.html")}" class="link-dark">${esc(site.name)}</a>`
+              : esc(p.author),
+          // Summary above the article ("lead" in config/posts.json)
+          "{Post Lead}": p.lead
+            ? `<p class="lead rule-fade-both pb-3 mb-4">${esc(p.lead)}</p>`
+            : "",
+          "{Post Photo}": p.photo ? photoFigure(p.photo, "../", true) : "",
+          "{Post Body}": body,
+          // Sidebar: the newest posts (this one included, marked as current)
+          "{Recent Posts}": posts
+            .slice(0, 5)
+            .map(
+              (o) =>
+                `              <li><a href="${link(`${o.slug}.html`)}" class="link-dark"${o.slug === p.slug ? ' aria-current="page"' : ""}>${esc(o.title)}</a><br /><small class="text-secondary font-sans">${apDate(o.date)}</small></li>`,
+            )
+            .join("\n"),
+        }),
+        `${esc(p.title)} | ${esc(site.name)} Blog`,
+        link("../index.html"),
+        "../",
+        "shadow",
+        true,
+        {
+          description: p.lead,
+          path: `blog/${p.slug}.html`,
+          ogType: "article",
+          article: {
+            author: p.author || site.name,
+            published: p.date,
+            modified: p.updated,
+            tags: p.topics || [],
+          },
+          ...(p.shareImage
+            ? { image: p.shareImage, imageAlt: lead ? lead.alt : p.title }
+            : {}),
+          jsonLd: {
+            "@type": "BlogPosting",
+            headline: p.title,
+            datePublished: p.date,
+            ...(p.updated ? { dateModified: p.updated } : {}),
+            author: { "@type": "Organization", name: p.author || site.name },
+            publisher: { "@type": "Organization", name: site.name },
+            ...(p.topics ? { keywords: p.topics.join(", ") } : {}),
+            ...(site.url && p.shareImage
+              ? { image: `${site.url}/${p.shareImage}` }
+              : {}),
+          },
+        },
+      ),
+    );
+  }
+  // Remove pages for posts no longer in config/posts.json
+  const keep = new Set(["index.html", ...posts.map((p) => `${p.slug}.html`)]);
+  for (const f of fs.readdirSync(blogDir))
+    if (f.endsWith(".html") && !keep.has(f)) {
+      fs.unlinkSync(path.join(blogDir, f));
+      console.log(`  Removed old post page blog/${f}`);
+    }
+  // Blog index: newest first
+  const postList = posts
+    .map((p) => {
+      const href = link(`${p.slug}.html`);
+      const ph =
+        p.photo && photos.some((x) => x.id === p.photo) ? postPhoto(p.photo) : null;
+      const img = ph
+        ? `<div class="col-md-4 mb-3 mb-md-0"><a href="${href}" tabindex="-1" aria-hidden="true"><img src="../${photoPath(ph.web.mobile.file)}" width="${ph.web.mobile.width}" height="${ph.web.mobile.height}" alt="" loading="lazy" decoding="async" /></a></div>`
+        : "";
+      return `    <article class="post-card row py-4">
+      ${img}
+      <div class="${ph ? "col-md-8" : "col-12"}">
+        <h2 class="h4 mb-1"><a href="${href}">${esc(p.title)}</a></h2>
+        <p class="text-secondary font-sans small mb-2"><time datetime="${p.date}">${apDate(p.date)}</time></p>
+        ${tagPills(p, "mb-2")}
+        <p class="mb-0">${esc(p.lead)}</p>
+      </div>
+    </article>`;
+    })
+    .join("\n");
+  fs.writeFileSync(
+    path.join(blogDir, "index.html"),
+    wrapPage(
+      fill(template("blog.html"), {
+        "{Post List}": postList,
+        "{Site Name}": esc(site.name),
+      }),
+      `${esc(site.name)} | Blog`,
+      link("../index.html"),
+      "../",
+      "shadow",
+      true,
+      {
+        description: `Articles on native plants, weeds, gardening and nature in Utah and the Mountain West.`,
+        path: "blog/index.html",
+        jsonLd: { "@type": "Blog", name: `${site.name} Blog` },
+      },
+    ),
+  );
+}
 
 // --- 404 page. Served at any missing address, so its links start at the site root.
 fs.writeFileSync(
@@ -1857,10 +2131,17 @@ for (const p of pages)
     lastmod[
       `/communities/${site.cleanLinks ? fileName(p).replace(/\.html$/, "") : fileName(p)}`
     ] = pageDates[fileName(p)].date;
+for (const p of posts)
+  lastmod[site.cleanLinks ? `/blog/${p.slug}` : `/blog/${p.slug}.html`] =
+    p.updated || p.date;
 const urls = [
   "/",
   ...["map", "about", "contact"].map((n) =>
     site.cleanLinks ? `/${n}` : `/${n}.html`,
+  ),
+  site.cleanLinks ? "/blog/" : "/blog/index.html",
+  ...posts.map((p) =>
+    site.cleanLinks ? `/blog/${p.slug}` : `/blog/${p.slug}.html`,
   ),
   ...pages.map(
     (p) =>
@@ -1883,5 +2164,5 @@ ${urls
 `,
 );
 console.log(
-  `Done! Wrote ${list.length} pages, an index of ${pages.length}, about, contact, 404.html and sitemap.xml to ${path.relative(paths.dirs.root, outDir) || "."}/`,
+  `Done! Wrote ${list.length} pages, an index of ${pages.length}, about, contact, ${posts.length} blog post${posts.length === 1 ? "" : "s"}, 404.html and sitemap.xml to ${path.relative(paths.dirs.root, outDir) || "."}/`,
 );

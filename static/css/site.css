@@ -356,9 +356,16 @@ main:focus {
 }
 .nav-icon {
   width: auto;
+  overflow: visible; /* the beehive's rim runs a hair past its box */
   height: 1.05em;
   margin-left: 0.3em;
   vertical-align: -0.17em;
+}
+/* The beehive runs wider than its box, so it sits a bit farther from the
+   word to look evenly spaced with the other two (phones stack the icon
+   above the word instead) */
+.nav-icon-hive {
+  margin-left: 0.4em;
 }
 
 /* Medium screens and smaller: the links become outlined rounded squares,
@@ -1056,4 +1063,139 @@ a.marker-link:focus {
   height: 0.9em;
   margin-right: 0.2em;
   vertical-align: -0.1em;
+}
+
+/* ---------- Blog ---------- */
+
+/* Posts: the text, figures and byline fill a Bootstrap col-lg-8, with
+   the sidebar in col-lg-4 */
+.post .post-figure {
+  margin: 1.5rem 0;
+}
+.post-side-list li {
+  padding: 0.4rem 0;
+}
+.post-side-list li + li {
+  border-top: 1px solid #dee2e6;
+}
+.post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+.post-figure figcaption {
+  margin-top: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #6c757d;
+}
+.post-body h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+.post-body h3 {
+  margin-top: 1.75rem;
+  font-size: 1.35rem;
+}
+.post-body .resource-list li {
+  margin-bottom: 0.5rem;
+}
+/* Blog index: one row per post, photo beside the text on wider screens */
+.post-card + .post-card {
+  border-top: 1px solid var(--rule);
+}
+/* and one under the last (earliest) post */
+.post-card:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+.post-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+.post-card h2 a:hover,
+.post-card h2 a:focus {
+  text-decoration: none;
+}
+/* Topic tags: flat rounded rectangles on posts and the blog page */
+.tag-pill {
+  padding: 0.5em 0.9em;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #212529;
+  background-color: #e9ecef;
+}
+/* Rule under a post's lead: the same fade as .rule-fade's right end
+   (the last 25%) on both ends */
+.rule-fade-both {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      var(--rule) 25%,
+      var(--rule) 75%,
+      transparent
+    )
+    1;
+}
+/* Homepage blog previews: small photo beside the title and date */
+/* The light gradient, 25% see-through */
+.home-blog.bg-light-gradient {
+  background-color: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(248, 249, 250, 0.75),
+    rgba(233, 236, 239, 0.75)
+  );
+}
+.home-blog-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.home-blog-title {
+  font-size: 0.95rem;
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+.home-blog small {
+  font-size: 0.75rem;
+}
+/* Underlined titles lose the underline on hover, like the site's other links */
+.home-blog-item:hover .home-blog-title,
+.home-blog-item:focus .home-blog-title {
+  color: var(--bs-primary-hover);
+  text-decoration: none;
+}
+/* Dotted line between the two previews, drawn like the county list's
+   rules (round dots 4px apart): across on phones, down the middle on
+   wider screens */
+.home-blog .col-md-6 + .col-md-6 {
+  padding-top: 0.75rem;
+  background: radial-gradient(
+      circle at 50% 1px,
+      #a7aeb5 0.6px,
+      transparent 0.9px
+    )
+    0 0 / 4px 2px repeat-x;
+}
+@media (min-width: 768px) {
+  .home-blog .col-md-6 + .col-md-6 {
+    padding-top: 0;
+    background: radial-gradient(
+        circle at 1px 50%,
+        #a7aeb5 0.6px,
+        transparent 0.9px
+      )
+      0 0 / 2px 4px repeat-y;
+  }
+}
+/* "View the blog" link on the right of the header: the words lose their
+   underline on hover */
+.home-blog-more:hover span,
+.home-blog-more:focus span {
+  text-decoration: none !important;
 }

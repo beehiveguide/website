@@ -215,6 +215,21 @@
       font-size: 1rem !important;
     }
   }
+  /* Phones: the tagline box spans the container and the heading fills its
+     width on one line ("Community Info for Utah" is about 12em wide),
+     up to 2rem */
+  @media (max-width: 575.98px) {
+    .skew-box {
+      display: block !important;
+    }
+    .skew-box-inner {
+      container-type: inline-size;
+    }
+    .skew-box-inner h1 {
+      font-size: min(calc(100cqi / 12), 2rem);
+      white-space: nowrap;
+    }
+  }
   /* Band at the top: photo from config/photos.json ("homePhoto" in
      config/site.json). Phones get the smaller version. */
   .home-band {
@@ -231,7 +246,7 @@
      content still shows below the banner ad */
   @media (min-width: 992px) {
     .home-band-ads {
-      height: 400px;
+      height: 340px;
     }
   }
   /* Parallax: the photo stays put while the page scrolls. Left off on
@@ -290,6 +305,7 @@
 
 {Home Top Ad}
 <div class="container {Home Content Margin}">
+  {Home Blog}
   <section id="community-profiles">
     <div class="bg-light-gradient border rounded shadow-sm p-4 mb-4">
       <h2 class="mt-0">

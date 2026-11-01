@@ -1,0 +1,51 @@
+<div class="container container-narrow my-5">
+  {Ad post-top-resp}
+  <article class="post">
+    <header class="post-header mb-4">
+      <p class="mt-5">
+        <a
+          href="{Blog URL}"
+          class="btn btn-primary btn-profile btn-sm fs-md fw-bold font-zilla rounded-0 border-0"
+          ><svg
+            class="btn-icon me-1"
+            viewBox="0 0 100 100"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path fill="currentColor" fill-rule="evenodd" d="M50.00 0.76 L92.64 25.38 L92.64 74.62 L50.00 99.24 L7.36 74.62 L7.36 25.38 Z M46.10 11.33 Q50.00 9.08 53.90 11.33 L81.54 27.29 Q85.44 29.54 85.44 34.04 L85.44 65.96 Q85.44 70.46 81.54 72.71 L53.90 88.67 Q50.00 90.92 46.10 88.67 L18.46 72.71 Q14.56 70.46 14.56 65.96 L14.56 34.04 Q14.56 29.54 18.46 27.29 Z" />
+            <path fill="currentColor" transform="translate(50 51) scale(0.85) translate(-50 -51)" d="M48.5 37 C42 32.5 33 31 24 33.5 L24 63.5 Q24 67.5 28 67 C36 65.8 43 66.6 48.5 70.5 Z M51.5 37 C58 32.5 67 31 76 33.5 L76 63.5 Q76 67.5 72 67 C64 65.8 57 66.6 51.5 70.5 Z" />
+          </svg><em>{Site Name} Blog</em></a
+        >
+      </p>
+      <h1 class="rule-fade pb-2 mb-0">{Post Title}</h1>
+    </header>
+    <div class="row">
+      <div class="col-lg-8">
+        {Post Photo}
+        {Post Lead}
+        <div class="post-body">
+{Post Body}
+        </div>
+        <div class="bg-light-gradient p-2 border rounded-1 shadow-sm mt-5 mb-0">
+          <em>by</em> {Post Author}.
+          <time datetime="{Post Date ISO}">{Post Date}</time>.
+        </div>
+      </div>
+      <aside class="col-lg-4 mt-5 mt-lg-4" aria-label="More from the blog">
+        <section class="card rounded-1 mb-2">
+          <h2 class="card-header bg-white h6 fs-md rule-fade-end mb-0">
+            Recent Posts
+          </h2>
+          <div class="card-body py-2">
+            <ul class="list-unstyled post-side-list mb-0">
+{Recent Posts}
+            </ul>
+          </div>
+        </section>
+        {Post Tags}
+        {Ad post-side}
+      </aside>
+    </div>
+  </article>
+  {Ads post-bottom}
+</div>
