@@ -53,6 +53,12 @@
 body {
   font-family: var(--bs-font-sans-serif);
 }
+.fw-medium {
+  font-weight: 500 !important;
+}
+.fw-semibold {
+  font-weight: 600 !important;
+}
 /* Sans serif text: Roboto */
 .font-sans {
   font-family: var(--font-sans);
