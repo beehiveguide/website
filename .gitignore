@@ -6,6 +6,8 @@ public/
 # from GitHub with scripts/10_pages.js
 build/*
 !build/communities.json
+# Each town page's "Updated" date (scripts/10_pages.js)
+!build/page-dates.json
 
 # Raw data downloads are large (some over GitHub's 100 MB limit). They stay
 # on this computer; sources.json records where each one came from.

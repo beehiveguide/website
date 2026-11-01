@@ -69,7 +69,46 @@ const num = (n) => Number(n).toLocaleString("en-US");
 const NA = "Not available";
 const MONTHS = Object.values(AP_MONTHS);
 const now = new Date();
-const updated = `${MONTHS[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`; // AP style
+// Local date as "2026-11-01"
+const isoDate = (d) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+const todayIso = isoDate(now);
+// "2026-11-01" -> "Nov. 1, 2026" (AP style)
+const apDate = (iso) => {
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${MONTHS[m - 1]} ${d}, ${y}`;
+};
+
+// --- Page "Updated" dates
+// A town page's date changes only when its own content changes, not every
+// time the site is rebuilt or deployed. build/page-dates.json keeps, for
+// each page, a fingerprint of its words and links (lib/page_fingerprint.js)
+// and the date they last changed. The header, footer, ads and markup
+// changes don't count.
+const PAGE_DATES_FILE = paths.build("page-dates.json");
+const pageDates = fs.existsSync(PAGE_DATES_FILE)
+  ? paths.readJson(PAGE_DATES_FILE)
+  : {};
+const { DATE_MARK, fingerprint } = require("./lib/page_fingerprint");
+// First run with no record: keep the date already on the published page.
+const AP_MONTH_NUM = Object.fromEntries(MONTHS.map((m, i) => [m, i + 1]));
+function publishedDate(file) {
+  const f = path.join(paths.dirs.public, "communities", file);
+  if (!fs.existsSync(f)) return null;
+  const m = fs
+    .readFileSync(f, "utf8")
+    .match(/Updated\s+([A-Z][a-z]+\.?) (\d{1,2}), (\d{4})\./);
+  if (!m || !AP_MONTH_NUM[m[1]]) return null;
+  return `${m[3]}-${String(AP_MONTH_NUM[m[1]]).padStart(2, "0")}-${m[2].padStart(2, "0")}`;
+}
+function pageDate(file, html) {
+  const hash = fingerprint(html);
+  const rec = pageDates[file];
+  if (rec && rec.hash === hash) return rec.date;
+  const date = (!rec && publishedDate(file)) || todayIso;
+  pageDates[file] = { hash, date };
+  return date;
+}
 const slug = (s) =>
   s
     .toLowerCase()
@@ -1376,7 +1415,7 @@ function buildPage(t) {
     "{Town Services}": withAds.html,
     "{Ad After Sources}": withAds.afterSources,
     "{Ad Before Growing}": withAds.beforeGrowing,
-    "{Day Month, Year}": updated,
+    "{Day Month, Year}": DATE_MARK, // set below, once the content is final
     "{Site Name}": esc(site.name),
     "{Home URL}": link("../index.html"),
     "{Community Profiles URL}": COMMUNITY_PROFILES_URL,
@@ -1456,6 +1495,7 @@ function buildPage(t) {
     );
   }
   const place = shared(t) ? `${t.name} (${t.county}), Utah` : `${t.name}, Utah`;
+  html = html.split(DATE_MARK).join(apDate(pageDate(fileName(t), html)));
   return wrapPage(
     html,
     `${h1} | Community Profile | ${esc(site.name)}`,
@@ -1532,6 +1572,17 @@ if (!wanted.length) {
       console.log(`  Removed old page ${f}`);
     }
   }
+  for (const f of Object.keys(pageDates))
+    if (!written.has(f)) delete pageDates[f];
+}
+// Save the dates only for real builds, not --out test runs
+if (outDir === paths.dirs.public) {
+  const sorted = Object.fromEntries(
+    Object.keys(pageDates)
+      .sort()
+      .map((k) => [k, pageDates[k]]),
+  );
+  paths.writeJson(PAGE_DATES_FILE, sorted);
 }
 
 // --- Index: every community that has a page, A to Z, with a county box and
@@ -1764,7 +1815,13 @@ function stateOutlineJson() {
 
 // --- XML sitemap: the homepage and every town page. URLs are relative until
 // "url" is set in config/site.json; search engines expect full URLs.
-const today = now.toISOString().slice(0, 10);
+// Town pages use their "Updated" date; the other pages use today.
+const lastmod = {};
+for (const p of pages)
+  if (pageDates[fileName(p)])
+    lastmod[
+      `/communities/${site.cleanLinks ? fileName(p).replace(/\.html$/, "") : fileName(p)}`
+    ] = pageDates[fileName(p)].date;
 const urls = [
   "/",
   ...["map", "about", "contact"].map((n) =>
@@ -1783,7 +1840,7 @@ ${urls
   .map(
     (u) => `  <url>
     <loc>${esc(site.url + u)}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastmod[u] || todayIso}</lastmod>
   </url>`,
   )
   .join("\n")}
