@@ -11,7 +11,7 @@
 //   communities/<name>.html  one page per community (templates/town-page.html)
 //   index.html                    search and county list (templates/index.html)
 //   about.html, contact.html      (templates/about.html, templates/contact.html)
-//   blog/index.html, blog/<slug>.html  (config/posts.json, posts/, templates/blog.html, templates/post.html)
+//   blog.html, blog/<slug>.html   (config/posts.json, posts/, templates/blog.html, templates/post.html)
 //   404.html                      (templates/404.html)
 //   sitemap.xml
 //   everything in static/ (fonts, CSS, images, map script), copied as is
@@ -371,7 +371,7 @@ const header = (home, shadow, root) =>
     "{Header Shadow}": shadow,
     "{About URL}": link(`${root}about.html`),
     "{Contact URL}": link(`${root}contact.html`),
-    "{Blog URL}": link(`${root}blog/index.html`),
+    "{Blog URL}": link(`${root}blog.html`),
     "{Map URL}": link(`${root}map.html`),
     "{Site Name}": `<span class="site-title-text">${siteTitle}</span>`,
   });
@@ -613,7 +613,9 @@ function metaTags(meta, title, root) {
       : "",
     `<meta property="og:type" content="${m.ogType || "website"}" />`,
     `<meta property="og:site_name" content="${esc(site.name)}" />`,
-    `<meta property="og:title" content="${title}" />`,
+    // Social title: "ogTitle" when a page gives one (blog posts leave off
+    // the " | Beehive Guide Blog" that ends their browser title)
+    `<meta property="og:title" content="${m.ogTitle || title}" />`,
     `<meta property="og:description" content="${esc(m.description)}" />`,
     m.path !== undefined && full(m.path)
       ? `<meta property="og:url" content="${esc(full(m.path))}" />`
@@ -1760,7 +1762,7 @@ const homeBlog = posts.length
     <div class="home-blog card bg-light-gradient shadow-sm rounded-1">
     <div class="card-header bg-transparent d-flex justify-content-between align-items-baseline">
       <h2 id="home-blog-title" class="h6 fs-md mb-0">${esc(site.name)} Blog</h2>
-      <a href="${link("blog/index.html")}" class="home-blog-more link-secondary font-sans small fst-italic text-decoration-none"><span class="text-decoration-underline">View the blog</span> &raquo;</a>
+      <a href="${link("blog.html")}" class="home-blog-more link-secondary font-sans small fst-italic text-decoration-none"><span class="text-decoration-underline">View the blog</span> &raquo;</a>
     </div>
     <div class="card-body py-3">
     <div class="row gx-0 gx-md-5 gy-2">
@@ -1895,7 +1897,7 @@ fs.writeFileSync(
       path.join(blogDir, `${p.slug}.html`),
       wrapPage(
         fill(template("post.html"), {
-          "{Blog URL}": link("index.html"),
+          "{Blog URL}": link("../blog.html"),
           "{Site Name}": esc(site.name),
           "{Post Title}": esc(p.title),
           // The post's tags, below Recent Posts in the sidebar
@@ -1918,7 +1920,7 @@ fs.writeFileSync(
             .slice(0, 5)
             .map(
               (o) =>
-                `              <li><a href="${link(`${o.slug}.html`)}" class="link-dark"${o.slug === p.slug ? ' aria-current="page"' : ""}>${esc(o.title)}</a><br /><small class="text-secondary font-sans">${apDate(o.date)}</small></li>`,
+                `              <li><a href="${link(`${o.slug}.html`)}" class="fw-bold"${o.slug === p.slug ? ' aria-current="page"' : ""}>${esc(o.title)}</a><br /><small class="text-secondary font-sans">${apDate(o.date)}</small></li>`,
             )
             .join("\n"),
         }),
@@ -1931,6 +1933,7 @@ fs.writeFileSync(
           description: p.lead,
           path: `blog/${p.slug}.html`,
           ogType: "article",
+          ogTitle: esc(p.title),
           article: {
             author: p.author || site.name,
             published: p.date,
@@ -1957,20 +1960,21 @@ fs.writeFileSync(
     );
   }
   // Remove pages for posts no longer in config/posts.json
-  const keep = new Set(["index.html", ...posts.map((p) => `${p.slug}.html`)]);
+  const keep = new Set(posts.map((p) => `${p.slug}.html`));
   for (const f of fs.readdirSync(blogDir))
     if (f.endsWith(".html") && !keep.has(f)) {
       fs.unlinkSync(path.join(blogDir, f));
       console.log(`  Removed old post page blog/${f}`);
     }
-  // Blog index: newest first
+  // Blog index (blog.html at the site root, served at /blog, so its links
+  // work the same with or without a trailing slash): newest first
   const postList = posts
     .map((p) => {
-      const href = link(`${p.slug}.html`);
+      const href = link(`blog/${p.slug}.html`);
       const ph =
         p.photo && photos.some((x) => x.id === p.photo) ? postPhoto(p.photo) : null;
       const img = ph
-        ? `<div class="col-md-4 mb-3 mb-md-0"><a href="${href}" tabindex="-1" aria-hidden="true"><img src="../${photoPath(ph.web.mobile.file)}" width="${ph.web.mobile.width}" height="${ph.web.mobile.height}" alt="" loading="lazy" decoding="async" /></a></div>`
+        ? `<div class="col-md-4 mb-3 mb-md-0"><a href="${href}" tabindex="-1" aria-hidden="true"><img src="${photoPath(ph.web.mobile.file)}" width="${ph.web.mobile.width}" height="${ph.web.mobile.height}" alt="" loading="lazy" decoding="async" /></a></div>`
         : "";
       return `    <article class="post-card row py-4">
       ${img}
@@ -1984,20 +1988,20 @@ fs.writeFileSync(
     })
     .join("\n");
   fs.writeFileSync(
-    path.join(blogDir, "index.html"),
+    path.join(outDir, "blog.html"),
     wrapPage(
       fill(template("blog.html"), {
         "{Post List}": postList,
         "{Site Name}": esc(site.name),
       }),
       `${esc(site.name)} | Blog`,
-      link("../index.html"),
-      "../",
+      link("index.html"),
+      "",
       "shadow",
       true,
       {
         description: `Articles on native plants, weeds, gardening and nature in Utah and the Mountain West.`,
-        path: "blog/index.html",
+        path: "blog.html",
         jsonLd: { "@type": "Blog", name: `${site.name} Blog` },
       },
     ),
@@ -2139,7 +2143,7 @@ const urls = [
   ...["map", "about", "contact"].map((n) =>
     site.cleanLinks ? `/${n}` : `/${n}.html`,
   ),
-  site.cleanLinks ? "/blog/" : "/blog/index.html",
+  site.cleanLinks ? "/blog" : "/blog.html",
   ...posts.map((p) =>
     site.cleanLinks ? `/blog/${p.slug}` : `/blog/${p.slug}.html`,
   ),

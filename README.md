@@ -170,7 +170,7 @@ Notes:
 
 ## Blog
 
-Blog pages are at `blog/` (`blog/index.html` lists the posts, newest first).
+The blog page is `blog.html` (served at `/blog`), listing the posts newest first. Posts are in `blog/`.
 
 To add a post:
 
