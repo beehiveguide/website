@@ -23,7 +23,15 @@ const { AP_MONTHS } = require("./lib/ap_months");
 
 const site = paths.readJson(paths.config("site.json"));
 const SOURCE_LIST = paths.readJson(paths.source("sources.json"));
-const communities = paths.readJson(paths.build("communities.json"));
+// Pages not to publish (config/no_publish.json): left out of every list, and
+// their old URLs redirect to "redirect_to" (another community) or the home page.
+const noPublish = paths.readJson(paths.config("no_publish.json"));
+const isNoPublish = (t) => noPublish.some((x) => x.name === t.name && x.county === t.county);
+const allCommunities = paths.readJson(paths.build("communities.json"));
+for (const x of noPublish)
+  if (!allCommunities.some((t) => t.name === x.name && t.county === x.county))
+    console.warn(`  no_publish.json: no community named ${x.name} (${x.county})`);
+const communities = allCommunities.filter((t) => !isNoPublish(t));
 const photos = paths.readJson(paths.config("photos.json"));
 // Published path of a photo's web version: "static/images/x.webp" -> "images/x.webp"
 const photoPath = (file) => file.replace(/^static\//, "");
@@ -132,6 +140,33 @@ for (const t of communities)
 const shared = (t) => nameCounts[slug(t.name)] > 1;
 const fileName = (t) =>
   shared(t) ? `${slug(t.name)}-${slug(t.county)}.html` : `${slug(t.name)}.html`;
+
+// Redirects for no-publish pages, written into firebase.json. Old URLs keep
+// the filenames they had when every community was built.
+{
+  const oldCounts = {};
+  for (const t of allCommunities) oldCounts[slug(t.name)] = (oldCounts[slug(t.name)] || 0) + 1;
+  const oldName = (t) =>
+    oldCounts[slug(t.name)] > 1 ? `${slug(t.name)}-${slug(t.county)}` : slug(t.name);
+  const redirects = [];
+  for (const x of noPublish) {
+    let destination = "/";
+    if (x.redirect_to) {
+      const target = communities.find((t) => t.name === x.redirect_to);
+      if (target) destination = `/communities/${fileName(target).replace(/\.html$/, "")}`;
+      else console.warn(`  no_publish.json: redirect_to ${x.redirect_to} is not a published community`);
+    }
+    const from = `/communities/${oldName(x)}`;
+    redirects.push({ source: from, destination, type: 301 }, { source: `${from}.html`, destination, type: 301 });
+  }
+  const fbPath = path.join(__dirname, "..", "firebase.json");
+  const fb = JSON.parse(fs.readFileSync(fbPath, "utf8"));
+  if (JSON.stringify(fb.hosting.redirects || []) !== JSON.stringify(redirects)) {
+    fb.hosting.redirects = redirects;
+    fs.writeFileSync(fbPath, JSON.stringify(fb, null, 2) + "\n");
+    console.log(`  Wrote ${redirects.length / 2} no-publish redirects to firebase.json`);
+  }
+}
 
 // Each source: what it supplied (bold, first), then the source, linked.
 // Names and links come from sources/sources.json.

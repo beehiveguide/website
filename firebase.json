@@ -35,6 +35,228 @@
           }
         ]
       }
+    ],
+    "redirects": [
+      {
+        "source": "/communities/aspen-grove",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/aspen-grove.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/cache",
+        "destination": "/communities/cache-junction",
+        "type": 301
+      },
+      {
+        "source": "/communities/cache.html",
+        "destination": "/communities/cache-junction",
+        "type": 301
+      },
+      {
+        "source": "/communities/castilla",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/castilla.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/emory",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/emory.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/evans",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/evans.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/fry-canyon",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/fry-canyon.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/garden",
+        "destination": "/communities/garden-city",
+        "type": 301
+      },
+      {
+        "source": "/communities/garden.html",
+        "destination": "/communities/garden-city",
+        "type": 301
+      },
+      {
+        "source": "/communities/goulding",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/goulding.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/iron-mountain",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/iron-mountain.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/long-valley-junction",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/long-valley-junction.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/ogden-canyon",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/ogden-canyon.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/peter",
+        "destination": "/communities/petersboro",
+        "type": 301
+      },
+      {
+        "source": "/communities/peter.html",
+        "destination": "/communities/petersboro",
+        "type": 301
+      },
+      {
+        "source": "/communities/pigeon-hollow-junction",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/pigeon-hollow-junction.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/pineview",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/pineview.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/rainbow-city",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/rainbow-city.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/riverbend-trailer-park",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/riverbend-trailer-park.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/sage-creek-junction",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/sage-creek-junction.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/summit-point",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/summit-point.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/sundance",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/sundance.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/vivian-park",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/vivian-park.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/white-horse-village",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/white-horse-village.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/wolf-creek",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/communities/wolf-creek.html",
+        "destination": "/",
+        "type": 301
+      }
     ]
   }
 }

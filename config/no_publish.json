@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Aspen Grove",
+    "county": "Utah",
+    "reason": "BYU camp and conference grounds, not a town"
+  },
+  {
+    "name": "Cache",
+    "county": "Cache",
+    "reason": "Same place as Cache Junction",
+    "redirect_to": "Cache Junction"
+  },
+  {
+    "name": "Castilla",
+    "county": "Utah",
+    "reason": "Old hot springs resort site, not a town"
+  },
+  {
+    "name": "Emory",
+    "county": "Summit",
+    "reason": "Old Pony Express station site, no community"
+  },
+  {
+    "name": "Evans",
+    "county": "Box Elder",
+    "reason": "Name on federal maps only"
+  },
+  {
+    "name": "Fry Canyon",
+    "county": "San Juan",
+    "reason": "Old lodge, not a town"
+  },
+  {
+    "name": "Garden",
+    "county": "Rich",
+    "reason": "Same place as Garden City",
+    "redirect_to": "Garden City"
+  },
+  {
+    "name": "Goulding",
+    "county": "San Juan",
+    "reason": "Trading post and lodge, not a town"
+  },
+  {
+    "name": "Iron Mountain",
+    "county": "Iron",
+    "reason": "Mining district, not a town"
+  },
+  {
+    "name": "Long Valley Junction",
+    "county": "Kane",
+    "reason": "Road junction"
+  },
+  {
+    "name": "Ogden Canyon",
+    "county": "Weber",
+    "reason": "Canyon, not a town"
+  },
+  {
+    "name": "Peter",
+    "county": "Cache",
+    "reason": "Census name for the Petersboro area",
+    "redirect_to": "Petersboro"
+  },
+  {
+    "name": "Pigeon Hollow Junction",
+    "county": "Sanpete",
+    "reason": "Road junction"
+  },
+  {
+    "name": "Pineview",
+    "county": "Summit",
+    "reason": "Name on federal maps only"
+  },
+  {
+    "name": "Rainbow City",
+    "county": "San Juan",
+    "reason": "Name on federal maps only"
+  },
+  {
+    "name": "Riverbend Trailer Park",
+    "county": "Wasatch",
+    "reason": "Mobile home park"
+  },
+  {
+    "name": "Sage Creek Junction",
+    "county": "Rich",
+    "reason": "Road junction"
+  },
+  {
+    "name": "Summit Point",
+    "county": "San Juan",
+    "reason": "Name on federal maps only"
+  },
+  {
+    "name": "Sundance",
+    "county": "Utah",
+    "reason": "Ski and arts resort"
+  },
+  {
+    "name": "Vivian Park",
+    "county": "Utah",
+    "reason": "County park, not a town"
+  },
+  {
+    "name": "White Horse Village",
+    "county": "Cache",
+    "reason": "Name on federal maps only"
+  },
+  {
+    "name": "Wolf Creek",
+    "county": "Weber",
+    "reason": "Resort and vacation home area"
+  }
+]
