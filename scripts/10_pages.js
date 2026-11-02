@@ -1810,14 +1810,14 @@ function videoFigure(spec) {
 // Profiles, in a light gradient card
 const HOME_POSTS = 4;
 const homeBlog = posts.length
-  ? `<section class="mb-4" aria-labelledby="home-blog-title">
-    <div class="home-blog card bg-light-gradient shadow-sm rounded-1">
+  ? `<section style="margin-bottom: 2.25rem" aria-labelledby="home-blog-title">
+    <div class="home-blog card bg-light shadow-sm rounded-1">
     <div class="card-header bg-transparent d-flex justify-content-between align-items-baseline">
       <h2 id="home-blog-title" class="h6 fs-md mb-0">${esc(site.name)} Blog</h2>
-      <a href="${link("blog.html")}" class="home-blog-more link-secondary font-sans small fst-italic text-decoration-none"><span class="text-decoration-underline">View the blog</span> &raquo;</a>
+      <a href="${link("blog.html")}" class="home-blog-more link-primary font-sans small fst-italic text-decoration-none"><span class="text-decoration-underline">View the blog</span> &raquo;</a>
     </div>
     <div class="card-body py-3">
-    <div class="row gx-0 gx-md-5 gy-2">
+    <div class="row gx-0 gx-lg-5 gy-2">
 ${posts
   .filter((p) => !p.hideOnHome)
   .slice(0, HOME_POSTS)
@@ -1827,7 +1827,7 @@ ${posts
     const img = ph
       ? `<img src="${photoPath(ph.web.mobile.file)}" width="60" height="60" alt="" loading="lazy" decoding="async" class="home-blog-thumb flex-shrink-0 rounded-1 me-2"${ph.thumbPosition ? ` style="object-position: ${esc(ph.thumbPosition)}"` : ""} />`
       : "";
-    return `      <div class="col-md-6 col-lg-3 home-blog-col">
+    return `      <div class="col-lg-3 home-blog-col">
         <a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-start text-reset text-decoration-none">
           ${img}<span><small class="d-block text-secondary font-sans">${apDate(p.date)}</small><span class="home-blog-title d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
         </a>

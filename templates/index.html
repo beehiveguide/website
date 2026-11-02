@@ -88,15 +88,6 @@
         )
         0 0 / calc((100% + 2.25rem) / 3) 4px repeat;
     }
-    /* Dotted rule on the list's left edge */
-    .county-pick-list {
-      background: radial-gradient(
-          circle at 1px 50%,
-          #a7aeb5 0.6px,
-          transparent 0.9px
-        )
-        0 0 / 2px 4px repeat-y;
-    }
   }
   @media (min-width: 1200px) {
     .county-pick {
@@ -109,6 +100,13 @@
       columns: 4;
       background-size: calc((100% + 2.25rem) / 4) 4px;
     }
+  }
+  /* "Counties": a small gray sans-serif label, so it stands apart
+       from the bold serif county names under it */
+  .county-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
   }
   .chosen-map {
     height: 2em;
@@ -307,7 +305,10 @@
 <div class="container {Home Content Margin}">
   {Home Blog}
   <section id="community-profiles">
-    <div class="bg-light-gradient border rounded shadow-sm p-4 mb-4">
+    <!-- One light card: the search up top, the county
+         list and town list below -->
+    <div class="community-card bg-light border rounded shadow-sm mb-4">
+    <div class="rounded-top px-4 pt-4">
       <h2 class="mt-0">
         Community Profiles<svg
           viewBox="17.75 39.5 54.75 31"
@@ -352,7 +353,7 @@
           />
         </svg>
       </h2>
-      <label for="profile-search" class="form-label fw-medium"
+      <label for="profile-search" class="form-label font-sans text-secondary fw-normal fst-italic" style="font-size: 1.0625rem"
         >Search by community name and/or filter by county</label
       >
       <div class="search-hints-box">
@@ -375,23 +376,13 @@
         ></div>
       </div>
     </div>
+    <div class="community-card-body rounded-bottom px-4 pt-4 pb-3">
 
     <!-- Heading and rule. Above the rule, the heading gives way to the
          chosen county's box, or to the button while searching. -->
-    <div id="county-heading" class="rule-solid pb-2 mb-3">
-      <h3 id="county-title" class="mb-0">
-        Select a County<svg
-          viewBox="29.76 30 40.48 40"
-          class="heading-icon"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <path
-            fill="currentColor"
-            fill-rule="evenodd"
-            d="M50 30 L69.36 41 H30.64 Z M32.4 41 H67.6 V44.5 H32.4 Z M35.04 47 H40.32 V62.5 H35.04 Z M47.36 47 H52.64 V62.5 H47.36 Z M59.68 47 H64.96 V62.5 H59.68 Z M31.52 64.5 H68.48 V70 H31.52 Z"
-          />
-        </svg>
+    <div id="county-heading" class="mb-3">
+      <h3 id="county-title" class="county-title font-sans text-uppercase text-secondary mb-0">
+        Counties
       </h3>
       <button
         type="button"
@@ -550,8 +541,8 @@
         Filter by county
       </button>
     </div>
-    <div class="county-pick mt-4 pt-1 mb-4">
-      <div class="county-pick-list" style="padding-left: 1.125rem">
+    <div class="county-pick mb-4">
+      <div class="county-pick-list">
         <ul
           id="county-list"
           class="list-unstyled county-list fs-md fw-bold mb-0"
@@ -698,6 +689,8 @@
         </ul>
       </div>
     </div>
+    </div>
+    </div>
   </section>
   {Ads home-bottom}
 </div>
@@ -768,10 +761,8 @@
       const folded = !c && Boolean(q) && !expanded;
       title.hidden = folded || Boolean(c);
       chosenBox.hidden = !c;
-      // With a county picked, the card's top border takes the rule's place,
-      // and the rule above the ads isn't needed
+      // With a county picked, the rule above the ads isn't needed
       const heading = document.getElementById("county-heading");
-      heading.classList.toggle("rule-solid", !c);
       heading.classList.toggle("mb-3", !c);
       const adsRule = document.getElementById("home-ads-rule");
       if (adsRule) adsRule.hidden = Boolean(c);
