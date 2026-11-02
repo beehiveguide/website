@@ -1812,7 +1812,7 @@ const HOME_POSTS = 4;
 const homeBlog = posts.length
   ? `<section style="margin-bottom: 2.25rem" aria-labelledby="home-blog-title">
     <div class="home-blog card bg-light shadow-sm rounded-1">
-    <div class="card-header bg-transparent d-flex justify-content-between align-items-baseline">
+    <div class="card-header bg-transparent rule-fade-end d-flex justify-content-between align-items-baseline">
       <h2 id="home-blog-title" class="h6 fs-md mb-0">${esc(site.name)} Blog</h2>
       <a href="${link("blog.html")}" class="home-blog-more link-primary font-sans small fst-italic text-decoration-none"><span class="text-decoration-underline">View the blog</span> &raquo;</a>
     </div>

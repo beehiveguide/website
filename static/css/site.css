@@ -212,6 +212,17 @@ a:hover {
     )
     1;
 }
+/* the homepage blog card header: gray reaches further, fades faster */
+.home-blog .rule-fade-end {
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      var(--rule) 3%,
+      var(--rule) 97%,
+      transparent
+    )
+    1;
+}
 /* solid in the middle, fading toward both ends (above the footer) */
 .rule-fade-top {
   border-image: linear-gradient(
