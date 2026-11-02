@@ -523,5 +523,35 @@
     "note": "Listening to the Bamboo, hanging scroll, ink on sutra paper, imitator of Wen Zhengming (1470-1559), Ming dynasty, China. Unsplash's title calls it Japanese.",
     "downloaded": "2026-11-01",
     "crop": "16:9, 1550 x 872 at 745, 1305 (tight on the characters, clear of the column cut off at left)"
+  },
+  {
+    "id": "wong-sing-collage",
+    "original": "../drive/photos/originals/wong-sing-collage-2560.jpg",
+    "originalWidth": 2560,
+    "originalHeight": 1440,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/wong-sing-collage.webp",
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": {
+        "file": "static/images/blog/wong-sing-collage-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    },
+    "location": "Fort Duchesne",
+    "tags": [
+      "blog",
+      "wong-sing"
+    ],
+    "caption": "Wong Sing and his store.",
+    "alt": "Two old black-and-white photos fanned over cursive Chinese calligraphy: three men stand on the porch of a store under a sign reading Wong Sing General Merchandise, and four men in hats stand in front of the store.",
+    "photographer": "FamilySearch and The Cleveland Museum of Art",
+    "license": "Store photos from FamilySearch (likely unpublished, photographer unknown); calligraphy public domain (Cleveland Museum of Art via Unsplash)",
+    "note": "Collage built from two FamilySearch photos and chinese-scroll (Cleveland Museum of Art, Listening to the Bamboo).",
+    "downloaded": "2026-11-01",
+    "credit": "Photos: FamilySearch. Background: [Cleveland Museum of Art/Unsplash](https://unsplash.com/photos/close-up-of-ancient-japanese-calligraphy-on-parchment-Cds1Jg6R9cA)."
   }
 ]

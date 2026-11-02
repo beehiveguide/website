@@ -1781,9 +1781,14 @@ function photoFigure(id, root, lead = false) {
     m = p.web.mobile;
   // "Photo: Alan Levine/Flickr." with "Alan Levine/Flickr" linked to photographerUrl
   const who = `${esc(p.photographer)}${p.source ? `/${esc(p.source)}` : ""}`;
-  const credit = p.photographer
-    ? ` Photo: ${p.photographerUrl ? `<a href="${esc(p.photographerUrl)}" class="link-secondary">${who}</a>` : who}.`
-    : "";
+  // "credit" in config/photos.json replaces the usual "Photo: ..." line,
+  // for photos with more than one source
+  // ("[text](url)" in it becomes a link)
+  const credit = p.credit
+    ? ` ${esc(p.credit).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" class="link-secondary">$1</a>')}`
+    : p.photographer
+      ? ` Photo: ${p.photographerUrl ? `<a href="${esc(p.photographerUrl)}" class="link-secondary">${who}</a>` : who}.`
+      : "";
   return `<figure class="post-figure">
   <img src="${root}${photoPath(d.file)}" srcset="${root}${photoPath(m.file)} ${m.width}w, ${root}${photoPath(d.file)} ${d.width}w" sizes="(max-width: 800px) 100vw, 768px" width="${d.width}" height="${d.height}" alt="${esc(p.alt)}"${lead ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async" />
   <figcaption>${esc(p.caption)}${credit}</figcaption>
