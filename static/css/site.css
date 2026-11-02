@@ -1163,6 +1163,8 @@ a.marker-link:focus {
 }
 .home-blog-title {
   font-size: 0.95rem;
+  /* Even line lengths, so a title doesn't end on one short word */
+  text-wrap: balance;
   color: var(--bs-primary);
   text-decoration: underline;
 }
@@ -1175,27 +1177,38 @@ a.marker-link:focus {
   color: var(--bs-primary-hover);
   text-decoration: none;
 }
-/* Dotted line between the two previews, drawn like the county list's
-   rules (round dots 4px apart): across on phones, down the middle on
-   wider screens */
-.home-blog .col-md-6 + .col-md-6 {
+/* Dotted lines between the previews, drawn like the county list's rules
+   (round dots 4px apart): across on phones, a 2 x 2 grid on tablets and
+   down between the columns on wide screens */
+.home-blog-col {
+  --dots-across: radial-gradient(circle at 50% 1px, #a7aeb5 0.6px, transparent 0.9px) 0 0 / 4px 2px repeat-x;
+  --dots-down: radial-gradient(circle at 1px 50%, #a7aeb5 0.6px, transparent 0.9px) 0 0 / 2px 4px repeat-y;
+}
+.home-blog-col + .home-blog-col {
   padding-top: 0.75rem;
-  background: radial-gradient(
-      circle at 50% 1px,
-      #a7aeb5 0.6px,
-      transparent 0.9px
-    )
-    0 0 / 4px 2px repeat-x;
+  background: var(--dots-across);
 }
 @media (min-width: 768px) {
-  .home-blog .col-md-6 + .col-md-6 {
+  .home-blog-col + .home-blog-col {
     padding-top: 0;
-    background: radial-gradient(
-        circle at 1px 50%,
-        #a7aeb5 0.6px,
-        transparent 0.9px
-      )
-      0 0 / 2px 4px repeat-y;
+    background: none;
+  }
+  .home-blog-col:nth-child(even) {
+    background: var(--dots-down);
+  }
+  .home-blog-col:nth-child(n + 3) {
+    padding-top: 0.75rem;
+    background: var(--dots-across);
+  }
+  .home-blog-col:nth-child(4) {
+    background: var(--dots-across), var(--dots-down);
+  }
+}
+@media (min-width: 992px) {
+  .home-blog-col + .home-blog-col,
+  .home-blog-col:nth-child(n + 3) {
+    padding-top: 0;
+    background: var(--dots-down);
   }
 }
 /* "View the blog" link on the right of the header: the words lose their

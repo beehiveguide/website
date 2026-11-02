@@ -167,12 +167,13 @@
     ],
     "caption": "Ripe chokecherries.",
     "alt": "Dark berries hanging in bunches on a tree",
-    "photographer": "Beehive Guide",
+    "photographer": "Terence Larson",
     "photographerUrl": "",
     "source": "",
     "sourceUrl": "",
     "license": "",
-    "downloaded": "2026-11-01"
+    "downloaded": "2026-11-01",
+    "thumbPosition": "44% 50%"
   },
   {
     "id": "chokecherry-shrub",
@@ -198,7 +199,7 @@
     ],
     "caption": "Chokecherry growing in one of its typical habitats.",
     "alt": "Shrubby chokecherry bushes with vivid fall foliage in background.",
-    "photographer": "Beehive Guide",
+    "photographer": "Terence Larson",
     "photographerUrl": "",
     "source": "",
     "sourceUrl": "",
@@ -291,7 +292,7 @@
     ],
     "caption": "Chokecherry fall foliage.",
     "alt": "Dark chokecherries, some overripe, hanging on branches with turning yellow leaves",
-    "photographer": "Beehive Guide",
+    "photographer": "Terence Larson",
     "photographerUrl": "",
     "source": "",
     "sourceUrl": "",
@@ -329,5 +330,198 @@
     "license": "Unsplash License",
     "downloaded": "2026-11-01",
     "crop": "16:9, 4110 x 2312 at 0, 353 (flower on the top-right thirds point)"
+  },
+  {
+    "id": "spanish-fork-farmland",
+    "original": "../drive/photos/originals/highsmith-70760-spanish-fork.jpg",
+    "originalWidth": 8454,
+    "originalHeight": 5636,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/spanish-fork-farmland.webp",
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": {
+        "file": "static/images/blog/spanish-fork-farmland-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    },
+    "location": "Spanish Fork",
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "Farm fields in southern Utah Valley.",
+    "alt": "A cornfield in front of a row of gray and brown rooftops, with a tall, dry brown mountain partly capped by clouds rising behind them under a gray sky.",
+    "photographer": "Carol M. Highsmith",
+    "photographerUrl": "https://www.loc.gov/item/2023697116/",
+    "source": "Library of Congress",
+    "sourceUrl": "https://www.loc.gov/item/2023697116/",
+    "license": "No known restrictions on publication",
+    "creditLine": "Photographs in Carol M. Highsmith's America Project in the Carol M. Highsmith Archive, Library of Congress, Prints and Photographs Division.",
+    "downloaded": "2026-11-01",
+    "crop": "16:9, 8454 x 4755 at 0, 881 (bottom crop; peak, rooftops and cornfield)"
+  },
+  {
+    "id": "mapleton-barn",
+    "original": "../drive/photos/originals/highsmith-70770-mapleton-barn.jpg",
+    "originalWidth": 7965,
+    "originalHeight": 5310,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/mapleton-barn.webp",
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": {
+        "file": "static/images/blog/mapleton-barn-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    },
+    "location": "Mapleton",
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "A red barn in Mapleton.",
+    "alt": "A red barn with a gray metal roof sits behind a white rail fence and leafy trees, with horses in a pasture at left and a dry, brush-dotted mountain rising behind it under a cloudy sky.",
+    "photographer": "Carol M. Highsmith",
+    "photographerUrl": "https://www.loc.gov/item/2023697395/",
+    "source": "Library of Congress",
+    "sourceUrl": "https://www.loc.gov/item/2023697395/",
+    "license": "No known restrictions on publication",
+    "downloaded": "2026-11-01",
+    "crop": "16:9, 7965 x 4480 at 0, 830 (bottom crop; barn, fence and peak)",
+    "creditLine": "Photographs in Carol M. Highsmith's America Project in the Carol M. Highsmith Archive, Library of Congress, Prints and Photographs Division."
+  },
+  {
+    "id": "spanish-fork-farmstead",
+    "original": "../drive/photos/originals/highsmith-70762-spanish-fork-farmstead.jpg",
+    "originalWidth": 8422,
+    "originalHeight": 4743,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/spanish-fork-farmstead.webp",
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": {
+        "file": "static/images/blog/spanish-fork-farmstead-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    },
+    "location": "Spanish Fork",
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "A farmstead in southern Utah Valley.",
+    "alt": "An old farmstead with weathered wooden corrals, round hay bales, tin-roofed sheds, a red farm truck and two metal grain bins sits beyond a dry field, with a large tree at left and clouds hanging over the mountains behind.",
+    "photographer": "Carol M. Highsmith",
+    "photographerUrl": "https://www.loc.gov/item/2023697387/",
+    "source": "Library of Congress",
+    "sourceUrl": "https://www.loc.gov/item/2023697387/",
+    "license": "No known restrictions on publication",
+    "creditLine": "Photographs in Carol M. Highsmith's America Project in the Carol M. Highsmith Archive, Library of Congress, Prints and Photographs Division.",
+    "downloaded": "2026-11-01",
+    "crop": "16:9, 8422 x 4737 at 0, 6 (bottom crop)",
+    "thumbPosition": "10% 50%"
+  },
+  {
+    "id": "mapleton-field",
+    "original": "../drive/photos/originals/highsmith-70769-mapleton-field.jpg",
+    "originalWidth": 8530,
+    "originalHeight": 5687,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/mapleton-field.webp",
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": {
+        "file": "static/images/blog/mapleton-field-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    },
+    "location": "Mapleton",
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "A field near Mapleton.",
+    "alt": "A dry, golden meadow with scattered young trees lies at the foot of green, brush-covered mountains, their peaks hidden in low gray clouds.",
+    "photographer": "Carol M. Highsmith",
+    "photographerUrl": "https://www.loc.gov/item/2023697394/",
+    "source": "Library of Congress",
+    "sourceUrl": "https://www.loc.gov/item/2023697394/",
+    "license": "No known restrictions on publication",
+    "creditLine": "Photographs in Carol M. Highsmith's America Project in the Carol M. Highsmith Archive, Library of Congress, Prints and Photographs Division.",
+    "downloaded": "2026-11-01",
+    "crop": "16:9, 8530 x 4798 at 0, 889 (bottom crop; field and mountains)"
+  },
+  {
+    "id": "uintah-meridian-monument",
+    "original": "../drive/photos/originals/uintah-special-meridian-marker-16x9.jpg",
+    "originalWidth": 960,
+    "originalHeight": 540,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/uintah-meridian-monument.webp",
+        "width": 960,
+        "height": 540
+      },
+      "mobile": {
+        "file": "static/images/blog/uintah-meridian-monument-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    },
+    "location": "Hayden",
+    "tags": [
+      "blog",
+      "uintah-meridian"
+    ],
+    "caption": "A monument with plaques commemorating the Initial Point of the Uintah Special Meridian.",
+    "alt": "A stone monument with a black plaque, topped by a carved post reading 1875, stands among sagebrush with mountains in the distance.",
+    "photographer": "Terence Larson",
+    "downloaded": "2026-11-01"
+  },
+  {
+    "id": "chinese-scroll",
+    "original": "../drive/photos/originals/clevelandart-Cds1Jg6R9cA-unsplash.jpg",
+    "originalWidth": 2922,
+    "originalHeight": 3638,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/chinese-scroll.webp",
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": {
+        "file": "static/images/blog/chinese-scroll-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    },
+    "location": "",
+    "tags": [
+      "blog",
+      "wong-sing"
+    ],
+    "caption": "Ming dynasty calligraphy.",
+    "alt": "Close-up of flowing black brushstroke characters in cursive script on aged tan paper.",
+    "photographer": "The Cleveland Museum of Art",
+    "photographerUrl": "https://unsplash.com/@clevelandart",
+    "source": "Unsplash",
+    "sourceUrl": "https://unsplash.com/photos/close-up-of-ancient-japanese-calligraphy-on-parchment-Cds1Jg6R9cA",
+    "license": "Public Domain and Unsplash License",
+    "note": "Listening to the Bamboo, hanging scroll, ink on sutra paper, imitator of Wen Zhengming (1470-1559), Ming dynasty, China. Unsplash's title calls it Japanese.",
+    "downloaded": "2026-11-01",
+    "crop": "16:9, 1550 x 872 at 745, 1305 (tight on the characters, clear of the column cut off at left)"
   }
 ]

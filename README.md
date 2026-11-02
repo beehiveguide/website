@@ -175,8 +175,8 @@ The blog page is `blog.html` (served at `/blog`), listing the posts newest first
 To add a post:
 
 1. Put the photos' originals in `../drive/photos/originals/` and make web versions in `static/images/blog/`: `<id>.webp` at full size and `<id>-640.webp` 640 pixels wide.
-2. Add each photo to `config/photos.json` with its caption, alt text and `photographer`. The credit reads "Photo: <photographer>." Add `photographerUrl` to link the name and `source` to add "/Flickr" or the like.
-3. Add the post to `config/posts.json`: `slug` (its file name), `title`, `date` (`2026-11-01`), `author`, `lead` (a short summary shown in larger type above the article, on the blog page and as the search and sharing description), `photo` (the top photo's id) and `shareImage` (a 1200 x 630 JPEG in `static/images/`). Add `updated` with a date after a big change.
+2. Add each photo to `config/photos.json` with its caption, alt text and `photographer`. Add `thumbPosition` (like `"62% 50%"`) to shift what the square homepage thumbnail shows; it's centered by default. The credit reads "Photo: <photographer>." Add `photographerUrl` to link the name and `source` to add "/Flickr" or the like.
+3. Add the post to `config/posts.json`: `slug` (its file name), `title`, `shortTitle` (an optional shorter title for the homepage), `hideOnHome` (`true` keeps a post off the homepage), `date` (`2026-11-01`), `author`, `lead` (a short summary shown in larger type above the article, on the blog page and as the search and sharing description), `photo` (the top photo's id) and `shareImage` (a 1200 x 630 JPEG in `static/images/`). Add `updated` with a date after a big change. If you rename a post's file, put the old name in `oldSlugs` (a list) so the build adds a redirect to firebase.json.
 4. Write the body in `posts/<slug>.html` as plain HTML with `<h2>` and `<h3>` headings. Put `{Photo id}` on its own line for a photo and `{Video youtubeId | caption | credit}` for a YouTube video. The credit, like "Bureau of Land Management/YouTube," links to the video on YouTube.
 5. Run `npm run pages`.
 

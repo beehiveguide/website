@@ -160,12 +160,20 @@ const fileName = (t) =>
     const from = `/communities/${oldName(x)}`;
     redirects.push({ source: from, destination, type: 301 }, { source: `${from}.html`, destination, type: 301 });
   }
+  // Blog posts that changed file names: each old name in a post's
+  // "oldSlugs" (config/posts.json) sends readers to its current page
+  if (fs.existsSync(paths.config("posts.json")))
+    for (const p of paths.readJson(paths.config("posts.json")))
+      for (const o of p.oldSlugs || []) {
+        const destination = `/blog/${p.slug}`;
+        redirects.push({ source: `/blog/${o}`, destination, type: 301 }, { source: `/blog/${o}.html`, destination, type: 301 });
+      }
   const fbPath = path.join(__dirname, "..", "firebase.json");
   const fb = JSON.parse(fs.readFileSync(fbPath, "utf8"));
   if (JSON.stringify(fb.hosting.redirects || []) !== JSON.stringify(redirects)) {
     fb.hosting.redirects = redirects;
     fs.writeFileSync(fbPath, JSON.stringify(fb, null, 2) + "\n");
-    console.log(`  Wrote ${redirects.length / 2} no-publish redirects to firebase.json`);
+    console.log(`  Wrote ${redirects.length / 2} redirects to firebase.json`);
   }
 }
 
@@ -644,6 +652,24 @@ function metaTags(meta, title, root) {
       : []),
     m.jsonLd
       ? `<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", ...m.jsonLd }).replace(/</g, "\\u003c")}</script>`
+      : "",
+    // Breadcrumbs for search results (structured data only, nothing shows on
+    // the page): Home > [Blog >] this page. "crumb" is the page's own name.
+    m.crumb && m.path !== undefined && full(m.path)
+      ? `<script type="application/ld+json">${JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            [site.name, ""],
+            ...(m.path.startsWith("blog/") ? [["Blog", "blog.html"]] : []),
+            [m.crumb, m.path],
+          ].map(([name, p], i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name,
+            item: full(p),
+          })),
+        }).replace(/</g, "\\u003c")}</script>`
       : "",
   ];
   return tags.filter(Boolean).join("\n");
@@ -1620,6 +1646,7 @@ function buildPage(t) {
     {
       description: `Community profile for ${esc(t.name)}, Utah, in ${t.county} County. Location, population, postal, phone and gardening info.`,
       path: `communities/${fileName(t)}`,
+      crumb: place,
       jsonLd: {
         "@type": "Place",
         name: place,
@@ -1776,7 +1803,7 @@ function videoFigure(spec) {
 }
 // Homepage: the newest blog posts as small media items above Community
 // Profiles, in a light gradient card
-const HOME_POSTS = 2;
+const HOME_POSTS = 4;
 const homeBlog = posts.length
   ? `<section class="mb-4" aria-labelledby="home-blog-title">
     <div class="home-blog card bg-light-gradient shadow-sm rounded-1">
@@ -1787,16 +1814,17 @@ const homeBlog = posts.length
     <div class="card-body py-3">
     <div class="row gx-0 gx-md-5 gy-2">
 ${posts
+  .filter((p) => !p.hideOnHome)
   .slice(0, HOME_POSTS)
   .map((p) => {
     const ph =
       p.photo && photos.some((x) => x.id === p.photo) ? postPhoto(p.photo) : null;
     const img = ph
-      ? `<img src="${photoPath(ph.web.mobile.file)}" width="60" height="60" alt="" loading="lazy" decoding="async" class="home-blog-thumb flex-shrink-0 rounded-1 me-2" />`
+      ? `<img src="${photoPath(ph.web.mobile.file)}" width="60" height="60" alt="" loading="lazy" decoding="async" class="home-blog-thumb flex-shrink-0 rounded-1 me-2"${ph.thumbPosition ? ` style="object-position: ${esc(ph.thumbPosition)}"` : ""} />`
       : "";
-    return `      <div class="col-md-6">
-        <a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-center text-reset text-decoration-none">
-          ${img}<span><span class="home-blog-title d-block fw-bold lh-sm">${esc(p.title)}</span><small class="text-secondary font-sans">${apDate(p.date)}</small></span>
+    return `      <div class="col-md-6 col-lg-3 home-blog-col">
+        <a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-start text-reset text-decoration-none">
+          ${img}<span><small class="d-block text-secondary font-sans">${apDate(p.date)}</small><span class="home-blog-title d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
         </a>
       </div>`;
   })
@@ -1867,6 +1895,7 @@ fs.writeFileSync(
     true,
     {
       path: "about.html",
+      crumb: "About",
       jsonLd: { "@type": "AboutPage", name: `About ${site.name}` },
     },
   ),
@@ -1897,6 +1926,7 @@ fs.writeFileSync(
     {
       description: `Questions, comments or corrections? Contact ${site.name}.`,
       path: "contact.html",
+      crumb: "Contact",
       jsonLd: { "@type": "ContactPage", name: `Contact ${site.name}` },
     },
   ),
@@ -1935,12 +1965,13 @@ fs.writeFileSync(
             : "",
           "{Post Photo}": p.photo ? photoFigure(p.photo, "../", true) : "",
           "{Post Body}": body,
-          // Sidebar: the newest posts (this one included, marked as current)
+          // Sidebar: the newest posts, leaving out this one
           "{Recent Posts}": posts
-            .slice(0, 5)
+            .filter((o) => o.slug !== p.slug)
+            .slice(0, 4)
             .map(
               (o) =>
-                `              <li><a href="${link(`${o.slug}.html`)}" class="fw-bold"${o.slug === p.slug ? ' aria-current="page"' : ""}>${esc(o.title)}</a><br /><small class="text-secondary font-sans">${apDate(o.date)}</small></li>`,
+                `              <li><a href="${link(`${o.slug}.html`)}" class="fw-bold">${esc(o.title)}</a><br /><small class="text-secondary font-sans">${apDate(o.date)}</small></li>`,
             )
             .join("\n"),
         }),
@@ -1952,6 +1983,7 @@ fs.writeFileSync(
         {
           description: p.lead,
           path: `blog/${p.slug}.html`,
+          crumb: p.title,
           ogType: "article",
           ogTitle: esc(p.title),
           article: {
@@ -1968,7 +2000,7 @@ fs.writeFileSync(
             headline: p.title,
             datePublished: p.date,
             ...(p.updated ? { dateModified: p.updated } : {}),
-            author: { "@type": "Organization", name: p.author || site.name },
+            author: { "@type": (p.author || site.name) === site.name ? "Organization" : "Person", name: p.author || site.name },
             publisher: { "@type": "Organization", name: site.name },
             ...(p.topics ? { keywords: p.topics.join(", ") } : {}),
             ...(site.url && p.shareImage
@@ -2022,6 +2054,7 @@ fs.writeFileSync(
       {
         description: `Articles on native plants, weeds, gardening and nature in Utah and the Mountain West.`,
         path: "blog.html",
+        crumb: "Blog",
         jsonLd: { "@type": "Blog", name: `${site.name} Blog` },
       },
     ),
@@ -2141,6 +2174,7 @@ function stateOutlineJson() {
         description:
           "Search a map of towns and cities across Utah, with county lines and directions.",
         path: "map.html",
+        crumb: "Map",
       },
     ),
   );
