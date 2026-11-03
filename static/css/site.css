@@ -1192,6 +1192,13 @@ a.marker-link:focus {
     background: radial-gradient(circle at 1px 50%, #a7aeb5 0.6px, transparent 0.9px) 0 0 / 2px 4px repeat-y;
   }
 }
+/* Dark mode of the homepage blog card ("homeBlogStyle": "dark" in
+   config/site.json): the reverse of bg-light-gradient, lighter at the
+   bottom instead of darker */
+.home-blog-dark {
+  background-color: #343a40;
+  background-image: linear-gradient(to bottom, #343a40, #40474e);
+}
 /* "View the blog" link on the right of the header: the words lose their
    underline on hover */
 .home-blog-more:hover span,

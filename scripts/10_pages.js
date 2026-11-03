@@ -1807,14 +1807,19 @@ function videoFigure(spec) {
 </figure>`;
 }
 // Homepage: the newest blog posts as small media items above Community
-// Profiles, in a light gradient card
+// Profiles. "homeBlogStyle" in config/site.json picks the look:
+//   "light": light card, Community Profiles card plain light (bg-light)
+//   "dark":  dark gradient card, Community Profiles card in bg-light-gradient
 const HOME_POSTS = 4;
+const darkBlog = site.homeBlogStyle === "dark";
 const homeBlog = posts.length
   ? `<section style="margin-bottom: 2.25rem" aria-labelledby="home-blog-title">
-    <div class="home-blog card bg-light shadow-sm rounded-1">
+    <div class="home-blog card ${darkBlog ? "home-blog-dark" : "bg-light"} shadow-sm rounded-1"${darkBlog ? ' data-bs-theme="dark"' : ""}>
     <div class="card-header bg-transparent rule-fade-end d-flex justify-content-between align-items-baseline">
-      <h2 id="home-blog-title" class="h6 fs-md mb-0">${esc(site.name)} Blog</h2>
-      <a href="${link("blog.html")}" class="home-blog-more link-primary font-sans small fst-italic text-decoration-none"><span class="text-decoration-underline">View the blog</span> &raquo;</a>
+      <h2 id="home-blog-title" class="h6 fs-md mb-0${darkBlog ? " text-white" : ""}">${esc(site.name)} Blog</h2>
+      ${darkBlog
+        ? `<a href="${link("blog.html")}" class="home-blog-more btn btn-primary btn-sm border border-1 border-white font-sans">View the blog &raquo;</a>`
+        : `<a href="${link("blog.html")}" class="home-blog-more btn btn-secondary btn-sm font-sans">View the blog &raquo;</a>`}
     </div>
     <div class="card-body py-3">
     <div class="row gx-0 gx-lg-5 gy-2">
@@ -1828,9 +1833,13 @@ ${posts
       ? `<img src="${photoPath(ph.web.mobile.file)}" width="60" height="60" alt="" loading="lazy" decoding="async" class="home-blog-thumb flex-shrink-0 rounded-1 me-2"${ph.thumbPosition ? ` style="object-position: ${esc(ph.thumbPosition)}"` : ""} />`
       : "";
     return `      <div class="col-lg-3 home-blog-col">
-        <a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-start text-reset text-decoration-none">
+        ${darkBlog
+          ? `<a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-start link-light">
+          ${img}<span><small class="d-inline-block text-white font-sans text-decoration-none">${apDate(p.date)}</small><span class="d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
+        </a>`
+          : `<a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-start text-reset text-decoration-none">
           ${img}<span><small class="d-block text-secondary font-sans">${apDate(p.date)}</small><span class="home-blog-title d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
-        </a>
+        </a>`}
       </div>`;
   })
   .join("\n")}
@@ -1863,6 +1872,8 @@ const indexHtml = fill(template("index.html"), {
   "{County Links}": countyLinks,
   "{Profile Items}": items,
   "{Home Blog}": homeBlog,
+  // Community Profiles card background follows the blog card's style
+  "{Community Card Bg}": darkBlog ? "bg-light-gradient" : "bg-light",
 });
 fs.writeFileSync(
   path.join(outDir, "index.html"),
