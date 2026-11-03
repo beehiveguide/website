@@ -414,13 +414,13 @@ main:focus {
   /* Site name grows with the screen to fill the room beside the buttons,
      up to the height of the buttons inside their padding */
   .site-title {
-    font-size: clamp(1.4rem, calc((100vw - 220px) / 6.2), 1.7rem);
+    font-size: clamp(1.1rem, calc((100vw - 250px) / 6.35), 1.7rem);
   }
   .site-nav a {
-    width: 3.5rem;
+    width: 3.1rem;
     padding: 0.35rem 0 0.25rem;
-    margin-left: 0.4rem;
-    font-size: 0.75rem;
+    margin-left: 0.3rem;
+    font-size: 0.72rem;
   }
   .site-nav .nav-icon {
     height: 0.9rem;
@@ -429,12 +429,12 @@ main:focus {
 }
 @media (max-width: 359.98px) {
   .site-title {
-    font-size: 1.15rem;
+    font-size: clamp(0.95rem, calc((100vw - 228px) / 6.35), 1.1rem);
   }
   .site-nav a {
-    margin-left: 0.3rem;
-    font-size: 0.7rem;
-    width: 3.2rem;
+    margin-left: 0.25rem;
+    font-size: 0.64rem;
+    width: 2.8rem;
   }
 }
 
@@ -1251,7 +1251,8 @@ a.marker-link:focus {
     color: var(--bs-primary);
     background: none;
     border-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 0.95rem; /* btn-sm is 0.875rem */
     font-weight: 700;
     font-style: italic;
   }
@@ -1260,6 +1261,6 @@ a.marker-link:focus {
     color: var(--bs-primary-hover);
     background: none;
     border-color: transparent;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }

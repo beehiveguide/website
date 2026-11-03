@@ -1843,8 +1843,8 @@ const homeBlog = posts.length
     <div class="card-header bg-transparent rule-fade-end d-flex justify-content-between align-items-baseline">
       <h2 id="home-blog-title" class="h6 fs-md mb-0${darkBlog ? " text-white" : ""}">${esc(site.name)} Blog</h2>
       ${darkBlog
-        ? `<a href="${link("blog.html")}" class="home-blog-more btn btn-primary btn-sm border border-1 border-white font-sans">View the blog &raquo;</a>`
-        : `<a href="${link("blog.html")}" class="home-blog-more home-blog-more-light btn btn-secondary btn-sm font-sans">View the blog &raquo;</a>`}
+        ? `<a href="${link("blog.html")}" class="home-blog-more btn btn-primary btn-sm border border-1 border-white font-sans">View the Blog &raquo;</a>`
+        : `<a href="${link("blog.html")}" class="home-blog-more home-blog-more-light btn btn-secondary btn-sm font-sans">View the Blog &raquo;</a>`}
     </div>
     <div class="card-body py-3">
     <div class="row gx-0 gx-lg-5 gy-2">
