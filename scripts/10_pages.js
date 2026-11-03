@@ -1832,18 +1832,19 @@ function videoFigure(spec) {
 }
 // Homepage: the newest blog posts as small media items above Community
 // Profiles. "homeBlogStyle" in config/site.json picks the look:
-//   "light": light card, Community Profiles card plain light (bg-light)
-//   "dark":  dark gradient card, Community Profiles card in bg-light-gradient
+//   "light": light gradient card (bg-light-gradient)
+//   "dark":  dark gradient card
+// Either way, the Community Profiles card is bg-light-gradient.
 const HOME_POSTS = 4;
 const darkBlog = site.homeBlogStyle === "dark";
 const homeBlog = posts.length
   ? `<section style="margin-bottom: 2.25rem" aria-labelledby="home-blog-title">
-    <div class="home-blog card ${darkBlog ? "home-blog-dark" : "bg-light"} shadow-sm rounded-1"${darkBlog ? ' data-bs-theme="dark"' : ""}>
+    <div class="home-blog card ${darkBlog ? "home-blog-dark" : "bg-light-gradient"} shadow-sm rounded-1"${darkBlog ? ' data-bs-theme="dark"' : ""}>
     <div class="card-header bg-transparent rule-fade-end d-flex justify-content-between align-items-baseline">
       <h2 id="home-blog-title" class="h6 fs-md mb-0${darkBlog ? " text-white" : ""}">${esc(site.name)} Blog</h2>
       ${darkBlog
         ? `<a href="${link("blog.html")}" class="home-blog-more btn btn-primary btn-sm border border-1 border-white font-sans">View the blog &raquo;</a>`
-        : `<a href="${link("blog.html")}" class="home-blog-more btn btn-secondary btn-sm font-sans">View the blog &raquo;</a>`}
+        : `<a href="${link("blog.html")}" class="home-blog-more home-blog-more-light btn btn-secondary btn-sm font-sans">View the blog &raquo;</a>`}
     </div>
     <div class="card-body py-3">
     <div class="row gx-0 gx-lg-5 gy-2">
@@ -1859,10 +1860,10 @@ ${posts
     return `      <div class="col-lg-3 home-blog-col">
         ${darkBlog
           ? `<a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-center h-100 link-light">
-          ${img}<span><small class="d-block d-lg-none text-white font-sans">${apDate(p.date)}</small><span class="d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
+          ${img}<span>${(p.topics || []).length ? `<span class="d-block d-lg-none home-blog-tags">${p.topics.map((t) => `<span class="badge rounded tag-pill">${esc(t)}</span>`).join(" ")}</span>` : ""}<span class="d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
         </a>`
           : `<a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-center h-100 text-reset text-decoration-none">
-          ${img}<span><small class="d-block d-lg-none text-secondary font-sans">${apDate(p.date)}</small><span class="home-blog-title d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
+          ${img}<span>${(p.topics || []).length ? `<span class="d-block d-lg-none home-blog-tags">${p.topics.map((t) => `<span class="badge rounded tag-pill">${esc(t)}</span>`).join(" ")}</span>` : ""}<span class="home-blog-title d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
         </a>`}
       </div>`;
   })
@@ -1897,7 +1898,7 @@ const indexHtml = fill(template("index.html"), {
   "{Profile Items}": items,
   "{Home Blog}": homeBlog,
   // Community Profiles card background follows the blog card's style
-  "{Community Card Bg}": darkBlog ? "bg-light-gradient" : "bg-light",
+  "{Community Card Bg}": "bg-light-gradient",
 });
 fs.writeFileSync(
   path.join(outDir, "index.html"),

@@ -1232,3 +1232,34 @@ a.marker-link:focus {
 .home-blog-more:focus span {
   text-decoration: none !important;
 }
+
+/* Homepage blog previews, stacked: the topic pill above the title */
+.home-blog-tags {
+  margin-bottom: 0.3rem;
+  line-height: 1;
+}
+.home-blog-tags .tag-pill {
+  color: #fff;
+  background-color: #6f777f; /* lightest cool gray with 4.5:1 for white text */
+}
+/* "View the blog": a gray button on wide screens, a plain primary link
+   when the previews stack */
+@media (max-width: 991.98px) {
+  .home-blog-more-light,
+  .home-blog-more-light:active {
+    padding: 0;
+    color: var(--bs-primary);
+    background: none;
+    border-color: transparent;
+    text-decoration: underline;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .home-blog-more-light:hover,
+  .home-blog-more-light:focus {
+    color: var(--bs-primary-hover);
+    background: none;
+    border-color: transparent;
+    text-decoration: none;
+  }
+}
