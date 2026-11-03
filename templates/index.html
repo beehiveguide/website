@@ -231,12 +231,12 @@
   /* Band at the top: photo from config/photos.json ("homePhoto" in
      config/site.json). Phones get the smaller version. */
   .home-band {
-    height: 350px; /* phones */
+    height: 300px; /* phones */
     background: url("{Home Photo Mobile}") center bottom / cover no-repeat;
   }
   @media (min-width: 768px) {
     .home-band {
-      height: 480px;
+      height: 410px;
       background-image: url("{Home Photo Desktop}");
     }
   }
@@ -680,8 +680,8 @@
     <p id="profile-message" class="text-secondary" hidden>
       No communities match your search.
     </p>
-    <!-- With a county picked, its towns sit in a card like Nearby
-         Communities on town pages, its top border where the rule was -->
+    <!-- The town list, plain on the card's gray (card-off strips the
+         white box, border and padding) -->
     <div id="profile-card" class="card rounded-1 card-off">
       <div class="card-body py-3">
         <ul id="profile-list" class="list-unstyled town-list font-zilla mb-0">
@@ -767,8 +767,8 @@
       const adsRule = document.getElementById("home-ads-rule");
       if (adsRule) adsRule.hidden = Boolean(c);
       const card = document.getElementById("profile-card");
-      card.classList.toggle("card-off", !c);
-      card.classList.toggle("shadow-sm", Boolean(c));
+      // The town list stays plain (no white box, border or padding) with a
+      // county picked too
       chosenBox.setAttribute(
         "aria-label",
         c ? `Clear county: ${c} County` : "Clear county",

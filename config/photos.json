@@ -165,7 +165,7 @@
       "blog",
       "chokecherry"
     ],
-    "caption": "Ripe chokecherries.",
+    "caption": "Ripe chokecherries",
     "alt": "Dark berries hanging in bunches on a tree",
     "photographer": "Terence Larson",
     "photographerUrl": "",
@@ -197,7 +197,7 @@
       "blog",
       "chokecherry"
     ],
-    "caption": "Chokecherry growing in one of its typical habitats.",
+    "caption": "Chokecherry growing in one of its typical habitats",
     "alt": "Shrubby chokecherry bushes with vivid fall foliage in background.",
     "photographer": "Terence Larson",
     "photographerUrl": "",
@@ -228,7 +228,7 @@
       "blog",
       "chokecherry"
     ],
-    "caption": "Chokecherry blossoms.",
+    "caption": "Chokecherry blossoms",
     "alt": "White flowers and green leaves on chokecherry branches",
     "photographer": "Glacier National Park, National Park Service",
     "photographerUrl": "",
@@ -259,7 +259,7 @@
       "blog",
       "chokecherry"
     ],
-    "caption": "Boiling ripe chokecherries for use in home canning.",
+    "caption": "Boiling ripe chokecherries for use in home canning",
     "alt": "Dark chokecherries in water boiling on a stove top",
     "photographer": "Alan Levine",
     "photographerUrl": "https://www.flickr.com/photos/cogdog/",
@@ -290,7 +290,7 @@
       "blog",
       "chokecherry"
     ],
-    "caption": "Chokecherry fall foliage.",
+    "caption": "Chokecherry fall foliage",
     "alt": "Dark chokecherries, some overripe, hanging on branches with turning yellow leaves",
     "photographer": "Terence Larson",
     "photographerUrl": "",
@@ -321,7 +321,7 @@
       "blog",
       "chicory"
     ],
-    "caption": "Chicory flowers.",
+    "caption": "Chicory flowers",
     "alt": "A light blue chicory flower with squared-off, toothed petals on a thin green stem, with more blue flowers blurred behind it.",
     "photographer": "Raj Chattaraj",
     "photographerUrl": "https://unsplash.com/@jayanta_1234?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
@@ -353,7 +353,7 @@
       "blog",
       "farmers-union"
     ],
-    "caption": "Farm fields in southern Utah Valley.",
+    "caption": "Farm fields in southern Utah Valley",
     "alt": "A cornfield in front of a row of gray and brown rooftops, with a tall, dry brown mountain partly capped by clouds rising behind them under a gray sky.",
     "photographer": "Carol M. Highsmith",
     "photographerUrl": "https://www.loc.gov/item/2023697116/",
@@ -363,6 +363,37 @@
     "creditLine": "Photographs in Carol M. Highsmith's America Project in the Carol M. Highsmith Archive, Library of Congress, Prints and Photographs Division.",
     "downloaded": "2026-11-01",
     "crop": "16:9, 8454 x 4755 at 0, 881 (bottom crop; peak, rooftops and cornfield)"
+  },
+  {
+    "id": "springville-herald-1955",
+    "original": "../drive/photos/originals/springville-herald-1955-05-05.pdf",
+    "originalWidth": 1248,
+    "originalHeight": 828,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/springville-herald-1955.webp",
+        "width": 1248,
+        "height": 828
+      },
+      "mobile": {
+        "file": "static/images/blog/springville-herald-1955-640.webp",
+        "width": 640,
+        "height": 425
+      }
+    },
+    "location": "Springville",
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "Story from the front page of the Springville Herald's May 5, 1955, edition",
+    "alt": "A newspaper clipping headlined \"Three Refuse to Deny Communism Affiliation Expelled from Union,\" with two columns of text about John and Irma Sayer and Wayne Holley of Mapleton.",
+    "credit": "[Utah Digital Newspapers](https://newspapers.lib.utah.edu/ark:/87278/s6fj6jhp/15247987)",
+    "source": "Utah Digital Newspapers",
+    "sourceUrl": "https://newspapers.lib.utah.edu/ark:/87278/s6fj6jhp/15247987",
+    "citation": "Springville Herald | 1955-05-05 | Page 1 | Three Refuse to Deny Communism Affiliation Expelled from Union",
+    "downloaded": "2026-11-02",
+    "thumbPosition": "50% 0%"
   },
   {
     "id": "mapleton-barn",
@@ -386,7 +417,7 @@
       "blog",
       "farmers-union"
     ],
-    "caption": "A red barn in Mapleton.",
+    "caption": "A red barn in Mapleton",
     "alt": "A red barn with a gray metal roof sits behind a white rail fence and leafy trees, with horses in a pasture at left and a dry, brush-dotted mountain rising behind it under a cloudy sky.",
     "photographer": "Carol M. Highsmith",
     "photographerUrl": "https://www.loc.gov/item/2023697395/",
@@ -419,7 +450,7 @@
       "blog",
       "farmers-union"
     ],
-    "caption": "A farmstead in southern Utah Valley.",
+    "caption": "A farmstead in southern Utah Valley",
     "alt": "An old farmstead with weathered wooden corrals, round hay bales, tin-roofed sheds, a red farm truck and two metal grain bins sits beyond a dry field, with a large tree at left and clouds hanging over the mountains behind.",
     "photographer": "Carol M. Highsmith",
     "photographerUrl": "https://www.loc.gov/item/2023697387/",
@@ -453,7 +484,7 @@
       "blog",
       "farmers-union"
     ],
-    "caption": "A field near Mapleton.",
+    "caption": "A field near Mapleton",
     "alt": "A dry, golden meadow with scattered young trees lies at the foot of green, brush-covered mountains, their peaks hidden in low gray clouds.",
     "photographer": "Carol M. Highsmith",
     "photographerUrl": "https://www.loc.gov/item/2023697394/",
@@ -463,6 +494,263 @@
     "creditLine": "Photographs in Carol M. Highsmith's America Project in the Carol M. Highsmith Archive, Library of Congress, Prints and Photographs Division.",
     "downloaded": "2026-11-01",
     "crop": "16:9, 8530 x 4798 at 0, 889 (bottom crop; field and mountains)"
+  },
+  {
+    "id": "john-sayer",
+    "original": "../drive/photos/originals/sayer-holley-family-christmas.jpg",
+    "originalWidth": 3088,
+    "originalHeight": 1895,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/john-sayer.webp",
+        "width": 560,
+        "height": 700
+      },
+      "mobile": {
+        "file": "static/images/blog/john-sayer-280.webp",
+        "width": 280,
+        "height": 350
+      }
+    },
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "John Sayer",
+    "alt": "A man with dark hair and glasses in a patterned olive shirt, holding a dark glass tumbler.",
+    "credit": "[FamilySearch](https://www.familysearch.org/)",
+    "source": "FamilySearch",
+    "downloaded": "2026-11-02",
+    "crop": "4:5, Cropped from a family Christmas photo, 587 x 734 at 625, 409"
+  },
+  {
+    "id": "irma-sayer",
+    "original": "../drive/photos/originals/sayer-holley-family-christmas.jpg",
+    "originalWidth": 3088,
+    "originalHeight": 1895,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/irma-sayer.webp",
+        "width": 560,
+        "height": 700
+      },
+      "mobile": {
+        "file": "static/images/blog/irma-sayer-280.webp",
+        "width": 280,
+        "height": 350
+      }
+    },
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "Irma Sayer",
+    "alt": "A woman with short dark curled hair in a sleeveless coral blouse with a star-shaped brooch.",
+    "credit": "[FamilySearch](https://www.familysearch.org/)",
+    "source": "FamilySearch",
+    "downloaded": "2026-11-02",
+    "crop": "4:5, Cropped from a family Christmas photo, 556 x 695 at 1220, 463"
+  },
+  {
+    "id": "wayne-holley",
+    "original": "../drive/photos/originals/wayne-holley-boat.jpg",
+    "originalWidth": 800,
+    "originalHeight": 1177,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/wayne-holley.webp",
+        "width": 560,
+        "height": 700
+      },
+      "mobile": {
+        "file": "static/images/blog/wayne-holley-280.webp",
+        "width": 280,
+        "height": 350
+      }
+    },
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "Wayne Holley",
+    "alt": "A smiling man with wavy dark hair in a tan zip jacket sits on a boat, with the sea behind him.",
+    "credit": "[FamilySearch](https://www.familysearch.org/)",
+    "source": "FamilySearch",
+    "downloaded": "2026-11-02",
+    "crop": "4:5, 608 x 760 at 0, 170"
+  },
+  {
+    "id": "holley-sayer-collage",
+    "original": "../drive/photos/originals/sayer-holley-family-christmas.jpg",
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/holley-sayer-collage.webp",
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": {
+        "file": "static/images/blog/holley-sayer-collage-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    },
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "Wayne Holley, Irma Sayer and John Sayer",
+    "alt": "Three side-by-side color portraits: a smiling man in a tan jacket on a boat, a woman in a coral blouse with a brooch, and a man in glasses holding a glass.",
+    "credit": "[FamilySearch](https://www.familysearch.org/)",
+    "source": "FamilySearch",
+    "downloaded": "2026-11-02",
+    "crop": "16:9 collage of three 421 x 720 panels with 8px white gaps: Wayne from wayne-holley-boat.jpg, Irma and John from sayer-holley-family-christmas.jpg"
+  },
+  {
+    "id": "holley-farm",
+    "original": "../drive/photos/originals/holley-farm-truck.jpg",
+    "originalWidth": 3000,
+    "originalHeight": 2008,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/holley-farm.webp",
+        "width": 1280,
+        "height": 720
+      },
+      "mobile": {
+        "file": "static/images/blog/holley-farm-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    },
+    "location": "Mapleton",
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "The Holley farm",
+    "alt": "Two men in hats stand in a dirt farmyard in front of an old red truck piled high with leafy green crops, between weathered wooden barns.",
+    "credit": "[FamilySearch](https://www.familysearch.org/)",
+    "source": "FamilySearch",
+    "downloaded": "2026-11-02",
+    "crop": "16:9, 2920 x 1643 at 0, 150 (black film edge cut off at right)",
+    "thumbPosition": "40% 50%"
+  },
+  {
+    "id": "ezra-taft-benson",
+    "original": "../drive/photos/originals/benson-nal-portrait.jpg",
+    "originalWidth": 2366,
+    "originalHeight": 2962,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/ezra-taft-benson.webp",
+        "width": 640,
+        "height": 800
+      },
+      "mobile": {
+        "file": "static/images/blog/ezra-taft-benson-320.webp",
+        "width": 320,
+        "height": 400
+      }
+    },
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "Ezra Taft Benson, Church leader and ag secretary to Eisenhower",
+    "narrow": true,
+    "alt": "Black-and-white studio portrait of a balding man in rimless glasses, a dark pinstripe suit and a patterned tie.",
+    "credit": "[National Agricultural Library](https://nal.usda.gov/exhibits/speccoll/exhibits/show/usda-history-collection/item/1144)",
+    "source": "Special Collections, USDA National Agricultural Library",
+    "sourceUrl": "https://nal.usda.gov/exhibits/speccoll/exhibits/show/usda-history-collection/item/1144",
+    "downloaded": "2026-11-02",
+    "crop": "4:5, 2256 x 2820 at 60, 60 (white print border trimmed)"
+  },
+  {
+    "id": "john-sayer-army",
+    "original": "../drive/photos/originals/john-sayer-army-portrait.jpg",
+    "originalWidth": 2333,
+    "originalHeight": 3500,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/john-sayer-army.webp",
+        "width": 640,
+        "height": 800
+      },
+      "mobile": {
+        "file": "static/images/blog/john-sayer-army-320.webp",
+        "width": 320,
+        "height": 400
+      }
+    },
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "John Sayer during WWII",
+    "narrow": true,
+    "alt": "A sepia studio portrait of a young man in glasses and a mustache wearing a World War II Army uniform and garrison cap.",
+    "credit": "[FamilySearch](https://www.familysearch.org/)",
+    "source": "FamilySearch",
+    "downloaded": "2026-11-02",
+    "crop": "4:5, 1304 x 1629 at 516, 604 (photo inside the studio mat)"
+  },
+  {
+    "id": "irma-sayer-1940s",
+    "original": "../drive/photos/originals/holley-family-porch.jpg",
+    "originalWidth": 4161,
+    "originalHeight": 2976,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/irma-sayer-1940s.webp",
+        "width": 640,
+        "height": 800
+      },
+      "mobile": {
+        "file": "static/images/blog/irma-sayer-1940s-320.webp",
+        "width": 320,
+        "height": 400
+      }
+    },
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "Irma Holley Sayer",
+    "narrow": true,
+    "alt": "A young woman with dark curled hair in a patterned dress with a white collar and a dark flower corsage.",
+    "credit": "[FamilySearch](https://www.familysearch.org/)",
+    "source": "FamilySearch",
+    "downloaded": "2026-11-02",
+    "crop": "4:5, 707 x 884 at 2684, 926 (from a family group photo on a porch)"
+  },
+  {
+    "id": "wayne-holley-mission",
+    "original": "../drive/photos/originals/wayne-holley-mission-germany.jpg",
+    "originalWidth": 492,
+    "originalHeight": 824,
+    "web": {
+      "desktop": {
+        "file": "static/images/blog/wayne-holley-mission.webp",
+        "width": 352,
+        "height": 440
+      },
+      "mobile": {
+        "file": "static/images/blog/wayne-holley-mission-176.webp",
+        "width": 176,
+        "height": 220
+      }
+    },
+    "tags": [
+      "blog",
+      "farmers-union"
+    ],
+    "caption": "Wayne Holley as a missionary",
+    "narrow": true,
+    "alt": "A young man with wavy hair in a dark three-piece suit and tie stands outside a building.",
+    "credit": "[FamilySearch](https://www.familysearch.org/)",
+    "source": "FamilySearch",
+    "downloaded": "2026-11-02",
+    "crop": "4:5, 176 x 220 at 287, 145 (man on the right of a two-person photo; low-res source)"
   },
   {
     "id": "uintah-meridian-monument",
@@ -486,7 +774,7 @@
       "blog",
       "uintah-meridian"
     ],
-    "caption": "A monument with plaques commemorating the Initial Point of the Uintah Special Meridian.",
+    "caption": "A monument with plaques commemorating the Initial Point of the Uintah Special Meridian",
     "alt": "A stone monument with a black plaque, topped by a carved post reading 1875, stands among sagebrush with mountains in the distance.",
     "photographer": "Terence Larson",
     "downloaded": "2026-11-01"
@@ -513,7 +801,7 @@
       "blog",
       "wong-sing"
     ],
-    "caption": "Ming dynasty calligraphy.",
+    "caption": "Ming dynasty calligraphy",
     "alt": "Close-up of flowing black brushstroke characters in cursive script on aged tan paper.",
     "photographer": "The Cleveland Museum of Art",
     "photographerUrl": "https://unsplash.com/@clevelandart",
@@ -546,12 +834,12 @@
       "blog",
       "wong-sing"
     ],
-    "caption": "Wong Sing (in button-up vest) at his store.",
+    "caption": "Wong Sing (in button-up vest) at his store",
     "alt": "Two old black-and-white photos fanned over cursive Chinese calligraphy: three men stand on the porch of a store under a sign reading Wong Sing General Merchandise, and four men in hats stand in front of the store.",
     "photographer": "FamilySearch and The Cleveland Museum of Art",
     "license": "Store photos from FamilySearch (likely unpublished, photographer unknown); calligraphy public domain (Cleveland Museum of Art via Unsplash)",
     "note": "Collage built from two FamilySearch photos and chinese-scroll (Cleveland Museum of Art, Listening to the Bamboo).",
     "downloaded": "2026-11-01",
-    "credit": "Photos: [FamilySearch](https://www.familysearch.org/)."
+    "credit": "[FamilySearch](https://www.familysearch.org/)"
   }
 ]

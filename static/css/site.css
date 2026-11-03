@@ -1088,6 +1088,33 @@ a.marker-link:focus {
 .post .post-figure {
   margin: 1.5rem 0;
 }
+/* A portrait kept small ("narrow" in config/photos.json). It floats right
+   with the text wrapping around it at every screen size. Once the screen is
+   so narrow the photo would take up two-thirds of the column (about 287px
+   wide), it stops floating and goes full width. */
+.post .post-figure-narrow {
+  float: right;
+  width: 170px;
+  margin: 0.35rem 0 1rem 1.25rem;
+}
+.post h2 {
+  clear: both;
+}
+@media (max-width: 287px) {
+  .post .post-figure-narrow {
+    float: none;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+}
+/* Photos side by side ({Photos a b c} in a post) */
+.post .post-photo-row {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.post .post-photo-row .post-figure {
+  margin: 0;
+}
 .post-side-list li {
   padding: 0.4rem 0;
 }
@@ -1157,10 +1184,10 @@ a.marker-link:focus {
     )
     1;
 }
-/* Homepage blog previews: small photo beside the title and date */
+/* Homepage blog previews: small 16:9 photo beside the title and date */
 .home-blog-thumb {
-  width: 60px;
-  height: 60px;
+  width: 96px;
+  height: 54px;
   object-fit: cover;
 }
 .home-blog-title {

@@ -1749,10 +1749,12 @@ const items = pages
 // --- Blog (config/posts.json lists the posts; each post's body is
 // posts/<slug>.html). Bodies are plain HTML with two tokens for media:
 //   {Photo id}                     a photo from config/photos.json with its
-//                                  caption and "Photo: <photographer>/<source>."
+//                                  caption and "(<photographer>/<source>)"
+//   {Photos id id id}              photos side by side in one row (same
+//                                  aspect ratio), each with its own caption
 //   {Video youtubeId | caption | credit}  a YouTube video in YouTube's
 //                                  privacy-enhanced mode (no cookies until play),
-//                                  credited "Video: <credit>." with the credit
+//                                  credited "(<credit>)" with the credit
 //                                  linked to the video on YouTube
 const posts = (
   fs.existsSync(paths.config("posts.json"))
@@ -1762,6 +1764,10 @@ const posts = (
   .map((p, i) => ({ ...p, order: i }))
   // Newest first; posts with the same date go in reverse order of the list
   .sort((a, b) => b.date.localeCompare(a.date) || b.order - a.order);
+// The photo for a post's thumbnail on the homepage and blog page:
+// "thumbPhoto" in config/posts.json, else the post's top photo
+const thumbId = (p) =>
+  [p.thumbPhoto, p.photo].find((id) => id && photos.some((x) => x.id === id));
 const postPhoto = (id) => {
   const p = photos.find((x) => x.id === id);
   if (!p) throw new Error(`Photo "${id}" not found in config/photos.json`);
@@ -1771,7 +1777,16 @@ const postPhoto = (id) => {
 // post loads right away; the rest wait until they're scrolled near.
 // A photo not yet in config/photos.json is left out with a warning, so a
 // post can go up before its photo is ready.
-function photoFigure(id, root, lead = false) {
+// "Ripe chokecherries." + credit -> "Ripe chokecherries (Terence Larson)."
+// A caption without a closing period gets none.
+// sep: what goes between the caption and the credit (a line break for
+// narrow portraits)
+function withCredit(caption, credit, sep = " ") {
+  if (!credit) return caption;
+  const end = caption.endsWith(".") ? "." : "";
+  return `${end ? caption.slice(0, -1) : caption}${sep}(${credit})${end}`;
+}
+function photoFigure(id, root, lead = false, sizes = "(max-width: 800px) 100vw, 768px") {
   if (!photos.some((x) => x.id === id)) {
     console.warn(`  Photo "${id}" isn't in config/photos.json yet; left out`);
     return "";
@@ -1779,20 +1794,29 @@ function photoFigure(id, root, lead = false) {
   const p = postPhoto(id);
   const d = p.web.desktop,
     m = p.web.mobile;
-  // "Photo: Alan Levine/Flickr." with "Alan Levine/Flickr" linked to photographerUrl
+  // Credit in parentheses before the caption's period:
+  // "Chicory flowers (Raj Chattaraj/Unsplash)." with the credit linked to
+  // photographerUrl. "credit" in config/photos.json replaces the usual
+  // photographer/source ("[text](url)" in it becomes a link).
   const who = `${esc(p.photographer)}${p.source ? `/${esc(p.source)}` : ""}`;
-  // "credit" in config/photos.json replaces the usual "Photo: ..." line,
-  // for photos with more than one source
-  // ("[text](url)" in it becomes a link)
   const credit = p.credit
-    ? ` ${esc(p.credit).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" class="link-secondary">$1</a>')}`
+    ? esc(p.credit).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" class="link-secondary">$1</a>')
     : p.photographer
-      ? ` Photo: ${p.photographerUrl ? `<a href="${esc(p.photographerUrl)}" class="link-secondary">${who}</a>` : who}.`
+      ? p.photographerUrl ? `<a href="${esc(p.photographerUrl)}" class="link-secondary">${who}</a>` : who
       : "";
-  return `<figure class="post-figure">
-  <img src="${root}${photoPath(d.file)}" srcset="${root}${photoPath(m.file)} ${m.width}w, ${root}${photoPath(d.file)} ${d.width}w" sizes="(max-width: 800px) 100vw, 768px" width="${d.width}" height="${d.height}" alt="${esc(p.alt)}"${lead ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async" />
-  <figcaption>${esc(p.caption)}${credit}</figcaption>
+  const caption = withCredit(esc(p.caption), credit);
+  // "narrow": true in config/photos.json keeps a portrait small (CSS .post-figure-narrow)
+  if (p.narrow) sizes = "170px";
+  return `<figure class="post-figure${p.narrow ? " post-figure-narrow" : ""}">
+  <img src="${root}${photoPath(d.file)}" srcset="${root}${photoPath(m.file)} ${m.width}w, ${root}${photoPath(d.file)} ${d.width}w" sizes="${sizes}" width="${d.width}" height="${d.height}" alt="${esc(p.alt)}"${lead ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async" />
+  <figcaption>${caption}</figcaption>
 </figure>`;
+}
+// Photos side by side in one row, each with its own caption. lead: the row at
+// the top of a post ("leadPhotos" in config/posts.json) loads right away.
+function photoRow(list, lead = false) {
+  const sizes = `(max-width: 800px) ${Math.round(100 / list.length)}vw, ${Math.round(768 / list.length)}px`;
+  return `<div class="post-photo-row row g-3">\n${list.map((id) => `<div class="col">${photoFigure(id, "../", lead, sizes)}</div>`).join("\n")}\n</div>`;
 }
 // Topic pills ("topics" in config/posts.json)
 const tagPills = (p, margin) =>
@@ -1803,7 +1827,7 @@ function videoFigure(spec) {
   const [id, caption, credit] = spec.split("|").map((x) => x.trim());
   return `<figure class="post-figure">
   <div class="ratio ratio-16x9"><iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}" title="${esc(caption)}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
-  <figcaption>${esc(caption)}${credit ? ` Video: <a href="https://www.youtube.com/watch?v=${esc(id)}" class="link-secondary">${esc(credit)}</a>.` : ""}</figcaption>
+  <figcaption>${withCredit(esc(caption), credit ? `<a href="https://www.youtube.com/watch?v=${esc(id)}" class="link-secondary">${esc(credit)}</a>` : "")}</figcaption>
 </figure>`;
 }
 // Homepage: the newest blog posts as small media items above Community
@@ -1828,17 +1852,17 @@ ${posts
   .slice(0, HOME_POSTS)
   .map((p) => {
     const ph =
-      p.photo && photos.some((x) => x.id === p.photo) ? postPhoto(p.photo) : null;
+      thumbId(p) ? postPhoto(thumbId(p)) : null;
     const img = ph
-      ? `<img src="${photoPath(ph.web.mobile.file)}" width="60" height="60" alt="" loading="lazy" decoding="async" class="home-blog-thumb flex-shrink-0 rounded-1 me-2"${ph.thumbPosition ? ` style="object-position: ${esc(ph.thumbPosition)}"` : ""} />`
+      ? `<img src="${photoPath(ph.web.mobile.file)}" width="96" height="54" alt="" loading="lazy" decoding="async" class="home-blog-thumb flex-shrink-0 rounded-1 me-2"${ph.thumbPosition ? ` style="object-position: ${esc(ph.thumbPosition)}"` : ""} />`
       : "";
     return `      <div class="col-lg-3 home-blog-col">
         ${darkBlog
-          ? `<a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-start link-light">
-          ${img}<span><small class="d-inline-block text-white font-sans text-decoration-none">${apDate(p.date)}</small><span class="d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
+          ? `<a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-center h-100 link-light">
+          ${img}<span><small class="d-block d-lg-none text-white font-sans">${apDate(p.date)}</small><span class="d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
         </a>`
-          : `<a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-start text-reset text-decoration-none">
-          ${img}<span><small class="d-block text-secondary font-sans">${apDate(p.date)}</small><span class="home-blog-title d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
+          : `<a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-center h-100 text-reset text-decoration-none">
+          ${img}<span><small class="d-block d-lg-none text-secondary font-sans">${apDate(p.date)}</small><span class="home-blog-title d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
         </a>`}
       </div>`;
   })
@@ -1954,6 +1978,7 @@ fs.writeFileSync(
   for (const p of posts) {
     const body = fs
       .readFileSync(path.join(paths.dirs.root, "posts", `${p.slug}.html`), "utf8")
+      .replace(/\{Photos ([\w\s-]+)\}/g, (_, ids) => photoRow(ids.trim().split(/\s+/)))
       .replace(/\{Photo ([\w-]+)\}/g, (_, id) => photoFigure(id, "../"))
       .replace(/\{Video ([^}]+)\}/g, (_, x) => videoFigure(x))
       .trim();
@@ -1979,7 +2004,14 @@ fs.writeFileSync(
           "{Post Lead}": p.lead
             ? `<p class="lead rule-fade-both pb-3 mb-4">${esc(p.lead)}</p>`
             : "",
-          "{Post Photo}": p.photo ? photoFigure(p.photo, "../", true) : "",
+          // "leadPhotos" (a list of photo IDs) puts a row of photos on top in
+          // place of the single "photo," which still serves as the thumbnail
+          // and share image
+          "{Post Photo}": p.leadPhotos
+            ? photoRow(p.leadPhotos, true)
+            : p.photo
+              ? photoFigure(p.photo, "../", true)
+              : "",
           "{Post Body}": body,
           // Sidebar: the newest posts, leaving out this one
           "{Recent Posts}": posts
@@ -2040,15 +2072,14 @@ fs.writeFileSync(
     .map((p) => {
       const href = link(`blog/${p.slug}.html`);
       const ph =
-        p.photo && photos.some((x) => x.id === p.photo) ? postPhoto(p.photo) : null;
+        thumbId(p) ? postPhoto(thumbId(p)) : null;
       const img = ph
         ? `<div class="col-md-4 mb-3 mb-md-0"><a href="${href}" tabindex="-1" aria-hidden="true"><img src="${photoPath(ph.web.mobile.file)}" width="${ph.web.mobile.width}" height="${ph.web.mobile.height}" alt="" loading="lazy" decoding="async" /></a></div>`
         : "";
       return `    <article class="post-card row py-4">
       ${img}
       <div class="${ph ? "col-md-8" : "col-12"}">
-        <h2 class="h4 mb-1"><a href="${href}">${esc(p.title)}</a></h2>
-        <p class="text-secondary font-sans small mb-2"><time datetime="${p.date}">${apDate(p.date)}</time></p>
+        <h2 class="h4 mb-2"><a href="${href}">${esc(p.title)}</a></h2>
         ${tagPills(p, "mb-2")}
         <p class="mb-0">${esc(p.lead)}</p>
       </div>

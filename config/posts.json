@@ -25,18 +25,6 @@
     "shareImage": "images/share-chicory.jpg"
   },
   {
-    "slug": "what-is-the-uintah-special-meridian",
-    "title": "What Is the Uintah Special Meridian?",
-    "date": "2026-11-02",
-    "author": "Terence Larson",
-    "lead": "The Uintah Special Meridian subdivided the Uintah Reservation into townships and sections. Its importance came as the boundary lines for the Uinta Basin's tribal allotments, homesteads and townsites (with their lasting influence) were determined using the grid from the 1875 survey that established the meridian.",
-    "topics": [
-      "History"
-    ],
-    "photo": "uintah-meridian-monument",
-    "shareImage": "images/share-uintah-meridian.jpg"
-  },
-  {
     "slug": "wong-sing-frontier-merchant",
     "title": "Wong Sing, Eastern Utah's Frontier Merchant",
     "shortTitle": "Wong Sing, Frontier Merchant",
@@ -50,6 +38,18 @@
     "shareImage": "images/share-wong-sing.jpg"
   },
   {
+    "slug": "what-is-the-uintah-special-meridian",
+    "title": "What Is the Uintah Special Meridian?",
+    "date": "2026-11-02",
+    "author": "Terence Larson",
+    "lead": "The Uintah Special Meridian subdivided the Uintah Reservation into townships and sections. Its importance came as the boundary lines for the Uinta Basin's tribal allotments, homesteads and townsites (with their lasting influence) were determined using the grid from the 1875 survey that established the meridian.",
+    "topics": [
+      "History"
+    ],
+    "photo": "uintah-meridian-monument",
+    "shareImage": "images/share-uintah-meridian.jpg"
+  },
+  {
     "slug": "utahs-case-of-small-town-mccarthyism",
     "title": "Utah's Case of Small-Town McCarthyism: The Holley and Sayer Saga",
     "shortTitle": "Utah's Case of Small-Town McCarthyism",
@@ -59,7 +59,8 @@
     "topics": [
       "History"
     ],
-    "photo": "spanish-fork-farmstead",
-    "shareImage": "images/share-holley-sayer.jpg"
+    "photo": "holley-sayer-collage",
+    "thumbPhoto": "holley-sayer-collage",
+    "shareImage": "images/share-holley-sayer-row.jpg"
   }
 ]
