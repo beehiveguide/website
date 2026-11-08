@@ -1436,13 +1436,15 @@ function trailsHtml(t) {
   const withTrails = [];
   const plain = [];
   for (const h of d.trailheads) {
-    const ok = h.trails.filter((n) => isConfirmedTrail(t.name, h.name, n));
+    // A trail named just like its trailhead ("Dry Canyon" at Dry Canyon) isn't listed
+    const ok = h.trails.filter((n) => isConfirmedTrail(t.name, h.name, n) && trailKey(n) !== trailKey(shown(h.name)));
     ok.forEach((n) => seen.add(n.toLowerCase()));
     if (ok.length) withTrails.push({ h, ok }); else plain.push(h);
   }
   const heads = d.trailheads;
   const near = withTrails;
-  const others = d.trails.filter((n) => !seen.has(n.toLowerCase()) && !confirmedPairs.roads.has(trailKey(n)));
+  const headKeys = new Set(d.trailheads.map((h) => trailKey(shown(h.name))));
+  const others = d.trails.filter((n) => !seen.has(n.toLowerCase()) && !confirmedPairs.roads.has(trailKey(n)) && !headKeys.has(trailKey(n)));
   const out = [];
   const sentences = [];
   for (const { h, ok } of withTrails) sentences.push(`${link(h, true)} provides access to ${listText(ok.map(esc))}.`);
