@@ -59,7 +59,7 @@ const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
     // Spelling fixes to OpenStreetMap names (config/corrections.json "church_names")
     for (const fix of churchFixes) p.name = p.name.split(fix.find).join(fix.replace);
     const lat = Number(p.lat), lng = Number(p.lon);
-    const mapUrl = `https://www.google.com/maps?q=${lat.toFixed(6)},${lng.toFixed(6)}`;
+    const mapUrl = `https://www.google.com/maps/search/${encodeURIComponent(`${p.name.trim()} ${p.city || ""}`.trim()).replace(/%20/g, "+")}/@${lat.toFixed(6)},${lng.toFixed(6)},17z`;
     const address = (p.osm_addr || p.ugrc_addr || "").trim();
     output[id] = output[id] || {};
     (output[id].churches = output[id].churches || []).push(

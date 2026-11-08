@@ -761,7 +761,7 @@ const openInLinks = (t) =>
   [
     [
       "Google Maps",
-      `https://www.google.com/maps/search/?api=1&amp;query=${t.lat},${t.lng}`,
+      `https://www.google.com/maps/search/${encodeURIComponent(t.name + ", Utah").replace(/%20/g, "+")}/@${t.lat},${t.lng},13z`,
     ],
     [
       "Apple Maps",
@@ -769,7 +769,7 @@ const openInLinks = (t) =>
     ],
     [
       "OpenStreetMap",
-      `https://www.openstreetmap.org/?mlat=${t.lat}&amp;mlon=${t.lng}#map=14/${t.lat}/${t.lng}`,
+      `https://www.openstreetmap.org/search?query=${encodeURIComponent(t.name + ", Utah")}#map=14/${t.lat}/${t.lng}`,
     ],
   ]
     .map(([name, url]) => `<a href="${url}" class="link-dark">${name}</a>`)
@@ -1358,7 +1358,7 @@ function churchItems(t, numerals = false) {
   }
   // The LDS Church's buildings share one name, so they link to its meetinghouse locator
   const LDS = /^the church of jesus christ of latter-day saints$/i;
-  const LDS_URL = "https://maps.churchofjesuschrist.org/";
+  const LDS_URL = `https://maps.churchofjesuschrist.org/search?q=${encodeURIComponent(`${t.name} utah`)}`;
   // A leading "The" stays outside the link
   const link = (url, name) => {
     const the = /^The /.test(name) ? "The " : "";
@@ -1403,22 +1403,44 @@ function churchHtml(t) {
 // trail falls into the plain list.
 const trailKey = (s) => String(s || "").toLowerCase().replace(/trail/g, "").replace(/[^a-z]/g, "");
 const CONFIRMED_STATUS = new Set(["confirmed", "confirmed (trail guide)", "starts here", "passes here", "reached from here", "ends here", "starts near"]);
+// Government and public-institution sites rank first, then trail nonprofits
+const GOV_HOST = /(\.gov|sgcity\.org|\.edu)$/i;
+const NONPROFIT_HOST = /(^|\.)(bonnevilleshorelinetrail\.org|mountaintrails\.org|tfnu\.org)$/i;
+const govUrl = (u) => {
+  try { const h = new URL(u).hostname; return GOV_HOST.test(h) || NONPROFIT_HOST.test(h) ? u : ""; } catch (e) { return ""; }
+};
+const govRank = (u) => { try { return GOV_HOST.test(new URL(u).hostname) ? 0 : 1; } catch (e) { return 2; } };
 const confirmedPairs = (() => {
   const pairs = [];
   const roads = new Set();
   const read = (f) => { try { return paths.readJson(paths.config(f)); } catch (e) { return []; } };
-  for (const r of read("trailhead_research.json"))
-    if (CONFIRMED_STATUS.has(r.status)) for (const x of r.trails || []) pairs.push([r.town, r.trailhead, x]);
-  for (const r of read("trail_verification.json")) {
-    if (CONFIRMED_STATUS.has(r.status)) for (const x of r.trails || []) pairs.push([r.town, r.trailhead, x]);
+  for (const r of [...read("trailhead_research.json"), ...read("trail_verification.json")]) {
+    if (CONFIRMED_STATUS.has(r.status))
+      for (const x of r.trails || []) pairs.push({ a: trailKey(r.town), b: trailKey(r.trailhead), c: trailKey(x), url: govUrl(r.source) });
     if (r.status === "road, not a trail") for (const x of r.trails || []) roads.add(trailKey(x));
   }
-  return { pairs: pairs.map(([a, b, c]) => [trailKey(a), trailKey(b), trailKey(c)]), roads };
+  // Official pages for trailheads a government source lists, even when it names no trails
+  const heads = [];
+  for (const r of [...read("trailhead_research.json"), ...read("trail_verification.json")])
+    if ((CONFIRMED_STATUS.has(r.status) || r.status === "partial") && govUrl(r.source))
+      heads.push({ a: trailKey(r.town), b: trailKey(r.trailhead), url: govUrl(r.source) });
+  heads.sort((x, y) => govRank(x.url) - govRank(y.url));
+  return { pairs, roads, heads };
 })();
-function isConfirmedTrail(town, head, trail) {
+// The confirmed pairs for a trailhead and trail (an empty trail matches any trail there)
+function pairsFor(town, head, trail) {
   const a = trailKey(town), b = trailKey(head), c = trailKey(trail);
-  return c && confirmedPairs.pairs.some(([ta, tb, tc]) => ta === a && (tb === b || tb.includes(b) || b.includes(tb)) && tc === c);
+  return confirmedPairs.pairs.filter((q) => q.a === a && (q.b === b || q.b.includes(b) || b.includes(q.b)) && (!c || q.c === c));
 }
+function isConfirmedTrail(town, head, trail) {
+  return !!trailKey(trail) && pairsFor(town, head, trail).length > 0;
+}
+// Official page for a trailhead or one of its trails, when a government source confirmed it
+const govLinkFor = (town, head) => {
+  const a = trailKey(town), b = trailKey(head);
+  return (confirmedPairs.heads.find((q) => q.a === a && (q.b === b || q.b.includes(b) || b.includes(q.b))) || {}).url || "";
+};
+const mapsMiss = new Set(paths.readJson(paths.config("maps_search_misses.json")).map((r) => `${r.town}|${r.trailhead}`));
 function trailsHtml(t) {
   const d = t.trails;
   if (!d || (!d.trailheads.length && !d.trails.length)) return "";
@@ -1429,7 +1451,13 @@ function trailsHtml(t) {
   const link = (h, full) => {
     const nm = shown(h.name);
     const label = full && !/trailhead|\bTH\b/i.test(nm) ? `${nm} Trailhead` : nm;
-    return `<a href="https://www.google.com/maps?q=${h.lat},${h.lng}">${esc(label)}</a>`;
+    // The official page when a government source confirmed this trailhead; the map pin otherwise
+    const gov = govLinkFor(t.name, h.name);
+    if (gov) return `<a href="${esc(gov)}">${esc(label)}</a>`;
+    // Google Maps name search near the trailhead; skipped where a spot check found it lands on the wrong place
+    if (mapsMiss.has(`${t.name}|${h.name}`)) return esc(label);
+    const q = encodeURIComponent(`${/trailhead|\bTH\b/i.test(nm) ? nm : `${nm} Trailhead`} ${t.name}`).replace(/%20/g, "+");
+    return `<a href="${esc(`https://www.google.com/maps/search/${q}/@${h.lat},${h.lng},17z`)}">${esc(label)}</a>`;
   };
   // Only trails a source ties to the trailhead are named with it; the rest go in the plain list.
   const seen = new Set();
@@ -1450,8 +1478,8 @@ function trailsHtml(t) {
   for (const { h, ok } of withTrails) sentences.push(`${link(h, true)} provides access to ${listText(ok.map(esc))}.`);
   if (plain.length) {
     const pl = plain.map((h) => link(h));
-    if (!withTrails.length) sentences.push(plain.length === 1 ? `${link(plain[0], true)} is in ${town}.` : `Trailheads include ${listText(pl)}.`);
-    else sentences.push(plain.length === 1 ? `${link(plain[0], true)} is also in ${town}.` : `Other trailheads include ${listText(pl)}.`);
+    if (!withTrails.length) sentences.push(plain.length === 1 ? `${link(plain[0], true)} is located in ${town}.` : `Trailheads include ${listText(pl)}.`);
+    else sentences.push(plain.length === 1 ? `${link(plain[0], true)} is also located in ${town}.` : `Other trailheads include ${listText(pl)}.`);
   }
   // "is a path in Myton": the noun follows the name's last word (path, loop, parkway, walkway)
   const nounOf = (name) =>
@@ -1513,7 +1541,7 @@ function airportText(t) {
   const raw = airportList(t).map((a) => airportName(a.name));
   if (!raw.length) return "";
   const list = raw.map((n, i) => theFirst(airportUrls[n] ? `<a href="${esc(airportUrls[n])}">${esc(n)}</a>` : esc(n), n, i));
-  return `${listText(list)} ${raw.length === 1 ? "serves" : "serve"} ${esc(t.name)}.`;
+  return `${listText(list)} ${raw.length === 1 ? "serves" : "serve"} ${placeWord(t)}.`;
 }
 
 // Parks and cemeteries source words: ["park", "cemetery"], or just the one shown
