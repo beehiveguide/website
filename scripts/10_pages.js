@@ -362,6 +362,13 @@ const SOURCES = {
   reservations: source("Reservation boundaries", "censusReservations"),
   // "Law enforcement, fire, park and school": only the Community Services sections shown
   ugrc: (shown) => source(capFirst(listText(shown)), "ugrc"),
+  // Churches come from OpenStreetMap (through UGRC's places file)
+  // "OpenStreetMap (Copyright and License info)": the name links to
+  // openstreetmap.org; the credit links to OSM's copyright page, which explains the license
+  osm: (label) => {
+    const o = SOURCE_LIST.osm;
+    return `<strong>${esc(capFirst(label))}:</strong> <a href="${o.publicUrl}">OpenStreetMap</a> <small class="font-sans fst-italic text-secondary">(<a href="${o.url}" class="link-secondary">Copyright and License info</a>)</small>`;
+  },
 };
 
 // Shared header and footer. home: link from the page to the homepage.
@@ -1303,7 +1310,10 @@ function schoolsHtml(t) {
 // single one links to its map location. Past BIG_LIST, a three-column list.
 function churchItems(t) {
   const groups = new Map();
+  // Churches only if every place is Christian; otherwise "places of worship"
+  let allChristian = true;
   for (const c of (t.places && t.places.churches) || []) {
+    if (c.faith && c.faith !== "christian") allChristian = false;
     // Spelling variants of the LDS Church's name ("The ...", "Latter-Day",
     // "Latter Day") count as one
     const lds = /^(the )?church of jesus christ of latter[ -]day saints$/i.test(c.name.trim());
@@ -1328,6 +1338,7 @@ function churchItems(t) {
       const url = LDS.test(g.name) ? LDS_URL : g.n > 1 ? "" : g.url;
       return `${link(url, g.name)}${g.n > 1 ? ` (${countWord(g.n)} locations)` : ""}`;
     });
+  items.allChristian = allChristian;
   items.total = [...groups.values()].reduce((sum, g) => sum + g.n, 0);
   return items;
 }
@@ -1336,12 +1347,12 @@ function churchHtml(t) {
   const items = churchItems(t);
   if (!items.length) return "";
   if (items.length > BIG_LIST)
-    return `<ul class="col-list">\n      ${items.map((i) => `<li>${i}</li>`).join("\n      ")}\n    </ul>`;
+    return `<ul class="col-list">\n      ${items.map((i) => `<li>${i.replace(/^The (<a [^>]*>)/, "$1The ")}</li>`).join("\n      ")}\n    </ul>`;
   // "Churches include the Cleveland Ward and Hope Baptist Church." or "Alta has a church, Our Lady of the Snows Center Station Church."
   const lower = churchItems(t).map((i) => i.replace(/^The /, "the "));
   return items.total > 1
-    ? `<p>Churches include ${listText(lower)}.</p>`
-    : `<p>${esc(t.name)} has a church, ${lower[0]}.</p>`;
+    ? `<p>${items.allChristian ? "Churches" : "Places of worship"} include ${listText(lower)}.</p>`
+    : `<p>${esc(t.name)} has a ${items.allChristian ? "church" : "place of worship"}, ${lower[0]}.</p>`;
 }
 
 function hospitalText(t) {
@@ -1402,10 +1413,10 @@ function servicesHtml(t) {
     [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t), parksCemeteriesLabels(t)],
     [`School${schools.count === 1 ? "" : "s"}${schools.range ? ` (${schools.range})` : ""}`, "schools", schools.k12, ["school"]],
     ["Higher Education", "colleges", schools.higher, ["college"]],
-    [churchItems(t).total > 1 ? "Churches" : "Church", "churches", churchHtml(t), ["church"]],
+    [(() => { const ci = churchItems(t); return ci.allChristian ? (ci.total > 1 ? "Churches" : "Church") : ci.total > 1 ? "Places of Worship" : "Place of Worship"; })(), "churches", churchHtml(t), []],
     ["Health Care", "hospitals", p(hospitalText(t)), ["hospital"]],
   ].filter(([, , body]) => body);
-  if (!sections.length) return { html: "", parts: [], shown: [], labels: [] };
+  if (!sections.length) return { html: "", parts: [], shown: [], labels: [], osm: "" };
   // Each part is its own section with an h2, styled like Growing Info
   const parts = sections.map(
     ([title, word, body]) => `<section class="services services-${slug(word)} mb-4">
@@ -1418,6 +1429,14 @@ function servicesHtml(t) {
     parts,
     shown: sections.map(([, word]) => word),
     labels: sections.flatMap(([, , , labels]) => labels),
+    // "Church", "Churches", "Place of worship" or "Places of worship", credited to OpenStreetMap
+    osm: sections.some(([, word]) => word === "churches")
+      ? (() => {
+          const ci = churchItems(t);
+          const many = ci.total > 1;
+          return ci.allChristian ? (many ? "churches" : "church") : many ? "places of worship" : "place of worship";
+        })()
+      : "",
   };
 }
 
@@ -1504,6 +1523,7 @@ function buildPage(t) {
     Boolean(t.hardinessZone || t.precipIn !== null || t.freezeFreeDays !== undefined || soilHtml(t)),
   );
   if (services.labels.length) src.ugrc = SOURCES.ugrc(services.labels);
+  if (services.osm) src.osm = SOURCES.osm(services.osm);
   // Tribal police come from Census reservation boundaries; no source line for
   // them, since readers wouldn't know what it referred to
 
@@ -1581,6 +1601,7 @@ function buildPage(t) {
     src.freeze,
     src.soil,
     src.ugrc,
+    src.osm,
     src.reservations,
   ].filter(Boolean);
 

@@ -60,7 +60,7 @@ const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
     const address = (p.osm_addr || p.ugrc_addr || "").trim();
     output[id] = output[id] || {};
     (output[id].churches = output[id].churches || []).push(
-      { name: p.name.trim(), note: address || "coords.", noteUrl: mapUrl, url: "" });
+      { name: p.name.trim(), note: address || "coords.", noteUrl: mapUrl, url: "", faith: p.category.split("_")[0] });
   }
   counts.churches = { matched, total };
 }

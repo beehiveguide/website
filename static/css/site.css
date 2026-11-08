@@ -1252,9 +1252,13 @@ a.marker-link:focus {
     background: none;
     border-color: transparent;
     text-decoration: none;
-    font-size: 0.95rem; /* btn-sm is 0.875rem */
+    font-family: inherit; /* the page's serif font, not font-sans */
+    font-size: 0.9rem; /* btn-sm is 0.875rem */
     font-weight: 700;
     font-style: italic;
+  }
+  .home-blog-more-light.font-sans {
+    font-family: inherit;
   }
   .home-blog-more-light:hover,
   .home-blog-more-light:focus {

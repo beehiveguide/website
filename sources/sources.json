@@ -34,6 +34,13 @@
       "url": "https://creativecommons.org/licenses/by/4.0/"
     }
   },
+  "osm": {
+    "name": "OpenStreetMap contributors",
+    "url": "https://www.openstreetmap.org/copyright",
+    "folder": "ugrc",
+    "downloaded": "",
+    "publicUrl": "https://www.openstreetmap.org/"
+  },
   "history": {
     "name": "Origins of Utah Place Names",
     "url": "https://www.familysearch.org/library/books/records/item/528621-origins-of-utah-place-names",
