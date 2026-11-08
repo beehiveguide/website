@@ -33,7 +33,47 @@ const count = (key, matched) => {
   if (matched) stats[key].matched++;
 };
 
-// --- City halls: left blank until a better source is added.
+// --- City halls: town halls in UGRC's OpenSourcePlaces (OpenStreetMap). Matched
+// to a community by name ("Alpine City Hall" -> Alpine), or, for generic names
+// like "City Office", to the nearest community within HALL_MAX_KM. Only whether a
+// town has one is used; the address is never shown.
+{
+  const HALL_MAX_KM = 2;
+  // Not a city or town hall: county buildings, community centers, and so on
+  const NOT_HALL = /county|courthouse|community center|administration|senior|library|fire|police|justice|school|church|museum/i;
+  const HALL_WORDS = /\b(city hall|town hall|city building|town building|city offices?|town offices?|city center|civic center|city council|municipal corporation|municipal building)\b/i;
+  const byKey = {};
+  for (const c of communities) (byKey[nameKey(c.name)] = byKey[nameKey(c.name)] || []).push(c);
+  const km = (a, b) => Math.hypot((a.lat - b.lat) * 111, (a.lng - b.lng) * 111 * Math.cos((a.lat * Math.PI) / 180));
+  for (const f of readGeoJson("OpenSourcePlaces")) {
+    const p = f.properties;
+    if (p.amenity !== "townhall" && p.category !== "town_hall") continue;
+    const name = (p.name || "").trim();
+    if (NOT_HALL.test(name)) continue;
+    const point = { lat: Number(p.lat), lng: Number(p.lon) };
+    if (!isFinite(point.lat) || !isFinite(point.lng)) continue;
+    // "City of South Salt Lake City Hall" / "Park City City Hall" -> "South Salt Lake" / "Park City"
+    const base = name.replace(/^(city|town) of /i, "").replace(HALL_WORDS, "").trim();
+    const keys = [base, base.replace(/ (city|town)$/i, ""), `${base} city`];
+    let match = null;
+    for (const k of keys) {
+      const list = k && byKey[nameKey(k.toUpperCase())];
+      if (list) { match = list.reduce((a, b) => (km(a, point) <= km(b, point) ? a : b)); break; }
+    }
+    // Nameless ("City Office"): the nearest community, if it's close
+    if (!match && !base) {
+      const near = communities.map((c) => [km(c, point), c]).sort((a, b) => a[0] - b[0])[0];
+      if (near && near[0] <= HALL_MAX_KM) match = near[1];
+    }
+    count("cityHall", !!match);
+    if (!match) continue;
+    const e = entry(match.id);
+    e.cityHall = e.cityHall || [];
+    // Prefer one that is named a hall over other offices
+    if (!e.cityHall.length || /hall/i.test(name))
+      e.cityHall = [{ name, note: "", url: "" }];
+  }
+}
 
 // --- Boundary lookups by the community's point
 function addAreas(key, features, toItem) {

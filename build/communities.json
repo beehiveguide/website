@@ -411,6 +411,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Alpine City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Alpine",
@@ -666,6 +673,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Town of Altamont",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Duchesne County Upper Country WID",
@@ -812,6 +826,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Alton Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Alton Town Water System",
@@ -994,6 +1015,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Amalga Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Amalga Town Water System",
@@ -1723,6 +1751,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "American Fork City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "American Fork City",
@@ -2007,6 +2042,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Annabella Town Office",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Annabella Town Water System",
@@ -3218,6 +3260,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Beaver City Center",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Beaver City Water System",
@@ -3897,6 +3946,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Bicknell Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Bicknell Town Water System",
@@ -4039,6 +4095,13 @@
     },
     "places": null,
     "services": {
+      "cityHall": [
+        {
+          "name": "Big Water Municipal Corporation",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Glen Canyon SSD Of Big Water",
@@ -5027,6 +5090,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Bluffdale City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Bluffdale Water System",
@@ -6090,6 +6160,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Bountiful City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Bountiful City Water System",
@@ -6211,6 +6288,13 @@
     "schools": null,
     "places": null,
     "services": {
+      "cityHall": [
+        {
+          "name": "Brian Head Town Office",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Brian Head Town Water System",
@@ -6854,6 +6938,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Brigham City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Brigham City Corp.",
@@ -7922,6 +8013,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Castle Dale City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Castledale",
@@ -9423,6 +9521,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Centerfield City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Centerfield Town Water System",
@@ -9749,6 +9854,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Centerville City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Centerville City Water System",
@@ -11147,6 +11259,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Clearfield City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Clearfield City Water System",
@@ -11607,6 +11726,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Clinton City",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Clinton City Water System",
@@ -11819,6 +11945,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Coalville City Office",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Coalville City Water System",
@@ -12168,6 +12301,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Corinne City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Corinne City Corp.",
@@ -12640,6 +12780,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Cottonwood Heights City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Salt Lake City Water System",
@@ -13565,6 +13712,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Deweyville Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Deweyville Town",
@@ -14356,6 +14510,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Draper City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "WaterPro Inc.",
@@ -15755,6 +15916,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Eagle Mountain City Office",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Eagle Mountain City",
@@ -16560,6 +16728,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Elk Ridge Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Elk Ridge Town",
@@ -16826,6 +17001,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Elsinore Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Elsinore Town Water System",
@@ -17425,6 +17607,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Enoch City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Enoch City Water System",
@@ -17983,6 +18172,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Ephraim City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Ephraim City",
@@ -18280,6 +18476,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Escalante City Office",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Escalante Town Water System",
@@ -18543,6 +18746,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Eureka City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Eureka Town",
@@ -18735,6 +18945,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Fairfield Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Fairfield Culinary Water System",
@@ -18907,6 +19124,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Fairview City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Fairview City Water System",
@@ -19405,6 +19629,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Farmington City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Farmington City Water System",
@@ -19627,6 +19858,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Farr West Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Bona Vista Water District",
@@ -19934,6 +20172,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Ferron City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Ferron - Castle Valley SSD",
@@ -20734,6 +20979,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Fountain Green City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Fountain Green",
@@ -21175,6 +21427,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Fruit Heights City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Fruit Heights City Water System",
@@ -21628,6 +21887,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "City Office",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Garden City",
@@ -23019,6 +23285,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Grantsville City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Grantsville City",
@@ -23236,6 +23509,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Green River City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Green River City",
@@ -23565,6 +23845,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Gunlock Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Gunlock Special Service District",
@@ -23774,6 +24061,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Gunnison City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Gunnision City",
@@ -24540,6 +24834,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Harrisville City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Bona Vista Water District",
@@ -24666,6 +24967,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Hatch Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Hatch Town Water System",
@@ -25255,6 +25563,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Heber City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Heber City Water System",
@@ -26396,6 +26711,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Herriman City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Herriman City Municipal Water Department",
@@ -27133,6 +27455,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Highland City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Alpine",
@@ -27273,6 +27602,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Hildale City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Hildale - Colorado City",
@@ -27936,6 +28272,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Holladay City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Holliday Water Company",
@@ -28290,6 +28633,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Hooper Civic Center",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Hooper Water Improvement District",
@@ -28871,6 +29221,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Huntsville Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Huntsville Town Water System",
@@ -29235,6 +29592,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Hurricane City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Hurricane City",
@@ -29436,6 +29800,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Hyde Park City Office",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Hyde Park City Water System",
@@ -30399,6 +30770,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Ivins City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Ivins",
@@ -31082,6 +31460,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Kamas City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Kamas City Water System",
@@ -32237,6 +32622,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Kaysville City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Kaysville City Water System",
@@ -34790,6 +35182,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Layton City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Layton City Water System",
@@ -35069,6 +35468,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Leeds Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Leeds Domestic Water Users Association",
@@ -38148,6 +38554,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Logan City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Logan City Water System",
@@ -39553,6 +39966,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Manti City Building",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Manti City",
@@ -40002,6 +40422,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Mapleton City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Mapleton City",
@@ -40290,6 +40717,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Marriott-Slaterville City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Bona Vista Water District",
@@ -40523,6 +40957,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Marysvale City Building",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Marysvale Town Water System",
@@ -41467,6 +41908,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Midvale City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Midvale City Water System",
@@ -41686,6 +42134,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Midway Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Midway City Water System",
@@ -42287,6 +42742,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Millcreek City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Salt Lake City Water System",
@@ -43055,6 +43517,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Moab City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Moab City",
@@ -44478,6 +44947,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Morgan",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Morgan City Water System",
@@ -44662,6 +45138,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Moroni City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Moroni City",
@@ -45897,6 +46380,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Murray City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Murray City Water System",
@@ -46748,6 +47238,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Nephi City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Nephi City",
@@ -47414,6 +47911,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Nibley City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Nibley City Water",
@@ -47968,6 +48472,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "North Ogden Municipal Building",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "North Ogden City",
@@ -48255,6 +48766,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "City of North Salt Lake",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "North Salt Lake",
@@ -52267,6 +52785,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Orem City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Orem City Water System",
@@ -53470,6 +53995,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Park City City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Park City Water System",
@@ -53642,7 +54174,7 @@
       "source": "census"
     },
     "founded": "Settled 1851",
-    "origin": "Takes its name from a Native word meaning \"evil water.\" First named Louisa for Louisa Beeman, one of the first Latter-day Saint women to consent to plural marriage. A band of Latter-day Saint explorers called the valley Little Salt Lake, but this name was seldom used.",
+    "origin": "Said to take its name from a word in a Native American language meaning \"evil water.\" First named Louisa for Louisa Beeman, one of the first Latter-day Saint women to consent to plural marriage. A band of Latter-day Saint explorers called the valley Little Salt Lake, but this name was seldom used.",
     "originSources": [],
     "phone": {
       "areaCodes": "435",
@@ -54169,6 +54701,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Payson City Center",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Payson City Water System",
@@ -54528,6 +55067,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Perry City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Perry City",
@@ -55225,6 +55771,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Plain City City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Bona Vista Water District",
@@ -55742,6 +56295,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Pleasant Grove City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Pleasant Grove City",
@@ -55934,6 +56494,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Pleasant View City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Pleasant View Culinary Water",
@@ -56660,6 +57227,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Price City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Price Municipal Corporation",
@@ -59598,6 +60172,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "River Heights City Building",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "River Heights City",
@@ -59844,6 +60425,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Riverdale City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Riverdale City Water System",
@@ -60666,6 +61254,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Riverton City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Riverton City Water Sys",
@@ -61851,6 +62446,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Roy City",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Roy City Water System",
@@ -62330,6 +62932,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Salem City Offices",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Salem City",
@@ -67604,6 +68213,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Sandy City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Sandy City Water System",
@@ -67824,6 +68440,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Santa Clara City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Santa Clara City",
@@ -68094,6 +68717,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Santaquin City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Santaquin City",
@@ -69202,6 +69832,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Scipio Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Scipio Town",
@@ -70062,6 +70699,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Snowville Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Snowville Town",
@@ -71254,6 +71898,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "South Jordan City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "South Jordan City",
@@ -71564,6 +72215,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "South Ogden City",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "South Ogden City Water System",
@@ -71815,6 +72473,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "City of South Salt Lake City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "South Salt Lake City Water System",
@@ -72832,6 +73497,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Spanish Fork City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Spanish Fork City",
@@ -73088,6 +73760,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Spring City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Spring City",
@@ -74129,6 +74808,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Springville Civic Center",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Springville City",
@@ -75102,6 +75788,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "St. George City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "St George City Water System",
@@ -76274,6 +76967,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Sunset City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Sunset City Water System",
@@ -76853,6 +77553,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Syracuse City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Syracuse City Water System",
@@ -77795,6 +78502,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Taylorsville City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Taylorsville-Bennion ID",
@@ -79096,6 +79810,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Tooele City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Tooele City Water System",
@@ -79606,6 +80327,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Tremonton City Building",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Tremonton City Corp.",
@@ -81582,6 +82310,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Vineyard Town Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Vineyard City",
@@ -81617,7 +82352,7 @@
       "source": "census"
     },
     "founded": "Settled 1857",
-    "origin": "Takes its name from the Virgin River, which early Spaniards called the \"Rio Virgen.\" Jedediah Smith, who visited this region in 1826, tried to rename the stream in honor of John Quincy Adams, sixth president of the United States, but the older name prevailed. The settlement was first known as Pocketville because Indigenous people called the valley by a name meaning \"hole\" or \"pocket.\"",
+    "origin": "Takes its name from the Virgin River, which early Spaniards called the \"Rio Virgen.\" Jedediah Smith, who visited this region in 1826, tried to rename the stream in honor of John Quincy Adams, sixth president of the United States, but the older name prevailed. The settlement was first known as Pocketville, after a Native name for the valley said to mean \"hole\" or \"pocket.\"",
     "originSources": [],
     "phone": null,
     "zip": "84779",
@@ -82565,6 +83300,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Washington City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Washington City",
@@ -82769,6 +83511,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Washington Terrace City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Washington Terrace City Water System",
@@ -83126,6 +83875,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Wellsville City Office",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Wellsville City Corp.",
@@ -83487,6 +84243,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "West Bountiful City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "West Bountiful City Water System",
@@ -83779,6 +84542,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "West Haven City",
+          "note": "",
+          "url": ""
+        }
+      ],
       "law": [
         {
           "name": "Weber County Sheriffs Office",
@@ -85141,6 +85911,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "West Jordan City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "West Jordan City Water System",
@@ -85521,6 +86298,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "West Point City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "West Point City Water System",
@@ -86873,6 +87657,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "West Valley City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Granger-Hunter Improvement District",
@@ -88698,6 +89489,13 @@
       ]
     },
     "services": {
+      "cityHall": [
+        {
+          "name": "Woods Cross City Hall",
+          "note": "",
+          "url": ""
+        }
+      ],
       "water": [
         {
           "name": "Woods Cross Water System",

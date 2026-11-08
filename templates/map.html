@@ -83,10 +83,10 @@
     L.control.zoom({ position: "topright" }).addTo(map);
 
     const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
-    const directions = (lat, lng) => [
-      ["Google Maps", `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`],
-      ["Apple Maps", `https://maps.apple.com/?daddr=${lat},${lng}`],
-      ["OpenStreetMap", `https://www.openstreetmap.org/directions?to=${lat}%2C${lng}`],
+    const openIn = (name, lat, lng) => [
+      ["Google Maps", `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`],
+      ["Apple Maps", `https://maps.apple.com/?ll=${lat},${lng}&q=${encodeURIComponent(name + ", Utah")}`],
+      ["OpenStreetMap", `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=14/${lat}/${lng}`],
     ].map(([n, u]) => `<a href="${u}" class="link-dark">${n}</a>`).join(" &middot; ");
 
     // Dots are small hexagons with rounded corners, point up like the
@@ -144,7 +144,7 @@
           "{Popup Town}": `<a href="${page}" class="marker-link link-icon font-zilla me-2">${esc(name)}, Utah</a>`,
           "{Popup County}": `<a href="?county=${countySlug(county)}" class="link-secondary county-link" data-county="${esc(county)}">${esc(county)} County</a>`,
           "{Popup Seat}": seat ? SEAT_ICON : "",
-          "{Popup Directions}": directions(lat, lng),
+          "{Popup Open In}": openIn(name, lat, lng),
         }), { minWidth: 300, maxWidth: 380, className: "town-popup" })
         .openPopup();
       history.replaceState(null, "", `?town=${encodeURIComponent(slug(page))}`);

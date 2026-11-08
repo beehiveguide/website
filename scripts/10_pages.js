@@ -749,17 +749,20 @@ const COUNTY_SEAT = `<span class="county-seat" title="County seat">${SEAT_ICON}<
 // One full-screen map page for all communities: map.html?town=<name>
 const mapUrl = (t, root) =>
   link(`${root}map.html`) + `?town=${fileName(t).replace(/\.html$/, "")}`;
-// Directions links that open each service with the community as the destination
-const directionsLinks = (t) =>
+// "Open In" links that show the community in each map service
+const openInLinks = (t) =>
   [
     [
       "Google Maps",
-      `https://www.google.com/maps/dir/?api=1&amp;destination=${t.lat},${t.lng}`,
+      `https://www.google.com/maps/search/?api=1&amp;query=${t.lat},${t.lng}`,
     ],
-    ["Apple Maps", `https://maps.apple.com/?daddr=${t.lat},${t.lng}`],
+    [
+      "Apple Maps",
+      `https://maps.apple.com/?ll=${t.lat},${t.lng}&amp;q=${encodeURIComponent(t.name + ", Utah")}`,
+    ],
     [
       "OpenStreetMap",
-      `https://www.openstreetmap.org/directions?to=${t.lat}%2C${t.lng}`,
+      `https://www.openstreetmap.org/?mlat=${t.lat}&amp;mlon=${t.lng}#map=14/${t.lat}/${t.lng}`,
     ],
   ]
     .map(([name, url]) => `<a href="${url}" class="link-dark">${name}</a>`)
@@ -1307,6 +1310,37 @@ function parksCemeteriesLabels(t) {
   return [parkParts(t) && "park", cems.length && "cemetery"].filter(Boolean);
 }
 
+// Government and services: for cities and towns (places with a government)
+// and for places with a culinary water system, or both. "Alta has a town government. Culinary water
+// comes from the Alta Town Water System."
+// Official city and town websites, by name (config/government_urls.json); empty until filled
+const governmentUrls = paths.readJson(paths.config("government_urls.json"));
+function hasGovernment(t) {
+  return t.placeType === "city" || t.placeType === "town";
+}
+function governmentHtml(t) {
+  const gov = hasGovernment(t);
+  const water = (t.services && t.services.water) || [];
+  if (!gov && !water.length) return "";
+  const named = (w) => (/(system|district|company|works|service|water|\bw?id\b|ssd|wcd)/i.test(w.name) ? withThe(w.name).replace(/^(?!the )/i, "the ") : w.name);
+  // "the" stays outside the link: the <a>Alta Town Water System</a>
+  const waterNames = water.map((w) => {
+    const full = named(w).replace(/^The /, "the ");
+    const the = /^the /i.test(full) ? "the " : "";
+    const label = esc(full.slice(the.length));
+    return the + (w.url ? `<a href="${esc(w.url)}">${label}</a>` : label);
+  });
+  // "Alpine has a city government." The words "city government" link to the
+  // official website when config/government_urls.json has one.
+  const url = governmentUrls[t.name];
+  const phrase = url ? `<a href="${esc(url)}">${t.placeType} government</a>` : `${t.placeType} government`;
+  const sentences = [
+    gov ? `${esc(t.name)} has a ${phrase}.` : "",
+    water.length ? `Culinary water comes from ${listText(waterNames)}.` : "",
+  ];
+  return `<p>${sentences.filter(Boolean).join(" ")}</p>`;
+}
+
 // Returns { html, shown, labels }: shown names the sections (for ads); labels
 // are the words for the source line ("law enforcement", "fire", "park" ...).
 function servicesHtml(t) {
@@ -1314,6 +1348,7 @@ function servicesHtml(t) {
   const schools = schoolsHtml(t);
   const safety = safetyText(t);
   const sections = [
+    [hasGovernment(t) ? `${capFirst(t.placeType)} Government and Services` : "Water Service", "government", governmentHtml(t), ["culinary water"]],
     // Police and fire share a paragraph
     ["Public Safety", "police, fire", safety, ["law enforcement", "fire"]],
     // "Library" or "Libraries", "School" or "Schools", by how many there are
@@ -1565,7 +1600,7 @@ function buildPage(t) {
       "{Popup Town}": `<span class="marker-link text-body font-zilla me-2">${esc(t.name)}, Utah</span>`,
       "{Popup County}": `<a href="${link("../map.html")}?county=${slug(t.county)}" class="link-secondary">${esc(t.county)} County</a>`,
       "{Popup Seat}": t.countySeat ? COUNTY_SEAT : "",
-      "{Popup Directions}": directionsLinks(t),
+      "{Popup Open In}": openInLinks(t),
     }),
   });
 
@@ -2220,7 +2255,7 @@ function stateOutlineJson() {
       false, // the search bar gets the shadow
       {
         description:
-          "Search a map of towns and cities across Utah, with county lines and directions.",
+          "Search a map of towns and cities across Utah, with county lines.",
         path: "map.html",
         crumb: "Map",
       },
