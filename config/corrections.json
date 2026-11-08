@@ -15,5 +15,15 @@
       "set": { "county": "Davis County" },
       "note": "County changed from \"Salt Lake County\" to \"Davis County\" to match the 1941 file and its actual location."
     }
+  ],
+  "church_names": [
+    { "find": "Rescurrection", "replace": "Resurrection" },
+    { "find": "Presyterian", "replace": "Presbyterian" },
+    { "find": "Apolistic", "replace": "Apostolic" },
+    { "find": "Nazerene", "replace": "Nazarene" },
+    { "find": "Inglesia", "replace": "Iglesia" },
+    { "find": "Christiana", "replace": "Cristiana" },
+    { "find": "Later-Day", "replace": "Latter-Day" },
+    { "find": "Stake Centre", "replace": "Stake Center" }
   ]
 }

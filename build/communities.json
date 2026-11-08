@@ -9892,7 +9892,7 @@
     "places": {
       "churches": [
         {
-          "name": "Episcopal Church of the Rescurrection",
+          "name": "Episcopal Church of the Resurrection",
           "note": "1131 North Main Street Centerville 84014",
           "noteUrl": "https://www.google.com/maps?q=40.904942,-111.878441",
           "url": "",
@@ -21779,7 +21779,7 @@
           "faith": "christian"
         },
         {
-          "name": "Westminster Presyterian Church",
+          "name": "Westminster Presbyterian Church",
           "note": "coords.",
           "noteUrl": "https://www.google.com/maps?q=41.022305,-111.906128",
           "url": "",
@@ -51184,7 +51184,7 @@
           "faith": "christian"
         },
         {
-          "name": "First Church of the Nazerene",
+          "name": "First Church of the Nazarene",
           "note": "2804 Quincy Avenue Ogden City 84403",
           "noteUrl": "https://www.google.com/maps?q=41.213913,-111.956291",
           "url": "",
@@ -58170,13 +58170,6 @@
           "faith": "christian"
         },
         {
-          "name": "The Church of Jesus Christ of Later-Day Saints Price Institute",
-          "note": "410 E 400 N",
-          "noteUrl": "https://www.google.com/maps?q=39.606377,-110.803162",
-          "url": "",
-          "faith": "christian"
-        },
-        {
           "name": "The Church of Jesus Christ of Latter-day Saints",
           "note": "150 S 500 E",
           "noteUrl": "https://www.google.com/maps?q=39.597466,-110.802383",
@@ -58215,6 +58208,13 @@
           "name": "The Church of Jesus Christ of Latter-day Saints",
           "note": "995 E 700 N",
           "noteUrl": "https://www.google.com/maps?q=39.612160,-110.796211",
+          "url": "",
+          "faith": "christian"
+        },
+        {
+          "name": "The Church of Jesus Christ of Latter-Day Saints Price Institute",
+          "note": "410 E 400 N",
+          "noteUrl": "https://www.google.com/maps?q=39.606377,-110.803162",
           "url": "",
           "faith": "christian"
         }
@@ -66274,7 +66274,7 @@
           "faith": "christian"
         },
         {
-          "name": "First Church of the Nazerene",
+          "name": "First Church of the Nazarene",
           "note": "2002 E 2100 S",
           "noteUrl": "https://www.google.com/maps?q=40.725224,-111.833542",
           "url": "",
@@ -79980,7 +79980,7 @@
           "faith": "christian"
         },
         {
-          "name": "Rey De Reyes - Iglesia Christiana Pentecostes",
+          "name": "Rey De Reyes - Iglesia Cristiana Pentecostes",
           "note": "4136 South Carriage Square Taylorsville 84129",
           "noteUrl": "https://www.google.com/maps?q=40.681168,-111.940948",
           "url": "",
@@ -81528,7 +81528,7 @@
           "faith": "christian"
         },
         {
-          "name": "The Church of Jesus Christ of Latter-day Saints Tooele North Stake Centre",
+          "name": "The Church of Jesus Christ of Latter-day Saints Tooele North Stake Center",
           "note": "310 East 1000 North Tooele 84074",
           "noteUrl": "https://www.google.com/maps?q=40.550617,-112.288933",
           "url": "",
@@ -85748,7 +85748,7 @@
     "places": {
       "churches": [
         {
-          "name": "Inglesia Principe de Paz",
+          "name": "Iglesia Principe de Paz",
           "note": "93 East Main Street Wellsville 84339",
           "noteUrl": "https://www.google.com/maps?q=41.638870,-111.931862",
           "url": "",
@@ -88971,7 +88971,7 @@
           "faith": "christian"
         },
         {
-          "name": "New Apolistic Church",
+          "name": "New Apostolic Church",
           "note": "4586 West Woodbury Circle West Valley City 84120",
           "noteUrl": "https://www.google.com/maps?q=40.685562,-112.000633",
           "url": "",

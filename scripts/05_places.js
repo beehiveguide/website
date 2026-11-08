@@ -47,6 +47,7 @@ const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
   const byCensusCode = {};
   for (const c of listCommunities()) if (c.censusCode) byCensusCode[c.censusCode] = c.id;
   const WORSHIP = /^(christian|buddhist|muslim|jewish|hindu)/;
+  const churchFixes = require("./lib/paths").readJson(require("./lib/paths").config("corrections.json")).church_names || [];
   let total = 0, matched = 0;
   for (const f of readGeoJson("OpenSourcePlaces")) {
     const p = f.properties;
@@ -55,6 +56,8 @@ const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
     const id = byCensusCode[blockPlaces[p.block_id]] || findCommunity(p.city, f.geometry);
     if (!id) continue;
     matched++;
+    // Spelling fixes to OpenStreetMap names (config/corrections.json "church_names")
+    for (const fix of churchFixes) p.name = p.name.split(fix.find).join(fix.replace);
     const lat = Number(p.lat), lng = Number(p.lon);
     const mapUrl = `https://www.google.com/maps?q=${lat.toFixed(6)},${lng.toFixed(6)}`;
     const address = (p.osm_addr || p.ugrc_addr || "").trim();

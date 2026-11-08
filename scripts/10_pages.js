@@ -1313,10 +1313,13 @@ function churchItems(t) {
   // Churches only if every place is Christian; otherwise "places of worship"
   let allChristian = true;
   for (const c of (t.places && t.places.churches) || []) {
-    if (c.faith && c.faith !== "christian") allChristian = false;
-    // Spelling variants of the LDS Church's name ("The ...", "Latter-Day",
-    // "Latter Day") count as one
-    const lds = /^(the )?church of jesus christ of latter[ -]day saints$/i.test(c.name.trim());
+    // Seminary buildings are classrooms, not churches
+    if (/seminary/i.test(c.name)) continue;
+    // A temple isn't a church, so a town with one says "places of worship"
+    if ((c.faith && c.faith !== "christian") || /\btemple\b/i.test(c.name)) allChristian = false;
+    // Variants of the LDS Church's name ("The ...", "Latter-Day", "Latter Day",
+    // "(Lund Lane Chapel)") count as one
+    const lds = /^(the )?church of jesus christ of latter[ -]day saints(\s*\([^)]*\))?$/i.test(c.name.trim());
     const name = lds ? "The Church of Jesus Christ of Latter-day Saints" : c.name;
     const key = name.toLowerCase();
     const g = groups.get(key) || { name, url: c.noteUrl, n: 0 };
@@ -1336,7 +1339,7 @@ function churchItems(t) {
     .sort((x, y) => x.name.localeCompare(y.name))
     .map((g) => {
       const url = LDS.test(g.name) ? LDS_URL : g.n > 1 ? "" : g.url;
-      return `${link(url, g.name)}${g.n > 1 ? ` (${countWord(g.n)} locations)` : ""}`;
+      return `${link(url, g.name)}${g.n > 1 ? ` (${countWord(g.n)} ${LDS.test(g.name) ? "meetinghouses" : "locations"})` : ""}`;
     });
   items.allChristian = allChristian;
   items.total = [...groups.values()].reduce((sum, g) => sum + g.n, 0);
@@ -1350,9 +1353,14 @@ function churchHtml(t) {
     return `<ul class="col-list">\n      ${items.map((i) => `<li>${i.replace(/^The (<a [^>]*>)/, "$1The ")}</li>`).join("\n      ")}\n    </ul>`;
   // "Churches include the Cleveland Ward and Hope Baptist Church." or "Alta has a church, Our Lady of the Snows Center Station Church."
   const lower = churchItems(t).map((i) => i.replace(/^The /, "the "));
-  return items.total > 1
-    ? `<p>${items.allChristian ? "Churches" : "Places of worship"} include ${listText(lower)}.</p>`
-    : `<p>${esc(t.name)} has a ${items.allChristian ? "church" : "place of worship"}, ${lower[0]}.</p>`;
+  // No count in the wording. One: "St. Christopher's Episcopal Church is
+  // located in Bluff." Several: "Churches include the Cleveland Ward and ..."
+  return items.total > 1 || items.length > 1
+    ? `<p>${items.allChristian ? "Churches" : "Places of worship"} include ${endSentence(listText(lower))}</p>`
+    : items[0].includes("maps.churchofjesuschrist.org")
+      // The LDS Church's entries are its meetinghouses: "A Church of Jesus Christ of Latter-day Saints meetinghouse is located in Levan."
+      ? `<p>A ${items[0].replace(/^The /, "")} meetinghouse is located in ${esc(t.name)}.</p>`
+      : `<p>${items[0]} is located in ${esc(t.name)}.</p>`;
 }
 
 function hospitalText(t) {
@@ -1372,6 +1380,9 @@ function parksCemeteriesLabels(t) {
 // comes from the Alta Town Water System."
 // Official city and town websites, by name (config/government_urls.json); empty until filled
 const governmentUrls = paths.readJson(paths.config("government_urls.json"));
+// Ends a sentence with a period, unless the text already ends with one
+// ("Wellsville City Corp." gets no second period)
+const endSentence = (html) => (/\.(<\/a>)?$/.test(html) ? html : `${html}.`);
 function hasGovernment(t) {
   return t.placeType === "city" || t.placeType === "town";
 }
@@ -1393,7 +1404,7 @@ function governmentHtml(t) {
   const phrase = url ? `<a href="${esc(url)}">${t.placeType} government</a>` : `${t.placeType} government`;
   const sentences = [
     gov ? `${esc(t.name)} has a ${phrase}.` : "",
-    water.length ? `Culinary water comes from ${listText(waterNames)}.` : "",
+    water.length ? `Culinary water comes from ${endSentence(listText(waterNames))}` : "",
   ];
   return `<p>${sentences.filter(Boolean).join(" ")}</p>`;
 }
@@ -1413,7 +1424,7 @@ function servicesHtml(t) {
     [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t), parksCemeteriesLabels(t)],
     [`School${schools.count === 1 ? "" : "s"}${schools.range ? ` (${schools.range})` : ""}`, "schools", schools.k12, ["school"]],
     ["Higher Education", "colleges", schools.higher, ["college"]],
-    [(() => { const ci = churchItems(t); return ci.allChristian ? (ci.total > 1 ? "Churches" : "Church") : ci.total > 1 ? "Places of Worship" : "Place of Worship"; })(), "churches", churchHtml(t), []],
+    [(() => { const ci = churchItems(t); return ci.allChristian ? "Churches" : "Places of Worship"; })(), "churches", churchHtml(t), []],
     ["Health Care", "hospitals", p(hospitalText(t)), ["hospital"]],
   ].filter(([, , body]) => body);
   if (!sections.length) return { html: "", parts: [], shown: [], labels: [], osm: "" };
@@ -1429,12 +1440,11 @@ function servicesHtml(t) {
     parts,
     shown: sections.map(([, word]) => word),
     labels: sections.flatMap(([, , , labels]) => labels),
-    // "Church", "Churches", "Place of worship" or "Places of worship", credited to OpenStreetMap
+    // "Churches" or "Places of worship", credited to OpenStreetMap
     osm: sections.some(([, word]) => word === "churches")
       ? (() => {
           const ci = churchItems(t);
-          const many = ci.total > 1;
-          return ci.allChristian ? (many ? "churches" : "church") : many ? "places of worship" : "place of worship";
+          return ci.allChristian ? "churches" : "places of worship";
         })()
       : "",
   };
