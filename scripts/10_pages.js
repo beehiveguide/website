@@ -2126,19 +2126,27 @@ function videoFigure(spec) {
 //   "light": light gradient card (bg-light-gradient)
 //   "dark":  dark gradient card
 // Either way, the Community Profiles card is bg-light-gradient.
-const HOME_POSTS = 4;
+// The previews sit in a slider: 1 story wide on phones, 2 on tablets, 4 on
+// wide screens. It only slides when there are more stories than fit, one
+// story per click, so up to HOME_POSTS stories show.
+const HOME_POSTS = 12;
 const darkBlog = site.homeBlogStyle === "dark";
 const homeBlog = posts.length
   ? `<section style="margin-bottom: 2.25rem" aria-labelledby="home-blog-title">
     <div class="home-blog card ${darkBlog ? "home-blog-dark" : "bg-light-gradient"} shadow-sm rounded-1"${darkBlog ? ' data-bs-theme="dark"' : ""}>
     <div class="card-header bg-transparent rule-fade-end d-flex justify-content-between align-items-baseline">
       <h2 id="home-blog-title" class="h6 fs-md mb-0${darkBlog ? " text-white" : ""}">${esc(site.name)} Blog</h2>
+      <div class="d-flex align-items-center gap-2">
+      <button type="button" class="home-blog-arrow home-blog-prev" aria-label="Previous stories" hidden><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M10.5 2.5 5 8l5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="home-blog-arrow home-blog-next" aria-label="Next stories" hidden><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 2.5 11 8l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       ${darkBlog
-        ? `<a href="${link("blog.html")}" class="home-blog-more btn btn-primary btn-sm border border-1 border-white font-sans">View the Blog &raquo;</a>`
-        : `<a href="${link("blog.html")}" class="home-blog-more home-blog-more-light btn btn-secondary btn-sm font-sans">View the Blog &raquo;</a>`}
+        ? `<a href="${link("blog.html")}" class="home-blog-more btn btn-primary btn-sm border border-1 border-white font-sans"><span class="d-none d-sm-inline">View the </span>Blog &raquo;</a>`
+        : `<a href="${link("blog.html")}" class="home-blog-more home-blog-more-light btn btn-secondary btn-sm font-sans"><span class="d-none d-sm-inline">View the </span>Blog &raquo;</a>`}
+      </div>
     </div>
     <div class="card-body py-3">
-    <div class="row gx-0 gx-lg-5 gy-2">
+    <div class="home-blog-slider position-relative">
+    <div class="home-blog-track" role="region" aria-label="Recent blog posts" tabindex="0">
 ${posts
   .filter((p) => !p.hideOnHome)
   .slice(0, HOME_POSTS)
@@ -2148,7 +2156,7 @@ ${posts
     const img = ph
       ? `<img src="${photoPath(ph.web.mobile.file)}" width="96" height="54" alt="" loading="lazy" decoding="async" class="home-blog-thumb flex-shrink-0 rounded-1 me-2"${ph.thumbPosition ? ` style="object-position: ${esc(ph.thumbPosition)}"` : ""} />`
       : "";
-    return `      <div class="col-lg-3 home-blog-col">
+    return `      <div class="home-blog-col">
         ${darkBlog
           ? `<a href="${link(`blog/${p.slug}.html`)}" class="home-blog-item d-flex align-items-center h-100 link-light">
           ${img}<span>${(p.topics || []).length ? `<span class="d-block d-lg-none home-blog-tags">${p.topics.map((t) => `<span class="badge rounded tag-pill">${esc(t)}</span>`).join(" ")}</span>` : ""}<span class="d-block fw-bold lh-sm">${esc(p.shortTitle || p.title)}</span></span>
@@ -2162,6 +2170,38 @@ ${posts
     </div>
     </div>
     </div>
+    </div>
+    <script>
+    (function () {
+      var s = document.currentScript.parentNode;
+      var t = s.querySelector(".home-blog-track");
+      var p = s.querySelector(".home-blog-prev");
+      var n = s.querySelector(".home-blog-next");
+      if (!t || !p || !n) return;
+      function update() {
+        var max = t.scrollWidth - t.clientWidth;
+        var more = max > 2;
+        p.hidden = !more;
+        n.hidden = !more;
+        p.disabled = t.scrollLeft <= 2;
+        n.disabled = t.scrollLeft >= max - 2;
+        // No dotted rule on the left of the story at the left edge
+        var cols = t.querySelectorAll(".home-blog-col");
+        var w = cols[0].getBoundingClientRect().width;
+        var first = Math.round(t.scrollLeft / w);
+        for (var i = 0; i < cols.length; i++) cols[i].classList.toggle("home-blog-edge", i === first);
+      }
+      function step(dir) {
+        var item = t.querySelector(".home-blog-col");
+        t.scrollBy({ left: dir * item.getBoundingClientRect().width, behavior: "smooth" });
+      }
+      p.addEventListener("click", function () { step(-1); });
+      n.addEventListener("click", function () { step(1); });
+      t.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update);
+      update();
+    })();
+    </script>
   </section>`
   : "";
 const indexHtml = fill(template("index.html"), {

@@ -1206,18 +1206,83 @@ a.marker-link:focus {
   color: var(--bs-primary-hover);
   text-decoration: none;
 }
-/* Dotted lines between the previews, drawn like the county list's rules
-   (round dots 4px apart): across between stacked previews, down between
-   the columns on wide screens */
-.home-blog-col + .home-blog-col {
-  padding-top: 0.75rem;
-  background: radial-gradient(circle at 50% 1px, #a7aeb5 0.6px, transparent 0.9px) 0 0 / 4px 2px repeat-x;
+/* Homepage blog slider: a row that scrolls one story at a time. It shows
+   1 story on phones, 2 on tablets and 4 on wide screens, and only slides
+   when there are more stories than fit. */
+.home-blog-track {
+  /* Pull the row out over the card's side padding so the first and last
+     stories line up with the header's text and the gaps sit between them */
+  --edge: 1rem;
+  margin: 0 calc(-1 * var(--edge));
+  /* ...and clip what slides past the card's content edges */
+  clip-path: inset(0 var(--edge));
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.home-blog-track::-webkit-scrollbar {
+  display: none;
+}
+.home-blog-col {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  padding: 0 1rem;
+}
+@media (min-width: 576px) {
+  .home-blog-track {
+    --edge: 1.5rem;
+  }
+  .home-blog-col {
+    flex-basis: 50%;
+    padding: 0 1.5rem;
+  }
 }
 @media (min-width: 992px) {
-  .home-blog-col + .home-blog-col {
-    padding-top: 0;
-    background: radial-gradient(circle at 1px 50%, #a7aeb5 0.6px, transparent 0.9px) 0 0 / 2px 4px repeat-y;
+  .home-blog-col {
+    flex-basis: 25%;
   }
+}
+/* Dotted lines down between the previews, drawn like the county list's
+   rules (round dots 4px apart) */
+.home-blog-col + .home-blog-col {
+  background: radial-gradient(circle at 1px 50%, #a7aeb5 0.6px, transparent 0.9px) 0 0 / 2px 4px repeat-y;
+}
+.home-blog-col.home-blog-edge {
+  background: none;
+}
+/* Arrows sit in the card header beside "View the Blog" and show only when
+   the row can slide */
+.home-blog-arrow {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #343a40;
+  border: 0;
+  border-radius: 0.25rem;
+}
+.home-blog-arrow[hidden] {
+  display: none;
+}
+.home-blog-arrow svg {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.home-blog-arrow:hover:not(:disabled),
+.home-blog-arrow:focus-visible {
+  background: #212529;
+}
+.home-blog-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.home-blog-dark .home-blog-arrow {
+  color: #343a40;
+  background: #fff;
 }
 /* Dark mode of the homepage blog card ("homeBlogStyle": "dark" in
    config/site.json): the reverse of bg-light-gradient, lighter at the
@@ -1228,6 +1293,9 @@ a.marker-link:focus {
 }
 /* "View the blog" link on the right of the header: the words lose their
    underline on hover */
+.home-blog-more {
+  white-space: nowrap;
+}
 .home-blog-more:hover span,
 .home-blog-more:focus span {
   text-decoration: none !important;
@@ -1238,33 +1306,11 @@ a.marker-link:focus {
   margin-bottom: 0.3rem;
   line-height: 1;
 }
+/* Outlined, so they read as labels and not as buttons beside the nav
+   buttons (#495057 on the light card is about 7:1) */
 .home-blog-tags .tag-pill {
-  color: #fff;
-  background-color: #6f777f; /* lightest cool gray with 4.5:1 for white text */
-}
-/* "View the blog": a gray button on wide screens, a plain primary link
-   when the previews stack */
-@media (max-width: 991.98px) {
-  .home-blog-more-light,
-  .home-blog-more-light:active {
-    padding: 0;
-    color: var(--bs-primary);
-    background: none;
-    border-color: transparent;
-    text-decoration: none;
-    font-family: inherit; /* the page's serif font, not font-sans */
-    font-size: 0.9rem; /* btn-sm is 0.875rem */
-    font-weight: 700;
-    font-style: italic;
-  }
-  .home-blog-more-light.font-sans {
-    font-family: inherit;
-  }
-  .home-blog-more-light:hover,
-  .home-blog-more-light:focus {
-    color: var(--bs-primary-hover);
-    background: none;
-    border-color: transparent;
-    text-decoration: underline;
-  }
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #adb5bd;
+  font-weight: 600;
 }
