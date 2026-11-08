@@ -72,7 +72,8 @@ for (const feature of higherFeatures) {
   if (/corrections|jail/i.test(name)) continue;
   // Closed in 2021
   if (/^Stevens.Henager/i.test(name)) continue;
-  entry.higherEd.push({ name, url: higherUrls[name] || fixUrl(p.Website) });
+  // "Vernal Extension Campus" -> "Vernal Campus"; the website lookup uses the full name
+  entry.higherEd.push({ name: name.replace(/ Extension Campus$/, " Campus"), url: higherUrls[name] || fixUrl(p.Website) });
   higherMatched++;
 }
 

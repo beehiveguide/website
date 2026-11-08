@@ -1338,7 +1338,7 @@ function schoolsHtml(t) {
 // Churches and other places of worship (OpenStreetMap, via UGRC). Same-named
 // ones (the LDS Church's many buildings) are listed once with a count; a
 // single one links to its map location. Past BIG_LIST, a three-column list.
-function churchItems(t) {
+function churchItems(t, numerals = false) {
   const groups = new Map();
   // Churches only if every place is Christian; otherwise "places of worship"
   let allChristian = true;
@@ -1369,7 +1369,7 @@ function churchItems(t) {
     .sort((x, y) => x.name.localeCompare(y.name))
     .map((g) => {
       const url = LDS.test(g.name) ? LDS_URL : g.n > 1 ? "" : g.url;
-      return `${link(url, g.name)}${g.n > 1 ? ` (${countWord(g.n)} ${LDS.test(g.name) ? "meetinghouses" : "locations"})` : ""}`;
+      return `${link(url, g.name)}${g.n > 1 ? ` (${numerals ? g.n : countWord(g.n)} ${LDS.test(g.name) ? "meetinghouses" : "locations"})` : ""}`;
     });
   items.allChristian = allChristian;
   items.total = [...groups.values()].reduce((sum, g) => sum + g.n, 0);
@@ -1379,8 +1379,9 @@ function churchItems(t) {
 function churchHtml(t) {
   const items = churchItems(t);
   if (!items.length) return "";
+  // In a list the counts are numerals: "(8 meetinghouses)"
   if (items.length > BIG_LIST)
-    return `<ul class="col-list">\n      ${items.map((i) => `<li>${i.replace(/^The (<a [^>]*>)/, "$1The ")}</li>`).join("\n      ")}\n    </ul>`;
+    return `<ul class="col-list">\n      ${churchItems(t, true).map((i) => `<li>${i.replace(/^The (<a [^>]*>)/, "$1The ")}</li>`).join("\n      ")}\n    </ul>`;
   // "Churches include the Cleveland Ward and Hope Baptist Church." or "Alta has a church, Our Lady of the Snows Center Station Church."
   const lower = churchItems(t).map((i) => i.replace(/^The /, "the "));
   // No count in the wording. One: "St. Christopher's Episcopal Church is
@@ -1450,15 +1451,32 @@ function trailsHtml(t) {
     if (!withTrails.length) sentences.push(plain.length === 1 ? `${link(plain[0], true)} is in ${town}.` : `Trailheads include ${listText(pl)}.`);
     else sentences.push(plain.length === 1 ? `${link(plain[0], true)} is also in ${town}.` : `Other trailheads include ${listText(pl)}.`);
   }
-  const lead = near.length ? `Other trails in ${town} include` : `Trails in ${town} include`;
-  if (others.length === 1 && !near.length) sentences.push(`${esc(others[0])} is a trail in ${town}.`);
+  // "is a path in Myton": the noun follows the name's last word (path, loop, parkway, walkway)
+  const nounOf = (name) =>
+    /\bpath(way)?$/i.test(name) ? "path" : /\bloop$/i.test(name) ? "loop trail" : /\bparkway$/i.test(name) ? "parkway"
+      : /\bwalkway$/i.test(name) ? "walkway" : "trail";
+  // Loops count as trails; paths, parkways and walkways count as paths
+  const kindOf = (name) => (nounOf(name) === "trail" || nounOf(name) === "loop trail" ? "trail" : "path");
+  const kindWord = (names) => {
+    const kinds = new Set(names.map(kindOf));
+    return kinds.size === 1 ? (kinds.has("path") ? "paths" : "trails") : "trails and paths";
+  };
+  const noun = kindWord(others);
+  const lead = near.length ? `Other ${noun} in ${town} include` : `${capFirst(noun)} in ${town} include`;
+  // A name that already ends in trail, path, loop or the like needs no noun: "Myton Ball Park Path is in Myton."
+  const hasNoun = (name) => /\b(trails?|paths?|pathway|loop|parkway|walkway)$/i.test(name);
+  if (others.length === 1 && !near.length)
+    sentences.push(hasNoun(others[0]) ? `${esc(others[0])} is located in ${town}.` : `${esc(others[0])} is ${/^[aeiou]/.test(nounOf(others[0])) ? "an" : "a"} ${nounOf(others[0])} in ${town}.`);
   else if (others.length && others.length <= BIG_LIST) sentences.push(`${lead} ${listText(others.map(esc))}.`);
   const bigList = others.length > BIG_LIST;
   if (sentences.length) out.push(`<p>${sentences.join(" ")}</p>`);
   if (bigList)
     out.push(`<p>${sentences.length ? `<strong>${lead}:</strong>` : `${lead}:`}</p>\n    <ul class="col-list">\n      ${others.map((n) => `<li>${esc(n)}</li>`).join("\n      ")}\n    </ul>`);
   // A "Trails" h3 under the Outdoor Recreation h2, like Parks under Parks and Cemeteries
-  return `<h3 class="h4 mt-0 mb-2">Trails</h3>\n    ${out.join("\n    ")}`;
+  // "Paths" when every one is a path, "Trails and Paths" when both kinds are listed
+  const all = d.trails.filter((n) => !confirmedPairs.roads.has(trailKey(n)));
+  const h3 = capFirst(kindWord(all)).replace(" and paths", " and Paths");
+  return `<h3 class="h4 mt-0 mb-2">${h3}</h3>\n    ${out.join("\n    ")}`;
 }
 
 // "The" goes before hospital and airport names ("The Logan-Cache Airport"), capital at the start
