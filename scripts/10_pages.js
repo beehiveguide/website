@@ -1298,6 +1298,52 @@ function schoolsHtml(t) {
   return out;
 }
 
+// Churches and other places of worship (OpenStreetMap, via UGRC). Same-named
+// ones (the LDS Church's many buildings) are listed once with a count; a
+// single one links to its map location. Past BIG_LIST, a three-column list.
+function churchItems(t) {
+  const groups = new Map();
+  for (const c of (t.places && t.places.churches) || []) {
+    // Spelling variants of the LDS Church's name ("The ...", "Latter-Day",
+    // "Latter Day") count as one
+    const lds = /^(the )?church of jesus christ of latter[ -]day saints$/i.test(c.name.trim());
+    const name = lds ? "The Church of Jesus Christ of Latter-day Saints" : c.name;
+    const key = name.toLowerCase();
+    const g = groups.get(key) || { name, url: c.noteUrl, n: 0 };
+    g.n++;
+    groups.set(key, g);
+  }
+  // The LDS Church's buildings share one name, so they link to its meetinghouse locator
+  const LDS = /^the church of jesus christ of latter-day saints$/i;
+  const LDS_URL = "https://maps.churchofjesuschrist.org/";
+  // A leading "The" stays outside the link
+  const link = (url, name) => {
+    const the = /^The /.test(name) ? "The " : "";
+    const rest = name.slice(the.length);
+    return the + (url ? `<a href="${esc(url)}">${esc(rest)}</a>` : esc(rest));
+  };
+  const items = [...groups.values()]
+    .sort((x, y) => x.name.localeCompare(y.name))
+    .map((g) => {
+      const url = LDS.test(g.name) ? LDS_URL : g.n > 1 ? "" : g.url;
+      return `${link(url, g.name)}${g.n > 1 ? ` (${countWord(g.n)} locations)` : ""}`;
+    });
+  items.total = [...groups.values()].reduce((sum, g) => sum + g.n, 0);
+  return items;
+}
+
+function churchHtml(t) {
+  const items = churchItems(t);
+  if (!items.length) return "";
+  if (items.length > BIG_LIST)
+    return `<ul class="col-list">\n      ${items.map((i) => `<li>${i}</li>`).join("\n      ")}\n    </ul>`;
+  // "Churches include the Cleveland Ward and Hope Baptist Church." or "Alta has a church, Our Lady of the Snows Center Station Church."
+  const lower = churchItems(t).map((i) => i.replace(/^The /, "the "));
+  return items.total > 1
+    ? `<p>Churches include ${listText(lower)}.</p>`
+    : `<p>${esc(t.name)} has a church, ${lower[0]}.</p>`;
+}
+
 function hospitalText(t) {
   const list = (t.places && t.places.hospitals) || [];
   if (!list.length) return "";
@@ -1356,6 +1402,7 @@ function servicesHtml(t) {
     [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t), parksCemeteriesLabels(t)],
     [`School${schools.count === 1 ? "" : "s"}${schools.range ? ` (${schools.range})` : ""}`, "schools", schools.k12, ["school"]],
     ["Higher Education", "colleges", schools.higher, ["college"]],
+    [churchItems(t).total > 1 ? "Churches" : "Church", "churches", churchHtml(t), ["church"]],
     ["Health Care", "hospitals", p(hospitalText(t)), ["hospital"]],
   ].filter(([, , body]) => body);
   if (!sections.length) return { html: "", parts: [], shown: [], labels: [] };
