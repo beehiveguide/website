@@ -84,9 +84,9 @@
 
     const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
     const openIn = (name, lat, lng) => [
-      ["Google Maps", `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`],
+      ["Google Maps", `https://www.google.com/maps/search/${encodeURIComponent(name + ", Utah").replace(/%20/g, "+")}/@${lat},${lng},13z`],
       ["Apple Maps", `https://maps.apple.com/?ll=${lat},${lng}&q=${encodeURIComponent(name + ", Utah")}`],
-      ["OpenStreetMap", `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=14/${lat}/${lng}`],
+      ["OpenStreetMap", `https://www.openstreetmap.org/search?query=${encodeURIComponent(name + ", Utah")}#map=14/${lat}/${lng}`],
     ].map(([n, u]) => `<a href="${u}" class="link-dark">${n}</a>`).join(" &middot; ");
 
     // Dots are small hexagons with rounded corners, point up like the
