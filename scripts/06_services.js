@@ -167,6 +167,37 @@ for (const f of readGeoJson("FireStations")) {
 }
 for (const e of Object.values(output)) if (e.fireStations) e.fireStations.sort((a, b) => a.name.localeCompare(b.name));
 
+// --- Agency websites (config/agency_urls.json): { law: {...}, fire: {...}, water: {...} }, by agency name.
+// Fire stations also match on the agency name without "Station 51" and the like. A water system's
+// registry link is replaced only when the system has a website listed.
+{
+  const urls = paths.readJson(paths.config("agency_urls.json"));
+  const base = (n) => n.replace(/\s+(-\s+)?(Station|Fire Station)\b.*$/i, "").replace(/\s+#?\d+$/, "").trim();
+  const pick = (kind, n) => {
+    const m = urls[kind] || {};
+    if (m[n]) return m[n];
+    if (m[base(n)]) return m[base(n)];
+    // Longest listed agency name the item's name starts with ("Lone Peak Fire District Alpine Station")
+    const k = Object.keys(m).filter((x) => x !== "_note" && n.startsWith(x)).sort((a, b) => b.length - a.length)[0];
+    return k ? m[k] : "";
+  };
+  for (const e of Object.values(output)) {
+    for (const [kind, key] of [["law", "law"], ["fire", "fireStations"], ["water", "water"]])
+      for (const item of e[key] || []) {
+        const u = pick(kind, item.name);
+        if (kind === "water") item.certUrl = item.url;
+        if (u) item.url = u;
+      }
+  }
+  // A water system whose link is just a city or town homepage repeats the "city government" link,
+  // so it goes back to the original certification page link (or none)
+  const norm = (u) => u.replace(/^https?:\/\/(www\.)?/i, "").replace(/\/+$/, "").toLowerCase();
+  const govSet = new Set(Object.entries(paths.readJson(paths.config("government_urls.json"))).filter(([k, v]) => k !== "_note" && v).map(([, v]) => norm(v)));
+  for (const e of Object.values(output))
+    for (const item of e.water || []) if (item.url && govSet.has(norm(item.url))) item.url = item.certUrl || "";
+  for (const e of Object.values(output)) for (const item of e.water || []) delete item.certUrl;
+}
+
 fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
 console.log(`Done! Wrote ${Object.keys(output).length} communities to ${outputPath}`);
 for (const [k, s] of Object.entries(stats)) console.log(`  ${k}: ${s.matched} of ${s.total}`);

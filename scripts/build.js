@@ -10,6 +10,7 @@ const steps = [
   "04_schools.js", // build/schools.json (schools, districts, colleges)
   "05_places.js", // build/places.json (churches, hospitals, parks, cemeteries, libraries, golf, airports)
   "06_services.js", // build/services.json (water, law, fire)
+  "06b_trails.js", // build/trails.json (trailheads and named trails in towns)
   "07_history.js", // build/history.json (founding, name origin)
   "08a_precip.js", // build/precip.json (annual precipitation)
   "08b_freeze.js", // build/freeze.json (freeze-free days)

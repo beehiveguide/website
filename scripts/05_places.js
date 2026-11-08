@@ -68,11 +68,12 @@ const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
   counts.churches = { matched, total };
 }
 
-// --- Hospitals (other licensed health care facilities left out)
+// --- Hospitals (other licensed health care facilities left out). Websites: config/agency_urls.json "hospital".
+const hospitalUrls = (require("./lib/paths").readJson(require("./lib/paths").config("agency_urls.json")).hospital) || {};
 for (const f of readGeoJson("LicensedHealthCareFacilities")) {
   const p = f.properties;
   if (p.LICENSE_TYPE !== "Hospital") continue;
-  add("hospitals", p.CITY, f.geometry, { name: p.FACILITY_NAME.trim(), note: "", url: "" });
+  add("hospitals", p.CITY, f.geometry, { name: p.FACILITY_NAME.trim(), note: "", url: hospitalUrls[p.FACILITY_NAME.trim()] || "" });
 }
 
 // --- Parks (planned "Future" parks left out). A park in more than one piece

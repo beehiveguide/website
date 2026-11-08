@@ -23,6 +23,7 @@ function findEntry(feature) {
 // Each school keeps its district (lea), whether it's a district, charter or
 // private school (leaType) and whether it's an alternative school (alt).
 const districtInfo = require("./lib/paths").readJson(require("./lib/paths").config("school_districts.json"));
+const schoolUrls = require("./lib/paths").readJson(require("./lib/paths").config("school_urls.json"));
 let matched = 0, skipped = 0;
 const features = readGeoJson("Schools_PreKto12");
 for (const feature of features) {
@@ -38,7 +39,7 @@ for (const feature of features) {
     name: p.SchoolName.trim(),
     low: p.GradeLow || "",
     high: p.GradeHigh || "",
-    url: fixUrl(p.Website),
+    url: fixUrl(p.Website) || schoolUrls[p.SchoolName.trim()] || "",
     // Full district name and website (config/school_districts.json)
     lea: (districtInfo[(p.LEAName || "").trim()] || {}).name || (p.LEAName || "").trim(),
     leaShort: (p.LEAName || "").trim(), // "Duchesne District", for tables
@@ -69,6 +70,8 @@ for (const feature of higherFeatures) {
   const name = higherNames[raw] || raw.replace(/ (Of|For) /g, (m) => m.toLowerCase()).replace(/\s+[-–—]\s+/g, " ");
   // Classes held in jails and prisons aren't open to the public
   if (/corrections|jail/i.test(name)) continue;
+  // Closed in 2021
+  if (/^Stevens.Henager/i.test(name)) continue;
   entry.higherEd.push({ name, url: higherUrls[name] || fixUrl(p.Website) });
   higherMatched++;
 }

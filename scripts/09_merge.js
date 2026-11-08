@@ -27,6 +27,7 @@ const soil = paths.readJson(paths.build("soil.json"));
 const schools = read("schools.json");
 const places = read("places.json");
 const services = read("services.json");
+const trails = paths.readJson(paths.build("trails.json"), {});
 
 // Rows of build/communities.csv as objects
 const lines = fs
@@ -144,6 +145,7 @@ const records = rows.map((t) => {
     schools: schools[id] || null,
     places: places[id] || null,
     services: services[id] || null,
+    trails: trails[id] || null,
   };
 });
 

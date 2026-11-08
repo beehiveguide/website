@@ -361,7 +361,7 @@ const SOURCES = {
   soil: source("Soil properties", "soil"),
   reservations: source("Reservation boundaries", "censusReservations"),
   // "Law enforcement, fire, park and school": only the Community Services sections shown
-  ugrc: (shown) => source(capFirst(listText(shown)), "ugrc"),
+  ugrc: (shown) => source(`${capFirst(listText(shown))} info`, "ugrc"),
   // Churches come from OpenStreetMap (through UGRC's places file)
   // "OpenStreetMap (Copyright and License info)": the name links to
   // openstreetmap.org; the credit links to OSM's copyright page, which explains the license
@@ -830,6 +830,13 @@ const withThe = (name) =>
   /^the /i.test(name) || !/(Department|Office|District|Authority|Agency|Services?|Facility|Corps)( \d+)?$/.test(name)
     ? name
     : `the ${name}`;
+// "the Logan Police Department" with the name linked and "the" left outside the link
+const linkName = (name, url) => {
+  const full = withThe(name);
+  const the = /^the /i.test(full) ? full.slice(0, 4) : "";
+  const label = esc(full.slice(the.length));
+  return esc(the) + (url ? `<a href="${esc(url)}">${label}</a>` : label);
+};
 const uniqueBy = (items, key) => {
   const seen = new Set();
   return items.filter((i) => !seen.has(key(i)) && seen.add(key(i)));
@@ -837,7 +844,8 @@ const uniqueBy = (items, key) => {
 
 // Police agencies serving a place: ["the Logan Police Department"]
 function policeAgencies(t) {
-  const law = ((t.services && t.services.law) || []).map((l) => tidyName(l.name));
+  const lawItems = ((t.services && t.services.law) || []).map((l) => ({ name: tidyName(l.name), url: l.url }));
+  const law = lawItems.map((l) => l.name);
   if (!law.length) return [];
   // A city's own department covers it; the sheriff covers places without one.
   // Tribal police (Ute, Navajo Nation, Goshute) work alongside either one on
@@ -845,7 +853,7 @@ function policeAgencies(t) {
   const TRIBAL = /tribal|navajo nation/i;
   const local = law.filter((n) => !/Sheriff/i.test(n) && !TRIBAL.test(n));
   const main = local.length ? local : law.filter((n) => /Sheriff/i.test(n));
-  return main.map(withThe).map(esc);
+  return main.map((n) => linkName(n, (lawItems.find((l) => l.name === n) || {}).url));
 }
 
 // Tribal police get their own sentence, since they cover tribal land rather
@@ -874,6 +882,7 @@ function fireText(t) {
   // Stations grouped by department: "Logan Fire Department Station 70" and
   // "Beaver County Fire District 1 - Headquarters" give the department name.
   const groups = new Map();
+  const deptUrl = new Map();
   let loose = 0;
   const FIRE_WORDS = /fire|rescue|emergency|\bems\b|safety/i;
   for (const s of stations) {
@@ -896,6 +905,7 @@ function fireText(t) {
       continue;
     }
     groups.set(dept, (groups.get(dept) || 0) + 1);
+    if (s.url && !deptUrl.has(dept)) deptUrl.set(dept, s.url);
   }
   const town = esc(t.name);
   // A town's own one-station department: "The Randolph Fire Department
@@ -908,7 +918,7 @@ function fireText(t) {
   // "Antimony Volunteer Fire Department", but not "Beaver County Fire District"
   const ownRe = new RegExp(`^${t.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}( City| Town)? (Volunteer )?Fire\\b`);
   for (const [dept, n] of groups) {
-    const name = esc(withThe(dept));
+    const name = linkName(dept, deptUrl.get(dept));
     const own = ownRe.test(dept);
     if (own && n === 1) sentences.push(`${capFirst(name)} provides fire protection.`);
     else if (own) sentences.push(`${capFirst(name)} has ${plural(n, "station")}.`);
@@ -1134,7 +1144,11 @@ function schoolsHtml(t) {
         a.name.localeCompare(b.name),
     );
   const higher = s.higherEd || [];
-  const higherText = higher.length
+  // Four or more colleges go in a three-column list
+  const higherBig = higher.length >= 4;
+  const higherText = higherBig
+    ? `These colleges and universities are located in ${placeWord(t)}:`
+    : higher.length
     ? `${listText(higher.map(nameLink))} ${higher.length > 1 ? "are" : "is"} located in ${placeWord(t)}.`
     : "";
   // The town's grade range for the heading: "Kindergarten–5th Grade",
@@ -1148,7 +1162,9 @@ function schoolsHtml(t) {
     : lowest === highest
       ? headWord(lowest)
       : `${headWord(lowest).replace(/ Grade$/, "")}&ndash;${headWord(highest)}`;
-  const out = { k12: "", higher: higherText ? `<p>${higherText}</p>` : "", count: all.length, range };
+  const out = { k12: "", higher: higherText
+      ? `<p>${higherText}</p>` + (higherBig ? `\n    <ul class="col-list">\n      ${higher.map((h) => `<li>${nameLink(h)}</li>`).join("\n      ")}\n    </ul>` : "")
+      : "", count: all.length, range };
   if (!all.length) return out;
   const NOUNS = {
     Preschool: ["preschool", "preschools"], Elementary: ["elementary school", "elementary schools"],
@@ -1292,12 +1308,26 @@ function schoolsHtml(t) {
     // Third and later paragraphs: "Additionally, it has"
     const also = t.placeType === "city" || t.placeType === "town" ? `The ${t.placeType} also has` : "It also has";
     const opener = (i) => (i === 0 ? townHas : i === 1 ? also : "Additionally, it has");
+    // With more than one paragraph, each gets an h3 for its levels:
+    // "Preschool and Elementary Schools", "Middle and High Schools", "K–12 Schools"
+    const heading = (list) => {
+      const lv = new Set(list.map((x) => x.level));
+      const one = list.length === 1;
+      const sch = one ? "School" : "Schools";
+      // K–12 schools cover every grade, so they would read like elementary and high schools too
+      if (lv.has("K-12") || lv.has("Other")) return `Other ${sch}`;
+      if (lv.has("Elementary") || lv.has("Preschool"))
+        return lv.has("Preschool") && lv.has("Elementary") ? `Preschool and Elementary ${sch}` : lv.has("Preschool") ? (one ? "Preschool" : "Preschools") : `Elementary ${sch}`;
+      return lv.has("Middle") && lv.has("High") ? `Middle and High ${sch}` : lv.has("Middle") ? `Middle ${sch}` : `High ${sch}`;
+    };
+    const multi = byLevel.size > 1;
     out.k12 = [...byLevel]
       .map(([, list], i) =>
-        list.length === 1
+        (multi ? `<h3 class="h4 mt-0 mb-2">${heading(list)}</h3>\n    ` : "") +
+        (list.length === 1
           ? // "a K–12 school, Terra Academy," without repeating "(K–12)"
             `<p>${opener(i)} ${listText(levelsOf(list))}, ${list[0].level === "K-12" && list[0].grades === "K&ndash;12" && !list[0].alt ? nameLink(list[0]) : item(list[0])}, ${which(list[0])}.</p>`
-          : `<p>${opener(i)} ${listText(levelsOf(list))}. ${sentencesFor(list).join(" ")}</p>`,
+          : `<p>${opener(i)} ${listText(levelsOf(list))}. ${sentencesFor(list).join(" ")}</p>`),
       )
       .join("\n    ");
     return out;
@@ -1363,10 +1393,107 @@ function churchHtml(t) {
       : `<p>${items[0]} is located in ${esc(t.name)}.</p>`;
 }
 
+// Outdoor Recreation: trailheads in town (linked to their map pin), the trails near
+// them, then the other named trails and paths in town as plain text. A trail is
+// linked to a trailhead only when one is within 150 meters of it (06b_trails.js);
+// the trail data doesn't show which ends are entry points, so the rest are listed.
+// Trail-to-trailhead pairs a public source confirms (config/trailhead_research.json and
+// config/trail_verification.json). Only these are listed as "near" a trailhead; any other
+// trail falls into the plain list.
+const trailKey = (s) => String(s || "").toLowerCase().replace(/trail/g, "").replace(/[^a-z]/g, "");
+const CONFIRMED_STATUS = new Set(["confirmed", "confirmed (trail guide)", "starts here", "passes here", "reached from here", "ends here", "starts near"]);
+const confirmedPairs = (() => {
+  const pairs = [];
+  const roads = new Set();
+  const read = (f) => { try { return paths.readJson(paths.config(f)); } catch (e) { return []; } };
+  for (const r of read("trailhead_research.json"))
+    if (CONFIRMED_STATUS.has(r.status)) for (const x of r.trails || []) pairs.push([r.town, r.trailhead, x]);
+  for (const r of read("trail_verification.json")) {
+    if (CONFIRMED_STATUS.has(r.status)) for (const x of r.trails || []) pairs.push([r.town, r.trailhead, x]);
+    if (r.status === "road, not a trail") for (const x of r.trails || []) roads.add(trailKey(x));
+  }
+  return { pairs: pairs.map(([a, b, c]) => [trailKey(a), trailKey(b), trailKey(c)]), roads };
+})();
+function isConfirmedTrail(town, head, trail) {
+  const a = trailKey(town), b = trailKey(head), c = trailKey(trail);
+  return c && confirmedPairs.pairs.some(([ta, tb, tc]) => ta === a && (tb === b || tb.includes(b) || b.includes(tb)) && tc === c);
+}
+function trailsHtml(t) {
+  const d = t.trails;
+  if (!d || (!d.trailheads.length && !d.trails.length)) return "";
+  const town = esc(t.name);
+  // "Dry Canyon (Logan)" -> "Dry Canyon"
+  const shown = (name) => name.replace(new RegExp(`\\s*\\(${t.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\)`, "i"), "");
+  // "Dry Canyon" -> "Dry Canyon Trailhead" when the name is the start of a sentence
+  const link = (h, full) => {
+    const nm = shown(h.name);
+    const label = full && !/trailhead|\bTH\b/i.test(nm) ? `${nm} Trailhead` : nm;
+    return `<a href="https://www.google.com/maps?q=${h.lat},${h.lng}">${esc(label)}</a>`;
+  };
+  // Only trails a source ties to the trailhead are named with it; the rest go in the plain list.
+  const seen = new Set();
+  const withTrails = [];
+  const plain = [];
+  for (const h of d.trailheads) {
+    const ok = h.trails.filter((n) => isConfirmedTrail(t.name, h.name, n));
+    ok.forEach((n) => seen.add(n.toLowerCase()));
+    if (ok.length) withTrails.push({ h, ok }); else plain.push(h);
+  }
+  const heads = d.trailheads;
+  const near = withTrails;
+  const others = d.trails.filter((n) => !seen.has(n.toLowerCase()) && !confirmedPairs.roads.has(trailKey(n)));
+  const out = [];
+  const sentences = [];
+  for (const { h, ok } of withTrails) sentences.push(`${link(h, true)} provides access to ${listText(ok.map(esc))}.`);
+  if (plain.length) {
+    const pl = plain.map((h) => link(h));
+    if (!withTrails.length) sentences.push(plain.length === 1 ? `${link(plain[0], true)} is in ${town}.` : `Trailheads include ${listText(pl)}.`);
+    else sentences.push(plain.length === 1 ? `${link(plain[0], true)} is also in ${town}.` : `Other trailheads include ${listText(pl)}.`);
+  }
+  const lead = near.length ? `Other trails in ${town} include` : `Trails in ${town} include`;
+  if (others.length === 1 && !near.length) sentences.push(`${esc(others[0])} is a trail in ${town}.`);
+  else if (others.length && others.length <= BIG_LIST) sentences.push(`${lead} ${listText(others.map(esc))}.`);
+  const bigList = others.length > BIG_LIST;
+  if (sentences.length) out.push(`<p>${sentences.join(" ")}</p>`);
+  if (bigList)
+    out.push(`<p>${sentences.length ? `<strong>${lead}:</strong>` : `${lead}:`}</p>\n    <ul class="col-list">\n      ${others.map((n) => `<li>${esc(n)}</li>`).join("\n      ")}\n    </ul>`);
+  // A "Trails" h3 under the Outdoor Recreation h2, like Parks under Parks and Cemeteries
+  return `<h3 class="h4 mt-0 mb-2">Trails</h3>\n    ${out.join("\n    ")}`;
+}
+
+// "The" goes before hospital and airport names ("The Logan-Cache Airport"), capital at the start
+// of a sentence and lowercase after that; saints' and possessive names go without
+const takesThe = (name) => !/^the /i.test(name) && !/^(St\.?|Saint|Mount)\b|^\w+'s\b/i.test(name);
+const theFirst = (html, name, i) =>
+  takesThe(name) ? `${i === 0 ? "The" : "the"} ${html}` : i > 0 ? html.replace(/(^|>)The /, "$1the ") : html;
+
 function hospitalText(t) {
   const list = (t.places && t.places.hospitals) || [];
   if (!list.length) return "";
-  return `${listText(list.map(nameLink))} ${list.length > 1 ? "serve" : "serves"} the area.`;
+  return `${listText(list.map((h, i) => theFirst(nameLink(h), h.name, i)))} ${list.length > 1 ? "serve" : "serves"} the area.`;
+}
+
+// FAA names are abbreviated ("Cedar City Rgnl", "Delta Muni"); spell them out and end with
+// "Airport" or "Field"
+const airportUrls = paths.readJson(paths.config("airport_urls.json"));
+function airportName(raw) {
+  if (/^St George Muni$/i.test(raw.trim())) return "St. George Regional Airport"; // renamed in 2011
+  let n = raw
+    .replace(/\bRgnl\b/g, "Regional").replace(/\bMuni\b/g, "Municipal").replace(/\bIntl\b/g, "International")
+    .replace(/\bMcdonald\b/g, "McDonald").replace(/\bAnd\b/g, "and").replace(/\bSt\b(?!\.)/g, "St.")
+    .replace(/\s+/g, " ").trim();
+  if (!/\b(airport|airpark|field)\b/i.test(n)) n += " Airport";
+  else if (/\/|\s-\s/.test(n)) n = n.replace(/^([^/-]+?)\s*(?=[/-])/, (m) => (/\b(airport|airpark|field)\b/i.test(m) ? m : `${m.trim()} Airport${/\s$/.test(m) ? " " : ""}`));
+  return n;
+}
+function airportList(t) {
+  return ((t.places && t.places.airports) || []).filter((a) => !a.note);
+}
+function airportText(t) {
+  const raw = airportList(t).map((a) => airportName(a.name));
+  if (!raw.length) return "";
+  const list = raw.map((n, i) => theFirst(airportUrls[n] ? `<a href="${esc(airportUrls[n])}">${esc(n)}</a>` : esc(n), n, i));
+  return `${listText(list)} ${raw.length === 1 ? "serves" : "serve"} ${esc(t.name)}.`;
 }
 
 // Parks and cemeteries source words: ["park", "cemetery"], or just the one shown
@@ -1424,8 +1551,10 @@ function servicesHtml(t) {
     [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t), parksCemeteriesLabels(t)],
     [`School${schools.count === 1 ? "" : "s"}${schools.range ? ` (${schools.range})` : ""}`, "schools", schools.k12, ["school"]],
     ["Higher Education", "colleges", schools.higher, ["college"]],
-    [(() => { const ci = churchItems(t); return ci.allChristian ? "Churches" : "Places of Worship"; })(), "churches", churchHtml(t), []],
-    ["Health Care", "hospitals", p(hospitalText(t)), ["hospital"]],
+    [((t.places && t.places.hospitals) || []).length > 1 ? "Hospitals" : "Hospital", "hospitals", p(hospitalText(t)), ["hospital"]],
+    [airportList(t).length > 1 ? "Airports" : "Airport", "airports", p(airportText(t)), ["airport"]],
+    [(() => { const ci = churchItems(t); const one = ci.total === 1; return ci.allChristian ? (one ? "Church" : "Churches") : one ? "Place of Worship" : "Places of Worship"; })(), "churches", churchHtml(t), []],
+    ["Outdoor Recreation", "trails", trailsHtml(t), ["trail"]],
   ].filter(([, , body]) => body);
   if (!sections.length) return { html: "", parts: [], shown: [], labels: [], osm: "" };
   // Each part is its own section with an h2, styled like Growing Info
@@ -1444,7 +1573,8 @@ function servicesHtml(t) {
     osm: sections.some(([, word]) => word === "churches")
       ? (() => {
           const ci = churchItems(t);
-          return ci.allChristian ? "churches" : "places of worship";
+          const one = ci.total === 1;
+          return ci.allChristian ? (one ? "church" : "churches") : one ? "place of worship" : "places of worship";
         })()
       : "",
   };

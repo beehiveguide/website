@@ -1,0 +1,1318 @@
+[
+  {
+    "town": "Logan",
+    "trailhead": "Dry Canyon",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail",
+      "Dry Canyon Trail"
+    ],
+    "note": "Small lot at the mouth of Logan Dry Canyon, at the end of Mountain Road. BST segment 2.8 mi; the canyon trail runs about 1.5 mi (Gaia lists 2.0 mi).",
+    "source": "https://www.bonnevilleshorelinetrail.org/regions/logan-to-avon/"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Coyote Hollow",
+    "status": "confirmed",
+    "trails": [
+      "Canyon View Trail",
+      "Corner Canyon Walking Trail",
+      "Ghost Falls North",
+      "Ghost Falls South"
+    ],
+    "note": "",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Draper Equestrian Center",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail",
+      "Corner Canyon Trail",
+      "Equestrian Center Riding Trail",
+      "Jacobs Ladder Trail",
+      "Highland Drive Trail",
+      "Lower Corner Canyon Road",
+      "Steep Mountain Trail"
+    ],
+    "note": "Listed on the Draper map as \"Equestrian Center.\"",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Eagle Crest",
+    "status": "confirmed",
+    "trails": [
+      "Eagle Crest Trail"
+    ],
+    "note": "",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Mehraban Wetlands",
+    "status": "confirmed",
+    "trails": [
+      "Mehraban Wetlands Park Trail"
+    ],
+    "note": "Listed by address (898 E Riparian Dr).",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Orson Smith",
+    "status": "confirmed",
+    "trails": [
+      "Aqueduct Trail",
+      "Little Willow Trail",
+      "Bonneville Shoreline Trail",
+      "Cherry Canyon Trail",
+      "Trail of the Eagle",
+      "Upper Corner Canyon Road"
+    ],
+    "note": "12601 S 2000 E.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Osborne",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail",
+      "Porter Rockwell Trail",
+      "Steep Mountain Trail"
+    ],
+    "note": "Spelled \"Osbourne\" on the Draper map.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Red Rock",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail",
+      "Oak Hollow Trail",
+      "Spring Hollow Trail"
+    ],
+    "note": "1200 E Mike Weir Drive.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Flight Park",
+    "status": "likely",
+    "trails": [
+      "Bonneville Shoreline Trail",
+      "Steep Mountain Trail"
+    ],
+    "note": "The Draper map lists \"Hang Gliding Park\"; the name differs, so this match is likely but not confirmed.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Carolina Hills",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not on the Draper City trail map.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "East Bench",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not on the Draper City trail map.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Haddington",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not on the Draper City trail map.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Maple Hollow",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not on the Draper City trail map.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Oak Vista",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not on the Draper City trail map.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Peak View",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not on the Draper City trail map.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Potato Hill",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not on the Draper City trail map.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Draper",
+    "trailhead": "Sadler",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not on the Draper City trail map.",
+    "source": "https://www.bonnevilleshorelinetrail.org/wp-content/uploads/regions/11/maps/Draper-City-Trail-Map.pdf"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Quinns",
+    "status": "confirmed",
+    "trails": [
+      "Round Valley"
+    ],
+    "note": "The Park City Sports Complex at Quinn's Junction serves as a trailhead for Round Valley. Renamed \"Round Valley Quinn's.\"",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/summer-trails"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Round Valley Way",
+    "status": "partial",
+    "trails": [],
+    "note": "Renamed \"Sunny Slopes.\" The source doesn't say which trails it reaches.",
+    "source": "https://mountaintrails.org/round-valley-trailheads-renamed"
+  },
+  {
+    "town": "Ogden",
+    "trailhead": "Douglas",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail"
+    ],
+    "note": "Douglas St. Trailhead, 0.75 mi dirt BST segment between the Jumpoff Canyon and 9th Street trailheads.",
+    "source": "https://bonnevilleshorelinetrail.org/regions/pleasant-view-to-i-84/"
+  },
+  {
+    "town": "Ogden",
+    "trailhead": "Jump Off",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail"
+    ],
+    "note": "Jumpoff Canyon Trailhead, 0.8 mi dirt BST segment between Ogden Nature Center North and Douglas St.",
+    "source": "https://bonnevilleshorelinetrail.org/regions/pleasant-view-to-i-84/"
+  },
+  {
+    "town": "Ogden",
+    "trailhead": "Rainbow",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail"
+    ],
+    "note": "Rainbow Gardens Trailhead, 0.85 mi dirt BST segment between Hislop Drive and 22nd St.",
+    "source": "https://bonnevilleshorelinetrail.org/regions/pleasant-view-to-i-84/"
+  },
+  {
+    "town": "Ogden",
+    "trailhead": "27TH Street Access",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail",
+      "Taylor Canyon Trail",
+      "Pond Trail",
+      "Indian Trail",
+      "Hidden Valley Trail",
+      "Bird Song",
+      "Rainbow Gardens Trail",
+      "Waterfall Canyon",
+      "Strong Canyon",
+      "Gibb's Loop"
+    ],
+    "note": "The BST page calls it the Mount Ogden Park Trailhead; KSL lists the trails it reaches. Taylor Canyon Trail is reached from the top of 27th St.",
+    "source": "https://www.ksl.com/article/51417385/new-trails-open-at-27th-street-trailhead-in-ogden"
+  },
+  {
+    "town": "Ogden",
+    "trailhead": "36th Street",
+    "status": "conflicting",
+    "trails": [],
+    "note": "The BST site names Beus Dr. Trailhead and uses 36th St. only as driving directions; SummitPost lists an Ogden 36th Street Trailhead.",
+    "source": "https://bonnevilleshorelinetrail.org/regions/pleasant-view-to-i-84/"
+  },
+  {
+    "town": "Ogden",
+    "trailhead": "Park Road",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not listed on the BST page. \"East end of Park Blvd.\" is a trailhead on the Ogden River Parkway.",
+    "source": "https://bonnevilleshorelinetrail.org/regions/pleasant-view-to-i-84/"
+  },
+  {
+    "town": "Ogden",
+    "trailhead": "Skyline Drive",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Used only as driving directions to Beus Dr. Trailhead on the BST page.",
+    "source": "https://bonnevilleshorelinetrail.org/regions/pleasant-view-to-i-84/"
+  },
+  {
+    "town": "Ogden",
+    "trailhead": "Ogden Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not yet researched.",
+    "source": ""
+  },
+  {
+    "town": "Salt Lake City",
+    "trailhead": "Popperton Park",
+    "status": "partial",
+    "trails": [],
+    "note": "Salt Lake City planned a Popperton Park Trailhead at 360 N. Popperton Park Way; the article doesn't say which trails it serves.",
+    "source": "https://www.ksl.com/article/51320883"
+  },
+  {
+    "town": "Salt Lake City",
+    "trailhead": "Ensign Peak",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not yet researched.",
+    "source": ""
+  },
+  {
+    "town": "Salt Lake City",
+    "trailhead": "Red Butte Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not yet researched.",
+    "source": ""
+  },
+  {
+    "town": "Salt Lake City",
+    "trailhead": "Rose Park Golf Course",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not yet researched.",
+    "source": ""
+  },
+  {
+    "town": "Salt Lake City",
+    "trailhead": "Terrace Hills",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not yet researched.",
+    "source": ""
+  },
+  {
+    "town": "Salt Lake City",
+    "trailhead": "This is the Place",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not yet researched.",
+    "source": ""
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Gambel Oak",
+    "status": "confirmed (trail guide)",
+    "trails": [
+      "Gambel Oak",
+      "Lost Prospector",
+      "Solamere Connector"
+    ],
+    "note": "Small parking spot on Aerie Drive. Lost Prospector starts across the street; the Gambel Oak singletrack is about 150 feet up the road. Solamere Connector joins at about 1.6 miles.",
+    "source": "https://utahmountainbiking.com/trails/gambel/"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Spiro",
+    "status": "confirmed (trail guide)",
+    "trails": [
+      "Spiro",
+      "Seldom Seen",
+      "Midmountain Trail",
+      "Powerline"
+    ],
+    "note": "Park at the first lot at Park City Mountain Resort; the Spiro singletrack starts beside the gravel road where Crescent Drive turns left. The top connects to Midmountain.",
+    "source": "https://utahmountainbiking.com/trails/spiro/"
+  },
+  {
+    "town": "Brighton",
+    "trailhead": "Mill D North Fork",
+    "status": "confirmed (trail guide)",
+    "trails": [
+      "Mill D North Fork Trail",
+      "Butler Fork Trail"
+    ],
+    "note": "Near Spruces Campground on Big Cottonwood Canyon Road (UT-190). Starts a loop up Mill D North Fork and down Butler Fork.",
+    "source": "https://hiiker.app/hikes/utah/salt-lake-county/mill-d-north-fork-trail-and-butler-fork-trail"
+  },
+  {
+    "town": "Brighton",
+    "trailhead": "Butler Fork",
+    "status": "partial",
+    "trails": [
+      "Butler Fork Trail"
+    ],
+    "note": "The loop with Mill D North Fork returns to the Mill D North Fork trailhead, so Butler Fork may share it. Not confirmed.",
+    "source": "https://hiiker.app/hikes/utah/salt-lake-county/mill-d-north-fork-trail-and-butler-fork-trail"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "Temple Quarry",
+    "status": "confirmed (trail guide)",
+    "trails": [
+      "Temple Quarry Trail"
+    ],
+    "note": "Out-and-back about 2.5 miles near the Red Cliffs Desert Reserve.",
+    "source": "https://hiiker.app/hikes/utah/washington-county/temple-quarry-trail"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "Bearclaw Poppi",
+    "status": "partial",
+    "trails": [
+      "Green Valley Trail (Bearclaw Poppy Trail)",
+      "Bearclaw ST",
+      "Barrell ST"
+    ],
+    "note": "Parking area at the top of the gravel road in Green Valley. The source doesn't say which of these start at the lot itself.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/bearclaw-tg/"
+  },
+  {
+    "town": "Alpine",
+    "trailhead": "Lambert Park Rodeo",
+    "status": "confirmed",
+    "trails": [
+      "Rodeo Trail",
+      "Rodeo Up"
+    ],
+    "note": "At the Rodeo Grounds parking area; Rodeo Trail starts about 200 feet south of the arena.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/lambert-tg/"
+  },
+  {
+    "town": "Alpine",
+    "trailhead": "Lambert Park Bowery",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Source does not describe this trailhead.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/lambert-tg/"
+  },
+  {
+    "town": "Alpine",
+    "trailhead": "Lambert Park Lone Peak",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Source does not describe this trailhead.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/lambert-tg/"
+  },
+  {
+    "town": "Alpine",
+    "trailhead": "Hog Hollow",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Source does not describe this trailhead.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/lambert-tg/"
+  },
+  {
+    "town": "Provo",
+    "trailhead": "Rock Canyon",
+    "status": "confirmed",
+    "trails": [
+      "Rock Canyon Trail",
+      "Big Springs Trail"
+    ],
+    "note": "End of North Temple Drive; Rock Canyon Trail runs 6.2 miles to Rock Canyon Campground.",
+    "source": "https://www.provo.gov/580/Trails"
+  },
+  {
+    "town": "Provo",
+    "trailhead": "Slate Canyon",
+    "status": "confirmed",
+    "trails": [
+      "Slate Canyon Trail",
+      "Bonneville Shoreline Trail"
+    ],
+    "note": "Slate Canyon Connector begins at Center St and Olympic Blvd.",
+    "source": "https://www.provo.gov/580/Trails"
+  },
+  {
+    "town": "Provo",
+    "trailhead": "Y Mount",
+    "status": "confirmed",
+    "trails": [
+      "Y Mountain Trail"
+    ],
+    "note": "Climbs to the Y about 1.1 miles away.",
+    "source": "https://www.provo.gov/580/Trails"
+  },
+  {
+    "town": "Provo",
+    "trailhead": "Indian Road",
+    "status": "confirmed",
+    "trails": [
+      "Indian Road Trail",
+      "Bonneville Shoreline Trail"
+    ],
+    "note": "Near substation at 5500 N Canyon Road; trail runs 2.15 miles to the Bonneville Shoreline Trail.",
+    "source": "https://www.provo.gov/580/Trails"
+  },
+  {
+    "town": "Layton",
+    "trailhead": "Adam`s Canyon",
+    "status": "confirmed",
+    "trails": [
+      "Adams Canyon Trail"
+    ],
+    "note": "600 S Eastside Dr; 1.9-mile unpaved trail to the waterfall.",
+    "source": "https://www.laytoncityutah.gov/LC/Parks/Trails"
+  },
+  {
+    "town": "Layton",
+    "trailhead": "Kays Creek",
+    "status": "partial",
+    "trails": [
+      "Kays Creek Parkway"
+    ],
+    "note": "City lists four trailheads (Adam J. Welker, Canyon View, Oak Forest, Lower) for the parkway; page does not say which serves which section.",
+    "source": "https://www.laytoncityutah.gov/LC/Parks/Trails"
+  },
+  {
+    "town": "Layton",
+    "trailhead": "Layton Ridge",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trails page does not mention it.",
+    "source": "https://www.laytoncityutah.gov/LC/Parks/Trails"
+  },
+  {
+    "town": "Sandy",
+    "trailhead": "Hidden Valley",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail"
+    ],
+    "note": "Hidden Valley Park, 2860 Wasatch Blvd.",
+    "source": "https://hiiker.app/trails/utah/salt-lake-county/bonneville-shoreline-trail-from-hidden-valley-park"
+  },
+  {
+    "town": "Bountiful",
+    "trailhead": "Holbrook Canyon",
+    "status": "confirmed",
+    "trails": [
+      "Holbrook Canyon Trail"
+    ],
+    "note": "Parking lot on Bountiful Boulevard just past the Bountiful temple.",
+    "source": "https://discoverdavis.com/holbrook-canyon/"
+  },
+  {
+    "town": "Bountiful",
+    "trailhead": "Bountiful B",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.daviscountyutah.gov/county-info/trails"
+  },
+  {
+    "town": "Bountiful",
+    "trailhead": "North Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.daviscountyutah.gov/county-info/trails"
+  },
+  {
+    "town": "Bountiful",
+    "trailhead": "Skyline Drive",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.daviscountyutah.gov/county-info/trails"
+  },
+  {
+    "town": "Highland",
+    "trailhead": "American Fork Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Sources checked do not say which trails start here.",
+    "source": "https://www.theoutbound.com/utah/hiking/highland-glen-park-loop"
+  },
+  {
+    "town": "Highland",
+    "trailhead": "Caddie Lane",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Sources checked do not say which trails start here.",
+    "source": "https://www.theoutbound.com/utah/hiking/highland-glen-park-loop"
+  },
+  {
+    "town": "Highland",
+    "trailhead": "Highland Glen",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Sources checked do not say which trails start here.",
+    "source": "https://www.theoutbound.com/utah/hiking/highland-glen-park-loop"
+  },
+  {
+    "town": "Highland",
+    "trailhead": "Highland Glen South",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Sources checked do not say which trails start here.",
+    "source": "https://www.theoutbound.com/utah/hiking/highland-glen-park-loop"
+  },
+  {
+    "town": "Highland",
+    "trailhead": "Mitchell Hollow",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Sources checked do not say which trails start here.",
+    "source": "https://www.theoutbound.com/utah/hiking/highland-glen-park-loop"
+  },
+  {
+    "town": "Sandy",
+    "trailhead": "Granite",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not named in the Bonneville Shoreline Trail guide.",
+    "source": "https://utahmountainbiking.com/trails/BST-SLCsouth/"
+  },
+  {
+    "town": "Sandy",
+    "trailhead": "Boulders",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not named in the Bonneville Shoreline Trail guide.",
+    "source": "https://utahmountainbiking.com/trails/BST-SLCsouth/"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Empire Lodge",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Farm",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Johns Trail",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Lost Prospector",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "McLeod Creek",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Old Ranch",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Park City Mountain Resort",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Prospector Park",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Rail Trail (Bonanza)",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Snow Park Lodge",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "Sweeney",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "Park City",
+    "trailhead": "The Cove",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City trailhead page gives no location or trails for this one.",
+    "source": "https://parkcity.gov/departments/trails-open-space/what-we-do/trails-and-pathways/trailheads"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "Chuckawalla",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City map does not tie this trailhead to named trails.",
+    "source": "https://maps.sgcity.org/sgcitytrails"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "City Creek",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City map does not tie this trailhead to named trails.",
+    "source": "https://maps.sgcity.org/sgcitytrails"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "Convention Center Drive",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City map does not tie this trailhead to named trails.",
+    "source": "https://maps.sgcity.org/sgcitytrails"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "Green Valley",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City map does not tie this trailhead to named trails.",
+    "source": "https://maps.sgcity.org/sgcitytrails"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "Man O War",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City map does not tie this trailhead to named trails.",
+    "source": "https://maps.sgcity.org/sgcitytrails"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "Pioneer Park",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City map does not tie this trailhead to named trails.",
+    "source": "https://maps.sgcity.org/sgcitytrails"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "Pioneer Upper",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City map does not tie this trailhead to named trails.",
+    "source": "https://maps.sgcity.org/sgcitytrails"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "St James",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City map does not tie this trailhead to named trails.",
+    "source": "https://maps.sgcity.org/sgcitytrails"
+  },
+  {
+    "town": "St. George",
+    "trailhead": "Tawa",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City map does not tie this trailhead to named trails.",
+    "source": "https://maps.sgcity.org/sgcitytrails"
+  },
+  {
+    "town": "Washington",
+    "trailhead": "Grapevine",
+    "status": "confirmed",
+    "trails": [
+      "Grapevine Trail",
+      "Prospector Trail"
+    ],
+    "note": "Dirt lot off Washington Parkway (Exit 13); Grapevine Trail leads to Prospector Trail and Church Rocks.",
+    "source": "https://hikestgeorge.com/biking-trails/church-rocks"
+  },
+  {
+    "town": "Washington",
+    "trailhead": "Church Rocks",
+    "status": "confirmed",
+    "trails": [
+      "Prospector Trail"
+    ],
+    "note": "Church Rocks is reached from the Grapevine, Maverik or North Casita trailheads.",
+    "source": "https://hikestgeorge.com/biking-trails/church-rocks"
+  },
+  {
+    "town": "La Verkin",
+    "trailhead": "Moenkopi Trail",
+    "status": "confirmed",
+    "trails": [
+      "Moenkopi Trail",
+      "Nephi's Twist"
+    ],
+    "note": "Dirt lot about 1.7 miles east of the Highway 9/17 light; the guide does not call it the Moenkopi trailhead.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/laverkin-tg/"
+  },
+  {
+    "town": "Toquerville",
+    "trailhead": "Nephi Twist",
+    "status": "confirmed",
+    "trails": [
+      "Nephi's Twist"
+    ],
+    "note": "Dirt lot off Highway 9; a second lower trailhead is in the Trail Ridge subdivision.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/nephi-tg/"
+  },
+  {
+    "town": "Toquerville",
+    "trailhead": "LaVerkin Creek Trail",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/laverkin-tg/"
+  },
+  {
+    "town": "Hurricane",
+    "trailhead": "Hurricane Hill",
+    "status": "partial",
+    "trails": [],
+    "note": "BLM lists it among Hurricane Cliffs trailheads but does not say which trails start there.",
+    "source": "https://www.blm.gov/visit/hurricane-cliffs-trail-system"
+  },
+  {
+    "town": "Hurricane",
+    "trailhead": "Rhythm Blues",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not named on the BLM page.",
+    "source": "https://www.blm.gov/visit/hurricane-cliffs-trail-system"
+  },
+  {
+    "town": "Virgin",
+    "trailhead": "Virgin Dam",
+    "status": "partial",
+    "trails": [],
+    "note": "BLM lists Virgin Dam as a Hurricane Cliffs trailhead with a vault toilet and kiosk; trails not specified.",
+    "source": "https://www.blm.gov/visit/hurricane-cliffs-trail-system"
+  },
+  {
+    "town": "Springville",
+    "trailhead": "Hobble Creek Parkway",
+    "status": "confirmed",
+    "trails": [
+      "Hobble Creek Paved Trail"
+    ],
+    "note": "Start where the sidewalk becomes a wide paved path; trail runs 4.5 miles up the canyon to Rotary Park.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/hobblecreek-tg/"
+  },
+  {
+    "town": "Springville",
+    "trailhead": "Devin Glen",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.bonnevilleshorelinetrail.org/?p=52"
+  },
+  {
+    "town": "Salt Lake City",
+    "trailhead": "Ensign Peak",
+    "status": "partial",
+    "trails": [
+      "Bonneville Shoreline Trail"
+    ],
+    "note": "Ensign Peak is reached by an out-and-back route along the Bonneville Shoreline Trail; no trailhead address found.",
+    "source": "https://api.theoutbound.com/utah/hiking/ensign-peak-via-bonneville-shoreline-trail"
+  },
+  {
+    "town": "Millcreek",
+    "trailhead": "Grandeur Peak",
+    "status": "confirmed",
+    "trails": [
+      "Grandeur Peak Trail"
+    ],
+    "note": "Church Fork Picnic Area, 3800 Mill Creek Canyon Road, with parking and restrooms.",
+    "source": "https://hiiker.app/hikes/utah/salt-lake-county/grandeur-peak-trail"
+  },
+  {
+    "town": "Brighton",
+    "trailhead": "Wasatch Crest",
+    "status": "confirmed",
+    "trails": [
+      "Wasatch Crest Trail"
+    ],
+    "note": "Trail starts at Guardsman Pass in Big Cottonwood Canyon and ends at Big Water trailheads in Millcreek Canyon.",
+    "source": "https://www.visitutah.com/things-to-do/outdoor-adventures/hiking/salt-lake-city-area/wasatch-crest"
+  },
+  {
+    "town": "Brighton",
+    "trailhead": "Wasatch Crest Gate",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.visitutah.com/things-to-do/outdoor-adventures/hiking/salt-lake-city-area/wasatch-crest"
+  },
+  {
+    "town": "Brighton",
+    "trailhead": "Mill D South Fork",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.mtbproject.com/directory/8015884/big-cottonwood-canyon"
+  },
+  {
+    "town": "Brighton",
+    "trailhead": "Solitude Resort",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.mtbproject.com/directory/8015884/big-cottonwood-canyon"
+  },
+  {
+    "town": "Midway",
+    "trailhead": "Wasatch Mountain State Park",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": ""
+  },
+  {
+    "town": "Murray",
+    "trailhead": "Arrowhead Park",
+    "status": "partial",
+    "trails": [
+      "Jordan River Parkway"
+    ],
+    "note": "Little Confluence Trailhead at 4800 South 580 West; water and restrooms at Arrowhead Park.",
+    "source": "https://prod.saltlakecounty.gov/parks-recreation/parks-trails/jordan-river-parkway/"
+  },
+  {
+    "town": "Murray",
+    "trailhead": "Lucky Clover",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not listed as a trailhead by Salt Lake County.",
+    "source": "https://prod.saltlakecounty.gov/parks-recreation/parks-trails/jordan-river-parkway/"
+  },
+  {
+    "town": "Murray",
+    "trailhead": "Walden Park",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not listed as a trailhead by Salt Lake County.",
+    "source": "https://prod.saltlakecounty.gov/parks-recreation/parks-trails/jordan-river-parkway/"
+  },
+  {
+    "town": "South Salt Lake",
+    "trailhead": "James Madison",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "County lists General Holm Park (3900 South 1050 West) as the Jordan River Parkway trailhead here, not James Madison.",
+    "source": "https://prod.saltlakecounty.gov/parks-recreation/parks-trails/jordan-river-parkway/"
+  },
+  {
+    "town": "Cedar City",
+    "trailhead": "Red Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://visitcedarcity.com/trails"
+  },
+  {
+    "town": "Brian Head",
+    "trailhead": "Brian Head Bike Park",
+    "status": "partial",
+    "trails": [
+      "Color Flow",
+      "Little Glitter"
+    ],
+    "note": "Visit Cedar City lists these Brian Head trails; it does not say where they start.",
+    "source": "https://visitcedarcity.com/trails"
+  },
+  {
+    "town": "Springdale",
+    "trailhead": "Chinle",
+    "status": "confirmed",
+    "trails": [
+      "Chinle Trail"
+    ],
+    "note": "On Anasazi Way off Highway 9 between Rockville and Springdale; Chinle Trail connects to Coalpits Wash.",
+    "source": "https://www.nps.gov/zion/planyourvisit/southwest-desert-wilderness-hiking-trails.htm"
+  },
+  {
+    "town": "Hildale",
+    "trailhead": "Water Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.theoutbound.com/united-states/utah/hildale"
+  },
+  {
+    "town": "Lehi",
+    "trailhead": "Willow Park",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City parks map does not mark trailheads.",
+    "source": "https://www.lehi-ut.gov/wp-content/uploads/2011/06/Parks-Map.pdf"
+  },
+  {
+    "town": "Lehi",
+    "trailhead": "Olympic Park",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City parks map does not mark trailheads.",
+    "source": "https://www.lehi-ut.gov/wp-content/uploads/2011/06/Parks-Map.pdf"
+  },
+  {
+    "town": "Lehi",
+    "trailhead": "Bull River",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City parks map does not mark trailheads.",
+    "source": "https://www.lehi-ut.gov/wp-content/uploads/2011/06/Parks-Map.pdf"
+  },
+  {
+    "town": "Lehi",
+    "trailhead": "1500 North Lehi",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City parks map does not mark trailheads.",
+    "source": "https://www.lehi-ut.gov/wp-content/uploads/2011/06/Parks-Map.pdf"
+  },
+  {
+    "town": "Ogden",
+    "trailhead": "Ogden Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.theoutbound.com/utah/hiking/ogden-river-parkway-trail"
+  },
+  {
+    "town": "North Salt Lake",
+    "trailhead": "Wild Rose Trailhead Park",
+    "status": "partial",
+    "trails": [
+      "Wild Rose Loop"
+    ],
+    "note": "Sky Crest Lane, reached from Eaglepoint Drive; connectors lead from the park to the Wild Rose Loop.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/wildrose-tg/"
+  },
+  {
+    "town": "North Salt Lake",
+    "trailhead": "Center Street",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "Not found in sources checked.",
+    "source": "https://www.daviscountyutah.gov/health/davis4health/categories/CardsByType/_active-living/29/"
+  },
+  {
+    "town": "Eagle Mountain",
+    "trailhead": "Mountain Ranch Bike Park",
+    "status": "confirmed",
+    "trails": [
+      "110 Loop",
+      "220 Loop",
+      "Juniper Loop",
+      "Golden Eagle Loop"
+    ],
+    "note": "Trail kiosk on Golden Eagle Road; the loops start from the skills area up a cinder path.",
+    "source": "https://utahmountainbiking.com/trails/trailguides/mountain-ranch-tg"
+  },
+  {
+    "town": "Escalante",
+    "trailhead": "Boulder Mail Trail",
+    "status": "confirmed",
+    "trails": [
+      "Boulder Mail Trail"
+    ],
+    "note": "East end of Hell's Backbone Road at milepost 84 on UT 12, about 22.7 miles northeast of Escalante; the trailhead is closer to Boulder.",
+    "source": "https://www.visitutah.com/places-to-go/parks-outdoors/grand-staircase-escalante/hiking/boulder-mail-death-hollow"
+  },
+  {
+    "town": "Kaysville",
+    "trailhead": "East Mountain Wild Park",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail"
+    ],
+    "note": "Dirt lot reached from 400 N off Route 89 in Fruit Heights; the northbound Bonneville Shoreline Trail starts here.",
+    "source": "https://summitpost.org/east-mtn-wilderness-park/333935"
+  },
+  {
+    "town": "Farmington",
+    "trailhead": "Bella Vista Court",
+    "status": "confirmed",
+    "trails": [
+      "Bonneville Shoreline Trail",
+      "Shepard Creek Trail"
+    ],
+    "note": "City guide names it Bella Vista Drive; both trails have access points there.",
+    "source": "https://farmington.utah.gov/wp-content/uploads/2023/07/2023-Trails-Book-Web-Version-reduced.pdf"
+  },
+  {
+    "town": "Farmington",
+    "trailhead": "Farmington Canyon",
+    "status": "confirmed",
+    "trails": [
+      "Farmington Creek Trail"
+    ],
+    "note": "Trailhead with parking where the pavement ends at a switchback.",
+    "source": "https://farmington.utah.gov/wp-content/uploads/2023/07/2023-Trails-Book-Web-Version-reduced.pdf"
+  },
+  {
+    "town": "Farmington",
+    "trailhead": "Farmington City",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "City guide lists no trailhead by this name; its Historic Trail tour starts at City Hall, 160 S. Main St.",
+    "source": "https://farmington.utah.gov/wp-content/uploads/2023/07/2023-Trails-Book-Web-Version-reduced.pdf"
+  },
+  {
+    "town": "Alta",
+    "trailhead": "Albion Basin",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Bluffdale",
+    "trailhead": "Arrowhead",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Brian Head",
+    "trailhead": "Brian Head",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Cedar Hills",
+    "trailhead": "Canyon Road",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Fruit Heights",
+    "trailhead": "Baer Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Hideout",
+    "trailhead": "Jordanelle (Longview)",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Independence",
+    "trailhead": "Center Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Lindon",
+    "trailhead": "Lindon Murdock Canal",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Mantua",
+    "trailhead": "Mantua Reservoir",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Mantua",
+    "trailhead": "Willard Peak",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Mapleton",
+    "trailhead": "Maple Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Monticello",
+    "trailhead": "Millsite Primary",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "North Logan",
+    "trailhead": "King Park",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "North Ogden",
+    "trailhead": "Mountain Road",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Perry",
+    "trailhead": "Perry Canyon",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Pleasant Grove",
+    "trailhead": "Wade Springs",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Price",
+    "trailhead": "Devils Backbone",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Riverdale",
+    "trailhead": "Riverdale Drive",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Rockville",
+    "trailhead": "Grafton Mesa",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Santa Clara",
+    "trailhead": "Cove Wash",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Santa Clara",
+    "trailhead": "Gates Lane",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Saratoga Springs",
+    "trailhead": "Flight Park",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Springdale",
+    "trailhead": "Visitor Center",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "Wellsville",
+    "trailhead": "Sherwood Hills",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "West Bountiful",
+    "trailhead": "Mill Creek",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  },
+  {
+    "town": "West Bountiful",
+    "trailhead": "Sheep Road",
+    "status": "unconfirmed",
+    "trails": [],
+    "note": "No source reviewed ties this trailhead to named trails. Left blank.",
+    "source": ""
+  }
+]
