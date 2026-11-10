@@ -63,6 +63,10 @@ body {
 .font-sans {
   font-family: var(--font-sans);
 }
+/* Georgia, for terms with letters Roboto Slab lacks */
+.font-georgia {
+  font-family: Georgia, serif;
+}
 /* Zilla Slab, the logo font (bold only) */
 .font-zilla {
   font-family: "Zilla Slab", Georgia, serif;
