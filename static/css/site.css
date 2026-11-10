@@ -165,6 +165,11 @@ a:hover {
   background-image: linear-gradient(to bottom, #f8f9fa, #e9ecef);
 }
 
+.bg-lighter-gradient {
+  background-color: #fcfcfd;
+  background-image: linear-gradient(to bottom, #fcfcfd, #f3f4f6);
+}
+
 /* Light gradient button with a thin border and small shadow ("Post Office",
    the county boxes, the skip link, the map corner buttons) */
 .btn-light-box {

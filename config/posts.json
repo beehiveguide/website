@@ -13,18 +13,6 @@
     "shareImage": "images/share-chokecherries.jpg"
   },
   {
-    "slug": "chicory-a-weed-or-useful-nuisance",
-    "title": "Chicory: A Weed or Useful Nuisance?",
-    "date": "2026-11-02",
-    "author": "Terence Larson",
-    "lead": "Chicory's blue flowers brighten roadsides across the country, but some states call it a noxious weed. Learn how to spot it, what it's good for and how to keep it in check.",
-    "topics": [
-      "Weeds"
-    ],
-    "photo": "chicory-flowers",
-    "shareImage": "images/share-chicory.jpg"
-  },
-  {
     "slug": "wong-sing-frontier-merchant",
     "title": "Wong Sing, Eastern Utah's Frontier Merchant",
     "shortTitle": "Wong Sing, Frontier Merchant",
@@ -36,6 +24,18 @@
     ],
     "photo": "wong-sing-collage",
     "shareImage": "images/share-wong-sing.jpg"
+  },
+  {
+    "slug": "chicory-a-weed-or-useful-nuisance",
+    "title": "Chicory: A Weed or Useful Nuisance?",
+    "date": "2026-11-02",
+    "author": "Terence Larson",
+    "lead": "Chicory's blue flowers brighten roadsides across the country, but some states call it a noxious weed. Learn how to spot it, what it's good for and how to keep it in check.",
+    "topics": [
+      "Weeds"
+    ],
+    "photo": "chicory-flowers",
+    "shareImage": "images/share-chicory.jpg"
   },
   {
     "slug": "what-is-the-uintah-special-meridian",
