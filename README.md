@@ -180,11 +180,51 @@ To add a post:
 4. Write the body in `posts/<slug>.html` as plain HTML with `<h2>` and `<h3>` headings. Put `{Photo id}` on its own line for a photo and `{Video youtubeId | caption | credit}` for a YouTube video. The credit, like "Bureau of Land Management/YouTube," links to the video on YouTube.
 5. Run `npm run pages`.
 
+## Bookshop and Awin
+
+Ads are picked in the visitor's browser, so each page view can differ. `scripts/lib/affiliate.js` turns the config files into `public/js/ads-data.js`, and `static/js/ads.js` fills the ad spots from it. A local `npm run pages` shows gray placeholders; `npm run deploy` adds `--live-ads` so the live site gets the real Bookshop and Awin ads.
+
+**Config**
+
+- `affiliate` in `config/site.json`: `mode` (`"on"`), `followShare` (0.2, so every 5th page view), `followWeights` (how often each Follow channel comes up: Instagram 5, YouTube 3, Threads 1) and `bookshopShare` (0.35, so every 3rd view).
+- `config/bookshop.json`: each book's `isbn` (the widget SKU), `title` and `topics`. `featuredOnly` books work only in the sidebar widget. `disabled` books are skipped (use it for a book whose widget shows a 404).
+- `config/awin.json`: `images` (the pictures), `text` (text links), `brandCopy` (the title, line and link text under a card, per brand), `brandTopics` (tags per brand) and `textPageShare` (0 turns text links off).
+- Picture fields: `shape` is `box` (bottom row), `banner` (wide, top of page), `tall` or `side` (sidebar). Optional: `title` and `text` (copy beside a logo banner), `flip` (makes the first line the big link), `logo` and `logoWidth` (logo card), `pad` (white padding around the picture), `bare` (no text under the card) and `native` (shows at its own size).
+
+**Tags**
+
+Books and Awin brands can have several `topics`. Default spots use only those tagged `general` (broad interest); if none are tagged, everything is used. Other tags (books use general, food-cooking, gardening, homesteading, small-farms, crafts-hobbies, outdoors-nature, native-american, history; Awin brands use general, auto, pets, home, food-cooking) are for spots that ask for a topic. Examples, are for spots that ask for a topic. No spot asks for one yet.
+
+**What goes where**
+
+- **Bottom row (three cards):** Awin cards, each a different brand, moving on each page view. On every 3rd view the row is three random books instead. Books and Awin are never mixed in one row.
+- **Shop banner:** a Bookshop banner ("Beehive Guide Bookshop", linking to `affiliate.shopUrl`) comes up in the same rotation as the Follow banners. Its weight is `followWeights.Bookshop` (0 or missing turns it off).
+- **Top of page:** a Follow banner (Instagram, YouTube or Threads, weighted) on every 5th view, otherwise a wide Awin banner.
+- **Town pages:** the mid-page spot sits above Growing Info. It gets a wide Awin banner without logo-only ads, a Follow banner, or on some views a row of three books. When it shows books, the bottom row is Awin, so books don't repeat. It shows on phones too; a book row shows just one book there.
+- **Sidebar on posts:** on alternate views a tall Awin card, otherwise a featured book.
+- **Text links:** off (`textPageShare` is 0). When on, they show every Nth view, skip brands already on the page, and brands with pictures come up only every fifth time.
+- A sponsor never appears twice on one page, and each visitor's page-view count (kept in the browser) drives the rotation.
+
+**Turning ads off**
+
+- Add `"disabled": true` to any book, picture or text link (set it back to `false` or delete it to bring it back).
+- To switch off every ad from one Awin brand, put its name in `disabledBrands` in `config/awin.json`, like `["Ottocast"]`.
+- `affiliate.mode` in `config/site.json` turns all the affiliate ads off or on.
+
+**Dates and broken ads**
+
+- For an expiring Awin promo (a sale or code), add `"ends": "2026-12-31"` (YYYY-MM-DD) to that picture or text link. Books can use it too, but rarely need it. It stops showing after that date, both in the build and in the visitor's browser, so a promo ends on its day even without a deploy.
+- `npm run check-ads` tests every book (Bookshop widget) and every Awin picture and link. It writes the broken ones to `config/ads-broken.json`, and the build leaves them out. `npm run deploy` runs it first. If the network is down it changes nothing.
+- In the browser, a picture that fails to load, or a book whose widget never draws, hides its own ad.
+- Awin also emails when an advertiser ends a partnership. Remove that brand's pictures from `awin.json`.
+
 ## Ads and Tag Manager
+
+- **Current setup:** AdSense isn't approved and isn't expected to be, so `ads.mode` is `"off"`. The ad spots show affiliate ads and Follow banners instead (see Bookshop and Awin above). The AdSense `client`, `slots` and unit IDs below stay saved in case that changes: set `ads.mode` back to `"on"` and AdSense takes any spot that has a slot ID, with affiliate ads filling the rest. The cookie box asks about ads only while AdSense is on.
 
 - `ads` in `config/site.json` sets the ad mode: `"off"` (no ads), `"setup"` (gray placeholders where ads will go) or `"on"` (Google AdSense). `client` is the AdSense publisher ID (`ca-pub-...`), and each spot under `slots` needs its ad unit's slot ID before it shows.
 - The AdSense script (`adsbygoogle.js`) loads through Google Tag Manager (`gtm` in `config/site.json`), not from the build. In Tag Manager it's a Custom HTML tag with the All Pages trigger and "No additional consent required." AdSense reads the visitor's privacy choices itself.
-- Town page ads go between sections, counting Growing Info as a section. 1 to 4 sections: below the Sources list. 5 or more: above Growing Info and below the Sources list. The first ad on a page is the main one (`town-middle`), the second the optional one (`town-lower`). The rules are `TOWN_AD_RULES` in `10_pages.js`.
+- Town page ads (AdSense): the main ad (`town-middle`) goes above Growing Info on every town page, and the optional one (`town-lower`) below the Sources list. The rules are `TOWN_AD_RULES` in `10_pages.js`.
 - `static/ads.txt` lists the AdSense account and is copied to the site root.
 - AdSense ad units, made and waiting for site approval. To turn ads on, put each ID in its spot under `slots` in `config/site.json`. Spots ending in `-resp` also show on phones.
 

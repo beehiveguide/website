@@ -6,6 +6,7 @@
     "build": "node scripts/build.js",
     "pages": "node scripts/10_pages.js",
     "serve": "firebase emulators:start --only hosting",
-    "deploy": "npm run build && node scripts/10_pages.js --clean-links && firebase deploy --only hosting && node scripts/10_pages.js"
+    "deploy": "npm run build && node scripts/check-ads.js && node scripts/10_pages.js --clean-links --live-ads && firebase deploy --only hosting && node scripts/10_pages.js",
+    "check-ads": "node scripts/check-ads.js"
   }
 }

@@ -1,0 +1,1022 @@
+{
+  "_notes": "Bookshop.org books. isbn is the widget SKU. Add title and topics (like general, gardening, utah-history, camping) to each book; a book can have several topics. Books tagged general (broad interest) fill every spot that has no specific topic; pages pick books whose topics match, then fill with the rest. featuredOnly books work only in the featured widget (sidebar). disabled books are skipped.",
+  "affiliateId": "131234",
+  "books": [
+    {
+      "isbn": "9781948218191",
+      "title": "The Bear River Massacre",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9780803293052",
+      "title": "Mormon Country",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781942934783",
+      "title": "Make Your Own Cheese",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781945547836",
+      "title": "437 Edible Wild Plants of the Rocky Mountains",
+      "topics": [
+        "gardening",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781599555102",
+      "title": "Forgotten Skills of Self-Sufficiency",
+      "topics": [
+        "general",
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9781944822552",
+      "title": "Successful Gardening in Utah",
+      "topics": [
+        "general",
+        "gardening",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781942934080",
+      "title": "No-Till Gardening",
+      "topics": [
+        "general",
+        "gardening"
+      ]
+    },
+    {
+      "isbn": "9781462113439",
+      "title": "More Forgotten Skills of Self-Sufficiency",
+      "topics": [
+        "general",
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9781462113774",
+      "title": "Forgotten Skills of Backyard Herbal Healing",
+      "topics": [
+        "general",
+        "gardening",
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9781945547348",
+      "title": "Simple Homemade Fruit Pectin",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781607812081",
+      "title": "Plain But Wholesome",
+      "topics": [
+        "general",
+        "food-cooking",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781462110940",
+      "title": "Backyard Winter Gardening",
+      "topics": [
+        "general",
+        "gardening"
+      ]
+    },
+    {
+      "isbn": "9780878426188",
+      "title": "Roadside Geology of Utah",
+      "topics": [
+        "general",
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9798999018434",
+      "title": "Wild Edible Plants of Utah",
+      "topics": [
+        "gardening",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781934553800",
+      "title": "Wildflowers of Utah's Colorado Plateau",
+      "topics": [
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9780874218244",
+      "title": "Woody Plants of Utah",
+      "topics": [
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781643261553",
+      "title": "50 Hikes with Kids Utah and Nevada",
+      "topics": [
+        "general",
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781646427871",
+      "title": "Utah in the Twentieth Century",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781531636050",
+      "title": "Coal Camps of Eastern Utah",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781493028382",
+      "title": "Utah Myths and Legends",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9780486209746",
+      "title": "Five Acres and Independence",
+      "topics": [
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9781612127446",
+      "title": "Temple Grandin's Guide to Working with Farm Animals",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781635866711",
+      "title": "Farm-Raised Kids",
+      "topics": [
+        "history",
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781612125275",
+      "title": "Maintaining Small-Farm Equipment",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781580171618",
+      "title": "Making Your Small Farm Profitable",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781580176972",
+      "title": "Starting & Running Your Own Small Farm Business",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781548949570",
+      "title": "Mini Farming",
+      "topics": [
+        "homesteading",
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9798294772697",
+      "title": "Raising Dairy Sheep For Beginners",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9798897080502",
+      "title": "Chicken Coops, 2nd Edition",
+      "topics": [
+        "general",
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781601076984",
+      "title": "Small Farm Handbook",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781324096689",
+      "title": "American Zion",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781324091103",
+      "title": "Kingdom of Nauvoo",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781643260808",
+      "title": "Wild Wasatch Front",
+      "topics": [
+        "general",
+        "history",
+        "outdoors-nature"
+      ],
+      "featuredOnly": true
+    },
+    {
+      "isbn": "9780762739806",
+      "title": "Best Easy Day Hikes Utah's High Uintas",
+      "topics": [
+        "general",
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781523306435",
+      "title": "Cowboys, Indians, Outlaws and Ghost Towns",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781423644323",
+      "title": "Dictionary of Utah Fine Artists",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9780578308036",
+      "title": "Vintage Signs of Utah",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9780870816475",
+      "title": "Ute Indians of Utah, Colorado, and New Mexico",
+      "topics": [
+        "history",
+        "native-american"
+      ],
+      "featuredOnly": true
+    },
+    {
+      "isbn": "9781531677619",
+      "title": "Pony Express in Utah",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9780874213836",
+      "title": "A History of Utah's American Indians",
+      "topics": [
+        "history",
+        "native-american"
+      ]
+    },
+    {
+      "isbn": "9780998696065",
+      "title": "A History of La Sal, Utah",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781493036264",
+      "title": "It Happened in Utah",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781646428083",
+      "title": "From the Ground Up",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781626199767",
+      "title": "A History of Mormon Landmarks in Utah",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781535187787",
+      "title": "BYU vs. Utah",
+      "topics": []
+    },
+    {
+      "isbn": "9780874215885",
+      "title": "Folklore in Utah",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781423665809",
+      "title": "When Hollywood Came to Utah",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781838699857",
+      "title": "Lonely Planet Utah's National Parks",
+      "topics": [
+        "general",
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781591864349",
+      "title": "Rocky Mountain Month-By-Month Gardening",
+      "topics": [
+        "gardening"
+      ]
+    },
+    {
+      "isbn": "9781629727363",
+      "title": "Pioneering the Vote",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781560852728",
+      "title": "Utah Politics",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781467142427",
+      "title": "Utah Women",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781682680827",
+      "title": "Backroads & Byways of Utah",
+      "topics": [
+        "general",
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9780988420076",
+      "title": "Utah's Canyon Country Place Names, Vol. 1",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781641705745",
+      "title": "U Is for Utah",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781035862214",
+      "title": "The Rock Art of Moab, Utah",
+      "topics": [
+        "history",
+        "native-american",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781647556570",
+      "title": "Critters of Utah",
+      "topics": [
+        "general",
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781665713207",
+      "title": "Shadowy Remains of Utah Towns",
+      "topics": [
+        "general",
+        "history"
+      ],
+      "featuredOnly": true
+    },
+    {
+      "isbn": "9781462120567",
+      "title": "Utah's Hidden Treasure",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781493022694",
+      "title": "Utah Curiosities",
+      "topics": [
+        "general",
+        "history"
+      ]
+    },
+    {
+      "isbn": "9781423668664",
+      "title": "Count On Utah",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9780874808643",
+      "title": "Wasatch Eleveners",
+      "topics": [
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781607817406",
+      "title": "This Is the Plate",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781510770362",
+      "title": "Small-Scale Homesteading",
+      "topics": [
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9781629143668",
+      "title": "Homesteading",
+      "topics": [
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9781510712904",
+      "title": "Homesteading From Scratch",
+      "topics": [
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9798742739302",
+      "title": "Escape the City volume 2",
+      "topics": [
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9781626545977",
+      "title": "Homesteading",
+      "topics": [
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9781511834339",
+      "title": "Urban Homesteading",
+      "topics": [
+        "general",
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9780848746780",
+      "title": "The All New Ball Book of Canning and Preserving",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9780736978941",
+      "title": "The Homestead Canning Cookbook",
+      "topics": [
+        "food-cooking",
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9780848754525",
+      "title": "Ball Canning Back to Basics",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781915818027",
+      "title": "The Essential Guide to Pressure Canning",
+      "topics": [
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781616082659",
+      "title": "The Homesteading Handbook",
+      "topics": [
+        "general",
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9781645673408",
+      "title": "Pressure Canning for Beginners and Beyond",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781577157571",
+      "title": "A Healthy Home Flock",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781641524056",
+      "title": "The Beginner's Guide to Raising Chickens",
+      "topics": [
+        "general",
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9780760352427",
+      "title": "The Chicken Chick's Guide to Backyard Chickens",
+      "topics": [
+        "general",
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781603584784",
+      "title": "Keeping a Family Cow",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781645023128",
+      "title": "One-Cow Revolution",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9780760340677",
+      "title": "The Family Cow Handbook",
+      "topics": [
+        "small-farms"
+      ],
+      "disabled": true
+    },
+    {
+      "isbn": "9780882660660",
+      "title": "The Family Cow",
+      "topics": [
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781647554071",
+      "title": "Birds of Utah Field Guide",
+      "topics": [
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781493089321",
+      "title": "Exploring Utah's Bears Ears and Cedar Mesa",
+      "topics": [
+        "history",
+        "outdoors-nature"
+      ]
+    },
+    {
+      "isbn": "9781583552513",
+      "title": "Utah Trees & Wildflowers",
+      "topics": [
+        "history",
+        "outdoors-nature"
+      ],
+      "featuredOnly": true
+    },
+    {
+      "isbn": "9781502674890",
+      "title": "Ute History and Culture",
+      "topics": [
+        "history",
+        "native-american"
+      ]
+    },
+    {
+      "isbn": "9798317900953",
+      "title": "The Blue Corn Kitchen",
+      "topics": [
+        "general",
+        "food-cooking",
+        "native-american"
+      ]
+    },
+    {
+      "isbn": "9781577154679",
+      "title": "The Modern Navajo Kitchen",
+      "topics": [
+        "general",
+        "food-cooking",
+        "native-american"
+      ]
+    },
+    {
+      "isbn": "9780816526604",
+      "title": "Reclaiming Diné History",
+      "topics": [
+        "history",
+        "native-american"
+      ]
+    },
+    {
+      "isbn": "9780826358875",
+      "title": "Food Sovereignty the Navajo Way",
+      "topics": [
+        "food-cooking",
+        "native-american"
+      ]
+    },
+    {
+      "isbn": "9780826310439",
+      "title": "Diné Bahane'",
+      "topics": [
+        "native-american"
+      ]
+    },
+    {
+      "isbn": "9780306827297",
+      "title": "Seed to Plate, Soil to Sky",
+      "topics": [
+        "general",
+        "gardening"
+      ]
+    },
+    {
+      "isbn": "9781502675064",
+      "title": "Shoshone History and Culture",
+      "topics": [
+        "history",
+        "native-american"
+      ]
+    },
+    {
+      "isbn": "9781495124242",
+      "title": "The Paiute Indian Nation",
+      "topics": [
+        "native-american"
+      ]
+    },
+    {
+      "isbn": "9781628736151",
+      "title": "The Farmer's Kitchen Handbook",
+      "topics": [
+        "general",
+        "food-cooking",
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9780865718180",
+      "title": "Mastering Basic Cheesemaking",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781620230077",
+      "title": "The Complete Guide to Making Cheese, Butter, and Yogurt at Home",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781519625649",
+      "title": "Cheese Making for Beginners",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781623157944",
+      "title": "The Beginner's Guide to Cheese Making",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781548798772",
+      "title": "Beginners Guide to Making Homemade Cheese, Butter and Yogurt",
+      "topics": [
+        "food-cooking"
+      ],
+      "disabled": true
+    },
+    {
+      "isbn": "9781607740087",
+      "title": "Artisan Cheese Making at Home",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781645679011",
+      "title": "Easy Everyday Sourdough Bread Baking",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9798890031365",
+      "title": "The Sourdough Bible",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9780593234297",
+      "title": "Richard Hart Bread",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781645675242",
+      "title": "Gluten-Free Sourdough Baking",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781645674849",
+      "title": "The Sourdough Whisperer",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9798890033161",
+      "title": "The Beginner's Guide to Sourdough",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9780593967645",
+      "title": "Sourdough Everything",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781624144295",
+      "title": "Artisan Sourdough Made Simple",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9780857837752",
+      "title": "Crust",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781555171575",
+      "title": "Stories from Mormon History",
+      "topics": [
+        "history"
+      ]
+    },
+    {
+      "isbn": "9798233182389",
+      "title": "The Complete Fresh Milled Flour Sourdough",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781645674221",
+      "title": "The Sweet Side of Sourdough",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9780593800768",
+      "title": "The Perfect Pizza",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9780593138410",
+      "title": "The Perfect Loaf",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781517370848",
+      "title": "Indoor Gardening",
+      "topics": [
+        "general",
+        "gardening"
+      ]
+    },
+    {
+      "isbn": "9781717074881",
+      "title": "Smoker Cookbook",
+      "topics": [
+        "general",
+        "crafts-hobbies",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781638071075",
+      "title": "The Complete Guide to Smoking Meat",
+      "topics": [
+        "general",
+        "crafts-hobbies",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781446309858",
+      "title": "Mix and Match Modern Crochet Blankets",
+      "topics": [
+        "general",
+        "crafts-hobbies"
+      ]
+    },
+    {
+      "isbn": "9781790129539",
+      "title": "Smoker Cookbook",
+      "topics": [
+        "general",
+        "crafts-hobbies",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781620331293",
+      "title": "Crochet Stitch Dictionary",
+      "topics": [
+        "general",
+        "crafts-hobbies"
+      ]
+    },
+    {
+      "isbn": "9781580174572",
+      "title": "A Guide to Canning, Freezing, Curing, & Smoking",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781423656784",
+      "title": "Backyard Homesteader",
+      "topics": [
+        "homesteading"
+      ]
+    },
+    {
+      "isbn": "9798887075815",
+      "title": "Crochet How",
+      "topics": [
+        "general",
+        "crafts-hobbies"
+      ]
+    },
+    {
+      "isbn": "9781525541575",
+      "title": "The Old Fat Guy's Guide to Smoking Meat",
+      "topics": [
+        "general",
+        "crafts-hobbies",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781986485340",
+      "title": "How To Keep Bees",
+      "topics": [
+        "general",
+        "small-farms"
+      ]
+    },
+    {
+      "isbn": "9781072959182",
+      "title": "Wood Pellet Smoker and Grill Cookbook",
+      "topics": [
+        "general",
+        "crafts-hobbies",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9781500516642",
+      "title": "Cheese Making",
+      "topics": [
+        "general",
+        "food-cooking"
+      ]
+    },
+    {
+      "isbn": "9780982173367",
+      "title": "How to Restore Tractor Magnetos",
+      "topics": [
+        "crafts-hobbies"
+      ]
+    }
+  ]
+}

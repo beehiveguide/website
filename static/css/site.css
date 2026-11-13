@@ -1327,3 +1327,358 @@ a.marker-link:focus {
   border: 1px solid #adb5bd;
   font-weight: 600;
 }
+
+/* Affiliate rows (Bookshop books and Awin ads) */
+.affiliate-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  text-align: center;
+}
+.affiliate-box img {
+  display: block;
+  margin: 0 auto;
+}
+.affiliate-text {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #6c757d;
+}
+
+/* "Follow" banners for Beehive Guide's own channels (horizontal ad spots) */
+.house-ad {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  color: #495057;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  font-family: var(--font-sans);
+}
+.house-ad:hover,
+.house-ad:focus {
+  color: #495057;
+  background-color: #f8f9fa;
+}
+.house-logo svg {
+  display: block;
+  width: 3.25rem;
+  height: 3.25rem;
+  color: #495057;
+}
+.house-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+}
+.house-handle {
+  font-size: 0.8rem;
+  color: #5c636a;
+}
+.house-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--highlight);
+  border-radius: 2rem;
+}
+.house-icon svg {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+/* Follow button in each network's own colors */
+.house-instagram .house-btn {
+  background: linear-gradient(45deg, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888);
+}
+.house-youtube .house-btn {
+  background-color: #e60000;
+}
+.house-bookshop .house-btn {
+  background-color: #573ba3;
+}
+.house-threads .house-btn {
+  background-color: #000;
+}
+.affiliate-caption {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+.affiliate-caption a {
+  color: #495057;
+  text-decoration: none;
+}
+.affiliate-caption a:hover,
+.affiliate-caption a:focus {
+  text-decoration: underline;
+}
+
+/* Ad containers that static/js/ads.js fills in */
+[data-ad][hidden] {
+  display: none !important;
+}
+[data-ad-cell] {
+  min-height: 290px;
+}
+.affiliate-card {
+  padding: 0.75rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+}
+.affiliate-banner {
+  display: block;
+  width: 100%;
+  max-width: 728px;
+  height: auto;
+  margin: 0 auto;
+}
+.house-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  color: #6c757d;
+  background-color: #f8f9fa;
+  border: 2px dashed #ced4da;
+}
+.text-placeholder {
+  display: inline-block;
+  padding: 0.15rem 0.75rem;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  border: 2px dashed #ced4da;
+}
+
+/* Ad cards: picture, a rule, then title, copy and link. Every ad has a border. */
+.affiliate-card {
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+}
+/* Bookshop's widget has its own border: none added in the bottom row; the
+   featured book in the sidebar gets a border with padding around it */
+[data-ad-cell] .affiliate-card:has(iframe),
+[data-mid-cell] .affiliate-card:has(iframe) {
+  padding: 0;
+  overflow: visible;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+[data-ad="side"] .affiliate-card:has(iframe) {
+  padding: 0.6rem;
+}
+[data-ad-cell] .ad-slot,
+[data-ad="side"] .ad-slot {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.affiliate-box {
+  flex: 1;
+  align-items: stretch;
+}
+.ad-card-link {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  color: #212529;
+  text-decoration: none;
+}
+.ad-card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid #dee2e6;
+}
+.ad-card-img img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+.ad-card-logo {
+  background-color: #fff;
+}
+.ad-card-logo img {
+  height: auto;
+}
+.ad-card-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0.75rem;
+  text-align: center;
+}
+.ad-card-title {
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+.ad-card-body {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.ad-card-cta {
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+/* Wide Awin banner at the top: boxed, no taller than a banner */
+.affiliate-banner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 728px;
+  min-height: 90px;
+  margin: 0 auto;
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+}
+.affiliate-banner {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 90px;
+  margin: 0 auto;
+}
+.affiliate-banner-box {
+  gap: 1rem;
+}
+.affiliate-banner-logo {
+  margin: 0;
+  flex-shrink: 0;
+  width: auto;
+  max-width: 40%;
+}
+.affiliate-banner-box,
+.affiliate-banner-box:hover {
+  color: #212529;
+  text-decoration: none;
+}
+.affiliate-banner-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+}
+.affiliate-banner-title {
+  font-size: 1.05rem;
+  line-height: 1.25;
+  color: #212529;
+}
+.affiliate-banner-text {
+  font-size: 0.95rem;
+  line-height: 1.3;
+  color: #495057;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+}
+.affiliate-banner-flip .affiliate-banner-title {
+  font-size: 1.3rem;
+  text-decoration: underline;
+}
+.affiliate-banner-flip .affiliate-banner-text {
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.affiliate-banner-box:not(:has(.affiliate-banner-logo)) {
+  padding: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+.affiliate-banner-box:has(.affiliate-banner-logo) {
+  padding: 0.75rem 2rem 0.75rem 1rem;
+}
+/* Tall pictures (sidebar): as wide and tall as the card, no height cap */
+.ad-card-img-tall {
+  display: block;
+  aspect-ratio: auto;
+}
+.ad-card-img-tall img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+}
+.ad-card-img-pad {
+  padding: 1.25rem;
+}
+
+/* Bookshop books in the bottom row sit centered in their columns */
+[data-ad-cell] .affiliate-card:has(iframe),
+[data-mid-cell] .affiliate-card:has(iframe) {
+  display: flex;
+  justify-content: center;
+}
+
+/* Ad links hover like dark links, not the red link color */
+.ad-card-link:hover,
+.ad-card-link:focus,
+.affiliate-banner-box:hover,
+.affiliate-banner-box:focus {
+  color: var(--dark-hover);
+}
+.ad-card-link:hover .ad-card-cta,
+.ad-card-link:focus .ad-card-cta,
+.affiliate-banner-box:hover .affiliate-banner-title,
+.affiliate-banner-box:hover .affiliate-banner-text,
+.affiliate-banner-box:focus .affiliate-banner-title,
+.affiliate-banner-box:focus .affiliate-banner-text {
+  color: var(--dark-hover) !important;
+}
+
+/* Mid-page book row: more space above, less below */
+.ad-books-mid {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Skyscraper ads (160x600) show at their own size, centered in the sidebar card */
+.ad-card-img-native {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 0;
+}
+.ad-card-img-native img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+}
+
+/* Book cards: the label sits right on top of the widget's own border */
+[data-ad-cell]:has(iframe) .ad-label,
+[data-mid-cell] .ad-label {
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+/* Pictures with no text under them: no rule or empty space below */
+.ad-card-link > .ad-card-img:last-child {
+  border-bottom: 0;
+}

@@ -21,6 +21,7 @@ const fs = require("fs");
 const path = require("path");
 const paths = require("./lib/paths");
 const { AP_MONTHS } = require("./lib/ap_months");
+const { buildData: affiliateData } = require("./lib/affiliate");
 
 const site = paths.readJson(paths.config("site.json"));
 const SOURCE_LIST = paths.readJson(paths.source("sources.json"));
@@ -64,6 +65,7 @@ for (let i = 0; i < args.length; i++) {
   if (args[i] === "--out") outDir = path.resolve(paths.dirs.root, args[++i]);
   // Links without ".html" (for Firebase); "npm run deploy" builds this way
   else if (args[i] === "--clean-links") site.cleanLinks = true;
+  else if (args[i] === "--live-ads") continue; // read in scripts/lib/affiliate.js
   else wanted.push(args[i]);
 }
 
@@ -456,6 +458,14 @@ const AD_SPOTS = {
   "post-bottom-3": "rect",
   "post-side": "rect",
 };
+// Affiliate ads and Follow banners (see scripts/lib/affiliate.js and
+// static/js/ads.js). Bookshop and Awin go in only with --live-ads.
+const AFFILIATE = site.affiliate?.mode === "on";
+const LIVE_ADS = process.argv.includes("--live-ads");
+const AFFILIATE_DATA = AFFILIATE ? affiliateData(site, LIVE_ADS) : null;
+const AFFILIATE_DATA_JS = AFFILIATE
+  ? `window.BEEHIVE_ADS=${JSON.stringify(AFFILIATE_DATA)};\n`
+  : "";
 function adSpot(name, margin = "mb-4") {
   const shapeName = AD_SPOTS[name],
     shape = AD_SHAPES[shapeName];
@@ -471,19 +481,29 @@ function adSpot(name, margin = "mb-4") {
       "{Ad Margin}": margin,
       "{Ad Body}": `<ins class="adsbygoogle ad-box ad-${shapeName}" data-ad-client="${esc(ADS.client)}" data-ad-slot="${esc(ADS.slots[name])}" data-ad-format="${shape.format}" data-full-width-responsive="true"></ins>\n  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>`,
     }).trim();
+  // No AdSense: the top and mid-page banner spots are empty containers that
+  // static/js/ads.js sometimes fills with a "Follow" banner for one of the
+  // social channels. The optional lower spot stays empty.
+  if (AFFILIATE && shapeName === "banner" && name !== "town-lower")
+    return `<aside data-ad="follow" class="ad-slot ad-on ${margin}" aria-label="Follow Beehive Guide" hidden></aside>`;
   return "";
 }
 // A row of ads at the bottom of a page. The first shows on every screen; the
 // rest appear as the screen gets wide enough for them.
 function adRow(spots, cols, rowClass) {
   const ads = spots.map((n) => adSpot(n, "mb-0")); // the row's gutters space them
+  if (!ads.some(Boolean) && AFFILIATE) {
+    // No AdSense: empty cells that static/js/ads.js fills with Awin pictures or
+    // a Bookshop book, plus a spot for a text link
+    return `<div data-ad="row" class="row justify-content-center g-4 ${rowClass}">\n${cols.map((c) => `  <div class="${c}" data-ad-cell></div>`).join("\n")}\n</div>\n<p data-ad="text" class="affiliate-text font-sans" hidden></p>`;
+  }
   if (!ads.some(Boolean)) return "";
   return `<div class="row justify-content-center g-4 ${rowClass}">\n${ads.map((ad, i) => `  <div class="${cols[i]}">${ad}</div>`).join("\n")}\n</div>`;
 }
 const adSpots = () => ({
   "{Ad home-top-resp}": adSpot("home-top-resp"),
   "{Ad town-top-resp}": adSpot("town-top-resp"),
-  "{Ad town-middle}": adSpot("town-middle", "mb-5 d-none d-md-block"), // not on phones
+  "{Ad town-middle}": adSpot("town-middle", "mb-5"), // above Growing Info, phones too
   "{Ad town-lower}": adSpot("town-lower", "mb-5 d-none d-md-block"), // not on phones
   // On home, a rule sets the ads apart from the town list
   "{Ads home-bottom}": ((row) =>
@@ -514,7 +534,11 @@ const adSpots = () => ({
   "{Ad post-top-resp}": adSpot("post-top-resp"),
   // In the sidebar, below the tags; wide screens only, so phones get just
   // the one square at the bottom
-  "{Ad post-side}": adSpot("post-side", "mb-4 d-none d-lg-block"),
+  "{Ad post-side}":
+    adSpot("post-side", "mb-4 d-none d-lg-block") ||
+    (AFFILIATE
+      ? `<div data-ad="side" class="mb-4 d-none d-lg-block"></div>`
+      : ""),
   "{Ads post-bottom}": adRow(
     ["post-bottom-1-resp", "post-bottom-2", "post-bottom-3"],
     [
@@ -537,17 +561,25 @@ const adSpots = () => ({
 // The AdSense script itself (adsbygoogle.js) loads through Google Tag Manager
 // as a Custom HTML tag, not from here. The ad units above still need "client".
 
-// Privacy choices ("consentBanner" in config/site.json): analytics and ad
-// cookies start off for every Google tag (Consent Mode) until the visitor
-// picks in the box (templates/parts/consent.html, static/js/consent.js).
+// Privacy choices ("consentBanner" in config/site.json): visitors whose
+// browser time zone is in Europe (the UK and EU, plus a few nearby) get the box,
+// and analytics and ad cookies start off for them (Consent Mode) until they
+// pick in the box. Everyone else is counted by default and sees no box or
+// footer button (templates/parts/consent.html, static/js/consent.js).
 // This has to come before any Google tag in the head.
 const CONSENT_DEFAULTS = site.consentBanner
   ? `<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
-gtag("consent", "default", { analytics_storage: "denied", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", wait_for_update: 500 });</script>`
+window.beehiveEU = (function () { try { var z = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; return !z || /^(Europe\\/|Atlantic\\/(Azores|Canary|Madeira|Faroe|Reykjavik))/.test(z); } catch (e) { return true; } })();
+gtag("consent", "default", { analytics_storage: window.beehiveEU ? "denied" : "granted", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", wait_for_update: 500 });</script>`
   : "";
 
 // The box asks about ads only when ads are set up or on; otherwise just analytics.
-const CONSENT_ADS = ADS.mode !== "off";
+// Affiliate ads (Bookshop, Awin) and the Follow banners are plain links that
+// show for everyone, so they don't count: the Ads switch appears only when
+// AdSense is on with at least one ad unit (or in setup mode).
+const CONSENT_ADS =
+  ADS.mode === "setup" ||
+  (ADS.mode === "on" && Object.values(ADS.slots || {}).some(Boolean));
 // With ads, "Choices" opens a switch for each kind; with analytics only, the
 // two buttons say it all, so there are no switches.
 const CONSENT_BOX = fill(template("parts/consent.html"), {
@@ -603,6 +635,7 @@ const VERSION = require("crypto")
       "css/site.css",
       "js/maps.js",
       "js/consent.js",
+      "js/ads.js",
       "js/schools.js",
       "leaflet/leaflet.js",
       "leaflet/leaflet.css",
@@ -610,6 +643,12 @@ const VERSION = require("crypto")
       .map((f) => fs.readFileSync(path.join(paths.dirs.root, "static", f)))
       .join(""),
   )
+  .digest("hex")
+  .slice(0, 8);
+
+const ADS_DATA_VERSION = require("crypto")
+  .createHash("md5")
+  .update(AFFILIATE_DATA_JS)
   .digest("hex")
   .slice(0, 8);
 
@@ -722,6 +761,9 @@ function wrapPage(
     scripts,
     site.consentBanner
       ? `<script defer src="${root}js/consent.js?v=${VERSION}"></script>`
+      : "",
+    AFFILIATE
+      ? `<script src="${root}js/ads-data.js?v=${ADS_DATA_VERSION}"></script>\n<script defer src="${root}js/ads.js?v=${VERSION}"></script>`
       : "",
   ]
     .filter(Boolean)
@@ -924,12 +966,8 @@ function fireText(t) {
     else if (own) sentences.push(`${capFirst(name)} has ${plural(n, "station")}.`);
     else sentences.push(`${capFirst(name)} has ${n === 1 ? "a station" : plural(n, "station")} in ${town}.`);
   }
-  if (loose)
-    sentences.push(
-      groups.size
-        ? `${town} also has ${loose === 1 ? "another fire station" : plural(loose, "other fire station")}.`
-        : `${town} has ${loose === 1 ? "a fire station" : plural(loose, "fire station")}.`,
-    );
+  // Unnamed extra stations are left out when named departments exist
+  if (loose && !groups.size) sentences.push(`${town} has ${loose === 1 ? "a fire station" : plural(loose, "fire station")}.`);
   return { serving, sentences };
 }
 
@@ -1563,7 +1601,8 @@ function hasGovernment(t) {
 }
 function governmentHtml(t) {
   const gov = hasGovernment(t);
-  const water = (t.services && t.services.water) || [];
+  // Skips blank entries (no name), which would leave "comes from ."
+  const water = ((t.services && t.services.water) || []).filter((w) => w.name && w.name.trim());
   if (!gov && !water.length) return "";
   const named = (w) => (/(system|district|company|works|service|water|\bw?id\b|ssd|wcd)/i.test(w.name) ? withThe(w.name).replace(/^(?!the )/i, "the ") : w.name);
   // "the" stays outside the link: the <a>Alta Town Water System</a>
@@ -1640,10 +1679,10 @@ const GROWING_MAX_FT = 8500;
 // second the optional one (town-lower). Pages with more sections than listed
 // use the last rule.
 const TOWN_AD_RULES = [
-  { sections: 1, after: ["sources"] },
-  { sections: 2, after: ["sources"] },
-  { sections: 3, after: ["sources"] },
-  { sections: 4, after: ["sources"] },
+  { sections: 1, after: [0, "sources"] },
+  { sections: 2, after: [0, "sources"] },
+  { sections: 3, after: [0, "sources"] },
+  { sections: 4, after: [0, "sources"] },
   { sections: 5, after: [0, "sources"] }, // and 6 or more
 ];
 const TOWN_AD_SPOTS = ["town-middle", "town-lower"];
@@ -1987,6 +2026,8 @@ function copyDir(from, to) {
   }
 }
 copyDir(path.join(paths.dirs.root, "static"), outDir);
+if (AFFILIATE)
+  fs.writeFileSync(path.join(outDir, "js", "ads-data.js"), AFFILIATE_DATA_JS);
 
 // --- Town pages
 const profileDir = path.join(outDir, "communities");

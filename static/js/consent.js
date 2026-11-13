@@ -2,12 +2,19 @@
 // set up; with analytics only, the box has just Accept and Reject.
 // Saves the visitor's pick in this browser and passes it to
 // Google tags (Consent Mode: Analytics, Ads, AdSense, Tag Manager) and
-// Microsoft Clarity. Until someone picks, analytics and ad cookies stay off
-// (set in the page head). Choices last a year, then the box asks again.
+// Microsoft Clarity. Shown only to visitors in Europe (UK and EU). Until they
+// pick, analytics and ad cookies stay off (set in the page head). Choices last a year, then the box asks again.
 (() => {
   const KEY = "beehive-consent";
   const box = document.getElementById("consent");
   if (!box) return;
+  // Outside Europe (window.beehiveEU is set in the page head from the browser's
+  // time zone): no box and no footer button; analytics counts by default.
+  if (window.beehiveEU === false) {
+    document.querySelectorAll("[data-consent-open]").forEach((a) => (a.hidden = true));
+    window.clarity?.("consentv2", { analytics_Storage: "granted", ad_Storage: "denied" });
+    return;
+  }
   const opts = document.getElementById("consent-options");
   const more = document.getElementById("consent-more");
   const analytics = document.getElementById("consent-analytics");

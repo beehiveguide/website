@@ -24,7 +24,7 @@
     }
   ],
   "ads": {
-    "mode": "on",
+    "mode": "off",
     "client": "ca-pub-1799304604924619",
     "slots": {
       "home-top-resp": "",
@@ -47,6 +47,18 @@
       "post-bottom-3": "",
       "post-side": ""
     }
+  },
+  "affiliate": {
+    "mode": "on",
+    "followShare": 0.2,
+    "followWeights": {
+      "Instagram": 5,
+      "YouTube": 3,
+      "Threads": 1,
+      "Bookshop": 3
+    },
+    "bookshopShare": 0.35,
+    "shopUrl": "https://bookshop.org/shop/beehiveguide"
   },
   "consentBanner": true,
   "gtm": "GTM-WW98M4KC"
