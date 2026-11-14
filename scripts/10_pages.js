@@ -42,6 +42,7 @@ const townContent = paths.readJson(paths.config("town_content.json"));
 const schoolDistricts = paths.readJson(paths.config("school_districts.json"));
 const fireDepts = paths.readJson(paths.config("fire_departments.json"));
 const schoolAttend = paths.readJson(paths.config("school_attend.json"));
+const ldsWards = paths.readJson(paths.config("lds_wards.json"));
 const townDistricts = paths.readJson(paths.config("town_districts.json"));
 // A town page links each other town only where the page first mentions it (the lead first).
 let seenTownLinks = new Set();
@@ -1438,6 +1439,9 @@ function churchItems(t, numerals = false) {
 }
 
 function churchHtml(t) {
+  // Ward set by hand (config/lds_wards.json): links the ward's page on the Church's meetinghouse locator
+  const ward = ldsWards[t.name];
+  if (ward) return `<p>Latter-day Saints in the community attend the <a href="${esc(ward.url)}">${esc(ward.name)}</a>.${ward.extra ? ` ${ward.extra}` : ""}</p>`;
   const items = churchItems(t);
   if (!items.length) return "";
   // In a list the counts are numerals: "(8 meetinghouses)"
@@ -1667,7 +1671,7 @@ function servicesHtml(t) {
     ["Higher Education", "colleges", schools.higher, ["college"]],
     ["Healthcare", "hospitals", p(hospitalText(t)), ["hospital"]],
     [airportList(t).length > 1 ? "Airports" : "Airport", "airports", p(airportText(t)), ["airport"]],
-    [(() => { const ci = churchItems(t); const one = ci.total === 1; return ci.allChristian ? (one ? "Church" : "Churches") : one ? "Place of Worship" : "Places of Worship"; })(), "churches", churchHtml(t), []],
+    [(() => { if (ldsWards[t.name]) return ldsWards[t.name].extra ? "Churches" : "Church"; const ci = churchItems(t); const one = ci.total === 1; return ci.allChristian ? (one ? "Church" : "Churches") : one ? "Place of Worship" : "Places of Worship"; })(), "churches", churchHtml(t), []],
     ["Outdoor Recreation", "trails", trailsHtml(t), ["trail"]],
   ].filter(([, , body]) => body);
   // Hand-written sections replace the generated ones (config/town_content.json)
@@ -1676,6 +1680,8 @@ function servicesHtml(t) {
     sections.length = 0;
     custom.sections.forEach((c) => sections.push([c.title, c.id, customHtml(c.html), []]));
   }
+  // Extra hand-written sections added to the generated ones (config/town_content.json "add_sections")
+  if (custom && custom.add_sections) custom.add_sections.forEach((c) => sections.push([c.title, c.id, customHtml(c.html), []]));
   // Duchesne County is one school district: towns with no school listed say so
   if (t.county === "Duchesne" && !sections.some(([, word]) => word === "schools")) {
     const dist = schoolDistricts["Duchesne District"];
@@ -1683,7 +1689,9 @@ function servicesHtml(t) {
     sections.splice(at < 0 ? sections.length : at, 0, [
       "Schools",
       "schools",
-      schoolAttend[t.name] === "Altamont"
+      schoolAttend[t.name] === "Tabiona"
+        ? `<p>${/s$/.test(t.name) ? `Students from ${esc(t.name)} attend` : `${esc(t.name)}'s students attend`} <a href="https://tab.dcsd.org/">Tabiona Elementary</a> (prekindergarten&ndash;6th) and <a href="https://tab.dcsd.org/">Tabiona High</a> (7th&ndash;12th), as part of the <a href="${esc(dist.url.replace(/^http:/, "https:"))}">${esc(dist.name)}</a>.</p>`
+        : schoolAttend[t.name] === "Altamont"
         ? `<p>${/s$/.test(t.name) ? `Students from ${esc(t.name)} attend` : `${esc(t.name)}'s students attend`} <a href="https://aes.dcsd.org/">elementary</a> and <a href="https://ahs.dcsd.org/">high school</a> in <a href="${link("altamont.html")}">Altamont</a>, as part of the <a href="${esc(dist.url.replace(/^http:/, "https:"))}">${esc(dist.name)}</a>.</p>`
         : `<p>${esc(t.name)} is located in the <a href="${esc(dist.url.replace(/^http:/, "https:"))}">${esc(dist.name)}</a>.</p>`,
       [],
@@ -1703,7 +1711,7 @@ function servicesHtml(t) {
     shown: sections.map(([, word]) => word),
     labels: sections.flatMap(([, , , labels]) => labels),
     // "Churches" or "Places of worship", credited to OpenStreetMap
-    osm: !(custom && custom.sections) && sections.some(([, word]) => word === "churches")
+    osm: !(custom && custom.sections) && sections.some(([, word]) => word === "churches") && churchItems(t).total > 0
       ? (() => {
           const ci = churchItems(t);
           const one = ci.total === 1;

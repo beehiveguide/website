@@ -420,7 +420,7 @@
     "lead": "The town's first resident and merchant was A. M. Murdock. He had earlier come to the Basin to trade with the Indians in Whiterocks. He originally named the town Dora after his daughter. It was later renamed Theodore after President Roosevelt and finally Duchesne in 1911.",
     "founded": "Founded in 1905",
     "sources": [
-      "<strong>Community history:</strong> <a href=\"https://uen.net/utah_history_encyclopedia/d/DUSCHENE.shtml\">Utah History Encyclopedia, by John D. Barton</a>; <a href=\"http://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
+      "<strong>Community history:</strong> <a href=\"https://uen.net/utah_history_encyclopedia/d/DUSCHENE.shtml\">Utah History Encyclopedia, by John D. Barton</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
     ]
   },
   "Fruitland": {
@@ -428,19 +428,26 @@
     "founded": "Settled in 1907",
     "sources": [
       "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
+    ],
+    "add_sections": [
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p><a href=\"https://www.facebook.com/p/Big-G-on-40-100063684005011/\">Big G on 40</a> offers gas, convenience groceries and a cafe.</p>"
+      }
     ]
   },
   "Hanna": {
     "lead": "The area was briefly home to the Indian agency in the 1860s. Stockmore, in the Hanna area, was first settled in 1905. The town of Hanna is named for its first postmaster, William P. Hanna.",
     "sources": [
-      "<strong>Community history:</strong> <a href=\"http://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>",
+      "<strong>Community history:</strong> <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>",
       "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
     ]
   },
   "Myton": {
     "lead": "Named in 1905 for Major H. P. Myton, former Indian agent at Fort Duchesne.",
     "sources": [
-      "<strong>Community history:</strong> <a href=\"http://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>",
+      "<strong>Community history:</strong> <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>",
       "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
     ]
   },
@@ -448,13 +455,13 @@
     "lead": "The town was named after Theodore Roosevelt. The area was previously known as Dry Gulch.",
     "founded": "Settled in 1906",
     "sources": [
-      "<strong>Community history:</strong> <a href=\"https://www.uen.org/utah_history_encyclopedia/r/ROOSEVELT.shtml\">Utah History Encyclopedia, by John D. Barton</a>; <a href=\"http://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
+      "<strong>Community history:</strong> <a href=\"https://www.uen.org/utah_history_encyclopedia/r/ROOSEVELT.shtml\">Utah History Encyclopedia, by John D. Barton</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
     ]
   },
   "Tabiona": {
     "lead": "Fort Tabby was built in 1860. Later, a town was founded in the area, first called Tabbyville or Tabby, and formally named Tabiona in 1915. Tabby was a Ute leader who was among the first to move with his people to the Uintah Reservation.",
     "sources": [
-      "<strong>Community history:</strong> <a href=\"https://tabionatownut.gov/about-us\">Town of Tabiona</a>; <a href=\"http://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
+      "<strong>Community history:</strong> <a href=\"https://tabionatownut.gov/about-us\">Town of Tabiona</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
     ]
   }
 }

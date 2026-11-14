@@ -1,7 +1,27 @@
 {
   "_note": "Fire department for towns whose UGRC data lists none (generated Public Safety text only; hand-written pages in town_content.json carry their own). Keys are town names; each has the department's name and web page.",
-  "Mountain Home": { "name": "Altamont Fire Department", "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/" },
-  "Talmage": { "name": "Altamont Fire Department", "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/" },
-  "Mount Emmons": { "name": "Altamont Fire Department", "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/" },
-  "Upalco": { "name": "Altamont Fire Department", "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/" }
+  "Mountain Home": {
+    "name": "Altamont Fire Department",
+    "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/"
+  },
+  "Talmage": {
+    "name": "Altamont Fire Department",
+    "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/"
+  },
+  "Mount Emmons": {
+    "name": "Altamont Fire Department",
+    "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/"
+  },
+  "Upalco": {
+    "name": "Altamont Fire Department",
+    "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/"
+  },
+  "Hanna": {
+    "name": "Tabiona-Hanna Volunteer Fire Department",
+    "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/"
+  },
+  "Stockmore": {
+    "name": "Tabiona-Hanna Volunteer Fire Department",
+    "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/"
+  }
 }

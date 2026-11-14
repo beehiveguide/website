@@ -7,7 +7,7 @@
   "Diamond Ridge High School": "https://diamondridge.canyonsdistrict.org",
   "Life Skills Academy": "https://cta.canyonsdistrict.org",
   "Kings Peak School": "http://kpes.dcsd.org/",
-  "Tabiona High": "http://tab.dcsd.org/",
+  "Tabiona High": "https://tab.dcsd.org/",
   "Elk Run Elementary": "https://schools.graniteschools.org/elkrun/",
   "Hidden Valley Middle": "https://jordandistrict.org/schools/middle/hiddenvalley/",
   "Mountain Point Elementary": "https://jordandistrict.org/schools/elementary/mountainpoint/",
@@ -44,5 +44,8 @@
   "Mountain View Jr High": "https://www.wsd.net/page/mountain-view-junior-high-school",
   "Kenneth Burdett School": "https://www.usdb.org/deaf-school/kenneth-burdett-school",
   "Elizabeth DeLong School of the Deaf": "https://www.usdb.org/deaf-school/elizabeth-delong-school",
-  "Jean Massieu School for the Deaf": "https://www.usdb.org/deaf-school/jean-massieu-school"
+  "Jean Massieu School for the Deaf": "https://www.usdb.org/deaf-school/jean-massieu-school",
+  "_override": {
+    "Tabiona School": "https://tab.dcsd.org/"
+  }
 }

@@ -397,6 +397,19 @@
       "logoHeight": 249,
       "alt": "Mosaic Weighted Blankets",
       "verified": true
+    },
+    {
+      "brand": "HappyRun",
+      "name": "Electric dirt bike in grass",
+      "width": 1280,
+      "height": 963,
+      "shape": "box",
+      "href": "https://www.awin1.com/cread.php?s=4322801&v=59867&q=564225&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4322801&v=59867&q=564225&r=3149357",
+      "alt": "HappyRun electric dirt bike",
+      "verified": true,
+      "pad": true,
+      "sizeKb": 115
     }
   ],
   "text": [
@@ -476,6 +489,11 @@
       "title": "UUNA TEK Pen Plotters",
       "blurb": "Drawing robots and handwriting machines.",
       "cta": "Shop UUNA TEK"
+    },
+    "HappyRun": {
+      "title": "HappyRun",
+      "blurb": "Electric dirt bikes.",
+      "cta": "Shop electric bikes"
     }
   },
   "brandTopics": {
@@ -518,6 +536,9 @@
       "pets"
     ],
     "UUNA TEK": [
+      "general"
+    ],
+    "HappyRun": [
       "general"
     ]
   },

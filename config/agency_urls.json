@@ -182,7 +182,8 @@
     "North Davis Fire District": "https://northdavisfiredistrict.specialdistrict.org/",
     "Santa Clara-Ivins Fire": "https://www.santaclarautah.gov/departments/fire/",
     "Vernal-Uintah County Fire Department": "https://uintahfiredistrict.gov/",
-    "Morgan County Fire Department": "https://www.morgancountyutah.gov/fire-department-about-us"
+    "Morgan County Fire Department": "https://www.morgancountyutah.gov/fire-department-about-us",
+    "Fruitland Fire Department": "https://duchesne.utah.gov/duchesne-county-firefighter-services/"
   },
   "water": {
     "Alpine": "https://www.alpineut.gov/",
@@ -400,7 +401,10 @@
     "South Willard": "https://www.willardcity.com/",
     "Duchesne County Upper Country WID": "https://ucwid.duchesne.utah.gov/",
     "North Emery SSD": "https://emery.utah.gov/home/service-districts/north-emery-water/",
-    "Bear River WCD": "https://www.brwcdutah.gov/"
+    "Bear River WCD": "https://www.brwcdutah.gov/",
+    "Hanna Water & Sewer Improvement District": "https://www.hannawater.org/",
+    "Fruitland Water SSD": "https://www.fssdutah.gov/",
+    "Fruitland Special Service District": "https://www.fssdutah.gov/"
   },
   "hospital": {
     "Intermountain Health American Fork Hospital": "https://www.intermountainhealth.org/locations/american-fork-hospital",
@@ -451,5 +455,8 @@
     "Lone Peak Hospital": "https://mountainstar.com/locations/lone-peak-hospital",
     "Beaver Valley Hospital": "https://www.beaverhospital.net/",
     "Timpanogos Regional Hospital": "https://www.mountainstar.com/locations/timpanogos-regional-hospital"
+  },
+  "water_names": {
+    "Fruitland Water SSD": "Fruitland Special Service District"
   }
 }

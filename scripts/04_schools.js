@@ -39,7 +39,7 @@ for (const feature of features) {
     name: p.SchoolName.trim(),
     low: p.GradeLow || "",
     high: p.GradeHigh || "",
-    url: fixUrl(p.Website) || schoolUrls[p.SchoolName.trim()] || "",
+    url: (schoolUrls._override || {})[p.SchoolName.trim()] || fixUrl(p.Website) || schoolUrls[p.SchoolName.trim()] || "",
     // Full district name and website (config/school_districts.json)
     lea: (districtInfo[(p.LEAName || "").trim()] || {}).name || (p.LEAName || "").trim(),
     leaShort: (p.LEAName || "").trim(), // "Duchesne District", for tables

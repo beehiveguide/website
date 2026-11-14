@@ -1,0 +1,20 @@
+{
+  "_note": "Hand-set LDS ward for towns: name and the ward's page on maps.churchofjesuschrist.org. Replaces the generated church line.",
+  "Hanna": {
+    "name": "Hanna Ward",
+    "url": "https://maps.churchofjesuschrist.org/wards/2282496"
+  },
+  "Stockmore": {
+    "name": "Hanna Ward",
+    "url": "https://maps.churchofjesuschrist.org/wards/2282496"
+  },
+  "Tabiona": {
+    "name": "Tabiona Ward",
+    "url": "https://maps.churchofjesuschrist.org/wards/13536"
+  },
+  "Fruitland": {
+    "name": "Fruitland Ward",
+    "url": "https://maps.churchofjesuschrist.org/wards/101664",
+    "extra": "The <a href=\"https://www.cedarcountrybible.com/\">Cedar Country Bible Fellowship</a> is an independent Christian church."
+  }
+}

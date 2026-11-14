@@ -185,7 +185,10 @@ for (const e of Object.values(output)) if (e.fireStations) e.fireStations.sort((
     for (const [kind, key] of [["law", "law"], ["fire", "fireStations"], ["water", "water"]])
       for (const item of e[key] || []) {
         const u = pick(kind, item.name);
+        // Display name set by hand ("water_names" in agency_urls.json)
+        const rename = (urls.water_names || {})[item.name];
         if (kind === "water") item.certUrl = item.url;
+        if (rename) item.name = rename;
         if (u) item.url = u;
       }
   }

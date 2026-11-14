@@ -763,7 +763,7 @@
             "url": "http://www.dcsd.org/AltamontElementary.cfm",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -776,7 +776,7 @@
             "url": "http://www.dcsd.org/AltamontHigh.cfm?subpage=436212",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -15878,7 +15878,7 @@
             "url": "http://www.dcsd.org/DuchesneElementary.cfm",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -15891,7 +15891,7 @@
             "url": "http://www.dcsd.org/DuchesneHigh.cfm",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -23077,9 +23077,9 @@
     "services": {
       "water": [
         {
-          "name": "Fruitland Water SSD",
+          "name": "Fruitland Special Service District",
           "note": "",
-          "url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1441"
+          "url": "https://www.fssdutah.gov/"
         }
       ],
       "law": [
@@ -23103,7 +23103,7 @@
         {
           "name": "Fruitland Fire Department",
           "note": "",
-          "url": ""
+          "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/"
         }
       ]
     },
@@ -26276,7 +26276,7 @@
         {
           "name": "Hanna Water & Sewer Improvement District",
           "note": "",
-          "url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=10912"
+          "url": "https://www.hannawater.org/"
         }
       ],
       "law": [
@@ -49497,7 +49497,7 @@
             "url": "http://www.dcsd.org/MytonElementary.cfm?subpage=436249",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -49510,7 +49510,7 @@
             "url": "http://www.dcsd.org/ConAmoreSchool.cfm",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -49930,7 +49930,7 @@
             "url": "http://www.dcsd.org/NeolaElementary.cfm?subpage=436232",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -65912,7 +65912,7 @@
             "url": "https://dcsd.org",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           },
@@ -65934,7 +65934,7 @@
             "url": "http://www.dcsd.org/EastElementary.cfm?subpage=436226",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           },
@@ -65945,7 +65945,7 @@
             "url": "http://kpes.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -65958,7 +65958,7 @@
             "url": "http://www.dcsd.org/RooseveltJunior.cfm?subpage=436234",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -65971,7 +65971,7 @@
             "url": "https://.http://www.dcsd.org/UnionHigh.cfm?subpage=436242",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -81639,7 +81639,7 @@
         {
           "name": "Hanna Water & Sewer Improvement District",
           "note": "",
-          "url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=10912"
+          "url": "https://www.hannawater.org/"
         }
       ],
       "law": [
@@ -83063,10 +83063,10 @@
             "name": "Tabiona School",
             "low": "PK",
             "high": "6",
-            "url": "http://www.dcsd.org/TabionaSchool.cfm",
+            "url": "https://tab.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
@@ -83076,10 +83076,10 @@
             "name": "Tabiona High",
             "low": "7",
             "high": "12",
-            "url": "http://tab.dcsd.org/",
+            "url": "https://tab.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
-            "leaUrl": "http://www.dcsd.org/",
+            "leaUrl": "https://www.dcsd.org/",
             "leaType": "District",
             "alt": false
           }
