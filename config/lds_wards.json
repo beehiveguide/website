@@ -25,5 +25,15 @@
     "meetinghouse": true,
     "name": "",
     "url": "https://maps.churchofjesuschrist.org/meetinghouses/5034744-01-01?hold=true"
+  },
+  "Mount Emmons": {
+    "name": "Altamont 1st Ward",
+    "url": "https://maps.churchofjesuschrist.org/wards/12696",
+    "stake": "Altamont Stake"
+  },
+  "Upalco": {
+    "name": "Altamont 2nd Ward",
+    "url": "https://maps.churchofjesuschrist.org/wards/10642",
+    "stake": "Altamont Stake"
   }
 }

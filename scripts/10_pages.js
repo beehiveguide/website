@@ -1443,7 +1443,7 @@ function churchHtml(t) {
   // Ward set by hand (config/lds_wards.json): links the ward's page on the Church's meetinghouse locator
   const ward = ldsWards[t.name];
   if (ward && ward.meetinghouse) return `<p>A <a href="${esc(ward.url)}">Church of Jesus Christ of Latter-day Saints</a> meetinghouse is located in ${esc(t.name)}.${ward.extra ? ` ${ward.extra}` : ""}</p>`;
-  if (ward) return `<p>Latter-day Saints in the community attend the <a href="${esc(ward.url)}">${esc(ward.name)}</a>.${ward.extra ? ` ${ward.extra}` : ""}</p>`;
+  if (ward) return `<p>Latter-day Saints in the community attend the <a href="${esc(ward.url)}">${esc(ward.name)}</a>${ward.stake ? `, in the ${esc(ward.stake)}` : ""}.${ward.extra ? ` ${ward.extra}` : ""}</p>`;
   const items = churchItems(t);
   if (!items.length) return "";
   // In a list the counts are numerals: "(8 meetinghouses)"
