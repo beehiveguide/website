@@ -35,6 +35,21 @@ for (const x of noPublish)
     console.warn(`  no_publish.json: no community named ${x.name} (${x.county})`);
 const communities = allCommunities.filter((t) => !isNoPublish(t));
 const photos = paths.readJson(paths.config("photos.json"));
+// Hand-written content that replaces generated parts of a town page
+// (config/town_content.json, keyed by town name). Links to other town pages
+// are written "name.html" and go through link() so clean links work.
+const townContent = paths.readJson(paths.config("town_content.json"));
+const schoolDistricts = paths.readJson(paths.config("school_districts.json"));
+const fireDepts = paths.readJson(paths.config("fire_departments.json"));
+const schoolAttend = paths.readJson(paths.config("school_attend.json"));
+// A town page links each other town only where the page first mentions it (the lead first).
+let seenTownLinks = new Set();
+const customHtml = (html) =>
+  html.replace(/<a href="([a-z0-9-]+\.html)">([^<]*)<\/a>/g, (m, h, text) => {
+    if (seenTownLinks.has(h)) return text;
+    seenTownLinks.add(h);
+    return `<a href="${link(h)}">${text}</a>`;
+  });
 // Published path of a photo's web version: "static/images/x.webp" -> "images/x.webp"
 const photoPath = (file) => file.replace(/^static\//, "");
 // Homepage photo ("homePhoto" in config/site.json, an id from config/photos.json)
@@ -273,7 +288,8 @@ function soilHtml(t) {
     ? `Land with slopes most suitable for cultivation lies primarily ${esc(joinPlaces(forms))}, with soils including`
     : `Land with slopes most suitable for cultivation has soils including`;
   // Salt, organic matter, farmland rating and limits.
-  // Percentages are shares of the slopes most suitable for cultivation.
+  // Percentages are shares of the slopes most suitable for cultivation (farmland
+  // shares are of the whole town).
   const mostly = (p) => (p.landform ? `, mostly ${esc(p.landform)}` : "");
   const chem = [], farm = [], bedrockText = [], wet = [];
   if (s.ecAvg !== null && s.omAvg !== null) {
@@ -282,15 +298,18 @@ function soilHtml(t) {
       `Topsoil is typically ${saltLevel(s.ecAvg)}${sv ? `, but ${sv.level} ${esc(sv.landform)}` : ""}, with ${omLevel(s.omAvg)} organic matter (${s.omAvg.toFixed(1)}%).`,
     );
   }
+  // Farmland shares are of the whole town (08c_soil.js): "About 36% of the
+  // town's land rates as ..."
   const f = s.farmland;
+  const ownerLand = `${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}'s` : "the area's"} land`;
   const about = (pct) => (pct >= 95 ? "Nearly all" : `About ${pct}%`);
   if (f.prime > 0) {
     const prime = f.primeIfIrrigated >= f.prime * 0.8 ? "prime farmland if irrigated" : "prime farmland";
     farm.push(
-      `${about(f.prime)} of this land rates as ${prime}${f.statewide >= 10 ? `, and ${f.statewide}% as farmland of statewide importance` : ""}.`,
+      `${about(f.prime)} of ${ownerLand} rates as ${prime}${f.statewide > 0 ? `, and ${f.statewide}% as farmland of statewide importance` : ""}.`,
     );
   } else if (f.statewide > 0) {
-    farm.push(`${about(f.statewide)} of this land rates as farmland of statewide importance.`);
+    farm.push(`${about(f.statewide)} of ${ownerLand} rates as farmland of statewide importance.`);
   }
   // Shares of this land: "about 18%", or "nearly all of this land" at 95% or more
   const share = (pct) => (pct >= 95 ? "nearly all of this land" : `about ${pct}%`);
@@ -991,7 +1010,10 @@ function safetyText(t) {
   // Elsewhere on a reservation the local police come first, then the tribal
   // police sentence on its own
   const policeText = navajoFirst ? [tribal, county] : [first, tribal];
-  const text = [...policeText, ...fireText(t).sentences]
+  // Fire department set by hand (config/fire_departments.json) when UGRC lists none
+  const fd = fireDepts[t.name];
+  const fire = fireText(t).sentences.length || !fd ? fireText(t).sentences : [`The <a href="${esc(fd.url)}">${esc(fd.name)}</a> provides fire protection.`];
+  const text = [...policeText, ...fire]
     .filter(Boolean)
     .join(" ");
   return text ? `<p>${text}</p>` : "";
@@ -1636,13 +1658,32 @@ function servicesHtml(t) {
     // "Library" or "Libraries", "School" or "Schools", by how many there are
     [((t.places && t.places.libraries) || []).length > 1 ? "Libraries" : "Library", "libraries", libraryHtml(t), ["library"]],
     [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t), parksCemeteriesLabels(t)],
-    [`School${schools.count === 1 ? "" : "s"}${schools.range ? ` (${schools.range})` : ""}`, "schools", schools.k12, ["school"]],
+    [`School${schools.count === 1 ? "" : "s"}${schools.range && schools.higher ? ` (${schools.range})` : ""}`, "schools", schools.k12, ["school"]],
     ["Higher Education", "colleges", schools.higher, ["college"]],
-    [((t.places && t.places.hospitals) || []).length > 1 ? "Hospitals" : "Hospital", "hospitals", p(hospitalText(t)), ["hospital"]],
+    ["Healthcare", "hospitals", p(hospitalText(t)), ["hospital"]],
     [airportList(t).length > 1 ? "Airports" : "Airport", "airports", p(airportText(t)), ["airport"]],
     [(() => { const ci = churchItems(t); const one = ci.total === 1; return ci.allChristian ? (one ? "Church" : "Churches") : one ? "Place of Worship" : "Places of Worship"; })(), "churches", churchHtml(t), []],
     ["Outdoor Recreation", "trails", trailsHtml(t), ["trail"]],
   ].filter(([, , body]) => body);
+  // Hand-written sections replace the generated ones (config/town_content.json)
+  const custom = townContent[t.name];
+  if (custom && custom.sections) {
+    sections.length = 0;
+    custom.sections.forEach((c) => sections.push([c.title, c.id, customHtml(c.html), []]));
+  }
+  // Duchesne County is one school district: towns with no school listed say so
+  if (t.county === "Duchesne" && !sections.some(([, word]) => word === "schools")) {
+    const dist = schoolDistricts["Duchesne District"];
+    const at = sections.findIndex(([, word]) => ["libraries", "colleges", "hospitals", "airports", "churches", "businesses", "trails"].includes(word));
+    sections.splice(at < 0 ? sections.length : at, 0, [
+      "Schools",
+      "schools",
+      schoolAttend[t.name] === "Altamont"
+        ? `<p>${/s$/.test(t.name) ? `Students from ${esc(t.name)} attend` : `${esc(t.name)}'s students attend`} <a href="https://aes.dcsd.org/">elementary</a> and <a href="https://ahs.dcsd.org/">high school</a> in <a href="${link("altamont.html")}">Altamont</a>, as part of the <a href="${esc(dist.url.replace(/^http:/, "https:"))}">${esc(dist.name)}</a>.</p>`
+        : `<p>${esc(t.name)} is located in the <a href="${esc(dist.url.replace(/^http:/, "https:"))}">${esc(dist.name)}</a>.</p>`,
+      [],
+    ]);
+  }
   if (!sections.length) return { html: "", parts: [], shown: [], labels: [], osm: "" };
   // Each part is its own section with an h2, styled like Growing Info
   const parts = sections.map(
@@ -1657,7 +1698,7 @@ function servicesHtml(t) {
     shown: sections.map(([, word]) => word),
     labels: sections.flatMap(([, , , labels]) => labels),
     // "Churches" or "Places of worship", credited to OpenStreetMap
-    osm: sections.some(([, word]) => word === "churches")
+    osm: !(custom && custom.sections) && sections.some(([, word]) => word === "churches")
       ? (() => {
           const ci = churchItems(t);
           const one = ci.total === 1;
@@ -1721,6 +1762,7 @@ function servicesWithAds(services, hasGrowing) {
 }
 
 function buildPage(t) {
+  seenTownLinks = new Set();
   if (t.elevationFt !== null && t.elevationFt >= GROWING_MAX_FT)
     t = { ...t, hardinessZone: "", precipIn: null, freezeFreeDays: undefined, soil: null };
   const src = { gnis: SOURCES.gnis(t.elevationFt !== null) };
@@ -1738,6 +1780,17 @@ function buildPage(t) {
       );
     if (t.origin)
       intro.push(`<p class="lead mb-4 mb-lg-3">${esc(t.origin)}</p>`);
+  }
+  // Hand-written founding line, lead and source lines
+  const custom = townContent[t.name];
+  if (custom && (custom.founded || custom.lead)) {
+    intro.length = 0;
+    // With no hand-written year, the generated one stays, with its own source line
+    const year = custom.founded || (t.founded ? t.founded.replace(/^(\w+) (\d{4})$/, "$1 in $2") : "");
+    if (year) intro.push(`<p class="text-secondary mt-2 mb-2"><em>(${esc(year)})</em></p>`);
+    if (custom.lead) intro.push(`<p class="lead mb-4 mb-lg-3">${customHtml(custom.lead)}</p>`);
+    src.history = [...(!custom.founded && t.founded ? [SOURCES.history(true, false)] : []), ...(custom.sources || [])]
+      .map((x) => `<li>${x}</li>`).join("\n    ").replace(/^<li>|<\/li>$/g, "");
   }
   if (pop) src.pop = SOURCES[pop.source];
   if (t.hardinessZone) src.zone = SOURCES.zone;

@@ -85,7 +85,7 @@ function buildData(site, live) {
       .map((b) => ({ isbn: b.isbn, featuredOnly: Boolean(b.featuredOnly), topics: b.topics || [], ends: b.ends }));
     data.banners = awin.images
       .filter((i) => i.shape === "banner")
-      .map(withCopy).map(({ brand, href, src, alt, title, text, flip, width, height, topics, ends }) => ({ brand, href, src, alt, title, text, flip, width, height, topics }));
+      .map(withCopy).map(({ brand, href, src, logoSrc, logoWidth, logoHeight, alt, title, text, flip, width, height, topics, ends }) => ({ brand, href, src, logoSrc, logoWidth, logoHeight, alt, title, text, flip, width, height, topics }));
     data.tall = awin.images
       .filter((i) => i.shape === "tall" || i.shape === "side")
       .map(withCopy).map(({ brand, href, src, alt, title, blurb, cta, native, width, height, topics, ends }) => ({ brand, href, src, alt, title, blurb, cta, native, width, height, topics, ends }));

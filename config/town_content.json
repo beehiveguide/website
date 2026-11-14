@@ -1,0 +1,414 @@
+{
+  "_note": "Hand-written content that replaces the generated parts of a town page. Keys are town names. Fields: founded, lead (HTML), sources (HTML list items), sections (ordered: id, title, html). Links to other town pages are written as 'name.html' and adjusted by the build.",
+  "Altamont": {
+    "founded": "Established in 1935",
+    "lead": "Altamont is a small town in Duchesne County. It sits along State Route 87 and serves as the hub of the Upper Country. It was established as a central location for a new high school, and its name combines those of nearby <a href=\"altonah.html\">Altonah</a> and <a href=\"mount-emmons.html\">Mount Emmons</a>.",
+    "sources": [
+      "<strong>Establishment year:</strong> <a href=\"https://usu.locate.ebsco.com/instances/a3ff639d-f88b-5f33-8ea8-ff42d6491a04\">Harvest of Memories: 1905 to 1988</a>",
+      "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
+    ],
+    "sections": [
+      {
+        "id": "government",
+        "title": "Town Government and Services",
+        "html": "<p>The <a href=\"https://altamontutah.gov/\">Town of Altamont</a> has a mayor and <a href=\"https://www.utah.gov/pmn/sitemap/publicbody/2730.html\">town council</a>. It's served by the <a href=\"https://www.ucrd.org/\">Upper Community Recreation District</a> and the <a href=\"https://ucwid.duchesne.utah.gov/\">Upper Country Water Improvement District</a>.</p>"
+      },
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>Law enforcement is provided by the <a href=\"https://duchesne.utah.gov/gov/elected-officials/sheriff/\">Duchesne County Sheriff's Office</a>. Altamont also has a <a href=\"https://duchesne.utah.gov/duchesne-county-firefighter-services/\">fire department</a>, which it shares with the other Upper Country communities.</p>"
+      },
+      {
+        "id": "events",
+        "title": "Community Events",
+        "html": "<p><a href=\"https://www.facebook.com/groups/538575086199079\">Longhorn Days</a>, held around Pioneer Day in mid-to-late July, is Altamont's biggest yearly celebration, with a rodeo, parade, pageant, fireworks show and week of activities.</p>"
+      },
+      {
+        "id": "parks",
+        "title": "Parks and Recreation",
+        "html": "<p><a href=\"https://www.ucrd.org/our-parks\">Altamont's park</a> features a playground, ball diamonds, outdoor basketball courts, a pavilion and restrooms. Altamont also has a rodeo arena off State Route 87 just west of town.</p>\n    <p>The <a href=\"https://www.hmdb.org/m.asp?m=277140\">Altamont War Veterans Memorial</a> honors those from the area who've served their country. The memorial is located in front of Altamont High.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemetery",
+        "html": "<p>The <a href=\"https://ushpo.utah.gov/cemetery/\">Altamont-Mount Emmons Cemetery</a> is located off State Route 87 just west of town.</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "html": "<p><a href=\"https://aes.dcsd.org/\">Altamont Elementary School</a> serves grades K-6. A new elementary school is being built to replace the current one. <a href=\"https://ahs.dcsd.org/\">Altamont High School</a> serves grades 7-12. It was rebuilt in 2012. The schools belong to the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+      },
+      {
+        "id": "libraries",
+        "title": "Library",
+        "html": "<p>The <a href=\"https://duchesne.utah.gov/gov/dept/library/\">Duchesne County Library</a> hosts <a href=\"https://duchesne.utah.gov/gov/dept/library/offsite/\">library nights</a> in Altamont for returns, pickups, checkouts and opening new accounts. There's also a <a href=\"https://duchesne.utah.gov/gov/dept/library/boxes/\">library drop box</a> at the Upper Country Market.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Altamont is home to the <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5033934-01-01\">Altamont Stake Center</a>, which serves the members of The Church of Jesus Christ of Latter-day Saints in Altamont and surrounding communities. The stake center also hosts a <a href=\"https://locations.familysearch.org/en/us/ut/altamont/hwy-87\">family history center</a>. A seminary building serves the high school's Latter-day Saint students.</p>"
+      },
+      {
+        "id": "healthcare",
+        "title": "Healthcare",
+        "html": "<p>Altamont is home to a small <a href=\"https://ubh.org/altamont-clinic/\">medical clinic</a>, with limited hours, operated by <a href=\"https://ubh.org/\">Uintah Basin Healthcare</a>. Hospital, emergency and other medical services are available in <a href=\"roosevelt.html\">Roosevelt</a>, 18 miles away.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p>Altamont is the commercial, religious and educational center of the Upper Country communities of <a href=\"altonah.html\">Altonah</a>, <a href=\"boneta.html\">Boneta</a>, <a href=\"bluebell.html\">Bluebell</a>, <a href=\"mount-emmons.html\">Mount Emmons</a>, <a href=\"mountain-home.html\">Mountain Home</a>, <a href=\"talmage.html\">Talmage</a> and <a href=\"upalco.html\">Upalco</a>, along with <a href=\"arcadia.html\">Arcadia</a>.</p>\n    <p><a href=\"http://uppercountrymarket.com/\">Upper Country Market</a> is a grocery store with hardware and sporting goods sections. The store features a hot and cold case deli for grab-and-go meals. It also hosts a branch of <a href=\"https://www.macu.com/branch-locations/utah/duchesne-county/altamont-branch\">Mountain America Credit Union</a>, open three days a week. The only gas station in town is <a href=\"https://stations.sinclairoil.com/ut/altamont/350-e-main-st\">Swasey's Other Place</a>, a Sinclair station.</p>\n    <p><a href=\"https://share.google/qWznj07IJ4ut5ptnl\">Trent's Grill</a> serves burgers, fries, drinks, ice cream and more. The <a href=\"https://www.facebook.com/p/The-Bluebell-Store-Grill-100057573575104/\">Bluebell Store &amp; Grille</a>, another nearby dining option, serves breakfast, lunch and dinner.</p>\n    <p><a href=\"https://www.altamontutahmotel.com/\">Altamont Motel</a> is a small hotel with rooms containing kitchenettes. The <a href=\"https://resnexus.com/resnexus/reservations/book/D66B22E7-6DC3-4D79-B630-B3844071F7A1\">Mountain Home Lodge</a> and <a href=\"https://www.falconsledge.com/\">Falcon's Ledge</a> offer additional lodging options close to Altamont.</p>\n    <p><a href=\"https://www.altamonttheatre.com/\">Altamont Theatre</a> is a recently renovated movie theater showing classic movies and holding plays, classes and other events. <a href=\"https://country-flair-fashion.myshopify.com/\">Country Flair</a> is a western-themed clothing boutique focused on women's clothing. Altamont is also home to <a href=\"https://www.facebook.com/Branded.BoutiqueandSalon/\">Branded Boutique and Salon</a>, a hair salon that carries women's clothing.</p>"
+      }
+    ]
+  },
+  "Altonah": {
+    "founded": "Surveyed in 1906",
+    "lead": "Altonah, a scattered community located in Duchesne County's Upper Country, was first surveyed in 1906. Originally called Alexander, it received its current name, for its high elevation, in 1912.",
+    "sources": [
+      "<strong>Name origin, founding and survey dates:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
+    ],
+    "sections": [
+      {
+        "id": "government",
+        "title": "Government and Services",
+        "html": "<p>Altonah is served by the <a href=\"https://ucwid.duchesne.utah.gov/\">Upper Country Water Improvement District</a> and the <a href=\"https://www.ucrd.org/\">Upper Community Recreation District</a>. Altonah is also the location of a U.S. Forest Service <a href=\"https://opendata.gis.utah.gov/datasets/utah::utah-forest-service-stations/explore?location=39.495028%2C-111.392590%2C-1&amp;showTable=true\">guard station</a>, used as employee housing and as a work site.</p>"
+      },
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>Altonah is served by the <a href=\"https://duchesne.utah.gov/duchesne-county-firefighter-services/\">Altamont Fire Department</a> and the <a href=\"https://duchesne.utah.gov/gov/elected-officials/sheriff/\">Duchesne County Sheriff's Office</a>. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation.</p>"
+      },
+      {
+        "id": "parks",
+        "title": "Parks and Recreation",
+        "html": "<p>Nearby <a href=\"altamont.html\">Altamont</a> has a <a href=\"https://www.ucrd.org/our-parks\">park</a> and rodeo arena.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemetery",
+        "html": "<p>Altonah has its own <a href=\"https://ushpo.utah.gov/cemetery/\">cemetery</a>.</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "html": "<p>K-12 students from Altonah attend <a href=\"https://aes.dcsd.org/\">elementary</a> and <a href=\"https://ahs.dcsd.org/\">high school</a> in <a href=\"altamont.html\">Altamont</a>. The schools are part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Churches",
+        "html": "<p>Altonah Latter-day Saints are split between attending the <a href=\"https://maps.churchofjesuschrist.org/wards/178705\">Lake Fork Ward</a>, with its chapel in <a href=\"boneta.html\">Boneta</a>, and the <a href=\"https://maps.churchofjesuschrist.org/wards/12696\">Altamont First Ward</a>, with its chapel in the stake center. Both wards are located within the <a href=\"https://maps.churchofjesuschrist.org/stakes/517488\">Altamont Stake</a>.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p><a href=\"https://www.hiddenspringsutah.com/\">Hidden Springs Ranch</a> is a lodge in Altonah available for large reunions and retreats. The lodge features a cabin, pond, pool and other recreation facilities.</p>"
+      }
+    ]
+  },
+  "Arcadia": {
+    "founded": "Settled in 1906",
+    "lead": "Arcadia is a scattered community in Duchesne County. It was first settled in 1906 and previously called Red Cap, after a Ute leader. Its current name comes from the Arcadian region of Greece.",
+    "sources": [
+      "<strong>Name origin, founding and survey dates:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
+    ],
+    "sections": [
+      {
+        "id": "government",
+        "title": "Government and Services",
+        "html": "<p>Arcadia is part of the <a href=\"https://www.ucrd.org/\">Upper Community Recreation District</a>.</p>"
+      },
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>Law enforcement is provided by the <a href=\"https://duchesne.utah.gov/gov/elected-officials/sheriff/\">Duchesne County Sheriff's Office</a>. Fire service is provided by the <a href=\"https://duchesne.utah.gov/duchesne-county-firefighter-services/\">Myton Fire Department</a>. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemetery",
+        "html": "<p>The old <a href=\"https://ushpo.utah.gov/cemetery/\">Red Cap Cemetery</a> is located in Arcadia.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p><a href=\"https://chucksmeatinc.com/\">Chuck's Meats</a> maintains a processing plant in Arcadia. Its <a href=\"https://chucksmeatinc.com/retail-stores/\">retail store</a> is located in <a href=\"duchesne.html\">Duchesne</a>.</p>"
+      }
+    ]
+  },
+  "Bluebell": {
+    "founded": "Settled in 1907",
+    "lead": "Bluebell is a small community in Duchesne County, located near <a href=\"altamont.html\">Altamont</a>. The Gales were the first family to settle the town in 1907. Others joined in 1908. School began in a granary in 1909, and a church house opened in 1910. The town was named for the wildflowers growing in the area.",
+    "sources": [
+      "<strong>Settlement dates:</strong> <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early history of Duchesne County, compiled by Mildred Miles Dillman</a>",
+      "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>",
+      "<strong>Cemetery dates:</strong> <a href=\"https://gis.utah.gov/products/sgid/categories/\">UGRC</a> <small class=\"font-sans fst-italic text-secondary\">(<a href=\"https://creativecommons.org/licenses/by/4.0/\" class=\"link-secondary\">CC-BY-4.0</a>)</small>"
+    ],
+    "sections": [
+      {
+        "id": "government",
+        "title": "Government and Services",
+        "html": "<p>Bluebell is served by the <a href=\"https://ucwid.duchesne.utah.gov/\">Upper Country Water Improvement District</a> and the <a href=\"https://www.ucrd.org/\">Upper Community Recreation District</a>.</p>"
+      },
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>Bluebell is served by the <a href=\"https://www.facebook.com/p/Duchesne-County-Sheriffs-Office-100064574928585/\">Duchesne County Sheriff's Office</a> and the <a href=\"https://duchesne.utah.gov/duchesne-county-firefighter-services/\">Altamont Fire Department</a>. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation.</p>"
+      },
+      {
+        "id": "events",
+        "title": "Community Events",
+        "html": "<p>Bluebell's Independence Day celebration includes a breakfast and flag ceremony at the park. The <a href=\"https://www.bluebellcornmaze.com/\">Bluebell Corn Maze</a> also draws visitors to the town each fall.</p>"
+      },
+      {
+        "id": "parks",
+        "title": "Parks and Recreation",
+        "html": "<p>The <a href=\"https://www.facebook.com/groups/488686317946502/\">Bluebell Community Park</a> has a pavilion, playground, sports field, volleyball pit, basketball court and walking track.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemetery",
+        "html": "<p>The <a href=\"https://ushpo.utah.gov/cemetery/\">Bluebell Cemetery</a>, which dates to 1913, lies just west of town.</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "html": "<p>Bluebell's young people attend <a href=\"https://aes.dcsd.org/\">elementary</a> and <a href=\"https://ahs.dcsd.org/\">high school</a> in <a href=\"altamont.html\">Altamont</a>, as part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>The <a href=\"https://local.churchofjesuschrist.org/en/units/us/ut/bluebell-ward\">Bluebell Ward</a> of The Church of Jesus Christ of Latter-day Saints holds meetings at the <a href=\"https://maps.churchofjesuschrist.org/stakes/517488?\">stake center</a> in <a href=\"altamont.html\">Altamont</a>.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p>The <a href=\"https://www.facebook.com/p/The-Bluebell-Store-Grill-100057573575104/\">Bluebell Store &amp; Grille</a> was established as a general store in 1915. Today, it hosts a convenience store, <a href=\"https://tools.usps.com/locations/details/1355270\">post office</a> and grill that serves breakfast, lunch and dinner.</p>"
+      }
+    ]
+  },
+  "Boneta": {
+    "founded": "Settled in 1907",
+    "lead": "Boneta is located west of <a href=\"altamont.html\">Altamont</a> along Utah State Route 87 in Duchesne County. To the north lies <a href=\"mountain-home.html\">Mountain Home</a>, and further west is <a href=\"talmage.html\">Talmage</a>. Boneta was settled in 1907 and named for the Spanish word “bonita,” meaning beautiful.",
+    "sources": [
+      "<strong>Name origin, founding and survey dates:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
+    ],
+    "sections": [
+      {
+        "id": "government",
+        "title": "Government and Services",
+        "html": "<p>Boneta is served by the <a href=\"https://ucwid.duchesne.utah.gov/\">Upper Country Water Improvement District</a> and the <a href=\"https://www.ucrd.org/\">Upper Community Recreation District</a>.</p>"
+      },
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>Boneta is served by the <a href=\"https://duchesne.utah.gov/gov/elected-officials/sheriff/\">Duchesne County Sheriff's Office</a> and the <a href=\"https://duchesne.utah.gov/duchesne-county-firefighter-services/\">Altamont Fire Department</a>. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation.</p>"
+      },
+      {
+        "id": "parks",
+        "title": "Parks and Recreation",
+        "html": "<p><a href=\"altamont.html\">Altamont</a>, nearby, has <a href=\"https://www.ucrd.org/our-parks\">a park</a> and rodeo arena.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemetery",
+        "html": "<p>Boneta shares <a href=\"https://ushpo.utah.gov/cemetery/\">a cemetery</a> with <a href=\"mountain-home.html\">Mountain Home</a>.</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "html": "<p>Boneta's students attend school at <a href=\"https://aes.dcsd.org/\">Altamont elementary</a> and <a href=\"https://ahs.dcsd.org/\">high school</a> as part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Boneta is home to the <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5137195-01-01\">Latter-day Saint meetinghouse</a> for Boneta, <a href=\"talmage.html\">Talmage</a>, <a href=\"mountain-home.html\">Mountain Home</a> and parts of <a href=\"altonah.html\">Altonah</a>. It's part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/517488\">Altamont Utah Stake</a>.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p>The Kinder Morgan Altamont natural gas liquids plant, in Boneta, processes <a href=\"https://www.kindermorgan.com/Operations/Natural-Gas/Index#tabs-gathering/processing\">80 million cubic feet per day</a> of natural gas, condensing out <a href=\"https://www.kindermorgan.com/Operations/Natural-Gas/Index#tabs-ngl\">4,000 barrels per day</a> of liquid byproducts (from the methane natural gas) and separating them into propane, butane and C5+.</p>\n    <p><a href=\"https://www.quilts-n-fabrics.com/\">Quilts N Fabrics</a>, on 18750 W. (head south from the natural gas plant), sells fabric in-shop and online. It also offers in-person quilting classes and open sewing.</p>"
+      }
+    ]
+  },
+  "Bridgeland": {
+    "founded": "Settled in 1908",
+    "lead": "Bridgeland, in Duchesne County, is located along the Duchesne River, 10 miles east of the town of <a href=\"duchesne.html\">Duchesne</a>. Bridgeland is a scattered community along River Road, which branches from Highway 40 west of <a href=\"myton.html\">Myton</a> and reconnects in Duchesne. To the north of Bridgeland is <a href=\"arcadia.html\">Arcadia</a>. Settled in 1908, Bridgeland was named for the metal truss bridge that spanned the river there.",
+    "sources": [
+      "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>",
+      "<strong>Cemetery dates:</strong> <a href=\"https://gis.utah.gov/products/sgid/categories/\">UGRC</a> <small class=\"font-sans fst-italic text-secondary\">(<a href=\"https://creativecommons.org/licenses/by/4.0/\" class=\"link-secondary\">CC-BY-4.0</a>)</small>"
+    ],
+    "sections": [
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>Bridgeland is served by the <a href=\"https://duchesne.utah.gov/gov/elected-officials/sheriff/\">Duchesne County Sheriff's Office</a> and the <a href=\"https://duchesne.utah.gov/duchesne-county-firefighter-services/\">Duchesne Fire Department</a>. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemetery",
+        "html": "<p>Bridgeland has its own <a href=\"https://ushpo.utah.gov/cemetery/\">cemetery</a>, located along the road to <a href=\"arcadia.html\">Arcadia</a>. It dates to 1922.</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "html": "<p>Bridgeland students attend <a href=\"https://des.dcsd.org/\">elementary</a> and <a href=\"https://dhs.dcsd.org/\">high school</a> in <a href=\"duchesne.html\">Duchesne</a>. The schools are part of the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Bridgeland has a Latter-day Saint meetinghouse where the <a href=\"https://maps.churchofjesuschrist.org/wards/11037\">Bridgeland Ward</a> meets. It's part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/500623\">Duchesne Stake</a>.</p>"
+      }
+    ]
+  },
+  "Cedarview": {
+    "lead": "Cedarview is a small community, located in Duchesne County, along the Neola Highway, halfway between <a href=\"roosevelt.html\">Roosevelt</a> and <a href=\"neola.html\">Neola</a>. Cedarview shares connections with Crescent, Montwell and <a href=\"monarch.html\">Monarch</a>. Cedarview was once a fledgling town with stores, blacksmith shops, two schools, a post office, a creamery and a ward house. It's named for the juniper-covered hills it overlooks.",
+    "sources": [
+      "<strong>Community history:</strong> <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early history of Duchesne County, compiled by Mildred Miles Dillman</a>",
+      "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>",
+      "<strong>Cemetery dates:</strong> <a href=\"https://gis.utah.gov/products/sgid/categories/\">UGRC</a> <small class=\"font-sans fst-italic text-secondary\">(<a href=\"https://creativecommons.org/licenses/by/4.0/\" class=\"link-secondary\">CC-BY-4.0</a>)</small>"
+    ],
+    "sections": [
+      {
+        "id": "government",
+        "title": "Government and Services",
+        "html": "<p>The <a href=\"https://www.cedarview-montwell-ssd.org/\">Cedarview-Montwell Special Service District</a> provides culinary water service to the area.</p>"
+      },
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>The community is served by the <a href=\"https://duchesne.utah.gov/gov/elected-officials/sheriff/\">Duchesne County Sheriff's Office</a> and the <a href=\"https://www.rooseveltcity.gov/154/Fire\">Roosevelt Fire Department</a>. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemetery",
+        "html": "<p>The <a href=\"https://ushpo.utah.gov/cemetery/\">Cedarview Cemetery</a>, which dates to 1912, is located off the Neola Highway, north of the Cedarview turnoff.</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "html": "<p>Cedarview students attend elementary school in <a href=\"https://nes.dcsd.org/\">Neola</a> and <a href=\"https://rjhs.dcsd.org/o/rjhs\">junior high</a> and <a href=\"https://uhs.dcsd.org/o/uhs\">high school</a> in <a href=\"roosevelt.html\">Roosevelt</a> as part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Cedarview Latter-day Saints attend the <a href=\"https://maps.churchofjesuschrist.org/wards/123110\">Roosevelt 7th Ward</a>, with its chapel in <a href=\"neola.html\">Neola</a>. The ward is part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt West Stake</a>.</p>"
+      }
+    ]
+  },
+  "Ioka": {
+    "founded": "Settled in 1907",
+    "lead": "Ioka is a scattered community, located between Highway 40 and <a href=\"upalco.html\">Upalco</a> along Utah State Route 87 (the stretch there is called Ioka Lane). Ioka was settled in 1907 and named after a Ute leader.",
+    "sources": [
+      "<strong>Name origin, founding and survey dates:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>",
+      "<strong>Cemetery dates:</strong> <a href=\"https://gis.utah.gov/products/sgid/categories/\">UGRC</a> <small class=\"font-sans fst-italic text-secondary\">(<a href=\"https://creativecommons.org/licenses/by/4.0/\" class=\"link-secondary\">CC-BY-4.0</a>)</small>"
+    ],
+    "sections": [
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>Most of Ioka is served by the <a href=\"https://www.rooseveltcity.gov/154/Fire\">Roosevelt Fire Department</a>. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemeteries",
+        "html": "<p>Ioka has two <a href=\"https://ushpo.utah.gov/cemetery/\">cemeteries</a>, both located on the bench south of the community: the Ioka Memorial Park (1926) and the Old Ioka Cemetery (1906).</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "html": "<p>Ioka is located in the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>The <a href=\"https://maps.churchofjesuschrist.org/wards/1727400\">Ioka Ward</a> of The Church of Jesus Christ of Latter-day Saints meets in <a href=\"myton.html\">Myton</a>. It's part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/500844\">Roosevelt Stake</a>.</p>"
+      }
+    ]
+  },
+  "Monarch": {
+    "lead": "Monarch is a small community north of Montwell and west of <a href=\"neola.html\">Neola</a> in Duchesne County. It was named by Lee Brown, a local woman, who said the town would be the “monarch of all it surveyed.”",
+    "sources": [
+      "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
+    ],
+    "sections": [
+      {
+        "id": "government",
+        "title": "Government and Services",
+        "html": "<p>Monarch is part of the <a href=\"https://www.cedarview-montwell-ssd.org/\">Cedarview-Montwell Special Service District</a> and <a href=\"https://www.utah.gov/pmn/sitemap/notice/1050771.html\">Neola Community Park District</a>.</p>"
+      },
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>The <a href=\"https://duchesne.utah.gov/gov/elected-officials/sheriff/\">Duchesne County Sheriff's Office</a> covers law enforcement in the area. Fire service is provided by the <a href=\"https://duchesne.utah.gov/duchesne-county-firefighter-services/\">Neola Fire Department</a>. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation.</p>"
+      },
+      {
+        "id": "parks",
+        "title": "Parks and Recreation",
+        "html": "<p>The <a href=\"https://share.google/dihIXdIURD9ZDFZ5p\">Neola Community Park</a> is located a few miles away.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemetery",
+        "html": "<p>Monarch has a <a href=\"https://ushpo.utah.gov/cemetery/\">small cemetery</a>.</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "html": "<p>Monarch's school kids attend <a href=\"https://nes.dcsd.org/\">elementary in Neola</a> and <a href=\"https://rjhs.dcsd.org/o/rjhs\">junior high</a> and <a href=\"https://uhs.dcsd.org/o/uhs\">high school</a> in Roosevelt. The community is located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Monarch is part of the <a href=\"https://maps.churchofjesuschrist.org/wards/12750\">Neola First Ward</a> in the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt West Stake</a> of The Church of Jesus Christ of Latter-day Saints.</p>"
+      }
+    ]
+  },
+  "Neola": {
+    "founded": "Founded in 1912",
+    "lead": "Neola is a town in Duchesne County, 10 miles north of <a href=\"roosevelt.html\">Roosevelt</a>. Founded in 1912, Neola's name is said to mean “last move” or “move no more” in a Native American language. Its location was chosen in place of another planned townsite called Packer, located two miles to the east. That plan was scrapped, and Packer's log schoolhouse was moved to Neola.",
+    "sources": [
+      "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>",
+      "<strong>Townsite history:</strong> <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early history of Duchesne County, compiled by Mildred Miles Dillman</a>"
+    ],
+    "sections": [
+      {
+        "id": "government",
+        "title": "Government and Services",
+        "html": "<p>The <a href=\"https://www.utah.gov/pmn/sitemap/notice/1050771.html\">Neola Community Park District</a> is a special service district managing the community's park and cemeteries. The <a href=\"https://www.utah.gov/pmn/sitemap/publicbody/2784.html\">Neola Water &amp; Sewer District</a> provides drinking water and sewer services in town.</p>"
+      },
+      {
+        "id": "police-fire",
+        "title": "Public Safety",
+        "html": "<p>The <a href=\"https://duchesne.utah.gov/duchesne-county-firefighter-services/\">Neola Fire Department</a> covers the Neola and <a href=\"monarch.html\">Monarch</a> areas. The <a href=\"https://duchesne.utah.gov/gov/elected-officials/sheriff/\">Duchesne County Sheriff's Office</a> provides law enforcement for the town. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation.</p>"
+      },
+      {
+        "id": "events",
+        "title": "Community Events",
+        "html": "<p>The Neola 4th of July Rodeo has been a town tradition since 1932. Besides the rodeo, the <a href=\"https://www.facebook.com/neolafourth/\">Neola 4th of July Celebration</a> includes a parade, patriotic program and other activities.</p>"
+      },
+      {
+        "id": "parks",
+        "title": "Parks and Recreation",
+        "html": "<p>The <a href=\"https://share.google/dihIXdIURD9ZDFZ5p\">Neola Community Park</a> features a rodeo arena, pavilions, playgrounds, sand volleyball pits, a combination basketball-pickleball court, a ball diamond, a disc golf course and RV hookups.</p>"
+      },
+      {
+        "id": "cemeteries",
+        "title": "Cemeteries",
+        "html": "<p>Neola has <a href=\"https://ushpo.utah.gov/cemetery/\">two cemeteries</a>. To get to the Neola Cemetery, go one mile north of town, then turn and go one mile west. The older Greenhalgh Cemetery lies three miles north of town.</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "html": "<p><a href=\"https://nes.dcsd.org/\">Neola Elementary School</a> serves students grades K-5 from Neola and the surrounding area. After fifth grade, students attend school at <a href=\"https://rjhs.dcsd.org/o/rjhs\">Roosevelt Jr. High</a> and <a href=\"https://uhs.dcsd.org/o/uhs\">Union High</a> in <a href=\"roosevelt.html\">Roosevelt</a>. The schools are located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>The Church of Jesus Christ of Latter-day Saints <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5104025-01-01\">meetinghouse in Neola</a> hosts three wards, covering Neola and surrounding communities. The congregations are part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt Utah West Stake</a>.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p><a href=\"https://www.facebook.com/people/Ketts-Neola-store-and-gift-shop/61555000460877/\">Kett's Neola Store</a> is a convenience store and gas station. It features grab-and-go breakfast and lunch, some fishing supplies, basic groceries and gift items.</p>"
+      }
+    ]
+  }
+}

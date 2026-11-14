@@ -6,7 +6,8 @@
 // soil data. Values cover arable terrain only: soil components whose
 // representative slope is 0-8%. Each component counts by its acres in town
 // (map unit acres x component percent). Topsoil is the top horizon with a pH
-// and water capacity.
+// and water capacity. Farmland ratings are the exception: shares of all the
+// town's mapped acres.
 //
 // Output: { "<Gaz ID>": { textures: [{ texture, pct, landform }], phAvg, phMin, phMax,
 //   drainage, awcAvg, awcDesc, awcVariation: { awc, landform } | null } }
@@ -194,10 +195,17 @@ for (const town of towns) {
     const [form, formAcres] = Object.entries(forms).sort((a, b) => b[1] - a[1])[0] || [];
     return { pct: Math.round((100 * acres) / total), landform: form && formAcres / acres >= 0.5 ? form : null };
   };
+  // Farmland ratings are shares of the whole town (all mapped acres, whatever
+  // the slope), not of the arable land the other numbers use
+  const farmShare = (re) =>
+    Math.round(
+      (100 * town.components
+        .filter((c) => re.test(c.farmland || ""))
+        .reduce((s, c) => s + (c.muAcres * (c.pct || 0)) / 100, 0)) / town.mappedAcres);
   const farmland = {
-    prime: part((c) => /^(prime|all areas are prime)/i.test(c.farmland || "")).pct,
-    primeIfIrrigated: part((c) => /^prime farmland if irrigated/i.test(c.farmland || "")).pct,
-    statewide: part((c) => /^farmland of statewide/i.test(c.farmland || "")).pct,
+    prime: farmShare(/^(prime|all areas are prime)/i),
+    primeIfIrrigated: farmShare(/^prime farmland if irrigated/i),
+    statewide: farmShare(/^farmland of statewide/i),
   };
   const keep = (p, min) => (p.pct >= min * 100 ? p : null);
   const bedrock = keep(part((c) => c.bedrockCm !== null && c.bedrockCm < BEDROCK_CM), LIMIT_SHARE);

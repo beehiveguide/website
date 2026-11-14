@@ -197,7 +197,9 @@
     const bn = at(pool, c + si);
     used.add(bn.brand);
     spot.innerHTML = D.live
-      ? `<div class="ad-label font-sans">Advertisement</div><a class="affiliate-banner-box${bn.flip ? " affiliate-banner-flip" : ""}" rel="sponsored" href="${esc(bn.href)}"><img class="affiliate-banner${bn.text ? " affiliate-banner-logo" : ""}" src="${esc(bn.src)}" width="${bn.width}" height="${bn.height}" alt="${esc(bn.alt)}" loading="lazy">${bn.text ? `<span class="affiliate-banner-copy">${bn.title ? `<strong class="font-zilla affiliate-banner-title">${esc(bn.title)}</strong>` : ""}<span class="font-arial affiliate-banner-text">${esc(bn.text)}</span></span>` : ""}</a>`
+      ? bn.logoSrc
+        ? `<div class="ad-label font-sans">Advertisement</div><a class="affiliate-banner-box affiliate-banner-pair" rel="sponsored" href="${esc(bn.href)}"><img class="affiliate-pair-logo" src="${esc(bn.logoSrc)}" width="${bn.logoWidth}" height="${bn.logoHeight}" alt="${esc(bn.alt)}" loading="lazy"><img class="affiliate-pair-pic" src="${esc(bn.src)}" width="${bn.width}" height="${bn.height}" alt="" loading="lazy"></a>`
+        : `<div class="ad-label font-sans">Advertisement</div><a class="affiliate-banner-box${bn.flip ? " affiliate-banner-flip" : ""}" rel="sponsored" href="${esc(bn.href)}"><img class="affiliate-banner${bn.text ? " affiliate-banner-logo" : ""}" src="${esc(bn.src)}" width="${bn.width}" height="${bn.height}" alt="${esc(bn.alt)}" loading="lazy">${bn.text ? `<span class="affiliate-banner-copy">${bn.title ? `<strong class="font-zilla affiliate-banner-title">${esc(bn.title)}</strong>` : ""}<span class="font-arial affiliate-banner-text">${esc(bn.text)}</span></span>` : ""}</a>`
       : `<div class="ad-label font-sans">Advertisement</div><div class="ad-box ad-banner house-placeholder"><span>Awin banner: ${esc(bn.brand)}</span><small>wide, live on deploy</small></div>`;
     spot.setAttribute("aria-label", "Advertisement");
     spot.hidden = false;
@@ -239,7 +241,7 @@
   }
 
   // A picture that fails to load (removed by the advertiser, blocked) hides its ad
-  all(".ad-card-img img, .affiliate-banner").forEach((img) => {
+  all(".ad-card-img img, .affiliate-banner, .affiliate-pair-logo, .affiliate-pair-pic").forEach((img) => {
     if (img.complete && img.naturalWidth === 0 && img.getAttribute("src")) hideAd(img);
     else img.addEventListener("error", () => hideAd(img));
   });

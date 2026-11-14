@@ -1,33 +1,86 @@
 {
   "utah_place_names": [
     {
-      "match": { "place_name": "Belleview", "county": "Washington County" },
-      "set": { "place_name": "Bellevue" },
+      "match": {
+        "place_name": "Belleview",
+        "county": "Washington County"
+      },
+      "set": {
+        "place_name": "Bellevue"
+      },
       "note": "Name changed from \"Belleview\" to \"Bellevue\" to match the 1941 file."
     },
     {
-      "match": { "place_name": "Coonville", "county": "Salt Lake County" },
-      "set": { "place_name": "Cooleyville" },
+      "match": {
+        "place_name": "Coonville",
+        "county": "Salt Lake County"
+      },
+      "set": {
+        "place_name": "Cooleyville"
+      },
       "note": "Name changed from \"Coonville\" to \"Cooleyville\" to match the 1941 file."
     },
     {
-      "match": { "place_name": "North Salt Lake", "county": "Salt Lake County" },
-      "set": { "county": "Davis County" },
+      "match": {
+        "place_name": "North Salt Lake",
+        "county": "Salt Lake County"
+      },
+      "set": {
+        "county": "Davis County"
+      },
       "note": "County changed from \"Salt Lake County\" to \"Davis County\" to match the 1941 file and its actual location."
     }
   ],
   "church_names": [
-    { "find": "Rescurrection", "replace": "Resurrection" },
-    { "find": "Presyterian", "replace": "Presbyterian" },
-    { "find": "Apolistic", "replace": "Apostolic" },
-    { "find": "Nazerene", "replace": "Nazarene" },
-    { "find": "Inglesia", "replace": "Iglesia" },
-    { "find": "Christiana", "replace": "Cristiana" },
-    { "find": "Later-Day", "replace": "Latter-Day" },
-    { "find": "Stake Centre", "replace": "Stake Center" }
+    {
+      "find": "Rescurrection",
+      "replace": "Resurrection"
+    },
+    {
+      "find": "Presyterian",
+      "replace": "Presbyterian"
+    },
+    {
+      "find": "Apolistic",
+      "replace": "Apostolic"
+    },
+    {
+      "find": "Nazerene",
+      "replace": "Nazarene"
+    },
+    {
+      "find": "Inglesia",
+      "replace": "Iglesia"
+    },
+    {
+      "find": "Christiana",
+      "replace": "Cristiana"
+    },
+    {
+      "find": "Later-Day",
+      "replace": "Latter-Day"
+    },
+    {
+      "find": "Stake Centre",
+      "replace": "Stake Center"
+    }
   ],
   "trail_names": [
-    { "find": "Boneville", "replace": "Bonneville" },
-    { "find": "Bonnevile", "replace": "Bonneville" }
+    {
+      "find": "Boneville",
+      "replace": "Bonneville"
+    },
+    {
+      "find": "Bonnevile",
+      "replace": "Bonneville"
+    }
+  ],
+  "cemetery_years": [
+    {
+      "cemetery": "Talmage Cemetery",
+      "city": "Talmage",
+      "year": "",
+      "note": "UGRC lists 1857, 50 years before Talmage was settled (1907). Year left off until a source is found."
+    }
   ]
 }

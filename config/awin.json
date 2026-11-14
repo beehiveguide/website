@@ -1,5 +1,5 @@
 {
-  "_notes": "Awin ads. images: pictures with box (about 300 x 250, bottom row and sidebar) or banner shape. text: plain links, shown rarely. verified false means the link was built from a pattern and needs a test click. Still need Awin links: Ottocast, FluentPet. caption shows under a picture. sizeKb is the image's file size; the other Dragon Touch calendar images (4515104, 4515115, 4515116, 168 to 234 KB) were left out as too heavy. fit (cover or contain, default contain) sets how a picture fills its 300 x 250 frame. Removed Mosaic 4180621 (expired 2021 mattress sale banner). shape: box (bottom row), banner (top of page), tall or side (sidebar only; side is for ads with lots of text). brandCopy gives each card its title, blurb and link text; an image can override them with its own title, blurb and cta. logo: true shows a small logo on a gray panel. Removed Mosaic 4543688 (rolled blankets, no text). WheelXL text links removed (not a fit for the site). Added WheelXL and Ottocast cards, WheelXL and Tormek logo banners. logoWidth sets a logo card's logo width in px. A banner can have text, shown beside its picture in Arial. pad: true adds padding around a card's picture (default none). brandTopics: tags per brand (a brand can have several). Default spots use brands tagged general; other tags (auto, pets) are for spots that ask for them. Turn things off: \"disabled\": true on a picture or text link, or list a brand in disabledBrands to switch off all its ads.",
+  "_notes": "Awin ads. images: pictures with box (about 300 x 250, bottom row and sidebar) or banner shape. text: plain links, shown rarely. verified false means the link was built from a pattern and needs a test click. Still need Awin links: Ottocast, FluentPet. caption shows under a picture. sizeKb is the image's file size; the other Dragon Touch calendar images (4515104, 4515115, 4515116, 168 to 234 KB) were left out as too heavy. fit (cover or contain, default contain) sets how a picture fills its 300 x 250 frame. Removed Mosaic 4180621 (expired 2021 mattress sale banner). shape: box (bottom row), banner (top of page), tall or side (sidebar only; side is for ads with lots of text). brandCopy gives each card its title, blurb and link text; an image can override them with its own title, blurb and cta. logo: true shows a small logo on a gray panel. Removed Mosaic 4543688 (rolled blankets, no text). WheelXL text links removed (not a fit for the site). Added WheelXL and Ottocast cards, WheelXL and Tormek logo banners. logoWidth sets a logo card's logo width in px. A banner can have text, shown beside its picture in Arial. pad: true adds padding around a card's picture (default none). brandTopics: tags per brand (a brand can have several). Default spots use brands tagged general; other tags (auto, pets) are for spots that ask for them. Turn things off: \"disabled\": true on a picture or text link, or list a brand in disabledBrands to switch off all its ads. Mosaic top banner: logoSrc is a logo creative (4180620) shown left of src (the rolled blankets, 4543688); it replaces the plain Mosaic banner and the blankets-with-text banner.",
   "publisherId": "3149357",
   "awinShare": 0.5,
   "textPageShare": 0,
@@ -61,17 +61,6 @@
       "alt": "Mosaic Weighted Blankets",
       "verified": true,
       "pad": true
-    },
-    {
-      "brand": "Mosaic Weighted Blankets",
-      "name": "Creative 1378659",
-      "width": 664,
-      "height": 249,
-      "shape": "banner",
-      "href": "https://www.awin1.com/cread.php?s=4180620&v=87403&q=546017&r=3149357",
-      "src": "https://www.awin1.com/cshow.php?s=4180620&v=87403&q=546017&r=3149357",
-      "alt": "Mosaic Weighted Blankets",
-      "verified": true
     },
     {
       "brand": "Dragon Touch",
@@ -217,19 +206,6 @@
       "src": "https://www.awin1.com/cshow.php?s=4696467&v=122044&q=587440&r=3149357",
       "alt": "WheelXL wheels and tires packages sale",
       "verified": true
-    },
-    {
-      "brand": "Mosaic Weighted Blankets",
-      "name": "Rolled blankets",
-      "width": 1111,
-      "height": 252,
-      "shape": "banner",
-      "href": "https://www.awin1.com/cread.php?s=4543688&v=87403&q=546017&r=3149357",
-      "src": "https://www.awin1.com/cshow.php?s=4543688&v=87403&q=546017&r=3149357",
-      "alt": "Mosaic Weighted Blankets",
-      "verified": true,
-      "title": "Mosaic Weighted Blankets",
-      "text": "Shop weighted blankets"
     },
     {
       "brand": "MeoWant",
@@ -406,6 +382,20 @@
       "verified": true,
       "logo": true,
       "logoWidth": 100
+    },
+    {
+      "brand": "Mosaic Weighted Blankets",
+      "name": "Logo and rolled blankets",
+      "width": 1111,
+      "height": 252,
+      "shape": "banner",
+      "href": "https://www.awin1.com/cread.php?s=4543688&v=87403&q=546017&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4543688&v=87403&q=546017&r=3149357",
+      "logoSrc": "https://www.awin1.com/cshow.php?s=4180620&v=87403&q=546017&r=3149357",
+      "logoWidth": 664,
+      "logoHeight": 249,
+      "alt": "Mosaic Weighted Blankets",
+      "verified": true
     }
   ],
   "text": [

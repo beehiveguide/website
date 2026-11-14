@@ -158,9 +158,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 72,
-        "primeIfIrrigated": 72,
-        "statewide": 19
+        "prime": 33,
+        "primeIfIrrigated": 33,
+        "statewide": 9
       },
       "bedrock": null,
       "waterTable": null,
@@ -920,9 +920,9 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 39,
-        "primeIfIrrigated": 39,
-        "statewide": 22
+        "prime": 10,
+        "primeIfIrrigated": 10,
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": {
@@ -1124,9 +1124,9 @@
       "saltVariation": null,
       "omAvg": 2,
       "farmland": {
-        "prime": 82,
-        "primeIfIrrigated": 82,
-        "statewide": 8
+        "prime": 65,
+        "primeIfIrrigated": 65,
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": null,
@@ -1266,9 +1266,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 87,
-        "primeIfIrrigated": 87,
-        "statewide": 8
+        "prime": 82,
+        "primeIfIrrigated": 82,
+        "statewide": 9
       },
       "bedrock": null,
       "waterTable": {
@@ -2038,7 +2038,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 47
+        "statewide": 28
       },
       "bedrock": null,
       "waterTable": {
@@ -2184,8 +2184,8 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 59,
-        "primeIfIrrigated": 59,
+        "prime": 56,
+        "primeIfIrrigated": 56,
         "statewide": 0
       },
       "bedrock": null,
@@ -2322,8 +2322,8 @@
       },
       "omAvg": 1.3,
       "farmland": {
-        "prime": 15,
-        "primeIfIrrigated": 15,
+        "prime": 8,
+        "primeIfIrrigated": 8,
         "statewide": 0
       },
       "bedrock": null,
@@ -2456,9 +2456,9 @@
       "saltVariation": null,
       "omAvg": 0.9,
       "farmland": {
-        "prime": 46,
-        "primeIfIrrigated": 46,
-        "statewide": 15
+        "prime": 33,
+        "primeIfIrrigated": 33,
+        "statewide": 11
       },
       "bedrock": {
         "pct": 21,
@@ -2718,8 +2718,8 @@
       "saltVariation": null,
       "omAvg": 1.6,
       "farmland": {
-        "prime": 78,
-        "primeIfIrrigated": 78,
+        "prime": 75,
+        "primeIfIrrigated": 75,
         "statewide": 0
       },
       "bedrock": null,
@@ -2904,9 +2904,9 @@
       "saltVariation": null,
       "omAvg": 3.5,
       "farmland": {
-        "prime": 36,
-        "primeIfIrrigated": 36,
-        "statewide": 52
+        "prime": 19,
+        "primeIfIrrigated": 19,
+        "statewide": 29
       },
       "bedrock": null,
       "waterTable": null,
@@ -3052,8 +3052,8 @@
       "saltVariation": null,
       "omAvg": 0.8,
       "farmland": {
-        "prime": 66,
-        "primeIfIrrigated": 66,
+        "prime": 48,
+        "primeIfIrrigated": 48,
         "statewide": 0
       },
       "bedrock": null,
@@ -3181,8 +3181,8 @@
       },
       "omAvg": 2.5,
       "farmland": {
-        "prime": 84,
-        "primeIfIrrigated": 84,
+        "prime": 79,
+        "primeIfIrrigated": 79,
         "statewide": 4
       },
       "bedrock": null,
@@ -3309,9 +3309,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 24,
-        "primeIfIrrigated": 24,
-        "statewide": 71
+        "prime": 19,
+        "primeIfIrrigated": 19,
+        "statewide": 57
       },
       "bedrock": null,
       "waterTable": {
@@ -3633,9 +3633,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 68,
-        "primeIfIrrigated": 68,
-        "statewide": 27
+        "prime": 65,
+        "primeIfIrrigated": 65,
+        "statewide": 28
       },
       "bedrock": null,
       "waterTable": null,
@@ -3787,9 +3787,9 @@
       "saltVariation": null,
       "omAvg": 3.8,
       "farmland": {
-        "prime": 25,
-        "primeIfIrrigated": 25,
-        "statewide": 32
+        "prime": 19,
+        "primeIfIrrigated": 19,
+        "statewide": 26
       },
       "bedrock": null,
       "waterTable": {
@@ -4083,8 +4083,8 @@
       "saltVariation": null,
       "omAvg": 1.4,
       "farmland": {
-        "prime": 21,
-        "primeIfIrrigated": 21,
+        "prime": 20,
+        "primeIfIrrigated": 20,
         "statewide": 0
       },
       "bedrock": null,
@@ -4469,7 +4469,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 70
+        "statewide": 22
       },
       "bedrock": {
         "pct": 16,
@@ -4909,9 +4909,9 @@
       },
       "omAvg": 0.8,
       "farmland": {
-        "prime": 28,
-        "primeIfIrrigated": 28,
-        "statewide": 0
+        "prime": 13,
+        "primeIfIrrigated": 13,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": null,
@@ -5091,9 +5091,9 @@
       },
       "omAvg": 2.4,
       "farmland": {
-        "prime": 55,
-        "primeIfIrrigated": 55,
-        "statewide": 17
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 12
       },
       "bedrock": null,
       "waterTable": null,
@@ -5843,9 +5843,9 @@
       "saltVariation": null,
       "omAvg": 3.3,
       "farmland": {
-        "prime": 59,
-        "primeIfIrrigated": 59,
-        "statewide": 5
+        "prime": 23,
+        "primeIfIrrigated": 23,
+        "statewide": 2
       },
       "bedrock": null,
       "waterTable": null,
@@ -6906,9 +6906,9 @@
       "saltVariation": null,
       "omAvg": 2.8,
       "farmland": {
-        "prime": 27,
-        "primeIfIrrigated": 27,
-        "statewide": 9
+        "prime": 22,
+        "primeIfIrrigated": 22,
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": {
@@ -7520,7 +7520,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 100
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": {
@@ -7991,9 +7991,9 @@
       "saltVariation": null,
       "omAvg": 2.3,
       "farmland": {
-        "prime": 18,
-        "primeIfIrrigated": 18,
-        "statewide": 18
+        "prime": 9,
+        "primeIfIrrigated": 9,
+        "statewide": 10
       },
       "bedrock": null,
       "waterTable": null,
@@ -8336,8 +8336,8 @@
       "saltVariation": null,
       "omAvg": 1.8,
       "farmland": {
-        "prime": 85,
-        "primeIfIrrigated": 85,
+        "prime": 45,
+        "primeIfIrrigated": 45,
         "statewide": 0
       },
       "bedrock": null,
@@ -8499,8 +8499,8 @@
       },
       "omAvg": 1.5,
       "farmland": {
-        "prime": 31,
-        "primeIfIrrigated": 31,
+        "prime": 28,
+        "primeIfIrrigated": 28,
         "statewide": 0
       },
       "bedrock": null,
@@ -8760,9 +8760,9 @@
       "saltVariation": null,
       "omAvg": 1,
       "farmland": {
-        "prime": 42,
-        "primeIfIrrigated": 42,
-        "statewide": 8
+        "prime": 20,
+        "primeIfIrrigated": 20,
+        "statewide": 10
       },
       "bedrock": null,
       "waterTable": null,
@@ -8901,9 +8901,9 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 64,
-        "primeIfIrrigated": 64,
-        "statewide": 27
+        "prime": 38,
+        "primeIfIrrigated": 38,
+        "statewide": 17
       },
       "bedrock": null,
       "waterTable": null,
@@ -9563,8 +9563,8 @@
       "saltVariation": null,
       "omAvg": 1.8,
       "farmland": {
-        "prime": 38,
-        "primeIfIrrigated": 38,
+        "prime": 22,
+        "primeIfIrrigated": 22,
         "statewide": 0
       },
       "bedrock": null,
@@ -9766,9 +9766,9 @@
       "saltVariation": null,
       "omAvg": 2.3,
       "farmland": {
-        "prime": 72,
-        "primeIfIrrigated": 72,
-        "statewide": 23
+        "prime": 35,
+        "primeIfIrrigated": 35,
+        "statewide": 10
       },
       "bedrock": null,
       "waterTable": null,
@@ -10160,8 +10160,8 @@
       "saltVariation": null,
       "omAvg": 0.8,
       "farmland": {
-        "prime": 75,
-        "primeIfIrrigated": 75,
+        "prime": 74,
+        "primeIfIrrigated": 74,
         "statewide": 25
       },
       "bedrock": null,
@@ -10313,9 +10313,9 @@
       },
       "omAvg": 4.6,
       "farmland": {
-        "prime": 46,
-        "primeIfIrrigated": 46,
-        "statewide": 10
+        "prime": 35,
+        "primeIfIrrigated": 35,
+        "statewide": 8
       },
       "bedrock": null,
       "waterTable": {
@@ -10676,8 +10676,8 @@
       "saltVariation": null,
       "omAvg": 1.2,
       "farmland": {
-        "prime": 44,
-        "primeIfIrrigated": 44,
+        "prime": 31,
+        "primeIfIrrigated": 31,
         "statewide": 0
       },
       "bedrock": null,
@@ -10796,8 +10796,8 @@
       },
       "omAvg": 1.6,
       "farmland": {
-        "prime": 81,
-        "primeIfIrrigated": 81,
+        "prime": 75,
+        "primeIfIrrigated": 75,
         "statewide": 0
       },
       "bedrock": null,
@@ -10910,7 +10910,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 90
+        "statewide": 63
       },
       "bedrock": null,
       "waterTable": null,
@@ -11115,9 +11115,9 @@
       },
       "omAvg": 2.5,
       "farmland": {
-        "prime": 51,
-        "primeIfIrrigated": 51,
-        "statewide": 30
+        "prime": 28,
+        "primeIfIrrigated": 28,
+        "statewide": 16
       },
       "bedrock": null,
       "waterTable": null,
@@ -11276,9 +11276,9 @@
       "saltVariation": null,
       "omAvg": 3.5,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
-        "statewide": 32
+        "prime": 37,
+        "primeIfIrrigated": 37,
+        "statewide": 26
       },
       "bedrock": null,
       "waterTable": null,
@@ -11414,8 +11414,8 @@
       },
       "omAvg": 2,
       "farmland": {
-        "prime": 42,
-        "primeIfIrrigated": 42,
+        "prime": 23,
+        "primeIfIrrigated": 23,
         "statewide": 0
       },
       "bedrock": null,
@@ -11644,9 +11644,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 98,
-        "primeIfIrrigated": 98,
-        "statewide": 0
+        "prime": 80,
+        "primeIfIrrigated": 80,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": null,
@@ -12136,8 +12136,8 @@
       },
       "omAvg": 1.9,
       "farmland": {
-        "prime": 50,
-        "primeIfIrrigated": 50,
+        "prime": 43,
+        "primeIfIrrigated": 43,
         "statewide": 0
       },
       "bedrock": null,
@@ -12306,8 +12306,8 @@
       "saltVariation": null,
       "omAvg": 2.1,
       "farmland": {
-        "prime": 82,
-        "primeIfIrrigated": 82,
+        "prime": 79,
+        "primeIfIrrigated": 79,
         "statewide": 3
       },
       "bedrock": null,
@@ -12617,9 +12617,9 @@
       "saltVariation": null,
       "omAvg": 5.1,
       "farmland": {
-        "prime": 33,
-        "primeIfIrrigated": 33,
-        "statewide": 67
+        "prime": 9,
+        "primeIfIrrigated": 9,
+        "statewide": 30
       },
       "bedrock": null,
       "waterTable": {
@@ -13056,7 +13056,7 @@
       "farmland": {
         "prime": 5,
         "primeIfIrrigated": 5,
-        "statewide": 2
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": {
@@ -13217,9 +13217,9 @@
       "saltVariation": null,
       "omAvg": 2.2,
       "farmland": {
-        "prime": 70,
-        "primeIfIrrigated": 70,
-        "statewide": 7
+        "prime": 61,
+        "primeIfIrrigated": 61,
+        "statewide": 6
       },
       "bedrock": null,
       "waterTable": null,
@@ -13326,8 +13326,8 @@
       "saltVariation": null,
       "omAvg": 1.8,
       "farmland": {
-        "prime": 19,
-        "primeIfIrrigated": 19,
+        "prime": 11,
+        "primeIfIrrigated": 11,
         "statewide": 0
       },
       "bedrock": null,
@@ -13710,9 +13710,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 47,
-        "primeIfIrrigated": 47,
-        "statewide": 53
+        "prime": 17,
+        "primeIfIrrigated": 17,
+        "statewide": 19
       },
       "bedrock": null,
       "waterTable": null,
@@ -13911,8 +13911,8 @@
       "saltVariation": null,
       "omAvg": 0.9,
       "farmland": {
-        "prime": 39,
-        "primeIfIrrigated": 39,
+        "prime": 16,
+        "primeIfIrrigated": 16,
         "statewide": 0
       },
       "bedrock": null,
@@ -14018,9 +14018,9 @@
       "saltVariation": null,
       "omAvg": 3.9,
       "farmland": {
-        "prime": 12,
-        "primeIfIrrigated": 12,
-        "statewide": 88
+        "prime": 11,
+        "primeIfIrrigated": 11,
+        "statewide": 72
       },
       "bedrock": null,
       "waterTable": null,
@@ -14122,7 +14122,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 32
+        "statewide": 31
       },
       "bedrock": null,
       "waterTable": null,
@@ -14433,7 +14433,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 80
+        "statewide": 77
       },
       "bedrock": null,
       "waterTable": null,
@@ -14538,9 +14538,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 59,
-        "primeIfIrrigated": 59,
-        "statewide": 34
+        "prime": 35,
+        "primeIfIrrigated": 35,
+        "statewide": 20
       },
       "bedrock": null,
       "waterTable": null,
@@ -14680,9 +14680,9 @@
       },
       "omAvg": 2.9,
       "farmland": {
-        "prime": 39,
-        "primeIfIrrigated": 39,
-        "statewide": 24
+        "prime": 18,
+        "primeIfIrrigated": 18,
+        "statewide": 11
       },
       "bedrock": null,
       "waterTable": null,
@@ -16075,7 +16075,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 100
+        "statewide": 55
       },
       "bedrock": null,
       "waterTable": null,
@@ -16342,9 +16342,9 @@
       },
       "omAvg": 1.8,
       "farmland": {
-        "prime": 35,
-        "primeIfIrrigated": 35,
-        "statewide": 20
+        "prime": 28,
+        "primeIfIrrigated": 28,
+        "statewide": 14
       },
       "bedrock": null,
       "waterTable": null,
@@ -17336,9 +17336,9 @@
       "saltVariation": null,
       "omAvg": 4.4,
       "farmland": {
-        "prime": 14,
-        "primeIfIrrigated": 14,
-        "statewide": 81
+        "prime": 5,
+        "primeIfIrrigated": 5,
+        "statewide": 28
       },
       "bedrock": null,
       "waterTable": {
@@ -17426,9 +17426,9 @@
       "saltVariation": null,
       "omAvg": 1.9,
       "farmland": {
-        "prime": 84,
-        "primeIfIrrigated": 84,
-        "statewide": 3
+        "prime": 45,
+        "primeIfIrrigated": 45,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": null,
@@ -17630,7 +17630,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 42
+        "statewide": 12
       },
       "bedrock": null,
       "waterTable": {
@@ -17733,9 +17733,9 @@
       "saltVariation": null,
       "omAvg": 2.7,
       "farmland": {
-        "prime": 74,
-        "primeIfIrrigated": 74,
-        "statewide": 26
+        "prime": 55,
+        "primeIfIrrigated": 55,
+        "statewide": 22
       },
       "bedrock": null,
       "waterTable": {
@@ -17915,8 +17915,8 @@
       "saltVariation": null,
       "omAvg": 1.4,
       "farmland": {
-        "prime": 87,
-        "primeIfIrrigated": 87,
+        "prime": 77,
+        "primeIfIrrigated": 77,
         "statewide": 0
       },
       "bedrock": null,
@@ -18030,9 +18030,9 @@
       "saltVariation": null,
       "omAvg": 2.2,
       "farmland": {
-        "prime": 40,
-        "primeIfIrrigated": 40,
-        "statewide": 29
+        "prime": 13,
+        "primeIfIrrigated": 13,
+        "statewide": 8
       },
       "bedrock": null,
       "waterTable": null,
@@ -18158,8 +18158,8 @@
       },
       "omAvg": 2.1,
       "farmland": {
-        "prime": 3,
-        "primeIfIrrigated": 3,
+        "prime": 2,
+        "primeIfIrrigated": 2,
         "statewide": 0
       },
       "bedrock": {
@@ -18295,8 +18295,8 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 100,
-        "primeIfIrrigated": 100,
+        "prime": 90,
+        "primeIfIrrigated": 90,
         "statewide": 0
       },
       "bedrock": null,
@@ -18440,9 +18440,9 @@
       },
       "omAvg": 2.5,
       "farmland": {
-        "prime": 59,
-        "primeIfIrrigated": 59,
-        "statewide": 37
+        "prime": 56,
+        "primeIfIrrigated": 56,
+        "statewide": 36
       },
       "bedrock": null,
       "waterTable": null,
@@ -18548,8 +18548,8 @@
       "saltVariation": null,
       "omAvg": 1.8,
       "farmland": {
-        "prime": 30,
-        "primeIfIrrigated": 30,
+        "prime": 26,
+        "primeIfIrrigated": 26,
         "statewide": 0
       },
       "bedrock": null,
@@ -18844,9 +18844,9 @@
       "saltVariation": null,
       "omAvg": 1.6,
       "farmland": {
-        "prime": 43,
-        "primeIfIrrigated": 43,
-        "statewide": 25
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 22
       },
       "bedrock": null,
       "waterTable": null,
@@ -19045,9 +19045,9 @@
       "saltVariation": null,
       "omAvg": 4.4,
       "farmland": {
-        "prime": 83,
-        "primeIfIrrigated": 83,
-        "statewide": 0
+        "prime": 23,
+        "primeIfIrrigated": 23,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": {
@@ -19164,9 +19164,9 @@
       "saltVariation": null,
       "omAvg": 1.8,
       "farmland": {
-        "prime": 46,
-        "primeIfIrrigated": 46,
-        "statewide": 21
+        "prime": 22,
+        "primeIfIrrigated": 22,
+        "statewide": 10
       },
       "bedrock": null,
       "waterTable": null,
@@ -19357,7 +19357,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 81
+        "statewide": 76
       },
       "bedrock": null,
       "waterTable": null,
@@ -19629,7 +19629,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 55
+        "statewide": 37
       },
       "bedrock": null,
       "waterTable": {
@@ -20279,9 +20279,9 @@
       "saltVariation": null,
       "omAvg": 1.6,
       "farmland": {
-        "prime": 40,
-        "primeIfIrrigated": 40,
-        "statewide": 33
+        "prime": 38,
+        "primeIfIrrigated": 38,
+        "statewide": 30
       },
       "bedrock": null,
       "waterTable": {
@@ -20440,7 +20440,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 48
+        "statewide": 21
       },
       "bedrock": null,
       "waterTable": {
@@ -20629,8 +20629,8 @@
       "saltVariation": null,
       "omAvg": 4.4,
       "farmland": {
-        "prime": 43,
-        "primeIfIrrigated": 43,
+        "prime": 35,
+        "primeIfIrrigated": 35,
         "statewide": 5
       },
       "bedrock": null,
@@ -21196,8 +21196,8 @@
       },
       "omAvg": 2.9,
       "farmland": {
-        "prime": 57,
-        "primeIfIrrigated": 57,
+        "prime": 55,
+        "primeIfIrrigated": 55,
         "statewide": 8
       },
       "bedrock": null,
@@ -21426,7 +21426,7 @@
       "farmland": {
         "prime": 8,
         "primeIfIrrigated": 8,
-        "statewide": 86
+        "statewide": 84
       },
       "bedrock": null,
       "waterTable": null,
@@ -21535,8 +21535,8 @@
       "saltVariation": null,
       "omAvg": 2.3,
       "farmland": {
-        "prime": 39,
-        "primeIfIrrigated": 39,
+        "prime": 32,
+        "primeIfIrrigated": 32,
         "statewide": 0
       },
       "bedrock": null,
@@ -21746,8 +21746,8 @@
       "saltVariation": null,
       "omAvg": 2.5,
       "farmland": {
-        "prime": 100,
-        "primeIfIrrigated": 100,
+        "prime": 99,
+        "primeIfIrrigated": 99,
         "statewide": 0
       },
       "bedrock": null,
@@ -21888,9 +21888,9 @@
       "saltVariation": null,
       "omAvg": 2,
       "farmland": {
-        "prime": 11,
-        "primeIfIrrigated": 11,
-        "statewide": 11
+        "prime": 9,
+        "primeIfIrrigated": 9,
+        "statewide": 10
       },
       "bedrock": null,
       "waterTable": null,
@@ -22280,8 +22280,8 @@
       "saltVariation": null,
       "omAvg": 0.9,
       "farmland": {
-        "prime": 56,
-        "primeIfIrrigated": 56,
+        "prime": 27,
+        "primeIfIrrigated": 27,
         "statewide": 0
       },
       "bedrock": null,
@@ -22429,7 +22429,7 @@
       "farmland": {
         "prime": 5,
         "primeIfIrrigated": 5,
-        "statewide": 74
+        "statewide": 66
       },
       "bedrock": null,
       "waterTable": null,
@@ -22574,9 +22574,9 @@
       "saltVariation": null,
       "omAvg": 4.2,
       "farmland": {
-        "prime": 90,
-        "primeIfIrrigated": 90,
-        "statewide": 10
+        "prime": 60,
+        "primeIfIrrigated": 60,
+        "statewide": 9
       },
       "bedrock": null,
       "waterTable": {
@@ -22749,9 +22749,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 6,
-        "primeIfIrrigated": 6,
-        "statewide": 56
+        "prime": 7,
+        "primeIfIrrigated": 7,
+        "statewide": 53
       },
       "bedrock": null,
       "waterTable": {
@@ -22866,9 +22866,9 @@
       "saltVariation": null,
       "omAvg": 3.2,
       "farmland": {
-        "prime": 70,
-        "primeIfIrrigated": 70,
-        "statewide": 2
+        "prime": 44,
+        "primeIfIrrigated": 44,
+        "statewide": 3
       },
       "bedrock": null,
       "waterTable": null,
@@ -23243,9 +23243,9 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 53,
-        "primeIfIrrigated": 53,
-        "statewide": 0
+        "prime": 5,
+        "primeIfIrrigated": 5,
+        "statewide": 11
       },
       "bedrock": null,
       "waterTable": {
@@ -23345,9 +23345,9 @@
       "saltVariation": null,
       "omAvg": 2.7,
       "farmland": {
-        "prime": 47,
-        "primeIfIrrigated": 47,
-        "statewide": 0
+        "prime": 13,
+        "primeIfIrrigated": 13,
+        "statewide": 21
       },
       "bedrock": null,
       "waterTable": {
@@ -23531,8 +23531,8 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 52,
-        "primeIfIrrigated": 52,
+        "prime": 47,
+        "primeIfIrrigated": 47,
         "statewide": 44
       },
       "bedrock": null,
@@ -23813,9 +23813,9 @@
       },
       "omAvg": 1.4,
       "farmland": {
-        "prime": 43,
-        "primeIfIrrigated": 43,
-        "statewide": 24
+        "prime": 30,
+        "primeIfIrrigated": 30,
+        "statewide": 16
       },
       "bedrock": null,
       "waterTable": {
@@ -23963,9 +23963,9 @@
       "saltVariation": null,
       "omAvg": 2.4,
       "farmland": {
-        "prime": 43,
-        "primeIfIrrigated": 43,
-        "statewide": 12
+        "prime": 12,
+        "primeIfIrrigated": 12,
+        "statewide": 4
       },
       "bedrock": null,
       "waterTable": {
@@ -24100,8 +24100,8 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 91,
-        "primeIfIrrigated": 91,
+        "prime": 73,
+        "primeIfIrrigated": 73,
         "statewide": 0
       },
       "bedrock": null,
@@ -24268,8 +24268,8 @@
       },
       "omAvg": 1,
       "farmland": {
-        "prime": 50,
-        "primeIfIrrigated": 50,
+        "prime": 51,
+        "primeIfIrrigated": 51,
         "statewide": 22
       },
       "bedrock": null,
@@ -24657,7 +24657,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 65
+        "statewide": 63
       },
       "bedrock": null,
       "waterTable": {
@@ -24966,9 +24966,9 @@
       "saltVariation": null,
       "omAvg": 0.9,
       "farmland": {
-        "prime": 6,
-        "primeIfIrrigated": 6,
-        "statewide": 5
+        "prime": 4,
+        "primeIfIrrigated": 4,
+        "statewide": 4
       },
       "bedrock": {
         "pct": 52,
@@ -25543,7 +25543,7 @@
       "farmland": {
         "prime": 3,
         "primeIfIrrigated": 3,
-        "statewide": 89
+        "statewide": 70
       },
       "bedrock": null,
       "waterTable": null,
@@ -26133,8 +26133,8 @@
       "saltVariation": null,
       "omAvg": 1.1,
       "farmland": {
-        "prime": 45,
-        "primeIfIrrigated": 45,
+        "prime": 36,
+        "primeIfIrrigated": 36,
         "statewide": 0
       },
       "bedrock": {
@@ -26372,7 +26372,7 @@
       "farmland": {
         "prime": 24,
         "primeIfIrrigated": 24,
-        "statewide": 56
+        "statewide": 53
       },
       "bedrock": null,
       "waterTable": {
@@ -26790,9 +26790,9 @@
       "saltVariation": null,
       "omAvg": 4.2,
       "farmland": {
-        "prime": 50,
-        "primeIfIrrigated": 50,
-        "statewide": 45
+        "prime": 12,
+        "primeIfIrrigated": 12,
+        "statewide": 14
       },
       "bedrock": null,
       "waterTable": {
@@ -27296,8 +27296,8 @@
       "saltVariation": null,
       "omAvg": 2,
       "farmland": {
-        "prime": 100,
-        "primeIfIrrigated": 100,
+        "prime": 64,
+        "primeIfIrrigated": 64,
         "statewide": 0
       },
       "bedrock": null,
@@ -27553,7 +27553,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 88
+        "statewide": 53
       },
       "bedrock": null,
       "waterTable": {
@@ -27803,9 +27803,9 @@
       },
       "omAvg": 2.2,
       "farmland": {
-        "prime": 61,
-        "primeIfIrrigated": 61,
-        "statewide": 8
+        "prime": 29,
+        "primeIfIrrigated": 29,
+        "statewide": 4
       },
       "bedrock": null,
       "waterTable": null,
@@ -28548,7 +28548,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 71
+        "statewide": 1
       },
       "bedrock": {
         "pct": 29,
@@ -28678,9 +28678,9 @@
       "saltVariation": null,
       "omAvg": 2.2,
       "farmland": {
-        "prime": 89,
-        "primeIfIrrigated": 89,
-        "statewide": 6
+        "prime": 76,
+        "primeIfIrrigated": 76,
+        "statewide": 5
       },
       "bedrock": null,
       "waterTable": null,
@@ -29348,8 +29348,8 @@
       "saltVariation": null,
       "omAvg": 0.8,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
+        "prime": 32,
+        "primeIfIrrigated": 32,
         "statewide": 0
       },
       "bedrock": null,
@@ -29554,7 +29554,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 92
+        "statewide": 91
       },
       "bedrock": null,
       "waterTable": null,
@@ -29715,7 +29715,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 100
+        "statewide": 58
       },
       "bedrock": null,
       "waterTable": null,
@@ -29865,9 +29865,9 @@
       },
       "omAvg": 2.2,
       "farmland": {
-        "prime": 52,
-        "primeIfIrrigated": 52,
-        "statewide": 3
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 2
       },
       "bedrock": null,
       "waterTable": null,
@@ -30227,9 +30227,9 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 58,
-        "primeIfIrrigated": 58,
-        "statewide": 31
+        "prime": 42,
+        "primeIfIrrigated": 42,
+        "statewide": 23
       },
       "bedrock": null,
       "waterTable": {
@@ -30377,8 +30377,8 @@
       "saltVariation": null,
       "omAvg": 1.4,
       "farmland": {
-        "prime": 9,
-        "primeIfIrrigated": 9,
+        "prime": 3,
+        "primeIfIrrigated": 3,
         "statewide": 0
       },
       "bedrock": null,
@@ -30589,8 +30589,8 @@
       "saltVariation": null,
       "omAvg": 3.2,
       "farmland": {
-        "prime": 59,
-        "primeIfIrrigated": 59,
+        "prime": 50,
+        "primeIfIrrigated": 50,
         "statewide": 5
       },
       "bedrock": null,
@@ -30705,9 +30705,9 @@
       "saltVariation": null,
       "omAvg": 5.8,
       "farmland": {
-        "prime": 28,
-        "primeIfIrrigated": 28,
-        "statewide": 72
+        "prime": 14,
+        "primeIfIrrigated": 14,
+        "statewide": 61
       },
       "bedrock": null,
       "waterTable": {
@@ -30821,8 +30821,8 @@
       "saltVariation": null,
       "omAvg": 2.2,
       "farmland": {
-        "prime": 31,
-        "primeIfIrrigated": 31,
+        "prime": 26,
+        "primeIfIrrigated": 26,
         "statewide": 0
       },
       "bedrock": {
@@ -31046,9 +31046,9 @@
       "saltVariation": null,
       "omAvg": 3.3,
       "farmland": {
-        "prime": 78,
-        "primeIfIrrigated": 78,
-        "statewide": 22
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 12
       },
       "bedrock": null,
       "waterTable": {
@@ -31215,9 +31215,9 @@
       },
       "omAvg": 0.8,
       "farmland": {
-        "prime": 46,
-        "primeIfIrrigated": 46,
-        "statewide": 2
+        "prime": 31,
+        "primeIfIrrigated": 31,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": null,
@@ -31662,9 +31662,9 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 46,
-        "primeIfIrrigated": 46,
-        "statewide": 50
+        "prime": 31,
+        "primeIfIrrigated": 31,
+        "statewide": 34
       },
       "bedrock": null,
       "waterTable": null,
@@ -31867,9 +31867,9 @@
       "saltVariation": null,
       "omAvg": 2.5,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
-        "statewide": 47
+        "prime": 44,
+        "primeIfIrrigated": 44,
+        "statewide": 44
       },
       "bedrock": null,
       "waterTable": null,
@@ -32261,9 +32261,9 @@
       "saltVariation": null,
       "omAvg": 4.4,
       "farmland": {
-        "prime": 41,
-        "primeIfIrrigated": 41,
-        "statewide": 21
+        "prime": 3,
+        "primeIfIrrigated": 3,
+        "statewide": 2
       },
       "bedrock": null,
       "waterTable": null,
@@ -32634,9 +32634,9 @@
       "saltVariation": null,
       "omAvg": 0.6,
       "farmland": {
-        "prime": 72,
-        "primeIfIrrigated": 72,
-        "statewide": 7
+        "prime": 45,
+        "primeIfIrrigated": 45,
+        "statewide": 4
       },
       "bedrock": {
         "pct": 11,
@@ -32894,8 +32894,8 @@
       },
       "omAvg": 1.3,
       "farmland": {
-        "prime": 67,
-        "primeIfIrrigated": 67,
+        "prime": 58,
+        "primeIfIrrigated": 58,
         "statewide": 0
       },
       "bedrock": null,
@@ -33057,8 +33057,8 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 99,
-        "primeIfIrrigated": 99,
+        "prime": 77,
+        "primeIfIrrigated": 77,
         "statewide": 0
       },
       "bedrock": null,
@@ -33169,9 +33169,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 18,
-        "primeIfIrrigated": 18,
-        "statewide": 16
+        "prime": 9,
+        "primeIfIrrigated": 9,
+        "statewide": 8
       },
       "bedrock": null,
       "waterTable": {
@@ -33366,7 +33366,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 54
+        "statewide": 32
       },
       "bedrock": null,
       "waterTable": {
@@ -33626,8 +33626,8 @@
       "saltVariation": null,
       "omAvg": 0.9,
       "farmland": {
-        "prime": 80,
-        "primeIfIrrigated": 80,
+        "prime": 65,
+        "primeIfIrrigated": 65,
         "statewide": 0
       },
       "bedrock": null,
@@ -33916,9 +33916,9 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 58,
-        "primeIfIrrigated": 58,
-        "statewide": 42
+        "prime": 48,
+        "primeIfIrrigated": 48,
+        "statewide": 35
       },
       "bedrock": null,
       "waterTable": null,
@@ -34156,8 +34156,8 @@
       "saltVariation": null,
       "omAvg": 3.7,
       "farmland": {
-        "prime": 79,
-        "primeIfIrrigated": 79,
+        "prime": 64,
+        "primeIfIrrigated": 64,
         "statewide": 8
       },
       "bedrock": null,
@@ -34842,9 +34842,9 @@
       "saltVariation": null,
       "omAvg": 1.9,
       "farmland": {
-        "prime": 54,
-        "primeIfIrrigated": 54,
-        "statewide": 46
+        "prime": 46,
+        "primeIfIrrigated": 46,
+        "statewide": 38
       },
       "bedrock": null,
       "waterTable": null,
@@ -35306,9 +35306,9 @@
       "saltVariation": null,
       "omAvg": 2.5,
       "farmland": {
-        "prime": 14,
-        "primeIfIrrigated": 14,
-        "statewide": 17
+        "prime": 6,
+        "primeIfIrrigated": 6,
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": {
@@ -35427,9 +35427,9 @@
       "saltVariation": null,
       "omAvg": 1.9,
       "farmland": {
-        "prime": 55,
-        "primeIfIrrigated": 55,
-        "statewide": 40
+        "prime": 43,
+        "primeIfIrrigated": 43,
+        "statewide": 32
       },
       "bedrock": null,
       "waterTable": null,
@@ -35582,9 +35582,9 @@
       "saltVariation": null,
       "omAvg": 2.3,
       "farmland": {
-        "prime": 5,
-        "primeIfIrrigated": 5,
-        "statewide": 35
+        "prime": 3,
+        "primeIfIrrigated": 3,
+        "statewide": 20
       },
       "bedrock": null,
       "waterTable": null,
@@ -35731,8 +35731,8 @@
       },
       "omAvg": 0.9,
       "farmland": {
-        "prime": 50,
-        "primeIfIrrigated": 50,
+        "prime": 10,
+        "primeIfIrrigated": 10,
         "statewide": 0
       },
       "bedrock": {
@@ -35915,7 +35915,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 98
+        "statewide": 29
       },
       "bedrock": null,
       "waterTable": null,
@@ -36033,8 +36033,8 @@
       "saltVariation": null,
       "omAvg": 2.7,
       "farmland": {
-        "prime": 41,
-        "primeIfIrrigated": 41,
+        "prime": 39,
+        "primeIfIrrigated": 39,
         "statewide": 53
       },
       "bedrock": null,
@@ -36132,8 +36132,8 @@
       "saltVariation": null,
       "omAvg": 2.4,
       "farmland": {
-        "prime": 50,
-        "primeIfIrrigated": 50,
+        "prime": 39,
+        "primeIfIrrigated": 39,
         "statewide": 0
       },
       "bedrock": null,
@@ -36302,8 +36302,8 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 92,
-        "primeIfIrrigated": 92,
+        "prime": 90,
+        "primeIfIrrigated": 90,
         "statewide": 0
       },
       "bedrock": null,
@@ -36495,9 +36495,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 87,
-        "primeIfIrrigated": 87,
-        "statewide": 2
+        "prime": 72,
+        "primeIfIrrigated": 72,
+        "statewide": 5
       },
       "bedrock": null,
       "waterTable": null,
@@ -37582,8 +37582,8 @@
       },
       "omAvg": 1.1,
       "farmland": {
-        "prime": 52,
-        "primeIfIrrigated": 52,
+        "prime": 45,
+        "primeIfIrrigated": 45,
         "statewide": 0
       },
       "bedrock": null,
@@ -37705,8 +37705,8 @@
       "saltVariation": null,
       "omAvg": 0.9,
       "farmland": {
-        "prime": 26,
-        "primeIfIrrigated": 26,
+        "prime": 15,
+        "primeIfIrrigated": 15,
         "statewide": 0
       },
       "bedrock": null,
@@ -37910,9 +37910,9 @@
       "saltVariation": null,
       "omAvg": 2.5,
       "farmland": {
-        "prime": 72,
-        "primeIfIrrigated": 72,
-        "statewide": 23
+        "prime": 47,
+        "primeIfIrrigated": 47,
+        "statewide": 16
       },
       "bedrock": null,
       "waterTable": null,
@@ -39155,8 +39155,8 @@
       "saltVariation": null,
       "omAvg": 2.4,
       "farmland": {
-        "prime": 100,
-        "primeIfIrrigated": 100,
+        "prime": 99,
+        "primeIfIrrigated": 99,
         "statewide": 0
       },
       "bedrock": null,
@@ -39272,8 +39272,8 @@
       "saltVariation": null,
       "omAvg": 1.9,
       "farmland": {
-        "prime": 82,
-        "primeIfIrrigated": 82,
+        "prime": 74,
+        "primeIfIrrigated": 74,
         "statewide": 7
       },
       "bedrock": null,
@@ -39426,9 +39426,9 @@
       "saltVariation": null,
       "omAvg": 2.8,
       "farmland": {
-        "prime": 61,
-        "primeIfIrrigated": 61,
-        "statewide": 39
+        "prime": 37,
+        "primeIfIrrigated": 37,
+        "statewide": 31
       },
       "bedrock": null,
       "waterTable": {
@@ -39611,9 +39611,9 @@
       },
       "omAvg": 3.2,
       "farmland": {
-        "prime": 70,
-        "primeIfIrrigated": 70,
-        "statewide": 24
+        "prime": 49,
+        "primeIfIrrigated": 49,
+        "statewide": 16
       },
       "bedrock": null,
       "waterTable": {
@@ -40123,9 +40123,9 @@
       "saltVariation": null,
       "omAvg": 1.4,
       "farmland": {
-        "prime": 11,
-        "primeIfIrrigated": 11,
-        "statewide": 72
+        "prime": 13,
+        "primeIfIrrigated": 13,
+        "statewide": 70
       },
       "bedrock": null,
       "waterTable": null,
@@ -40332,9 +40332,9 @@
       },
       "omAvg": 3.8,
       "farmland": {
-        "prime": 21,
-        "primeIfIrrigated": 21,
-        "statewide": 60
+        "prime": 19,
+        "primeIfIrrigated": 19,
+        "statewide": 51
       },
       "bedrock": null,
       "waterTable": {
@@ -41281,8 +41281,8 @@
       },
       "omAvg": 1.2,
       "farmland": {
-        "prime": 91,
-        "primeIfIrrigated": 91,
+        "prime": 77,
+        "primeIfIrrigated": 77,
         "statewide": 0
       },
       "bedrock": null,
@@ -41598,8 +41598,8 @@
       },
       "omAvg": 1,
       "farmland": {
-        "prime": 72,
-        "primeIfIrrigated": 72,
+        "prime": 70,
+        "primeIfIrrigated": 70,
         "statewide": 0
       },
       "bedrock": null,
@@ -41732,9 +41732,9 @@
       "saltVariation": null,
       "omAvg": 1.9,
       "farmland": {
-        "prime": 20,
-        "primeIfIrrigated": 20,
-        "statewide": 7
+        "prime": 9,
+        "primeIfIrrigated": 9,
+        "statewide": 3
       },
       "bedrock": null,
       "waterTable": {
@@ -42216,7 +42216,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 82
+        "statewide": 68
       },
       "bedrock": null,
       "waterTable": null,
@@ -42386,9 +42386,9 @@
       "saltVariation": null,
       "omAvg": 0.8,
       "farmland": {
-        "prime": 4,
-        "primeIfIrrigated": 4,
-        "statewide": 84
+        "prime": 3,
+        "primeIfIrrigated": 3,
+        "statewide": 72
       },
       "bedrock": null,
       "waterTable": null,
@@ -42649,9 +42649,9 @@
       },
       "omAvg": 3.2,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
-        "statewide": 51
+        "prime": 19,
+        "primeIfIrrigated": 19,
+        "statewide": 21
       },
       "bedrock": null,
       "waterTable": null,
@@ -42818,9 +42818,9 @@
       "saltVariation": null,
       "omAvg": 2.3,
       "farmland": {
-        "prime": 93,
-        "primeIfIrrigated": 93,
-        "statewide": 2
+        "prime": 56,
+        "primeIfIrrigated": 56,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": null,
@@ -43163,9 +43163,9 @@
       "saltVariation": null,
       "omAvg": 4.9,
       "farmland": {
-        "prime": 26,
-        "primeIfIrrigated": 26,
-        "statewide": 74
+        "prime": 24,
+        "primeIfIrrigated": 24,
+        "statewide": 67
       },
       "bedrock": null,
       "waterTable": {
@@ -43291,9 +43291,9 @@
       },
       "omAvg": 4.1,
       "farmland": {
-        "prime": 69,
-        "primeIfIrrigated": 69,
-        "statewide": 5
+        "prime": 45,
+        "primeIfIrrigated": 45,
+        "statewide": 4
       },
       "bedrock": null,
       "waterTable": null,
@@ -43506,9 +43506,9 @@
       "saltVariation": null,
       "omAvg": 2.5,
       "farmland": {
-        "prime": 4,
-        "primeIfIrrigated": 4,
-        "statewide": 0
+        "prime": 2,
+        "primeIfIrrigated": 2,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": {
@@ -43714,7 +43714,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 41
+        "statewide": 37
       },
       "bedrock": null,
       "waterTable": null,
@@ -43843,9 +43843,9 @@
       "saltVariation": null,
       "omAvg": 1.6,
       "farmland": {
-        "prime": 20,
-        "primeIfIrrigated": 20,
-        "statewide": 80
+        "prime": 21,
+        "primeIfIrrigated": 21,
+        "statewide": 79
       },
       "bedrock": null,
       "waterTable": null,
@@ -44010,9 +44010,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 67,
-        "primeIfIrrigated": 67,
-        "statewide": 30
+        "prime": 62,
+        "primeIfIrrigated": 62,
+        "statewide": 27
       },
       "bedrock": null,
       "waterTable": null,
@@ -44299,8 +44299,8 @@
       },
       "omAvg": 3,
       "farmland": {
-        "prime": 74,
-        "primeIfIrrigated": 74,
+        "prime": 61,
+        "primeIfIrrigated": 61,
         "statewide": 0
       },
       "bedrock": null,
@@ -44706,9 +44706,9 @@
       "saltVariation": null,
       "omAvg": 5,
       "farmland": {
-        "prime": 14,
-        "primeIfIrrigated": 14,
-        "statewide": 50
+        "prime": 10,
+        "primeIfIrrigated": 10,
+        "statewide": 38
       },
       "bedrock": {
         "pct": 33,
@@ -45230,8 +45230,8 @@
       },
       "omAvg": 2.5,
       "farmland": {
-        "prime": 88,
-        "primeIfIrrigated": 88,
+        "prime": 62,
+        "primeIfIrrigated": 62,
         "statewide": 0
       },
       "bedrock": null,
@@ -45672,9 +45672,9 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 17,
-        "primeIfIrrigated": 17,
-        "statewide": 72
+        "prime": 13,
+        "primeIfIrrigated": 13,
+        "statewide": 54
       },
       "bedrock": null,
       "waterTable": null,
@@ -46099,9 +46099,9 @@
       "saltVariation": null,
       "omAvg": 1,
       "farmland": {
-        "prime": 38,
-        "primeIfIrrigated": 38,
-        "statewide": 6
+        "prime": 26,
+        "primeIfIrrigated": 26,
+        "statewide": 5
       },
       "bedrock": null,
       "waterTable": null,
@@ -46667,8 +46667,8 @@
       },
       "omAvg": 2.1,
       "farmland": {
-        "prime": 42,
-        "primeIfIrrigated": 42,
+        "prime": 39,
+        "primeIfIrrigated": 39,
         "statewide": 0
       },
       "bedrock": null,
@@ -46891,8 +46891,8 @@
       "saltVariation": null,
       "omAvg": 2.1,
       "farmland": {
-        "prime": 50,
-        "primeIfIrrigated": 50,
+        "prime": 47,
+        "primeIfIrrigated": 47,
         "statewide": 0
       },
       "bedrock": null,
@@ -47102,7 +47102,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 11
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": {
@@ -47277,9 +47277,9 @@
       "saltVariation": null,
       "omAvg": 2.5,
       "farmland": {
-        "prime": 7,
-        "primeIfIrrigated": 7,
-        "statewide": 84
+        "prime": 5,
+        "primeIfIrrigated": 5,
+        "statewide": 63
       },
       "bedrock": null,
       "waterTable": null,
@@ -47610,8 +47610,8 @@
       "saltVariation": null,
       "omAvg": 3.4,
       "farmland": {
-        "prime": 91,
-        "primeIfIrrigated": 91,
+        "prime": 76,
+        "primeIfIrrigated": 76,
         "statewide": 9
       },
       "bedrock": null,
@@ -47944,7 +47944,7 @@
       "farmland": {
         "prime": 28,
         "primeIfIrrigated": 28,
-        "statewide": 52
+        "statewide": 50
       },
       "bedrock": null,
       "waterTable": null,
@@ -48189,7 +48189,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 60
+        "statewide": 47
       },
       "bedrock": null,
       "waterTable": null,
@@ -48454,9 +48454,9 @@
       "saltVariation": null,
       "omAvg": 3.4,
       "farmland": {
-        "prime": 57,
-        "primeIfIrrigated": 57,
-        "statewide": 36
+        "prime": 26,
+        "primeIfIrrigated": 26,
+        "statewide": 20
       },
       "bedrock": null,
       "waterTable": {
@@ -48676,8 +48676,8 @@
       "saltVariation": null,
       "omAvg": 2.1,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
+        "prime": 45,
+        "primeIfIrrigated": 45,
         "statewide": 13
       },
       "bedrock": null,
@@ -49672,8 +49672,8 @@
       },
       "omAvg": 1.2,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
+        "prime": 47,
+        "primeIfIrrigated": 47,
         "statewide": 0
       },
       "bedrock": null,
@@ -49797,7 +49797,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 45
+        "statewide": 18
       },
       "bedrock": null,
       "waterTable": null,
@@ -49908,8 +49908,8 @@
       "saltVariation": null,
       "omAvg": 1.9,
       "farmland": {
-        "prime": 0,
-        "primeIfIrrigated": 0,
+        "prime": 1,
+        "primeIfIrrigated": 1,
         "statewide": 59
       },
       "bedrock": null,
@@ -50066,8 +50066,8 @@
       },
       "omAvg": 2.8,
       "farmland": {
-        "prime": 86,
-        "primeIfIrrigated": 86,
+        "prime": 75,
+        "primeIfIrrigated": 75,
         "statewide": 2
       },
       "bedrock": null,
@@ -50371,8 +50371,8 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 100,
-        "primeIfIrrigated": 100,
+        "prime": 88,
+        "primeIfIrrigated": 88,
         "statewide": 0
       },
       "bedrock": null,
@@ -50502,9 +50502,9 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 60,
-        "primeIfIrrigated": 60,
-        "statewide": 37
+        "prime": 57,
+        "primeIfIrrigated": 57,
+        "statewide": 35
       },
       "bedrock": null,
       "waterTable": null,
@@ -50624,8 +50624,8 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 95,
-        "primeIfIrrigated": 95,
+        "prime": 90,
+        "primeIfIrrigated": 90,
         "statewide": 5
       },
       "bedrock": null,
@@ -50764,9 +50764,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 36,
-        "primeIfIrrigated": 36,
-        "statewide": 58
+        "prime": 33,
+        "primeIfIrrigated": 33,
+        "statewide": 56
       },
       "bedrock": null,
       "waterTable": null,
@@ -51049,9 +51049,9 @@
       "saltVariation": null,
       "omAvg": 2.2,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
-        "statewide": 43
+        "prime": 39,
+        "primeIfIrrigated": 39,
+        "statewide": 34
       },
       "bedrock": null,
       "waterTable": null,
@@ -51342,9 +51342,9 @@
       "saltVariation": null,
       "omAvg": 3.6,
       "farmland": {
-        "prime": 43,
-        "primeIfIrrigated": 43,
-        "statewide": 32
+        "prime": 24,
+        "primeIfIrrigated": 24,
+        "statewide": 17
       },
       "bedrock": null,
       "waterTable": null,
@@ -51633,9 +51633,9 @@
       "saltVariation": null,
       "omAvg": 2.7,
       "farmland": {
-        "prime": 30,
-        "primeIfIrrigated": 30,
-        "statewide": 0
+        "prime": 23,
+        "primeIfIrrigated": 23,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": {
@@ -52028,8 +52028,8 @@
       "saltVariation": null,
       "omAvg": 0.9,
       "farmland": {
-        "prime": 59,
-        "primeIfIrrigated": 59,
+        "prime": 56,
+        "primeIfIrrigated": 56,
         "statewide": 0
       },
       "bedrock": null,
@@ -52159,9 +52159,9 @@
       "saltVariation": null,
       "omAvg": 4.9,
       "farmland": {
-        "prime": 37,
-        "primeIfIrrigated": 37,
-        "statewide": 32
+        "prime": 31,
+        "primeIfIrrigated": 31,
+        "statewide": 16
       },
       "bedrock": null,
       "waterTable": {
@@ -52439,9 +52439,9 @@
       "saltVariation": null,
       "omAvg": 3.3,
       "farmland": {
-        "prime": 39,
-        "primeIfIrrigated": 39,
-        "statewide": 27
+        "prime": 17,
+        "primeIfIrrigated": 17,
+        "statewide": 11
       },
       "bedrock": null,
       "waterTable": null,
@@ -54708,8 +54708,8 @@
       },
       "omAvg": 2.6,
       "farmland": {
-        "prime": 55,
-        "primeIfIrrigated": 55,
+        "prime": 46,
+        "primeIfIrrigated": 46,
         "statewide": 0
       },
       "bedrock": null,
@@ -54885,9 +54885,9 @@
       "saltVariation": null,
       "omAvg": 1.3,
       "farmland": {
-        "prime": 37,
-        "primeIfIrrigated": 37,
-        "statewide": 15
+        "prime": 20,
+        "primeIfIrrigated": 20,
+        "statewide": 10
       },
       "bedrock": {
         "pct": 40,
@@ -55063,9 +55063,9 @@
       "saltVariation": null,
       "omAvg": 2.1,
       "farmland": {
-        "prime": 88,
-        "primeIfIrrigated": 88,
-        "statewide": 9
+        "prime": 75,
+        "primeIfIrrigated": 75,
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": null,
@@ -56403,8 +56403,8 @@
       "saltVariation": null,
       "omAvg": 2.7,
       "farmland": {
-        "prime": 43,
-        "primeIfIrrigated": 43,
+        "prime": 41,
+        "primeIfIrrigated": 41,
         "statewide": 52
       },
       "bedrock": null,
@@ -56724,9 +56724,9 @@
       "saltVariation": null,
       "omAvg": 2.8,
       "farmland": {
-        "prime": 36,
-        "primeIfIrrigated": 36,
-        "statewide": 64
+        "prime": 35,
+        "primeIfIrrigated": 35,
+        "statewide": 63
       },
       "bedrock": null,
       "waterTable": null,
@@ -56847,8 +56847,8 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 100,
-        "primeIfIrrigated": 100,
+        "prime": 78,
+        "primeIfIrrigated": 78,
         "statewide": 0
       },
       "bedrock": null,
@@ -56976,9 +56976,9 @@
       "saltVariation": null,
       "omAvg": 5.9,
       "farmland": {
-        "prime": 27,
-        "primeIfIrrigated": 27,
-        "statewide": 73
+        "prime": 5,
+        "primeIfIrrigated": 5,
+        "statewide": 13
       },
       "bedrock": null,
       "waterTable": {
@@ -58048,9 +58048,9 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 68,
-        "primeIfIrrigated": 68,
-        "statewide": 32
+        "prime": 37,
+        "primeIfIrrigated": 37,
+        "statewide": 17
       },
       "bedrock": null,
       "waterTable": null,
@@ -58237,9 +58237,9 @@
       "saltVariation": null,
       "omAvg": 2.4,
       "farmland": {
-        "prime": 81,
-        "primeIfIrrigated": 81,
-        "statewide": 8
+        "prime": 62,
+        "primeIfIrrigated": 62,
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": null,
@@ -58689,9 +58689,9 @@
       "saltVariation": null,
       "omAvg": 6.6,
       "farmland": {
-        "prime": 18,
-        "primeIfIrrigated": 18,
-        "statewide": 82
+        "prime": 21,
+        "primeIfIrrigated": 21,
+        "statewide": 53
       },
       "bedrock": null,
       "waterTable": {
@@ -58818,9 +58818,9 @@
       },
       "omAvg": 4.2,
       "farmland": {
-        "prime": 38,
-        "primeIfIrrigated": 38,
-        "statewide": 34
+        "prime": 29,
+        "primeIfIrrigated": 29,
+        "statewide": 24
       },
       "bedrock": null,
       "waterTable": {
@@ -59028,9 +59028,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 48,
-        "primeIfIrrigated": 48,
-        "statewide": 6
+        "prime": 35,
+        "primeIfIrrigated": 35,
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": null,
@@ -59518,9 +59518,9 @@
       "saltVariation": null,
       "omAvg": 2.1,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
-        "statewide": 0
+        "prime": 45,
+        "primeIfIrrigated": 45,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": {
@@ -59768,9 +59768,9 @@
       },
       "omAvg": 3.4,
       "farmland": {
-        "prime": 95,
-        "primeIfIrrigated": 95,
-        "statewide": 5
+        "prime": 73,
+        "primeIfIrrigated": 73,
+        "statewide": 6
       },
       "bedrock": null,
       "waterTable": null,
@@ -60332,9 +60332,9 @@
       "saltVariation": null,
       "omAvg": 3.4,
       "farmland": {
-        "prime": 25,
-        "primeIfIrrigated": 25,
-        "statewide": 19
+        "prime": 23,
+        "primeIfIrrigated": 23,
+        "statewide": 14
       },
       "bedrock": null,
       "waterTable": {
@@ -60536,9 +60536,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 60,
-        "primeIfIrrigated": 60,
-        "statewide": 37
+        "prime": 57,
+        "primeIfIrrigated": 57,
+        "statewide": 35
       },
       "bedrock": null,
       "waterTable": null,
@@ -60644,9 +60644,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 69,
-        "primeIfIrrigated": 69,
-        "statewide": 15
+        "prime": 66,
+        "primeIfIrrigated": 66,
+        "statewide": 14
       },
       "bedrock": null,
       "waterTable": null,
@@ -60792,8 +60792,8 @@
       "saltVariation": null,
       "omAvg": 1.9,
       "farmland": {
-        "prime": 91,
-        "primeIfIrrigated": 91,
+        "prime": 62,
+        "primeIfIrrigated": 62,
         "statewide": 0
       },
       "bedrock": null,
@@ -61361,9 +61361,9 @@
       "saltVariation": null,
       "omAvg": 2.7,
       "farmland": {
-        "prime": 21,
-        "primeIfIrrigated": 21,
-        "statewide": 79
+        "prime": 17,
+        "primeIfIrrigated": 17,
+        "statewide": 55
       },
       "bedrock": null,
       "waterTable": null,
@@ -61649,9 +61649,9 @@
       "saltVariation": null,
       "omAvg": 4.2,
       "farmland": {
-        "prime": 45,
-        "primeIfIrrigated": 45,
-        "statewide": 26
+        "prime": 22,
+        "primeIfIrrigated": 22,
+        "statewide": 11
       },
       "bedrock": null,
       "waterTable": {
@@ -63172,8 +63172,8 @@
       "saltVariation": null,
       "omAvg": 1.4,
       "farmland": {
-        "prime": 22,
-        "primeIfIrrigated": 22,
+        "prime": 24,
+        "primeIfIrrigated": 24,
         "statewide": 0
       },
       "bedrock": null,
@@ -63509,8 +63509,8 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 22,
-        "primeIfIrrigated": 22,
+        "prime": 17,
+        "primeIfIrrigated": 17,
         "statewide": 0
       },
       "bedrock": null,
@@ -63654,8 +63654,8 @@
       "saltVariation": null,
       "omAvg": 1.6,
       "farmland": {
-        "prime": 84,
-        "primeIfIrrigated": 84,
+        "prime": 66,
+        "primeIfIrrigated": 66,
         "statewide": 0
       },
       "bedrock": null,
@@ -64094,9 +64094,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 74,
-        "primeIfIrrigated": 74,
-        "statewide": 21
+        "prime": 57,
+        "primeIfIrrigated": 57,
+        "statewide": 19
       },
       "bedrock": null,
       "waterTable": null,
@@ -64332,9 +64332,9 @@
       "saltVariation": null,
       "omAvg": 2.5,
       "farmland": {
-        "prime": 61,
-        "primeIfIrrigated": 61,
-        "statewide": 33
+        "prime": 54,
+        "primeIfIrrigated": 54,
+        "statewide": 30
       },
       "bedrock": null,
       "waterTable": null,
@@ -64506,9 +64506,9 @@
       "saltVariation": null,
       "omAvg": 3.2,
       "farmland": {
-        "prime": 64,
-        "primeIfIrrigated": 64,
-        "statewide": 36
+        "prime": 51,
+        "primeIfIrrigated": 51,
+        "statewide": 28
       },
       "bedrock": null,
       "waterTable": null,
@@ -64745,9 +64745,9 @@
       },
       "omAvg": 2.8,
       "farmland": {
-        "prime": 86,
-        "primeIfIrrigated": 86,
-        "statewide": 3
+        "prime": 71,
+        "primeIfIrrigated": 71,
+        "statewide": 4
       },
       "bedrock": null,
       "waterTable": null,
@@ -64863,8 +64863,8 @@
       },
       "omAvg": 2.8,
       "farmland": {
-        "prime": 81,
-        "primeIfIrrigated": 81,
+        "prime": 75,
+        "primeIfIrrigated": 75,
         "statewide": 12
       },
       "bedrock": null,
@@ -65635,9 +65635,9 @@
       },
       "omAvg": 1.1,
       "farmland": {
-        "prime": 34,
-        "primeIfIrrigated": 34,
-        "statewide": 4
+        "prime": 11,
+        "primeIfIrrigated": 11,
+        "statewide": 1
       },
       "bedrock": {
         "pct": 41,
@@ -65784,8 +65784,8 @@
       },
       "omAvg": 2.5,
       "farmland": {
-        "prime": 84,
-        "primeIfIrrigated": 84,
+        "prime": 72,
+        "primeIfIrrigated": 72,
         "statewide": 0
       },
       "bedrock": null,
@@ -65893,9 +65893,9 @@
       "saltVariation": null,
       "omAvg": 0.8,
       "farmland": {
-        "prime": 52,
-        "primeIfIrrigated": 52,
-        "statewide": 13
+        "prime": 41,
+        "primeIfIrrigated": 41,
+        "statewide": 10
       },
       "bedrock": null,
       "waterTable": null,
@@ -66325,9 +66325,9 @@
       "saltVariation": null,
       "omAvg": 2.2,
       "farmland": {
-        "prime": 67,
-        "primeIfIrrigated": 67,
-        "statewide": 12
+        "prime": 58,
+        "primeIfIrrigated": 58,
+        "statewide": 10
       },
       "bedrock": null,
       "waterTable": null,
@@ -66883,7 +66883,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 91
+        "statewide": 85
       },
       "bedrock": null,
       "waterTable": null,
@@ -67036,9 +67036,9 @@
       "saltVariation": null,
       "omAvg": 2.4,
       "farmland": {
-        "prime": 59,
-        "primeIfIrrigated": 59,
-        "statewide": 16
+        "prime": 48,
+        "primeIfIrrigated": 48,
+        "statewide": 13
       },
       "bedrock": null,
       "waterTable": null,
@@ -67389,8 +67389,8 @@
       },
       "omAvg": 1.6,
       "farmland": {
-        "prime": 32,
-        "primeIfIrrigated": 32,
+        "prime": 18,
+        "primeIfIrrigated": 18,
         "statewide": 0
       },
       "bedrock": null,
@@ -67634,9 +67634,9 @@
       "saltVariation": null,
       "omAvg": 2,
       "farmland": {
-        "prime": 11,
-        "primeIfIrrigated": 11,
-        "statewide": 25
+        "prime": 7,
+        "primeIfIrrigated": 7,
+        "statewide": 13
       },
       "bedrock": null,
       "waterTable": {
@@ -71612,7 +71612,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 19
+        "statewide": 0
       },
       "bedrock": null,
       "waterTable": {
@@ -71701,8 +71701,8 @@
       "saltVariation": null,
       "omAvg": 2.1,
       "farmland": {
-        "prime": 24,
-        "primeIfIrrigated": 24,
+        "prime": 19,
+        "primeIfIrrigated": 19,
         "statewide": 6
       },
       "bedrock": null,
@@ -73076,9 +73076,9 @@
       },
       "omAvg": 0.8,
       "farmland": {
-        "prime": 83,
-        "primeIfIrrigated": 83,
-        "statewide": 4
+        "prime": 36,
+        "primeIfIrrigated": 36,
+        "statewide": 2
       },
       "bedrock": null,
       "waterTable": null,
@@ -73309,9 +73309,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 92,
-        "primeIfIrrigated": 92,
-        "statewide": 2
+        "prime": 48,
+        "primeIfIrrigated": 48,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": null,
@@ -73599,9 +73599,9 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 61,
-        "primeIfIrrigated": 61,
-        "statewide": 2
+        "prime": 45,
+        "primeIfIrrigated": 45,
+        "statewide": 5
       },
       "bedrock": null,
       "waterTable": null,
@@ -74632,7 +74632,7 @@
       "farmland": {
         "prime": 13,
         "primeIfIrrigated": 13,
-        "statewide": 87
+        "statewide": 86
       },
       "bedrock": null,
       "waterTable": null,
@@ -74978,8 +74978,8 @@
       },
       "omAvg": 1.7,
       "farmland": {
-        "prime": 74,
-        "primeIfIrrigated": 74,
+        "prime": 68,
+        "primeIfIrrigated": 68,
         "statewide": 0
       },
       "bedrock": null,
@@ -75095,9 +75095,9 @@
       "saltVariation": null,
       "omAvg": 4.8,
       "farmland": {
-        "prime": 54,
-        "primeIfIrrigated": 54,
-        "statewide": 46
+        "prime": 21,
+        "primeIfIrrigated": 21,
+        "statewide": 28
       },
       "bedrock": null,
       "waterTable": null,
@@ -75190,9 +75190,9 @@
       "saltVariation": null,
       "omAvg": 2.2,
       "farmland": {
-        "prime": 40,
-        "primeIfIrrigated": 40,
-        "statewide": 60
+        "prime": 36,
+        "primeIfIrrigated": 36,
+        "statewide": 53
       },
       "bedrock": null,
       "waterTable": null,
@@ -75515,8 +75515,8 @@
       },
       "omAvg": 3.2,
       "farmland": {
-        "prime": 84,
-        "primeIfIrrigated": 84,
+        "prime": 85,
+        "primeIfIrrigated": 85,
         "statewide": 0
       },
       "bedrock": null,
@@ -75659,9 +75659,9 @@
       "saltVariation": null,
       "omAvg": 5.3,
       "farmland": {
-        "prime": 4,
-        "primeIfIrrigated": 4,
-        "statewide": 96
+        "prime": 6,
+        "primeIfIrrigated": 6,
+        "statewide": 49
       },
       "bedrock": null,
       "waterTable": {
@@ -75788,9 +75788,9 @@
       },
       "omAvg": 2.4,
       "farmland": {
-        "prime": 76,
-        "primeIfIrrigated": 76,
-        "statewide": 15
+        "prime": 52,
+        "primeIfIrrigated": 52,
+        "statewide": 11
       },
       "bedrock": null,
       "waterTable": null,
@@ -76933,9 +76933,9 @@
       "saltVariation": null,
       "omAvg": 2.8,
       "farmland": {
-        "prime": 47,
-        "primeIfIrrigated": 47,
-        "statewide": 15
+        "prime": 27,
+        "primeIfIrrigated": 27,
+        "statewide": 12
       },
       "bedrock": null,
       "waterTable": null,
@@ -77255,8 +77255,8 @@
       "saltVariation": null,
       "omAvg": 3.7,
       "farmland": {
-        "prime": 90,
-        "primeIfIrrigated": 90,
+        "prime": 70,
+        "primeIfIrrigated": 70,
         "statewide": 0
       },
       "bedrock": null,
@@ -77553,9 +77553,9 @@
       "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
-        "prime": 56,
-        "primeIfIrrigated": 56,
-        "statewide": 31
+        "prime": 45,
+        "primeIfIrrigated": 45,
+        "statewide": 24
       },
       "bedrock": null,
       "waterTable": null,
@@ -77777,9 +77777,9 @@
       },
       "omAvg": 3.1,
       "farmland": {
-        "prime": 39,
-        "primeIfIrrigated": 39,
-        "statewide": 32
+        "prime": 31,
+        "primeIfIrrigated": 31,
+        "statewide": 24
       },
       "bedrock": null,
       "waterTable": {
@@ -77902,8 +77902,8 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 73,
-        "primeIfIrrigated": 73,
+        "prime": 63,
+        "primeIfIrrigated": 63,
         "statewide": 14
       },
       "bedrock": null,
@@ -78628,9 +78628,9 @@
       "saltVariation": null,
       "omAvg": 1,
       "farmland": {
-        "prime": 10,
-        "primeIfIrrigated": 10,
-        "statewide": 2
+        "prime": 5,
+        "primeIfIrrigated": 5,
+        "statewide": 6
       },
       "bedrock": null,
       "waterTable": null,
@@ -78886,8 +78886,8 @@
       },
       "omAvg": 1.7,
       "farmland": {
-        "prime": 89,
-        "primeIfIrrigated": 89,
+        "prime": 44,
+        "primeIfIrrigated": 44,
         "statewide": 0
       },
       "bedrock": null,
@@ -79016,9 +79016,9 @@
       "saltVariation": null,
       "omAvg": 2.7,
       "farmland": {
-        "prime": 68,
-        "primeIfIrrigated": 68,
-        "statewide": 21
+        "prime": 62,
+        "primeIfIrrigated": 62,
+        "statewide": 19
       },
       "bedrock": null,
       "waterTable": {
@@ -79135,8 +79135,8 @@
       },
       "omAvg": 1.1,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
+        "prime": 14,
+        "primeIfIrrigated": 14,
         "statewide": 0
       },
       "bedrock": null,
@@ -79355,9 +79355,9 @@
       "saltVariation": null,
       "omAvg": 3.3,
       "farmland": {
-        "prime": 59,
-        "primeIfIrrigated": 59,
-        "statewide": 29
+        "prime": 53,
+        "primeIfIrrigated": 53,
+        "statewide": 24
       },
       "bedrock": null,
       "waterTable": {
@@ -80037,9 +80037,9 @@
       "saltVariation": null,
       "omAvg": 0.8,
       "farmland": {
-        "prime": 54,
-        "primeIfIrrigated": 54,
-        "statewide": 5
+        "prime": 22,
+        "primeIfIrrigated": 22,
+        "statewide": 2
       },
       "bedrock": null,
       "waterTable": {
@@ -81332,7 +81332,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 82
+        "statewide": 75
       },
       "bedrock": null,
       "waterTable": {
@@ -81725,7 +81725,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 99
+        "statewide": 94
       },
       "bedrock": null,
       "waterTable": null,
@@ -81918,8 +81918,8 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 100,
-        "primeIfIrrigated": 100,
+        "prime": 89,
+        "primeIfIrrigated": 89,
         "statewide": 0
       },
       "bedrock": null,
@@ -82023,9 +82023,9 @@
       "saltVariation": null,
       "omAvg": 4.3,
       "farmland": {
-        "prime": 65,
-        "primeIfIrrigated": 65,
-        "statewide": 35
+        "prime": 11,
+        "primeIfIrrigated": 11,
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": {
@@ -82227,9 +82227,9 @@
       "saltVariation": null,
       "omAvg": 2.1,
       "farmland": {
-        "prime": 78,
-        "primeIfIrrigated": 78,
-        "statewide": 14
+        "prime": 72,
+        "primeIfIrrigated": 72,
+        "statewide": 12
       },
       "bedrock": null,
       "waterTable": null,
@@ -82440,7 +82440,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 97
+        "statewide": 96
       },
       "bedrock": null,
       "waterTable": null,
@@ -83216,7 +83216,7 @@
           "name": "Talmage Cemetery",
           "note": "",
           "url": "https://www.google.com/maps?q=40.356057,-110.445449",
-          "year": "1857"
+          "year": ""
         }
       ]
     },
@@ -83320,9 +83320,9 @@
       },
       "omAvg": 2.8,
       "farmland": {
-        "prime": 72,
-        "primeIfIrrigated": 72,
-        "statewide": 19
+        "prime": 67,
+        "primeIfIrrigated": 67,
+        "statewide": 17
       },
       "bedrock": null,
       "waterTable": null,
@@ -84066,8 +84066,8 @@
       "saltVariation": null,
       "omAvg": 1.3,
       "farmland": {
-        "prime": 98,
-        "primeIfIrrigated": 98,
+        "prime": 69,
+        "primeIfIrrigated": 69,
         "statewide": 0
       },
       "bedrock": null,
@@ -84231,9 +84231,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 39,
-        "primeIfIrrigated": 39,
-        "statewide": 42
+        "prime": 16,
+        "primeIfIrrigated": 16,
+        "statewide": 18
       },
       "bedrock": null,
       "waterTable": null,
@@ -84381,7 +84381,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 30
+        "statewide": 22
       },
       "bedrock": {
         "pct": 21,
@@ -84690,7 +84690,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 100
+        "statewide": 85
       },
       "bedrock": null,
       "waterTable": null,
@@ -85445,8 +85445,8 @@
       "saltVariation": null,
       "omAvg": 0.8,
       "farmland": {
-        "prime": 19,
-        "primeIfIrrigated": 19,
+        "prime": 9,
+        "primeIfIrrigated": 9,
         "statewide": 0
       },
       "bedrock": {
@@ -85585,9 +85585,9 @@
       "saltVariation": null,
       "omAvg": 1.5,
       "farmland": {
-        "prime": 99,
-        "primeIfIrrigated": 99,
-        "statewide": 1
+        "prime": 89,
+        "primeIfIrrigated": 89,
+        "statewide": 2
       },
       "bedrock": null,
       "waterTable": null,
@@ -85724,9 +85724,9 @@
       "saltVariation": null,
       "omAvg": 2.6,
       "farmland": {
-        "prime": 22,
-        "primeIfIrrigated": 22,
-        "statewide": 74
+        "prime": 17,
+        "primeIfIrrigated": 17,
+        "statewide": 60
       },
       "bedrock": null,
       "waterTable": null,
@@ -85995,8 +85995,8 @@
       "saltVariation": null,
       "omAvg": 2,
       "farmland": {
-        "prime": 62,
-        "primeIfIrrigated": 62,
+        "prime": 56,
+        "primeIfIrrigated": 56,
         "statewide": 11
       },
       "bedrock": null,
@@ -86579,9 +86579,9 @@
       "saltVariation": null,
       "omAvg": 3.5,
       "farmland": {
-        "prime": 75,
-        "primeIfIrrigated": 75,
-        "statewide": 25
+        "prime": 58,
+        "primeIfIrrigated": 58,
+        "statewide": 21
       },
       "bedrock": null,
       "waterTable": null,
@@ -86928,8 +86928,8 @@
       },
       "omAvg": 1.1,
       "farmland": {
-        "prime": 72,
-        "primeIfIrrigated": 72,
+        "prime": 71,
+        "primeIfIrrigated": 71,
         "statewide": 0
       },
       "bedrock": null,
@@ -87664,8 +87664,8 @@
       "saltVariation": null,
       "omAvg": 0.8,
       "farmland": {
-        "prime": 19,
-        "primeIfIrrigated": 19,
+        "prime": 11,
+        "primeIfIrrigated": 11,
         "statewide": 0
       },
       "bedrock": null,
@@ -87795,9 +87795,9 @@
       },
       "omAvg": 2.5,
       "farmland": {
-        "prime": 43,
-        "primeIfIrrigated": 43,
-        "statewide": 41
+        "prime": 11,
+        "primeIfIrrigated": 11,
+        "statewide": 10
       },
       "bedrock": null,
       "waterTable": {
@@ -88010,9 +88010,9 @@
       "saltVariation": null,
       "omAvg": 0.6,
       "farmland": {
-        "prime": 25,
-        "primeIfIrrigated": 25,
-        "statewide": 3
+        "prime": 6,
+        "primeIfIrrigated": 6,
+        "statewide": 1
       },
       "bedrock": {
         "pct": 35,
@@ -88211,7 +88211,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 99
+        "statewide": 98
       },
       "bedrock": null,
       "waterTable": null,
@@ -88334,9 +88334,9 @@
       "saltVariation": null,
       "omAvg": 3.9,
       "farmland": {
-        "prime": 83,
-        "primeIfIrrigated": 83,
-        "statewide": 17
+        "prime": 11,
+        "primeIfIrrigated": 11,
+        "statewide": 2
       },
       "bedrock": null,
       "waterTable": {
@@ -88458,9 +88458,9 @@
       "saltVariation": null,
       "omAvg": 5.8,
       "farmland": {
-        "prime": 17,
-        "primeIfIrrigated": 17,
-        "statewide": 75
+        "prime": 6,
+        "primeIfIrrigated": 6,
+        "statewide": 33
       },
       "bedrock": null,
       "waterTable": {
@@ -88689,9 +88689,9 @@
       "saltVariation": null,
       "omAvg": 0.8,
       "farmland": {
-        "prime": 58,
-        "primeIfIrrigated": 58,
-        "statewide": 5
+        "prime": 26,
+        "primeIfIrrigated": 26,
+        "statewide": 2
       },
       "bedrock": null,
       "waterTable": null,
@@ -89120,9 +89120,9 @@
       "saltVariation": null,
       "omAvg": 2.4,
       "farmland": {
-        "prime": 8,
-        "primeIfIrrigated": 8,
-        "statewide": 62
+        "prime": 3,
+        "primeIfIrrigated": 3,
+        "statewide": 24
       },
       "bedrock": null,
       "waterTable": null,
@@ -89325,8 +89325,8 @@
       "saltVariation": null,
       "omAvg": 1.2,
       "farmland": {
-        "prime": 79,
-        "primeIfIrrigated": 79,
+        "prime": 29,
+        "primeIfIrrigated": 29,
         "statewide": 0
       },
       "bedrock": null,
@@ -89504,9 +89504,9 @@
       "saltVariation": null,
       "omAvg": 3.1,
       "farmland": {
-        "prime": 61,
-        "primeIfIrrigated": 61,
-        "statewide": 39
+        "prime": 33,
+        "primeIfIrrigated": 33,
+        "statewide": 24
       },
       "bedrock": null,
       "waterTable": null,
@@ -89733,7 +89733,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 0
+        "statewide": 2
       },
       "bedrock": null,
       "waterTable": {
@@ -89919,9 +89919,9 @@
       },
       "omAvg": 5.5,
       "farmland": {
-        "prime": 32,
-        "primeIfIrrigated": 32,
-        "statewide": 25
+        "prime": 34,
+        "primeIfIrrigated": 34,
+        "statewide": 24
       },
       "bedrock": null,
       "waterTable": {
@@ -90126,9 +90126,9 @@
       "saltVariation": null,
       "omAvg": 1.8,
       "farmland": {
-        "prime": 37,
-        "primeIfIrrigated": 37,
-        "statewide": 0
+        "prime": 35,
+        "primeIfIrrigated": 35,
+        "statewide": 1
       },
       "bedrock": null,
       "waterTable": null,
@@ -90444,9 +90444,9 @@
       },
       "omAvg": 2.3,
       "farmland": {
-        "prime": 78,
-        "primeIfIrrigated": 78,
-        "statewide": 12
+        "prime": 65,
+        "primeIfIrrigated": 65,
+        "statewide": 11
       },
       "bedrock": null,
       "waterTable": null,
@@ -91908,9 +91908,9 @@
       },
       "omAvg": 2.8,
       "farmland": {
-        "prime": 64,
-        "primeIfIrrigated": 64,
-        "statewide": 24
+        "prime": 59,
+        "primeIfIrrigated": 59,
+        "statewide": 22
       },
       "bedrock": null,
       "waterTable": {
@@ -92014,8 +92014,8 @@
       "saltVariation": null,
       "omAvg": 1.9,
       "farmland": {
-        "prime": 70,
-        "primeIfIrrigated": 70,
+        "prime": 68,
+        "primeIfIrrigated": 68,
         "statewide": 4
       },
       "bedrock": null,
@@ -92294,9 +92294,9 @@
       "saltVariation": null,
       "omAvg": 2.5,
       "farmland": {
-        "prime": 34,
-        "primeIfIrrigated": 34,
-        "statewide": 39
+        "prime": 33,
+        "primeIfIrrigated": 33,
+        "statewide": 32
       },
       "bedrock": null,
       "waterTable": null,
@@ -93868,8 +93868,8 @@
       "saltVariation": null,
       "omAvg": 1.8,
       "farmland": {
-        "prime": 50,
-        "primeIfIrrigated": 50,
+        "prime": 28,
+        "primeIfIrrigated": 28,
         "statewide": 0
       },
       "bedrock": null,
@@ -94170,7 +94170,7 @@
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
-        "statewide": 66
+        "statewide": 22
       },
       "bedrock": {
         "pct": 31,
@@ -94629,9 +94629,9 @@
       },
       "omAvg": 3.7,
       "farmland": {
-        "prime": 49,
-        "primeIfIrrigated": 49,
-        "statewide": 31
+        "prime": 28,
+        "primeIfIrrigated": 28,
+        "statewide": 17
       },
       "bedrock": null,
       "waterTable": {
@@ -94819,9 +94819,9 @@
       "saltVariation": null,
       "omAvg": 3,
       "farmland": {
-        "prime": 67,
-        "primeIfIrrigated": 67,
-        "statewide": 33
+        "prime": 17,
+        "primeIfIrrigated": 17,
+        "statewide": 9
       },
       "bedrock": null,
       "waterTable": null,
@@ -94925,9 +94925,9 @@
       "saltVariation": null,
       "omAvg": 5.8,
       "farmland": {
-        "prime": 38,
-        "primeIfIrrigated": 38,
-        "statewide": 62
+        "prime": 37,
+        "primeIfIrrigated": 37,
+        "statewide": 58
       },
       "bedrock": null,
       "waterTable": {
@@ -95040,8 +95040,8 @@
       "saltVariation": null,
       "omAvg": 2.8,
       "farmland": {
-        "prime": 80,
-        "primeIfIrrigated": 80,
+        "prime": 7,
+        "primeIfIrrigated": 7,
         "statewide": 0
       },
       "bedrock": null,
@@ -95349,7 +95349,7 @@
       "farmland": {
         "prime": 42,
         "primeIfIrrigated": 42,
-        "statewide": 6
+        "statewide": 7
       },
       "bedrock": null,
       "waterTable": {

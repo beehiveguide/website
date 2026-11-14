@@ -100,11 +100,13 @@ for (const f of readGeoJson("Cemeteries")) {
   const p = f.properties;
   if (/\bgrave\b/i.test(p.Cemetery) && !/cemetery|graveyard/i.test(p.Cemetery)) continue;
   const year = String(p.Year_Established_First_Burial || "").match(/\b(1[6-9]|20)\d\d\b(?!'?s)/); // not "1800's"
+  // Year fixes (config/corrections.json "cemetery_years")
+  const fix = (require("./lib/paths").readJson(require("./lib/paths").config("corrections.json")).cemetery_years || []).find((x) => x.cemetery === p.Cemetery.trim() && x.city === p.City);
   // Link to its location on Google Maps
   const [lng, lat] = f.geometry ? f.geometry.coordinates : [];
   const url = lat && lng ? `https://www.google.com/maps?q=${lat.toFixed(6)},${lng.toFixed(6)}` : "";
   add("cemeteries", p.City, f.geometry, {
-    name: p.Cemetery.trim().replace(/\s+-\s+[^-]+$/, ""), note: "", url, year: year ? year[0] : "",
+    name: p.Cemetery.trim().replace(/\s+-\s+[^-]+$/, ""), note: "", url, year: fix ? fix.year : year ? year[0] : "",
   });
 }
 
