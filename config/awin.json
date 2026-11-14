@@ -410,6 +410,31 @@
       "verified": true,
       "pad": true,
       "sizeKb": 115
+    },
+    {
+      "brand": "Silver Brush",
+      "name": "Free shipping over $99 300x600",
+      "width": 300,
+      "height": 600,
+      "shape": "tall",
+      "href": "https://www.awin1.com/cread.php?s=4874987&v=129485&q=611892&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4874987&v=129485&q=611892&r=3149357",
+      "alt": "Silver Brush free shipping on orders over $99",
+      "verified": true,
+      "bare": true,
+      "sizeKb": 192
+    },
+    {
+      "brand": "Silver Brush",
+      "name": "Free shipping over $99 970x90",
+      "width": 970,
+      "height": 90,
+      "shape": "banner",
+      "href": "https://www.awin1.com/cread.php?s=4874989&v=129485&q=611892&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4874989&v=129485&q=611892&r=3149357",
+      "alt": "Silver Brush free shipping over $99",
+      "verified": true,
+      "sizeKb": 120
     }
   ],
   "text": [
@@ -494,6 +519,11 @@
       "title": "HappyRun",
       "blurb": "Electric dirt bikes.",
       "cta": "Shop electric bikes"
+    },
+    "Silver Brush": {
+      "title": "Silver Brush",
+      "blurb": "Artist brushes made in the USA.",
+      "cta": "Shop brushes"
     }
   },
   "brandTopics": {
@@ -539,6 +569,9 @@
       "general"
     ],
     "HappyRun": [
+      "general"
+    ],
+    "Silver Brush": [
       "general"
     ]
   },

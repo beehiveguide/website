@@ -28,7 +28,9 @@
   D.banners = general(D.banners);
   D.tall = general(D.tall);
   D.text = general(D.text);
-  const follows = all('[data-ad="follow"]');
+  // Spots hidden at this screen size (the phone-only mid-article spot on wide screens) don't count
+  const wide = window.matchMedia("(min-width: 768px)").matches;
+  const follows = all('[data-ad="follow"]').filter((el) => !(wide && el.classList.contains("d-md-none")));
   const row = one('[data-ad="row"]');
   const side = one('[data-ad="side"]');
   const text = one('[data-ad="text"]');
@@ -191,7 +193,11 @@
     const used = new Set(rowBrands);
     follows.forEach((spot, si) => {
     // Mid-page spots skip logo-only banners (the ones with copy beside a logo)
-    const fit = D.banners.filter((b) => si === 0 || !b.text);
+    // On phones a 728 x 90 picture shrinks until its words can't be read, so
+    // phones get the banners that put copy in real text beside a logo
+    const phone = window.matchMedia("(max-width: 767.98px)").matches;
+    const phoneBanners = phone ? D.banners.filter((b) => b.text || b.logoSrc) : [];
+    const fit = phoneBanners.length ? phoneBanners : D.banners.filter((b) => si === 0 || !b.text);
     const open = fit.filter((b) => !used.has(b.brand));
     const pool = open.length ? open : fit.length ? fit : D.banners;
     const bn = at(pool, c + si);
@@ -199,7 +205,7 @@
     spot.innerHTML = D.live
       ? bn.logoSrc
         ? `<div class="ad-label font-sans">Advertisement</div><a class="affiliate-banner-box affiliate-banner-pair" rel="sponsored" href="${esc(bn.href)}"><img class="affiliate-pair-logo" src="${esc(bn.logoSrc)}" width="${bn.logoWidth}" height="${bn.logoHeight}" alt="${esc(bn.alt)}" loading="lazy"><img class="affiliate-pair-pic" src="${esc(bn.src)}" width="${bn.width}" height="${bn.height}" alt="" loading="lazy"></a>`
-        : `<div class="ad-label font-sans">Advertisement</div><a class="affiliate-banner-box${bn.flip ? " affiliate-banner-flip" : ""}" rel="sponsored" href="${esc(bn.href)}"><img class="affiliate-banner${bn.text ? " affiliate-banner-logo" : ""}" src="${esc(bn.src)}" width="${bn.width}" height="${bn.height}" alt="${esc(bn.alt)}" loading="lazy">${bn.text ? `<span class="affiliate-banner-copy">${bn.title ? `<strong class="font-zilla affiliate-banner-title">${esc(bn.title)}</strong>` : ""}<span class="font-arial affiliate-banner-text">${esc(bn.text)}</span></span>` : ""}</a>`
+        : `<div class="ad-label font-sans">Advertisement</div><a class="affiliate-banner-box${bn.flip ? " affiliate-banner-flip" : ""}${bn.width > 728 && !bn.text ? " affiliate-banner-wide" : ""}" rel="sponsored" href="${esc(bn.href)}"><img class="affiliate-banner${bn.text ? " affiliate-banner-logo" : ""}" src="${esc(bn.src)}" width="${bn.width}" height="${bn.height}" alt="${esc(bn.alt)}" loading="lazy">${bn.text ? `<span class="affiliate-banner-copy">${bn.title ? `<strong class="font-zilla affiliate-banner-title">${esc(bn.title)}</strong>` : ""}<span class="font-arial affiliate-banner-text">${esc(bn.text)}</span></span>` : ""}</a>`
       : `<div class="ad-label font-sans">Advertisement</div><div class="ad-box ad-banner house-placeholder"><span>Awin banner: ${esc(bn.brand)}</span><small>wide, live on deploy</small></div>`;
     spot.setAttribute("aria-label", "Advertisement");
     spot.hidden = false;

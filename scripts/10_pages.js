@@ -474,6 +474,9 @@ const AD_SPOTS = {
   "blog-bottom-2": "rect",
   "blog-bottom-3": "rect",
   "post-top-resp": "banner",
+  "post-middle": "banner",
+  "post-middle-2": "banner",
+  "post-middle-3": "banner",
   "post-bottom-1-resp": "rect",
   "post-bottom-2": "rect",
   "post-bottom-3": "rect",
@@ -553,6 +556,10 @@ const adSpots = () => ({
   // Blog posts: a banner above the Blog button, like town pages, and
   // squares across the bottom
   "{Ad post-top-resp}": adSpot("post-top-resp"),
+  // Mid-article, phones only: a wide Awin banner or one book (filled by static/js/ads.js)
+  "{Ad post-middle}": adSpot("post-middle", "my-4 mx-auto post-mid d-md-none"),
+  "{Ad post-middle-2}": adSpot("post-middle-2", "my-4 mx-auto post-mid d-md-none"),
+  "{Ad post-middle-3}": adSpot("post-middle-3", "my-4 mx-auto post-mid d-md-none"),
   // In the sidebar, below the tags; wide screens only, so phones get just
   // the one square at the bottom
   "{Ad post-side}":
@@ -2433,12 +2440,25 @@ fs.writeFileSync(
   const blogDir = path.join(outDir, "blog");
   fs.mkdirSync(blogDir, { recursive: true });
   for (const p of posts) {
-    const body = fs
+    let body = fs
       .readFileSync(path.join(paths.dirs.root, "posts", `${p.slug}.html`), "utf8")
       .replace(/\{Photos ([\w\s-]+)\}/g, (_, ids) => photoRow(ids.trim().split(/\s+/)))
       .replace(/\{Photo ([\w-]+)\}/g, (_, id) => photoFigure(id, "../"))
       .replace(/\{Video ([^}]+)\}/g, (_, x) => videoFigure(x))
       .trim();
+    // Phones get ads in the article, after a paragraph: at the quarters on
+    // posts of 12+ paragraphs, the thirds on 9 to 11, the middle on 6 to 8
+    const ends = [...body.matchAll(/<\/p>/g)].map((m) => m.index + 4);
+    if (ends.length >= 6 && !body.includes("{Ad post-middle")) {
+      const n = ends.length;
+      const fracs = n >= 12 ? [1 / 4, 1 / 2, 3 / 4] : n >= 9 ? [1 / 3, 2 / 3] : [1 / 2];
+      const marks = fracs.map((f, i) => [
+        ends[Math.round(n * f) - 1],
+        i ? `{Ad post-middle-${i + 1}}` : "{Ad post-middle}",
+      ]);
+      for (const [at, tag] of marks.reverse())
+        body = body.slice(0, at) + "\n" + tag + body.slice(at);
+    }
     const lead =
       p.photo && photos.some((x) => x.id === p.photo) ? postPhoto(p.photo) : null;
     fs.writeFileSync(

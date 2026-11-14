@@ -1731,3 +1731,10 @@ a.marker-link:focus {
 .ad-card-link > .ad-card-img:last-child {
   border-bottom: 0;
 }
+
+/* Mid-article ads in posts (phones): 300 wide, centered */
+.ad-slot.post-mid { max-width: 300px; }
+
+/* Picture banners wider than 728 (970 x 90) fill the column and scale down, no extra space */
+.affiliate-banner-box.affiliate-banner-wide { max-width: 970px; min-height: 0; }
+.affiliate-banner-wide .affiliate-banner { width: 100%; max-height: none; }
