@@ -1,0 +1,43 @@
+{
+  "_note": "Special service districts for towns that the generated Government and Services text would otherwise miss. Each town lists its districts in the order they're named. Hand-written pages in town_content.json carry their own text.",
+  "Mountain Home": [
+    {
+      "name": "Upper Country Water Improvement District",
+      "url": "https://ucwid.duchesne.utah.gov/"
+    },
+    {
+      "name": "Upper Community Recreation District",
+      "url": "https://www.ucrd.org/"
+    }
+  ],
+  "Talmage": [
+    {
+      "name": "Upper Country Water Improvement District",
+      "url": "https://ucwid.duchesne.utah.gov/"
+    },
+    {
+      "name": "Upper Community Recreation District",
+      "url": "https://www.ucrd.org/"
+    }
+  ],
+  "Mount Emmons": [
+    {
+      "name": "Upper Country Water Improvement District",
+      "url": "https://ucwid.duchesne.utah.gov/"
+    },
+    {
+      "name": "Upper Community Recreation District",
+      "url": "https://www.ucrd.org/"
+    }
+  ],
+  "Upalco": [
+    {
+      "name": "Johnson Water District",
+      "url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1021"
+    },
+    {
+      "name": "Upper Community Recreation District",
+      "url": "https://www.ucrd.org/"
+    }
+  ]
+}

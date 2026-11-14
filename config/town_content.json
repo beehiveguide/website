@@ -114,7 +114,7 @@
       {
         "id": "government",
         "title": "Government and Services",
-        "html": "<p>Arcadia is part of the <a href=\"https://www.ucrd.org/\">Upper Community Recreation District</a>.</p>"
+        "html": "<p>Arcadia is part of the <a href=\"https://www.ucrd.org/\">Upper Community Recreation District</a> and within the boundaries of the <a href=\"https://www.eastduchesnewater.gov/\">East Duchesne Culinary Water Improvement District</a>.</p>"
       },
       {
         "id": "police-fire",
@@ -236,6 +236,11 @@
       "<strong>Cemetery dates:</strong> <a href=\"https://gis.utah.gov/products/sgid/categories/\">UGRC</a> <small class=\"font-sans fst-italic text-secondary\">(<a href=\"https://creativecommons.org/licenses/by/4.0/\" class=\"link-secondary\">CC-BY-4.0</a>)</small>"
     ],
     "sections": [
+      {
+        "id": "government",
+        "title": "Government and Services",
+        "html": "<p>Bridgeland is part of the <a href=\"https://www.eastduchesnewater.gov/\">East Duchesne Culinary Water Improvement District</a>.</p>"
+      },
       {
         "id": "police-fire",
         "title": "Public Safety",

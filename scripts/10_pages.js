@@ -42,6 +42,7 @@ const townContent = paths.readJson(paths.config("town_content.json"));
 const schoolDistricts = paths.readJson(paths.config("school_districts.json"));
 const fireDepts = paths.readJson(paths.config("fire_departments.json"));
 const schoolAttend = paths.readJson(paths.config("school_attend.json"));
+const townDistricts = paths.readJson(paths.config("town_districts.json"));
 // A town page links each other town only where the page first mentions it (the lead first).
 let seenTownLinks = new Set();
 const customHtml = (html) =>
@@ -1622,6 +1623,10 @@ function hasGovernment(t) {
   return t.placeType === "city" || t.placeType === "town";
 }
 function governmentHtml(t) {
+  // Districts set by hand (config/town_districts.json): "Talmage is served by the A and the B."
+  const dists = townDistricts[t.name];
+  if (dists)
+    return `<p>${esc(t.name)} is served by the ${listText(dists.map((x) => `<a href="${esc(x.url)}">${esc(x.name)}</a>`)).replace(/, (?=<a)/g, ", the ").replace(/ and (?=<a)/, " and the ")}.</p>`;
   const gov = hasGovernment(t);
   // Skips blank entries (no name), which would leave "comes from ."
   const water = ((t.services && t.services.water) || []).filter((w) => w.name && w.name.trim());
@@ -1652,7 +1657,7 @@ function servicesHtml(t) {
   const schools = schoolsHtml(t);
   const safety = safetyText(t);
   const sections = [
-    [hasGovernment(t) ? `${capFirst(t.placeType)} Government and Services` : "Water Service", "government", governmentHtml(t), ["culinary water"]],
+    [hasGovernment(t) ? `${capFirst(t.placeType)} Government and Services` : townDistricts[t.name] ? "Government and Services" : "Water Service", "government", governmentHtml(t), ["culinary water"]],
     // Police and fire share a paragraph
     ["Public Safety", "police, fire", safety, ["law enforcement", "fire"]],
     // "Library" or "Libraries", "School" or "Schools", by how many there are
