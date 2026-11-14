@@ -29,11 +29,13 @@
   "Mount Emmons": {
     "name": "Altamont 1st Ward",
     "url": "https://maps.churchofjesuschrist.org/wards/12696",
-    "stake": "Altamont Stake"
+    "stake": "Altamont Stake",
+    "stakeUrl": "https://maps.churchofjesuschrist.org/stakes/517488"
   },
   "Upalco": {
     "name": "Altamont 2nd Ward",
     "url": "https://maps.churchofjesuschrist.org/wards/10642",
-    "stake": "Altamont Stake"
+    "stake": "Altamont Stake",
+    "stakeUrl": "https://maps.churchofjesuschrist.org/stakes/517488"
   }
 }

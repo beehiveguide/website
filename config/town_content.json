@@ -518,5 +518,15 @@
         "html": "<p><a href=\"https://mountainhomelodgeutah.com/\">Mountain Home Lodge</a> has six rooms and a shared kitchen. It also has a small store with ice cream, and gas.</p>"
       }
     ]
+  },
+  "Mount Emmons": {
+    "add_sections": [
+      {
+        "id": "cemetery",
+        "title": "Cemetery",
+        "before": "churches",
+        "html": "<p>The <a href=\"https://ushpo.utah.gov/cemetery/\">Altamont-Mount Emmons Cemetery</a> is located off State Route 87 just west of <a href=\"altamont.html\">Altamont</a>.</p>"
+      }
+    ]
   }
 }
