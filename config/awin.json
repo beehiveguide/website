@@ -393,6 +393,19 @@
       "src": "https://www.awin1.com/cshow.php?s=4281234&v=37084&q=558526&r=3149357",
       "alt": "FluentPet talking buttons",
       "verified": true
+    },
+    {
+      "brand": "UUNA TEK",
+      "name": "UUNA TEK logo",
+      "width": 168,
+      "height": 183,
+      "shape": "box",
+      "href": "https://www.awin1.com/cread.php?s=4070417&v=117801&q=533336&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4070417&v=117801&q=533336&r=3149357",
+      "alt": "UUNA TEK",
+      "verified": true,
+      "logo": true,
+      "logoWidth": 100
     }
   ],
   "text": [
@@ -449,7 +462,7 @@
       "cta": "Shop digital picture frames"
     },
     "WheelXL": {
-      "title": "WheelXL Wheels",
+      "title": "WheelXL",
       "blurb": "Truck and classic wheels with a 100% fitment guarantee.",
       "cta": "Shop wheels"
     },
@@ -467,6 +480,11 @@
       "title": "FluentPet Talking Buttons",
       "blurb": "Sound buttons that help dogs and cats communicate.",
       "cta": "Shop talking buttons"
+    },
+    "UUNA TEK": {
+      "title": "UUNA TEK Pen Plotters",
+      "blurb": "Drawing robots and handwriting machines.",
+      "cta": "Shop UUNA TEK"
     }
   },
   "brandTopics": {
@@ -507,6 +525,9 @@
     "FluentPet": [
       "general",
       "pets"
+    ],
+    "UUNA TEK": [
+      "general"
     ]
   },
   "disabledBrands": []

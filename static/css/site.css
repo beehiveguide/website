@@ -894,7 +894,6 @@ a.marker-link:focus {
 }
 .ad-banner {
   max-width: 728px;
-  min-height: 100px;
 }
 @media (min-width: 768px) {
   .ad-banner {
@@ -1482,14 +1481,27 @@ a.marker-link:focus {
   border: 0;
   border-radius: 0;
 }
+/* Sidebar book: the border hugs the book frame, centered in the column */
 [data-ad="side"] .affiliate-card:has(iframe) {
-  padding: 0.6rem;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
 }
 [data-ad-cell] .ad-slot,
 [data-ad="side"] .ad-slot {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+/* Bottom row: cards cap at the width they have on narrow pages and sit centered in each column */
+[data-ad-cell] .ad-slot {
+  width: 100%;
+  max-width: 323px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .affiliate-box {
   flex: 1;

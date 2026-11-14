@@ -71,7 +71,7 @@
     f.title = "Book from Bookshop.org";
     f.loading = "lazy";
     f.scrolling = "no";
-    f.style.cssText = `display:block;margin:0 auto;width:100%;max-width:340px;border:0;height:${type === "featured" ? 540 : 260}px`;
+    f.style.cssText = `display:block;margin:0 auto;width:${type === "featured" ? "340px" : "100%"};max-width:${type === "featured" ? "100%" : "340px"};border:0;height:${type === "featured" ? 540 : 260}px`;
     // Fit the frame to the widget once it has drawn
     let tries = 0;
     let drew = false;
@@ -80,6 +80,8 @@
         const h = f.contentDocument.body.scrollHeight;
         if (h > 40) {
           f.style.height = h + "px";
+          // Featured books: shrink the frame to the widget so a border can hug it
+          if (type === "featured") f.style.width = Math.ceil(f.contentDocument.body.getBoundingClientRect().width) + "px";
           drew = true;
         }
       } catch (e) {
@@ -89,7 +91,7 @@
       else if (!drew) hideAd(f); // the widget never drew (book unavailable)
     };
     f.addEventListener("load", fit);
-    f.srcdoc = `<!doctype html><base target="_blank"><body style="margin:0;font-family:sans-serif"><script src="https://bookshop.org/widgets.js" data-type="${type}"${type === "featured" ? ' data-full-info="true"' : ""} data-affiliate-id="${esc(D.affiliateId)}" data-sku="${esc(b.isbn)}"><\/script>`;
+    f.srcdoc = `<!doctype html><base target="_blank"><body style="margin:0;font-family:sans-serif${type === "featured" ? ";display:inline-block" : ""}"><script src="https://bookshop.org/widgets.js" data-type="${type}"${type === "featured" ? ' data-full-info="true"' : ""} data-affiliate-id="${esc(D.affiliateId)}" data-sku="${esc(b.isbn)}"><\/script>`;
     return f;
   };
 
@@ -178,7 +180,7 @@
     const ch = at(seq, n);
     // On phones the mid-page spot is only a wide Awin ad or a book, so Follow stays at the top
     const spot = window.matchMedia("(max-width: 767.98px)").matches ? follows[0] : at(follows, n);
-    spot.innerHTML = `<a class="house-ad house-${esc(ch.name.toLowerCase())} ad-box ad-banner" href="${esc(ch.url)}" rel="${ch.shop ? "sponsored noopener" : "noopener"}"><span class="house-logo">${D.logo}</span><span class="house-text"><strong>${ch.shop ? "Beehive Guide Bookshop" : "Follow Beehive Guide"}</strong><span class="house-handle">${ch.shop ? "Books on gardening, cooking, Utah history and more" : `${esc(D.handle)} on ${esc(ch.name)}`}</span></span><span class="house-btn"><span class="house-icon">${ch.icon}</span>${ch.shop ? "Browse books" : "Follow"}</span></a>`;
+    spot.innerHTML = `<div class="ad-label font-sans">Advertisement</div><a class="house-ad house-${esc(ch.name.toLowerCase())} ad-box ad-banner" href="${esc(ch.url)}" rel="${ch.shop ? "sponsored noopener" : "noopener"}"><span class="house-logo">${D.logo}</span><span class="house-text"><strong>${ch.shop ? "Beehive Guide Bookshop" : "Follow Beehive Guide"}</strong><span class="house-handle">${ch.shop ? "Books on gardening, cooking, Utah history and more" : `${esc(D.handle)} on ${esc(ch.name)}`}</span></span><span class="house-btn"><span class="house-icon">${ch.icon}</span>${ch.shop ? "Browse books" : "Follow"}</span></a>`;
     spot.hidden = false;
   }
   // Other page views: the top spot holds a wide Awin banner (a brand that

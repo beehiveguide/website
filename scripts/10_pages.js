@@ -515,7 +515,7 @@ const adSpots = () => ({
         "col-md-6 col-xl-4 d-none d-md-block",
         "col-xl-4 d-none d-xl-block",
       ],
-      "mt-4 pb-3 mb-4",
+      "mt-3",
     ),
   ),
   // Blog page: a banner above the heading, squares below the post list
