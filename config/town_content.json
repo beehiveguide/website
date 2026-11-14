@@ -36,7 +36,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p><a href=\"https://aes.dcsd.org/\">Altamont Elementary School</a> serves grades K-6. A new elementary school is being built to replace the current one. <a href=\"https://ahs.dcsd.org/\">Altamont High School</a> serves grades 7-12. It was rebuilt in 2012. The schools belong to the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p><a href=\"https://aes.dcsd.org/\">Altamont Elementary School</a> serves grades K&ndash;6. A new elementary school is being built to replace the current one. <a href=\"https://ahs.dcsd.org/\">Altamont High School</a> serves grades 7&ndash;12. It was rebuilt in 2012. The schools belong to the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "libraries",
@@ -90,7 +90,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p>K-12 students from Altonah attend <a href=\"https://aes.dcsd.org/\">elementary</a> and <a href=\"https://ahs.dcsd.org/\">high school</a> in <a href=\"altamont.html\">Altamont</a>. The schools are part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p>K&ndash;12 students from Altonah attend <a href=\"https://aes.dcsd.org/\">elementary</a> and <a href=\"https://ahs.dcsd.org/\">high school</a> in <a href=\"altamont.html\">Altamont</a>. The schools are part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
@@ -289,7 +289,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p>Cedarview students attend elementary school in <a href=\"https://nes.dcsd.org/\">Neola</a> and <a href=\"https://rjhs.dcsd.org/o/rjhs\">junior high</a> and <a href=\"https://uhs.dcsd.org/o/uhs\">high school</a> in <a href=\"roosevelt.html\">Roosevelt</a> as part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p>Cedarview students attend elementary school in <a href=\"https://nes.dcsd.org/\">Neola</a> and <a href=\"https://rjhs.dcsd.org/\">junior high</a> and <a href=\"https://uhs.dcsd.org/\">high school</a> in <a href=\"roosevelt.html\">Roosevelt</a> as part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
@@ -319,7 +319,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p>Ioka is located in the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p>Ioka students attend <a href=\"https://ces.dcsd.org/\">Centennial School</a>, <a href=\"https://rjhs.dcsd.org/\">junior high</a> and <a href=\"https://uhs.dcsd.org/\">high school</a> in <a href=\"roosevelt.html\">Roosevelt</a>. Ioka is located in the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
@@ -357,7 +357,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p>Monarch's school kids attend <a href=\"https://nes.dcsd.org/\">elementary in Neola</a> and <a href=\"https://rjhs.dcsd.org/o/rjhs\">junior high</a> and <a href=\"https://uhs.dcsd.org/o/uhs\">high school</a> in Roosevelt. The community is located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p>Monarch's school kids attend <a href=\"https://nes.dcsd.org/\">elementary in Neola</a> and <a href=\"https://rjhs.dcsd.org/\">junior high</a> and <a href=\"https://uhs.dcsd.org/\">high school</a> in Roosevelt. The community is located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
@@ -402,7 +402,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p><a href=\"https://nes.dcsd.org/\">Neola Elementary School</a> serves students grades K-5 from Neola and the surrounding area. After fifth grade, students attend school at <a href=\"https://rjhs.dcsd.org/o/rjhs\">Roosevelt Jr. High</a> and <a href=\"https://uhs.dcsd.org/o/uhs\">Union High</a> in <a href=\"roosevelt.html\">Roosevelt</a>. The schools are located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p><a href=\"https://nes.dcsd.org/\">Neola Elementary School</a> serves students grades K&ndash;5 from Neola and the surrounding area. After fifth grade, students attend school at <a href=\"https://rjhs.dcsd.org/\">Roosevelt Jr. High</a> and <a href=\"https://uhs.dcsd.org/\">Union High</a> in <a href=\"roosevelt.html\">Roosevelt</a>. The schools are located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
@@ -433,7 +433,7 @@
       {
         "id": "businesses",
         "title": "Businesses and Services",
-        "html": "<p><a href=\"https://www.facebook.com/p/Big-G-on-40-100063684005011/\">Big G on 40</a> offers gas, convenience groceries and a cafe.</p>"
+        "html": "<p><a href=\"https://www.facebook.com/p/Big-G-on-40-100063684005011/\">Big G on 40</a> is a Sinclair gas station with convenience groceries and a cafe.</p>"
       }
     ]
   },
@@ -442,6 +442,13 @@
     "sources": [
       "<strong>Community history:</strong> <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>",
       "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
+    ],
+    "add_sections": [
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p>Hanna Country Store stocks fuel, groceries, hardware items and fishing gear.</p>"
+      }
     ]
   },
   "Myton": {
@@ -449,19 +456,67 @@
     "sources": [
       "<strong>Community history:</strong> <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>",
       "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
-    ]
+    ],
+    "schools_html": "<p><a href=\"https://mes.dcsd.org/\">Myton Elementary</a> (kindergarten&ndash;5th) and <a href=\"https://cas.dcsd.org/\">Con Amore School</a> (special education, prekindergarten&ndash;12th) are part of the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>. After elementary school, students attend <a href=\"https://rjhs.dcsd.org/\">junior high</a> and <a href=\"https://uhs.dcsd.org/\">high school</a> in <a href=\"roosevelt.html\">Roosevelt</a>.</p>",
+    "add_sections": [
+      {
+        "id": "events",
+        "title": "Community Events",
+        "before": "parks, cemeteries",
+        "html": "<p><a href=\"https://www.facebook.com/groups/1533760966920438/\">Myton Daze</a> is held at the end of June and includes a fair, parade, rodeo and fireworks.</p>"
+      }
+    ],
+    "section_html": {
+      "trails": "<p>The Myton Ball Park Path is a paved walking path at the ballpark. It is about 0.2 miles long.</p>"
+    }
   },
   "Roosevelt": {
     "lead": "The town was named after Theodore Roosevelt. The area was previously known as Dry Gulch.",
     "founded": "Settled in 1906",
     "sources": [
       "<strong>Community history:</strong> <a href=\"https://www.uen.org/utah_history_encyclopedia/r/ROOSEVELT.shtml\">Utah History Encyclopedia, by John D. Barton</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
-    ]
+    ],
+    "add_sections": [
+      {
+        "title": "Community Events",
+        "before": "parks, cemeteries",
+        "html": "<p><a href=\"https://ubic.info/\">Uintah Basin in Celebration</a> (UBIC) is held each year the week before the first Saturday in August. The weeklong celebration includes entertainment, vendors, a parade, a pageant and other events.</p>",
+        "id": "events"
+      }
+    ],
+    "schools_html": "<p><a href=\"https://ees.dcsd.org/\">East School</a> (prekindergarten&ndash;5th), <a href=\"https://ces.dcsd.org/\">Centennial School</a> (kindergarten&ndash;5th), <a href=\"https://kpes.dcsd.org/\">Kings Peak School</a> (kindergarten&ndash;5th), <a href=\"https://rjhs.dcsd.org/\">Roosevelt Jr High</a> (6th&ndash;8th) and <a href=\"https://uhs.dcsd.org/\">Union High</a> (9th&ndash;12th) are part of the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>.</p>",
+    "section_html": {
+      "churches": "<ul class=\"col-list\">\n      <li><a href=\"https://www.facebook.com/people/Faith-Baptist-Church-of-Uintah-Basin/100064831836893/\">Faith Baptist Church</a></li>\n      <li><a href=\"https://www.facebook.com/casadelalfarero84066/\">Iglesia de Dios E.C. Casa del Alfarero</a> (Spanish-language Pentecostal)</li>\n      <li><a href=\"https://rooseveltbaptist.churchtrac.com/\">Roosevelt Baptist Church</a> (Southern Baptist)</li>\n      <li><a href=\"https://rooseveltchristianassembly.org/\">Roosevelt Christian Assembly</a> (Assemblies of God)</li>\n      <li><a href=\"https://apps.jw.org/ui/E/meeting-search.html#/?w=A8E94D17-4E6A-4E12-BCF3-50B27948F6F4\">Roosevelt Kingdom Hall</a> (Jehovah&rsquo;s Witnesses)</li>\n      <li><a href=\"https://www.facebook.com/sthelenscatholichurch/\">St. Helen Catholic Church</a></li>\n      <li><a href=\"https://maps.churchofjesuschrist.org/search?q=Roosevelt%20utah\">The Church of Jesus Christ of Latter-day Saints</a> (5 meetinghouses)</li>\n    </ul>",
+      "hospitals": "<p><a href=\"https://ubh.org/\">Uintah Basin Healthcare</a> operates the hospital and clinic in Roosevelt.</p>",
+      "colleges": "<p><a href=\"https://www.ubtech.edu\">Uintah Basin Technical College</a> and the <a href=\"https://statewide.usu.edu/uintahbasin/\">Utah State University Uintah Basin campus</a> are located in the city.</p>"
+    }
   },
   "Tabiona": {
     "lead": "Fort Tabby was built in 1860. Later, a town was founded in the area, first called Tabbyville or Tabby, and formally named Tabiona in 1915. Tabby was a Ute leader who was among the first to move with his people to the Uintah Reservation.",
     "sources": [
       "<strong>Community history:</strong> <a href=\"https://tabionatownut.gov/about-us\">Town of Tabiona</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
+    ],
+    "add_sections": [
+      {
+        "id": "events",
+        "title": "Community Events",
+        "before": "parks, cemeteries",
+        "html": "<p>Tabiona's <a href=\"https://www.facebook.com/Tabionarodeo/\">Fourth of July celebration</a> includes a parade and rodeo.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p><a href=\"https://tabionasagebrush.wixsite.com/sagebrush-cafe\">Sagebrush Inn &amp; Cafe</a> is located in Tabiona.</p>"
+      }
+    ]
+  },
+  "Mountain Home": {
+    "add_sections": [
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p><a href=\"https://mountainhomelodgeutah.com/\">Mountain Home Lodge</a> has six rooms and a shared kitchen. It also has a small store with ice cream, and gas.</p>"
+      }
     ]
   }
 }

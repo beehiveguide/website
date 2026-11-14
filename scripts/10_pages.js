@@ -1055,10 +1055,11 @@ function cemeteryHtml(t) {
   if (list.length === 1) {
     const c = list[0];
     // "The Redmond Cemetery, located in the city, dates to 1876."
-    const name = /Cemetery$/.test(c.name) && !/^the /i.test(c.name) ? `The ${esc(c.name)}` : esc(c.name);
-    return `<p>${name}${c.year ? `, located in ${placeWord(t)}, dates to ${c.year}.` : ` is located in ${placeWord(t)}.`}</p>`;
+    const nm = c.link ? `<a href="${esc(c.link)}">${esc(c.name)}</a>` : esc(c.name);
+    const name = /Cemetery$/.test(c.name) && !/^the /i.test(c.name) ? `The ${nm}` : nm;
+    return `<p>${name}${c.year ? `, located in ${placeWord(t)}, dates to ${c.year}.` : ` is ${/cemetery|graveyard/i.test(c.name) ? "" : "a cemetery "}located in ${placeWord(t)}.`}</p>`;
   }
-  const items = list.map((c) => esc(c.name) + (c.year ? ` (${c.year})` : ""));
+  const items = list.map((c) => (c.link ? `<a href="${esc(c.link)}">${esc(c.name)}</a>` : esc(c.name)) + (c.year ? ` (${c.year})` : ""));
   if (list.length > BIG_LIST)
     return `<ul class="col-list">\n      ${items.map((c) => `<li>${c}</li>`).join("\n      ")}\n    </ul>`;
   return `<p>Cemeteries include ${listText(items)}.</p>`;
@@ -1441,6 +1442,7 @@ function churchItems(t, numerals = false) {
 function churchHtml(t) {
   // Ward set by hand (config/lds_wards.json): links the ward's page on the Church's meetinghouse locator
   const ward = ldsWards[t.name];
+  if (ward && ward.meetinghouse) return `<p>A <a href="${esc(ward.url)}">Church of Jesus Christ of Latter-day Saints</a> meetinghouse is located in ${esc(t.name)}.${ward.extra ? ` ${ward.extra}` : ""}</p>`;
   if (ward) return `<p>Latter-day Saints in the community attend the <a href="${esc(ward.url)}">${esc(ward.name)}</a>.${ward.extra ? ` ${ward.extra}` : ""}</p>`;
   const items = churchItems(t);
   if (!items.length) return "";
@@ -1663,7 +1665,7 @@ function servicesHtml(t) {
   const sections = [
     [hasGovernment(t) ? `${capFirst(t.placeType)} Government and Services` : townDistricts[t.name] ? "Government and Services" : "Water Service", "government", governmentHtml(t), ["culinary water"]],
     // Police and fire share a paragraph
-    ["Public Safety", "police, fire", safety, ["law enforcement", "fire"]],
+    ["Public Safety", "police, fire", safety, fireDepts[t.name] && !fireText(t).sentences.length ? ["law enforcement"] : ["law enforcement", "fire"]],
     // "Library" or "Libraries", "School" or "Schools", by how many there are
     [((t.places && t.places.libraries) || []).length > 1 ? "Libraries" : "Library", "libraries", libraryHtml(t), ["library"]],
     [parksCemeteriesTitle(t), "parks, cemeteries", parksCemeteriesHtml(t), parksCemeteriesLabels(t)],
@@ -1680,8 +1682,24 @@ function servicesHtml(t) {
     sections.length = 0;
     custom.sections.forEach((c) => sections.push([c.title, c.id, customHtml(c.html), []]));
   }
+  // A hand-written Schools body replaces the generated one (town_content.json "schools_html")
+  if (custom && custom.schools_html) {
+    const sc = sections.find(([, word]) => word === "schools");
+    if (sc) sc[2] = customHtml(custom.schools_html); // grade levels still come from UGRC, so its credit stays
+  }
+  // Hand-written body for any generated section, by its word (town_content.json "section_html": {"churches": "...", "colleges": "...", "hospitals": "..."})
+  if (custom && custom.section_html)
+    Object.entries(custom.section_html).forEach(([word, html]) => {
+      const sc = sections.find(([, w]) => w === word);
+      if (sc) { sc[2] = customHtml(html); if (word !== "trails") sc[3] = []; } // trail data still comes from UGRC
+    });
   // Extra hand-written sections added to the generated ones (config/town_content.json "add_sections")
-  if (custom && custom.add_sections) custom.add_sections.forEach((c) => sections.push([c.title, c.id, customHtml(c.html), []]));
+  if (custom && custom.add_sections)
+    custom.add_sections.forEach((c) => {
+      // "before": the section it goes in front of (by its word, like "parks, cemeteries"); otherwise at the end
+      const at = c.before ? sections.findIndex(([, word]) => word === c.before) : -1;
+      sections.splice(at < 0 ? sections.length : at, 0, [c.title, c.id, customHtml(c.html), []]);
+    });
   // Duchesne County is one school district: towns with no school listed say so
   if (t.county === "Duchesne" && !sections.some(([, word]) => word === "schools")) {
     const dist = schoolDistricts["Duchesne District"];
@@ -1689,8 +1707,8 @@ function servicesHtml(t) {
     sections.splice(at < 0 ? sections.length : at, 0, [
       "Schools",
       "schools",
-      schoolAttend[t.name] === "Tabiona"
-        ? `<p>${/s$/.test(t.name) ? `Students from ${esc(t.name)} attend` : `${esc(t.name)}'s students attend`} <a href="https://tab.dcsd.org/">Tabiona Elementary</a> (prekindergarten&ndash;6th) and <a href="https://tab.dcsd.org/">Tabiona High</a> (7th&ndash;12th), as part of the <a href="${esc(dist.url.replace(/^http:/, "https:"))}">${esc(dist.name)}</a>.</p>`
+      schoolAttend[t.name] === "Tabiona" || schoolAttend[t.name] === "Duchesne"
+        ? `<p>${/s$/.test(t.name) ? `Students from ${esc(t.name)} attend` : `${esc(t.name)}'s students attend`} ${schoolAttend[t.name] === "Duchesne" ? `<a href="https://des.dcsd.org/">Duchesne Elementary</a> (prekindergarten&ndash;6th) and <a href="https://dhs.dcsd.org/">Duchesne High</a> (7th&ndash;12th)` : `<a href="https://tab.dcsd.org/">Tabiona Elementary</a> (prekindergarten&ndash;6th) and <a href="https://tab.dcsd.org/">Tabiona High</a> (7th&ndash;12th)`}, as part of the <a href="${esc(dist.url.replace(/^http:/, "https:"))}">${esc(dist.name)}</a>.</p>`
         : schoolAttend[t.name] === "Altamont"
         ? `<p>${/s$/.test(t.name) ? `Students from ${esc(t.name)} attend` : `${esc(t.name)}'s students attend`} <a href="https://aes.dcsd.org/">elementary</a> and <a href="https://ahs.dcsd.org/">high school</a> in <a href="${link("altamont.html")}">Altamont</a>, as part of the <a href="${esc(dist.url.replace(/^http:/, "https:"))}">${esc(dist.name)}</a>.</p>`
         : `<p>${esc(t.name)} is located in the <a href="${esc(dist.url.replace(/^http:/, "https:"))}">${esc(dist.name)}</a>.</p>`,
@@ -1711,7 +1729,7 @@ function servicesHtml(t) {
     shown: sections.map(([, word]) => word),
     labels: sections.flatMap(([, , , labels]) => labels),
     // "Churches" or "Places of worship", credited to OpenStreetMap
-    osm: !(custom && custom.sections) && sections.some(([, word]) => word === "churches") && churchItems(t).total > 0
+    osm: !(custom && custom.sections) && sections.some(([, word]) => word === "churches") && churchItems(t).total > 0 && !ldsWards[t.name] && !(townContent[t.name] && townContent[t.name].section_html && townContent[t.name].section_html.churches)
       ? (() => {
           const ci = churchItems(t);
           const one = ci.total === 1;

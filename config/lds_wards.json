@@ -16,5 +16,14 @@
     "name": "Fruitland Ward",
     "url": "https://maps.churchofjesuschrist.org/wards/101664",
     "extra": "The <a href=\"https://www.cedarcountrybible.com/\">Cedar Country Bible Fellowship</a> is an independent Christian church."
+  },
+  "Utahn": {
+    "name": "Duchesne 2nd Ward",
+    "url": "https://maps.churchofjesuschrist.org/wards/11185"
+  },
+  "Myton": {
+    "meetinghouse": true,
+    "name": "",
+    "url": "https://maps.churchofjesuschrist.org/meetinghouses/5034744-01-01?hold=true"
   }
 }

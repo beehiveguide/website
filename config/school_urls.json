@@ -46,6 +46,13 @@
   "Elizabeth DeLong School of the Deaf": "https://www.usdb.org/deaf-school/elizabeth-delong-school",
   "Jean Massieu School for the Deaf": "https://www.usdb.org/deaf-school/jean-massieu-school",
   "_override": {
-    "Tabiona School": "https://tab.dcsd.org/"
+    "Tabiona School": "https://tab.dcsd.org/",
+    "Duchesne School": "https://des.dcsd.org/",
+    "Duchesne High": "https://dhs.dcsd.org/",
+    "Roosevelt Jr High": "https://rjhs.dcsd.org/",
+    "Union High": "https://uhs.dcsd.org/",
+    "Centennial School": "https://ces.dcsd.org/",
+    "East School": "https://ees.dcsd.org/",
+    "Kings Peak School": "https://kpes.dcsd.org/"
   }
 }

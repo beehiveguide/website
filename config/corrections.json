@@ -82,5 +82,21 @@
       "year": "",
       "note": "UGRC lists 1857, 50 years before Talmage was settled (1907). Year left off until a source is found."
     }
+  ],
+  "cemetery_towns": [
+    {
+      "cemetery": "Utahn Cemetery",
+      "city": "Duchesne",
+      "town": "Utahn",
+      "note": "UGRC files it under Duchesne, but it is in Utahn."
+    }
+  ],
+  "parks_to_cemeteries": [
+    {
+      "park": "Roosevelt Memorial Park",
+      "town": "Roosevelt",
+      "url": "https://www.rooseveltcity.gov/165/Cemetery",
+      "note": "UGRC lists it as a park, but it is the city cemetery."
+    }
   ]
 }

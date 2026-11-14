@@ -85,6 +85,9 @@ for (const f of readGeoJson("UtahParksLocal")) {
   const p = f.properties;
   if (p.STATUS === "Future" || !p.NAME) continue;
   const name = p.NAME.trim().replace(/\s+/g, " ").replace(/\s+Phase\s+\w+$/i, "");
+  // A UGRC park that is really a cemetery moves to cemeteries (corrections.json "parks_to_cemeteries")
+  const pc = ((require("./lib/paths").readJson(require("./lib/paths").config("corrections.json"))).parks_to_cemeteries || []).find((x) => x.park === name && x.town.toLowerCase() === String(p.CITY).toLowerCase());
+  if (pc) continue; // the cemetery layer already lists it
   const notes = [];
   if (p.TYPE && p.TYPE !== "Park") notes.push(p.TYPE);
   add("parks", p.CITY, f.geometry, {
@@ -105,8 +108,11 @@ for (const f of readGeoJson("Cemeteries")) {
   // Link to its location on Google Maps
   const [lng, lat] = f.geometry ? f.geometry.coordinates : [];
   const url = lat && lng ? `https://www.google.com/maps?q=${lat.toFixed(6)},${lng.toFixed(6)}` : "";
-  add("cemeteries", p.City, f.geometry, {
+  // A cemetery UGRC files under another city can be moved to its own community (corrections.json "cemetery_towns")
+  const move = (require("./lib/paths").readJson(require("./lib/paths").config("corrections.json")).cemetery_towns || []).find((x) => x.cemetery === p.Cemetery.trim() && x.city === p.City);
+  add("cemeteries", move ? move.town : p.City, f.geometry, {
     name: p.Cemetery.trim().replace(/\s+-\s+[^-]+$/, ""), note: "", url, year: fix ? fix.year : year ? year[0] : "",
+    link: (((require("./lib/paths").readJson(require("./lib/paths").config("corrections.json"))).parks_to_cemeteries || []).find((x) => x.park === p.Cemetery.trim() && x.town.toLowerCase() === String(p.City).toLowerCase()) || {}).url || undefined,
   });
 }
 

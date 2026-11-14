@@ -15875,7 +15875,7 @@
             "name": "Duchesne School",
             "low": "PK",
             "high": "6",
-            "url": "http://www.dcsd.org/DuchesneElementary.cfm",
+            "url": "https://des.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
             "leaUrl": "https://www.dcsd.org/",
@@ -15888,7 +15888,7 @@
             "name": "Duchesne High",
             "low": "7",
             "high": "12",
-            "url": "http://www.dcsd.org/DuchesneHigh.cfm",
+            "url": "https://dhs.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
             "leaUrl": "https://www.dcsd.org/",
@@ -15952,12 +15952,6 @@
           "note": "",
           "url": "https://www.google.com/maps?q=40.155148,-110.409019",
           "year": "1918"
-        },
-        {
-          "name": "Utahn Cemetery",
-          "note": "",
-          "url": "https://www.google.com/maps?q=40.253383,-110.404960",
-          "year": ""
         }
       ],
       "libraries": [
@@ -65909,7 +65903,7 @@
             "name": "Centennial School",
             "low": "K",
             "high": "5",
-            "url": "https://dcsd.org",
+            "url": "https://ces.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
             "leaUrl": "https://www.dcsd.org/",
@@ -65931,7 +65925,7 @@
             "name": "East School",
             "low": "PK",
             "high": "5",
-            "url": "http://www.dcsd.org/EastElementary.cfm?subpage=436226",
+            "url": "https://ees.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
             "leaUrl": "https://www.dcsd.org/",
@@ -65942,7 +65936,7 @@
             "name": "Kings Peak School",
             "low": "K",
             "high": "5",
-            "url": "http://kpes.dcsd.org/",
+            "url": "https://kpes.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
             "leaUrl": "https://www.dcsd.org/",
@@ -65955,7 +65949,7 @@
             "name": "Roosevelt Jr High",
             "low": "6",
             "high": "8",
-            "url": "http://www.dcsd.org/RooseveltJunior.cfm?subpage=436234",
+            "url": "https://rjhs.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
             "leaUrl": "https://www.dcsd.org/",
@@ -65968,7 +65962,7 @@
             "name": "Union High",
             "low": "9",
             "high": "12",
-            "url": "https://.http://www.dcsd.org/UnionHigh.cfm?subpage=436242",
+            "url": "https://uhs.dcsd.org/",
             "lea": "Duchesne County School District",
             "leaShort": "Duchesne District",
             "leaUrl": "https://www.dcsd.org/",
@@ -66157,7 +66151,8 @@
           "name": "Roosevelt Memorial Park",
           "note": "",
           "url": "https://www.google.com/maps?q=40.288238,-110.000138",
-          "year": ""
+          "year": "",
+          "link": "https://www.rooseveltcity.gov/165/Cemetery"
         }
       ],
       "libraries": [
@@ -86780,7 +86775,16 @@
     "soil": null,
     "postOfficeUrl": "",
     "schools": null,
-    "places": null,
+    "places": {
+      "cemeteries": [
+        {
+          "name": "Utahn Cemetery",
+          "note": "",
+          "url": "https://www.google.com/maps?q=40.253383,-110.404960",
+          "year": ""
+        }
+      ]
+    },
     "services": {
       "law": [
         {
