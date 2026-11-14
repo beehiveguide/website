@@ -36,7 +36,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p><a href=\"https://aes.dcsd.org/\">Altamont Elementary School</a> serves grades K&ndash;6. A new elementary school is being built to replace the current one. <a href=\"https://ahs.dcsd.org/\">Altamont High School</a> serves grades 7&ndash;12. It was rebuilt in 2012. The schools belong to the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p><a href=\"https://aes.dcsd.org/\">Altamont Elementary School</a> serves kindergarten&ndash;6th grade. A new elementary school is being built to replace the current one. <a href=\"https://ahs.dcsd.org/\">Altamont High School</a> serves 7th&ndash;12th grade. It was rebuilt in 2012. The schools belong to the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "libraries",
@@ -90,7 +90,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p>K&ndash;12 students from Altonah attend <a href=\"https://aes.dcsd.org/\">elementary</a> and <a href=\"https://ahs.dcsd.org/\">high school</a> in <a href=\"altamont.html\">Altamont</a>. The schools are part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p>Kindergarten&ndash;12th grade students from Altonah attend <a href=\"https://aes.dcsd.org/\">elementary</a> and <a href=\"https://ahs.dcsd.org/\">high school</a> in <a href=\"altamont.html\">Altamont</a>. The schools are part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
@@ -289,7 +289,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p>Cedarview students attend elementary school in <a href=\"https://nes.dcsd.org/\">Neola</a> and <a href=\"https://rjhs.dcsd.org/\">junior high</a> and <a href=\"https://uhs.dcsd.org/\">high school</a> in <a href=\"roosevelt.html\">Roosevelt</a> as part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p>Cedarview students attend <a href=\"https://nes.dcsd.org/\">elementary school</a> in Neola and <a href=\"https://rjhs.dcsd.org/\">junior high</a> and <a href=\"https://uhs.dcsd.org/\">high school</a> in <a href=\"roosevelt.html\">Roosevelt</a> as part of the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
@@ -402,7 +402,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p><a href=\"https://nes.dcsd.org/\">Neola Elementary School</a> serves students grades K&ndash;5 from Neola and the surrounding area. After fifth grade, students attend school at <a href=\"https://rjhs.dcsd.org/\">Roosevelt Jr. High</a> and <a href=\"https://uhs.dcsd.org/\">Union High</a> in <a href=\"roosevelt.html\">Roosevelt</a>. The schools are located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p><a href=\"https://nes.dcsd.org/\">Neola Elementary School</a> serves students in kindergarten&ndash;5th grade from Neola and the surrounding area. After fifth grade, students attend school at <a href=\"https://rjhs.dcsd.org/\">Roosevelt Jr. High</a> and <a href=\"https://uhs.dcsd.org/\">Union High</a> in <a href=\"roosevelt.html\">Roosevelt</a>. The schools are located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
