@@ -92,8 +92,8 @@ function buildData(site, live) {
     data.images = awin.images
       .filter((i) => i.shape === "box")
       .map(withCopy)
-      .map(({ brand, href, src, alt, title, blurb, cta, logo, logoWidth, pad, width, height, topics, ends }) => ({
-        brand, href, src, alt, title, blurb, cta, logo, logoWidth, pad, width, height, topics, ends,
+      .map(({ brand, href, src, alt, title, blurb, cta, logo, logoWidth, pad, trim, width, height, topics, ends }) => ({
+        brand, href, src, alt, title, blurb, cta, logo, logoWidth, pad, trim, width, height, topics, ends,
       }));
     data.text = awin.text.map(({ brand, label, href, ends }) => ({ brand, label, href, ends, topics: bt[brand] || [] }));
     // Brands that have pictures get their text links less often

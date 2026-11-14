@@ -1667,6 +1667,13 @@ a.marker-link:focus {
   height: auto;
   max-height: none;
 }
+.ad-card-img-trim img {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+}
 .ad-card-img-pad {
   padding: 1.25rem;
 }
