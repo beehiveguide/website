@@ -226,7 +226,7 @@ for (const town of towns) {
   };
   const keep = (p, min) => (p.pct >= min * 100 ? p : null);
   const bedrock = keep(part((c) => c.bedrockCm !== null && c.bedrockCm < BEDROCK_CM), LIMIT_SHARE);
-  const waterTable = keep(part((c) => c.waterTableCm !== null && c.waterTableCm < WATER_TABLE_CM), LIMIT_SHARE);
+  const waterTable = keep(part((c) => c.waterTableCm !== null && c.waterTableCm < WATER_TABLE_CM && /poorly/i.test(c.drainage || "")), LIMIT_SHARE);
   const flooding = keep(part((c) => /^(occasional|frequent|very frequent)$/i.test(c.flooding || "")), FLOOD_SHARE);
 
   output[id] = {

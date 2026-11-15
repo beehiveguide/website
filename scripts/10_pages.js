@@ -97,9 +97,8 @@ const num = (n) => Number(n).toLocaleString("en-US");
 const NA = "Not available";
 const MONTHS = Object.values(AP_MONTHS);
 const now = new Date();
-// Local date as "2026-11-01"
-const isoDate = (d) =>
-  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+// Date in Utah time as "2026-11-01", whatever time zone the build runs in
+const isoDate = (d) => d.toLocaleDateString("en-CA", { timeZone: "America/Denver" });
 const todayIso = isoDate(now);
 // "2026-11-01" -> "Nov. 1, 2026" (AP style)
 const apDate = (iso) => {
@@ -277,10 +276,15 @@ function soilHtml(t) {
   };
   const { flooding: fl, waterTable: wt, drainageVariation: dv, saltVariation: sv, awcVariation: av } = s;
   // "Floodplains flood" says nothing, so flooding is left out for floodplains
-  if (fl && fl.landform && fl.landform !== "on floodplains") add(fl.landform, 0, "flood");
+  // A hazard on the town's main landform has no clear place ("Valley floors
+  // have a high water table" when most of the town is valley floor), so it
+  // reads "Parts of the town ..." instead
+  const mainForms = s.arableForms || [];
+  const placedAt = (x) => x && x.landform && !mainForms.includes(x.landform);
+  if (placedAt(fl) && fl.landform !== "on floodplains") add(fl.landform, 0, "flood");
   if (dv && dist(dv.drainage) >= 1 && dist(dv.drainage) > dist(s.drainage) && DRAIN_VERB[dv.drainage])
     add(dv.landform, 1, DRAIN_VERB[dv.drainage]);
-  if (wt && wt.landform) add(wt.landform, 2, "have a high water table (within 2 feet)");
+  if (placedAt(wt)) add(wt.landform, 2, "have a high water table (within 2 feet)");
   if (sv && SALINE(sv.level)) add(sv.landform, 3, `are ${sv.level}`);
   if (av && av.awc < 0.1 && av.awc < s.awcAvg) add(av.landform, 4, "hold little water");
   // At most three problems per sentence; the rest follow as "They also ..."
@@ -297,11 +301,11 @@ function soilHtml(t) {
   }
   // Hazards with no clear place
   const loose = [];
-  if (fl && !fl.landform) loose.push("flood");
-  if (wt && !wt.landform) loose.push("have a high water table (within 2 feet)");
+  if (fl && !fl.landform || (fl && fl.landform && mainForms.includes(fl.landform) && fl.landform !== "on floodplains")) loose.push("flood");
+  if (wt && !placedAt(wt)) loose.push("have a high water table (within 2 feet)");
   if (loose.length) problems.push(`Parts of ${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}` : "the area"} ${loose.join(" or ")}.`);
   const BEDROCK_SKIP = new Set(["on rock benches", "on plateaus", "on mesas", "on ridges"]);
-  if (s.bedrock && !BEDROCK_SKIP.has(s.bedrock.landform)) problems.push(`Bedrock lies within 20 inches ${s.bedrock.landform ? esc(s.bedrock.landform) : "in some areas"}.`);
+  if (s.bedrock && !BEDROCK_SKIP.has(s.bedrock.landform)) problems.push(`Bedrock lies within 20 inches ${placedAt(s.bedrock) ? esc(s.bedrock.landform) : "in some areas"}.`);
 
   // Farmland shares are of the whole town (08c_soil.js)
   const f = s.farmland;
@@ -309,21 +313,19 @@ function soilHtml(t) {
   const place = `the ${t.placeType === "city" || t.placeType === "town" ? t.placeType : "area"}`;
   const pctOf = (pct) => (pct >= 95 ? "nearly all" : `${pct}%`);
   const farm = [];
-  // "Prime farmland with irrigation covers 41% of the city, and 10% is of
+  // "Farmland rated prime with irrigation covers 41% of the city, and 10% is rated of
   // statewide importance." Prime is "with irrigation" when most of it is prime
   // only if irrigated.
   const irrigated = f.prime > 0 && f.primeIfIrrigated >= f.prime * 0.8;
   if (f.prime > 0)
     farm.push(
-      `Prime farmland${irrigated ? " with irrigation" : ""} covers ${pctOf(f.prime)} of ${place}${f.statewide > 0 ? `, and ${f.statewide}% is of statewide importance` : ""}.`,
+      `Farmland rated prime${irrigated ? " with irrigation" : ""} covers ${pctOf(f.prime)} of ${place}${f.statewide > 0 ? `, and ${f.statewide}% is rated of statewide importance` : ""}.`,
     );
-  else if (f.statewide > 0) farm.push(`Farmland of statewide importance covers ${pctOf(f.statewide)} of ${place}.`);
+  else if (f.statewide > 0) farm.push(`Farmland rated of statewide importance covers ${pctOf(f.statewide)} of ${place}.`);
 
-  // Built-over towns end with how much was left out (urban land has no soil data)
-  const urban = s.urbanPct >= 15 ? ` About ${s.urbanPct}% of ${esc(t.name)} is built over and not included.` : "";
   const sentences = [opening, topsoil, ...problems, ...farm];
   return `<h3 class="soil-heading h4 mt-4 mb-2">Soil Properties</h3>
-    <p class="mb-0">${sentences.join(" ")}${urban}</p>`;
+    <p class="mb-0">${sentences.join(" ")}</p>`;
 }
 
 // Sources only appear for data the page shows, and their bold label
