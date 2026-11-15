@@ -60,6 +60,8 @@ function buildData(site, live) {
     textEvery: awin.textPageShare === 0 ? 0 : every(awin.textPageShare, 0.15),
     // Follow channels by weight, like { Instagram: 5, YouTube: 3, Threads: 1 }
     followWeights: a.followWeights || {},
+    // Awin brands that rotate more often, like { "Nature's Generator": 2 } (default 1)
+    brandWeights: awin.brandWeights || {},
     social: (site.social || []).map((s) => ({
       name: s.name,
       url: s.url,

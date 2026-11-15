@@ -57,7 +57,7 @@
       "Threads": 1,
       "Bookshop": 3
     },
-    "bookshopShare": 0.35,
+    "bookshopShare": 0.5,
     "shopUrl": "https://bookshop.org/shop/beehiveguide"
   },
   "consentBanner": true,

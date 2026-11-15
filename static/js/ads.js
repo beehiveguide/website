@@ -108,7 +108,16 @@
 
   // --- Bottom row: Awin cards (a different brand in each, moving on every
   // page view) or, every Nth page view, a row of three random books. Never mixed.
-  const brands = [...new Set(D.images.map((i) => i.brand))];
+  // A brand with a weight above 1 (brandWeights in config/awin.json) comes up
+  // that many times per cycle, spread out so it never doubles up in one row
+  const bw = D.brandWeights || {};
+  const baseBrands = [...new Set(D.images.map((i) => i.brand))];
+  const slots = baseBrands.map((b) => [b]);
+  baseBrands.forEach((b, idx) => {
+    const w = Math.floor(bw[b] || 1);
+    for (let k = 1; k < w; k++) slots[(idx + Math.floor((baseBrands.length * k) / w)) % baseBrands.length].push(b);
+  });
+  const brands = slots.flat();
   const byBrand = (b) => D.images.filter((i) => i.brand === b);
   // Books are picked at random from the whole list (it's grouped by subject,
   // so stepping through it in order would show similar books together)
@@ -209,7 +218,8 @@
     const fit = phoneBanners.length ? phoneBanners : D.banners.filter((b) => si === 0 || !b.text);
     const open = fit.filter((b) => !used.has(b.brand));
     const pool = open.length ? open : fit.length ? fit : D.banners;
-    const bn = at(pool, c + si);
+    const wpool = pool.flatMap((b) => Array(Math.max(1, Math.floor(bw[b.brand] || 1))).fill(b));
+    const bn = at(wpool, c + si);
     used.add(bn.brand);
     const bannerHtml = D.live
       ? bn.logoSrc

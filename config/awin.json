@@ -617,5 +617,8 @@
       "general"
     ]
   },
-  "disabledBrands": []
+  "disabledBrands": [],
+  "brandWeights": {
+    "Nature's Generator": 2
+  }
 }
