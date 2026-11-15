@@ -319,7 +319,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p>Ioka students attend <a href=\"https://ces.dcsd.org/\">Centennial School</a>, <a href=\"https://rjhs.dcsd.org/\">junior high</a> and <a href=\"https://uhs.dcsd.org/\">high school</a> in <a href=\"roosevelt.html\">Roosevelt</a>. Ioka is located in the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p>Ioka students attend <a href=\"https://ces.dcsd.org/\">Centennial Elementary</a>, <a href=\"https://rjhs.dcsd.org/\">Roosevelt Junior High</a> and <a href=\"https://uhs.dcsd.org/\">Union High</a> in <a href=\"roosevelt.html\">Roosevelt</a>. Ioka is located in the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
@@ -402,7 +402,7 @@
       {
         "id": "schools",
         "title": "Schools",
-        "html": "<p><a href=\"https://nes.dcsd.org/\">Neola Elementary School</a> serves students in kindergarten&ndash;5th grade from Neola and the surrounding area. After fifth grade, students attend school at <a href=\"https://rjhs.dcsd.org/\">Roosevelt Jr. High</a> and <a href=\"https://uhs.dcsd.org/\">Union High</a> in <a href=\"roosevelt.html\">Roosevelt</a>. The schools are located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
+        "html": "<p><a href=\"https://nes.dcsd.org/\">Neola Elementary School</a> serves students in kindergarten&ndash;5th grade from Neola and the surrounding area. After fifth grade, students attend school at <a href=\"https://rjhs.dcsd.org/\">Roosevelt Junior High</a> and <a href=\"https://uhs.dcsd.org/\">Union High</a> in <a href=\"roosevelt.html\">Roosevelt</a>. The schools are located in the <a href=\"https://dcsd.org/\">Duchesne County School District</a>.</p>"
       },
       {
         "id": "churches",
@@ -420,8 +420,12 @@
     "lead": "The town's first resident and merchant was A. M. Murdock. He had earlier come to the Basin to trade with the Indians in Whiterocks. He originally named the town Dora after his daughter. It was later renamed Theodore after President Roosevelt and finally Duchesne in 1911.",
     "founded": "Founded in 1905",
     "sources": [
-      "<strong>Community history:</strong> <a href=\"https://uen.net/utah_history_encyclopedia/d/DUSCHENE.shtml\">Utah History Encyclopedia, by John D. Barton</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
-    ]
+      "<strong>Community history:</strong> <a href=\"https://historytogo.utah.gov/duchesne\">Utah History Encyclopedia, by John D. Barton</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; and <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
+    ],
+    "section_html": {
+      "churches": "<p>Churches include <a href=\"https://www.baptistduchesne.com/\">First Baptist Church</a>, <a href=\"https://www.facebook.com/sthelenscatholichurch/\">Holy Spirit Catholic Mission</a> and The Church of Jesus Christ of Latter-day Saints, which has a <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5305950-01-01\">stake center</a> and <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5033802-01-01\">another meetinghouse</a> at the same intersection.</p>",
+      "airports": "<p>The <a href=\"https://duchesnecityut.gov/airport-2/\">Duchesne Municipal Airport</a> serves the city.</p>"
+    }
   },
   "Fruitland": {
     "lead": "Originally known as Rabbit Gulch, the town's name was changed to Fruitland to entice more settlers to the area.",
@@ -433,14 +437,14 @@
       {
         "id": "businesses",
         "title": "Businesses and Services",
-        "html": "<p><a href=\"https://www.facebook.com/p/Big-G-on-40-100063684005011/\">Big G on 40</a> is a Sinclair gas station with convenience groceries and a cafe.</p>"
+        "html": "<p><a href=\"https://www.facebook.com/p/Big-G-on-40-100063684005011/\">Big G on 40</a> is a Sinclair gas station with a convenience store, groceries and a cafe.</p>"
       }
     ]
   },
   "Hanna": {
     "lead": "The area was briefly home to the Indian agency in the 1860s. Stockmore, in the Hanna area, was first settled in 1905. The town of Hanna is named for its first postmaster, William P. Hanna.",
     "sources": [
-      "<strong>Community history:</strong> <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>",
+      "<strong>Community history:</strong> <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; and <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>",
       "<strong>Name origin:</strong> <a href=\"https://archive.org/details/utahplacenamesco0000vanc/mode/2up\">Utah Place Names, by John W. Van Cott</a>"
     ],
     "add_sections": [
@@ -474,7 +478,7 @@
     "lead": "The town was named after Theodore Roosevelt. The area was previously known as Dry Gulch.",
     "founded": "Settled in 1906",
     "sources": [
-      "<strong>Community history:</strong> <a href=\"https://www.uen.org/utah_history_encyclopedia/r/ROOSEVELT.shtml\">Utah History Encyclopedia, by John D. Barton</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
+      "<strong>Community history:</strong> <a href=\"https://www.rooseveltcity.gov/175/History-of-Roosevelt-City\">Roosevelt City website</a>; and <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
     ],
     "add_sections": [
       {
@@ -484,17 +488,22 @@
         "id": "events"
       }
     ],
-    "schools_html": "<p><a href=\"https://ees.dcsd.org/\">East School</a> (prekindergarten&ndash;5th), <a href=\"https://ces.dcsd.org/\">Centennial School</a> (kindergarten&ndash;5th), <a href=\"https://kpes.dcsd.org/\">Kings Peak School</a> (kindergarten&ndash;5th), <a href=\"https://rjhs.dcsd.org/\">Roosevelt Jr High</a> (6th&ndash;8th) and <a href=\"https://uhs.dcsd.org/\">Union High</a> (9th&ndash;12th) are part of the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>.</p>",
+    "schools_html": "<p><a href=\"https://ees.dcsd.org/\">East Elementary</a> (prekindergarten&ndash;5th), <a href=\"https://ces.dcsd.org/\">Centennial Elementary</a> (kindergarten&ndash;5th), <a href=\"https://kpes.dcsd.org/\">Kings Peak Elementary</a> (kindergarten&ndash;5th), <a href=\"https://rjhs.dcsd.org/\">Roosevelt Junior High</a> (6th&ndash;8th) and <a href=\"https://uhs.dcsd.org/\">Union High</a> (9th&ndash;12th) are part of the <a href=\"https://www.dcsd.org/\">Duchesne County School District</a>.</p>",
     "section_html": {
-      "churches": "<ul class=\"col-list\">\n      <li><a href=\"https://www.facebook.com/people/Faith-Baptist-Church-of-Uintah-Basin/100064831836893/\">Faith Baptist Church</a></li>\n      <li><a href=\"https://www.facebook.com/casadelalfarero84066/\">Iglesia de Dios E.C. Casa del Alfarero</a> (Spanish-language Pentecostal)</li>\n      <li><a href=\"https://rooseveltbaptist.churchtrac.com/\">Roosevelt Baptist Church</a> (Southern Baptist)</li>\n      <li><a href=\"https://rooseveltchristianassembly.org/\">Roosevelt Christian Assembly</a> (Assemblies of God)</li>\n      <li><a href=\"https://apps.jw.org/ui/E/meeting-search.html#/?w=A8E94D17-4E6A-4E12-BCF3-50B27948F6F4\">Roosevelt Kingdom Hall</a> (Jehovah&rsquo;s Witnesses)</li>\n      <li><a href=\"https://www.facebook.com/sthelenscatholichurch/\">St. Helen Catholic Church</a></li>\n      <li><a href=\"https://maps.churchofjesuschrist.org/search?q=Roosevelt%20utah\">The Church of Jesus Christ of Latter-day Saints</a> (5 meetinghouses)</li>\n    </ul>",
+      "churches": "<p><a href=\"https://maps.churchofjesuschrist.org/search?q=Roosevelt%20utah\">The Church of Jesus Christ of Latter-day Saints</a> has five meetinghouses in Roosevelt, including three stake centers.</p>\n    <p><a href=\"https://www.facebook.com/sthelenscatholichurch/\">St. Helen Catholic Church</a> is in Roosevelt. <a href=\"https://apps.jw.org/ui/E/meeting-search.html#/?w=A8E94D17-4E6A-4E12-BCF3-50B27948F6F4\">Roosevelt Kingdom Hall</a> serves Jehovah&rsquo;s Witnesses.</p>\n    <p>Roosevelt is also home to <a href=\"https://www.facebook.com/people/Faith-Baptist-Church-of-Uintah-Basin/100064831836893/\">Faith Baptist Church</a>, <a href=\"https://rooseveltbaptist.churchtrac.com/\">Roosevelt Baptist Church</a> (Southern Baptist), <a href=\"https://rooseveltchristianassembly.org/\">Roosevelt Christian Assembly</a> (Assemblies of God) and <a href=\"https://www.facebook.com/casadelalfarero84066/\">Iglesia de Dios E.C. Casa del Alfarero</a> (Spanish-language Pentecostal).</p>",
       "hospitals": "<p><a href=\"https://ubh.org/\">Uintah Basin Healthcare</a> operates the hospital and clinic in Roosevelt.</p>",
-      "colleges": "<p><a href=\"https://www.ubtech.edu\">Uintah Basin Technical College</a> and the <a href=\"https://statewide.usu.edu/uintahbasin/\">Utah State University Uintah Basin campus</a> are located in the city.</p>"
+      "colleges": "<p><a href=\"https://www.ubtech.edu\">Uintah Basin Technical College</a> and the <a href=\"https://statewide.usu.edu/uintahbasin/\">Utah State University Uintah Basin campus</a> are located in the city.</p>",
+      "airports": "<p>The <a href=\"https://www.rooseveltcity.gov/164/Airport\">Roosevelt Municipal Airport</a> serves the city.</p>",
+      "parks, cemeteries": "<p>Roosevelt City operates five <a href=\"https://www.rooseveltcity.gov/381/Roosevelt-City-Parks\">parks</a>: Nature Park, Centennial Park, Old Mill Park, Central Park and Constitution Park. <a href=\"https://www.rooseveltcity.gov/165/Cemetery\">Roosevelt Memorial Park</a> is a cemetery located in the city.</p>"
+    },
+    "move_before": {
+      "airports": "hospitals"
     }
   },
   "Tabiona": {
     "lead": "Fort Tabby was built in 1860. Later, a town was founded in the area, first called Tabbyville or Tabby, and formally named Tabiona in 1915. Tabby was a Ute leader who was among the first to move with his people to the Uintah Reservation.",
     "sources": [
-      "<strong>Community history:</strong> <a href=\"https://tabionatownut.gov/about-us\">Town of Tabiona</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
+      "<strong>Community history:</strong> <a href=\"https://tabionatownut.gov/about-us\">Town of Tabiona</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; and <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
     ],
     "add_sections": [
       {

@@ -566,7 +566,8 @@
       "topics": [
         "general",
         "food-cooking"
-      ]
+      ],
+      "featuredOnly": true
     },
     {
       "isbn": "9781915818027",

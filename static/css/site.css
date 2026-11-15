@@ -1738,3 +1738,5 @@ a.marker-link:focus {
 /* Picture banners wider than 728 (970 x 90) fill the column and scale down, no extra space */
 .affiliate-banner-box.affiliate-banner-wide { max-width: 970px; min-height: 0; }
 .affiliate-banner-wide .affiliate-banner { width: 100%; max-height: none; }
+/* A book needs 323 px or its widget is cut off */
+.ad-slot.post-mid:has(iframe) { max-width: 323px; }

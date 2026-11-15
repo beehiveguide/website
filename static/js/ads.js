@@ -56,6 +56,15 @@
   };
   const at = (list, i) => list[((i % list.length) + list.length) % list.length];
 
+  // An ad never shows wider than its picture, and sits centered in its column
+  const capWidth = (el, a) => {
+    const slot = el.querySelector(".ad-slot");
+    if (slot && a.width && !a.logo) {
+      slot.style.maxWidth = a.width + "px";
+      slot.style.marginLeft = slot.style.marginRight = "auto";
+    }
+  };
+
   const placeholder = (name) =>
     `<aside class="ad-slot ad-setup mb-0" aria-label="Advertisement placeholder"><div class="ad-label font-sans">Advertisement</div><div class="ad-box ad-rect"><span>${esc(name)}</span><small>300 &times; 250, live on deploy</small></div></aside>`;
   const cell = (inner) =>
@@ -219,6 +228,7 @@
     if (useTall) {
       const t = at(D.tall, Math.floor(c / 2));
       side.innerHTML = D.live ? cell(picture(t, true)) : placeholder(`Awin: ${t.brand}, sidebar`);
+      if (D.live) capWidth(side, t);
     } else {
       const pool = shuffled(generalBooks).filter((b) => !rowBooks.some((r) => r.isbn === b.isbn));
       const b = pool[0];

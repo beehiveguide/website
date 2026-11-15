@@ -477,6 +477,8 @@ const AD_SPOTS = {
   "post-middle": "banner",
   "post-middle-2": "banner",
   "post-middle-3": "banner",
+  "post-middle-4": "banner",
+  "post-middle-5": "banner",
   "post-bottom-1-resp": "rect",
   "post-bottom-2": "rect",
   "post-bottom-3": "rect",
@@ -560,6 +562,8 @@ const adSpots = () => ({
   "{Ad post-middle}": adSpot("post-middle", "my-4 mx-auto post-mid d-md-none"),
   "{Ad post-middle-2}": adSpot("post-middle-2", "my-4 mx-auto post-mid d-md-none"),
   "{Ad post-middle-3}": adSpot("post-middle-3", "my-4 mx-auto post-mid d-md-none"),
+  "{Ad post-middle-4}": adSpot("post-middle-4", "my-4 mx-auto post-mid d-md-none"),
+  "{Ad post-middle-5}": adSpot("post-middle-5", "my-4 mx-auto post-mid d-md-none"),
   // In the sidebar, below the tags; wide screens only, so phones get just
   // the one square at the bottom
   "{Ad post-side}":
@@ -1700,6 +1704,15 @@ function servicesHtml(t) {
       const sc = sections.find(([, w]) => w === word);
       if (sc) { sc[2] = customHtml(html); if (word !== "trails") sc[3] = []; } // trail data still comes from UGRC
     });
+  // Move a generated section in front of another (town_content.json "move_before": {"airports": "hospitals"})
+  if (custom && custom.move_before)
+    Object.entries(custom.move_before).forEach(([word, target]) => {
+      const from = sections.findIndex(([, w]) => w === word);
+      if (from < 0) return;
+      const [item] = sections.splice(from, 1);
+      const to = sections.findIndex(([, w]) => w === target);
+      sections.splice(to < 0 ? from : to, 0, item);
+    });
   // Extra hand-written sections added to the generated ones (config/town_content.json "add_sections")
   if (custom && custom.add_sections)
     custom.add_sections.forEach((c) => {
@@ -2446,18 +2459,72 @@ fs.writeFileSync(
       .replace(/\{Photo ([\w-]+)\}/g, (_, id) => photoFigure(id, "../"))
       .replace(/\{Video ([^}]+)\}/g, (_, x) => videoFigure(x))
       .trim();
-    // Phones get ads in the article, after a paragraph: at the quarters on
-    // posts of 12+ paragraphs, the thirds on 9 to 11, the middle on 6 to 8
-    const ends = [...body.matchAll(/<\/p>/g)].map((m) => m.index + 4);
-    if (ends.length >= 6 && !body.includes("{Ad post-middle")) {
-      const n = ends.length;
-      const fracs = n >= 12 ? [1 / 4, 1 / 2, 3 / 4] : n >= 9 ? [1 / 3, 2 / 3] : [1 / 2];
-      const marks = fracs.map((f, i) => [
-        ends[Math.round(n * f) - 1],
-        i ? `{Ad post-middle-${i + 1}}` : "{Ad post-middle}",
-      ]);
-      for (const [at, tag] of marks.reverse())
-        body = body.slice(0, at) + "\n" + tag + body.slice(at);
+    // Phones get ads in the article, only at section breaks (just before an h2).
+    // The first goes at the first break that falls below the fold (a heading
+    // after only a short opening doesn't count); the rest are spread evenly
+    // from there to about 78% of the way down. Count: about one per 1,800
+    // characters of reading (a photo counts as 700), 1 to 5. Breaks right
+    // after a photo are avoided when there's another choice; breaks before a
+    // photo, list, quote or subheading are never used.
+    if (!body.includes("{Ad post-middle")) {
+      const PHOTO = 700;
+      const FOLD = 500; // the body starts near the fold on a phone; about 3 paragraphs more
+      const weight = (i) =>
+        body.slice(0, i).replace(/<[^>]*>/g, "").length +
+        PHOTO * (body.slice(0, i).match(/<figure|<div class="post-photo-row/g) || []).length;
+      const total = weight(body.length);
+      const nWanted = total < 2500 ? 0 : Math.min(5, Math.max(1, Math.round(total / 1800)));
+      const nextTag = (i) => body.slice(i, i + 60);
+      const badNext = (i) => /^\s*<(\/|figure|div class="post-photo-row|img|ul|ol|blockquote|h[3-6])/.test(nextTag(i));
+      const afterPhoto = (i) => /<\/(figure|div)>\s*$/.test(body.slice(Math.max(0, i - 40), i));
+      const cands = [...body.matchAll(/<h2[\s>]/g)]
+        .map((m) => m.index)
+        .filter((i) => i > 0 && !badNext(i))
+        .map((i) => ({ i, w: weight(i), pen: afterPhoto(i) ? total * 0.2 : 0 }))
+        .filter((c, k, all) => c.w >= FOLD && k < all.length - 1 + (all.length < 3 ? 1 : 0)) // not before the last heading
+        .concat([{ i: body.length, w: total, pen: 0 }]) // under the last paragraph; Recent Posts sits before the bottom ads
+        .sort((x, y) => x.w - y.w);
+      // The first ad: the first break below the fold, preferring one not after a photo
+      const first = cands.find((c) => !c.pen) || cands[0];
+      let marks = [];
+      if (nWanted && first) {
+        for (const [n, gap] of [[nWanted, 0.15], [nWanted, 0.12], [nWanted - 1, 0.15], [nWanted - 1, 0.12], [nWanted - 2, 0.15]]) {
+          if (n < 1) continue;
+          let best = null;
+          const walk = (start, chosen) => {
+            if (chosen.length === n) {
+              // Even gaps between ads matter most; a late last ad costs a little
+              const gaps = chosen.slice(1).map((c, k) => c.w - chosen[k].w);
+              const mean = gaps.length ? gaps.reduce((x, y) => x + y, 0) / gaps.length : 0;
+              const last = chosen[chosen.length - 1].w;
+              const cost =
+                chosen.reduce((sum, c) => sum + c.pen, 0) +
+                gaps.reduce((sum, g) => sum + Math.abs(g - mean), 0) +
+                0.3 * Math.abs(last - 0.8 * total);
+              if (!best || cost < best.cost) best = { cost, chosen: chosen.slice() };
+              return;
+            }
+            for (let j = start; j < cands.length; j++) {
+              const prev = chosen[chosen.length - 1];
+              if (cands[j].w <= first.w || (prev && cands[j].w - prev.w <= total * gap)) continue;
+              // With two or more ads, the last always goes at the very end (after any sources list)
+              const isEnd = cands[j].i === body.length;
+              if (n > 1 && isEnd !== (chosen.length === n - 1)) continue;
+              chosen.push(cands[j]);
+              walk(j + 1, chosen);
+              chosen.pop();
+            }
+          };
+          walk(0, [first]);
+          if (best) {
+            marks = best.chosen.map((c, k) => [c.i, k ? `{Ad post-middle-${k + 1}}` : "{Ad post-middle}"]);
+            break;
+          }
+        }
+        if (!marks.length) marks = [[first.i, "{Ad post-middle}"]];
+      }
+      marks.sort((x, y) => y[0] - x[0]); // insert from the end so offsets hold
+      for (const [at, tag] of marks) body = body.slice(0, at) + tag + "\n" + body.slice(at);
     }
     const lead =
       p.photo && photos.some((x) => x.id === p.photo) ? postPhoto(p.photo) : null;

@@ -25,7 +25,8 @@
       "href": "https://www.awin1.com/cread.php?s=2659561&v=19976&q=391342&r=3149357",
       "src": "https://www.awin1.com/cshow.php?s=2659561&v=19976&q=391342&r=3149357",
       "alt": "Truthbrush",
-      "verified": true
+      "verified": true,
+      "bare": true
     },
     {
       "brand": "Truthbrush",
@@ -36,7 +37,8 @@
       "href": "https://www.awin1.com/cread.php?s=2659564&v=19976&q=391342&r=3149357",
       "src": "https://www.awin1.com/cshow.php?s=2659564&v=19976&q=391342&r=3149357",
       "alt": "Truthbrush",
-      "verified": false
+      "verified": false,
+      "bare": true
     },
     {
       "brand": "Mosaic Weighted Blankets",
@@ -104,7 +106,8 @@
       "fit": "cover",
       "title": "Dragon Touch Digital Calendar",
       "blurb": "A digital calendar to keep the family organized.",
-      "cta": "Shop digital calendars"
+      "cta": "Shop digital calendars",
+      "bare": true
     },
     {
       "brand": "Dragon Touch",
@@ -117,7 +120,8 @@
       "alt": "Dragon Touch Classic 10 digital picture frame",
       "sizeKb": 76,
       "verified": true,
-      "fit": "cover"
+      "fit": "cover",
+      "bare": true
     },
     {
       "brand": "Truthbrush",
@@ -241,7 +245,8 @@
       "href": "https://www.awin1.com/cread.php?s=4051354&v=55213&q=530963&r=3149357",
       "src": "https://www.awin1.com/cshow.php?s=4051354&v=55213&q=530963&r=3149357",
       "alt": "MeoWant self-cleaning cat litter box",
-      "verified": true
+      "verified": true,
+      "bare": true
     },
     {
       "brand": "MeoWant",
@@ -276,7 +281,8 @@
       "href": "https://www.awin1.com/cread.php?s=4051356&v=55213&q=530963&r=3149357",
       "src": "https://www.awin1.com/cshow.php?s=4051356&v=55213&q=530963&r=3149357",
       "alt": "MeoWant self-cleaning cat litter box",
-      "verified": true
+      "verified": true,
+      "bare": true
     },
     {
       "brand": "MeoWant",
@@ -287,7 +293,8 @@
       "href": "https://www.awin1.com/cread.php?s=4051353&v=55213&q=530963&r=3149357",
       "src": "https://www.awin1.com/cshow.php?s=4051353&v=55213&q=530963&r=3149357",
       "alt": "MeoWant self-cleaning cat litter box",
-      "verified": true
+      "verified": true,
+      "bare": true
     },
     {
       "brand": "MeoWant",
@@ -298,7 +305,8 @@
       "href": "https://www.awin1.com/cread.php?s=4051358&v=55213&q=530963&r=3149357",
       "src": "https://www.awin1.com/cshow.php?s=4051358&v=55213&q=530963&r=3149357",
       "alt": "MeoWant self-cleaning cat litter box",
-      "verified": true
+      "verified": true,
+      "bare": true
     },
     {
       "brand": "Mosaic Weighted Blankets",
