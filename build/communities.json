@@ -901,7 +901,7 @@
       "mainLandform": null,
       "arableForms": [
         "on bottomland",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -2024,13 +2024,13 @@
       "arableAcres": 2048,
       "arableShare": 0.54,
       "urbanPct": 0,
-      "mainLandform": "on terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on floodplains": "sandy",
         "on rock benches": "sandy"
       },
@@ -3229,7 +3229,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -3273,7 +3273,7 @@
       "waterTable": null,
       "flooding": {
         "pct": 5,
-        "landform": "on terraces",
+        "landform": "on flat land above a stream or lake",
         "level": "occasional"
       }
     },
@@ -4993,7 +4993,7 @@
       "coarseByForm": {
         "on rock benches": "sandy",
         "on floodplains": "sandy",
-        "on stream terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on foothill slopes": "sandy"
       },
       "textures": [
@@ -7645,9 +7645,9 @@
       "arableAcres": 110,
       "arableShare": 0.01,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -8941,7 +8941,7 @@
       "coarseByForm": {
         "on foothill slopes": "sandy and gravelly",
         "on bottomland": "sandy",
-        "on stream terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -8969,7 +8969,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "moderately well drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
@@ -11133,13 +11133,13 @@
       "arableAcres": 1259,
       "arableShare": 0.73,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
-        "on stream terraces": "gravelly"
+        "on flat land above a stream or lake": "gravelly"
       },
       "textures": [
         {
@@ -11349,7 +11349,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on stream terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -11375,13 +11375,13 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.11,
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "ecAvg": 1.2992737338943456,
       "saltVariation": {
         "ec": 3,
         "level": "very slightly saline",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.6,
       "farmland": {
@@ -12871,7 +12871,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -13470,7 +13470,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on foothill slopes": "gravelly"
       },
       "textures": [
@@ -13487,25 +13487,25 @@
         {
           "texture": "loamy fine sand",
           "pct": 15,
-          "landform": "on terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
-      "phMinWhere": "on terraces",
+      "phMinWhere": "on flat land above a stream or lake",
       "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
       "drainageVariation": {
         "drainage": "moderately well drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
       "awcVariation": {
         "awc": 0.08,
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "ecAvg": 1.4537250826395844,
       "saltVariation": null,
@@ -13589,7 +13589,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy and gravelly",
-        "on terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on foothill slopes": "sandy",
         "on floodplains": "sandy"
       },
@@ -13602,7 +13602,7 @@
         {
           "texture": "sand",
           "pct": 22,
-          "landform": "on terraces"
+          "landform": "on flat land above a stream or lake"
         },
         {
           "texture": "coarse sandy loam",
@@ -13629,7 +13629,7 @@
       "drainage": "somewhat excessively drained",
       "drainageVariation": {
         "drainage": "excessively drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.09,
       "awcDesc": "low water retention",
@@ -14296,13 +14296,13 @@
       "arableAcres": 1526,
       "arableShare": 0.82,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
-        "on stream terraces": "gravelly"
+        "on flat land above a stream or lake": "gravelly"
       },
       "textures": [
         {
@@ -14835,7 +14835,7 @@
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
         "on foothill slopes": "gravelly",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -14980,7 +14980,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -17686,11 +17686,11 @@
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on stream terraces",
+      "phMaxWhere": "on flat land above a stream or lake",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
@@ -17767,7 +17767,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on stream terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on benches": "gravelly"
       },
       "textures": [
@@ -17961,13 +17961,13 @@
       "arableAcres": 145,
       "arableShare": 0.33,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "stony",
       "coarseByForm": {
-        "on stream terraces": "stony",
+        "on flat land above a stream or lake": "stony",
         "on foothill slopes": "gravelly"
       },
       "textures": [
@@ -18080,7 +18080,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on stream terraces",
+        "on flat land above a stream or lake",
         "on floodplains"
       ],
       "coarseAll": null,
@@ -18388,7 +18388,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on terraces": "stony",
+        "on flat land above a stream or lake": "stony",
         "on foothill slopes": "sandy and gravelly"
       },
       "textures": [
@@ -18400,7 +18400,7 @@
         {
           "texture": "cobbly loam",
           "pct": 32,
-          "landform": "on terraces"
+          "landform": "on flat land above a stream or lake"
         },
         {
           "texture": "gravelly fine sandy loam",
@@ -18656,7 +18656,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on stream terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -18672,7 +18672,7 @@
         {
           "texture": "fine sandy loam",
           "pct": 16,
-          "landform": "on stream terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 8.1,
@@ -18687,7 +18687,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.12,
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "ecAvg": 2.381898926961493,
       "saltVariation": null,
@@ -18832,7 +18832,7 @@
       "drainage": "moderately well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
@@ -18841,7 +18841,7 @@
       "saltVariation": {
         "ec": 2.3,
         "level": "very slightly saline",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.5,
       "farmland": {
@@ -19449,7 +19449,7 @@
         {
           "texture": "clay loam",
           "pct": 21,
-          "landform": "on terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 7.3,
@@ -20060,7 +20060,7 @@
       "saltVariation": {
         "ec": 10,
         "level": "moderately saline",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.2,
       "farmland": {
@@ -20177,7 +20177,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -22774,7 +22774,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
@@ -23073,7 +23073,7 @@
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on stream terraces",
+      "phMaxWhere": "on flat land above a stream or lake",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "poorly drained",
@@ -24462,7 +24462,7 @@
       "mainLandform": null,
       "arableForms": [
         "on bottomland",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -25050,12 +25050,12 @@
       "mainLandform": null,
       "arableForms": [
         "on ancient lake bottoms",
-        "on terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy and gravelly",
-        "on terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on foothill slopes": "sandy"
       },
       "textures": [
@@ -25202,7 +25202,7 @@
       "phMin": 7.4,
       "phMax": 9,
       "phHighFirst": true,
-      "phMinWhere": "on stream terraces",
+      "phMinWhere": "on flat land above a stream or lake",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -27297,13 +27297,13 @@
       "arableAcres": 3406,
       "arableShare": 0.25,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on stream terraces": "gravelly"
+        "on flat land above a stream or lake": "gravelly"
       },
       "textures": [
         {
@@ -28071,9 +28071,9 @@
       "arableAcres": 944,
       "arableShare": 0.6,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -29074,9 +29074,9 @@
       "arableAcres": 27,
       "arableShare": 0.01,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -30411,7 +30411,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -30782,7 +30782,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -31289,7 +31289,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on stream terraces",
+        "on flat land above a stream or lake",
         "on foothill slopes"
       ],
       "coarseAll": null,
@@ -31631,7 +31631,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -31642,7 +31642,7 @@
         {
           "texture": "fine sandy loam",
           "pct": 20,
-          "landform": "on terraces"
+          "landform": "on flat land above a stream or lake"
         },
         {
           "texture": "silt loam",
@@ -32856,7 +32856,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on stream terraces",
+        "on flat land above a stream or lake",
         "on foothill slopes"
       ],
       "coarseAll": null,
@@ -33235,7 +33235,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -33246,7 +33246,7 @@
         {
           "texture": "loamy fine sand",
           "pct": 27,
-          "landform": "on terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 8,
@@ -33258,7 +33258,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat excessively drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
@@ -33780,7 +33780,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy and gravelly",
-        "on stream terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -33986,12 +33986,12 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on stream terraces",
+        "on flat land above a stream or lake",
         "on floodplains"
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on stream terraces": "stony",
+        "on flat land above a stream or lake": "stony",
         "on foothill slopes": "gravelly"
       },
       "textures": [
@@ -34257,7 +34257,7 @@
       "coarseByForm": {
         "on foothill slopes": "sandy",
         "on floodplains": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -35977,7 +35977,7 @@
       "coarseByForm": {
         "on floodplains": "sandy",
         "on foothill slopes": "sandy and gravelly",
-        "on stream terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -35998,7 +35998,7 @@
         {
           "texture": "fine sandy loam",
           "pct": 15,
-          "landform": "on stream terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 8.1,
@@ -38678,7 +38678,7 @@
       "saltVariation": {
         "ec": 10.8,
         "level": "moderately saline",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.5,
       "farmland": {
@@ -40022,7 +40022,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -40040,12 +40040,12 @@
       "phMin": 6.6,
       "phMax": 8.4,
       "phHighFirst": true,
-      "phMinWhere": "on terraces",
+      "phMinWhere": "on flat land above a stream or lake",
       "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
       "drainageVariation": {
         "drainage": "moderately well drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
@@ -40175,7 +40175,7 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
@@ -40386,11 +40386,11 @@
       "phMax": 9.6,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on terraces",
+      "phMaxWhere": "on flat land above a stream or lake",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
@@ -40399,7 +40399,7 @@
       "saltVariation": {
         "ec": 6.3,
         "level": "slightly saline",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 3.3,
       "farmland": {
@@ -43974,12 +43974,12 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
         "on foothill slopes": "gravelly",
-        "on stream terraces": "gravelly"
+        "on flat land above a stream or lake": "gravelly"
       },
       "textures": [
         {
@@ -44852,7 +44852,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -44878,7 +44878,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.09,
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "ecAvg": 1.0482870020180792,
       "saltVariation": null,
@@ -45558,10 +45558,9 @@
       "arableAcres": 2354,
       "arableShare": 0.73,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces",
-        "on terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -45601,11 +45600,11 @@
       },
       "bedrock": {
         "pct": 34,
-        "landform": "on terraces"
+        "landform": null
       },
       "waterTable": {
         "pct": 25,
-        "landform": "on stream terraces"
+        "landform": null
       },
       "flooding": {
         "pct": 20,
@@ -45871,7 +45870,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on stream terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -46785,13 +46784,13 @@
       "arableAcres": 1247,
       "arableShare": 0.93,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
-        "on stream terraces": "gravelly",
+        "on flat land above a stream or lake": "gravelly",
         "on foothill slopes": "gravelly"
       },
       "textures": [
@@ -46983,7 +46982,7 @@
       "coarseByForm": {
         "on bottomland": "sandy",
         "on sandy flats": "sandy",
-        "on stream terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on rock benches": "sandy",
         "in canyon bottoms": "sandy and gravelly"
       },
@@ -47371,13 +47370,13 @@
       "arableAcres": 127,
       "arableShare": 1,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
-        "on stream terraces": "sandy and gravelly",
+        "on flat land above a stream or lake": "sandy and gravelly",
         "on bottomland": "sandy"
       },
       "textures": [
@@ -48008,12 +48007,12 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
         "on floodplains": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -48543,7 +48542,10 @@
       "arableShare": 0.86,
       "urbanPct": 0,
       "mainLandform": null,
-      "arableForms": [],
+      "arableForms": [
+        "on flat land above a stream or lake",
+        "on floodplains"
+      ],
       "coarseAll": null,
       "coarseByForm": {},
       "textures": [
@@ -48557,10 +48559,13 @@
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": true,
-      "phMinWhere": null,
+      "phMinWhere": "on ancient lake bottoms",
       "phMaxWhere": null,
       "drainage": "well drained",
-      "drainageVariation": null,
+      "drainageVariation": {
+        "drainage": "moderately well drained",
+        "landform": "on valley floors"
+      },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
       "awcVariation": null,
@@ -49405,7 +49410,7 @@
         {
           "texture": "clay loam",
           "pct": 10,
-          "landform": "on terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 6.7,
@@ -49621,7 +49626,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -50627,7 +50632,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -53174,9 +53179,9 @@
       "arableAcres": 2173,
       "arableShare": 0.49,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -53473,7 +53478,7 @@
       "coarseByForm": {
         "on floodplains": "sandy and gravelly",
         "on foothill slopes": "sandy and gravelly",
-        "on stream terraces": "sandy and gravelly"
+        "on flat land above a stream or lake": "sandy and gravelly"
       },
       "textures": [
         {
@@ -53489,7 +53494,7 @@
         {
           "texture": "gravelly sandy loam",
           "pct": 16,
-          "landform": "on stream terraces"
+          "landform": "on flat land above a stream or lake"
         },
         {
           "texture": "fine sandy loam",
@@ -53501,7 +53506,7 @@
       "phMin": 6.1,
       "phMax": 8.6,
       "phHighFirst": false,
-      "phMinWhere": "on stream terraces",
+      "phMinWhere": "on flat land above a stream or lake",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -55569,12 +55574,12 @@
       "mainLandform": null,
       "arableForms": [
         "on rock benches",
-        "on terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
         "on rock benches": "sandy",
-        "on terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on foothill slopes": "sandy"
       },
       "textures": [
@@ -55931,11 +55936,13 @@
       "arableShare": 0.52,
       "urbanPct": 0,
       "mainLandform": null,
-      "arableForms": [],
+      "arableForms": [
+        "on sandy flats",
+        "on flat land above a stream or lake"
+      ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on sandy flats": "sandy",
-        "on terraces": "sandy"
+        "on sandy flats": "sandy"
       },
       "textures": [
         {
@@ -55961,7 +55968,10 @@
       "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "well drained",
-      "drainageVariation": null,
+      "drainageVariation": {
+        "drainage": "moderately well drained",
+        "landform": "on floodplains"
+      },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
@@ -56144,7 +56154,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
@@ -56153,7 +56163,7 @@
       "saltVariation": {
         "ec": 7.6,
         "level": "slightly saline",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.2,
       "farmland": {
@@ -58054,9 +58064,9 @@
       "arableAcres": 1675,
       "arableShare": 0.13,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -59133,7 +59143,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on stream terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -59144,7 +59154,7 @@
         {
           "texture": "sandy loam",
           "pct": 29,
-          "landform": "on stream terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 8.2,
@@ -59159,7 +59169,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.1,
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "ecAvg": 0.05051026841460884,
       "saltVariation": null,
@@ -59791,7 +59801,7 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -61672,7 +61682,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -61683,7 +61693,7 @@
         {
           "texture": "fine sandy loam",
           "pct": 16,
-          "landform": "on terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 7.8,
@@ -61698,7 +61708,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.11,
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "ecAvg": 1,
       "saltVariation": null,
@@ -61790,7 +61800,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -61811,7 +61821,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.11,
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "ecAvg": 1.5436607808759297,
       "saltVariation": null,
@@ -64327,7 +64337,7 @@
       "mainLandform": null,
       "arableForms": [
         "on bottomland",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -65700,11 +65710,11 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on stream terraces": "sandy and gravelly"
+        "on flat land above a stream or lake": "sandy and gravelly"
       },
       "textures": [
         {
@@ -65967,7 +65977,7 @@
       "drainage": "moderately well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
@@ -65976,7 +65986,7 @@
       "saltVariation": {
         "ec": 2,
         "level": "very slightly saline",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.8,
       "farmland": {
@@ -67554,8 +67564,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on stream terraces": "sandy and gravelly",
-        "on terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on old river deltas": "sandy"
       },
       "textures": [
@@ -67572,14 +67581,14 @@
         {
           "texture": "sandy loam",
           "pct": 11,
-          "landform": "on stream terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 7.5,
       "phMin": 6.1,
       "phMax": 10,
       "phHighFirst": false,
-      "phMinWhere": "on stream terraces",
+      "phMinWhere": "on flat land above a stream or lake",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -68142,7 +68151,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
@@ -68151,7 +68160,7 @@
       "saltVariation": {
         "ec": 8.2,
         "level": "moderately saline",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.6,
       "farmland": {
@@ -68314,7 +68323,7 @@
       "phMax": 9.6,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on terraces",
+      "phMaxWhere": "on flat land above a stream or lake",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
@@ -68327,7 +68336,7 @@
       "saltVariation": {
         "ec": 5.3,
         "level": "slightly saline",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.4,
       "farmland": {
@@ -72934,7 +72943,7 @@
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
         "on foothill slopes": "sandy",
-        "on terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on floodplains": "sandy"
       },
       "textures": [
@@ -72951,7 +72960,7 @@
         {
           "texture": "sand",
           "pct": 11,
-          "landform": "on terraces"
+          "landform": "on flat land above a stream or lake"
         },
         {
           "texture": "gravelly coarse sandy loam",
@@ -74308,12 +74317,12 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on terraces",
+        "on flat land above a stream or lake",
         "on foothill slopes"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on foothill slopes": "sandy",
         "in low spots": "sandy"
       },
@@ -76393,11 +76402,11 @@
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on stream terraces",
+      "phMaxWhere": "on flat land above a stream or lake",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
@@ -76948,13 +76957,13 @@
       "arableAcres": 3145,
       "arableShare": 0.46,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
-        "on stream terraces": "gravelly",
+        "on flat land above a stream or lake": "gravelly",
         "on foothill slopes": "gravelly"
       },
       "textures": [
@@ -77078,7 +77087,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -78240,7 +78249,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on stream terraces": "sandy and gravelly"
+        "on flat land above a stream or lake": "sandy and gravelly"
       },
       "textures": [
         {
@@ -78251,7 +78260,7 @@
         {
           "texture": "gravelly sandy loam",
           "pct": 19,
-          "landform": "on stream terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 7.1,
@@ -78266,7 +78275,7 @@
       "awcDesc": "moderate water retention",
       "awcVariation": {
         "awc": 0.09,
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "ecAvg": 0.3080719849218805,
       "saltVariation": null,
@@ -78867,12 +78876,12 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on stream terraces",
+        "on flat land above a stream or lake",
         "on floodplains"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on stream terraces": "sandy and gravelly",
+        "on flat land above a stream or lake": "sandy and gravelly",
         "on ancient lake bottoms": "sandy"
       },
       "textures": [
@@ -79980,7 +79989,7 @@
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
         "on foothill slopes": "sandy and gravelly",
-        "on stream terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on sandy flats": "sandy"
       },
       "textures": [
@@ -79992,7 +80001,7 @@
         {
           "texture": "loamy very fine sand",
           "pct": 14,
-          "landform": "on stream terraces"
+          "landform": "on flat land above a stream or lake"
         },
         {
           "texture": "loam",
@@ -80009,7 +80018,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "moderately well drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.1,
       "awcDesc": "moderate water retention",
@@ -80509,7 +80518,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on stream terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on floodplains": "sandy",
         "in low spots": "sandy"
       },
@@ -81445,7 +81454,7 @@
         "in low spots": "sandy",
         "on old lava flows": "sandy",
         "on valley floors": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -82771,7 +82780,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
@@ -82780,7 +82789,7 @@
       "saltVariation": {
         "ec": 10,
         "level": "moderately saline",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.6,
       "farmland": {
@@ -83146,7 +83155,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on stream terraces",
+        "on flat land above a stream or lake",
         "on foothill slopes"
       ],
       "coarseAll": null,
@@ -83476,7 +83485,7 @@
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on stream terraces",
+      "phMaxWhere": "on flat land above a stream or lake",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "poorly drained",
@@ -83664,13 +83673,12 @@
       "mainLandform": null,
       "arableForms": [
         "on ancient lake bottoms",
-        "on terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on terraces": "sandy",
-        "on stream terraces": "sandy and gravelly"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -83686,14 +83694,14 @@
         {
           "texture": "gravelly sandy loam",
           "pct": 14,
-          "landform": "on stream terraces"
+          "landform": null
         }
       ],
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
-      "phMinWhere": "on stream terraces",
+      "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -84503,9 +84511,9 @@
       "arableAcres": 61,
       "arableShare": 0.99,
       "urbanPct": 0,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -87099,7 +87107,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on stream terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -87117,7 +87125,7 @@
       "phMin": 7.4,
       "phMax": 8.4,
       "phHighFirst": true,
-      "phMinWhere": "on stream terraces",
+      "phMinWhere": "on flat land above a stream or lake",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -87510,7 +87518,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -87699,7 +87707,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on stream terraces": "gravelly",
+        "on flat land above a stream or lake": "gravelly",
         "on floodplains": "sandy and gravelly"
       },
       "textures": [
@@ -87728,7 +87736,7 @@
       "phMin": 7.4,
       "phMax": 9,
       "phHighFirst": true,
-      "phMinWhere": "on stream terraces",
+      "phMinWhere": "on flat land above a stream or lake",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": {
@@ -87973,7 +87981,7 @@
       "coarseByForm": {
         "on rock benches": "sandy",
         "on floodplains": "sandy",
-        "on terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -87996,7 +88004,7 @@
       "drainage": "excessively drained",
       "drainageVariation": {
         "drainage": "somewhat excessively drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.08,
       "awcDesc": "low water retention",
@@ -88125,7 +88133,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on floodplains": "sandy and gravelly",
-        "on stream terraces": "sandy"
+        "on flat land above a stream or lake": "sandy"
       },
       "textures": [
         {
@@ -88143,7 +88151,7 @@
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": true,
-      "phMinWhere": "on stream terraces",
+      "phMinWhere": "on flat land above a stream or lake",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -88502,7 +88510,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
@@ -88511,7 +88519,7 @@
       "saltVariation": {
         "ec": 5,
         "level": "slightly saline",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 1.1,
       "farmland": {
@@ -89090,7 +89098,7 @@
         {
           "texture": "silt loam",
           "pct": 33,
-          "landform": "on stream terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 8.5,
@@ -89102,7 +89110,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
@@ -89111,7 +89119,7 @@
       "saltVariation": {
         "ec": 10,
         "level": "moderately saline",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.2,
       "farmland": {
@@ -89372,7 +89380,7 @@
       "phMax": 9.6,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on terraces",
+      "phMaxWhere": "on flat land above a stream or lake",
       "drainage": "somewhat poorly drained",
       "drainageVariation": null,
       "awcAvg": 0.14,
@@ -89382,7 +89390,7 @@
       "saltVariation": {
         "ec": 4.4,
         "level": "slightly saline",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.5,
       "farmland": {
@@ -89936,7 +89944,7 @@
         {
           "texture": "clay loam",
           "pct": 24,
-          "landform": "on stream terraces"
+          "landform": "on flat land above a stream or lake"
         }
       ],
       "phAvg": 7,
@@ -89944,11 +89952,11 @@
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on stream terraces",
+      "phMaxWhere": "on flat land above a stream or lake",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "poorly drained",
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
@@ -89964,11 +89972,11 @@
       "bedrock": null,
       "waterTable": {
         "pct": 24,
-        "landform": "on stream terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "flooding": {
         "pct": 24,
-        "landform": "on stream terraces",
+        "landform": "on flat land above a stream or lake",
         "level": "occasional"
       }
     },
@@ -90055,7 +90063,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on stream terraces",
+        "on flat land above a stream or lake",
         "on floodplains"
       ],
       "coarseAll": null,
@@ -90737,13 +90745,13 @@
       "arableAcres": 504,
       "arableShare": 0.67,
       "urbanPct": 34,
-      "mainLandform": "on stream terraces",
+      "mainLandform": "on flat land above a stream or lake",
       "arableForms": [
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
-        "on stream terraces": "sandy and gravelly",
+        "on flat land above a stream or lake": "sandy and gravelly",
         "on ancient lake bottoms": "sandy",
         "on floodplains": "sandy"
       },
@@ -93576,7 +93584,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
@@ -93585,7 +93593,7 @@
       "saltVariation": {
         "ec": 8.6,
         "level": "moderately saline",
-        "landform": "on terraces"
+        "landform": "on flat land above a stream or lake"
       },
       "omAvg": 2.8,
       "farmland": {
@@ -95673,7 +95681,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on terraces": "sandy",
+        "on flat land above a stream or lake": "sandy",
         "on ancient lake bottoms": "sandy and gravelly"
       },
       "textures": [
@@ -96000,7 +96008,7 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -96455,7 +96463,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on stream terraces",
+        "on flat land above a stream or lake",
         "on floodplains"
       ],
       "coarseAll": null,
@@ -96565,7 +96573,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on stream terraces"
+        "on flat land above a stream or lake"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -96693,7 +96701,7 @@
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
         "on foothill slopes": "sandy and gravelly and stony",
-        "on terraces": "stony"
+        "on flat land above a stream or lake": "stony"
       },
       "textures": [
         {
