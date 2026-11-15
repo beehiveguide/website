@@ -900,7 +900,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on stream terraces"
       ],
       "coarseAll": null,
@@ -2353,7 +2353,7 @@
         {
           "texture": "clay loam",
           "pct": 16,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         }
       ],
       "phAvg": 8.2,
@@ -2738,8 +2738,8 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
-        "on foothill slopes"
+        "on foothill slopes",
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -2757,22 +2757,29 @@
         {
           "texture": "silty clay loam",
           "pct": 21,
-          "landform": null
+          "landform": "on valley floors"
         }
       ],
       "phAvg": 8.3,
       "phMin": 7.8,
       "phMax": 9,
       "phHighFirst": true,
-      "phMinWhere": null,
+      "phMinWhere": "on valley floors",
       "phMaxWhere": null,
       "drainage": "well drained",
-      "drainageVariation": null,
+      "drainageVariation": {
+        "drainage": "moderately well drained",
+        "landform": "on valley floors"
+      },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
       "awcVariation": null,
       "ecAvg": 2.360174432964007,
-      "saltVariation": null,
+      "saltVariation": {
+        "ec": 4,
+        "level": "slightly saline",
+        "landform": "on valley floors"
+      },
       "omAvg": 1.6,
       "farmland": {
         "prime": 75,
@@ -3080,9 +3087,9 @@
       "arableAcres": 5502,
       "arableShare": 0.75,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -4045,7 +4052,7 @@
         {
           "texture": "loam",
           "pct": 39,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         }
       ],
       "phAvg": 8,
@@ -4350,7 +4357,7 @@
       "coarseByForm": {
         "on sandy flats": "sandy",
         "on rock benches": "sandy",
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {
@@ -4382,7 +4389,7 @@
       "waterTable": null,
       "flooding": {
         "pct": 8,
-        "landform": "on valley floors",
+        "landform": "on bottomland",
         "level": "occasional"
       }
     },
@@ -4865,7 +4872,7 @@
         {
           "texture": "loam",
           "pct": 14,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         }
       ],
       "phAvg": 7.9,
@@ -4873,11 +4880,11 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on valley floors",
+      "phMaxWhere": "on bottomland",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on valley floors"
+        "landform": "on bottomland"
       },
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
@@ -4887,9 +4894,9 @@
       },
       "ecAvg": 0.8178840083987083,
       "saltVariation": {
-        "ec": 3,
-        "level": "very slightly saline",
-        "landform": "on valley floors"
+        "ec": 4.1,
+        "level": "slightly saline",
+        "landform": "on bottomland"
       },
       "omAvg": 1.2,
       "farmland": {
@@ -5561,13 +5568,13 @@
       "arableAcres": 32,
       "arableShare": 0.02,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {
@@ -7874,7 +7881,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on rock benches": "sandy and gravelly",
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {
@@ -7885,7 +7892,7 @@
         {
           "texture": "very fine sandy loam",
           "pct": 17,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         },
         {
           "texture": "silt loam",
@@ -8663,13 +8670,13 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {
           "texture": "fine sandy loam",
           "pct": 26,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         },
         {
           "texture": "very fine sandy loam",
@@ -8692,7 +8699,7 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on valley floors",
+      "phMaxWhere": "on bottomland",
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.14,
@@ -8700,9 +8707,9 @@
       "awcVariation": null,
       "ecAvg": 1.9777620094437156,
       "saltVariation": {
-        "ec": 4.4,
-        "level": "slightly saline",
-        "landform": "on valley floors"
+        "ec": 3,
+        "level": "very slightly saline",
+        "landform": "on bottomland"
       },
       "omAvg": 1.5,
       "farmland": {
@@ -8928,12 +8935,12 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
         "on foothill slopes": "sandy and gravelly",
-        "on valley floors": "sandy",
+        "on bottomland": "sandy",
         "on stream terraces": "sandy"
       },
       "textures": [
@@ -8982,7 +8989,7 @@
       "waterTable": null,
       "flooding": {
         "pct": 38,
-        "landform": "on valley floors",
+        "landform": "on bottomland",
         "level": "occasional"
       }
     },
@@ -9083,11 +9090,11 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {
@@ -11000,9 +11007,9 @@
       "arableAcres": 1178,
       "arableShare": 0.88,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -11662,11 +11669,11 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on valley floors",
+      "phMaxWhere": "on bottomland",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on valley floors"
+        "landform": "on bottomland"
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
@@ -11675,7 +11682,7 @@
       "saltVariation": {
         "ec": 10.3,
         "level": "moderately saline",
-        "landform": "on valley floors"
+        "landform": "on bottomland"
       },
       "omAvg": 2.6,
       "farmland": {
@@ -12370,7 +12377,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -16159,10 +16166,8 @@
       "arableAcres": 931,
       "arableShare": 0.74,
       "urbanPct": 20,
-      "mainLandform": "on valley floors",
-      "arableForms": [
-        "on valley floors"
-      ],
+      "mainLandform": null,
+      "arableForms": [],
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
         "on valley floors": "sandy and gravelly",
@@ -16192,19 +16197,12 @@
       "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "well drained",
-      "drainageVariation": {
-        "drainage": "moderately well drained",
-        "landform": "on floodplains"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 0.554775848668241,
-      "saltVariation": {
-        "ec": 2.4,
-        "level": "very slightly saline",
-        "landform": "on floodplains"
-      },
+      "saltVariation": null,
       "omAvg": 1.7,
       "farmland": {
         "prime": 0,
@@ -18513,9 +18511,9 @@
       "arableAcres": 45,
       "arableShare": 0.11,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -18651,9 +18649,9 @@
       "arableAcres": 1455,
       "arableShare": 0.88,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -18926,7 +18924,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on floodplains"
       ],
       "coarseAll": null,
@@ -19225,9 +19223,9 @@
       "arableAcres": 3947,
       "arableShare": 0.9,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -19555,7 +19553,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on foothill slopes"
       ],
       "coarseAll": null,
@@ -19767,7 +19765,7 @@
         {
           "texture": "loam",
           "pct": 20,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         },
         {
           "texture": "gravelly loam",
@@ -20897,7 +20895,7 @@
       "awcVariation": null,
       "ecAvg": 2.3329823390638174,
       "saltVariation": {
-        "ec": 5.6,
+        "ec": 5.9,
         "level": "slightly saline",
         "landform": "on valley floors"
       },
@@ -21866,7 +21864,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -21987,10 +21985,11 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
+        "on bottomland": "sandy",
         "on foothill slopes": "sandy"
       },
       "textures": [
@@ -22368,7 +22367,7 @@
         {
           "texture": "silt loam",
           "pct": 11,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         }
       ],
       "phAvg": 7.8,
@@ -22746,12 +22745,12 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on foothill slopes"
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on valley floors": "sandy",
+        "on bottomland": "sandy",
         "on floodplains": "sandy"
       },
       "textures": [
@@ -22897,9 +22896,9 @@
       "arableAcres": 612,
       "arableShare": 0.88,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -24462,7 +24461,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on stream terraces"
       ],
       "coarseAll": null,
@@ -24619,7 +24618,7 @@
         {
           "texture": "silty clay loam",
           "pct": 31,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         },
         {
           "texture": "fine sandy loam",
@@ -24632,7 +24631,7 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on valley floors",
+      "phMaxWhere": "on bottomland",
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.16,
@@ -26084,7 +26083,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on foothill slopes"
       ],
       "coarseAll": "sandy",
@@ -27075,7 +27074,7 @@
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": true,
-      "phMinWhere": "on valley floors",
+      "phMinWhere": "on bottomland",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -30267,9 +30266,9 @@
       "arableAcres": 196,
       "arableShare": 0.58,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -31406,7 +31405,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on floodplains"
       ],
       "coarseAll": null,
@@ -33488,9 +33487,9 @@
       "arableAcres": 1458,
       "arableShare": 0.88,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -34252,7 +34251,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
@@ -34563,11 +34562,11 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {
@@ -34684,9 +34683,9 @@
       "arableAcres": 426,
       "arableShare": 0.99,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -36298,7 +36297,7 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": "on floodplains",
-      "phMaxWhere": "on valley floors",
+      "phMaxWhere": "on bottomland",
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.14,
@@ -36429,7 +36428,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -37012,9 +37011,9 @@
       "arableAcres": 362,
       "arableShare": 0.97,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -38291,7 +38290,7 @@
       "mainLandform": null,
       "arableForms": [
         "on ancient lake bottoms",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -42361,9 +42360,9 @@
       "arableAcres": 3385,
       "arableShare": 0.95,
       "urbanPct": 0,
-      "mainLandform": "on valley floors",
+      "mainLandform": "on bottomland",
       "arableForms": [
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -43175,7 +43174,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on foothill slopes"
       ],
       "coarseAll": null,
@@ -44546,7 +44545,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -44674,12 +44673,12 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on foothill slopes"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {
@@ -45867,7 +45866,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
@@ -46804,7 +46803,7 @@
         {
           "texture": "silty clay loam",
           "pct": 12,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         },
         {
           "texture": "loam",
@@ -46982,7 +46981,7 @@
       "arableForms": [],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on valley floors": "sandy",
+        "on bottomland": "sandy",
         "on sandy flats": "sandy",
         "on stream terraces": "sandy",
         "on rock benches": "sandy",
@@ -47033,7 +47032,7 @@
       "waterTable": null,
       "flooding": {
         "pct": 51,
-        "landform": "on valley floors",
+        "landform": "on bottomland",
         "level": "occasional"
       }
     },
@@ -47379,7 +47378,7 @@
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
         "on stream terraces": "sandy and gravelly",
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {
@@ -47390,7 +47389,7 @@
         {
           "texture": "sandy loam",
           "pct": 19,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         }
       ],
       "phAvg": 7.8,
@@ -47793,7 +47792,7 @@
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
         "on foothill slopes": "sandy and gravelly",
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {
@@ -47824,7 +47823,7 @@
       "awcDesc": "moderate water retention",
       "awcVariation": {
         "awc": 0.06,
-        "landform": "on valley floors"
+        "landform": "on bottomland"
       },
       "ecAvg": 0.6118298563392345,
       "saltVariation": null,
@@ -48866,11 +48865,11 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
-        "on valley floors": "sandy and gravelly"
+        "on bottomland": "sandy and gravelly"
       },
       "textures": [
         {
@@ -51491,7 +51490,7 @@
         {
           "texture": "loam",
           "pct": 50,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         },
         {
           "texture": "sandy loam",
@@ -53059,7 +53058,7 @@
         {
           "texture": "loam",
           "pct": 27,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         }
       ],
       "phAvg": 8,
@@ -55770,20 +55769,20 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on valley floors",
+      "phMaxWhere": "on bottomland",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on valley floors"
+        "landform": "on bottomland"
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 3.3196381383406517,
       "saltVariation": {
-        "ec": 15.4,
+        "ec": 12,
         "level": "moderately saline",
-        "landform": "on valley floors"
+        "landform": "on bottomland"
       },
       "omAvg": 2.7,
       "farmland": {
@@ -57577,7 +57576,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -64327,7 +64326,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on stream terraces"
       ],
       "coarseAll": null,
@@ -64820,9 +64819,10 @@
       "arableAcres": 2985,
       "arableShare": 0.83,
       "urbanPct": 4,
-      "mainLandform": "on valley floors",
+      "mainLandform": null,
       "arableForms": [
-        "on valley floors"
+        "on foothill slopes",
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -64837,22 +64837,22 @@
         {
           "texture": "silty clay loam",
           "pct": 24,
-          "landform": null
+          "landform": "on valley floors"
         },
         {
           "texture": "loam",
           "pct": 17,
-          "landform": "on foothill slopes"
+          "landform": null
         },
         {
           "texture": "silty clay",
           "pct": 12,
-          "landform": null
+          "landform": "on valley floors"
         },
         {
           "texture": "gravelly fine sandy loam",
           "pct": 10,
-          "landform": "on foothill slopes"
+          "landform": null
         }
       ],
       "phAvg": 8.3,
@@ -64860,14 +64860,18 @@
       "phMax": 9,
       "phHighFirst": true,
       "phMinWhere": null,
-      "phMaxWhere": null,
+      "phMaxWhere": "on valley floors",
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 2.5408012434373672,
-      "saltVariation": null,
+      "saltVariation": {
+        "ec": 4.7,
+        "level": "slightly saline",
+        "landform": "on valley floors"
+      },
       "omAvg": 1.6,
       "farmland": {
         "prime": 66,
@@ -67097,13 +67101,14 @@
       "urbanPct": 13,
       "mainLandform": null,
       "arableForms": [
-        "on valley floors",
+        "on bottomland",
         "on foothill slopes"
       ],
       "coarseAll": null,
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on rock benches": "sandy"
+        "on rock benches": "sandy",
+        "on valley floors": "sandy"
       },
       "textures": [
         {
@@ -67131,7 +67136,7 @@
       "phMin": 7.6,
       "phMax": 11,
       "phHighFirst": true,
-      "phMinWhere": null,
+      "phMinWhere": "on valley floors",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -68635,9 +68640,10 @@
       "arableAcres": 1726,
       "arableShare": 0.48,
       "urbanPct": 1,
-      "mainLandform": "on valley floors",
+      "mainLandform": null,
       "arableForms": [
-        "on valley floors"
+        "on bottomland",
+        "on foothill slopes"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -68647,7 +68653,7 @@
         {
           "texture": "loam",
           "pct": 37,
-          "landform": "on foothill slopes"
+          "landform": null
         },
         {
           "texture": "silty clay loam",
@@ -68657,7 +68663,7 @@
         {
           "texture": "clay",
           "pct": 11,
-          "landform": null
+          "landform": "on valley floors"
         }
       ],
       "phAvg": 8.2,
@@ -68679,9 +68685,9 @@
       },
       "ecAvg": 2.8559570088216693,
       "saltVariation": {
-        "ec": 4.7,
+        "ec": 4.1,
         "level": "slightly saline",
-        "landform": "on foothill slopes"
+        "landform": "on floodplains"
       },
       "omAvg": 1.6,
       "farmland": {
@@ -76268,10 +76274,7 @@
       "phMinWhere": "on valley floors",
       "phMaxWhere": null,
       "drainage": "well drained",
-      "drainageVariation": {
-        "drainage": "moderately well drained",
-        "landform": "on valley floors"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
@@ -79994,7 +79997,7 @@
         {
           "texture": "loam",
           "pct": 13,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         }
       ],
       "phAvg": 8.3,
@@ -81441,6 +81444,7 @@
         "on foothill slopes": "sandy",
         "in low spots": "sandy",
         "on old lava flows": "sandy",
+        "on valley floors": "sandy",
         "on terraces": "sandy"
       },
       "textures": [
@@ -83359,7 +83363,7 @@
         {
           "texture": "loam",
           "pct": 36,
-          "landform": "on valley floors"
+          "landform": "on bottomland"
         }
       ],
       "phAvg": 8,
@@ -88473,7 +88477,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on valley floors"
+        "on bottomland"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -89815,7 +89819,7 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on valley floors",
+      "phMaxWhere": "on bottomland",
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.12,
@@ -90291,7 +90295,8 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "in low spots": "sandy"
+        "in low spots": "sandy",
+        "on valley floors": "sandy"
       },
       "textures": [
         {
@@ -90326,7 +90331,7 @@
       "saltVariation": {
         "ec": 2,
         "level": "very slightly saline",
-        "landform": "on valley floors"
+        "landform": "in low spots"
       },
       "omAvg": 1.1,
       "farmland": {
@@ -96000,7 +96005,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on valley floors": "sandy"
+        "on bottomland": "sandy"
       },
       "textures": [
         {

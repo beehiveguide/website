@@ -185,6 +185,7 @@
   // --- Follow banner: every Nth page view, one channel by weight, at the
   // top or (on town pages) mid-page in turn
   const showFollow = c % D.followEvery === 0 && D.social.length;
+  let followSpot = null;
   if (follows.length && showFollow) {
     const n = Math.floor(c / D.followEvery);
     // Channels in turn by weight, like Instagram, YouTube, Instagram...
@@ -200,16 +201,18 @@
     const ch = at(seq, n);
     // On phones the mid-page spot is only a wide Awin ad or a book, so Follow stays at the top
     const spot = window.matchMedia("(max-width: 767.98px)").matches ? follows[0] : at(follows, n);
+    followSpot = spot;
     spot.innerHTML = `<div class="ad-label font-sans">Advertisement</div><a class="house-ad house-${esc(ch.name.toLowerCase())} ad-box ad-banner" href="${esc(ch.url)}" rel="${ch.shop ? "sponsored noopener" : "noopener"}"><span class="house-logo">${D.logo}</span><span class="house-text"><strong>${ch.shop ? "Beehive Guide Bookshop" : "Follow Beehive Guide"}</strong><span class="house-handle">${ch.shop ? "Books on gardening, cooking, Utah history and more" : `${esc(D.handle)} on ${esc(ch.name)}`}</span></span><span class="house-btn"><span class="house-icon">${ch.icon}</span>${ch.shop ? "Browse books" : "Follow"}</span></a>`;
     spot.hidden = false;
   }
   // Other page views: the top spot holds a wide Awin banner (a brand that
   // isn't already in the bottom row), so the top of the page always has an ad
-  else if (follows.length && D.banners && D.banners.length) {
+  if (follows.length && D.banners && D.banners.length) {
     // Every banner spot on the page gets one (top and mid-page on town pages),
     // each from a different brand
     const used = new Set(rowBrands);
     follows.forEach((spot, si) => {
+    if (spot === followSpot) return; // Follow already took this one
     // Mid-page spots skip logo-only banners (the ones with copy beside a logo)
     // On phones a 728 x 90 picture shrinks until its words can't be read, so
     // phones get the banners that put copy in real text beside a logo

@@ -36,9 +36,9 @@
     "levees": "on floodplains",
     "oxbows": "on floodplains",
 
-    "alluvial flats": "on valley floors",
+    "alluvial flats": "on bottomland",
     "basin floors": "on valley floors",
-    "valley flats": "on valley floors",
+    "valley flats": "on bottomland",
     "valley floors": "on valley floors",
     "valleys": "on valley floors",
     "karst valleys": "on valley floors",

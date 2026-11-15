@@ -301,12 +301,18 @@ function soilHtml(t) {
   const sorted = [...areas.entries()]
     .map(([form, list]) => [form, list.sort((a, b) => a[0] - b[0]).map((x) => x[1])])
     .sort((a, b) => Number(/flood/.test(b[1][0])) - Number(/flood/.test(a[1][0])));
+  // "Bottomland" is a mass noun, so its verbs are singular ("Bottomland drains poorly")
+  const SINGULAR_FORMS = new Set(["on bottomland"]);
+  const oneVerb = (v) => v.replace(/flood$/, "floods").replace(/^drain /, "drains ").replace(/^have /, "has ").replace(/^are /, "is ").replace(/^hold /, "holds ");
   for (const [form, verbs] of sorted) {
     const why = s.coarseByForm && s.coarseByForm[form] && verbs.every((x) => DRY.test(x)) ? ` because the soils are ${s.coarseByForm[form]}` : "";
-    problems.push(`${cap(esc(placeNoun(form)))} ${sayList(verbs.slice(0, 3))}${why}.`);
+    const one = SINGULAR_FORMS.has(form);
+    const say = (list) => sayList(one ? list.map(oneVerb) : list);
+    problems.push(`${cap(esc(placeNoun(form)))} ${say(verbs.slice(0, 3))}${why}.`);
     if (verbs.length > 3) {
       const rest = verbs.slice(3);
-      problems.push(`They ${rest[0].startsWith("are ") ? "are also" : "also"} ${sayList(rest).replace(/^are /, "")}.`);
+      const be = rest[0].startsWith("are ");
+      problems.push(`${one ? "It" : "They"} ${be ? (one ? "is also" : "are also") : "also"} ${say(rest).replace(/^(are|is) /, "")}.`);
     }
   }
   // Hazards with no clear place
