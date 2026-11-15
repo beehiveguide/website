@@ -46,11 +46,18 @@ const OUTLIER_SHARE = 0.25; // pH extremes are noted when they cover under 25% o
 const towns = paths.readJson(paths.source("usda", "ssurgo", "town_soils.json"));
 
 // Plain words for landforms ("fan remnants" -> "on foothill slopes")
-const { landforms: LANDFORM_WORDS } = paths.readJson(paths.config("landform_words.json"));
+const { landforms: LANDFORM_WORDS, byParentMaterial: BY_MATERIAL } = paths.readJson(paths.config("landform_words.json")); // eslint-disable-line
+const BY_TOWN = paths.readJson(paths.config("landform_words.json")).byTown || {};
 const unlisted = new Set();
-function plainLandform(form) {
+// A vague landform ("terraces") gets a specific phrase from what the soil formed
+// from ("Lacustrine deposits" -> "on ancient lakeshore benches"), when listed
+function plainLandform(form, material, flooding, town) {
   if (!form) return null;
   const f = form.toLowerCase();
+  if (BY_TOWN[town] && BY_TOWN[town][f]) return BY_TOWN[town][f];
+  // Terraces that flood, with no recorded material, sit beside a stream (a lake never floods them)
+  if (f === "terraces" && !material && flooding && flooding !== "None") return "on flat land beside streams";
+  if (BY_MATERIAL[f] && BY_MATERIAL[f][material]) return BY_MATERIAL[f][material];
   if (LANDFORM_WORDS[f]) return LANDFORM_WORDS[f];
   unlisted.add(f);
   return `on ${f}`;
@@ -91,7 +98,7 @@ for (const town of towns) {
   let arable = withData
     .filter((c) => c.slope[1] <= MAX_SLOPE)
     .filter((c) => !NON_GARDEN_LANDFORMS.has((c.landform || "").toLowerCase()))
-    .map((c) => ({ ...c, landform: plainLandform(c.landform), acres: (c.muAcres * c.pct) / 100 }))
+    .map((c) => ({ ...c, landform: plainLandform(c.landform, c.parentMaterial, c.flooding, town.name), acres: (c.muAcres * c.pct) / 100 }))
     .filter((c) => !STEEP_LANDFORMS.has(c.landform))
     .filter((c) => { const m = unitMaxSlope(c.muname); return m === null || m <= MAX_UNIT_SLOPE; });
   // Same component can show up once per map unit piece; already summed by map unit

@@ -302,7 +302,7 @@ function soilHtml(t) {
     .map(([form, list]) => [form, list.sort((a, b) => a[0] - b[0]).map((x) => x[1])])
     .sort((a, b) => Number(/flood/.test(b[1][0])) - Number(/flood/.test(a[1][0])));
   // "Bottomland" is a mass noun, so its verbs are singular ("Bottomland drains poorly")
-  const SINGULAR_FORMS = new Set(["on bottomland", "on flat land above a stream or lake"]);
+  const SINGULAR_FORMS = new Set(["on bottomland", "on flat land beside streams", "on flat land beside streams or lakes", "on land at the foot of slopes"]);
   const oneVerb = (v) => v.replace(/flood$/, "floods").replace(/^drain /, "drains ").replace(/^have /, "has ").replace(/^are /, "is ").replace(/^hold /, "holds ");
   for (const [form, verbs] of sorted) {
     const why = s.coarseByForm && s.coarseByForm[form] && verbs.every((x) => DRY.test(x)) ? ` because the soils are ${s.coarseByForm[form]}` : "";

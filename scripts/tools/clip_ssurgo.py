@@ -78,6 +78,17 @@ restr = table("corestrictions", ["cokey", "reskind", "resdept_r"])
 restr = restr[restr.cokey.isin(cokeys) & restr.reskind.fillna("").str.contains("bedrock", case=False) & restr.resdept_r.notna()]
 bedrock = restr.groupby("cokey").resdept_r.min().to_dict()
 
+# What each component formed from (parent material), like "Lacustrine deposits"
+# (lake sediment), "Alluvium" (stream deposits) or "Eolian deposits" (windblown).
+# 08c_soil.js uses it to word vague landforms like "terraces" for the place.
+pmg = table("copmgrp", ["cokey", "copmgrpkey", "rvindicator"])
+pmg = pmg[pmg.cokey.isin(cokeys)]
+pmk = table("copm", ["copmgrpkey", "pmorder", "pmkind"]).merge(pmg, on="copmgrpkey")
+if (pmk.rvindicator == "Yes").any():
+    pmk = pmk[pmk.rvindicator == "Yes"]
+pmk = pmk.sort_values("pmorder").drop_duplicates("cokey")
+parent = dict(zip(pmk.cokey, pmk.pmkind))
+
 # Main landform for each component, like "alluvial fan"
 geo = table("cogeomordesc", ["cokey", "geomftname", "geomfname", "rvindicator"])
 geo = geo[geo.cokey.isin(cokeys) & (geo.geomftname == "Landform")]
@@ -115,6 +126,7 @@ for (name, gnis, fips), group in town_mu.groupby(["NAME", "GNIS", "FIPS"]):
                 "major": c.majcompflag == "Yes", "pct": val(c.comppct_r),
                 "slope": [val(c.slope_l), val(c.slope_r), val(c.slope_h)],
                 "drainage": c.drainagecl, "landform": landform.get(c.cokey) or None,
+                "parentMaterial": parent.get(c.cokey) or None,
                 "horizon": val(c.hzname), "depthCm": [val(c.hzdept_r), val(c.hzdepb_r)],
                 "texture": val(c.texdesc),
                 "ph": [val(c.ph1to1h2o_l), val(c.ph1to1h2o_r), val(c.ph1to1h2o_h)],

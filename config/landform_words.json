@@ -15,7 +15,6 @@
     "washes": "in washes",
     "channels": "in washes",
     "drainageways": "in washes",
-
     "lake terraces": "on ancient lake bottoms",
     "beach terraces": "on ancient lakeshore benches",
     "beach ridges": "on ancient lakeshore benches",
@@ -25,17 +24,15 @@
     "playas": "on dry lake beds",
     "flood-plain playas": "on dry lake beds",
     "deltas": "on old river deltas",
-
-    "stream terraces": "on flat land above a stream or lake",
-    "strath terraces": "on flat land above a stream or lake",
-    "terraces": "on flat land above a stream or lake",
-    "paleoterraces": "on flat land above a stream or lake",
+    "stream terraces": "on flat land beside streams",
+    "strath terraces": "on flat land beside streams",
+    "terraces": "on flat land beside streams or lakes",
+    "paleoterraces": "on flat land beside streams or lakes",
     "outwash terraces": "on valley floors",
     "flood plains": "on floodplains",
     "flood-plain steps": "on floodplains",
     "levees": "on floodplains",
     "oxbows": "on floodplains",
-
     "alluvial flats": "on bottomland",
     "basin floors": "on valley floors",
     "valley flats": "on bottomland",
@@ -49,7 +46,6 @@
     "depressions": "in low spots",
     "swales": "in low spots",
     "kettles": "in low spots",
-
     "benches": "on benches",
     "structural benches": "on rock benches",
     "mesas": "on mesas",
@@ -73,5 +69,49 @@
     "sand sheets": "on sandy flats",
     "dunes": "on sand dunes",
     "interdunes": "between sand dunes"
+  },
+  "byParentMaterial": {
+    "note": "Where a survey landform is vague, what the soil formed from (parent material) gives a more specific plain phrase. Used by 08c_soil.js; landforms and materials not listed here fall back to the phrase in landforms above.",
+    "terraces": {
+      "Lacustrine deposits": "on ancient lakeshore benches",
+      "Alluvium": "on flat land beside streams",
+      "Eolian deposits": "on windblown sand benches"
+    },
+    "benches": {
+      "Eolian deposits": "on windblown sand benches"
+    },
+    "valley floors": {
+      "Alluvium": "on bottomland",
+      "Slope alluvium": "on land at the foot of slopes"
+    },
+    "basin floors": {
+      "Alluvium": "on bottomland",
+      "Slope alluvium": "on land at the foot of slopes"
+    },
+    "valleys": {
+      "Alluvium": "on bottomland",
+      "Slope alluvium": "on land at the foot of slopes"
+    }
+  },
+  "byTown": {
+    "note": "Local knowledge for towns where the survey data can't say what made a vague landform, checked against USDA official soil series descriptions or the town's geography. Keyed by town name, then survey landform.",
+    "Plymouth": {
+      "terraces": "on flat land beside streams"
+    },
+    "Hanksville": {
+      "benches": "on windblown sand benches"
+    },
+    "Salem": {
+      "benches": "on ancient lakeshore benches"
+    },
+    "West Mountain": {
+      "benches": "on ancient lakeshore benches"
+    },
+    "Lehi": {
+      "benches": "on ancient lakeshore benches"
+    },
+    "Tremonton": {
+      "valleys": "on ancient lake bottoms"
+    }
   }
 }
