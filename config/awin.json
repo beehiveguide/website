@@ -443,6 +443,32 @@
       "alt": "Silver Brush free shipping over $99",
       "verified": true,
       "sizeKb": 120
+    },
+    {
+      "brand": "Nature's Generator",
+      "name": "Best battery-powered inverters 970x90",
+      "width": 970,
+      "height": 90,
+      "shape": "banner",
+      "href": "https://www.awin1.com/cread.php?s=4047425&v=98409&q=530518&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4047425&v=98409&q=530518&r=3149357",
+      "alt": "Nature's Generator portable solar power",
+      "verified": true,
+      "sizeKb": 97
+    },
+    {
+      "brand": "Nature's Generator",
+      "name": "Logo 300x200",
+      "width": 300,
+      "height": 200,
+      "shape": "box",
+      "logo": true,
+      "href": "https://www.awin1.com/cread.php?s=4047418&v=98409&q=530518&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4047418&v=98409&q=530518&r=3149357",
+      "alt": "Nature's Generator logo",
+      "verified": true,
+      "sizeKb": 37,
+      "pad": true
     }
   ],
   "text": [
@@ -532,6 +558,11 @@
       "title": "Silver Brush",
       "blurb": "Artist brushes made in the USA.",
       "cta": "Shop brushes"
+    },
+    "Nature's Generator": {
+      "title": "Nature's Generator",
+      "blurb": "Portable solar generators and power stations.",
+      "cta": "Shop solar power"
     }
   },
   "brandTopics": {
@@ -580,6 +611,9 @@
       "general"
     ],
     "Silver Brush": [
+      "general"
+    ],
+    "Nature's Generator": [
       "general"
     ]
   },
