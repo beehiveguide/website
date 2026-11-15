@@ -212,7 +212,21 @@ const source = (items, key, prefix = "") => {
 // Info. Only towns with a UGRC boundary have soil data.
 const listText = (items) =>
   items.length < 2 ? items.join("") : `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
-const { phLevel, saltLevel, omLevel } = require("./lib/soil_words");
+const { phLevel, awcWord, saltLevel, omLevel } = require("./lib/soil_words");
+// How far a drainage class is from "well drained" (0 = fine for gardens)
+const DRAIN_DIST = {
+  "excessively drained": 2, "somewhat excessively drained": 1, "well drained": 0,
+  "moderately well drained": 0, "somewhat poorly drained": 1, "poorly drained": 2, "very poorly drained": 3,
+};
+const DRAIN_VERB = {
+  "somewhat poorly drained": "drain somewhat poorly", "poorly drained": "drain poorly", "very poorly drained": "drain very poorly",
+  "somewhat excessively drained": "drain quickly", "excessively drained": "drain very quickly",
+};
+// Soil text opens with "On slopes most suitable for cultivation" only when
+// less than this share of the town's soil counts as arable (08c_soil.js)
+const SCOPE_MAX_SHARE = 0.85;
+// Soil paragraph: what the soil is, topsoil chemistry, problem areas, then
+// the farmland rating. One idea per sentence; hazards name where they are.
 function soilHtml(t) {
   const s = t.soil;
   if (!s) return "";
@@ -222,130 +236,90 @@ function soilHtml(t) {
   const tx = s.textures;
   const n = tx.length;
   const shareLast = n >= 2 && tx[n - 1].landform && tx[n - 1].landform === tx[n - 2].landform;
+  // "stratified fine sandy loam to silty clay" -> "layered soils"
+  const texWord = (x) => (/^stratified /.test(x) ? "layered soils" : x);
   const items = tx.map((x, i) =>
     x.landform && !(shareLast && i >= n - 2)
-      ? `${esc(x.texture)} ${esc(x.landform)} (${x.pct}%)`
-      : `${esc(x.texture)} (${x.pct}%)`);
+      ? `${esc(texWord(x.texture))} ${esc(x.landform)} (${x.pct}%)`
+      : `${esc(texWord(x.texture))} (${x.pct}%)`);
   const textures = shareLast
-    ? `${n > 2 ? `${items.slice(0, -2).join(", ")}, ` : ""}${items[n - 2]} and ${items[n - 1]}, both ${esc(tx[n - 1].landform)}`
+    ? `${n > 2 ? `${items.slice(0, -2).join(", ")}, ` : ""}${items[n - 2]} and ${items[n - 1]}, ${n > 2 ? "the last two" : "both"} ${esc(tx[n - 1].landform)}`
     : listText(items);
-  // "running from slightly alkaline on floodplains (pH 7.4) to strongly
-  // alkaline (pH 9.0)", or "staying neutral (pH 6.8 to 7.2)" when both ends
-  // share a level
-  const low = phLevel(s.phMin), high = phLevel(s.phMax);
-  const lo = s.phMin.toFixed(1), hi = s.phMax.toFixed(1);
-  const at = (where) => (where ? ` ${esc(where)}` : "");
-  // Name pH by the side the average falls on: "alkalinity averages pH 8.2",
-  // "acidity averages pH 6.4", or "pH averages 7.0" when neutral (6.6-7.3)
-  const avg = s.phAvg.toFixed(1);
-  const phSubject = s.phAvg > 7.3 ? `alkalinity averages pH ${avg}` : s.phAvg < 6.6 ? `acidity averages pH ${avg}` : `pH averages ${avg}`;
-  // The end with more land comes first: "running from strongly alkaline
-  // (pH 9.0) down to neutral in washes (pH 6.6)"
-  const lowEnd = `${low}${at(s.phMinWhere)} (pH ${lo})`;
-  const highEnd = `${high}${at(s.phMaxWhere)} (pH ${hi})`;
-  const phText = low === high
-    ? `staying ${low} (pH ${lo} to ${hi})`
-    : s.phHighFirst
-      ? `running from ${highEnd} down to ${lowEnd}`
-      : `running from ${lowEnd} to ${highEnd}`;
-  // Drainage and water outliers get their own sentence:
-  // "However, floodplains are mostly poorly drained, and benches hold less water."
-  // A place phrase as a subject: "on floodplains" -> "floodplains"
+  // The scope clause covers everything after it, so it leads the paragraph
+  const scope = s.arableShare < SCOPE_MAX_SHARE ? "On slopes most suitable for cultivation, soils" : "Soils";
+  const opening = s.textures[0].pct >= 95
+    ? `${scope} are nearly all ${esc(texWord(s.textures[0].texture))}.`
+    : `${scope} are mostly ${textures}.`;
+
+  // Topsoil: pH class with the average, salt only when slightly saline or
+  // worse, organic matter as a class
+  const SALINE = (level) => !/^(nonsaline|very slightly saline)$/.test(level);
+  const salty = s.ecAvg !== null && SALINE(saltLevel(s.ecAvg)) ? ` and ${saltLevel(s.ecAvg)}` : "";
+  const om = s.omAvg !== null ? `, with ${omLevel(s.omAvg)} organic matter` : "";
+  const topsoil = `Topsoil is ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`;
+
+  // Problem areas. Most soils first (poor or too-fast drainage, little water),
+  // then one sentence per landform, then unplaced hazards. Flooding leads.
   const placeNoun = (form) =>
-    form.startsWith("between ") ? `areas ${form}` : form.replace(/^(on|in) /, "");
-  const dv = s.drainageVariation;
-  const v = s.awcVariation;
-  const water = v && `hold ${v.awc < s.awcAvg ? "less" : "more"} water`;
-  const clauses = [];
-  if (dv && v && dv.landform === v.landform)
-    clauses.push(`${placeNoun(dv.landform)} are mostly ${dv.drainage} and ${water}`);
-  else {
-    if (dv) clauses.push(`${placeNoun(dv.landform)} are mostly ${dv.drainage}`);
-    if (v) clauses.push(`${placeNoun(v.landform)} ${water}`);
-  }
-  // Outliers run against the sentence before, so they start with "However,"
-  const outliers = clauses.length ? ` However, ${esc(clauses.join(", and "))}.` : "";
-  // The opening says where the town's gardenable (0-8% slope) land lies, from
-  // 08c_soil.js: "Land with slopes most suitable for cultivation lies primarily in
-  // the foothills, with soils including...". Spread-out towns: "Slopes
-  // suitable for cultivation have soils including...".
-  // "In the foothills" and "on mountainsides" keep "slopes" from repeating.
-  const OPENING_WORDS = { "on foothill slopes": "in the foothills", "on mountain slopes": "on mountainsides" };
-  const forms = s.arableForms.map((f) => OPENING_WORDS[f] || f);
-  // "on valley floors and benches above streams", but "in the foothills and on
-  // floodplains" when the two take different words
-  // Each place gets the town's: "on the city's old lakeshore benches and valley
-  // floors", "on the town's floodplains and in its foothills" ("the area's"
-  // for places that aren't a city or town)
-  const owner = t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}'s` : "the area's";
-  const own = (form, who) => form.replace(/^(on|in) (the )?/, `$1 ${who} `);
-  const joinPlaces = ([a, b]) => {
-    if (!b) return own(a, owner);
-    const pa = a.split(" ")[0], pb = b.split(" ")[0];
-    return pa === pb && (pa === "on" || pa === "in")
-      ? `${own(a, owner)} and ${b.slice(pb.length + 1).replace(/^the /, "")}`
-      : `${own(a, owner)} and ${own(b, "its")}`;
+    form.startsWith("between ") ? `areas ${form}` : form === "on benches" ? "bench areas" : form.replace(/^(on|in) /, "");
+  const cap = (text) => text[0].toUpperCase() + text.slice(1);
+  const dist = (cls) => DRAIN_DIST[cls] ?? 0;
+  const problems = [];
+  const mainProblems = [];
+  if (dist(s.drainage) >= 2) mainProblems.push(`are ${esc(s.drainage)}`);
+  if (s.awcAvg < 0.1) mainProblems.push("hold little water");
+  if (mainProblems.length) problems.push(`Most soils ${mainProblems.join(" and ")}.`);
+
+  const areas = new Map();
+  const add = (landform, order, text) => {
+    if (!areas.has(landform)) areas.set(landform, []);
+    areas.get(landform).push([order, text]);
   };
-  const opening = forms.length
-    ? `Land with slopes most suitable for cultivation lies primarily ${esc(joinPlaces(forms))}, with soils including`
-    : `Land with slopes most suitable for cultivation has soils including`;
-  // Salt, organic matter, farmland rating and limits.
-  // Percentages are shares of the slopes most suitable for cultivation (farmland
-  // shares are of the whole town).
-  const mostly = (p) => (p.landform ? `, mostly ${esc(p.landform)}` : "");
-  const chem = [], farm = [], bedrockText = [], wet = [];
-  if (s.ecAvg !== null && s.omAvg !== null) {
-    const sv = s.saltVariation;
-    chem.push(
-      `Topsoil is typically ${saltLevel(s.ecAvg)}${sv ? `, but ${sv.level} ${esc(sv.landform)}` : ""}, with ${omLevel(s.omAvg)} organic matter (${s.omAvg.toFixed(1)}%).`,
-    );
+  const { flooding: fl, waterTable: wt, drainageVariation: dv, saltVariation: sv, awcVariation: av } = s;
+  // "Floodplains flood" says nothing, so flooding is left out for floodplains
+  if (fl && fl.landform && fl.landform !== "on floodplains") add(fl.landform, 0, "flood");
+  if (dv && dist(dv.drainage) >= 1 && dist(dv.drainage) > dist(s.drainage) && DRAIN_VERB[dv.drainage])
+    add(dv.landform, 1, DRAIN_VERB[dv.drainage]);
+  if (wt && wt.landform) add(wt.landform, 2, "have a high water table (within 2 feet)");
+  if (sv && SALINE(sv.level)) add(sv.landform, 3, `are ${sv.level}`);
+  if (av && av.awc < 0.1 && av.awc < s.awcAvg) add(av.landform, 4, "hold little water");
+  // At most three problems per sentence; the rest follow as "They also ..."
+  const sayList = (list) => (list.length < 2 ? list.join("") : `${list.slice(0, -1).join(", ")} and ${list[list.length - 1]}`);
+  const sorted = [...areas.entries()]
+    .map(([form, list]) => [form, list.sort((a, b) => a[0] - b[0]).map((x) => x[1])])
+    .sort((a, b) => Number(/flood/.test(b[1][0])) - Number(/flood/.test(a[1][0])));
+  for (const [form, verbs] of sorted) {
+    problems.push(`${cap(esc(placeNoun(form)))} ${sayList(verbs.slice(0, 3))}.`);
+    if (verbs.length > 3) {
+      const rest = verbs.slice(3);
+      problems.push(`They ${rest[0].startsWith("are ") ? "are also" : "also"} ${sayList(rest).replace(/^are /, "")}.`);
+    }
   }
-  // Farmland shares are of the whole town (08c_soil.js): "About 36% of the
-  // town's land rates as ..."
+  // Hazards with no clear place
+  const loose = [];
+  if (fl && !fl.landform) loose.push("flood");
+  if (wt && !wt.landform) loose.push("have a high water table (within 2 feet)");
+  if (loose.length) problems.push(`Parts of ${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}` : "the area"} ${loose.join(" or ")}.`);
+  const BEDROCK_SKIP = new Set(["on rock benches", "on plateaus", "on mesas", "on ridges"]);
+  if (s.bedrock && !BEDROCK_SKIP.has(s.bedrock.landform)) problems.push(`Bedrock lies within 20 inches ${s.bedrock.landform ? esc(s.bedrock.landform) : "in some areas"}.`);
+
+  // Farmland shares are of the whole town (08c_soil.js)
   const f = s.farmland;
   const ownerLand = `${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}'s` : "the area's"} land`;
   const about = (pct) => (pct >= 95 ? "Nearly all" : `About ${pct}%`);
+  const farm = [];
   if (f.prime > 0) {
     const prime = f.primeIfIrrigated >= f.prime * 0.8 ? "prime farmland if irrigated" : "prime farmland";
     farm.push(
-      `${about(f.prime)} of ${ownerLand} rates as ${prime}${f.statewide > 0 ? `, and ${f.statewide}% as farmland of statewide importance` : ""}.`,
+      `${about(f.prime)} of ${ownerLand} is ${prime}${f.statewide > 0 ? ` and ${f.statewide}% is farmland of statewide importance` : ""}.`,
     );
   } else if (f.statewide > 0) {
-    farm.push(`${about(f.statewide)} of ${ownerLand} rates as farmland of statewide importance.`);
-  }
-  // Shares of this land: "about 18%", or "nearly all of this land" at 95% or more
-  const share = (pct) => (pct >= 95 ? "nearly all of this land" : `about ${pct}%`);
-  const cap = (text) => text[0].toUpperCase() + text.slice(1);
-  if (s.bedrock) bedrockText.push(`Bedrock lies within 20 inches on ${share(s.bedrock.pct)}${mostly(s.bedrock)}.`);
-  // A high water table and flooding in the same place share a sentence
-  const wt = s.waterTable, fl = s.flooding;
-  if (wt && fl && wt.landform && wt.landform === fl.landform && Math.abs(wt.pct - fl.pct) <= 5)
-    wet.push(`${cap(share(Math.max(wt.pct, fl.pct)))}${mostly(wt)}, has a high water table (within 2 feet) and floods occasionally or more often.`);
-  else {
-    if (wt) wet.push(`A high water table (within 2 feet) affects ${share(wt.pct)}${mostly(wt)}.`);
-    if (fl) wet.push(`${cap(share(fl.pct))} floods occasionally or more often${mostly(fl)}.`);
+    farm.push(`${about(f.statewide)} of ${ownerLand} is farmland of statewide importance.`);
   }
 
   // Built-over towns end with how much was left out (urban land has no soil data)
   const urban = s.urbanPct >= 15 ? ` About ${s.urbanPct}% of ${esc(t.name)} is built over and not included.` : "";
-  // Soil covers arable terrain only, 0-8% slope (08c_soil.js).
-  // Left out for now; add back after the textures and "water retention":
-  //   " (0&ndash;8% slope)"   `(${s.awcAvg.toFixed(2)} in./in.)`
-  // One paragraph: where and what the soil is, bedrock, pH, salt and organic
-  // matter, then water (drainage, retention, water table, flooding), with the
-  // farmland rating last as a summary
-  const sentences = [
-    // One texture at 95% or more: "with soils that are nearly all loam"
-    s.textures[0].pct >= 95
-      ? `${opening.replace(/soils including$/, "soils that are")} nearly all ${esc(s.textures[0].texture)}.`
-      : `${opening} ${textures}.`,
-    ...bedrockText,
-    `Estimated topsoil ${phSubject}, ${phText}.`,
-    ...chem,
-    `These soils are mostly ${esc(s.drainage)} with ${s.awcDesc}.${outliers}`,
-    ...wet,
-    ...farm,
-  ];
+  const sentences = [opening, topsoil, ...problems, ...farm];
   return `<h3 class="soil-heading h4 mt-4 mb-2">Soil Properties</h3>
     <p class="mb-0">${sentences.join(" ")}${urban}</p>`;
 }

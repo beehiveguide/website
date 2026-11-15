@@ -4,7 +4,10 @@
 //
 // Only places with a Census boundary (a polygon, not just a point) get
 // soil data. Values cover arable terrain only: soil components whose
-// representative slope is 0-8%. Each component counts by its acres in town
+// representative slope is 0-8%, that aren't on landforms nobody gardens
+// (mesas, plateaus, ridges, sand dunes, beaches, washes, mountain slopes, hillsides, hills), and whose map
+// unit isn't named for slopes steeper than 15% ("1 to 35 percent slopes").
+// Each component counts by its acres in town
 // (map unit acres x component percent). Topsoil is the top horizon with a pH
 // and water capacity. Farmland ratings are the exception: shares of all the
 // town's mapped acres.
@@ -17,10 +20,17 @@ const { nameKey } = require("./lib/communities");
 const { phLevel, awcWord, awcDesc, saltLevel } = require("./lib/soil_words");
 
 const MAX_SLOPE = 8; // percent; "arable terrain"
+// Landforms left out of arable terrain, however flat their tops are
+const NON_GARDEN_LANDFORMS = new Set(["mesas", "plateaus", "ridges", "cuestas", "dunes", "interdunes", "beaches", "washes", "channels", "drainageways", "fanhead trenches"]);
+// Steep landforms (plain words from config/landform_words.json). Some of their
+// components are gentle (1-10%) inside map units named for much steeper slopes
+const STEEP_LANDFORMS = new Set(["on mountain slopes", "on hillsides", "on hills"]);
+const MAX_UNIT_SLOPE = 15; // percent; map units named "X to Y percent slopes" with Y over this are left out
+const unitMaxSlope = (name) => { const m = /(\d+)\s+to\s+(\d+)\s+percent/i.exec(name || ""); return m ? Number(m[2]) : null; };
 const MIN_ARABLE_ACRES = 10; // towns with less arable land get no soil text
 const MIN_SHARE = 0.01; // components under 1% of arable acres (edge slivers) are left out
-const TEXTURE_SHARE = 0.1; // textures listed: 10% of arable acres or more, up to 3
-const MAX_TEXTURES = 3;
+const TEXTURE_SHARE = 0.1; // textures listed: 10% of arable acres or more
+const TEXTURE_COVERAGE = 0.85; // ...largest first, stopping once the list covers this share
 const LANDFORM_SHARE = 0.05; // a landform must cover 5% of arable acres to be named
 const TEXTURE_LANDFORM_SHARE = 0.5; // a texture names its main landform when half its acres are on it
 const MAIN_FORM_SHARE = 0.6; // place notes only when one landform holds 60% of arable acres
@@ -72,10 +82,16 @@ for (const town of towns) {
   const id = findId(town);
   if (!id) { skipped.push(`${town.name} (no community)`); continue; }
 
-  let arable = town.components
-    .filter((c) => c.slope[1] !== null && c.slope[1] <= MAX_SLOPE)
-    .filter((c) => c.ph[1] !== null && c.awc !== null && c.texture)
-    .map((c) => ({ ...c, landform: plainLandform(c.landform), acres: (c.muAcres * c.pct) / 100 }));
+  // Components with soil data, whatever the slope: the base for how much of
+  // the town's mapped soil counts as arable
+  const withData = town.components.filter((c) => c.slope[1] !== null && c.ph[1] !== null && c.awc !== null && c.texture);
+  const dataAcres = withData.reduce((s, c) => s + (c.muAcres * c.pct) / 100, 0);
+  let arable = withData
+    .filter((c) => c.slope[1] <= MAX_SLOPE)
+    .filter((c) => !NON_GARDEN_LANDFORMS.has((c.landform || "").toLowerCase()))
+    .map((c) => ({ ...c, landform: plainLandform(c.landform), acres: (c.muAcres * c.pct) / 100 }))
+    .filter((c) => !STEEP_LANDFORMS.has(c.landform))
+    .filter((c) => { const m = unitMaxSlope(c.muname); return m === null || m <= MAX_UNIT_SLOPE; });
   // Same component can show up once per map unit piece; already summed by map unit
   const total0 = arable.reduce((s, c) => s + c.acres, 0);
   arable = arable.filter((c) => c.acres >= total0 * MIN_SHARE);
@@ -105,9 +121,10 @@ for (const town of towns) {
       ? [allForms[0].k, allForms[1].k]
       : [];
   const tex = shares((c) => c.texture.toLowerCase());
+  let covered = 0;
   const textures = tex
     .filter((t, i) => i === 0 || t.share >= TEXTURE_SHARE)
-    .slice(0, MAX_TEXTURES)
+    .filter((t) => { const keep = covered < TEXTURE_COVERAGE; covered += t.share; return keep; })
     .map((t) => {
       // Main landform for this texture, like "stream terraces"
       const acres = t.list.reduce((s, c) => s + c.acres, 0);
@@ -215,6 +232,9 @@ for (const town of towns) {
   output[id] = {
     town: town.name,
     arableAcres: Math.round(total),
+    // Share of the town's soil with data that counts as arable (the page says
+    // "on slopes most suitable for cultivation" only when this is low)
+    arableShare: dataAcres ? round(total / dataAcres, 2) : 1,
     // Share of the town mapped as urban land (built over, no soil data)
     urbanPct: Math.round(
       (100 * town.components
@@ -240,7 +260,7 @@ for (const town of towns) {
     awcAvg: round(awcAvg, 2),
     awcDesc: awcDesc(awcAvg),
     awcVariation,
-    ecAvg: ecAvg === null ? null : round(ecAvg, 1),
+    ecAvg, // not rounded: 3.96 must stay "very slightly saline", not round up to 4.0
     saltVariation,
     omAvg,
     farmland,
