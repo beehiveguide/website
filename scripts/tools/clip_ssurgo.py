@@ -4,8 +4,9 @@ Writes sources/usda/ssurgo/town_soils.json: for every Census place boundary
 (cities, towns and census-designated places),
 the soil components that fall inside it, with their acres in town and the
 surface-horizon values 08c_soil.js needs (texture, pH, water capacity,
-organic matter, salinity) and map unit limits (farmland class, bedrock and
-water table depth, flooding). Everything outside the town
+organic matter, salinity), the map unit's farmland class, and each
+component's own bedrock depth, water table depth and flooding (not the map
+unit's worst-case values). Everything outside the town
 boundaries is left out, so the big geodatabase isn't needed after this runs.
 
 Run by hand (not part of npm run build), from the website folder:
@@ -50,13 +51,32 @@ def table(name, cols):
 
 mukeys = set(town_mu.MUKEY)
 mapunit = table("mapunit", ["mukey", "muname", "farmlndcl"])
-# Map unit limits: shallowest bedrock and water table (cm), main flooding frequency
-muagg = table("muaggatt", ["mukey", "brockdepmin", "wtdepannmin", "flodfreqdcd"])
-mapunit = mapunit.merge(muagg, on="mukey", how="left")
 comp = table("component", ["mukey", "cokey", "compname", "comppct_r", "compkind", "majcompflag",
                            "slope_l", "slope_r", "slope_h", "drainagecl", "geomdesc"])
 comp = comp[comp.mukey.isin(mukeys)]
 cokeys = set(comp.cokey)
+
+# Hazards are read for each component, not for the whole map unit. The map
+# unit tables (muaggatt) give one worst-case value for every component in the
+# unit, which put floods and a high water table on well-drained fans and
+# terraces that sit in the same unit as a wet floodplain soil.
+# Flooding: the highest frequency class in any month
+FLOOD_ORDER = {"None": 0, "Very rare": 1, "Rare": 2, "Occasional": 3, "Frequent": 4, "Very frequent": 5}
+comonth = table("comonth", ["cokey", "comonthkey", "flodfreqcl"])
+comonth = comonth[comonth.cokey.isin(cokeys)]
+fl = comonth[comonth.flodfreqcl.notna()].copy()
+fl["rank"] = fl.flodfreqcl.map(FLOOD_ORDER).fillna(0)
+fl = fl.sort_values("rank", ascending=False).drop_duplicates("cokey")
+flooding = dict(zip(fl.cokey, fl.flodfreqcl))
+# Water table: the shallowest depth (cm) to a "Wet" soil moisture state in any month
+moist = table("cosoilmoist", ["comonthkey", "soimoiststat", "soimoistdept_r"])
+moist = moist[(moist.soimoiststat == "Wet") & moist.soimoistdept_r.notna()]
+moist = moist.merge(comonth[["comonthkey", "cokey"]], on="comonthkey")
+watertable = moist.groupby("cokey").soimoistdept_r.min().to_dict()
+# Bedrock: the shallowest bedrock restriction (cm)
+restr = table("corestrictions", ["cokey", "reskind", "resdept_r"])
+restr = restr[restr.cokey.isin(cokeys) & restr.reskind.fillna("").str.contains("bedrock", case=False) & restr.resdept_r.notna()]
+bedrock = restr.groupby("cokey").resdept_r.min().to_dict()
 
 # Main landform for each component, like "alluvial fan"
 geo = table("cogeomordesc", ["cokey", "geomftname", "geomfname", "rvindicator"])
@@ -77,7 +97,7 @@ tex = table("chtexturegrp", ["chkey", "texdesc", "rvindicator"])
 tex = tex[tex.chkey.isin(set(hz.chkey))].sort_values("rvindicator", ascending=False).drop_duplicates("chkey")
 hz = hz.merge(tex[["chkey", "texdesc"]], on="chkey", how="left")
 
-comp = comp.merge(hz, on="cokey", how="left").merge(mapunit, on="mukey", how="left")
+comp = comp.merge(hz, on="cokey", how="left").merge(mapunit, on="mukey", how="left")  # mapunit: name and farmland class
 
 def val(v):
     if v is None or (isinstance(v, float) and pd.isna(v)):
@@ -102,9 +122,9 @@ for (name, gnis, fips), group in town_mu.groupby(["NAME", "GNIS", "FIPS"]):
                 "om": val(c.om_r),  # organic matter, % by weight
                 "ec": val(c.ec_r),  # salinity, dS/m
                 "farmland": c.farmlndcl,
-                "bedrockCm": val(c.brockdepmin),
-                "waterTableCm": val(c.wtdepannmin),
-                "flooding": c.flodfreqdcd,
+                "bedrockCm": val(bedrock.get(c.cokey)),
+                "waterTableCm": val(watertable.get(c.cokey)),
+                "flooding": flooding.get(c.cokey),
             })
     out.append({"name": name, "gnis": gnis, "fips": fips,
                 "townAcres": round(float(town_area[(name, gnis, fips)]), 1),

@@ -271,7 +271,10 @@ function soilHtml(t) {
   const mainProblems = [];
   if (dist(s.drainage) >= 2) mainProblems.push(`are ${esc(s.drainage)}`);
   if (s.awcAvg < 0.1) mainProblems.push("hold little water");
-  if (mainProblems.length) problems.push(`Most soils ${mainProblems.join(" and ")}.`);
+  // Fast drainage and little water are explained by coarse soil ("because they are sandy")
+  const DRY = /^(are (somewhat )?excessively drained|hold little water|drain (very )?quickly)$/;
+  if (mainProblems.length)
+    problems.push(`Most soils ${mainProblems.join(" and ")}${s.coarseAll && mainProblems.every((x) => DRY.test(x)) ? ` because they are ${s.coarseAll}` : ""}.`);
 
   const areas = new Map();
   const add = (landform, order, text) => {
@@ -284,8 +287,10 @@ function soilHtml(t) {
   // have a high water table" when most of the town is valley floor), so it
   // reads "Parts of the town ..." instead
   const mainForms = s.arableForms || [];
+  // "occasionally flood", "frequently flood" or "very frequently flood"
+  const floodVerb = fl && fl.level ? `${fl.level === "occasional" ? "occasionally" : fl.level === "frequent" ? "frequently" : "very frequently"} flood` : "flood";
   const placedAt = (x) => x && x.landform && !mainForms.includes(x.landform);
-  if (placedAt(fl) && fl.landform !== "on floodplains") add(fl.landform, 0, "flood");
+  if (placedAt(fl) && fl.landform !== "on floodplains") add(fl.landform, 0, floodVerb);
   if (dv && dist(dv.drainage) >= 1 && dist(dv.drainage) > dist(s.drainage) && DRAIN_VERB[dv.drainage])
     add(dv.landform, 1, DRAIN_VERB[dv.drainage]);
   if (placedAt(wt)) add(wt.landform, 2, "have a high water table (within 2 feet)");
@@ -297,7 +302,8 @@ function soilHtml(t) {
     .map(([form, list]) => [form, list.sort((a, b) => a[0] - b[0]).map((x) => x[1])])
     .sort((a, b) => Number(/flood/.test(b[1][0])) - Number(/flood/.test(a[1][0])));
   for (const [form, verbs] of sorted) {
-    problems.push(`${cap(esc(placeNoun(form)))} ${sayList(verbs.slice(0, 3))}.`);
+    const why = s.coarseByForm && s.coarseByForm[form] && verbs.every((x) => DRY.test(x)) ? ` because the soils are ${s.coarseByForm[form]}` : "";
+    problems.push(`${cap(esc(placeNoun(form)))} ${sayList(verbs.slice(0, 3))}${why}.`);
     if (verbs.length > 3) {
       const rest = verbs.slice(3);
       problems.push(`They ${rest[0].startsWith("are ") ? "are also" : "also"} ${sayList(rest).replace(/^are /, "")}.`);
@@ -305,7 +311,7 @@ function soilHtml(t) {
   }
   // Hazards with no clear place
   const loose = [];
-  if (fl && !fl.landform || (fl && fl.landform && mainForms.includes(fl.landform) && fl.landform !== "on floodplains")) loose.push("flood");
+  if (fl && !fl.landform || (fl && fl.landform && mainForms.includes(fl.landform) && fl.landform !== "on floodplains")) loose.push(floodVerb);
   if (wt && !placedAt(wt)) loose.push("have a high water table (within 2 feet)");
   if (loose.length) problems.push(`Parts of ${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}` : "the area"} ${loose.join(" or ")}.`);
   const BEDROCK_SKIP = new Set(["on rock benches", "on plateaus", "on mesas", "on ridges"]);
@@ -325,7 +331,7 @@ function soilHtml(t) {
     farm.push(
       `Farmland rated prime${irrigated ? " with irrigation" : ""} covers ${pctOf(f.prime)} of ${place}${f.statewide > 0 ? `, and ${f.statewide}% is rated of statewide importance` : ""}.`,
     );
-  else if (f.statewide > 0) farm.push(`Farmland rated of statewide importance covers ${pctOf(f.statewide)} of ${place}.`);
+  else if (f.statewide > 0) farm.push(`${f.statewide >= 95 ? "Nearly all" : `${f.statewide}%`} of ${place} is rated farmland of statewide importance.`);
 
   const sentences = [opening, topsoil, ...problems, ...farm];
   return `<h3 class="soil-heading h4 mt-4 mb-2">Soil Properties</h3>

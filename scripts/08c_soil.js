@@ -31,6 +31,8 @@ const MIN_ARABLE_ACRES = 10; // towns with less arable land get no soil text
 const MIN_SHARE = 0.01; // components under 1% of arable acres (edge slivers) are left out
 const TEXTURE_SHARE = 0.1; // textures listed: 10% of arable acres or more
 const TEXTURE_COVERAGE = 0.85; // ...largest first, stopping once the list covers this share
+const HAZARD_FORM_SHARE = 0.5; // flooding, water table or bedrock names a landform only when most (half) of that landform has it
+const COARSE_SHARE = 0.4; // sandy, gravelly or stony is named as the reason for fast drainage when 40% of acres are
 const LANDFORM_SHARE = 0.05; // a landform must cover 5% of arable acres to be named
 const TEXTURE_LANDFORM_SHARE = 0.5; // a texture names its main landform when half its acres are on it
 const MAIN_FORM_SHARE = 0.6; // place notes only when one landform holds 60% of arable acres
@@ -210,7 +212,12 @@ for (const town of towns) {
     const forms = {};
     for (const c of list) if (c.landform) forms[c.landform] = (forms[c.landform] || 0) + c.acres;
     const [form, formAcres] = Object.entries(forms).sort((a, b) => b[1] - a[1])[0] || [];
-    return { pct: Math.round((100 * acres) / total), landform: form && formAcres / acres >= 0.5 ? form : null };
+    // The landform is named only when most of the hazard is on it AND the
+    // hazard is on most of that landform ("Foothill slopes flood" would be
+    // wrong when only part of them do)
+    const formTotal = form ? arable.filter((c) => c.landform === form).reduce((t, c) => t + c.acres, 0) : 0;
+    const named = form && formAcres / acres >= 0.5 && formAcres / formTotal >= HAZARD_FORM_SHARE;
+    return { pct: Math.round((100 * acres) / total), landform: named ? form : null };
   };
   // Farmland ratings are shares of the whole town (all mapped acres, whatever
   // the slope), not of the arable land the other numbers use
@@ -226,8 +233,30 @@ for (const town of towns) {
   };
   const keep = (p, min) => (p.pct >= min * 100 ? p : null);
   const bedrock = keep(part((c) => c.bedrockCm !== null && c.bedrockCm < BEDROCK_CM), LIMIT_SHARE);
-  const waterTable = keep(part((c) => c.waterTableCm !== null && c.waterTableCm < WATER_TABLE_CM && /poorly/i.test(c.drainage || "")), LIMIT_SHARE);
-  const flooding = keep(part((c) => /^(occasional|frequent|very frequent)$/i.test(c.flooding || "")), FLOOD_SHARE);
+  const waterTable = keep(part((c) => c.waterTableCm !== null && c.waterTableCm < WATER_TABLE_CM), LIMIT_SHARE);
+  const floodTest = (c) => /^(occasional|frequent|very frequent)$/i.test(c.flooding || "");
+  const flooding = keep(part(floodTest), FLOOD_SHARE);
+  // How often: the class covering the most flooded acres
+  if (flooding) {
+    const g = {};
+    for (const c of arable.filter(floodTest)) g[c.flooding.toLowerCase()] = (g[c.flooding.toLowerCase()] || 0) + c.acres;
+    flooding.level = Object.entries(g).sort((x, y) => y[1] - x[1])[0][0];
+  }
+
+  // Why soil drains fast or holds little water: sandy, gravelly or stony soil
+  // (each when 40% or more of the acres are that way)
+  const coarseWords = (list) => {
+    const sum = (re, not) => list.filter((c) => re.test(c.texture) && !(not && not.test(c.texture))).reduce((t, c) => t + c.acres, 0);
+    const all = list.reduce((t, c) => t + c.acres, 0);
+    if (!all) return null;
+    const words = [];
+    if (sum(/sand/i, /sandy clay/i) / all >= COARSE_SHARE) words.push("sandy");
+    if (sum(/gravelly|channery/i) / all >= COARSE_SHARE) words.push("gravelly");
+    if (sum(/stony|cobbly|bouldery/i) / all >= COARSE_SHARE) words.push("stony");
+    return words.length ? words.join(" and ") : null;
+  };
+  const coarseByForm = {};
+  for (const l of allForms) { const w = coarseWords(l.list); if (w) coarseByForm[l.k] = w; }
 
   output[id] = {
     town: town.name,
@@ -242,6 +271,8 @@ for (const town of towns) {
         .reduce((s, c) => s + (c.muAcres * (c.pct || 0)) / 100, 0)) / town.mappedAcres),
     mainLandform: mainForm, // "on foothill slopes", or null with no clear main landform
     arableForms: homeForms,
+    coarseAll: coarseWords(arable), // "sandy and gravelly", or null
+    coarseByForm, // the same for each landform
     textures,
     phAvg: round(phAvg, 1),
     phMin,
@@ -266,7 +297,7 @@ for (const town of towns) {
     farmland,
     bedrock, // { pct, landform } with bedrock within 20 in., or null
     waterTable, // { pct, landform } with a water table within 2 ft., or null
-    flooding, // { pct, landform } flooding occasionally or more often, or null
+    flooding, // { pct, landform, level } flooding occasionally or more often, or null
   };
 }
 

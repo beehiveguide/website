@@ -121,9 +121,14 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly",
+        "on floodplains": "sandy and stony"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -172,7 +177,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 5,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -721,6 +727,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -895,6 +903,8 @@
         "on valley floors",
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -936,12 +946,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 10,
+        "pct": 11,
         "landform": "on floodplains"
       },
       "flooding": {
         "pct": 14,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440004",
@@ -1104,10 +1115,14 @@
       "arableAcres": 1739,
       "arableShare": 0.97,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -1240,9 +1255,15 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on floodplains"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on floodplains": "sandy and gravelly",
+        "on foothill slopes": "sandy",
+        "on benches": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -1281,12 +1302,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 14,
+        "pct": 12,
         "landform": null
       },
       "flooding": {
         "pct": 56,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1352950",
@@ -2006,6 +2028,12 @@
       "arableForms": [
         "on terraces"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on terraces": "sandy",
+        "on floodplains": "sandy",
+        "on rock benches": "sandy"
+      },
       "textures": [
         {
           "texture": "loamy fine sand",
@@ -2058,8 +2086,9 @@
         "landform": "on floodplains"
       },
       "flooding": {
-        "pct": 28,
-        "landform": "on floodplains"
+        "pct": 25,
+        "landform": "on floodplains",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -2165,6 +2194,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -2297,6 +2330,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -2444,6 +2481,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on old lava flows": "gravelly"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -2699,6 +2741,8 @@
         "on valley floors",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -2881,11 +2925,12 @@
       "arableAcres": 2170,
       "arableShare": 0.52,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on floodplains"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -2900,7 +2945,7 @@
         {
           "texture": "loam",
           "pct": 12,
-          "landform": null
+          "landform": "on floodplains"
         }
       ],
       "phAvg": 7.1,
@@ -2908,9 +2953,12 @@
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": null,
+      "phMaxWhere": "on floodplains",
       "drainage": "well drained",
-      "drainageVariation": null,
+      "drainageVariation": {
+        "drainage": "poorly drained",
+        "landform": "on floodplains"
+      },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
       "awcVariation": null,
@@ -2925,8 +2973,9 @@
       "bedrock": null,
       "waterTable": null,
       "flooding": {
-        "pct": 6,
-        "landform": "on floodplains"
+        "pct": 12,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -3035,6 +3084,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -3165,9 +3216,14 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on valley floors"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -3210,7 +3266,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 5,
-        "landform": "on terraces"
+        "landform": "on terraces",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1354324",
@@ -3309,6 +3366,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -3338,7 +3397,7 @@
       "bedrock": null,
       "waterTable": {
         "pct": 10,
-        "landform": "on floodplains"
+        "landform": null
       },
       "flooding": null
     },
@@ -3621,6 +3680,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -3775,10 +3836,12 @@
       "arableAcres": 14477,
       "arableShare": 0.88,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -3823,11 +3886,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 17,
-        "landform": "on old lakeshore benches"
+        "landform": null
       },
       "flooding": {
-        "pct": 20,
-        "landform": "on old lakeshore benches"
+        "pct": 17,
+        "landform": null,
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -3968,6 +4032,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -4087,6 +4155,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly fine sandy loam",
@@ -4274,6 +4346,12 @@
         "on sandy flats",
         "on rock benches"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on sandy flats": "sandy",
+        "on rock benches": "sandy",
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "loamy fine sand",
@@ -4304,7 +4382,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 8,
-        "landform": "on valley floors"
+        "landform": "on valley floors",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -4465,6 +4544,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -4766,6 +4847,10 @@
       "arableForms": [
         "on rock benches"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on rock benches": "sandy"
+      },
       "textures": [
         {
           "texture": "loamy fine sand",
@@ -4897,6 +4982,13 @@
       "arableForms": [
         "on rock benches"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on rock benches": "sandy",
+        "on floodplains": "sandy",
+        "on stream terraces": "sandy",
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -4936,7 +5028,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 7,
-        "landform": "on floodplains"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355283",
@@ -5069,9 +5162,11 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -5470,6 +5565,10 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -5693,6 +5792,13 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on benches": "sandy",
+        "on rock benches": "gravelly",
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -5840,6 +5946,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -5857,7 +5967,7 @@
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on old lakeshore benches",
+      "phMaxWhere": "on ancient lake bottoms",
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.12,
@@ -6643,6 +6753,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -6688,8 +6800,9 @@
         "landform": "on floodplains"
       },
       "flooding": {
-        "pct": 100,
-        "landform": "on floodplains"
+        "pct": 72,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440010",
@@ -6892,16 +7005,19 @@
       "arableAcres": 11101,
       "arableShare": 0.79,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lake bottoms",
-        "on foothill slopes"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
           "pct": 32,
-          "landform": "on old lakeshore benches"
+          "landform": null
         },
         {
           "texture": "silty clay loam",
@@ -6911,7 +7027,7 @@
         {
           "texture": "gravelly loam",
           "pct": 18,
-          "landform": null
+          "landform": "on foothill slopes"
         },
         {
           "texture": "stratified fine sandy loam to silty clay",
@@ -6927,8 +7043,8 @@
       "phMaxWhere": null,
       "drainage": "poorly drained",
       "drainageVariation": {
-        "drainage": "somewhat poorly drained",
-        "landform": "on floodplains"
+        "drainage": "somewhat excessively drained",
+        "landform": "on foothill slopes"
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
@@ -6944,11 +7060,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 48,
-        "landform": "on old lake bottoms"
+        "landform": "on ancient lake bottoms"
       },
       "flooding": {
         "pct": 23,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1355849",
@@ -7525,6 +7642,8 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -7556,10 +7675,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 91,
-        "landform": "on stream terraces"
+        "pct": 36,
+        "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 36,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -7748,6 +7871,11 @@
         "on foothill slopes",
         "on rock benches"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on rock benches": "sandy and gravelly",
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -8004,10 +8132,12 @@
       "arableAcres": 1828,
       "arableShare": 0.53,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -8030,7 +8160,7 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on old lake bottoms",
+      "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
       "drainageVariation": null,
       "awcAvg": 0.17,
@@ -8236,6 +8366,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on floodplains": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -8367,6 +8502,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on benches": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -8399,8 +8538,9 @@
       "bedrock": null,
       "waterTable": null,
       "flooding": {
-        "pct": 13,
-        "landform": "on floodplains"
+        "pct": 8,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -8520,6 +8660,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -8785,6 +8930,12 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly",
+        "on valley floors": "sandy",
+        "on stream terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "gravelly fine sandy loam",
@@ -8831,7 +8982,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 38,
-        "landform": "on valley floors"
+        "landform": "on valley floors",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -8933,6 +9085,10 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -9596,6 +9752,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "stony",
+      "coarseByForm": {
+        "on foothill slopes": "stony"
+      },
       "textures": [
         {
           "texture": "cobbly loam",
@@ -9801,10 +9961,16 @@
       "arableAcres": 732,
       "arableShare": 0.46,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on ancient lake bottoms": "gravelly",
+        "on foothill slopes": "gravelly",
+        "on floodplains": "sandy and stony"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -10210,6 +10376,8 @@
         "on floodplains",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -10347,9 +10515,13 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms",
+        "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -10372,18 +10544,14 @@
       "phMax": 9,
       "phHighFirst": true,
       "phMinWhere": null,
-      "phMaxWhere": "on old lake bottoms",
+      "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
       "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 8.417826369529473,
-      "saltVariation": {
-        "ec": 39,
-        "level": "strongly saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 4.6,
       "farmland": {
         "prime": 35,
@@ -10392,12 +10560,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 24,
-        "landform": "on old lake bottoms"
+        "pct": 15,
+        "landform": null
       },
       "flooding": {
-        "pct": 20,
-        "landform": "on old lakeshore benches"
+        "pct": 22,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1357482",
@@ -10717,6 +10886,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -10831,6 +11004,10 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -10953,6 +11130,10 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on stream terraces": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -10991,7 +11172,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 10,
-        "landform": "in canyons"
+        "landform": "in canyon bottoms",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -11157,6 +11339,11 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on stream terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -11322,10 +11509,12 @@
       "arableAcres": 362,
       "arableShare": 0.64,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -11452,6 +11641,10 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -11494,7 +11687,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 6,
-        "landform": "on valley floors"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358228",
@@ -11609,6 +11803,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -11690,10 +11886,14 @@
       "arableAcres": 3590,
       "arableShare": 0.92,
       "urbanPct": 11,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -12172,6 +12372,10 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -12211,11 +12415,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 15,
-        "landform": "on valley floors"
+        "landform": null
       },
       "flooding": {
         "pct": 9,
-        "landform": "on valley floors"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358335",
@@ -12344,10 +12549,14 @@
       "arableAcres": 3631,
       "arableShare": 0.96,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -12657,6 +12866,8 @@
         "on foothill slopes",
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -12688,10 +12899,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 47,
-        "landform": "on stream terraces"
+        "pct": 19,
+        "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 19,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1358501",
     "schools": {
@@ -13087,10 +13302,12 @@
       "arableAcres": 1911,
       "arableShare": 0.97,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -13106,18 +13323,14 @@
       "phMaxWhere": null,
       "drainage": "moderately well drained",
       "drainageVariation": {
-        "drainage": "very poorly drained",
-        "landform": "on old lake bottoms"
+        "drainage": "somewhat poorly drained",
+        "landform": "on floodplains"
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 5.116203784860035,
-      "saltVariation": {
-        "ec": 17.7,
-        "level": "strongly saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 3.5,
       "farmland": {
         "prime": 5,
@@ -13127,11 +13340,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 11,
-        "landform": "on old lake bottoms"
+        "landform": null
       },
       "flooding": {
         "pct": 9,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1359260",
@@ -13242,10 +13456,16 @@
       "arableAcres": 2769,
       "arableShare": 0.9,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on terraces": "sandy",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -13268,7 +13488,7 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": "on terraces",
-      "phMaxWhere": "on old lake bottoms",
+      "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
       "drainageVariation": {
         "drainage": "moderately well drained",
@@ -13355,10 +13575,17 @@
       "arableAcres": 2886,
       "arableShare": 0.76,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy and gravelly",
+        "on terraces": "sandy",
+        "on foothill slopes": "sandy",
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "gravelly coarse sandy loam",
@@ -13753,10 +13980,14 @@
       "arableAcres": 2717,
       "arableShare": 0.32,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -13960,6 +14191,8 @@
         "on foothill slopes",
         "on old lava flows"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -14060,6 +14293,10 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on stream terraces": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -14159,8 +14396,12 @@
       "mainLandform": null,
       "arableForms": [
         "on old river deltas",
-        "on old lakeshore benches"
+        "on ancient lakeshore benches"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on ancient lakeshore benches": "sandy"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -14473,6 +14714,8 @@
       "arableForms": [
         "on old river deltas"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -14578,9 +14821,15 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on foothill slopes": "gravelly",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -14717,16 +14966,20 @@
       "arableAcres": 6873,
       "arableShare": 0.44,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on foothill slopes"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
           "pct": 28,
-          "landform": "on old lake bottoms"
+          "landform": null
         },
         {
           "texture": "gravelly coarse sandy loam",
@@ -14736,7 +14989,7 @@
         {
           "texture": "loamy coarse sand",
           "pct": 12,
-          "landform": null
+          "landform": "on foothill slopes"
         },
         {
           "texture": "silt loam",
@@ -14748,12 +15001,12 @@
       "phMin": 6.1,
       "phMax": 9.6,
       "phHighFirst": false,
-      "phMinWhere": null,
+      "phMinWhere": "on foothill slopes",
       "phMaxWhere": "on floodplains",
       "drainage": "somewhat poorly drained",
       "drainageVariation": {
-        "drainage": "poorly drained",
-        "landform": "on floodplains"
+        "drainage": "excessively drained",
+        "landform": "on foothill slopes"
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
@@ -15910,6 +16163,11 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on valley floors": "sandy and gravelly",
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly fine sandy loam",
@@ -15956,8 +16214,9 @@
       "bedrock": null,
       "waterTable": null,
       "flooding": {
-        "pct": 12,
-        "landform": "on floodplains"
+        "pct": 7,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361381",
@@ -16131,10 +16390,15 @@
       "arableAcres": 1461,
       "arableShare": 0.53,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -16392,9 +16656,11 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -16409,7 +16675,7 @@
         {
           "texture": "very fine sandy loam",
           "pct": 11,
-          "landform": "on old lake bottoms"
+          "landform": null
         },
         {
           "texture": "loam",
@@ -17401,6 +17667,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -17436,10 +17706,7 @@
         "statewide": 28
       },
       "bedrock": null,
-      "waterTable": {
-        "pct": 12,
-        "landform": "on stream terraces"
-      },
+      "waterTable": null,
       "flooding": null
     },
     "postOfficeUrl": "",
@@ -17500,6 +17767,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on stream terraces": "sandy",
+        "on benches": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -17695,6 +17967,11 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": "stony",
+      "coarseByForm": {
+        "on stream terraces": "stony",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "cobbly loam",
@@ -17731,10 +18008,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 31,
-        "landform": "on stream terraces"
+        "pct": 17,
+        "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 17,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1442045",
     "schools": null,
@@ -17804,6 +18085,8 @@
         "on stream terraces",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -17842,7 +18125,8 @@
       },
       "flooding": {
         "pct": 26,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362041",
@@ -17982,6 +18266,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -17991,7 +18280,7 @@
         {
           "texture": "very fine sandy loam",
           "pct": 19,
-          "landform": "on old lake bottoms"
+          "landform": "on ancient lake bottoms"
         },
         {
           "texture": "silt loam",
@@ -18095,10 +18384,15 @@
       "arableAcres": 502,
       "arableShare": 0.29,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on terraces": "stony",
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -18223,6 +18517,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -18262,8 +18558,8 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 23,
-        "landform": "on valley floors"
+        "pct": 22,
+        "landform": null
       },
       "flooding": null
     },
@@ -18359,6 +18655,11 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on stream terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -18496,11 +18797,12 @@
       "arableAcres": 4374,
       "arableShare": 0.97,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -18627,6 +18929,10 @@
         "on valley floors",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -18784,6 +19090,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -18814,7 +19122,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 100,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -18920,6 +19229,10 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -19127,6 +19440,8 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -19165,7 +19480,8 @@
       },
       "flooding": {
         "pct": 25,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -19242,6 +19558,10 @@
         "on valley floors",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -19434,6 +19754,10 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -19474,7 +19798,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 5,
-        "landform": "on floodplains"
+        "landform": null,
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1362671",
@@ -19701,10 +20026,12 @@
       "arableAcres": 15209,
       "arableShare": 0.71,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -19726,16 +20053,16 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "poorly drained",
-        "landform": "on old lake bottoms"
+        "landform": "on floodplains"
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
       "awcVariation": null,
       "ecAvg": 5.818315109978719,
       "saltVariation": {
-        "ec": 24,
-        "level": "strongly saline",
-        "landform": "on old lake bottoms"
+        "ec": 10,
+        "level": "moderately saline",
+        "landform": "on stream terraces"
       },
       "omAvg": 2.2,
       "farmland": {
@@ -19745,10 +20072,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 41,
-        "landform": "on old lakeshore benches"
+        "pct": 19,
+        "landform": null
       },
-      "flooding": null
+      "flooding": {
+        "pct": 19,
+        "landform": null,
+        "level": "frequent"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -19845,6 +20176,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -20361,6 +20697,10 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -20403,8 +20743,9 @@
         "landform": "in low spots"
       },
       "flooding": {
-        "pct": 16,
-        "landform": "in low spots"
+        "pct": 10,
+        "landform": "in low spots",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -20514,6 +20855,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "very fine sandy loam",
@@ -20564,12 +20909,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 27,
+        "pct": 17,
         "landform": "on valley floors"
       },
       "flooding": {
-        "pct": 27,
-        "landform": "on valley floors"
+        "pct": 17,
+        "landform": "on valley floors",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363051",
@@ -20715,9 +21061,13 @@
       "urbanPct": 3,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -20740,7 +21090,7 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": "on foothill slopes",
-      "phMaxWhere": "on old lake bottoms",
+      "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
       "drainageVariation": null,
       "awcAvg": 0.14,
@@ -20758,7 +21108,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 15,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363179",
@@ -21274,11 +21625,14 @@
       "arableAcres": 3535,
       "arableShare": 0.95,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -21329,7 +21683,8 @@
       },
       "flooding": {
         "pct": 26,
-        "landform": "in low spots"
+        "landform": "in low spots",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -21513,6 +21868,8 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -21632,6 +21989,10 @@
         "on floodplains",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -21849,6 +22210,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -21982,6 +22345,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -22382,6 +22749,11 @@
         "on valley floors",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on valley floors": "sandy",
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -22420,7 +22792,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 11,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1363767",
@@ -22528,6 +22901,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -22678,6 +23053,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -22714,12 +23093,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 10,
+        "pct": 11,
         "landform": "on floodplains"
       },
       "flooding": {
-        "pct": 8,
-        "landform": "on floodplains"
+        "pct": 11,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -22849,6 +23229,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -22890,12 +23274,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 14,
-        "landform": "on floodplains"
+        "pct": 13,
+        "landform": null
       },
       "flooding": {
         "pct": 38,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -22972,9 +23357,13 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -23357,6 +23746,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -23393,7 +23784,8 @@
       },
       "flooding": {
         "pct": 33,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -23452,6 +23844,11 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "gravelly",
+        "on floodplains": "gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -23490,7 +23887,8 @@
       },
       "flooding": {
         "pct": 24,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1364420",
@@ -23633,9 +24031,11 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lake bottoms",
+        "on ancient lake bottoms",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -23655,10 +24055,7 @@
       "phMinWhere": "on foothill slopes",
       "phMaxWhere": null,
       "drainage": "moderately well drained",
-      "drainageVariation": {
-        "drainage": "well drained",
-        "landform": "on old lakeshore benches"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.19,
       "awcDesc": "high water capacity",
       "awcVariation": null,
@@ -23913,6 +24310,8 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -23935,7 +24334,7 @@
       "phMax": 9.6,
       "phHighFirst": true,
       "phMinWhere": null,
-      "phMaxWhere": "on old lake bottoms",
+      "phMaxWhere": "on ancient lake bottoms",
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.14,
@@ -23945,7 +24344,7 @@
       "saltVariation": {
         "ec": 26,
         "level": "strongly saline",
-        "landform": "on old lake bottoms"
+        "landform": "on ancient lake bottoms"
       },
       "omAvg": 1.4,
       "farmland": {
@@ -23956,11 +24355,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 16,
-        "landform": "on old lake bottoms"
+        "landform": null
       },
       "flooding": {
         "pct": 16,
-        "landform": "on old lake bottoms"
+        "landform": null,
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -24065,6 +24465,8 @@
         "on valley floors",
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -24106,12 +24508,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 24,
+        "pct": 27,
         "landform": "on floodplains"
       },
       "flooding": {
-        "pct": 42,
-        "landform": null
+        "pct": 34,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1364944",
@@ -24205,6 +24608,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -24245,7 +24650,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 5,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440028",
@@ -24374,15 +24780,19 @@
       "arableAcres": 454,
       "arableShare": 1,
       "urbanPct": 0,
-      "mainLandform": "on old lake bottoms",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
           "pct": 53,
-          "landform": "on old lakeshore benches"
+          "landform": null
         },
         {
           "texture": "very fine sandy loam",
@@ -24402,11 +24812,7 @@
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 6.072513130529803,
-      "saltVariation": {
-        "ec": 9.3,
-        "level": "moderately saline",
-        "landform": "on old lakeshore benches"
-      },
+      "saltVariation": null,
       "omAvg": 1,
       "farmland": {
         "prime": 51,
@@ -24644,9 +25050,15 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on terraces"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy and gravelly",
+        "on terraces": "sandy",
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "sand",
@@ -24763,9 +25175,13 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy and stony"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -24804,12 +25220,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 17,
-        "landform": "on old lakeshore benches"
+        "pct": 12,
+        "landform": null
       },
       "flooding": {
-        "pct": 8,
-        "landform": "on old lakeshore benches"
+        "pct": 12,
+        "landform": null,
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365411",
@@ -25083,6 +25500,12 @@
         "on floodplains",
         "on plains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on rock benches": "sandy",
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -25124,7 +25547,11 @@
         "landform": "on plains"
       },
       "waterTable": null,
-      "flooding": null
+      "flooding": {
+        "pct": 7,
+        "landform": null,
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365543",
     "schools": {
@@ -25660,6 +26087,11 @@
         "on valley floors",
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -25699,7 +26131,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 7,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1365861",
@@ -25940,6 +26373,11 @@
       "arableForms": [
         "on rock benches"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on rock benches": "sandy",
+        "on benches": "sandy"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -26196,6 +26634,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "sandy",
+        "on benches": "sandy"
+      },
       "textures": [
         {
           "texture": "clay",
@@ -26238,17 +26681,12 @@
         "primeIfIrrigated": 36,
         "statewide": 0
       },
-      "bedrock": {
-        "pct": 10,
-        "landform": "on benches"
-      },
-      "waterTable": {
-        "pct": 14,
-        "landform": "on floodplains"
-      },
+      "bedrock": null,
+      "waterTable": null,
       "flooding": {
-        "pct": 19,
-        "landform": "on floodplains"
+        "pct": 14,
+        "landform": "on floodplains",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366141",
@@ -26433,10 +26871,12 @@
       "arableAcres": 1779,
       "arableShare": 0.98,
       "urbanPct": 3,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -26451,7 +26891,7 @@
         {
           "texture": "fine sandy loam",
           "pct": 16,
-          "landform": "on old lake bottoms"
+          "landform": null
         }
       ],
       "phAvg": 7.9,
@@ -26461,10 +26901,7 @@
       "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
-      "drainageVariation": {
-        "drainage": "well drained",
-        "landform": "on old lake bottoms"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
       "awcVariation": null,
@@ -26479,11 +26916,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 28,
-        "landform": "on old lakeshore benches"
+        "landform": null
       },
       "flooding": {
         "pct": 8,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -26619,6 +27057,8 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -26652,7 +27092,7 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 28,
+        "pct": 30,
         "landform": "on floodplains"
       },
       "flooding": null
@@ -26862,6 +27302,10 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on stream terraces": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -26901,11 +27345,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 10,
-        "landform": "on stream terraces"
+        "landform": null
       },
       "flooding": {
         "pct": 10,
-        "landform": "on stream terraces"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366620",
@@ -27379,6 +27824,10 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "in canyon bottoms": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -27627,6 +28076,8 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -27658,10 +28109,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 59,
+        "pct": 29,
         "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 29,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1366731",
     "schools": null,
@@ -27746,6 +28201,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "clay loam",
@@ -27863,10 +28322,12 @@
       "arableAcres": 6218,
       "arableShare": 0.49,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -27889,21 +28350,14 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on old lake bottoms",
+      "phMaxWhere": null,
       "drainage": "well drained",
-      "drainageVariation": {
-        "drainage": "moderately well drained",
-        "landform": "on old lake bottoms"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 1.6654890568166127,
-      "saltVariation": {
-        "ec": 5.9,
-        "level": "slightly saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 2.2,
       "farmland": {
         "prime": 29,
@@ -28625,6 +29079,8 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -28656,10 +29112,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 35,
+        "pct": 30,
         "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 30,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -28743,10 +29203,16 @@
       "arableAcres": 4047,
       "arableShare": 0.8,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on ancient lake bottoms": "gravelly",
+        "on foothill slopes": "gravelly",
+        "on floodplains": "sandy and gravelly and stony"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -28788,7 +29254,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 7,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -29424,6 +29891,12 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "in low spots": "sandy",
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -29621,6 +30094,8 @@
       "arableForms": [
         "on old river deltas"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -29796,6 +30271,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -29928,10 +30405,15 @@
       "arableAcres": 3952,
       "arableShare": 0.93,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "coarse sandy loam",
@@ -29979,7 +30461,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 9,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440036",
@@ -30294,11 +30777,14 @@
       "arableAcres": 4541,
       "arableShare": 0.73,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -30341,7 +30827,7 @@
       "bedrock": null,
       "waterTable": {
         "pct": 10,
-        "landform": "on old lake bottoms"
+        "landform": null
       },
       "flooding": null
     },
@@ -30445,11 +30931,15 @@
       "arableAcres": 12474,
       "arableShare": 0.82,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loamy fine sand",
@@ -30501,12 +30991,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 46,
-        "landform": "on old lake bottoms"
+        "pct": 41,
+        "landform": null
       },
       "flooding": {
-        "pct": 13,
-        "landform": "on old lakeshore benches"
+        "pct": 14,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367355",
@@ -30684,8 +31175,10 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -30800,6 +31293,8 @@
         "on stream terraces",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -30831,10 +31326,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 65,
-        "landform": "on stream terraces"
+        "pct": 26,
+        "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 26,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -30910,6 +31409,8 @@
         "on valley floors",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -30943,12 +31444,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 16,
-        "landform": "on valley floors"
+        "pct": 19,
+        "landform": null
       },
       "flooding": {
         "pct": 11,
-        "landform": "on floodplains"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367667",
@@ -31126,8 +31628,12 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -31167,11 +31673,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 15,
-        "landform": "on floodplains"
+        "landform": null
       },
       "flooding": {
         "pct": 37,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367694",
@@ -31291,6 +31798,13 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on old lava flows": "sandy",
+        "in low spots": "sandy",
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -31727,10 +32241,12 @@
       "arableAcres": 1907,
       "arableShare": 0.69,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -31933,10 +32449,16 @@
       "arableAcres": 3395,
       "arableShare": 0.92,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on ancient lake bottoms": "gravelly",
+        "on floodplains": "gravelly",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -31946,7 +32468,7 @@
         {
           "texture": "silt loam",
           "pct": 36,
-          "landform": "on old lake bottoms"
+          "landform": null
         },
         {
           "texture": "loam",
@@ -31961,10 +32483,7 @@
       "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "somewhat excessively drained",
-      "drainageVariation": {
-        "drainage": "well drained",
-        "landform": "on old lake bottoms"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
       "awcVariation": null,
@@ -31980,7 +32499,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 5,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1367792",
@@ -32340,6 +32860,8 @@
         "on stream terraces",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -32375,7 +32897,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 31,
-        "landform": "in canyons"
+        "landform": "in canyon bottoms",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -32710,6 +33233,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -32964,6 +33492,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "clay loam",
@@ -33004,12 +33534,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 13,
+        "pct": 14,
         "landform": "on floodplains"
       },
       "flooding": {
-        "pct": 14,
-        "landform": "on floodplains"
+        "pct": 15,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368394",
@@ -33135,6 +33666,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -33243,6 +33778,11 @@
         "on floodplains",
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly",
+        "on stream terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -33291,12 +33831,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 15,
-        "landform": "on floodplains"
+        "pct": 12,
+        "landform": null
       },
       "flooding": {
-        "pct": 11,
-        "landform": "on floodplains"
+        "pct": 12,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368610",
@@ -33449,6 +33990,11 @@
         "on stream terraces",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on stream terraces": "stony",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -33482,12 +34028,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 44,
+        "pct": 41,
         "landform": "on floodplains"
       },
       "flooding": {
-        "pct": 44,
-        "landform": "on floodplains"
+        "pct": 41,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368655",
@@ -33707,6 +34254,12 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on floodplains": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -33750,7 +34303,11 @@
       },
       "bedrock": null,
       "waterTable": null,
-      "flooding": null
+      "flooding": {
+        "pct": 5,
+        "landform": "on floodplains",
+        "level": "frequent"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368662",
     "schools": {
@@ -34008,6 +34565,10 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "clay loam",
@@ -34127,6 +34688,10 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -34238,10 +34803,12 @@
       "arableAcres": 4821,
       "arableShare": 0.79,
       "urbanPct": 5,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -34285,7 +34852,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 11,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1368734",
@@ -34928,10 +35496,14 @@
       "arableAcres": 2218,
       "arableShare": 0.84,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -35402,6 +35974,12 @@
         "on floodplains",
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on floodplains": "sandy",
+        "on foothill slopes": "sandy and gravelly",
+        "on stream terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "gravelly sandy loam",
@@ -35445,7 +36023,11 @@
       },
       "bedrock": null,
       "waterTable": null,
-      "flooding": null
+      "flooding": {
+        "pct": 5,
+        "landform": null,
+        "level": "frequent"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -35531,6 +36113,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -35682,6 +36266,11 @@
         "on foothill slopes",
         "on rock benches"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on rock benches": "sandy"
+      },
       "textures": [
         {
           "texture": "very fine sandy loam",
@@ -35727,7 +36316,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 7,
-        "landform": "on floodplains"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369422",
@@ -35841,6 +36431,10 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "in low spots": "sandy"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -35881,7 +36475,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 9,
-        "landform": "in low spots"
+        "landform": "in low spots",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369434",
@@ -36027,10 +36622,12 @@
       "arableAcres": 780,
       "arableShare": 0.3,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -36139,6 +36736,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay",
@@ -36182,7 +36781,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 8,
-        "landform": null
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -36247,6 +36847,8 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -36280,12 +36882,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 15,
-        "landform": "on floodplains"
+        "pct": 19,
+        "landform": null
       },
       "flooding": {
-        "pct": 13,
-        "landform": "on floodplains"
+        "pct": 17,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1369692",
@@ -36413,6 +37016,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -36603,10 +37208,15 @@
       "arableAcres": 10040,
       "arableShare": 0.73,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -36616,7 +37226,7 @@
         {
           "texture": "fine sandy loam",
           "pct": 38,
-          "landform": "on old lake bottoms"
+          "landform": null
         }
       ],
       "phAvg": 7.4,
@@ -37680,9 +38290,13 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -37730,7 +38344,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 7,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440044",
@@ -37813,6 +38428,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy and stony",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and stony"
+      },
       "textures": [
         {
           "texture": "extremely stony sandy loam",
@@ -38012,10 +38631,14 @@
       "arableAcres": 10599,
       "arableShare": 0.6,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -38068,7 +38691,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 5,
-        "landform": null
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370151",
@@ -39279,6 +39903,8 @@
         "on floodplains",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -39390,10 +40016,15 @@
       "arableAcres": 13516,
       "arableShare": 0.91,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -39547,6 +40178,11 @@
         "on floodplains",
         "on stream terraces"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on floodplains": "gravelly",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -39581,11 +40217,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 12,
-        "landform": "on floodplains"
+        "landform": null
       },
       "flooding": {
         "pct": 39,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -39718,9 +40355,11 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -39771,12 +40410,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 21,
-        "landform": "on old lakeshore benches"
+        "pct": 14,
+        "landform": null
       },
       "flooding": {
         "pct": 21,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -40246,6 +40886,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -40440,10 +41084,14 @@
       "arableAcres": 8814,
       "arableShare": 0.84,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -40481,11 +41129,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": null,
       "ecAvg": 1.8144205738639347,
-      "saltVariation": {
-        "ec": 5,
-        "level": "slightly saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 3.8,
       "farmland": {
         "prime": 19,
@@ -40495,11 +41139,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 16,
-        "landform": "on old lakeshore benches"
+        "landform": null
       },
       "flooding": {
-        "pct": 16,
-        "landform": null
+        "pct": 19,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1370786",
@@ -41412,6 +42057,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "very fine sandy loam",
@@ -41584,11 +42233,14 @@
       "arableAcres": 1425,
       "arableShare": 0.81,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -41713,6 +42365,10 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on rock benches": "sandy"
+      },
       "textures": [
         {
           "texture": "clay loam",
@@ -41760,7 +42416,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 21,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -41845,10 +42502,12 @@
       "arableAcres": 8843,
       "arableShare": 0.87,
       "urbanPct": 0,
-      "mainLandform": "on old lake bottoms",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -41870,12 +42529,12 @@
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": true,
-      "phMinWhere": "on old lakeshore benches",
+      "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
       "drainageVariation": {
         "drainage": "well drained",
-        "landform": "on old lakeshore benches"
+        "landform": "on foothill slopes"
       },
       "awcAvg": 0.1,
       "awcDesc": "moderate water retention",
@@ -41893,10 +42552,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 65,
-        "landform": "on old lake bottoms"
+        "pct": 43,
+        "landform": null
       },
-      "flooding": null
+      "flooding": {
+        "pct": 6,
+        "landform": null,
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1371406",
     "schools": {
@@ -42343,6 +43006,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -42511,6 +43178,10 @@
         "on valley floors",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -42766,8 +43437,12 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -42941,10 +43616,14 @@
       "arableAcres": 4270,
       "arableShare": 0.64,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -43298,6 +43977,11 @@
         "on foothill slopes",
         "on stream terraces"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "gravelly",
+        "on stream terraces": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -43334,12 +44018,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 29,
+        "pct": 26,
         "landform": "on floodplains"
       },
       "flooding": {
-        "pct": 29,
-        "landform": "on floodplains"
+        "pct": 26,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -43418,6 +44103,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -43437,7 +44124,7 @@
         {
           "texture": "silt loam",
           "pct": 22,
-          "landform": "on old lakeshore benches"
+          "landform": "on ancient lake bottoms"
         }
       ],
       "phAvg": 7.9,
@@ -43447,19 +44134,12 @@
       "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
-      "drainageVariation": {
-        "drainage": "well drained",
-        "landform": "on old lake bottoms"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 2.7368131659682726,
-      "saltVariation": {
-        "ec": 4,
-        "level": "slightly saline",
-        "landform": "on old lakeshore benches"
-      },
+      "saltVariation": null,
       "omAvg": 4.1,
       "farmland": {
         "prime": 45,
@@ -43646,6 +44326,10 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly sandy loam",
@@ -43689,12 +44373,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 17,
-        "landform": "on floodplains"
+        "pct": 15,
+        "landform": null
       },
       "flooding": {
-        "pct": 12,
-        "landform": "on floodplains"
+        "pct": 15,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1372059",
@@ -43863,6 +44548,8 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "clay loam",
@@ -43990,6 +44677,10 @@
         "on valley floors",
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "very fine sandy loam",
@@ -44156,10 +44847,14 @@
       "arableAcres": 844,
       "arableShare": 0.87,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -44333,6 +45028,10 @@
       "arableForms": [
         "on rock benches"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on rock benches": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -44435,10 +45134,15 @@
       "arableAcres": 2739,
       "arableShare": 0.96,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -44860,6 +45564,8 @@
         "on stream terraces",
         "on terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -44904,7 +45610,8 @@
       },
       "flooding": {
         "pct": 20,
-        "landform": "on stream terraces"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373034",
@@ -45162,6 +45869,11 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on stream terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -45184,7 +45896,7 @@
       "phMax": 9.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on old lake bottoms",
+      "phMaxWhere": "on ancient lake bottoms",
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.16,
@@ -45373,10 +46085,12 @@
       "arableAcres": 5118,
       "arableShare": 0.78,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -45820,10 +46534,14 @@
       "arableAcres": 1108,
       "arableShare": 0.77,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -45833,7 +46551,7 @@
         {
           "texture": "silt loam",
           "pct": 21,
-          "landform": "on old lake bottoms"
+          "landform": null
         },
         {
           "texture": "loam",
@@ -45867,7 +46585,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 11,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373219",
@@ -46071,6 +46790,11 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on stream terraces": "gravelly",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -46256,6 +46980,14 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on valley floors": "sandy",
+        "on sandy flats": "sandy",
+        "on stream terraces": "sandy",
+        "on rock benches": "sandy",
+        "in canyon bottoms": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -46301,7 +47033,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 51,
-        "landform": "on valley floors"
+        "landform": "on valley floors",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373423",
@@ -46643,6 +47376,11 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on stream terraces": "sandy and gravelly",
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "gravelly sandy loam",
@@ -46822,6 +47560,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "stony",
+      "coarseByForm": {
+        "on foothill slopes": "stony"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -47048,6 +47790,11 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly",
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -47264,6 +48011,11 @@
         "on floodplains",
         "on terraces"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on floodplains": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "loamy fine sand",
@@ -47309,8 +48061,9 @@
         "landform": "on floodplains"
       },
       "flooding": {
-        "pct": 58,
-        "landform": "on floodplains"
+        "pct": 52,
+        "landform": "on floodplains",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440005",
@@ -47448,6 +48201,8 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -47488,7 +48243,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 6,
-        "landform": "on floodplains"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373646",
@@ -47789,6 +48545,8 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -47819,7 +48577,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 25,
-        "landform": "on stream terraces"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373775",
@@ -48109,6 +48868,10 @@
         "on floodplains",
         "on valley floors"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on valley floors": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -48148,8 +48911,9 @@
       "bedrock": null,
       "waterTable": null,
       "flooding": {
-        "pct": 6,
-        "landform": "on valley floors"
+        "pct": 8,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373817",
@@ -48355,6 +49119,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "very fine sandy loam",
@@ -48618,8 +49386,12 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "stony"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -48662,11 +49434,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 13,
-        "landform": "on floodplains"
+        "landform": null
       },
       "flooding": {
         "pct": 45,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -48843,9 +49616,14 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on floodplains"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "very fine sandy loam",
@@ -48891,7 +49669,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 33,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440053",
@@ -49646,6 +50425,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -49689,10 +50470,7 @@
         "pct": 33,
         "landform": "on floodplains"
       },
-      "flooding": {
-        "pct": 6,
-        "landform": "on floodplains"
-      }
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1374328",
     "schools": {
@@ -49852,6 +50630,8 @@
         "on foothill slopes",
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -49889,7 +50669,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 7,
-        "landform": "on floodplains"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -49977,6 +50758,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy and stony",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and stony",
+        "on rock benches": "sandy"
+      },
       "textures": [
         {
           "texture": "very stony very fine sandy loam",
@@ -50085,6 +50871,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "clay loam",
@@ -50129,7 +50917,7 @@
       "bedrock": null,
       "waterTable": {
         "pct": 13,
-        "landform": "on valley floors"
+        "landform": null
       },
       "flooding": null
     },
@@ -50246,10 +51034,14 @@
       "arableAcres": 2473,
       "arableShare": 0.89,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "stony"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -50560,6 +51352,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "sandy loam",
@@ -50687,6 +51483,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -50811,10 +51611,12 @@
       "arableAcres": 497,
       "arableShare": 0.94,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -50944,10 +51746,15 @@
       "arableAcres": 2516,
       "arableShare": 0.97,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "gravelly",
+        "on floodplains": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -50991,7 +51798,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 6,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -51235,8 +52043,10 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -51526,8 +52336,12 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -51576,7 +52390,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 7,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -51826,10 +52641,14 @@
       "arableAcres": 2990,
       "arableShare": 0.58,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -51857,11 +52676,7 @@
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 9.832904213280555,
-      "saltVariation": {
-        "ec": 46.7,
-        "level": "strongly saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 2.9,
       "farmland": {
         "prime": 23,
@@ -51869,13 +52684,11 @@
         "statewide": 1
       },
       "bedrock": null,
-      "waterTable": {
-        "pct": 22,
-        "landform": "on old lake bottoms"
-      },
+      "waterTable": null,
       "flooding": {
-        "pct": 9,
-        "landform": "on old lakeshore benches"
+        "pct": 13,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440054",
@@ -52233,6 +53046,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -52362,6 +53179,8 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -52398,10 +53217,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 29,
-        "landform": "on stream terraces"
+        "pct": 14,
+        "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 14,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1375801",
     "schools": null,
@@ -52543,6 +53366,8 @@
       "arableForms": [
         "on old river deltas"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -52642,9 +53467,15 @@
       "urbanPct": 38,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on floodplains"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on floodplains": "sandy and gravelly",
+        "on foothill slopes": "sandy and gravelly",
+        "on stream terraces": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -54741,6 +55572,12 @@
         "on rock benches",
         "on terraces"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on rock benches": "sandy",
+        "on terraces": "sandy",
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "loamy fine sand",
@@ -54919,6 +55756,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -55094,6 +55933,11 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on sandy flats": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -55130,10 +55974,7 @@
         "primeIfIrrigated": 20,
         "statewide": 10
       },
-      "bedrock": {
-        "pct": 36,
-        "landform": "on sandy flats"
-      },
+      "bedrock": null,
       "waterTable": null,
       "flooding": null
     },
@@ -55269,10 +56110,15 @@
       "arableAcres": 8196,
       "arableShare": 0.8,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy and gravelly",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -56618,6 +57464,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay",
@@ -56661,7 +57509,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 8,
-        "landform": "on floodplains"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -56730,6 +57579,10 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -56942,10 +57795,14 @@
       "arableAcres": 860,
       "arableShare": 0.98,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on ancient lake bottoms": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -57078,6 +57935,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "clay loam",
@@ -57200,6 +58059,10 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -57231,7 +58094,11 @@
       },
       "bedrock": null,
       "waterTable": null,
-      "flooding": null
+      "flooding": {
+        "pct": 6,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1376796",
     "schools": {
@@ -58265,6 +59132,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on stream terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "clay loam",
@@ -58449,10 +59320,14 @@
       "arableAcres": 5116,
       "arableShare": 0.68,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on benches": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -58498,7 +59373,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 6,
-        "landform": "on foothill slopes"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1377023",
@@ -58918,6 +59794,8 @@
         "on floodplains",
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -58949,12 +59827,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 78,
+        "pct": 52,
         "landform": "on floodplains"
       },
       "flooding": {
-        "pct": 42,
-        "landform": "on floodplains"
+        "pct": 52,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -59031,9 +59910,13 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms",
+        "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -59063,19 +59946,12 @@
       "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "poorly drained",
-      "drainageVariation": {
-        "drainage": "somewhat poorly drained",
-        "landform": "on old lake bottoms"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 2.0513763171290647,
-      "saltVariation": {
-        "ec": 8.4,
-        "level": "moderately saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 4.2,
       "farmland": {
         "prime": 29,
@@ -59085,11 +59961,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 45,
-        "landform": "on old lakeshore benches"
+        "landform": "on ancient lake bottoms"
       },
       "flooding": {
-        "pct": 18,
-        "landform": "on old lakeshore benches"
+        "pct": 21,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -59253,10 +60130,12 @@
       "arableAcres": 9608,
       "arableShare": 0.75,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -59295,10 +60174,7 @@
       },
       "bedrock": null,
       "waterTable": null,
-      "flooding": {
-        "pct": 5,
-        "landform": "on old lakeshore benches"
-      }
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -59484,6 +60360,10 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "clay loam",
@@ -59526,8 +60406,9 @@
         "landform": "on valley floors"
       },
       "flooding": {
-        "pct": 100,
-        "landform": "on valley floors"
+        "pct": 44,
+        "landform": "on valley floors",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -59741,11 +60622,14 @@
       "arableAcres": 6729,
       "arableShare": 0.91,
       "urbanPct": 3,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -59792,12 +60676,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 25,
+        "pct": 22,
         "landform": null
       },
       "flooding": {
         "pct": 28,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -59998,9 +60883,14 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly",
+        "on benches": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -60045,7 +60935,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 13,
-        "landform": null
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1377792",
@@ -60566,10 +61457,12 @@
       "arableAcres": 2999,
       "arableShare": 0.69,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -60609,11 +61502,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 16,
-        "landform": "on old lakeshore benches"
+        "landform": null
       },
       "flooding": {
         "pct": 9,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -60773,10 +61667,14 @@
       "arableAcres": 455,
       "arableShare": 0.95,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -60889,8 +61787,12 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -61040,6 +61942,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -61071,10 +61975,7 @@
       },
       "bedrock": null,
       "waterTable": null,
-      "flooding": {
-        "pct": 6,
-        "landform": "on floodplains"
-      }
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378398",
     "schools": {
@@ -61599,10 +62500,14 @@
       "arableAcres": 1677,
       "arableShare": 0.71,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -61892,6 +62797,12 @@
       "urbanPct": 9,
       "mainLandform": null,
       "arableForms": [],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "sandy and gravelly",
+        "on foothill slopes": "gravelly",
+        "on benches": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -61940,7 +62851,8 @@
       },
       "flooding": {
         "pct": 43,
-        "landform": null
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378504",
@@ -63418,6 +64330,8 @@
         "on valley floors",
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -63459,12 +64373,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 10,
+        "pct": 11,
         "landform": "on floodplains"
       },
       "flooding": {
         "pct": 10,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -63563,6 +64478,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -63594,12 +64511,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 11,
-        "landform": "on floodplains"
+        "pct": 12,
+        "landform": null
       },
       "flooding": {
-        "pct": 11,
-        "landform": "on floodplains"
+        "pct": 12,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1378792",
@@ -63755,6 +64673,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -63904,6 +64824,10 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -64356,10 +65280,12 @@
       "arableAcres": 1514,
       "arableShare": 0.76,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -64587,10 +65513,12 @@
       "arableAcres": 356,
       "arableShare": 0.94,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -64616,8 +65544,8 @@
       "phMaxWhere": null,
       "drainage": "somewhat excessively drained",
       "drainageVariation": {
-        "drainage": "well drained",
-        "landform": "on old lake bottoms"
+        "drainage": "poorly drained",
+        "landform": "on floodplains"
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
@@ -64634,7 +65562,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 6,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -64769,6 +65698,10 @@
         "on floodplains",
         "on stream terraces"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on stream terraces": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -65007,6 +65940,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -65121,16 +66056,17 @@
       "arableAcres": 6236,
       "arableShare": 0.91,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on foothill slopes"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
           "pct": 43,
-          "landform": null
+          "landform": "on foothill slopes"
         },
         {
           "texture": "silty clay loam",
@@ -65145,19 +66081,12 @@
       "phMinWhere": null,
       "phMaxWhere": "on floodplains",
       "drainage": "well drained",
-      "drainageVariation": {
-        "drainage": "somewhat poorly drained",
-        "landform": "on old lake bottoms"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
       "awcVariation": null,
       "ecAvg": 2.00435707091222,
-      "saltVariation": {
-        "ec": 5.4,
-        "level": "slightly saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 2.8,
       "farmland": {
         "prime": 75,
@@ -65891,6 +66820,11 @@
         "on floodplains",
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "in low spots": "sandy"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -65949,7 +66883,8 @@
       },
       "flooding": {
         "pct": 35,
-        "landform": "in low spots"
+        "landform": "in low spots",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440059",
@@ -66049,6 +66984,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -66163,6 +67100,11 @@
         "on valley floors",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on rock benches": "sandy"
+      },
       "textures": [
         {
           "texture": "clay loam",
@@ -66600,10 +67542,17 @@
       "arableAcres": 4051,
       "arableShare": 0.88,
       "urbanPct": 7,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on stream terraces": "sandy and gravelly",
+        "on terraces": "sandy",
+        "on old river deltas": "sandy"
+      },
       "textures": [
         {
           "texture": "loamy fine sand",
@@ -66642,7 +67591,11 @@
       },
       "bedrock": null,
       "waterTable": null,
-      "flooding": null
+      "flooding": {
+        "pct": 5,
+        "landform": null,
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380022",
     "schools": {
@@ -67155,10 +68108,14 @@
       "arableAcres": 8410,
       "arableShare": 0.77,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -67201,7 +68158,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 9,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380103",
@@ -67315,10 +68273,15 @@
       "arableAcres": 5068,
       "arableShare": 0.73,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "stony",
+        "on benches": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -67676,6 +68639,10 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -67925,10 +68892,14 @@
       "arableAcres": 30547,
       "arableShare": 0.73,
       "urbanPct": 19,
-      "mainLandform": "on old lake bottoms",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -67950,7 +68921,7 @@
       "phMin": 6.6,
       "phMax": 9.6,
       "phHighFirst": true,
-      "phMinWhere": "on old lakeshore benches",
+      "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
       "drainageVariation": null,
@@ -67970,12 +68941,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 30,
-        "landform": "on old lake bottoms"
+        "pct": 19,
+        "landform": null
       },
       "flooding": {
-        "pct": 6,
-        "landform": "on old lakeshore benches"
+        "pct": 8,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1383850",
@@ -71949,9 +72921,16 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on foothill slopes": "sandy",
+        "on terraces": "sandy",
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "loamy coarse sand",
@@ -71979,7 +72958,7 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on old lake bottoms",
+      "phMaxWhere": null,
       "drainage": "excessively drained",
       "drainageVariation": null,
       "awcAvg": 0.1,
@@ -73326,6 +74305,12 @@
         "on terraces",
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on terraces": "sandy",
+        "on foothill slopes": "sandy",
+        "in low spots": "sandy"
+      },
       "textures": [
         {
           "texture": "loamy fine sand",
@@ -73373,7 +74358,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 7,
-        "landform": "in low spots"
+        "landform": "in low spots",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380744",
@@ -73565,8 +74551,12 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -73617,7 +74607,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 20,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1380780",
@@ -73866,8 +74857,13 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "stony",
+        "on floodplains": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -74905,11 +75901,12 @@
       "arableAcres": 554,
       "arableShare": 0.98,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lake bottoms",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -75045,6 +76042,8 @@
       "arableForms": [
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -75248,6 +76247,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -75370,6 +76371,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -75466,6 +76469,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -75475,7 +76482,7 @@
         {
           "texture": "silt loam",
           "pct": 45,
-          "landform": null
+          "landform": "on ancient lake bottoms"
         }
       ],
       "phAvg": 7.8,
@@ -75487,7 +76494,7 @@
       "drainage": "somewhat excessively drained",
       "drainageVariation": {
         "drainage": "well drained",
-        "landform": "on old lakeshore benches"
+        "landform": "on ancient lake bottoms"
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
@@ -75784,10 +76791,12 @@
       "arableAcres": 903,
       "arableShare": 1,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -75940,6 +76949,11 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on stream terraces": "gravelly",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -75973,7 +76987,11 @@
       },
       "bedrock": null,
       "waterTable": null,
-      "flooding": null
+      "flooding": {
+        "pct": 5,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -76051,10 +77069,14 @@
       "arableAcres": 9839,
       "arableShare": 0.73,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -76089,19 +77111,12 @@
       "phMinWhere": null,
       "phMaxWhere": "on floodplains",
       "drainage": "well drained",
-      "drainageVariation": {
-        "drainage": "somewhat poorly drained",
-        "landform": "on old lake bottoms"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 1.883269231492391,
-      "saltVariation": {
-        "ec": 4.2,
-        "level": "slightly saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 2.4,
       "farmland": {
         "prime": 52,
@@ -77216,10 +78231,14 @@
       "arableAcres": 1031,
       "arableShare": 0.54,
       "urbanPct": 21,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on stream terraces": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -77538,9 +78557,11 @@
       "urbanPct": 9,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -77585,8 +78606,9 @@
       "bedrock": null,
       "waterTable": null,
       "flooding": {
-        "pct": 6,
-        "landform": "on floodplains"
+        "pct": 8,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440064",
@@ -77845,6 +78867,11 @@
         "on stream terraces",
         "on floodplains"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on stream terraces": "sandy and gravelly",
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -78059,10 +79086,16 @@
       "arableAcres": 2247,
       "arableShare": 0.78,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on foothill slopes": "sandy and gravelly",
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -78114,11 +79147,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 27,
-        "landform": "on old lakeshore benches"
+        "landform": null
       },
       "flooding": {
         "pct": 24,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -78198,9 +79232,13 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on benches": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -78246,7 +79284,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 12,
-        "landform": "on floodplains"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382419",
@@ -78935,6 +79974,12 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly",
+        "on stream terraces": "sandy",
+        "on sandy flats": "sandy"
+      },
       "textures": [
         {
           "texture": "gravelly fine sandy loam",
@@ -78985,7 +80030,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 31,
-        "landform": null
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -79048,6 +80094,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -79211,6 +80259,8 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -79239,10 +80289,7 @@
       },
       "bedrock": null,
       "waterTable": null,
-      "flooding": {
-        "pct": 6,
-        "landform": "on floodplains"
-      }
+      "flooding": null
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -79325,10 +80372,15 @@
       "arableAcres": 799,
       "arableShare": 0.83,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -79376,11 +80428,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 15,
-        "landform": "on old lakeshore benches"
+        "landform": null
       },
       "flooding": {
         "pct": 9,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -79451,6 +80504,12 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on stream terraces": "sandy",
+        "on floodplains": "sandy",
+        "in low spots": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -79500,8 +80559,9 @@
       "bedrock": null,
       "waterTable": null,
       "flooding": {
-        "pct": 15,
-        "landform": "in low spots"
+        "pct": 18,
+        "landform": "in low spots",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382566",
@@ -79680,8 +80740,10 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -79730,7 +80792,8 @@
       },
       "flooding": {
         "pct": 40,
-        "landform": "on foothill slopes"
+        "landform": "on foothill slopes",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1382625",
@@ -80373,6 +81436,13 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "in low spots": "sandy",
+        "on old lava flows": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -80422,7 +81492,8 @@
       },
       "flooding": {
         "pct": 18,
-        "landform": "in low spots"
+        "landform": "in low spots",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1361149",
@@ -81667,10 +82738,14 @@
       "arableAcres": 1519,
       "arableShare": 0.99,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -81710,11 +82785,12 @@
         "statewide": 75
       },
       "bedrock": null,
-      "waterTable": {
-        "pct": 18,
-        "landform": "on old lakeshore benches"
-      },
-      "flooding": null
+      "waterTable": null,
+      "flooding": {
+        "pct": 8,
+        "landform": null,
+        "level": "frequent"
+      }
     },
     "postOfficeUrl": "",
     "schools": {
@@ -81886,6 +82962,10 @@
         "on foothill slopes",
         "in low spots"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "clay loam",
@@ -82065,6 +83145,11 @@
         "on stream terraces",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly",
+        "on ancient lake bottoms": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -82081,7 +83166,7 @@
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
-      "phMinWhere": "on old lakeshore benches",
+      "phMinWhere": "on ancient lake bottoms",
       "phMaxWhere": "on floodplains",
       "drainage": "well drained",
       "drainageVariation": null,
@@ -82261,6 +83346,10 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -82369,6 +83458,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -82400,10 +83491,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 12,
+        "pct": 11,
         "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 11,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -82564,9 +83659,15 @@
       "urbanPct": 8,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on terraces"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on terraces": "sandy",
+        "on stream terraces": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -82779,6 +83880,8 @@
         "on old river deltas",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -82876,10 +83979,14 @@
       "arableAcres": 5971,
       "arableShare": 0.95,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -82915,7 +84022,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 34,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -83395,6 +84503,8 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "clay loam",
@@ -83648,10 +84758,12 @@
       "arableAcres": 5541,
       "arableShare": 0.95,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -84403,6 +85515,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly",
+        "on sandy flats": "sandy"
+      },
       "textures": [
         {
           "texture": "gravelly sandy loam",
@@ -84564,8 +85681,12 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -84723,6 +85844,11 @@
         "on floodplains",
         "on plains"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on rock benches": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -84764,7 +85890,11 @@
         "landform": "on plains"
       },
       "waterTable": null,
-      "flooding": null
+      "flooding": {
+        "pct": 18,
+        "landform": null,
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -84891,10 +86021,12 @@
       "arableAcres": 269,
       "arableShare": 0.05,
       "urbanPct": 0,
-      "mainLandform": "in canyons",
+      "mainLandform": "in canyon bottoms",
       "arableForms": [
-        "in canyons"
+        "in canyon bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -84925,7 +86057,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 100,
-        "landform": "in canyons"
+        "landform": "in canyon bottoms",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -85036,9 +86169,14 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on old lakeshore benches",
+        "on ancient lake bottoms",
         "on foothill slopes"
       ],
+      "coarseAll": "gravelly",
+      "coarseByForm": {
+        "on ancient lake bottoms": "gravelly",
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "gravelly loam",
@@ -85795,6 +86933,12 @@
         "on foothill slopes",
         "on old lava flows"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and stony",
+        "on old lava flows": "gravelly",
+        "in low spots": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -85948,6 +87092,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on stream terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -86081,10 +87230,12 @@
       "arableAcres": 3576,
       "arableShare": 0.79,
       "urbanPct": 0,
-      "mainLandform": "on old lake bottoms",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lake bottoms"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -86101,13 +87252,10 @@
       "phMin": 6.1,
       "phMax": 9,
       "phHighFirst": true,
-      "phMinWhere": "on old lakeshore benches",
+      "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "moderately well drained",
-      "drainageVariation": {
-        "drainage": "well drained",
-        "landform": "on old lakeshore benches"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
       "awcVariation": null,
@@ -86351,10 +87499,15 @@
       "arableAcres": 4527,
       "arableShare": 0.93,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -86540,6 +87693,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on stream terraces": "gravelly",
+        "on floodplains": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "clay",
@@ -86591,7 +87749,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 16,
-        "landform": "on foothill slopes"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1385038",
@@ -86806,6 +87965,12 @@
         "on rock benches",
         "on floodplains"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on rock benches": "sandy",
+        "on floodplains": "sandy",
+        "on terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sand",
@@ -86844,7 +88009,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 8,
-        "landform": "on floodplains"
+        "landform": null,
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -86952,6 +88118,11 @@
         "on floodplains",
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "sandy and gravelly",
+        "on stream terraces": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -87304,6 +88475,8 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -87345,8 +88518,9 @@
       "bedrock": null,
       "waterTable": null,
       "flooding": {
-        "pct": 5,
-        "landform": "on floodplains"
+        "pct": 6,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1385847",
@@ -87895,10 +89069,14 @@
       "arableAcres": 3938,
       "arableShare": 0.81,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -88044,6 +89222,8 @@
       "arableForms": [
         "on old lava flows"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -88163,10 +89343,14 @@
       "arableAcres": 1000,
       "arableShare": 0.97,
       "urbanPct": 33,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -88205,7 +89389,7 @@
       "bedrock": null,
       "waterTable": {
         "pct": 34,
-        "landform": "on old lakeshore benches"
+        "landform": null
       },
       "flooding": null
     },
@@ -88385,6 +89569,12 @@
         "on floodplains",
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "in low spots": "sandy",
+        "on old lava flows": "gravelly"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -88443,7 +89633,8 @@
       },
       "flooding": {
         "pct": 33,
-        "landform": "in low spots"
+        "landform": "in low spots",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "",
@@ -88602,6 +89793,11 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly",
+        "on floodplains": "stony"
+      },
       "textures": [
         {
           "texture": "gravelly fine sandy loam",
@@ -88725,6 +89921,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -88766,7 +89964,8 @@
       },
       "flooding": {
         "pct": 24,
-        "landform": "on stream terraces"
+        "landform": "on stream terraces",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386287",
@@ -88855,6 +90054,8 @@
         "on stream terraces",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -88886,10 +90087,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 66,
-        "landform": "on stream terraces"
+        "pct": 27,
+        "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 27,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -89083,6 +90288,11 @@
         "on foothill slopes",
         "on floodplains"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "in low spots": "sandy"
+      },
       "textures": [
         {
           "texture": "silty clay loam",
@@ -89128,7 +90338,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 11,
-        "landform": "in low spots"
+        "landform": "in low spots",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386526",
@@ -89525,6 +90736,12 @@
       "arableForms": [
         "on stream terraces"
       ],
+      "coarseAll": "sandy and gravelly",
+      "coarseByForm": {
+        "on stream terraces": "sandy and gravelly",
+        "on ancient lake bottoms": "sandy",
+        "on floodplains": "sandy"
+      },
       "textures": [
         {
           "texture": "gravelly sandy loam",
@@ -89534,7 +90751,7 @@
         {
           "texture": "loamy fine sand",
           "pct": 18,
-          "landform": "on old lakeshore benches"
+          "landform": "on ancient lake bottoms"
         }
       ],
       "phAvg": 6.9,
@@ -89542,7 +90759,7 @@
       "phMax": 10,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on old lakeshore benches",
+      "phMaxWhere": "on ancient lake bottoms",
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.08,
@@ -89734,6 +90951,8 @@
         "on foothill slopes",
         "on valley floors"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -89778,8 +90997,9 @@
       "bedrock": null,
       "waterTable": null,
       "flooding": {
-        "pct": 13,
-        "landform": "on floodplains"
+        "pct": 8,
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386866",
@@ -89915,10 +91135,12 @@
       "arableAcres": 2314,
       "arableShare": 0.55,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -90147,10 +91369,14 @@
       "arableAcres": 1543,
       "arableShare": 0.73,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "silt loam",
@@ -90191,11 +91417,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 78,
-        "landform": "on old lakeshore benches"
+        "landform": "on ancient lake bottoms"
       },
       "flooding": {
-        "pct": 64,
-        "landform": "on old lakeshore benches"
+        "pct": 78,
+        "landform": "on ancient lake bottoms",
+        "level": "frequent"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1386908",
@@ -90329,11 +91556,12 @@
       "arableAcres": 1947,
       "arableShare": 0.94,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches",
-        "on floodplains"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -90348,7 +91576,7 @@
         {
           "texture": "loam",
           "pct": 30,
-          "landform": null
+          "landform": "on floodplains"
         }
       ],
       "phAvg": 7.9,
@@ -90361,16 +91589,9 @@
       "drainageVariation": null,
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
-      "awcVariation": {
-        "awc": 0.1,
-        "landform": "on old lake bottoms"
-      },
+      "awcVariation": null,
       "ecAvg": 6.685555155189504,
-      "saltVariation": {
-        "ec": 46.7,
-        "level": "strongly saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 5.5,
       "farmland": {
         "prime": 34,
@@ -90379,12 +91600,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 45,
-        "landform": "on old lakeshore benches"
+        "pct": 39,
+        "landform": "on ancient lake bottoms"
       },
       "flooding": {
-        "pct": 44,
-        "landform": "on old lakeshore benches"
+        "pct": 45,
+        "landform": "on ancient lake bottoms",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -90542,10 +91764,14 @@
       "arableAcres": 5347,
       "arableShare": 0.81,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "loamy fine sand",
@@ -90584,7 +91810,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 20,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -90852,10 +92079,12 @@
       "arableAcres": 14512,
       "arableShare": 0.82,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -90878,21 +92107,14 @@
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on old lake bottoms",
+      "phMaxWhere": null,
       "drainage": "well drained",
-      "drainageVariation": {
-        "drainage": "somewhat poorly drained",
-        "landform": "on old lake bottoms"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
       "ecAvg": 1.4951127431750504,
-      "saltVariation": {
-        "ec": 3.9,
-        "level": "very slightly saline",
-        "landform": "on old lake bottoms"
-      },
+      "saltVariation": null,
       "omAvg": 2.3,
       "farmland": {
         "prime": 65,
@@ -92322,10 +93544,12 @@
       "arableAcres": 5109,
       "arableShare": 0.79,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -92367,11 +93591,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 15,
-        "landform": "on old lakeshore benches"
+        "landform": null
       },
       "flooding": {
         "pct": 5,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -92428,10 +93653,14 @@
       "arableAcres": 4529,
       "arableShare": 0.95,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy"
+      },
       "textures": [
         {
           "texture": "fine sandy loam",
@@ -92456,10 +93685,7 @@
       "phMinWhere": null,
       "phMaxWhere": null,
       "drainage": "somewhat poorly drained",
-      "drainageVariation": {
-        "drainage": "well drained",
-        "landform": "on old lake bottoms"
-      },
+      "drainageVariation": null,
       "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
@@ -92474,8 +93700,9 @@
       "bedrock": null,
       "waterTable": null,
       "flooding": {
-        "pct": 11,
-        "landform": "on old lakeshore benches"
+        "pct": 13,
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -92706,10 +93933,12 @@
       "arableAcres": 15749,
       "arableShare": 0.84,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silty clay loam",
@@ -92719,7 +93948,7 @@
         {
           "texture": "silt loam",
           "pct": 15,
-          "landform": "on old lake bottoms"
+          "landform": null
         },
         {
           "texture": "gravelly loam",
@@ -92736,7 +93965,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on old lake bottoms"
+        "landform": "on floodplains"
       },
       "awcAvg": 0.13,
       "awcDesc": "moderate water retention",
@@ -92756,7 +93985,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 10,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1440076",
@@ -94291,6 +95521,8 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -94324,8 +95556,8 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 17,
-        "landform": "on foothill slopes"
+        "pct": 21,
+        "landform": null
       },
       "flooding": null
     },
@@ -94433,6 +95665,12 @@
       "arableForms": [
         "on foothill slopes"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on terraces": "sandy",
+        "on ancient lake bottoms": "sandy and gravelly"
+      },
       "textures": [
         {
           "texture": "loamy coarse sand",
@@ -94759,6 +95997,11 @@
         "on floodplains",
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "sandy",
+        "on valley floors": "sandy"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -94799,12 +96042,13 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 38,
+        "pct": 36,
         "landform": "on floodplains"
       },
       "flooding": {
         "pct": 55,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1387567",
@@ -94999,8 +96243,10 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -95049,11 +96295,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 33,
-        "landform": "on old lakeshore benches"
+        "landform": "on ancient lake bottoms"
       },
       "flooding": {
         "pct": 16,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1387713",
@@ -95206,6 +96453,10 @@
         "on stream terraces",
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on floodplains": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -95241,7 +96492,8 @@
       "waterTable": null,
       "flooding": {
         "pct": 33,
-        "landform": "on floodplains"
+        "landform": "on floodplains",
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
@@ -95310,6 +96562,10 @@
         "on foothill slopes",
         "on stream terraces"
       ],
+      "coarseAll": null,
+      "coarseByForm": {
+        "on foothill slopes": "gravelly"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -95346,10 +96602,14 @@
       },
       "bedrock": null,
       "waterTable": {
-        "pct": 56,
-        "landform": "on stream terraces"
+        "pct": 23,
+        "landform": "on floodplains"
       },
-      "flooding": null
+      "flooding": {
+        "pct": 23,
+        "landform": "on floodplains",
+        "level": "occasional"
+      }
     },
     "postOfficeUrl": "",
     "schools": null,
@@ -95420,10 +96680,16 @@
       "arableAcres": 138,
       "arableShare": 0.09,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on ancient lake bottoms": "sandy",
+        "on foothill slopes": "sandy and gravelly and stony",
+        "on terraces": "stony"
+      },
       "textures": [
         {
           "texture": "loam",
@@ -95593,6 +96859,8 @@
       "arableForms": [
         "on floodplains"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "loam",
@@ -95734,10 +97002,12 @@
       "arableAcres": 2159,
       "arableShare": 0.93,
       "urbanPct": 0,
-      "mainLandform": "on old lakeshore benches",
+      "mainLandform": "on ancient lake bottoms",
       "arableForms": [
-        "on old lakeshore benches"
+        "on ancient lake bottoms"
       ],
+      "coarseAll": null,
+      "coarseByForm": {},
       "textures": [
         {
           "texture": "silt loam",
@@ -95777,11 +97047,12 @@
       "bedrock": null,
       "waterTable": {
         "pct": 26,
-        "landform": "on old lakeshore benches"
+        "landform": null
       },
       "flooding": {
         "pct": 29,
-        "landform": "on old lakeshore benches"
+        "landform": null,
+        "level": "occasional"
       }
     },
     "postOfficeUrl": "",
