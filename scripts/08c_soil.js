@@ -24,6 +24,7 @@ const MAX_SLOPE = 8; // percent; "arable terrain"
 const NON_GARDEN_LANDFORMS = new Set(["mesas", "plateaus", "ridges", "cuestas", "dunes", "interdunes", "beaches", "washes", "channels", "drainageways", "fanhead trenches"]);
 // Steep landforms (plain words from config/landform_words.json). Some of their
 // components are gentle (1-10%) inside map units named for much steeper slopes
+const FLAT_TOPS = new Set(["mesas", "plateaus"]); // left out of the paragraph unless the town is built on them
 const STEEP_LANDFORMS = new Set(["on mountain slopes", "on hillsides", "on hills"]);
 const MAX_UNIT_SLOPE = 15; // percent; map units named "X to Y percent slopes" with Y over this are left out
 const unitMaxSlope = (name) => { const m = /(\d+)\s+to\s+(\d+)\s+percent/i.exec(name || ""); return m ? Number(m[2]) : null; };
@@ -95,9 +96,18 @@ for (const town of towns) {
   // the town's mapped soil counts as arable
   const withData = town.components.filter((c) => c.slope[1] !== null && c.ph[1] !== null && c.awc !== null && c.texture);
   const dataAcres = withData.reduce((s, c) => s + (c.muAcres * c.pct) / 100, 0);
+  // Mesas and plateaus count when the town is built on them: when they are half
+  // or more of its gentle land, or the town is listed in config byTown
+  // (includeLandforms) after checking where it sits
+  const gentle = withData.filter((c) => c.slope[1] <= MAX_SLOPE);
+  const gentleAcres = gentle.reduce((t, c) => t + (c.muAcres * c.pct) / 100, 0);
+  const flatTopAcres = gentle.filter((c) => FLAT_TOPS.has((c.landform || "").toLowerCase())).reduce((t, c) => t + (c.muAcres * c.pct) / 100, 0);
+  const nonGarden = new Set(NON_GARDEN_LANDFORMS);
+  const includeForms = (BY_TOWN[town.name] && BY_TOWN[town.name].includeLandforms) || (gentleAcres && flatTopAcres / gentleAcres >= 0.5 ? [...FLAT_TOPS] : []);
+  for (const f of includeForms) nonGarden.delete(f);
   let arable = withData
     .filter((c) => c.slope[1] <= MAX_SLOPE)
-    .filter((c) => !NON_GARDEN_LANDFORMS.has((c.landform || "").toLowerCase()))
+    .filter((c) => !nonGarden.has((c.landform || "").toLowerCase()))
     .map((c) => ({ ...c, landform: plainLandform(c.landform, c.parentMaterial, c.flooding, town.name), acres: (c.muAcres * c.pct) / 100 }))
     .filter((c) => !STEEP_LANDFORMS.has(c.landform))
     .filter((c) => { const m = unitMaxSlope(c.muname); return m === null || m <= MAX_UNIT_SLOPE; });
@@ -240,6 +250,8 @@ for (const town of towns) {
   };
   const keep = (p, min) => (p.pct >= min * 100 ? p : null);
   const bedrock = keep(part((c) => c.bedrockCm !== null && c.bedrockCm < BEDROCK_CM), LIMIT_SHARE);
+  const hardpan = keep(part((c) => c.hardpanCm !== null && c.hardpanCm !== undefined && c.hardpanCm < BEDROCK_CM), LIMIT_SHARE);
+  const claypan = keep(part((c) => c.claypanCm !== null && c.claypanCm !== undefined && c.claypanCm < BEDROCK_CM), LIMIT_SHARE);
   const waterTable = keep(part((c) => c.waterTableCm !== null && c.waterTableCm < WATER_TABLE_CM), LIMIT_SHARE);
   const floodTest = (c) => /^(occasional|frequent|very frequent)$/i.test(c.flooding || "");
   const flooding = keep(part(floodTest), FLOOD_SHARE);
@@ -302,6 +314,8 @@ for (const town of towns) {
     saltVariation,
     omAvg,
     farmland,
+    hardpan, // { pct, landform } with a cemented layer (caliche, duripan) within 20 in., or null
+    claypan, // { pct, landform } with a dense sodium clay layer within 20 in., or null
     bedrock, // { pct, landform } with bedrock within 20 in., or null
     waterTable, // { pct, landform } with a water table within 2 ft., or null
     flooding, // { pct, landform, level } flooding occasionally or more often, or null

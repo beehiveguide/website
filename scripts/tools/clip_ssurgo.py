@@ -77,6 +77,18 @@ watertable = moist.groupby("cokey").soimoistdept_r.min().to_dict()
 restr = table("corestrictions", ["cokey", "reskind", "resdept_r"])
 restr = restr[restr.cokey.isin(cokeys) & restr.reskind.fillna("").str.contains("bedrock", case=False) & restr.resdept_r.notna()]
 bedrock = restr.groupby("cokey").resdept_r.min().to_dict()
+# Hardpans (cemented layers: caliche, duripans) and claypans (natric), shallowest depth (cm)
+allr = table("corestrictions", ["cokey", "reskind", "resdept_r"])
+allr = allr[allr.cokey.isin(cokeys) & allr.resdept_r.notna()]
+kind_ = allr.reskind.fillna("")
+hard = allr[kind_.str.contains("petrocalcic|duripan|cemented|fragipan", case=False)]
+clay = allr[kind_.str.contains("natric", case=False)]
+hardpan = hard.groupby("cokey").resdept_r.min().to_dict()
+claypan = clay.groupby("cokey").resdept_r.min().to_dict()
+# Surface rock: percent of the ground covered by stones, cobbles, flagstones or boulders (not gravel)
+sf = table("cosurffrags", ["cokey", "sfragkind", "sfragcov_r"])
+sf = sf[sf.cokey.isin(cokeys) & sf.sfragkind.fillna("").str.contains("stone|boulder|cobble|flagstone", case=False) & ~sf.sfragkind.fillna("").str.contains("fragments", case=False) & sf.sfragcov_r.notna()]
+surfrock = sf.groupby("cokey").sfragcov_r.sum().to_dict()
 
 # What each component formed from (parent material), like "Lacustrine deposits"
 # (lake sediment), "Alluvium" (stream deposits) or "Eolian deposits" (windblown).
@@ -135,6 +147,9 @@ for (name, gnis, fips), group in town_mu.groupby(["NAME", "GNIS", "FIPS"]):
                 "ec": val(c.ec_r),  # salinity, dS/m
                 "farmland": c.farmlndcl,
                 "bedrockCm": val(bedrock.get(c.cokey)),
+                "hardpanCm": val(hardpan.get(c.cokey)),
+                "claypanCm": val(claypan.get(c.cokey)),
+                "surfaceRockPct": val(surfrock.get(c.cokey)),
                 "waterTableCm": val(watertable.get(c.cokey)),
                 "flooding": flooding.get(c.cokey),
             })

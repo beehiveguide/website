@@ -173,6 +173,8 @@
         "primeIfIrrigated": 33,
         "statewide": 9
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -765,6 +767,8 @@
         "primeIfIrrigated": 0,
         "statewide": 36
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -944,6 +948,8 @@
         "primeIfIrrigated": 10,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 11,
@@ -1154,6 +1160,8 @@
         "primeIfIrrigated": 65,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -1300,6 +1308,8 @@
         "primeIfIrrigated": 82,
         "statewide": 9
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 12,
@@ -2080,6 +2090,8 @@
         "primeIfIrrigated": 0,
         "statewide": 28
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 25,
@@ -2234,6 +2246,8 @@
         "primeIfIrrigated": 56,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -2382,6 +2396,8 @@
         "primeIfIrrigated": 8,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 16,
@@ -2517,6 +2533,8 @@
         "primeIfIrrigated": 33,
         "statewide": 11
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -2779,6 +2797,8 @@
         "primeIfIrrigated": 75,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -2970,6 +2990,8 @@
         "primeIfIrrigated": 19,
         "statewide": 29
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -3127,6 +3149,8 @@
         "primeIfIrrigated": 48,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -3262,6 +3286,8 @@
         "primeIfIrrigated": 79,
         "statewide": 4
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -3394,6 +3420,8 @@
         "primeIfIrrigated": 19,
         "statewide": 57
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 10,
@@ -3721,6 +3749,8 @@
         "primeIfIrrigated": 65,
         "statewide": 28
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -3883,6 +3913,8 @@
         "primeIfIrrigated": 19,
         "statewide": 26
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 17,
@@ -4067,6 +4099,8 @@
         "primeIfIrrigated": 10,
         "statewide": 87
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -4190,6 +4224,8 @@
         "primeIfIrrigated": 20,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -4378,6 +4414,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -4537,25 +4575,28 @@
     "firstFallFreeze": "Oct. 21",
     "soil": {
       "town": "Blanding",
-      "arableAcres": 13,
-      "arableShare": 0,
+      "arableAcres": 2641,
+      "arableShare": 0.39,
       "urbanPct": 0,
-      "mainLandform": "on floodplains",
+      "mainLandform": "on plateaus",
       "arableForms": [
-        "on floodplains"
+        "on plateaus"
       ],
-      "coarseAll": null,
-      "coarseByForm": {},
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on plateaus": "sandy",
+        "on mesas": "sandy"
+      },
       "textures": [
         {
-          "texture": "loam",
-          "pct": 100,
+          "texture": "very fine sandy loam",
+          "pct": 87,
           "landform": null
         }
       ],
-      "phAvg": 7,
+      "phAvg": 7.3,
       "phMin": 6.6,
-      "phMax": 7.3,
+      "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
       "phMaxWhere": null,
@@ -4564,14 +4605,16 @@
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
       "awcVariation": null,
-      "ecAvg": 1,
+      "ecAvg": 0.7953245775798852,
       "saltVariation": null,
-      "omAvg": 3.5,
+      "omAvg": 2.4,
       "farmland": {
         "prime": 0,
         "primeIfIrrigated": 0,
         "statewide": 22
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -4897,6 +4940,8 @@
         "primeIfIrrigated": 2,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -5024,6 +5069,8 @@
         "primeIfIrrigated": 13,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -5210,6 +5257,8 @@
         "primeIfIrrigated": 39,
         "statewide": 12
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -5600,6 +5649,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -5835,6 +5886,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -5981,6 +6034,8 @@
         "primeIfIrrigated": 23,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -6794,6 +6849,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 72,
@@ -7057,6 +7114,8 @@
         "primeIfIrrigated": 22,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 48,
@@ -7673,6 +7732,8 @@
         "primeIfIrrigated": 0,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 36,
@@ -7930,6 +7991,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": {
         "pct": 14,
         "landform": "on rock benches"
@@ -8174,6 +8237,8 @@
         "primeIfIrrigated": 9,
         "statewide": 10
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -8415,6 +8480,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -8535,6 +8602,8 @@
         "primeIfIrrigated": 45,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -8710,6 +8779,8 @@
         "primeIfIrrigated": 28,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -8978,6 +9049,8 @@
         "primeIfIrrigated": 20,
         "statewide": 10
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -9125,6 +9198,8 @@
         "primeIfIrrigated": 38,
         "statewide": 17
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -9797,6 +9872,11 @@
         "primeIfIrrigated": 22,
         "statewide": 0
       },
+      "hardpan": {
+        "pct": 38,
+        "landform": null
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -10007,6 +10087,8 @@
         "primeIfIrrigated": 35,
         "statewide": 10
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -10404,6 +10486,8 @@
         "primeIfIrrigated": 74,
         "statewide": 25
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -10558,6 +10642,8 @@
         "primeIfIrrigated": 35,
         "statewide": 8
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 15,
@@ -10926,6 +11012,11 @@
         "primeIfIrrigated": 31,
         "statewide": 0
       },
+      "hardpan": {
+        "pct": 54,
+        "landform": "on old lava flows"
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -11051,6 +11142,8 @@
         "primeIfIrrigated": 75,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -11168,6 +11261,8 @@
         "primeIfIrrigated": 0,
         "statewide": 63
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -11382,6 +11477,8 @@
         "primeIfIrrigated": 28,
         "statewide": 16
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -11546,6 +11643,8 @@
         "primeIfIrrigated": 37,
         "statewide": 26
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -11683,6 +11782,8 @@
         "primeIfIrrigated": 23,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -11834,6 +11935,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -11925,6 +12028,8 @@
         "primeIfIrrigated": 80,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -12412,6 +12517,8 @@
         "primeIfIrrigated": 43,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 15,
@@ -12588,6 +12695,8 @@
         "primeIfIrrigated": 79,
         "statewide": 3
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -12897,6 +13006,8 @@
         "primeIfIrrigated": 9,
         "statewide": 30
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 19,
@@ -13337,6 +13448,8 @@
         "primeIfIrrigated": 5,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 11,
@@ -13508,6 +13621,8 @@
         "primeIfIrrigated": 61,
         "statewide": 6
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -13635,6 +13750,8 @@
         "primeIfIrrigated": 11,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -14024,6 +14141,8 @@
         "primeIfIrrigated": 17,
         "statewide": 19
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -14224,6 +14343,11 @@
         "primeIfIrrigated": 16,
         "statewide": 0
       },
+      "hardpan": {
+        "pct": 49,
+        "landform": "on old lava flows"
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -14331,6 +14455,8 @@
         "primeIfIrrigated": 11,
         "statewide": 72
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -14438,6 +14564,8 @@
         "primeIfIrrigated": 0,
         "statewide": 31
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -14752,6 +14880,8 @@
         "primeIfIrrigated": 0,
         "statewide": 77
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -14871,6 +15001,8 @@
         "primeIfIrrigated": 35,
         "statewide": 20
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -15023,6 +15155,8 @@
         "primeIfIrrigated": 18,
         "statewide": 11
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -16202,6 +16336,11 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": {
+        "pct": 10,
+        "landform": null
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -16420,6 +16559,8 @@
         "primeIfIrrigated": 0,
         "statewide": 55
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -16697,6 +16838,8 @@
         "primeIfIrrigated": 28,
         "statewide": 14
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -17696,6 +17839,8 @@
         "primeIfIrrigated": 5,
         "statewide": 28
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -17789,6 +17934,8 @@
         "primeIfIrrigated": 45,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -17997,6 +18144,8 @@
         "primeIfIrrigated": 0,
         "statewide": 12
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 17,
@@ -18109,6 +18258,8 @@
         "primeIfIrrigated": 55,
         "statewide": 22
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 21,
@@ -18303,6 +18454,8 @@
         "primeIfIrrigated": 77,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -18420,6 +18573,8 @@
         "primeIfIrrigated": 13,
         "statewide": 8
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -18547,6 +18702,8 @@
         "primeIfIrrigated": 2,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 22,
@@ -18690,6 +18847,8 @@
         "primeIfIrrigated": 90,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -18842,6 +19001,8 @@
         "primeIfIrrigated": 56,
         "statewide": 36
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -18955,6 +19116,8 @@
         "primeIfIrrigated": 26,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -19109,6 +19272,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -19260,6 +19425,8 @@
         "primeIfIrrigated": 39,
         "statewide": 22
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -19464,6 +19631,8 @@
         "primeIfIrrigated": 23,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 17,
@@ -19589,6 +19758,8 @@
         "primeIfIrrigated": 22,
         "statewide": 10
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -19785,6 +19956,8 @@
         "primeIfIrrigated": 0,
         "statewide": 76
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -20061,6 +20234,8 @@
         "primeIfIrrigated": 0,
         "statewide": 37
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 19,
@@ -20203,6 +20378,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -20728,6 +20905,8 @@
         "primeIfIrrigated": 38,
         "statewide": 30
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 10,
@@ -20898,6 +21077,8 @@
         "primeIfIrrigated": 0,
         "statewide": 21
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 17,
@@ -21095,6 +21276,8 @@
         "primeIfIrrigated": 35,
         "statewide": 5
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -21667,6 +21850,8 @@
         "primeIfIrrigated": 55,
         "statewide": 8
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 28,
@@ -21899,6 +22084,8 @@
         "primeIfIrrigated": 8,
         "statewide": 84
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -22015,6 +22202,8 @@
         "primeIfIrrigated": 32,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -22229,6 +22418,8 @@
         "primeIfIrrigated": 99,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -22381,6 +22572,11 @@
         "primeIfIrrigated": 9,
         "statewide": 10
       },
+      "hardpan": {
+        "pct": 16,
+        "landform": null
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -22779,6 +22975,8 @@
         "primeIfIrrigated": 27,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -22930,6 +23128,8 @@
         "primeIfIrrigated": 5,
         "statewide": 66
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -23082,6 +23282,8 @@
         "primeIfIrrigated": 60,
         "statewide": 9
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 11,
@@ -23263,6 +23465,8 @@
         "primeIfIrrigated": 7,
         "statewide": 53
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 13,
@@ -23386,6 +23590,8 @@
         "primeIfIrrigated": 44,
         "statewide": 3
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -23768,6 +23974,8 @@
         "primeIfIrrigated": 5,
         "statewide": 11
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 33,
@@ -23871,6 +24079,8 @@
         "primeIfIrrigated": 13,
         "statewide": 21
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 41,
@@ -24058,6 +24268,8 @@
         "primeIfIrrigated": 47,
         "statewide": 44
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -24343,6 +24555,8 @@
         "primeIfIrrigated": 30,
         "statewide": 16
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 16,
@@ -24497,6 +24711,8 @@
         "primeIfIrrigated": 12,
         "statewide": 4
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 27,
@@ -24637,6 +24853,8 @@
         "primeIfIrrigated": 73,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -24810,6 +25028,8 @@
         "primeIfIrrigated": 51,
         "statewide": 22
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -25089,6 +25309,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -25209,6 +25431,8 @@
         "primeIfIrrigated": 0,
         "statewide": 63
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 12,
@@ -25533,6 +25757,8 @@
         "primeIfIrrigated": 4,
         "statewide": 4
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": {
         "pct": 41,
         "landform": "on plains"
@@ -26118,6 +26344,8 @@
         "primeIfIrrigated": 3,
         "statewide": 70
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -26400,6 +26628,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": {
         "pct": 62,
         "landform": "on rock benches"
@@ -26469,7 +26699,56 @@
     "freezeFreeDays": 227,
     "lastSpringFreeze": "March 25",
     "firstFallFreeze": "Nov. 10",
-    "soil": null,
+    "soil": {
+      "town": "Halls Crossing",
+      "arableAcres": 3856,
+      "arableShare": 0.62,
+      "urbanPct": 0,
+      "mainLandform": "on plateaus",
+      "arableForms": [
+        "on plateaus"
+      ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on plateaus": "sandy"
+      },
+      "textures": [
+        {
+          "texture": "loamy fine sand",
+          "pct": 68,
+          "landform": null
+        },
+        {
+          "texture": "sand",
+          "pct": 32,
+          "landform": null
+        }
+      ],
+      "phAvg": 7.7,
+      "phMin": 7.4,
+      "phMax": 8.4,
+      "phHighFirst": false,
+      "phMinWhere": null,
+      "phMaxWhere": null,
+      "drainage": "somewhat excessively drained",
+      "drainageVariation": null,
+      "awcAvg": 0.09,
+      "awcDesc": "low water retention",
+      "awcVariation": null,
+      "ecAvg": 1,
+      "saltVariation": null,
+      "omAvg": 1,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 0
+      },
+      "hardpan": null,
+      "claypan": null,
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
+    },
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -26672,6 +26951,8 @@
         "primeIfIrrigated": 36,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -26904,6 +27185,8 @@
         "primeIfIrrigated": 24,
         "statewide": 53
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 28,
@@ -27081,6 +27364,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 30,
@@ -27333,6 +27618,8 @@
         "primeIfIrrigated": 12,
         "statewide": 14
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 10,
@@ -27845,6 +28132,8 @@
         "primeIfIrrigated": 64,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -28098,6 +28387,8 @@
         "primeIfIrrigated": 0,
         "statewide": 53
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 29,
@@ -28233,6 +28524,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -28355,6 +28648,8 @@
         "primeIfIrrigated": 29,
         "statewide": 4
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -29101,6 +29396,8 @@
         "primeIfIrrigated": 0,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 30,
@@ -29241,6 +29538,8 @@
         "primeIfIrrigated": 76,
         "statewide": 5
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -29919,6 +30218,8 @@
         "primeIfIrrigated": 32,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -30126,6 +30427,8 @@
         "primeIfIrrigated": 0,
         "statewide": 91
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -30290,6 +30593,8 @@
         "primeIfIrrigated": 0,
         "statewide": 58
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -30448,6 +30753,8 @@
         "primeIfIrrigated": 43,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -30815,6 +31122,8 @@
         "primeIfIrrigated": 42,
         "statewide": 23
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 10,
@@ -30980,6 +31289,8 @@
         "primeIfIrrigated": 3,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 41,
@@ -31196,6 +31507,8 @@
         "primeIfIrrigated": 50,
         "statewide": 5
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -31315,6 +31628,8 @@
         "primeIfIrrigated": 14,
         "statewide": 61
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 26,
@@ -31433,6 +31748,8 @@
         "primeIfIrrigated": 26,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 19,
@@ -31661,6 +31978,8 @@
         "primeIfIrrigated": 43,
         "statewide": 12
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 15,
@@ -31781,34 +32100,36 @@
     "firstFallFreeze": "Nov. 5",
     "soil": {
       "town": "Hurricane",
-      "arableAcres": 7943,
-      "arableShare": 0.35,
+      "arableAcres": 14994,
+      "arableShare": 0.67,
       "urbanPct": 0,
       "mainLandform": null,
-      "arableForms": [
-        "on foothill slopes",
-        "on floodplains"
-      ],
+      "arableForms": [],
       "coarseAll": "sandy",
       "coarseByForm": {
+        "on mesas": "sandy and gravelly",
         "on foothill slopes": "sandy",
         "on old lava flows": "sandy",
-        "in low spots": "sandy",
-        "on bottomland": "sandy"
+        "in low spots": "sandy"
       },
       "textures": [
         {
           "texture": "fine sandy loam",
-          "pct": 52,
+          "pct": 53,
+          "landform": null
+        },
+        {
+          "texture": "gravelly fine sandy loam",
+          "pct": 24,
           "landform": null
         },
         {
           "texture": "silty clay loam",
-          "pct": 33,
+          "pct": 17,
           "landform": null
         }
       ],
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
       "phHighFirst": true,
@@ -31816,17 +32137,22 @@
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
-      "awcAvg": 0.13,
+      "awcAvg": 0.12,
       "awcDesc": "moderate water retention",
       "awcVariation": null,
-      "ecAvg": 1.5151542182335844,
+      "ecAvg": 1.231484591457429,
       "saltVariation": null,
-      "omAvg": 1.2,
+      "omAvg": 0.9,
       "farmland": {
         "prime": 31,
         "primeIfIrrigated": 31,
         "statewide": 1
       },
+      "hardpan": {
+        "pct": 24,
+        "landform": null
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -32277,6 +32603,8 @@
         "primeIfIrrigated": 31,
         "statewide": 34
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -32486,6 +32814,8 @@
         "primeIfIrrigated": 44,
         "statewide": 44
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -32884,6 +33214,8 @@
         "primeIfIrrigated": 3,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -33263,6 +33595,8 @@
         "primeIfIrrigated": 45,
         "statewide": 4
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -33523,6 +33857,8 @@
         "primeIfIrrigated": 58,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 14,
@@ -33692,6 +34028,8 @@
         "primeIfIrrigated": 77,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -33820,6 +34158,8 @@
         "primeIfIrrigated": 9,
         "statewide": 8
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 12,
@@ -34017,6 +34357,8 @@
         "primeIfIrrigated": 0,
         "statewide": 32
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 41,
@@ -34292,6 +34634,8 @@
         "primeIfIrrigated": 65,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -34591,6 +34935,8 @@
         "primeIfIrrigated": 48,
         "statewide": 35
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -34714,6 +35060,8 @@
         "primeIfIrrigated": 62,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -34839,6 +35187,8 @@
         "primeIfIrrigated": 64,
         "statewide": 8
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -35536,6 +35886,8 @@
         "primeIfIrrigated": 46,
         "statewide": 38
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -36012,6 +36364,8 @@
         "primeIfIrrigated": 6,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -36137,6 +36491,8 @@
         "primeIfIrrigated": 43,
         "statewide": 32
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -36303,6 +36659,8 @@
         "primeIfIrrigated": 3,
         "statewide": 20
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -36462,6 +36820,8 @@
         "primeIfIrrigated": 10,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -36645,6 +37005,8 @@
         "primeIfIrrigated": 0,
         "statewide": 29
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -36768,6 +37130,8 @@
         "primeIfIrrigated": 39,
         "statewide": 53
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -36871,6 +37235,8 @@
         "primeIfIrrigated": 39,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 19,
@@ -37040,6 +37406,8 @@
         "primeIfIrrigated": 90,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -37239,6 +37607,8 @@
         "primeIfIrrigated": 72,
         "statewide": 5
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -38331,6 +38701,8 @@
         "primeIfIrrigated": 45,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -38454,6 +38826,11 @@
         "primeIfIrrigated": 15,
         "statewide": 0
       },
+      "hardpan": {
+        "pct": 54,
+        "landform": "on foothill slopes"
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -38678,6 +39055,8 @@
         "primeIfIrrigated": 47,
         "statewide": 16
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -39927,6 +40306,8 @@
         "primeIfIrrigated": 99,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -40050,6 +40431,8 @@
         "primeIfIrrigated": 74,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -40205,6 +40588,8 @@
         "primeIfIrrigated": 37,
         "statewide": 31
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 12,
@@ -40399,6 +40784,8 @@
         "primeIfIrrigated": 49,
         "statewide": 16
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 14,
@@ -40912,6 +41299,8 @@
         "primeIfIrrigated": 13,
         "statewide": 70
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -41127,6 +41516,8 @@
         "primeIfIrrigated": 19,
         "statewide": 51
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 16,
@@ -42078,6 +42469,8 @@
         "primeIfIrrigated": 77,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -42270,6 +42663,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -42403,6 +42798,8 @@
         "primeIfIrrigated": 70,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -42541,6 +42938,8 @@
         "primeIfIrrigated": 9,
         "statewide": 3
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 43,
@@ -43032,6 +43431,8 @@
         "primeIfIrrigated": 0,
         "statewide": 68
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -43209,6 +43610,8 @@
         "primeIfIrrigated": 3,
         "statewide": 72
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -43477,6 +43880,8 @@
         "primeIfIrrigated": 19,
         "statewide": 21
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -43656,6 +44061,8 @@
         "primeIfIrrigated": 56,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -44007,6 +44414,8 @@
         "primeIfIrrigated": 24,
         "statewide": 67
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 26,
@@ -44137,6 +44546,8 @@
         "primeIfIrrigated": 45,
         "statewide": 4
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -44362,6 +44773,8 @@
         "primeIfIrrigated": 2,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 15,
@@ -44572,6 +44985,8 @@
         "primeIfIrrigated": 0,
         "statewide": 37
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -44708,6 +45123,8 @@
         "primeIfIrrigated": 21,
         "statewide": 79
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -44880,6 +45297,8 @@
         "primeIfIrrigated": 62,
         "statewide": 27
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -45049,6 +45468,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -45180,6 +45601,8 @@
         "primeIfIrrigated": 61,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -45591,6 +46014,8 @@
         "primeIfIrrigated": 10,
         "statewide": 38
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": {
         "pct": 34,
         "landform": "on flat land beside streams or lakes"
@@ -45901,6 +46326,8 @@
         "primeIfIrrigated": 0,
         "statewide": 6
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -46125,6 +46552,8 @@
         "primeIfIrrigated": 62,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -46572,6 +47001,8 @@
         "primeIfIrrigated": 13,
         "statewide": 54
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -46822,6 +47253,8 @@
         "primeIfIrrigated": 2,
         "statewide": 17
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -47020,6 +47453,8 @@
         "primeIfIrrigated": 26,
         "statewide": 5
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -47403,6 +47838,8 @@
         "primeIfIrrigated": 10,
         "statewide": 37
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -47595,6 +48032,11 @@
         "primeIfIrrigated": 39,
         "statewide": 0
       },
+      "hardpan": {
+        "pct": 23,
+        "landform": null
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -47825,6 +48267,8 @@
         "primeIfIrrigated": 47,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -48046,6 +48490,8 @@
         "primeIfIrrigated": 0,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 52,
@@ -48184,42 +48630,41 @@
     "firstFallFreeze": "Oct. 2",
     "soil": {
       "town": "Monticello",
-      "arableAcres": 640,
-      "arableShare": 0.3,
+      "arableAcres": 1593,
+      "arableShare": 0.74,
       "urbanPct": 0,
-      "mainLandform": null,
+      "mainLandform": "on plateaus",
       "arableForms": [
-        "on foothill slopes",
-        "on floodplains"
+        "on plateaus"
       ],
-      "coarseAll": null,
-      "coarseByForm": {},
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on plateaus": "sandy"
+      },
       "textures": [
         {
+          "texture": "very fine sandy loam",
+          "pct": 60,
+          "landform": null
+        },
+        {
           "texture": "loam",
-          "pct": 45,
-          "landform": null
-        },
-        {
-          "texture": "clay loam",
-          "pct": 23,
-          "landform": null
-        },
-        {
-          "texture": "silt loam",
           "pct": 18,
-          "landform": null
+          "landform": "on foothill slopes"
         }
       ],
-      "phAvg": 7.5,
+      "phAvg": 7.2,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": null,
+      "phMaxWhere": "on foothill slopes",
       "drainage": "well drained",
-      "drainageVariation": null,
-      "awcAvg": 0.18,
+      "drainageVariation": {
+        "drainage": "moderately well drained",
+        "landform": "on floodplains"
+      },
+      "awcAvg": 0.17,
       "awcDesc": "high water capacity",
       "awcVariation": null,
       "ecAvg": 1,
@@ -48230,13 +48675,11 @@
         "primeIfIrrigated": 5,
         "statewide": 63
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
-      "flooding": {
-        "pct": 6,
-        "landform": null,
-        "level": "occasional"
-      }
+      "flooding": null
     },
     "postOfficeUrl": "https://tools.usps.com/locations/details/1373646",
     "schools": {
@@ -48564,6 +49007,8 @@
         "primeIfIrrigated": 76,
         "statewide": 9
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -48899,6 +49344,8 @@
         "primeIfIrrigated": 28,
         "statewide": 50
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -49150,6 +49597,8 @@
         "primeIfIrrigated": 0,
         "statewide": 47
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -49422,6 +49871,8 @@
         "primeIfIrrigated": 26,
         "statewide": 20
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 13,
@@ -49656,6 +50107,8 @@
         "primeIfIrrigated": 45,
         "statewide": 13
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -50456,6 +50909,8 @@
         "primeIfIrrigated": 64,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 33,
@@ -50656,6 +51111,8 @@
         "primeIfIrrigated": 47,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -50785,6 +51242,8 @@
         "primeIfIrrigated": 0,
         "statewide": 18
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -50905,6 +51364,8 @@
         "primeIfIrrigated": 1,
         "statewide": 59
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 13,
@@ -51068,6 +51529,8 @@
         "primeIfIrrigated": 75,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -51378,6 +51841,8 @@
         "primeIfIrrigated": 88,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -51514,6 +51979,8 @@
         "primeIfIrrigated": 57,
         "statewide": 35
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -51639,6 +52106,8 @@
         "primeIfIrrigated": 90,
         "statewide": 5
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -51785,6 +52254,8 @@
         "primeIfIrrigated": 33,
         "statewide": 56
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -52074,6 +52545,8 @@
         "primeIfIrrigated": 39,
         "statewide": 34
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -52377,6 +52850,8 @@
         "primeIfIrrigated": 24,
         "statewide": 17
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -52674,6 +53149,8 @@
         "primeIfIrrigated": 23,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -53072,6 +53549,8 @@
         "primeIfIrrigated": 56,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -53206,6 +53685,8 @@
         "primeIfIrrigated": 31,
         "statewide": 16
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 14,
@@ -53385,6 +53866,8 @@
         "primeIfIrrigated": 0,
         "statewide": 92
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -53508,6 +53991,8 @@
         "primeIfIrrigated": 17,
         "statewide": 11
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -55603,6 +56088,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -55782,6 +56269,8 @@
         "primeIfIrrigated": 46,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -55970,6 +56459,8 @@
         "primeIfIrrigated": 20,
         "statewide": 10
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -56158,6 +56649,8 @@
         "primeIfIrrigated": 75,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -57501,6 +57994,8 @@
         "primeIfIrrigated": 41,
         "statewide": 52
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -57610,6 +58105,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -57833,6 +58330,8 @@
         "primeIfIrrigated": 35,
         "statewide": 63
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -57959,6 +58458,8 @@
         "primeIfIrrigated": 78,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -58088,6 +58589,8 @@
         "primeIfIrrigated": 5,
         "statewide": 13
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -59166,6 +59669,8 @@
         "primeIfIrrigated": 37,
         "statewide": 17
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -59366,6 +59871,8 @@
         "primeIfIrrigated": 62,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -59822,6 +60329,8 @@
         "primeIfIrrigated": 21,
         "statewide": 53
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 52,
@@ -59955,6 +60464,8 @@
         "primeIfIrrigated": 29,
         "statewide": 24
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 45,
@@ -60169,6 +60680,8 @@
         "primeIfIrrigated": 35,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -60397,6 +60910,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 44,
@@ -60671,6 +61186,8 @@
         "primeIfIrrigated": 45,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 22,
@@ -60928,6 +61445,8 @@
         "primeIfIrrigated": 73,
         "statewide": 6
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -61496,6 +62015,8 @@
         "primeIfIrrigated": 23,
         "statewide": 14
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 16,
@@ -61706,6 +62227,8 @@
         "primeIfIrrigated": 57,
         "statewide": 35
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -61819,6 +62342,8 @@
         "primeIfIrrigated": 66,
         "statewide": 14
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -61970,6 +62495,8 @@
         "primeIfIrrigated": 62,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -62541,6 +63068,8 @@
         "primeIfIrrigated": 17,
         "statewide": 55
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -62841,6 +63370,8 @@
         "primeIfIrrigated": 22,
         "statewide": 11
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 27,
@@ -64368,6 +64899,8 @@
         "primeIfIrrigated": 24,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 11,
@@ -64506,6 +65039,8 @@
         "primeIfIrrigated": 55,
         "statewide": 4
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 12,
@@ -64711,6 +65246,8 @@
         "primeIfIrrigated": 17,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -64871,6 +65408,8 @@
         "primeIfIrrigated": 66,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -65314,6 +65853,8 @@
         "primeIfIrrigated": 57,
         "statewide": 19
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -65555,6 +66096,8 @@
         "primeIfIrrigated": 54,
         "statewide": 30
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -65735,6 +66278,8 @@
         "primeIfIrrigated": 51,
         "statewide": 28
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -65977,6 +66522,8 @@
         "primeIfIrrigated": 71,
         "statewide": 4
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -66090,6 +66637,8 @@
         "primeIfIrrigated": 75,
         "statewide": 12
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -66873,6 +67422,8 @@
         "primeIfIrrigated": 11,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 21,
@@ -67023,6 +67574,8 @@
         "primeIfIrrigated": 72,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -67143,6 +67696,11 @@
         "prime": 41,
         "primeIfIrrigated": 41,
         "statewide": 10
+      },
+      "hardpan": null,
+      "claypan": {
+        "pct": 24,
+        "landform": "on foothill slopes"
       },
       "bedrock": null,
       "waterTable": null,
@@ -67587,6 +68145,8 @@
         "primeIfIrrigated": 58,
         "statewide": 10
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -68152,6 +68712,8 @@
         "primeIfIrrigated": 0,
         "statewide": 85
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -68328,6 +68890,8 @@
         "primeIfIrrigated": 48,
         "statewide": 13
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -68687,6 +69251,8 @@
         "primeIfIrrigated": 18,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -68937,6 +69503,8 @@
         "primeIfIrrigated": 7,
         "statewide": 13
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 19,
@@ -72970,6 +73538,8 @@
         "primeIfIrrigated": 19,
         "statewide": 6
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -74352,6 +74922,8 @@
         "primeIfIrrigated": 36,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -74601,6 +75173,8 @@
         "primeIfIrrigated": 48,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -74903,6 +75477,8 @@
         "primeIfIrrigated": 45,
         "statewide": 5
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -75931,6 +76507,8 @@
         "primeIfIrrigated": 13,
         "statewide": 86
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -76071,6 +76649,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -76285,6 +76865,8 @@
         "primeIfIrrigated": 68,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -76405,6 +76987,8 @@
         "primeIfIrrigated": 21,
         "statewide": 28
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -76505,6 +77089,8 @@
         "primeIfIrrigated": 36,
         "statewide": 53
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -76833,6 +77419,8 @@
         "primeIfIrrigated": 85,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 13,
@@ -76983,6 +77571,8 @@
         "primeIfIrrigated": 6,
         "statewide": 49
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -77121,6 +77711,8 @@
         "primeIfIrrigated": 52,
         "statewide": 11
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -78271,6 +78863,8 @@
         "primeIfIrrigated": 27,
         "statewide": 12
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -78601,6 +79195,8 @@
         "primeIfIrrigated": 70,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -78906,6 +79502,8 @@
         "primeIfIrrigated": 45,
         "statewide": 24
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -79142,6 +79740,8 @@
         "primeIfIrrigated": 31,
         "statewide": 24
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 27,
@@ -79278,6 +79878,8 @@
         "primeIfIrrigated": 63,
         "statewide": 14
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -80024,6 +80626,8 @@
         "primeIfIrrigated": 5,
         "statewide": 6
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -80125,6 +80729,11 @@
         "primeIfIrrigated": 0,
         "statewide": 10
       },
+      "hardpan": {
+        "pct": 35,
+        "landform": "on foothill slopes"
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -80285,6 +80894,8 @@
         "primeIfIrrigated": 44,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -80423,6 +81034,8 @@
         "primeIfIrrigated": 62,
         "statewide": 19
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 15,
@@ -80554,6 +81167,8 @@
         "primeIfIrrigated": 14,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -80783,6 +81398,8 @@
         "primeIfIrrigated": 53,
         "statewide": 24
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 31,
@@ -81483,6 +82100,8 @@
         "primeIfIrrigated": 22,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 14,
@@ -82782,6 +83401,8 @@
         "primeIfIrrigated": 0,
         "statewide": 75
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -82995,6 +83616,8 @@
         "primeIfIrrigated": 0,
         "statewide": 8
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -83179,6 +83802,8 @@
         "primeIfIrrigated": 0,
         "statewide": 94
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -83379,6 +84004,8 @@
         "primeIfIrrigated": 89,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -83487,6 +84114,8 @@
         "primeIfIrrigated": 11,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 11,
@@ -83702,6 +84331,8 @@
         "primeIfIrrigated": 72,
         "statewide": 12
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -83911,6 +84542,8 @@
         "primeIfIrrigated": 0,
         "statewide": 96
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -84016,6 +84649,8 @@
         "primeIfIrrigated": 64,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -84529,6 +85164,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -84805,6 +85442,8 @@
         "primeIfIrrigated": 67,
         "statewide": 17
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -85554,6 +86193,8 @@
         "primeIfIrrigated": 69,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -85729,6 +86370,8 @@
         "primeIfIrrigated": 16,
         "statewide": 18
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -85883,6 +86526,8 @@
         "primeIfIrrigated": 0,
         "statewide": 22
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": {
         "pct": 21,
         "landform": "on plains"
@@ -86051,6 +86696,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -86206,6 +86853,8 @@
         "primeIfIrrigated": 0,
         "statewide": 85
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -86983,6 +87632,11 @@
         "primeIfIrrigated": 9,
         "statewide": 0
       },
+      "hardpan": {
+        "pct": 63,
+        "landform": "on old lava flows"
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -87126,6 +87780,8 @@
         "primeIfIrrigated": 89,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -87265,6 +87921,8 @@
         "primeIfIrrigated": 17,
         "statewide": 60
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -87542,6 +88200,8 @@
         "primeIfIrrigated": 56,
         "statewide": 11
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -87743,6 +88403,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -88003,6 +88665,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -88152,6 +88816,8 @@
         "primeIfIrrigated": 58,
         "statewide": 21
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -88513,6 +89179,8 @@
         "primeIfIrrigated": 71,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -89113,6 +89781,8 @@
         "primeIfIrrigated": 0,
         "statewide": 100
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -89253,6 +89923,11 @@
         "primeIfIrrigated": 11,
         "statewide": 0
       },
+      "hardpan": {
+        "pct": 73,
+        "landform": "on old lava flows"
+      },
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -89384,6 +90059,8 @@
         "primeIfIrrigated": 11,
         "statewide": 10
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 34,
@@ -89624,6 +90301,8 @@
         "primeIfIrrigated": 6,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 20,
@@ -89827,6 +90506,8 @@
         "primeIfIrrigated": 0,
         "statewide": 98
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -89955,6 +90636,8 @@
         "primeIfIrrigated": 11,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 24,
@@ -90083,6 +90766,8 @@
         "primeIfIrrigated": 6,
         "statewide": 33
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 27,
@@ -90332,6 +91017,8 @@
         "primeIfIrrigated": 26,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -90771,6 +91458,8 @@
         "primeIfIrrigated": 3,
         "statewide": 24
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -90992,6 +91681,8 @@
         "primeIfIrrigated": 29,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -91180,6 +91871,8 @@
         "primeIfIrrigated": 33,
         "statewide": 24
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -91412,6 +92105,8 @@
         "primeIfIrrigated": 0,
         "statewide": 2
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 78,
@@ -91596,6 +92291,8 @@
         "primeIfIrrigated": 34,
         "statewide": 24
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 39,
@@ -91804,6 +92501,8 @@
         "primeIfIrrigated": 35,
         "statewide": 1
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -92119,6 +92818,8 @@
         "primeIfIrrigated": 65,
         "statewide": 11
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -93586,6 +94287,8 @@
         "primeIfIrrigated": 59,
         "statewide": 22
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 15,
@@ -93695,6 +94398,8 @@
         "primeIfIrrigated": 68,
         "statewide": 4
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -93979,6 +94684,8 @@
         "primeIfIrrigated": 33,
         "statewide": 32
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -95552,6 +96259,8 @@
         "primeIfIrrigated": 28,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 21,
@@ -95695,6 +96404,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -95820,7 +96531,56 @@
     "zip": "84511",
     "hardinessZone": "7a",
     "precipIn": 9.51,
-    "soil": null,
+    "soil": {
+      "town": "White Mesa",
+      "arableAcres": 2326,
+      "arableShare": 0.34,
+      "urbanPct": 0,
+      "mainLandform": "on mesas",
+      "arableForms": [
+        "on mesas"
+      ],
+      "coarseAll": "sandy",
+      "coarseByForm": {
+        "on mesas": "sandy"
+      },
+      "textures": [
+        {
+          "texture": "very fine sandy loam",
+          "pct": 71,
+          "landform": null
+        },
+        {
+          "texture": "silt loam",
+          "pct": 29,
+          "landform": null
+        }
+      ],
+      "phAvg": 7.8,
+      "phMin": 7.4,
+      "phMax": 8.4,
+      "phHighFirst": false,
+      "phMinWhere": null,
+      "phMaxWhere": null,
+      "drainage": "well drained",
+      "drainageVariation": null,
+      "awcAvg": 0.15,
+      "awcDesc": "high water capacity",
+      "awcVariation": null,
+      "ecAvg": 0,
+      "saltVariation": null,
+      "omAvg": 1.6,
+      "farmland": {
+        "prime": 0,
+        "primeIfIrrigated": 0,
+        "statewide": 22
+      },
+      "hardpan": null,
+      "claypan": null,
+      "bedrock": null,
+      "waterTable": null,
+      "flooding": null
+    },
     "postOfficeUrl": "",
     "schools": null,
     "places": {
@@ -96038,6 +96798,8 @@
         "primeIfIrrigated": 0,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 36,
@@ -96290,6 +97052,8 @@
         "primeIfIrrigated": 28,
         "statewide": 17
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 33,
@@ -96486,6 +97250,8 @@
         "primeIfIrrigated": 17,
         "statewide": 9
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": {
@@ -96598,6 +97364,8 @@
         "primeIfIrrigated": 37,
         "statewide": 58
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 23,
@@ -96729,6 +97497,8 @@
         "primeIfIrrigated": 7,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -96888,6 +97658,8 @@
         "primeIfIrrigated": 89,
         "statewide": 0
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": null,
       "flooding": null
@@ -97042,6 +97814,8 @@
         "primeIfIrrigated": 42,
         "statewide": 7
       },
+      "hardpan": null,
+      "claypan": null,
       "bedrock": null,
       "waterTable": {
         "pct": 26,

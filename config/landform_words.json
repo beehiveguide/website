@@ -112,6 +112,23 @@
     },
     "Tremonton": {
       "valleys": "on ancient lake bottoms"
+    },
+    "Hurricane": {
+      "includeLandforms": [
+        "mesas"
+      ]
+    },
+    "Blanding": {
+      "includeLandforms": [
+        "mesas",
+        "plateaus"
+      ]
+    },
+    "Monticello": {
+      "includeLandforms": [
+        "mesas",
+        "plateaus"
+      ]
     }
   }
 }

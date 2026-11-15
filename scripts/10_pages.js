@@ -273,8 +273,13 @@ function soilHtml(t) {
   if (s.awcAvg < 0.1) mainProblems.push("hold little water");
   // Fast drainage and little water are explained by coarse soil ("because they are sandy")
   const DRY = /^(are (somewhat )?excessively drained|hold little water|drain (very )?quickly)$/;
-  if (mainProblems.length)
-    problems.push(`Most soils ${mainProblems.join(" and ")}${s.coarseAll && mainProblems.every((x) => DRY.test(x)) ? ` because they are ${s.coarseAll}` : ""}.`);
+  // Dry soils lead with what they are made of ("Most soils are sandy and drain quickly")
+  const sayListMain = (list) => (list.length < 2 ? list.join("") : `${list.slice(0, -1).join(", ")} and ${list[list.length - 1]}`);
+  const FAST = { "are excessively drained": "drain very quickly", "are somewhat excessively drained": "drain quickly" };
+  if (mainProblems.length) {
+    const dryMain = s.coarseAll && mainProblems.every((x) => DRY.test(x));
+    problems.push(dryMain ? `Most soils ${sayListMain(["are " + s.coarseAll, ...mainProblems.map((x) => FAST[x] || x)])}.` : `Most soils ${mainProblems.join(" and ")}.`);
+  }
 
   const areas = new Map();
   const add = (landform, order, text) => {
@@ -291,8 +296,12 @@ function soilHtml(t) {
   const floodVerb = fl && fl.level ? `${fl.level === "occasional" ? "occasionally" : fl.level === "frequent" ? "frequently" : "very frequently"} flood` : "flood";
   const placedAt = (x) => x && x.landform && !mainForms.includes(x.landform);
   if (placedAt(fl) && fl.landform !== "on floodplains") add(fl.landform, 0, floodVerb);
-  if (dv && dist(dv.drainage) >= 1 && dist(dv.drainage) > dist(s.drainage) && DRAIN_VERB[dv.drainage])
-    add(dv.landform, 1, DRAIN_VERB[dv.drainage]);
+  // Flooding with no clear place, plus poor drainage on floodplains: these are
+  // the same land, so one sentence puts flooding first ("Parts of the area
+  // occasionally flood and drain poorly")
+  const dvPoor = dv && dist(dv.drainage) >= 1 && dist(dv.drainage) > dist(s.drainage) && DRAIN_VERB[dv.drainage];
+  const floodDrainTogether = Boolean(fl && !fl.landform && dvPoor && dv.landform === "on floodplains");
+  if (dvPoor && !floodDrainTogether) add(dv.landform, 1, DRAIN_VERB[dv.drainage]);
   if (placedAt(wt)) add(wt.landform, 2, "have a high water table (within 2 feet)");
   if (sv && SALINE(sv.level)) add(sv.landform, 3, `are ${sv.level}`);
   if (av && av.awc < 0.1 && av.awc < s.awcAvg) add(av.landform, 4, "hold little water");
@@ -302,13 +311,19 @@ function soilHtml(t) {
     .map(([form, list]) => [form, list.sort((a, b) => a[0] - b[0]).map((x) => x[1])])
     .sort((a, b) => Number(/flood/.test(b[1][0])) - Number(/flood/.test(a[1][0])));
   // "Bottomland" is a mass noun, so its verbs are singular ("Bottomland drains poorly")
+  // Names that read better as a phrase at the start of a sentence
+  const FORM_SUBJECT = { "on ancient lakeshore benches": "Benches formed by ancient lakeshores" };
   const SINGULAR_FORMS = new Set(["on bottomland", "on flat land beside streams", "on flat land beside streams or lakes", "on land at the foot of slopes"]);
   const oneVerb = (v) => v.replace(/flood$/, "floods").replace(/^drain /, "drains ").replace(/^have /, "has ").replace(/^are /, "is ").replace(/^hold /, "holds ");
   for (const [form, verbs] of sorted) {
-    const why = s.coarseByForm && s.coarseByForm[form] && verbs.every((x) => DRY.test(x)) ? ` because the soils are ${s.coarseByForm[form]}` : "";
     const one = SINGULAR_FORMS.has(form);
+    // Dry land leads with what it is made of ("Foothill slopes are sandy and drain very quickly");
+    // a name that already says it ("windblown sand benches") needs no reason
+    const coarse = s.coarseByForm && s.coarseByForm[form] && verbs.every((x) => DRY.test(x)) ? s.coarseByForm[form] : "";
+    if (coarse && form !== "on windblown sand benches") verbs.unshift(`${one ? "is" : "are"} ${coarse}`);
     const say = (list) => sayList(one ? list.map(oneVerb) : list);
-    problems.push(`${cap(esc(placeNoun(form)))} ${say(verbs.slice(0, 3))}${why}.`);
+    const subject = FORM_SUBJECT[form] || cap(esc(placeNoun(form)));
+    problems.push(`${subject} ${say(verbs.slice(0, 3))}.`);
     if (verbs.length > 3) {
       const rest = verbs.slice(3);
       const be = rest[0].startsWith("are ");
@@ -317,11 +332,15 @@ function soilHtml(t) {
   }
   // Hazards with no clear place
   const loose = [];
-  if (fl && !fl.landform || (fl && fl.landform && mainForms.includes(fl.landform) && fl.landform !== "on floodplains")) loose.push(floodVerb);
+  if (fl && !fl.landform || (fl && fl.landform && mainForms.includes(fl.landform) && fl.landform !== "on floodplains")) loose.push(floodDrainTogether ? `${floodVerb} and ${DRAIN_VERB[dv.drainage]}` : floodVerb);
   if (wt && !placedAt(wt)) loose.push("have a high water table (within 2 feet)");
   if (loose.length) problems.push(`Parts of ${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}` : "the area"} ${loose.join(" or ")}.`);
   const BEDROCK_SKIP = new Set(["on rock benches", "on plateaus", "on mesas", "on ridges"]);
   if (s.bedrock && !BEDROCK_SKIP.has(s.bedrock.landform)) problems.push(`Bedrock lies within 20 inches ${placedAt(s.bedrock) ? esc(s.bedrock.landform) : "in some areas"}.`);
+
+  const pan = (x) => (placedAt(x) ? esc(x.landform) : "in some areas");
+  if (s.hardpan) problems.push(`Hardpan lies within 20 inches ${pan(s.hardpan)}.`);
+  if (s.claypan) problems.push(`Claypan lies within 20 inches ${pan(s.claypan)}.`);
 
   // Farmland shares are of the whole town (08c_soil.js)
   const f = s.farmland;
