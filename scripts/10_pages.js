@@ -25,6 +25,10 @@ const { buildData: affiliateData } = require("./lib/affiliate");
 
 const site = paths.readJson(paths.config("site.json"));
 const SOURCE_LIST = paths.readJson(paths.source("sources.json"));
+// The census source is named for its year, taken from the folder name
+// (sources/census/ut2020.dhc/) so a new census only needs the new files
+const censusFolder = fs.readdirSync(paths.source("census")).find((d) => /^ut\d{4}\.dhc$/.test(d));
+if (censusFolder && SOURCE_LIST.census) SOURCE_LIST.census.name = `${censusFolder.slice(2, 6)} U.S. Census`;
 // Pages not to publish (config/no_publish.json): left out of every list, and
 // their old URLs redirect to "redirect_to" (another community) or the home page.
 const noPublish = paths.readJson(paths.config("no_publish.json"));
@@ -1674,7 +1678,7 @@ function servicesHtml(t) {
   // A hand-written Schools body replaces the generated one (town_content.json "schools_html")
   if (custom && custom.schools_html) {
     const sc = sections.find(([, word]) => word === "schools");
-    if (sc) sc[2] = customHtml(custom.schools_html); // grade levels still come from UGRC, so its credit stays
+    if (sc) { sc[2] = customHtml(custom.schools_html); sc[3] = ["grade-level"]; } // only the grade levels still come from UGRC
   }
   // Hand-written body for any generated section, by its word (town_content.json "section_html": {"churches": "...", "colleges": "...", "hospitals": "..."})
   if (custom && custom.section_html)

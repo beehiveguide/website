@@ -8,9 +8,13 @@ const readline = require("readline");
 
 const paths = require("./lib/paths");
 
-const dhcDir = paths.source("census", "ut2020.dhc");
-const geoPath = path.join(dhcDir, "utgeo2020.dhc");
-const seg1Path = path.join(dhcDir, "ut000012020.dhc");
+// The census year comes from the folder name (sources/census/ut2020.dhc/)
+const dhcName = fs.readdirSync(paths.source("census")).find((d) => /^ut\d{4}\.dhc$/.test(d));
+if (!dhcName) throw new Error("No sources/census/utYYYY.dhc folder found");
+const censusYear = dhcName.slice(2, 6);
+const dhcDir = paths.source("census", dhcName);
+const geoPath = path.join(dhcDir, `utgeo${censusYear}.dhc`);
+const seg1Path = path.join(dhcDir, `ut00001${censusYear}.dhc`);
 const outputPath = paths.build("census.json");
 
 function readLines(file, onLine) {

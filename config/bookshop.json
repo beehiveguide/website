@@ -7,7 +7,8 @@
       "title": "The Bear River Massacre",
       "topics": [
         "general",
-        "history"
+        "history",
+        "native-american"
       ]
     },
     {
@@ -31,7 +32,8 @@
       "title": "437 Edible Wild Plants of the Rocky Mountains",
       "topics": [
         "gardening",
-        "outdoors-nature"
+        "outdoors-nature",
+        "food-cooking"
       ]
     },
     {
@@ -81,7 +83,8 @@
       "title": "Simple Homemade Fruit Pectin",
       "topics": [
         "general",
-        "food-cooking"
+        "food-cooking",
+        "homesteading"
       ]
     },
     {
@@ -116,7 +119,9 @@
       "title": "Wild Edible Plants of Utah",
       "topics": [
         "gardening",
-        "history"
+        "history",
+        "food-cooking",
+        "outdoors-nature"
       ]
     },
     {
@@ -230,7 +235,8 @@
       "title": "Chicken Coops, 2nd Edition",
       "topics": [
         "general",
-        "small-farms"
+        "small-farms",
+        "homesteading"
       ]
     },
     {
@@ -549,7 +555,8 @@
       "title": "The All New Ball Book of Canning and Preserving",
       "topics": [
         "general",
-        "food-cooking"
+        "food-cooking",
+        "homesteading"
       ]
     },
     {
@@ -565,7 +572,8 @@
       "title": "Ball Canning Back to Basics",
       "topics": [
         "general",
-        "food-cooking"
+        "food-cooking",
+        "homesteading"
       ],
       "featuredOnly": true
     },
@@ -573,7 +581,8 @@
       "isbn": "9781915818027",
       "title": "The Essential Guide to Pressure Canning",
       "topics": [
-        "food-cooking"
+        "food-cooking",
+        "homesteading"
       ]
     },
     {
@@ -589,7 +598,8 @@
       "title": "Pressure Canning for Beginners and Beyond",
       "topics": [
         "general",
-        "food-cooking"
+        "food-cooking",
+        "homesteading"
       ]
     },
     {
@@ -604,7 +614,8 @@
       "title": "The Beginner's Guide to Raising Chickens",
       "topics": [
         "general",
-        "small-farms"
+        "small-farms",
+        "homesteading"
       ]
     },
     {
@@ -612,14 +623,16 @@
       "title": "The Chicken Chick's Guide to Backyard Chickens",
       "topics": [
         "general",
-        "small-farms"
+        "small-farms",
+        "homesteading"
       ]
     },
     {
       "isbn": "9781603584784",
       "title": "Keeping a Family Cow",
       "topics": [
-        "small-farms"
+        "small-farms",
+        "homesteading"
       ]
     },
     {
@@ -633,7 +646,8 @@
       "isbn": "9780760340677",
       "title": "The Family Cow Handbook",
       "topics": [
-        "small-farms"
+        "small-farms",
+        "homesteading"
       ],
       "disabled": true
     },
@@ -641,7 +655,8 @@
       "isbn": "9780882660660",
       "title": "The Family Cow",
       "topics": [
-        "small-farms"
+        "small-farms",
+        "homesteading"
       ]
     },
     {
@@ -658,7 +673,8 @@
       "topics": [
         "history",
         "outdoors-nature",
-        "travel"
+        "travel",
+        "native-american"
       ]
     },
     {
@@ -724,7 +740,9 @@
       "title": "Seed to Plate, Soil to Sky",
       "topics": [
         "general",
-        "gardening"
+        "gardening",
+        "native-american",
+        "food-cooking"
       ]
     },
     {
@@ -966,7 +984,8 @@
       "title": "A Guide to Canning, Freezing, Curing, & Smoking",
       "topics": [
         "general",
-        "food-cooking"
+        "food-cooking",
+        "homesteading"
       ]
     },
     {
@@ -998,7 +1017,8 @@
       "title": "How To Keep Bees",
       "topics": [
         "general",
-        "small-farms"
+        "small-farms",
+        "homesteading"
       ]
     },
     {

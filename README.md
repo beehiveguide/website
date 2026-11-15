@@ -113,7 +113,8 @@ git push
 1. Download the new file into `downloads/`.
 2. Move it into its folder under `website/sources/` and remove the old version. The scripts find most files by how their names start, so two versions in one folder can clash.
 3. Change its `downloaded` date in `sources/sources.json`.
-4. Build (see below) and check the counts the build prints.
+4. For a new census, put the files in a folder named for the year (`ut2030.dhc`) and update the `url` in `sources/sources.json`. The scripts read the year from the folder name, and pages label the source "2030 U.S. Census" on their own.
+5. Build (see below) and check the counts the build prints.
 
 | Source                                                       | Folder                           | Used for                                             |
 | ------------------------------------------------------------ | -------------------------------- | ---------------------------------------------------- |
