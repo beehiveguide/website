@@ -305,17 +305,19 @@ function soilHtml(t) {
 
   // Farmland shares are of the whole town (08c_soil.js)
   const f = s.farmland;
-  const ownerLand = `${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}'s` : "the area's"} land`;
-  const about = (pct) => (pct >= 95 ? "Nearly all" : `About ${pct}%`);
+  // "the city", "the town" or "the area"
+  const place = `the ${t.placeType === "city" || t.placeType === "town" ? t.placeType : "area"}`;
+  const pctOf = (pct) => (pct >= 95 ? "nearly all" : `${pct}%`);
   const farm = [];
-  if (f.prime > 0) {
-    const prime = f.primeIfIrrigated >= f.prime * 0.8 ? "prime farmland if irrigated" : "prime farmland";
+  // "Prime farmland with irrigation covers 41% of the city, and 10% is of
+  // statewide importance." Prime is "with irrigation" when most of it is prime
+  // only if irrigated.
+  const irrigated = f.prime > 0 && f.primeIfIrrigated >= f.prime * 0.8;
+  if (f.prime > 0)
     farm.push(
-      `${about(f.prime)} of ${ownerLand} is ${prime}${f.statewide > 0 ? ` and ${f.statewide}% is farmland of statewide importance` : ""}.`,
+      `Prime farmland${irrigated ? " with irrigation" : ""} covers ${pctOf(f.prime)} of ${place}${f.statewide > 0 ? `, and ${f.statewide}% is of statewide importance` : ""}.`,
     );
-  } else if (f.statewide > 0) {
-    farm.push(`${about(f.statewide)} of ${ownerLand} is farmland of statewide importance.`);
-  }
+  else if (f.statewide > 0) farm.push(`Farmland of statewide importance covers ${pctOf(f.statewide)} of ${place}.`);
 
   // Built-over towns end with how much was left out (urban land has no soil data)
   const urban = s.urbanPct >= 15 ? ` About ${s.urbanPct}% of ${esc(t.name)} is built over and not included.` : "";
