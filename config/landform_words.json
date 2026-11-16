@@ -24,10 +24,10 @@
     "playas": "on dry lake beds",
     "flood-plain playas": "on dry lake beds",
     "deltas": "on old river deltas",
-    "stream terraces": "on flat land beside streams",
-    "strath terraces": "on flat land beside streams",
-    "terraces": "on flat land beside streams or lakes",
-    "paleoterraces": "on flat land beside streams or lakes",
+    "stream terraces": "on land along streams",
+    "strath terraces": "on land along streams",
+    "terraces": "on land along streams or lakes",
+    "paleoterraces": "on land along streams or lakes",
     "outwash terraces": "on valley floors",
     "flood plains": "on floodplains",
     "flood-plain steps": "on floodplains",
@@ -74,7 +74,7 @@
     "note": "Where a survey landform is vague, what the soil formed from (parent material) gives a more specific plain phrase. Used by 08c_soil.js; landforms and materials not listed here fall back to the phrase in landforms above.",
     "terraces": {
       "Lacustrine deposits": "on ancient lakeshore benches",
-      "Alluvium": "on flat land beside streams",
+      "Alluvium": "on land along streams",
       "Eolian deposits": "on windblown sand benches"
     },
     "benches": {
@@ -96,7 +96,7 @@
   "byTown": {
     "note": "Local knowledge for towns where the survey data can't say what made a vague landform, checked against USDA official soil series descriptions or the town's geography. Keyed by town name, then survey landform.",
     "Plymouth": {
-      "terraces": "on flat land beside streams"
+      "terraces": "on land along streams"
     },
     "Hanksville": {
       "benches": "on windblown sand benches"

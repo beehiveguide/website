@@ -151,6 +151,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.5,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -748,6 +764,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown",
+          "brown",
+          "pinkish gray"
+        ],
+        "moist": [
+          "dark reddish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "dark reddish brown",
+          "dark brown",
+          "brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.4,
       "phMax": 9,
@@ -905,7 +938,7 @@
       "mainLandform": null,
       "arableForms": [
         "on bottomland",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -926,6 +959,21 @@
           "landform": "on rock benches"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "reddish brown"
+        ],
+        "moist": [
+          "dark reddish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "dark reddish brown",
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9,
@@ -1141,6 +1189,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9,
@@ -1289,6 +1348,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown",
+          "gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -2061,6 +2137,17 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish yellow"
+        ],
+        "moist": [
+          "strong brown"
+        ],
+        "wet": [
+          "strong brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.4,
       "phMax": 11,
@@ -2227,6 +2314,25 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "pale brown",
+          "yellowish brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark brown",
+          "dark yellowish brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "brown",
+          "dark yellowish brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -2370,6 +2476,20 @@
           "landform": "on bottomland"
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "pinkish gray"
+        ],
+        "moist": [
+          "brown",
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 6.6,
       "phMax": 9,
@@ -2514,6 +2634,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown",
+          "brown"
+        ],
+        "moist": [],
+        "wet": [
+          "reddish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -2778,6 +2909,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light reddish brown",
+          "pink",
+          "pale brown",
+          "light brown"
+        ],
+        "moist": [
+          "reddish brown",
+          "brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.8,
       "phMax": 9,
@@ -2968,6 +3115,23 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "dark gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark brown",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 5.6,
       "phMax": 8.4,
@@ -3130,6 +3294,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very pale brown",
+          "brown",
+          "light brown",
+          "light yellowish brown"
+        ],
+        "moist": [
+          "dark reddish brown",
+          "strong brown"
+        ],
+        "wet": [
+          "brown",
+          "dark reddish brown",
+          "strong brown"
+        ]
+      },
       "phAvg": 8.6,
       "phMin": 7.4,
       "phMax": 11,
@@ -3246,7 +3427,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -3260,6 +3441,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -3292,7 +3487,7 @@
       "waterTable": null,
       "flooding": {
         "pct": 5,
-        "landform": "on flat land beside streams",
+        "landform": "on land along streams",
         "level": "occasional"
       }
     },
@@ -3401,6 +3596,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -3727,6 +3933,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -3894,6 +4111,25 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark gray",
+          "grayish brown",
+          "brown",
+          "gray"
+        ],
+        "moist": [
+          "black",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "black",
+          "very dark grayish brown",
+          "dark brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -4080,6 +4316,22 @@
           "landform": "on bottomland"
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -4205,6 +4457,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "pale brown"
+        ],
+        "moist": [
+          "brown"
+        ],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.8,
       "phMax": 8.6,
@@ -4395,6 +4659,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish yellow",
+          "yellowish red"
+        ],
+        "moist": [
+          "strong brown"
+        ],
+        "wet": [
+          "yellowish red",
+          "strong brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -4594,6 +4871,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown"
+        ],
+        "moist": [
+          "dark reddish brown"
+        ],
+        "wet": [
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -4911,6 +5199,18 @@
           "landform": "on bottomland"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.3,
       "phMax": 9,
@@ -5031,7 +5331,7 @@
       "coarseByForm": {
         "on rock benches": "sandy",
         "on floodplains": "sandy",
-        "on flat land beside streams": "sandy",
+        "on land along streams": "sandy",
         "on foothill slopes": "sandy"
       },
       "textures": [
@@ -5046,6 +5346,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red",
+          "reddish yellow",
+          "light brown"
+        ],
+        "moist": [
+          "strong brown",
+          "brown"
+        ],
+        "wet": [
+          "yellowish red",
+          "strong brown",
+          "brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -5231,6 +5547,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown",
+          "dark grayish brown",
+          "dark brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.1,
       "phMax": 9.6,
@@ -5630,6 +5963,7 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": null,
       "phAvg": 9.3,
       "phMin": 7.9,
       "phMax": 11,
@@ -5867,6 +6201,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red",
+          "reddish yellow",
+          "brown"
+        ],
+        "moist": [
+          "reddish brown",
+          "strong brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "strong brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9,
@@ -6015,6 +6366,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark brown",
+          "dark grayish brown",
+          "brown",
+          "dark gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown",
+          "black"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -6827,6 +7196,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 6.7,
       "phMin": 5.6,
       "phMax": 7.3,
@@ -7092,6 +7462,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 7.8,
       "phMin": 6.1,
       "phMax": 9,
@@ -7697,9 +8068,9 @@
       "arableAcres": 110,
       "arableShare": 0.01,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -7710,6 +8081,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 7.2,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -7969,6 +8341,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "reddish brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown",
+          "brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 9,
@@ -8218,6 +8606,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark gray",
+          "gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "black",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "black",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 9,
@@ -8458,6 +8863,23 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red",
+          "light brownish gray",
+          "brown"
+        ],
+        "moist": [
+          "reddish brown",
+          "grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -8580,6 +9002,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -8756,6 +9189,16 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "pale brown"
+        ],
+        "moist": [],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -9005,7 +9448,7 @@
       "coarseByForm": {
         "on foothill slopes": "sandy and gravelly",
         "on bottomland": "sandy",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -9024,6 +9467,20 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "light brown",
+          "reddish gray"
+        ],
+        "moist": [
+          "dark reddish gray"
+        ],
+        "wet": [
+          "brown",
+          "dark reddish gray"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.4,
       "phMax": 9,
@@ -9033,7 +9490,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "moderately well drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.11,
       "awcDesc": "moderate water retention",
@@ -9179,6 +9636,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brown",
+          "pale brown",
+          "brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -9853,6 +10324,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
@@ -10068,6 +10555,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "light brownish gray",
+          "dark brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 7.5,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -10467,6 +10970,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "very pale brown",
+          "brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.9,
       "phMax": 9,
@@ -10623,6 +11142,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray",
+          "gray",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "moist": [
+          "black",
+          "very dark gray",
+          "very dark brown"
+        ],
+        "wet": [
+          "black",
+          "very dark gray",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.1,
       "phMax": 9,
@@ -10993,6 +11530,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -11116,6 +11669,17 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown"
+        ],
+        "moist": [
+          "brown"
+        ],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -11219,13 +11783,13 @@
       "arableAcres": 1259,
       "arableShare": 0.73,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
-        "on flat land beside streams": "gravelly"
+        "on land along streams": "gravelly"
       },
       "textures": [
         {
@@ -11239,6 +11803,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -11437,7 +12012,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -11451,6 +12026,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.4,
       "phMax": 9,
@@ -11463,13 +12049,13 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.11,
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "ecAvg": 1.2992737338943456,
       "saltVariation": {
         "ec": 3,
         "level": "very slightly saline",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "omAvg": 2.6,
       "farmland": {
@@ -11624,6 +12210,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark gray",
+          "dark gray"
+        ],
+        "moist": [
+          "black"
+        ],
+        "wet": [
+          "black"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 6.6,
       "phMax": 7.8,
@@ -11756,6 +12354,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -11913,6 +12522,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark gray",
+          "very dark grayish brown",
+          "reddish brown",
+          "brown"
+        ],
+        "moist": [
+          "black",
+          "very dark brown",
+          "dark brown"
+        ],
+        "wet": [
+          "black",
+          "very dark brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -12009,6 +12636,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.6,
       "phMax": 7.8,
@@ -12498,6 +13139,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9.5,
@@ -12676,6 +13330,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -12973,7 +13641,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -12984,6 +13652,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "very dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -13426,6 +14107,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 6.1,
       "phMax": 9,
@@ -13596,6 +14291,21 @@
           "landform": "on ancient lakeshore benches"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 9,
@@ -13728,6 +14438,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 7.8,
@@ -14122,6 +14848,27 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "gray",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "black",
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "black",
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -14324,6 +15071,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "dark reddish brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -14413,13 +15174,13 @@
       "arableAcres": 1526,
       "arableShare": 0.82,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
-        "on flat land beside streams": "gravelly"
+        "on land along streams": "gravelly"
       },
       "textures": [
         {
@@ -14433,6 +15194,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -14545,6 +15318,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.8,
       "phMin": 7.9,
       "phMax": 9.6,
@@ -14861,6 +15648,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "gray",
+          "light brownish gray",
+          "pale brown"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "gray"
+        ]
+      },
       "phAvg": 8.7,
       "phMin": 7.9,
       "phMax": 9,
@@ -14958,7 +15760,7 @@
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
         "on foothill slopes": "gravelly",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -14982,6 +15784,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.1,
       "phMax": 9,
@@ -15129,6 +15945,25 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "gray",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.1,
       "phMax": 9.6,
@@ -16317,6 +17152,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "reddish brown",
+          "dark yellowish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "dark reddish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "dark reddish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -16536,6 +17387,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown"
+        ],
+        "moist": [
+          "dark brown",
+          "brown"
+        ],
+        "wet": [
+          "dark brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.9,
       "phMax": 9,
@@ -16815,6 +17679,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "pale brown"
+        ],
+        "moist": [
+          "grayish brown",
+          "dark grayish brown",
+          "brown"
+        ],
+        "wet": [
+          "grayish brown",
+          "dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -17817,16 +18697,28 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on flat land beside streams",
+      "phMaxWhere": "on land along streams",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
@@ -17905,7 +18797,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "sandy",
+        "on land along streams": "sandy",
         "on benches": "gravelly"
       },
       "textures": [
@@ -17915,6 +18807,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -18101,13 +18994,13 @@
       "arableAcres": 145,
       "arableShare": 0.33,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "stony",
       "coarseByForm": {
-        "on flat land beside streams": "stony",
+        "on land along streams": "stony",
         "on foothill slopes": "gravelly"
       },
       "textures": [
@@ -18122,6 +19015,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "very dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -18222,7 +19127,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on flat land beside streams",
+        "on land along streams",
         "on floodplains"
       ],
       "coarseAll": null,
@@ -18239,6 +19144,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "dark gray",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark brown",
+          "black"
+        ]
+      },
       "phAvg": 6.3,
       "phMin": 6.1,
       "phMax": 7.3,
@@ -18435,6 +19355,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark brown",
+          "brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.9,
       "phMax": 9,
@@ -18534,7 +19470,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "stony",
+        "on land along streams": "stony",
         "on foothill slopes": "sandy and gravelly"
       },
       "textures": [
@@ -18546,7 +19482,7 @@
         {
           "texture": "cobbly loam",
           "pct": 32,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         },
         {
           "texture": "gravelly fine sandy loam",
@@ -18554,6 +19490,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "dark brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -18677,6 +19627,17 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9.5,
@@ -18806,7 +19767,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -18822,9 +19783,24 @@
         {
           "texture": "fine sandy loam",
           "pct": 16,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         }
       ],
+      "colors": {
+        "dry": [
+          "pink",
+          "pale brown",
+          "yellowish brown"
+        ],
+        "moist": [
+          "brown",
+          "dark yellowish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark yellowish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -18837,7 +19813,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.12,
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "ecAvg": 2.381898926961493,
       "saltVariation": null,
@@ -18975,6 +19951,26 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark grayish brown",
+          "brown",
+          "gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "very dark brown",
+          "dark brown",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown",
+          "dark brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.1,
       "phMax": 9,
@@ -18984,7 +19980,7 @@
       "drainage": "moderately well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
@@ -18993,7 +19989,7 @@
       "saltVariation": {
         "ec": 2.3,
         "level": "very slightly saline",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "omAvg": 2.5,
       "farmland": {
@@ -19097,6 +20093,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9.5,
@@ -19253,6 +20260,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8.5,
       "phMin": 7.9,
       "phMax": 9,
@@ -19406,6 +20414,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "brown",
+          "light brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.9,
       "phMax": 9,
@@ -19612,6 +20636,22 @@
           "landform": "on ancient lakeshore benches"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -19739,6 +20779,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "pale brown",
+          "light brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -19937,6 +20993,25 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "light brownish gray",
+          "light gray"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "brown",
+          "dark gray",
+          "yellowish brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown",
+          "dark gray",
+          "yellowish brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.4,
       "phMax": 9,
@@ -20208,6 +21283,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "grayish brown",
+          "pale brown",
+          "gray"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "very dark grayish brown",
+          "brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "very dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 6.6,
       "phMax": 9,
@@ -20226,7 +21319,7 @@
       "saltVariation": {
         "ec": 10,
         "level": "moderately saline",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "omAvg": 2.2,
       "farmland": {
@@ -20345,7 +21438,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -20359,6 +21452,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown",
+          "brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -20886,6 +21992,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "pale brown"
+        ],
+        "moist": [
+          "grayish brown",
+          "dark grayish brown",
+          "brown"
+        ],
+        "wet": [
+          "grayish brown",
+          "dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.7,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -21051,6 +22173,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown",
+          "gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "very dark gray",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark gray",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -21257,6 +22396,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray",
+          "gray",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "moist": [
+          "black",
+          "very dark gray",
+          "very dark brown"
+        ],
+        "wet": [
+          "black",
+          "very dark gray",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.1,
       "phMax": 9,
@@ -21824,6 +22981,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "gray"
+        ],
+        "moist": [
+          "dark brown",
+          "dark gray"
+        ],
+        "wet": [
+          "dark brown",
+          "dark gray"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -22058,6 +23229,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9,
@@ -22183,6 +23368,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -22399,6 +23585,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -22553,6 +23750,20 @@
           "landform": "on bottomland"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9,
@@ -22953,6 +24164,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very pale brown",
+          "light brown",
+          "brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 6.6,
       "phMax": 9,
@@ -22962,7 +24187,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.14,
       "awcDesc": "moderate water retention",
@@ -23109,6 +24334,23 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9,
@@ -23260,12 +24502,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 6.8,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on flat land beside streams",
+      "phMaxWhere": "on land along streams",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "poorly drained",
@@ -23443,6 +24696,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
@@ -23571,6 +24825,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 7.8,
@@ -23952,6 +25219,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark yellowish brown",
+          "very dark grayish brown",
+          "very dark gray"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown",
+          "black"
+        ]
+      },
       "phAvg": 7.5,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -24060,6 +25344,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark yellowish brown",
+          "very dark gray"
+        ],
+        "moist": [
+          "dark brown",
+          "black"
+        ],
+        "wet": [
+          "dark brown",
+          "black"
+        ]
+      },
       "phAvg": 8,
       "phMin": 6.6,
       "phMax": 9,
@@ -24249,6 +25547,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 6.1,
       "phMax": 9,
@@ -24532,6 +25841,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -24668,7 +25978,7 @@
       "mainLandform": null,
       "arableForms": [
         "on bottomland",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -24689,6 +25999,7 @@
           "landform": "on rock benches"
         }
       ],
+      "colors": null,
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -24834,6 +26145,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "pale brown",
+          "yellowish brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "brown",
+          "dark yellowish brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown",
+          "dark yellowish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -25009,6 +26337,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "pale brown",
+          "gray"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "brown",
+          "dark gray"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown",
+          "dark gray"
+        ]
+      },
       "phAvg": 8.6,
       "phMin": 7.9,
       "phMax": 9.6,
@@ -25287,6 +26632,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 7.3,
@@ -25412,11 +26773,31 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "grayish brown",
+          "brown",
+          "light brownish gray",
+          "gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "brown",
+          "very dark grayish brown",
+          "dark brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9,
       "phHighFirst": true,
-      "phMinWhere": "on flat land beside streams",
+      "phMinWhere": "on land along streams",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -25738,6 +27119,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -26321,6 +27713,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "pale brown",
+          "pinkish gray",
+          "light brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 6.6,
       "phMax": 9,
@@ -26609,6 +28017,19 @@
           "landform": "on windblown sand benches"
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown",
+          "light reddish brown"
+        ],
+        "moist": [
+          "dark reddish brown"
+        ],
+        "wet": [
+          "dark reddish brown",
+          "reddish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.9,
       "phMax": 8.4,
@@ -26724,6 +28145,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red",
+          "yellowish brown"
+        ],
+        "moist": [
+          "dark yellowish brown"
+        ],
+        "wet": [
+          "yellowish red",
+          "dark yellowish brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -26926,6 +28360,23 @@
           "landform": "on windblown sand benches"
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "reddish gray",
+          "reddish yellow"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "dark reddish gray",
+          "yellowish red"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "dark reddish gray",
+          "yellowish red"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -27166,6 +28617,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "very dark gray",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "black",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "black",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9,
@@ -27345,6 +28813,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 6.6,
       "phMax": 9,
@@ -27574,13 +29055,13 @@
       "arableAcres": 3406,
       "arableShare": 0.25,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "gravelly"
+        "on land along streams": "gravelly"
       },
       "textures": [
         {
@@ -27599,6 +29080,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown",
+          "dark gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark brown",
+          "black"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -28113,6 +29609,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -28352,9 +29859,9 @@
       "arableAcres": 944,
       "arableShare": 0.6,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -28365,6 +29872,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "very dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -28499,6 +30020,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark brown",
+          "grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "grayish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -28629,6 +30164,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9,
@@ -29361,9 +30910,9 @@
       "arableAcres": 27,
       "arableShare": 0.01,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -29374,6 +30923,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "very dark grayish brown",
+          "dark gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown",
+          "black"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -29513,6 +31079,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -30199,6 +31776,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown",
+          "brown"
+        ],
+        "moist": [],
+        "wet": [
+          "reddish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -30405,6 +31993,20 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "gray",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "gray"
+        ]
+      },
       "phAvg": 8.8,
       "phMin": 7.9,
       "phMax": 9,
@@ -30574,6 +32176,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.9,
       "phMax": 8.4,
@@ -30727,6 +32342,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -31081,7 +32710,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -31100,6 +32729,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 6.1,
       "phMax": 9,
@@ -31267,6 +32911,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "light gray",
+          "gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "light olive gray",
+          "dark gray"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "light olive gray",
+          "dark gray",
+          "light gray"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 6.6,
       "phMax": 9,
@@ -31488,6 +33150,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 6.1,
       "phMax": 9,
@@ -31594,7 +33271,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on flat land beside streams",
+        "on land along streams",
         "on foothill slopes"
       ],
       "coarseAll": null,
@@ -31606,6 +33283,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "very dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -31729,6 +33419,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9.5,
@@ -31940,7 +33641,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -31951,7 +33652,7 @@
         {
           "texture": "fine sandy loam",
           "pct": 20,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         },
         {
           "texture": "silt loam",
@@ -31959,6 +33660,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "dark gray",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "black",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "black",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7,
       "phMin": 5.6,
       "phMax": 8.4,
@@ -32129,6 +33847,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red",
+          "reddish brown",
+          "light brown",
+          "red"
+        ],
+        "moist": [
+          "dark red"
+        ],
+        "wet": [
+          "yellowish red",
+          "reddish brown",
+          "dark red"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
@@ -32581,6 +34315,25 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "grayish brown",
+          "gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "very dark grayish brown",
+          "black",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown",
+          "black",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -32795,6 +34548,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown",
+          "gray"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown",
+          "very dark gray"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.6,
       "phMax": 9,
@@ -33178,7 +34948,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on flat land beside streams",
+        "on land along streams",
         "on foothill slopes"
       ],
       "coarseAll": null,
@@ -33195,6 +34965,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -33573,6 +35344,19 @@
           "landform": "on windblown sand benches"
         }
       ],
+      "colors": {
+        "dry": [
+          "red"
+        ],
+        "moist": [
+          "dark red",
+          "yellowish red"
+        ],
+        "wet": [
+          "dark red",
+          "yellowish red"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -33831,6 +35615,21 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "light yellowish brown",
+          "very pale brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.4,
       "phMax": 9,
@@ -34009,6 +35808,25 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "yellowish brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark brown",
+          "brown",
+          "dark yellowish brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "brown",
+          "dark yellowish brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 8.6,
@@ -34110,7 +35928,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy and gravelly",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -34139,6 +35957,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -34318,12 +36137,12 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on flat land beside streams",
+        "on land along streams",
         "on floodplains"
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "stony",
+        "on land along streams": "stony",
         "on foothill slopes": "gravelly"
       },
       "textures": [
@@ -34338,6 +36157,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "dark gray",
+          "very dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark brown",
+          "black"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -34591,7 +36425,7 @@
       "coarseByForm": {
         "on foothill slopes": "sandy",
         "on floodplains": "sandy",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -34615,6 +36449,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "yellowish red",
+          "pale brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "yellowish red",
+          "brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 9,
@@ -34916,6 +36765,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brown",
+          "pale brown"
+        ],
+        "moist": [
+          "brown",
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.9,
       "phMax": 8.4,
@@ -35041,6 +36904,19 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "light brown",
+          "brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -35165,6 +37041,26 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "grayish brown",
+          "gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark brown",
+          "very dark grayish brown",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown",
+          "very dark grayish brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -35867,6 +37763,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "dark brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -36321,7 +38231,7 @@
       "coarseByForm": {
         "on floodplains": "sandy",
         "on foothill slopes": "sandy and gravelly",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -36342,9 +38252,26 @@
         {
           "texture": "fine sandy loam",
           "pct": 15,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "light brownish gray",
+          "yellowish brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "brown",
+          "dark yellowish brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown",
+          "dark yellowish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -36472,6 +38399,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -36640,6 +38579,7 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": null,
       "phAvg": 8,
       "phMin": 6.6,
       "phMax": 9,
@@ -36791,6 +38731,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "reddish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.4,
       "phMax": 9,
@@ -36986,6 +38939,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9,
@@ -37108,6 +39072,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
@@ -37216,6 +39191,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark yellowish brown",
+          "light brownish gray",
+          "very dark gray"
+        ],
+        "moist": [
+          "dark brown",
+          "brown",
+          "black"
+        ],
+        "wet": [
+          "dark brown",
+          "brown",
+          "black"
+        ]
+      },
       "phAvg": 8,
       "phMin": 6.6,
       "phMax": 9,
@@ -37387,6 +39379,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "red"
+        ],
+        "moist": [
+          "dark reddish brown"
+        ],
+        "wet": [
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.9,
       "phMax": 11,
@@ -37588,6 +39591,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -38675,6 +40692,21 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "pale brown",
+          "yellowish brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -38807,6 +40839,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "red"
+        ],
+        "moist": [
+          "dark brown",
+          "reddish brown",
+          "dark red"
+        ],
+        "wet": [
+          "dark brown",
+          "reddish brown",
+          "dark red"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 6.6,
       "phMax": 9,
@@ -39029,6 +41077,28 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "grayish brown",
+          "gray",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark gray",
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "very dark grayish brown",
+          "dark gray",
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9,
@@ -40287,6 +42357,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -40409,6 +42493,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -40550,7 +42648,7 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
@@ -40569,6 +42667,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray",
+          "dark grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "black",
+          "very dark brown",
+          "dark reddish brown"
+        ],
+        "wet": [
+          "black",
+          "very dark brown",
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 6.4,
       "phMin": 6.1,
       "phMax": 7.3,
@@ -40758,6 +42873,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "dark gray",
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "dark gray",
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -41280,6 +43413,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "pinkish gray",
+          "grayish brown"
+        ],
+        "moist": [
+          "brown"
+        ],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.9,
       "phMax": 8.6,
@@ -41494,6 +43640,28 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "grayish brown",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown",
+          "black",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown",
+          "black",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 9,
@@ -42450,6 +44618,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown"
+        ],
+        "moist": [
+          "brown"
+        ],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.8,
       "phMax": 8.4,
@@ -42637,6 +44816,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "pinkish white",
+          "pink"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "light brown",
+          "brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "light brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.9,
       "phMax": 9,
@@ -42772,6 +44968,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light yellowish brown",
+          "very pale brown",
+          "light brown"
+        ],
+        "moist": [
+          "brown"
+        ],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 6.6,
       "phMax": 9,
@@ -42913,6 +45122,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8.3,
       "phMin": 6.6,
       "phMax": 9,
@@ -43412,6 +45622,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish brown",
+          "brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -43591,6 +45814,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "pale brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "yellowish brown",
+          "brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "yellowish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.9,
       "phMax": 9,
@@ -43854,6 +46093,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -44042,6 +46294,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -44373,12 +46641,12 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
         "on foothill slopes": "gravelly",
-        "on flat land beside streams": "gravelly"
+        "on land along streams": "gravelly"
       },
       "textures": [
         {
@@ -44392,6 +46660,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark brown",
+          "dark grayish brown",
+          "very dark grayish brown",
+          "dark gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark brown",
+          "black"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -44527,6 +46811,23 @@
           "landform": "on ancient lake bottoms"
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -44754,6 +47055,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -44966,6 +47268,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pinkish gray",
+          "light brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.9,
       "phMax": 9,
@@ -45104,6 +47421,26 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "grayish brown",
+          "light yellowish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark brown",
+          "very dark grayish brown",
+          "dark yellowish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown",
+          "very dark grayish brown",
+          "dark yellowish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -45275,6 +47612,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray",
+          "gray"
+        ],
+        "moist": [
+          "black",
+          "very dark gray"
+        ],
+        "wet": [
+          "black",
+          "very dark gray",
+          "gray"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.1,
       "phMax": 9,
@@ -45449,6 +47801,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red",
+          "reddish yellow"
+        ],
+        "moist": [
+          "strong brown"
+        ],
+        "wet": [
+          "yellowish red",
+          "strong brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.9,
       "phMax": 8.4,
@@ -45572,6 +47937,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark brown",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.5,
       "phMin": 6.1,
       "phMax": 9.6,
@@ -45975,8 +48357,8 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on flat land beside streams",
-        "on flat land beside streams or lakes"
+        "on land along streams",
+        "on land along streams or lakes"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -45992,6 +48374,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 7.5,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -46018,11 +48401,11 @@
       "claypan": null,
       "bedrock": {
         "pct": 34,
-        "landform": "on flat land beside streams or lakes"
+        "landform": "on land along streams or lakes"
       },
       "waterTable": {
         "pct": 25,
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "flooding": {
         "pct": 20,
@@ -46288,7 +48671,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -46307,6 +48690,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "light brown",
+          "yellowish brown"
+        ],
+        "moist": [
+          "brown"
+        ],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 6.6,
       "phMax": 9.4,
@@ -46526,6 +48922,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "light brownish gray",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "very dark brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown",
+          "dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -46979,6 +49393,22 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "black",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark brown",
+          "black",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 5.6,
       "phMax": 8.4,
@@ -47208,13 +49638,13 @@
       "arableAcres": 1247,
       "arableShare": 0.93,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
-        "on flat land beside streams": "gravelly",
+        "on land along streams": "gravelly",
         "on foothill slopes": "gravelly"
       },
       "textures": [
@@ -47234,6 +49664,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 6.6,
       "phMax": 9,
@@ -47408,7 +49849,7 @@
       "coarseByForm": {
         "on bottomland": "sandy",
         "on sandy flats": "sandy",
-        "on flat land beside streams": "sandy",
+        "on land along streams": "sandy",
         "on rock benches": "sandy",
         "in canyon bottoms": "sandy and gravelly"
       },
@@ -47434,6 +49875,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brown",
+          "reddish yellow",
+          "reddish gray"
+        ],
+        "moist": [
+          "brown",
+          "yellowish red",
+          "dark reddish gray"
+        ],
+        "wet": [
+          "brown",
+          "yellowish red",
+          "dark reddish gray"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -47798,13 +50256,13 @@
       "arableAcres": 127,
       "arableShare": 1,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
-        "on flat land beside streams": "sandy and gravelly",
+        "on land along streams": "sandy and gravelly",
         "on bottomland": "sandy"
       },
       "textures": [
@@ -47819,6 +50277,20 @@
           "landform": "on bottomland"
         }
       ],
+      "colors": {
+        "dry": [
+          "light yellowish brown",
+          "pale brown",
+          "brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -48009,6 +50481,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -48245,6 +50731,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -48468,6 +50966,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish yellow",
+          "yellowish red"
+        ],
+        "moist": [
+          "strong brown"
+        ],
+        "wet": [
+          "strong brown",
+          "yellowish red"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 11,
@@ -48653,6 +51164,18 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown",
+          "brown"
+        ],
+        "moist": [
+          "dark reddish brown"
+        ],
+        "wet": [
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.6,
       "phMax": 9,
@@ -48988,6 +51511,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -49325,6 +51865,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "light brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "brown",
+          "dark grayish brown",
+          "yellowish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark grayish brown",
+          "yellowish brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 6.6,
       "phMax": 9,
@@ -49578,6 +52135,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -49849,6 +52420,21 @@
           "landform": "on ancient lakeshore benches"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark brown",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 6.7,
       "phMin": 5.6,
       "phMax": 8.4,
@@ -50088,6 +52674,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -50883,6 +53470,20 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "very pale brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.5,
       "phMax": 9,
@@ -51074,7 +53675,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -51085,6 +53686,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light yellowish brown",
+          "brown",
+          "light brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.4,
       "phMax": 9,
@@ -51223,6 +53838,15 @@
           "landform": "on rock benches"
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red"
+        ],
+        "moist": [],
+        "wet": [
+          "yellowish red"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -51345,6 +53969,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown",
+          "pinkish gray"
+        ],
+        "moist": [
+          "dark reddish brown",
+          "brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "dark reddish brown",
+          "brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7,
       "phMax": 9,
@@ -51506,6 +54145,19 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 6.6,
       "phMax": 9,
@@ -51822,6 +54474,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark reddish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -51960,6 +54625,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "light brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -52087,6 +54765,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "dark gray"
+        ],
+        "moist": [
+          "very dark gray",
+          "black"
+        ],
+        "wet": [
+          "gray",
+          "very dark gray",
+          "black"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.6,
       "phMax": 9,
@@ -52232,6 +54925,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.6,
       "phMax": 9,
@@ -52526,6 +55236,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9,
@@ -52828,6 +55555,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "very dark grayish brown",
+          "grayish brown",
+          "dark brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -53127,6 +55869,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.1,
       "phMax": 10,
@@ -53530,6 +56285,23 @@
           "landform": "on bottomland"
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish brown",
+          "light yellowish brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "brown",
+          "dark yellowish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark yellowish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -53645,9 +56417,9 @@
       "arableAcres": 2173,
       "arableShare": 0.49,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -53663,6 +56435,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -53847,6 +56634,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.8,
       "phMin": 8.5,
       "phMax": 9,
@@ -53948,7 +56746,7 @@
       "coarseByForm": {
         "on floodplains": "sandy and gravelly",
         "on foothill slopes": "sandy and gravelly",
-        "on flat land beside streams": "sandy and gravelly"
+        "on land along streams": "sandy and gravelly"
       },
       "textures": [
         {
@@ -53964,7 +56762,7 @@
         {
           "texture": "gravelly sandy loam",
           "pct": 16,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         },
         {
           "texture": "fine sandy loam",
@@ -53972,11 +56770,28 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark brown",
+          "grayish brown",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.5,
       "phMin": 6.1,
       "phMax": 8.6,
       "phHighFirst": false,
-      "phMinWhere": "on flat land beside streams",
+      "phMinWhere": "on land along streams",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -56046,12 +58861,12 @@
       "mainLandform": null,
       "arableForms": [
         "on rock benches",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
         "on rock benches": "sandy",
-        "on flat land beside streams": "sandy",
+        "on land along streams": "sandy",
         "on foothill slopes": "sandy"
       },
       "textures": [
@@ -56066,6 +58881,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light reddish brown",
+          "reddish yellow"
+        ],
+        "moist": [
+          "reddish brown",
+          "yellowish red"
+        ],
+        "wet": [
+          "reddish brown",
+          "yellowish red"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -56243,6 +59072,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.4,
       "phMax": 9,
@@ -56414,7 +59254,7 @@
       "mainLandform": null,
       "arableForms": [
         "on sandy flats",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
@@ -56437,6 +59277,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "brown"
+        ],
+        "moist": [
+          "dark reddish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -56623,6 +59476,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "grayish brown",
+          "dark brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -57972,6 +60838,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
@@ -58086,6 +60966,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9,
@@ -58308,6 +61205,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 6.1,
       "phMax": 7.8,
@@ -58439,6 +61350,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brown"
+        ],
+        "moist": [
+          "brown"
+        ],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.9,
       "phMax": 8.4,
@@ -58552,9 +61474,9 @@
       "arableAcres": 1675,
       "arableShare": 0.13,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -58567,6 +61489,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -59633,7 +62556,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -59644,9 +62567,23 @@
         {
           "texture": "sandy loam",
           "pct": 29,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         }
       ],
+      "colors": {
+        "dry": [
+          "light brown",
+          "pale brown"
+        ],
+        "moist": [
+          "brown",
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.9,
       "phMax": 8.4,
@@ -59659,7 +62596,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.1,
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "ecAvg": 0.05051026841460884,
       "saltVariation": null,
@@ -59828,7 +62765,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on benches": "sandy and gravelly",
-        "on flat land beside streams": "stony"
+        "on land along streams": "stony"
       },
       "textures": [
         {
@@ -59852,6 +62789,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -60296,7 +63247,7 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -60307,6 +63258,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark grayish brown",
+          "dark gray",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark brown",
+          "black",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -60445,6 +63413,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark gray",
+          "gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark brown",
+          "black",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.5,
       "phMin": 6.1,
       "phMax": 9,
@@ -60661,6 +63646,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray",
+          "grayish brown"
+        ],
+        "moist": [
+          "black",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "black",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.6,
       "phMax": 9,
@@ -60891,6 +63890,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": null,
       "phAvg": 7.7,
       "phMin": 7.4,
       "phMax": 8.2,
@@ -61164,6 +64164,21 @@
           "landform": "in low spots"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -61422,6 +64437,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "dark grayish brown",
+          "gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "very dark grayish brown",
+          "very dark gray"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "very dark brown",
+          "very dark grayish brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -61996,6 +65029,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "very dark grayish brown",
+          "grayish brown",
+          "very dark gray"
+        ],
+        "moist": [
+          "black"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "black"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -62191,7 +65239,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -62202,9 +65250,24 @@
         {
           "texture": "fine sandy loam",
           "pct": 16,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.1,
       "phMax": 9,
@@ -62217,7 +65280,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.11,
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "ecAvg": 1,
       "saltVariation": null,
@@ -62311,7 +65374,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams or lakes": "sandy"
+        "on land along streams or lakes": "sandy"
       },
       "textures": [
         {
@@ -62320,6 +65383,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.1,
       "phMax": 9,
@@ -62332,7 +65412,7 @@
       "awcDesc": "high water capacity",
       "awcVariation": {
         "awc": 0.11,
-        "landform": "on flat land beside streams or lakes"
+        "landform": "on land along streams or lakes"
       },
       "ecAvg": 1.5436607808759297,
       "saltVariation": null,
@@ -62473,6 +65553,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.4,
       "phMax": 9,
@@ -63049,6 +66140,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.5,
       "phMin": 6.6,
       "phMax": 9,
@@ -63351,6 +66459,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -64856,7 +67980,7 @@
       "mainLandform": null,
       "arableForms": [
         "on bottomland",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -64877,6 +68001,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very pale brown",
+          "brown",
+          "light brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark yellowish brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark yellowish brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.6,
       "phMin": 7.4,
       "phMax": 11,
@@ -65017,6 +68158,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown",
+          "pale brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.4,
       "phMin": 7.9,
       "phMax": 9,
@@ -65224,6 +68382,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "pale brown",
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "very dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9,
@@ -65389,6 +68564,17 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "light reddish brown"
+        ],
+        "moist": [
+          "reddish brown"
+        ],
+        "wet": [
+          "reddish brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
@@ -65834,6 +69020,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray"
+        ],
+        "moist": [
+          "black"
+        ],
+        "wet": [
+          "black"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.1,
       "phMax": 9,
@@ -66074,6 +69271,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown",
+          "gray"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark brown",
+          "very dark gray"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.6,
       "phMax": 9,
@@ -66236,11 +69450,11 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on flat land beside streams": "sandy and gravelly"
+        "on land along streams": "sandy and gravelly"
       },
       "textures": [
         {
@@ -66259,6 +69473,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark brown",
+          "grayish brown",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.4,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -66496,6 +69727,20 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -66505,7 +69750,7 @@
       "drainage": "moderately well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.18,
       "awcDesc": "high water capacity",
@@ -66514,7 +69759,7 @@
       "saltVariation": {
         "ec": 2,
         "level": "very slightly saline",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "omAvg": 2.8,
       "farmland": {
@@ -66618,6 +69863,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -67393,6 +70653,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown",
+          "brown"
+        ],
+        "moist": [
+          "dark reddish brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 6.6,
       "phMax": 9,
@@ -67551,6 +70824,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -67678,6 +70967,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "light brown",
+          "light yellowish brown",
+          "very pale brown"
+        ],
+        "moist": [],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8.6,
       "phMin": 7.6,
       "phMax": 11,
@@ -68105,7 +71406,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
-        "on flat land beside streams": "sandy and gravelly",
+        "on land along streams": "sandy and gravelly",
         "on ancient lakeshore benches": "sandy",
         "on old river deltas": "sandy"
       },
@@ -68123,14 +71424,31 @@
         {
           "texture": "sandy loam",
           "pct": 11,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "grayish brown",
+          "very dark grayish brown",
+          "dark brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.5,
       "phMin": 6.1,
       "phMax": 10,
       "phHighFirst": false,
-      "phMinWhere": "on flat land beside streams",
+      "phMinWhere": "on land along streams",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -68686,6 +72004,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "gray",
+          "grayish brown"
+        ],
+        "moist": [
+          "brown",
+          "dark gray",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "brown",
+          "dark gray",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9,
@@ -68695,7 +72030,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
@@ -68704,7 +72039,7 @@
       "saltVariation": {
         "ec": 8.2,
         "level": "moderately saline",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "omAvg": 2.6,
       "farmland": {
@@ -68840,7 +72175,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on foothill slopes": "stony",
-        "on flat land beside streams": "stony"
+        "on land along streams": "stony"
       },
       "textures": [
         {
@@ -68864,6 +72199,20 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -69222,6 +72571,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -69481,6 +72845,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8.3,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -73519,6 +76884,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.1,
       "phMax": 9,
@@ -74896,6 +78277,22 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "red",
+          "brown"
+        ],
+        "moist": [
+          "yellowish red",
+          "dark red",
+          "dark brown"
+        ],
+        "wet": [
+          "yellowish red",
+          "dark red",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.4,
       "phMax": 9,
@@ -75154,6 +78551,20 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.6,
       "phMax": 9,
@@ -75458,6 +78869,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.4,
       "phMax": 9,
@@ -76488,6 +79915,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "pale brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.9,
       "phMax": 8.4,
@@ -76627,6 +80068,24 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark gray",
+          "very dark grayish brown",
+          "reddish brown",
+          "brown"
+        ],
+        "moist": [
+          "black",
+          "very dark brown",
+          "dark brown"
+        ],
+        "wet": [
+          "black",
+          "very dark brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -76839,6 +80298,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light reddish brown",
+          "pale brown"
+        ],
+        "moist": [
+          "reddish brown",
+          "yellowish brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "yellowish brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.8,
       "phMax": 9,
@@ -76965,16 +80438,27 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on flat land beside streams",
+      "phMaxWhere": "on land along streams",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.15,
       "awcDesc": "high water capacity",
@@ -77067,6 +80551,23 @@
           "landform": "on ancient lake bottoms"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9,
@@ -77393,6 +80894,22 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "dark gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "black"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 6.6,
       "phMax": 9,
@@ -77531,13 +81048,13 @@
       "arableAcres": 3145,
       "arableShare": 0.46,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "gravelly",
       "coarseByForm": {
-        "on flat land beside streams": "gravelly",
+        "on land along streams": "gravelly",
         "on foothill slopes": "gravelly"
       },
       "textures": [
@@ -77552,6 +81069,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -77692,6 +81220,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "light brownish gray",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -78827,7 +82370,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "sandy and gravelly"
+        "on land along streams": "sandy and gravelly"
       },
       "textures": [
         {
@@ -78838,9 +82381,22 @@
         {
           "texture": "gravelly sandy loam",
           "pct": 19,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 6.1,
       "phMax": 8.6,
@@ -78853,7 +82409,7 @@
       "awcDesc": "moderate water retention",
       "awcVariation": {
         "awc": 0.09,
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "ecAvg": 0.3080719849218805,
       "saltVariation": null,
@@ -79176,6 +82732,26 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "gray",
+          "grayish brown",
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark gray",
+          "very dark grayish brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark gray",
+          "very dark grayish brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -79458,12 +83034,12 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on flat land beside streams",
+        "on land along streams",
         "on floodplains"
       ],
       "coarseAll": "sandy",
       "coarseByForm": {
-        "on flat land beside streams": "sandy and gravelly",
+        "on land along streams": "sandy and gravelly",
         "on ancient lake bottoms": "sandy"
       },
       "textures": [
@@ -79483,6 +83059,22 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark brown",
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -79714,6 +83306,26 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "gray",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "dark gray",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "dark gray",
+          "very dark gray"
+        ]
+      },
       "phAvg": 8,
       "phMin": 6.6,
       "phMax": 9,
@@ -79859,6 +83471,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -80577,7 +84206,7 @@
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
         "on foothill slopes": "sandy and gravelly",
-        "on flat land beside streams": "sandy",
+        "on land along streams": "sandy",
         "on sandy flats": "sandy"
       },
       "textures": [
@@ -80589,7 +84218,7 @@
         {
           "texture": "loamy very fine sand",
           "pct": 14,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         },
         {
           "texture": "loam",
@@ -80597,6 +84226,15 @@
           "landform": "on bottomland"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
@@ -80606,7 +84244,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "moderately well drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.1,
       "awcDesc": "moderate water retention",
@@ -80710,6 +84348,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "pinkish gray",
+          "light brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -80875,6 +84527,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 7.4,
       "phMax": 9,
@@ -81012,6 +84675,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9,
@@ -81117,7 +84794,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "sandy",
+        "on land along streams": "sandy",
         "on floodplains": "sandy",
         "in low spots": "sandy"
       },
@@ -81138,6 +84815,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown"
+        ],
+        "moist": [
+          "dark reddish brown"
+        ],
+        "wet": [
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 9,
@@ -81379,6 +85067,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 6.6,
       "phMax": 9,
@@ -82075,6 +85777,21 @@
           "landform": "in low spots"
         }
       ],
+      "colors": {
+        "dry": [
+          "red",
+          "light brown",
+          "brown"
+        ],
+        "moist": [
+          "dark red",
+          "reddish brown"
+        ],
+        "wet": [
+          "dark red",
+          "reddish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 9,
@@ -83375,6 +87092,26 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "gray",
+          "light brownish gray",
+          "pale brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark gray",
+          "dark grayish brown",
+          "brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark gray",
+          "dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
@@ -83384,7 +87121,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
@@ -83393,7 +87130,7 @@
       "saltVariation": {
         "ec": 10,
         "level": "moderately saline",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "omAvg": 2.6,
       "farmland": {
@@ -83597,6 +87334,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pinkish gray",
+          "light brown"
+        ],
+        "moist": [
+          "brown"
+        ],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 6.6,
       "phMax": 9,
@@ -83763,7 +87512,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on flat land beside streams",
+        "on land along streams",
         "on foothill slopes"
       ],
       "coarseAll": null,
@@ -83783,6 +87532,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 6.6,
       "phMax": 9,
@@ -83985,6 +87748,20 @@
           "landform": "on bottomland"
         }
       ],
+      "colors": {
+        "dry": [
+          "light brown",
+          "pale brown"
+        ],
+        "moist": [
+          "brown",
+          "dark brown"
+        ],
+        "wet": [
+          "brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -84092,12 +87869,27 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark brown",
+          "dark grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 6.8,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on flat land beside streams",
+      "phMaxWhere": "on land along streams",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "poorly drained",
@@ -84293,7 +88085,7 @@
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
         "on ancient lakeshore benches": "sandy",
-        "on flat land beside streams": "sandy and gravelly"
+        "on land along streams": "sandy and gravelly"
       },
       "textures": [
         {
@@ -84309,14 +88101,31 @@
         {
           "texture": "gravelly sandy loam",
           "pct": 14,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "dark grayish brown",
+          "grayish brown",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark grayish brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
-      "phMinWhere": "on flat land beside streams",
+      "phMinWhere": "on land along streams",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -84523,6 +88332,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "brown",
+          "pale brown",
+          "gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "gray"
+        ]
+      },
       "phAvg": 8.8,
       "phMin": 7.9,
       "phMax": 9,
@@ -84630,6 +88454,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "very dark brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "very dark brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 10,
@@ -85132,9 +88973,9 @@
       "arableAcres": 61,
       "arableShare": 0.99,
       "urbanPct": 0,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {},
@@ -85145,6 +88986,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 8.2,
       "phMin": 7.8,
       "phMax": 8.4,
@@ -85416,6 +89258,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -86174,6 +90030,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red",
+          "red"
+        ],
+        "moist": [
+          "dark reddish brown"
+        ],
+        "wet": [
+          "yellowish red",
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -86348,6 +90217,26 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark grayish brown",
+          "brown",
+          "gray"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown",
+          "black",
+          "very dark gray"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown",
+          "black",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.1,
       "phMax": 9,
@@ -86507,6 +90396,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "reddish yellow",
+          "pinkish gray"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "strong brown",
+          "brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "strong brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -86677,6 +90583,7 @@
           "landform": null
         }
       ],
+      "colors": null,
       "phAvg": 7.2,
       "phMin": 6.6,
       "phMax": 7.8,
@@ -86834,6 +90741,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "dark brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.6,
       "phMin": 6.6,
       "phMax": 9,
@@ -87613,6 +91534,23 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "red",
+          "brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "dark red",
+          "dark brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "dark red",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 6.6,
       "phMax": 9,
@@ -87747,7 +91685,7 @@
       "coarseAll": "sandy",
       "coarseByForm": {
         "on foothill slopes": "sandy",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -87761,11 +91699,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red"
+        ],
+        "moist": [],
+        "wet": [
+          "yellowish red"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 8.4,
       "phHighFirst": true,
-      "phMinWhere": "on flat land beside streams",
+      "phMinWhere": "on land along streams",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -87902,6 +91849,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 6.1,
       "phMax": 9,
@@ -88181,6 +92139,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "gray"
+        ],
+        "moist": [
+          "dark brown",
+          "very dark gray"
+        ],
+        "wet": [
+          "dark brown",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -88353,7 +92325,7 @@
       ],
       "coarseAll": null,
       "coarseByForm": {
-        "on flat land beside streams": "gravelly",
+        "on land along streams": "gravelly",
         "on floodplains": "sandy and gravelly"
       },
       "textures": [
@@ -88378,11 +92350,25 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "grayish brown"
+        ],
+        "moist": [
+          "dark brown",
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.4,
       "phMax": 9,
       "phHighFirst": true,
-      "phMinWhere": "on flat land beside streams",
+      "phMinWhere": "on land along streams",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": {
@@ -88643,6 +92629,16 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish yellow",
+          "yellowish red"
+        ],
+        "moist": [],
+        "wet": [
+          "yellowish red"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 7.4,
       "phMax": 11,
@@ -88783,7 +92779,7 @@
       "coarseAll": null,
       "coarseByForm": {
         "on floodplains": "sandy and gravelly",
-        "on flat land beside streams": "sandy"
+        "on land along streams": "sandy"
       },
       "textures": [
         {
@@ -88797,11 +92793,28 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown",
+          "grayish brown",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": true,
-      "phMinWhere": "on flat land beside streams",
+      "phMinWhere": "on land along streams",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -89153,6 +93166,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light yellowish brown",
+          "very pale brown",
+          "brown"
+        ],
+        "moist": [],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9,
@@ -89162,7 +93186,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.17,
       "awcDesc": "high water capacity",
@@ -89171,7 +93195,7 @@
       "saltVariation": {
         "ec": 5,
         "level": "slightly saline",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "omAvg": 1.1,
       "farmland": {
@@ -89752,9 +93776,23 @@
         {
           "texture": "silt loam",
           "pct": 33,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown",
+          "gray"
+        ],
+        "moist": [
+          "brown",
+          "dark gray"
+        ],
+        "wet": [
+          "brown",
+          "dark gray"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.4,
       "phMax": 9,
@@ -89764,7 +93802,7 @@
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "somewhat poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.15,
       "awcDesc": "moderate water retention",
@@ -89773,7 +93811,7 @@
       "saltVariation": {
         "ec": 10,
         "level": "moderately saline",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "omAvg": 2.2,
       "farmland": {
@@ -89904,6 +93942,20 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "dark reddish brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -90036,6 +94088,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray",
+          "dark grayish brown",
+          "grayish brown",
+          "gray"
+        ],
+        "moist": [
+          "black",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "black",
+          "very dark grayish brown",
+          "dark gray"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -90272,6 +94341,15 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "reddish brown"
+        ],
+        "moist": [],
+        "wet": [
+          "reddish brown"
+        ]
+      },
       "phAvg": 8.2,
       "phMin": 6.6,
       "phMax": 9,
@@ -90487,6 +94565,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "pale brown"
+        ],
+        "moist": [
+          "brown"
+        ],
+        "wet": [
+          "brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -90611,19 +94700,33 @@
         {
           "texture": "clay loam",
           "pct": 24,
-          "landform": "on flat land beside streams"
+          "landform": "on land along streams"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "dark gray"
+        ],
+        "moist": [
+          "very dark brown",
+          "black"
+        ],
+        "wet": [
+          "very dark brown",
+          "black"
+        ]
+      },
       "phAvg": 7,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on flat land beside streams",
+      "phMaxWhere": "on land along streams",
       "drainage": "well drained",
       "drainageVariation": {
         "drainage": "poorly drained",
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "awcAvg": 0.16,
       "awcDesc": "high water capacity",
@@ -90641,11 +94744,11 @@
       "bedrock": null,
       "waterTable": {
         "pct": 24,
-        "landform": "on flat land beside streams"
+        "landform": "on land along streams"
       },
       "flooding": {
         "pct": 24,
-        "landform": "on flat land beside streams",
+        "landform": "on land along streams",
         "level": "occasional"
       }
     },
@@ -90732,7 +94835,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on flat land beside streams",
+        "on land along streams",
         "on floodplains"
       ],
       "coarseAll": null,
@@ -90744,6 +94847,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -90988,6 +95104,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "red",
+          "light brown"
+        ],
+        "moist": [
+          "dark red",
+          "reddish brown"
+        ],
+        "wet": [
+          "dark red",
+          "reddish brown",
+          "red"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -91417,13 +95548,13 @@
       "arableAcres": 504,
       "arableShare": 0.67,
       "urbanPct": 34,
-      "mainLandform": "on flat land beside streams",
+      "mainLandform": "on land along streams",
       "arableForms": [
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": "sandy and gravelly",
       "coarseByForm": {
-        "on flat land beside streams": "sandy and gravelly",
+        "on land along streams": "sandy and gravelly",
         "on ancient lake bottoms": "sandy",
         "on floodplains": "sandy"
       },
@@ -91439,6 +95570,22 @@
           "landform": "on ancient lake bottoms"
         }
       ],
+      "colors": {
+        "dry": [
+          "very dark grayish brown",
+          "dark brown",
+          "dark grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 6.9,
       "phMin": 6.1,
       "phMax": 10,
@@ -91652,6 +95799,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 7.4,
       "phMax": 9,
@@ -91852,6 +96010,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "dark brown",
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "dark brown",
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.5,
       "phMin": 6.6,
       "phMax": 9,
@@ -92080,6 +96255,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "light gray"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "brown"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.5,
       "phMin": 7.9,
       "phMax": 9,
@@ -92272,6 +96461,20 @@
           "landform": "on floodplains"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray",
+          "very dark gray",
+          "gray"
+        ],
+        "moist": [
+          "black"
+        ],
+        "wet": [
+          "black",
+          "very dark gray"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 9,
@@ -92479,6 +96682,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.9,
       "phMin": 6.6,
       "phMax": 10,
@@ -92799,6 +97014,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "light brownish gray",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 9,
@@ -94261,6 +98489,25 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray",
+          "brown",
+          "dark gray",
+          "gray"
+        ],
+        "moist": [
+          "dark grayish brown",
+          "dark brown",
+          "black"
+        ],
+        "wet": [
+          "dark grayish brown",
+          "dark brown",
+          "black",
+          "dark gray"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -94379,6 +98626,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.7,
       "phMin": 6.6,
       "phMax": 10,
@@ -94659,6 +98920,20 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "light brownish gray",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 6.6,
       "phMax": 9,
@@ -96240,6 +100515,17 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "light brownish gray"
+        ],
+        "moist": [
+          "dark grayish brown"
+        ],
+        "wet": [
+          "dark grayish brown"
+        ]
+      },
       "phAvg": 8,
       "phMin": 7.4,
       "phMax": 9,
@@ -96385,6 +100671,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown"
+        ],
+        "moist": [
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 6.7,
       "phMin": 6.1,
       "phMax": 7.3,
@@ -96556,6 +100855,19 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "yellowish red",
+          "reddish brown"
+        ],
+        "moist": [
+          "dark reddish brown"
+        ],
+        "wet": [
+          "reddish brown",
+          "dark reddish brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -96753,7 +101065,7 @@
       "mainLandform": null,
       "arableForms": [
         "on floodplains",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -96772,6 +101084,23 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "gray",
+          "brown",
+          "light brown"
+        ],
+        "moist": [
+          "very dark gray",
+          "dark yellowish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "very dark gray",
+          "dark yellowish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 8.1,
       "phMin": 6.6,
       "phMax": 9,
@@ -97029,6 +101358,27 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray",
+          "very dark gray",
+          "gray",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "black",
+          "very dark brown",
+          "very dark grayish brown",
+          "dark brown"
+        ],
+        "wet": [
+          "black",
+          "very dark gray",
+          "very dark brown",
+          "very dark grayish brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 7.3,
       "phMin": 6.1,
       "phMax": 9,
@@ -97212,7 +101562,7 @@
       "urbanPct": 0,
       "mainLandform": null,
       "arableForms": [
-        "on flat land beside streams",
+        "on land along streams",
         "on floodplains"
       ],
       "coarseAll": null,
@@ -97231,6 +101581,23 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark gray",
+          "brown",
+          "dark grayish brown"
+        ],
+        "moist": [
+          "black",
+          "very dark brown",
+          "dark brown"
+        ],
+        "wet": [
+          "black",
+          "very dark brown",
+          "dark brown"
+        ]
+      },
       "phAvg": 6.4,
       "phMin": 6.1,
       "phMax": 7.3,
@@ -97324,7 +101691,7 @@
       "mainLandform": null,
       "arableForms": [
         "on foothill slopes",
-        "on flat land beside streams"
+        "on land along streams"
       ],
       "coarseAll": null,
       "coarseByForm": {
@@ -97342,6 +101709,18 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "very dark grayish brown"
+        ],
+        "moist": [
+          "very dark brown"
+        ],
+        "wet": [
+          "very dark brown"
+        ]
+      },
       "phAvg": 7.1,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -97454,7 +101833,7 @@
       "coarseByForm": {
         "on ancient lake bottoms": "sandy",
         "on foothill slopes": "sandy and gravelly and stony",
-        "on flat land beside streams": "stony"
+        "on land along streams": "stony"
       },
       "textures": [
         {
@@ -97478,6 +101857,22 @@
           "landform": "on foothill slopes"
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "dark brown",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "dark brown",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.2,
       "phMin": 6.6,
       "phMax": 7.8,
@@ -97636,6 +102031,21 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "brown",
+          "yellowish brown",
+          "dark grayish brown",
+          "pale brown"
+        ],
+        "moist": [
+          "dark brown"
+        ],
+        "wet": [
+          "dark brown",
+          "brown"
+        ]
+      },
       "phAvg": 8.3,
       "phMin": 7.9,
       "phMax": 9,
@@ -97795,6 +102205,25 @@
           "landform": null
         }
       ],
+      "colors": {
+        "dry": [
+          "dark grayish brown",
+          "gray",
+          "very dark gray",
+          "grayish brown"
+        ],
+        "moist": [
+          "very dark brown",
+          "black",
+          "very dark grayish brown"
+        ],
+        "wet": [
+          "very dark brown",
+          "very dark gray",
+          "black",
+          "very dark grayish brown"
+        ]
+      },
       "phAvg": 7.8,
       "phMin": 6.6,
       "phMax": 10,

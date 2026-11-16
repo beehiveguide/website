@@ -425,7 +425,15 @@
     "section_html": {
       "churches": "<p>Churches include <a href=\"https://www.baptistduchesne.com/\">First Baptist Church</a>, <a href=\"https://www.facebook.com/sthelenscatholichurch/\">Holy Spirit Catholic Mission</a> and The Church of Jesus Christ of Latter-day Saints, which has a <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5305950-01-01\">stake center</a> and <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5033802-01-01\">another meetinghouse</a> at the same intersection.</p>",
       "airports": "<p>The <a href=\"https://duchesnecityut.gov/airport-2/\">Duchesne Municipal Airport</a> serves the city.</p>"
-    }
+    },
+    "add_sections": [
+      {
+        "id": "events",
+        "title": "Community Events",
+        "before": "parks, cemeteries",
+        "html": "<p>The <a href=\"https://duchesnecountyfair.com/\">Duchesne County Fair</a> is held the second week of August.</p>"
+      }
+    ]
   },
   "Fruitland": {
     "lead": "Originally known as Rabbit Gulch, the community's name was changed to Fruitland to entice more settlers to the area.",

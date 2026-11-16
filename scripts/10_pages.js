@@ -225,7 +225,7 @@ const DRAIN_VERB = {
   "somewhat poorly drained": "drain somewhat poorly", "poorly drained": "drain poorly", "very poorly drained": "drain very poorly",
   "somewhat excessively drained": "drain quickly", "excessively drained": "drain very quickly",
 };
-// Soil text opens with "On slopes most suitable for cultivation" only when
+// Soil text opens with "On terrain most suitable for cultivation" only when
 // less than this share of the town's soil counts as arable (08c_soil.js)
 const SCOPE_MAX_SHARE = 0.85;
 // Soil paragraph: what the soil is, topsoil chemistry, problem areas, then
@@ -249,17 +249,63 @@ function soilHtml(t) {
     ? `${n > 2 ? `${items.slice(0, -2).join(", ")}, ` : ""}${items[n - 2]} and ${items[n - 1]}, ${n > 2 ? "the last two" : "both"} ${esc(tx[n - 1].landform)}`
     : listText(items);
   // The scope clause covers everything after it, so it leads the paragraph
-  const scope = s.arableShare < SCOPE_MAX_SHARE ? "On slopes most suitable for cultivation, soils" : "Soils";
+  const scope = s.arableShare < SCOPE_MAX_SHARE ? "On terrain most suitable for cultivation, soils" : "Soils";
+  // Plain textures (no sand or rock in the name) lead; the rest are outliers
+  // named only by what they add: "mostly clay loam and loam with varying
+  // degrees of cobble and sand". Only when no texture carries a place note.
+  const ROCK_WORDS = { cobbly: "cobble", gravelly: "gravel", stony: "stones", bouldery: "boulders", channery: "rock fragments", flaggy: "flagstone" };
+  const rockOf = (x) => Object.keys(ROCK_WORDS).filter((w) => new RegExp(`\\b${w}\\b`).test(x)).map((w) => ROCK_WORDS[w]);
+  const isSandy = (x) => /\bsand(y)?\b/.test(x);
+  const plain = tx.filter((x) => !rockOf(x.texture).length && !isSandy(x.texture));
+  const outliers = tx.filter((x) => rockOf(x.texture).length || isSandy(x.texture));
+  const grouped = !tx.some((x) => x.landform) && plain.length && outliers.length && !tx.some((x) => /^stratified /.test(x.texture));
+  let groupedText = null;
+  if (grouped) {
+    const mods = [];
+    for (const x of outliers) for (const w of rockOf(x.texture)) if (!mods.includes(w)) mods.push(w);
+    if (outliers.some((x) => isSandy(x.texture))) mods.push("sand");
+    groupedText = `${listText(plain.map((x) => esc(x.texture)))} with varying degrees of ${listText(mods)}`;
+  }
   const opening = s.textures[0].pct >= 95
     ? `${scope} are nearly all ${esc(texWord(s.textures[0].texture))}.`
-    : `${scope} are mostly ${textures}.`;
+    : `${scope} are mostly ${groupedText || textures}.`;
 
   // Topsoil: pH class with the average, salt only when slightly saline or
   // worse, organic matter as a class
   const SALINE = (level) => !/^(nonsaline|very slightly saline)$/.test(level);
   const salty = s.ecAvg !== null && SALINE(saltLevel(s.ecAvg)) ? ` and ${saltLevel(s.ecAvg)}` : "";
   const om = s.omAvg !== null ? `, with ${omLevel(s.omAvg)} organic matter` : "";
-  const topsoil = `Topsoil is ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`;
+  // Color first when known: dry colors as named, then only the color families
+  // of the moist colors ("reds and browns"); compounds split into plain colors
+  // except pinkish and yellow ones, which keep their names
+  const famWords = (list) => {
+    const out = [];
+    for (const c of list) {
+      const x = c.replace(/\b(very dark|very pale|very|dark|light|pale|strong)\s+/g, "");
+      const toks = /^(pinkish|pink)/.test(x) || /yellow/.test(x) ? [x] : x.split(" ").map((w) => ({ reddish: "red", grayish: "gray", brownish: "brown" }[w] || w));
+      for (const t of toks) if (!out.includes(t)) out.push(t);
+    }
+    return out;
+  };
+  const plural = (t) => (/s$/.test(t) ? t : `${t}s`);
+  // Moist color families already covered by the dry colors add nothing
+  const dryFam = s.colors ? famWords(s.colors.dry) : [];
+  const newFam = s.colors ? famWords(s.colors.wet).filter((f) => !dryFam.includes(f)) : [];
+  // The wet clause appears only on a real change, not just darkening. Compound
+  // yellow names are split for the comparison so "dark yellowish brown" is brown.
+  const split = (list) => { const o = []; for (const c of list) for (const w of c.replace(/\b(very dark|very pale|very|dark|light|pale|strong)\s+/g, "").split(" ").map((x) => ({ reddish: "red", yellowish: "yellow", grayish: "gray", brownish: "brown" }[x] || x))) if (!o.includes(w)) o.push(w); return o; };
+  const dryS = s.colors ? split(s.colors.dry) : [];
+  const wetS = s.colors ? split(s.colors.wet) : [];
+  const newS = wetS.filter((f) => !dryS.includes(f));
+  const lostGray = dryS.some((f) => f === "gray" || f === "pinkish") && !wetS.includes("gray") && wetS.length > 0;
+  const clause = !s.colors || !wetS.length ? ""
+    : newS.length ? `, darkening to ${listText(newS.map((f) => (f === "yellow" ? (s.colors.wet.find((c) => /yellow/.test(c)) || "yellow").replace(/\b(very dark|very pale|very|dark|light|pale|strong)\s+/g, "") : f)))} in places when moist`
+    : lostGray ? `, becoming darker ${listText(wetS)} when moist`
+    : s.colors.dry.some((c) => /\b(light|pale)\b/.test(c)) ? ", becoming darker when moist" : "";
+  const colorText = !s.colors ? null : `is ${listText(s.colors.dry)}${clause}`;
+  const topsoil = colorText
+    ? `Topsoil ${colorText}. It's ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`
+    : `Topsoil is ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`;
 
   // Problem areas. Most soils first (poor or too-fast drainage, little water),
   // then one sentence per landform, then unplaced hazards. Flooding leads.
@@ -313,7 +359,7 @@ function soilHtml(t) {
   // "Bottomland" is a mass noun, so its verbs are singular ("Bottomland drains poorly")
   // Names that read better as a phrase at the start of a sentence
   const FORM_SUBJECT = { "on ancient lakeshore benches": "Benches formed by ancient lakeshores" };
-  const SINGULAR_FORMS = new Set(["on bottomland", "on flat land beside streams", "on flat land beside streams or lakes", "on land at the foot of slopes"]);
+  const SINGULAR_FORMS = new Set(["on bottomland", "on land along streams", "on land along streams or lakes", "on land at the foot of slopes"]);
   const oneVerb = (v) => v.replace(/flood$/, "floods").replace(/^drain /, "drains ").replace(/^have /, "has ").replace(/^are /, "is ").replace(/^hold /, "holds ");
   for (const [form, verbs] of sorted) {
     const one = SINGULAR_FORMS.has(form);

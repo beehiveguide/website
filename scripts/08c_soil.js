@@ -30,6 +30,8 @@ const MAX_UNIT_SLOPE = 15; // percent; map units named "X to Y percent slopes" w
 const unitMaxSlope = (name) => { const m = /(\d+)\s+to\s+(\d+)\s+percent/i.exec(name || ""); return m ? Number(m[2]) : null; };
 const MIN_ARABLE_ACRES = 10; // towns with less arable land get no soil text
 const MIN_SHARE = 0.01; // components under 1% of arable acres (edge slivers) are left out
+const COLOR_SERIES_SHARE = 0.1; // a soil series counts for topsoil color at 10% of arable acres
+const COLOR_COVERAGE = 0.4; // and the series together must cover 40%
 const TEXTURE_SHARE = 0.1; // textures listed: 10% of arable acres or more
 const TEXTURE_COVERAGE = 0.85; // ...largest first, stopping once the list covers this share
 const HAZARD_FORM_SHARE = 0.5; // flooding, water table or bedrock names a landform only when most (half) of that landform has it
@@ -57,7 +59,7 @@ function plainLandform(form, material, flooding, town) {
   const f = form.toLowerCase();
   if (BY_TOWN[town] && BY_TOWN[town][f]) return BY_TOWN[town][f];
   // Terraces that flood, with no recorded material, sit beside a stream (a lake never floods them)
-  if (f === "terraces" && !material && flooding && flooding !== "None") return "on flat land beside streams";
+  if (f === "terraces" && !material && flooding && flooding !== "None") return "on land along streams";
   if (BY_MATERIAL[f] && BY_MATERIAL[f][material]) return BY_MATERIAL[f][material];
   if (LANDFORM_WORDS[f]) return LANDFORM_WORDS[f];
   unlisted.add(f);
@@ -158,6 +160,23 @@ for (const town of towns) {
   const drainage = shares((c) => c.drainage)[0];
   const awcAvg = wavg(arable, (c) => c.awc);
   const phAvg = wavg(arable, (c) => c.ph[1]);
+  // Topsoil colors from the official series descriptions (surface layer, dry and
+  // moist): series with 10% or more of the arable acres, when together they
+  // cover 40% or more. Moist colors already named for dry soil are dropped.
+  const colorRows = new Map(fs.readFileSync(paths.source("usda", "osd", "series_colors.tsv"), "utf8").trim().split("\n")
+    .map((l) => { const [n, d, m] = l.split("\t"); return [n, { dry: d ? d.split(",") : [], moist: m ? m.split(",") : [] }]; }));
+  const arableAcres = arable.reduce((t, c) => t + c.acres, 0);
+  const bySeries = {};
+  for (const c of arable) if (c.compkind === "Series" && colorRows.has(c.compname)) bySeries[c.compname] = (bySeries[c.compname] || 0) + c.acres;
+  const colorSeries = Object.entries(bySeries).filter(([, a]) => a / arableAcres >= COLOR_SERIES_SHARE).sort((a, b) => b[1] - a[1]);
+  let colors = null;
+  if (colorSeries.reduce((t, [, a]) => t + a, 0) / arableAcres >= COLOR_COVERAGE) {
+    const dry = [], moist = [], wet = [];
+    for (const [n] of colorSeries) for (const x of colorRows.get(n).dry) if (!dry.includes(x)) dry.push(x);
+    for (const [n] of colorSeries) for (const x of colorRows.get(n).moist) if (!dry.includes(x) && !moist.includes(x)) moist.push(x);
+    for (const [n] of colorSeries) for (const x of colorRows.get(n).moist) if (!wet.includes(x)) wet.push(x);
+    colors = { dry, moist, wet };
+  }
   const phMin = Math.min(...arable.map((c) => c.ph[0] ?? c.ph[1]));
   const phMax = Math.max(...arable.map((c) => c.ph[2] ?? c.ph[1]));
   // Landforms that can hold an outlier: any but the home ones. With no clear
@@ -281,7 +300,7 @@ for (const town of towns) {
     town: town.name,
     arableAcres: Math.round(total),
     // Share of the town's soil with data that counts as arable (the page says
-    // "on slopes most suitable for cultivation" only when this is low)
+    // "on terrain most suitable for cultivation" only when this is low)
     arableShare: dataAcres ? round(total / dataAcres, 2) : 1,
     // Share of the town mapped as urban land (built over, no soil data)
     urbanPct: Math.round(
@@ -293,6 +312,7 @@ for (const town of towns) {
     coarseAll: coarseWords(arable), // "sandy and gravelly", or null
     coarseByForm, // the same for each landform
     textures,
+    colors,
     phAvg: round(phAvg, 1),
     phMin,
     phMax,

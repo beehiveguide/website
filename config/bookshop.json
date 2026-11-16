@@ -258,7 +258,6 @@
       "isbn": "9781324091103",
       "title": "Kingdom of Nauvoo",
       "topics": [
-        "general",
         "history"
       ]
     },
@@ -1155,6 +1154,13 @@
       "title": "Moon Utah",
       "topics": [
         "travel"
+      ]
+    },
+    {
+      "isbn": "9780199358229",
+      "title": "Out of Obscurity: Mormonism Since 1945",
+      "topics": [
+        "history"
       ]
     }
   ]
