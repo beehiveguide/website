@@ -301,9 +301,27 @@ function soilHtml(t) {
     : lostGray ? `, becoming darker ${listText(wetS)} when moist`
     : s.colors.dry.some((c) => /\b(light|pale)\b/.test(c)) ? ", becoming darker when moist" : "";
   const colorText = !s.colors ? null : `is ${listText(s.colors.dry)}${clause ? ` (${clause.slice(2)})` : ""}`;
+  // Mixed pH (see 08c_soil.js): each group's own range instead of an average, largest first
+  const phRange = (g) => `pH ${g.lo === g.hi ? g.lo.toFixed(1) : `${g.lo.toFixed(1)} to ${g.hi.toFixed(1)}`}`;
+  const splitPlace = `the ${t.placeType === "city" || t.placeType === "town" ? t.placeType : "area"}`;
+  const splitList = s.phSplit
+    ? s.phSplit.map((g, i) => `${i ? "parts " : ""}${g.level} (${phRange(g)})`)
+    : [];
+  // Two groups: "The pH averages neutral, ranging from 6.7 (neutral) to 7.5 (slightly alkaline)."
+  // Three groups: each listed with its own range
+  const acidic = (w) => w.replace(/\bacid\b/, "acidic");
+  const phLo = s.phSplit ? Math.min(...s.phSplit.map((g) => g.lo)) : null;
+  const phHi = s.phSplit ? Math.max(...s.phSplit.map((g) => g.hi)) : null;
+  const phSentence = !s.phSplit ? null
+    : s.phSplit.length === 2
+      ? `The pH averages ${acidic(phLevel(s.phAvg))}, ranging from ${phLo.toFixed(1)} (${acidic(phLevel(phLo))}) to ${phHi.toFixed(1)} (${acidic(phLevel(phHi))}).`
+      : `Parts of ${splitPlace} are ${splitList.join(", ").replace(/, ([^,]*)$/, " and $1")}.`;
+  const phPart = s.phSplit
+    ? `${s.omAvg !== null ? `${colorText ? "It has" : "Topsoil has"} ${omLevel(s.omAvg)} organic matter${salty ? ` and is ${saltLevel(s.ecAvg)}` : ""}. ` : ""}${phSentence}`
+    : null;
   const topsoil = colorText
-    ? `Topsoil ${colorText}. It's ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`
-    : `Topsoil is ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`;
+    ? `Topsoil ${colorText}. ${phPart || `It's ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`}`
+    : phPart || `Topsoil is ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`;
 
   // Problem areas. Most soils first (poor or too-fast drainage, little water),
   // then one sentence per landform, then unplaced hazards. Flooding leads.
@@ -346,7 +364,7 @@ function soilHtml(t) {
   const dvPoor = dv && dist(dv.drainage) >= 1 && dist(dv.drainage) > dist(s.drainage) && DRAIN_VERB[dv.drainage];
   const floodDrainTogether = Boolean(fl && !fl.landform && dvPoor && dv.landform === "on floodplains");
   if (dvPoor && !floodDrainTogether) add(dv.landform, 1, DRAIN_VERB[dv.drainage]);
-  if (placedAt(wt)) add(wt.landform, 2, "have a high water table (within 2 feet)");
+  if (placedAt(wt)) add(wt.landform, 2, "have a high water table");
   if (sv && SALINE(sv.level)) add(sv.landform, 3, `are ${sv.level}`);
   if (av && av.awc < 0.1 && av.awc < s.awcAvg) add(av.landform, 4, "hold little water");
   // At most three problems per sentence; the rest follow as "They also ..."
@@ -377,7 +395,7 @@ function soilHtml(t) {
   // Hazards with no clear place
   const loose = [];
   if (fl && !fl.landform || (fl && fl.landform && mainForms.includes(fl.landform) && fl.landform !== "on floodplains")) loose.push(floodDrainTogether ? `${floodVerb} and ${DRAIN_VERB[dv.drainage]}` : floodVerb);
-  if (wt && !placedAt(wt)) loose.push("have a high water table (within 2 feet)");
+  if (wt && !placedAt(wt)) loose.push("have a high water table");
   if (loose.length) problems.push(`Parts of ${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}` : "the area"} ${loose.join(" or ")}.`);
   const BEDROCK_SKIP = new Set(["on rock benches", "on plateaus", "on mesas", "on ridges"]);
   if (s.bedrock && !BEDROCK_SKIP.has(s.bedrock.landform)) problems.push(`Bedrock lies within 20 inches ${placedAt(s.bedrock) ? esc(s.bedrock.landform) : "in some areas"}.`);
@@ -392,17 +410,21 @@ function soilHtml(t) {
   const place = `the ${t.placeType === "city" || t.placeType === "town" ? t.placeType : "area"}`;
   const pctOf = (pct) => (pct >= 95 ? "nearly all" : `${pct}%`);
   const farm = [];
-  // "Farmland rated prime with irrigation covers 41% of the city, and 10% is rated of
-  // statewide importance." Prime is "with irrigation" when most of it is prime
+  // 'USDA rates 41% of the city “prime farmland if irrigated” and 10% “farmland of
+  // statewide importance.”' (USDA class names, quoted). Prime is "if irrigated" when most of it is prime
   // only if irrigated.
   const irrigated = f.prime > 0 && f.primeIfIrrigated >= f.prime * 0.8;
+  const primeName = `\u201Cprime farmland${irrigated ? " if irrigated" : ""}\u201D`;
+  const statewideName = "\u201Cfarmland of statewide importance.\u201D";
   if (f.prime > 0)
     farm.push(
-      `Farmland rated prime${irrigated ? " with irrigation" : ""} covers ${pctOf(f.prime)} of ${place}${f.statewide > 0 ? `, and ${f.statewide}% is rated of statewide importance` : ""}.`,
+      f.statewide > 0
+        ? `USDA rates ${pctOf(f.prime)} of ${place} ${primeName} and ${f.statewide}% ${statewideName}`
+        : `USDA rates ${pctOf(f.prime)} of ${place} \u201Cprime farmland${irrigated ? " if irrigated." : "."}\u201D`,
     );
-  else if (f.statewide > 0) farm.push(`${f.statewide >= 95 ? "Nearly all" : `${f.statewide}%`} of ${place} is rated farmland of statewide importance.`);
+  else if (f.statewide > 0) farm.push(`USDA rates ${f.statewide >= 95 ? "nearly all" : `${f.statewide}%`} of ${place} ${statewideName}`);
 
-  const rockSentence = s.rock ? `It's generally ${s.rock.degree} ${listText(s.rock.words)} as well.` : null;
+  const rockSentence = s.rock ? `It's also ${s.rock.degree} ${listText(s.rock.words)}.` : null;
   const sentences = [opening, ...(rockSentence ? [rockSentence] : []), topsoil, ...problems, ...farm];
   return `<h3 class="soil-heading h4 mt-4 mb-2">Soil Properties</h3>
     <p class="mb-0">${sentences.join(" ")}</p>`;

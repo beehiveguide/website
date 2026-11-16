@@ -185,6 +185,22 @@ for (const town of towns) {
     for (const [n] of colorSeries) for (const x of colorRows.get(n).moist) if (!wet.includes(x)) wet.push(x);
     colors = { dry, moist, wet };
   }
+  // Mixed pH: when two of the three groups (acidic, neutral, alkaline) each cover 15% or
+  // more of the arable land, an average hides it, so give each group's own range
+  // (groups: acidic under 6.6, neutral 6.6-7.3, alkaline over 7.3), largest first
+  const PH_SPLIT_SHARE = 0.15;
+  const phGroups = [[], [], []];
+  for (const c of arable) phGroups[c.ph[1] < 6.6 ? 0 : c.ph[1] <= 7.3 ? 1 : 2].push(c);
+  const phShare = (g) => g.reduce((a, c) => a + c.acres, 0) / total;
+  const phSplit = phGroups.filter((g) => phShare(g) >= PH_SPLIT_SHARE).length >= 2
+    ? phGroups.filter((g) => g.length).map((g) => {
+        const avg = wavg(g, (c) => c.ph[1]);
+        const lo = Math.min(...g.map((c) => c.ph[1])), hi = Math.max(...g.map((c) => c.ph[1]));
+        // Name the group by its own pH level; a group that spans levels gets the plain word
+        const level = phLevel(lo) === phLevel(hi) ? phLevel(avg).replace(/\bacid\b/, "acidic") : ["acidic", "neutral", "alkaline"][phGroups.indexOf(g)];
+        return { level, lo: round(Math.min(...g.map((c) => c.ph[1])), 1), hi: round(Math.max(...g.map((c) => c.ph[1])), 1), share: phShare(g) };
+      }).sort((a, b) => b.share - a.share)
+    : null;
   const phMin = Math.min(...arable.map((c) => c.ph[0] ?? c.ph[1]));
   const phMax = Math.max(...arable.map((c) => c.ph[2] ?? c.ph[1]));
   // Landforms that can hold an outlier: any but the home ones. With no clear
@@ -323,6 +339,7 @@ for (const town of towns) {
     rock,
     colors,
     phAvg: round(phAvg, 1),
+    phSplit: phSplit ? phSplit.map(({ level, lo, hi }) => ({ level, lo, hi })) : null,
     phMin,
     phMax,
     // The end with more land behind it is named first on the page
