@@ -27,5 +27,17 @@
   "Utahn": {
     "name": "Duchesne Fire Department",
     "url": "https://duchesne.utah.gov/duchesne-county-firefighter-services/"
+  },
+  "Randlett": {
+    "name": "Avalon Fire Department",
+    "url": ""
+  },
+  "Leota": {
+    "name": "Avalon Fire Department",
+    "url": ""
+  },
+  "Ouray": {
+    "name": "Avalon Fire Department",
+    "url": ""
   }
 }

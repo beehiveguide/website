@@ -89,6 +89,13 @@
       "city": "Duchesne",
       "town": "Utahn",
       "note": "UGRC files it under Duchesne, but it is in Utahn."
+    },
+    {
+      "cemetery": "Leota Cemetery",
+      "city": "Randlett",
+      "town": "Leota",
+      "note": "UGRC files it under Randlett, but it is in Leota.",
+      "also_nearby": "Randlett"
     }
   ],
   "parks_to_cemeteries": [
@@ -97,6 +104,13 @@
       "town": "Roosevelt",
       "url": "https://www.rooseveltcity.gov/165/Cemetery",
       "note": "UGRC lists it as a park, but it is the city cemetery."
+    }
+  ],
+  "cemetery_nearby": [
+    {
+      "cemetery": "Avalon Cemetery",
+      "town": "Randlett",
+      "note": "Not in town; wording says nearby."
     }
   ]
 }

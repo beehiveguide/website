@@ -43187,7 +43187,16 @@
     "soil": null,
     "postOfficeUrl": "",
     "schools": null,
-    "places": null,
+    "places": {
+      "cemeteries": [
+        {
+          "name": "Leota Cemetery",
+          "note": "",
+          "url": "https://www.google.com/maps?q=40.192925,-109.640198",
+          "year": "1926"
+        }
+      ]
+    },
     "services": {
       "water": [
         {
@@ -69472,13 +69481,15 @@
           "name": "Avalon Cemetery",
           "note": "",
           "url": "https://www.google.com/maps?q=40.236731,-109.802831",
-          "year": "1924"
+          "year": "1924",
+          "nearby": true
         },
         {
           "name": "Leota Cemetery",
           "note": "",
           "url": "https://www.google.com/maps?q=40.192925,-109.640198",
-          "year": "1926"
+          "year": "1926",
+          "nearby": true
         }
       ]
     },

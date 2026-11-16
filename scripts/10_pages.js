@@ -1101,7 +1101,7 @@ function safetyText(t) {
   const policeText = navajoFirst ? [tribal, county] : [first, tribal];
   // Fire department set by hand (config/fire_departments.json) when UGRC lists none
   const fd = fireDepts[t.name];
-  const fire = fireText(t).sentences.length || !fd ? fireText(t).sentences : [`The <a href="${esc(fd.url)}">${esc(fd.name)}</a> provides fire protection.`];
+  const fire = fireText(t).sentences.length || !fd ? fireText(t).sentences : [`The ${fd.url ? `<a href="${esc(fd.url)}">${esc(fd.name)}</a>` : esc(fd.name)} provides fire protection.`];
   const text = [...policeText, ...fire]
     .filter(Boolean)
     .join(" ");
@@ -1144,12 +1144,12 @@ function cemeteryHtml(t) {
     // "The Redmond Cemetery, located in the city, dates to 1876."
     const nm = c.link ? `<a href="${esc(c.link)}">${esc(c.name)}</a>` : esc(c.name);
     const name = /Cemetery$/.test(c.name) && !/^the /i.test(c.name) ? `The ${nm}` : nm;
-    return `<p>${name}${c.year ? `, located in ${placeWord(t)}, dates to ${c.year}.` : ` is ${/cemetery|graveyard/i.test(c.name) ? "" : "a cemetery "}located in ${placeWord(t)}.`}</p>`;
+    return `<p>${name}${c.year ? `, located ${c.nearby ? "nearby" : `in ${placeWord(t)}`}, dates to ${c.year}.` : ` is ${/cemetery|graveyard/i.test(c.name) ? "" : "a cemetery "}located ${c.nearby ? "nearby" : `in ${placeWord(t)}`}.`}</p>`;
   }
   const items = list.map((c) => (c.link ? `<a href="${esc(c.link)}">${esc(c.name)}</a>` : esc(c.name)) + (c.year ? ` (${c.year})` : ""));
   if (list.length > BIG_LIST)
     return `<ul class="col-list">\n      ${items.map((c) => `<li>${c}</li>`).join("\n      ")}\n    </ul>`;
-  return `<p>Cemeteries include ${listText(items)}.</p>`;
+  return `<p>${list.every((c) => c.nearby) ? "Nearby cemeteries" : "Cemeteries"} include ${listText(items)}.</p>`;
 }
 
 // Generic park names are counted by kind ("three ballparks"); plain "Park"
@@ -1776,9 +1776,10 @@ function servicesHtml(t) {
   }
   // Hand-written body for any generated section, by its word (town_content.json "section_html": {"churches": "...", "colleges": "...", "hospitals": "..."})
   if (custom && custom.section_html)
-    Object.entries(custom.section_html).forEach(([word, html]) => {
+    Object.entries(custom.section_html).forEach(([word, val]) => {
+      const html = typeof val === "object" ? val.html : val; // {title, html} also renames the section
       const sc = sections.find(([, w]) => w === word);
-      if (sc) { sc[2] = customHtml(html); if (word !== "trails") sc[3] = []; } // trail data still comes from UGRC
+      if (sc) { sc[2] = customHtml(html); if (typeof val === "object" && val.title) sc[0] = val.title; if (word !== "trails") sc[3] = []; } // trail data still comes from UGRC
     });
   // Move a generated section in front of another (town_content.json "move_before": {"airports": "hospitals"})
   if (custom && custom.move_before)

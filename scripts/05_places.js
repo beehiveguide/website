@@ -112,8 +112,14 @@ for (const f of readGeoJson("Cemeteries")) {
   const move = (require("./lib/paths").readJson(require("./lib/paths").config("corrections.json")).cemetery_towns || []).find((x) => x.cemetery === p.Cemetery.trim() && x.city === p.City);
   add("cemeteries", move ? move.town : p.City, f.geometry, {
     name: p.Cemetery.trim().replace(/\s+-\s+[^-]+$/, ""), note: "", url, year: fix ? fix.year : year ? year[0] : "",
+    nearby: (((require("./lib/paths").readJson(require("./lib/paths").config("corrections.json"))).cemetery_nearby || []).some((x) => x.cemetery === p.Cemetery.trim() && x.town.toLowerCase() === String(move ? move.town : p.City).toLowerCase())) || undefined,
     link: (((require("./lib/paths").readJson(require("./lib/paths").config("corrections.json"))).parks_to_cemeteries || []).find((x) => x.park === p.Cemetery.trim() && x.town.toLowerCase() === String(p.City).toLowerCase()) || {}).url || undefined,
   });
+  // Also listed as "nearby" on another community's page (corrections.json "cemetery_towns" "also_nearby")
+  if (move && move.also_nearby)
+    add("cemeteries", move.also_nearby, f.geometry, {
+      name: p.Cemetery.trim().replace(/\s+-\s+[^-]+$/, ""), note: "", url, year: fix ? fix.year : year ? year[0] : "", nearby: true,
+    });
 }
 
 // --- Libraries (type shown when not a regular public library)

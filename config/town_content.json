@@ -545,5 +545,52 @@
         "html": "<p>The <a href=\"https://ushpo.utah.gov/cemetery/\">Altamont-Mount Emmons Cemetery</a> is located off State Route 87 just west of <a href=\"altamont.html\">Altamont</a>.</p>"
       }
     ]
+  },
+  "Whiterocks": {
+    "schools_html": "<p><a href=\"https://www.utetribe.com/departments/head-start.html\">Whiterocks Head Start Center</a> (prekindergarten) is a preschool operated by the Ute Tribe.</p>",
+    "section_html": {
+      "churches": {
+        "title": "Churches",
+        "html": "<p>The community is home to the <a href=\"https://maps.churchofjesuschrist.org/wards/151556\">Whiterocks Branch</a> of The Church of Jesus Christ of Latter-day Saints, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt West Stake</a>. <a href=\"https://www.stelizabethsut.org/\">St. Elizabeth&rsquo;s Episcopal Church</a> is also located in the community.</p>"
+      }
+    },
+    "add_sections": [
+      {
+        "id": "events",
+        "title": "Community Events",
+        "before": "parks, cemeteries",
+        "html": "<p>A Ute Bear Dance has traditionally been held in Whiterocks in spring.</p>"
+      },
+      {
+        "id": "community-center",
+        "title": "Community Center and Park",
+        "before": "parks, cemeteries",
+        "html": "<p>The Whiterocks Community and Broadband Center serves the area&rsquo;s residents. The community also has a gymnasium and a park with a small playground.</p>"
+      }
+    ]
+  },
+  "Randlett": {
+    "section_html": {
+      "churches": "<p>The <a href=\"https://www.stelizabethsut.org/\">Church of the Holy Spirit</a> (Episcopal) is located in Randlett. Latter-day Saints in the community meet as part of the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a>, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+    },
+    "add_sections": [
+      {
+        "id": "events",
+        "title": "Community Events",
+        "before": "parks, cemeteries",
+        "html": "<p>A Ute Bear Dance is held in Randlett each spring.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p><a href=\"https://www.facebook.com/randlettmerc/\">Randlett Merc.</a> has a convenience store, a cafe and a bakery. The nearby <a href=\"https://hitchinpostcafe.com/\">Hitchin Post Cafe</a> serves breakfast, lunch and dinner and has a small convenience store.</p>"
+      },
+      {
+        "id": "park",
+        "title": "Community Center and Park",
+        "before": "parks, cemeteries",
+        "html": "<p>The Randlett Community Center and Park serves the area.</p>"
+      }
+    ]
   }
 }
