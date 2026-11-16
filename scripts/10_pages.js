@@ -1797,8 +1797,11 @@ function servicesHtml(t) {
       const at = c.before ? sections.findIndex(([, word]) => word === c.before) : -1;
       sections.splice(at < 0 ? sections.length : at, 0, [c.title, c.id, customHtml(c.html), []]);
     });
+  // Hide generated sections for now (town_content.json "hide_sections": ["schools"]); the text stays in the config
+  const hidden = (custom && custom.hide_sections) || [];
+  for (let i = sections.length - 1; i >= 0; i--) if (hidden.includes(sections[i][1])) sections.splice(i, 1);
   // Duchesne County is one school district: towns with no school listed say so
-  if (t.county === "Duchesne" && !sections.some(([, word]) => word === "schools")) {
+  if (t.county === "Duchesne" && !hidden.includes("schools") && !sections.some(([, word]) => word === "schools")) {
     const dist = schoolDistricts["Duchesne District"];
     const at = sections.findIndex(([, word]) => ["libraries", "colleges", "hospitals", "airports", "churches", "businesses", "trails"].includes(word));
     sections.splice(at < 0 ? sections.length : at, 0, [
