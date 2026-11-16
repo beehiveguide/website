@@ -315,7 +315,7 @@ function soilHtml(t) {
       ? `Soil pH averages ${acidic(phLevel(s.phAvg))}, ranging from ${phLo.toFixed(1)} (${acidic(phLevel(phLo))}) to ${phHi.toFixed(1)} (${acidic(phLevel(phHi))})${salty}.`
       : `Portions of the soil are ${splitList.join(", ").replace(/, ([^,]*)$/, " and $1")}${salty}.`;
   const topsoil = colorText
-    ? `Topsoil ${colorText}${om}. ${phSentence}`
+    ? `Topsoil ${s.omAvg !== null ? `has ${omLevel(s.omAvg)} organic matter and ` : ""}${colorText}. ${phSentence}`
     : `${s.omAvg !== null ? `Topsoil has ${omLevel(s.omAvg)} organic matter. ` : ""}${phSentence}`;
 
   // Problem areas. Most soils first (poor or too-fast drainage, little water),
