@@ -234,8 +234,8 @@ function soilHtml(t) {
   const s = t.soil;
   if (!s) return "";
   // Place notes mark outliers only (08c_soil.js) and mean "mostly there".
-  // Textures: "loamy fine sand on benches (14%)". The last two sharing a place
-  // read "sandy loam (19%) and loam (10%), both on valley floors".
+  // Textures: "loamy fine sand on benches", with no percentages. The last two sharing a place
+  // read "sandy loam and loam, both on valley floors".
   const tx = s.textures;
   const n = tx.length;
   const shareLast = n >= 2 && tx[n - 1].landform && tx[n - 1].landform === tx[n - 2].landform;
@@ -243,8 +243,8 @@ function soilHtml(t) {
   const texWord = (x) => (/^stratified /.test(x) ? "layered soils" : x);
   const items = tx.map((x, i) =>
     x.landform && !(shareLast && i >= n - 2)
-      ? `${esc(texWord(x.texture))} ${esc(x.landform)} (${x.pct}%)`
-      : `${esc(texWord(x.texture))} (${x.pct}%)`);
+      ? `${esc(texWord(x.texture))} ${esc(x.landform)}`
+      : `${esc(texWord(x.texture))}`);
   const textures = shareLast
     ? `${n > 2 ? `${items.slice(0, -2).join(", ")}, ` : ""}${items[n - 2]} and ${items[n - 1]}, ${n > 2 ? "the last two" : "both"} ${esc(tx[n - 1].landform)}`
     : listText(items);
@@ -391,19 +391,19 @@ function soilHtml(t) {
   const loose = [];
   if (fl && !fl.landform || (fl && fl.landform && mainForms.includes(fl.landform) && fl.landform !== "on floodplains")) loose.push(floodDrainTogether ? `${floodVerb} and ${DRAIN_VERB[dv.drainage]}` : floodVerb);
   if (wt && !placedAt(wt)) loose.push("have a high water table");
-  if (loose.length) problems.push(`Parts of ${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}` : "the area"} ${loose.join(" or ")}.`);
+  if (loose.length) problems.push(`Parts of ${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}` : "the community"} ${loose.join(" or ")}.`);
   const BEDROCK_SKIP = new Set(["on rock benches", "on plateaus", "on mesas", "on ridges"]);
-  const bedrockSentence = s.bedrock && !BEDROCK_SKIP.has(s.bedrock.landform) ? `Bedrock lies within 20 inches ${placedAt(s.bedrock) ? esc(s.bedrock.landform) : "in some areas"}.` : null;
+  const bedrockSentence = s.bedrock && !BEDROCK_SKIP.has(s.bedrock.landform) ? `Bedrock lies within 20 inches ${placedAt(s.bedrock) ? esc(s.bedrock.landform) : "in places"}.` : null;
 
-  const pan = (x) => (placedAt(x) ? esc(x.landform) : "in some areas");
+  const pan = (x) => (placedAt(x) ? esc(x.landform) : "in places");
   // Hardpan goes right after the rockiness sentence, since it is about the soil's makeup
   const hardpanSentence = s.hardpan ? `Hardpan lies within 20 inches ${pan(s.hardpan)}.` : null;
   const claypanSentence = s.claypan ? `Claypan lies within 20 inches ${pan(s.claypan)}.` : null;
 
   // Farmland shares are of the whole town (08c_soil.js)
   const f = s.farmland;
-  // "the city", "the town" or "the area"
-  const place = `the ${t.placeType === "city" || t.placeType === "town" ? t.placeType : "area"}`;
+  // "the area within city limits" or "the area within town limits"
+  const place = `the area within ${t.placeType === "city" ? "city" : "town"} limits`;
   const pctOf = (pct) => (pct >= 95 ? "nearly all" : `${pct}%`);
   const farm = [];
   // 'USDA rates 41% of the city “prime farmland if irrigated” and 10% “farmland of
