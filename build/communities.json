@@ -781,7 +781,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -1387,7 +1388,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -2362,7 +2364,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -4559,7 +4562,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -6512,7 +6516,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -8533,7 +8538,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -9405,7 +9411,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -9690,7 +9697,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -10557,7 +10565,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -10795,7 +10804,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -12081,7 +12091,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -14765,7 +14776,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -15555,7 +15567,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -17528,7 +17541,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -19898,7 +19912,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -20694,7 +20709,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": null
       },
       "colors": null,
       "phAvg": 8.5,
@@ -24240,7 +24256,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -25342,7 +25359,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -25892,7 +25910,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -29675,7 +29694,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -31724,7 +31744,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -35273,7 +35294,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -35709,7 +35731,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": null,
       "phAvg": 7,
@@ -38581,7 +38604,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -39081,7 +39105,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -39232,7 +39257,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -41707,7 +41733,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -43559,7 +43586,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -46740,7 +46768,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -47026,7 +47055,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -48013,7 +48043,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": null,
       "phAvg": 8.3,
@@ -51498,7 +51529,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -51756,7 +51788,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -52930,7 +52963,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -53494,7 +53528,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -55081,7 +55116,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": null
       },
       "colors": {
         "dry": [
@@ -60691,7 +60727,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -62442,7 +62479,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -67489,7 +67527,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -70865,7 +70904,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -80018,7 +80058,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "some"
       },
       "colors": {
         "dry": [
@@ -84621,7 +84662,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -85811,7 +85853,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -92236,7 +92279,8 @@
         "words": [
           "gravelly",
           "cobbly"
-        ]
+        ],
+        "cover": null
       },
       "colors": null,
       "phAvg": 7.2,
@@ -92401,7 +92445,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -93212,7 +93257,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -96283,7 +96329,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -97328,7 +97375,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [
@@ -103407,7 +103455,8 @@
         "degree": "somewhat",
         "words": [
           "gravelly"
-        ]
+        ],
+        "cover": "most"
       },
       "colors": {
         "dry": [

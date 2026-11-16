@@ -393,11 +393,12 @@ function soilHtml(t) {
   if (wt && !placedAt(wt)) loose.push("have a high water table");
   if (loose.length) problems.push(`Parts of ${t.placeType === "city" || t.placeType === "town" ? `the ${t.placeType}` : "the area"} ${loose.join(" or ")}.`);
   const BEDROCK_SKIP = new Set(["on rock benches", "on plateaus", "on mesas", "on ridges"]);
-  if (s.bedrock && !BEDROCK_SKIP.has(s.bedrock.landform)) problems.push(`Bedrock lies within 20 inches ${placedAt(s.bedrock) ? esc(s.bedrock.landform) : "in some areas"}.`);
+  const bedrockSentence = s.bedrock && !BEDROCK_SKIP.has(s.bedrock.landform) ? `Bedrock lies within 20 inches ${placedAt(s.bedrock) ? esc(s.bedrock.landform) : "in some areas"}.` : null;
 
   const pan = (x) => (placedAt(x) ? esc(x.landform) : "in some areas");
-  if (s.hardpan) problems.push(`Hardpan lies within 20 inches ${pan(s.hardpan)}.`);
-  if (s.claypan) problems.push(`Claypan lies within 20 inches ${pan(s.claypan)}.`);
+  // Hardpan goes right after the rockiness sentence, since it is about the soil's makeup
+  const hardpanSentence = s.hardpan ? `Hardpan lies within 20 inches ${pan(s.hardpan)}.` : null;
+  const claypanSentence = s.claypan ? `Claypan lies within 20 inches ${pan(s.claypan)}.` : null;
 
   // Farmland shares are of the whole town (08c_soil.js)
   const f = s.farmland;
@@ -419,8 +420,8 @@ function soilHtml(t) {
     );
   else if (f.statewide > 0) farm.push(`USDA rates ${f.statewide >= 95 ? "nearly all" : `${f.statewide}%`} of ${place} ${statewideName}`);
 
-  const rockSentence = s.rock ? `It's also ${s.rock.degree} ${listText(s.rock.words)}.` : null;
-  const sentences = [opening, ...(rockSentence ? [rockSentence] : []), topsoil, ...problems, ...farm];
+  const rockSentence = s.rock ? `It's also ${s.rock.degree} ${listText(s.rock.words)}${s.rock.cover ? ` in ${s.rock.cover} areas` : ""}.` : null;
+  const sentences = [opening, ...(rockSentence ? [rockSentence] : []), ...(bedrockSentence ? [bedrockSentence] : []), ...(hardpanSentence ? [hardpanSentence] : []), ...(claypanSentence ? [claypanSentence] : []), topsoil, ...problems, ...farm];
   return `<h3 class="soil-heading h4 mt-4 mb-2">Soil Properties</h3>
     <p class="mb-0">${sentences.join(" ")}</p>`;
 }

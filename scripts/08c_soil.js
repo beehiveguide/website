@@ -169,7 +169,11 @@ for (const town of towns) {
   const cobblePct = wavg(arable, (c) => c.rootCobbleRockPct || 0); // cobbles and stones, 75 mm and up
   const stonePct = wavg(arable, (c) => c.rootBigRockPct || 0); // stones, 250 mm and up
   const rockDegree = rockPct >= 60 ? "extremely" : rockPct >= 35 ? "very" : rockPct >= 15 ? "somewhat" : null;
-  const rock = rockDegree ? { degree: rockDegree, words: ["gravelly", ...(cobblePct >= 5 ? ["cobbly"] : []), ...(stonePct >= 3 ? ["stony"] : [])] } : null;
+  // How widespread: the share of arable land that is rocky (15% rock or more) decides
+  // "in some areas" (under 50%), "in most areas" (50-90%) or nothing (90% or more)
+  const rockyAcres = arable.filter((c) => (c.rootRockPct || 0) >= 15).reduce((t, c) => t + c.acres, 0);
+  const rockyShare = rockyAcres / arable.reduce((t, c) => t + c.acres, 0);
+  const rock = rockDegree ? { degree: rockDegree, words: ["gravelly", ...(cobblePct >= 5 ? ["cobbly"] : []), ...(stonePct >= 3 ? ["stony"] : [])], cover: rockyShare >= 0.9 ? null : rockyShare >= 0.5 ? "most" : "some" } : null;
   // Topsoil colors from the official series descriptions (surface layer, dry and
   // moist): series with 10% or more of the arable acres, when together they
   // cover 40% or more. Moist colors already named for dry soil are dropped.
