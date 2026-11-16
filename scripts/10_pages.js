@@ -301,27 +301,22 @@ function soilHtml(t) {
     : lostGray ? `, becoming darker ${listText(wetS)} when moist`
     : s.colors.dry.some((c) => /\b(light|pale)\b/.test(c)) ? ", becoming darker when moist" : "";
   const colorText = !s.colors ? null : `is ${listText(s.colors.dry)}${clause ? ` (${clause.slice(2)})` : ""}`;
-  // Mixed pH (see 08c_soil.js): each group's own range instead of an average, largest first
-  const phRange = (g) => `pH ${g.lo === g.hi ? g.lo.toFixed(1) : `${g.lo.toFixed(1)} to ${g.hi.toFixed(1)}`}`;
-  const splitPlace = `the ${t.placeType === "city" || t.placeType === "town" ? t.placeType : "area"}`;
-  const splitList = s.phSplit
-    ? s.phSplit.map((g, i) => `${i ? "parts " : ""}${g.level} (${phRange(g)})`)
-    : [];
-  // Two groups: "The pH averages neutral, ranging from 6.7 (neutral) to 7.5 (slightly alkaline)."
+  // Organic matter belongs to the topsoil; pH is for the soil as a whole (top 20 inches).
+  // Two pH groups: "Soil pH averages neutral, ranging from 6.7 (neutral) to 7.5 (slightly alkaline)."
   // Three groups: each listed with its own range
   const acidic = (w) => w.replace(/\bacid\b/, "acidic");
+  const phRange = (g) => `pH ${g.lo === g.hi ? g.lo.toFixed(1) : `${g.lo.toFixed(1)} to ${g.hi.toFixed(1)}`}`;
   const phLo = s.phSplit ? Math.min(...s.phSplit.map((g) => g.lo)) : null;
   const phHi = s.phSplit ? Math.max(...s.phSplit.map((g) => g.hi)) : null;
-  const phSentence = !s.phSplit ? null
+  const splitList = s.phSplit ? s.phSplit.map((g, i) => `${i ? "portions " : ""}${g.level} (${phRange(g)})`) : [];
+  const phSentence = !s.phSplit
+    ? `Soil is ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}.`
     : s.phSplit.length === 2
-      ? `The pH averages ${acidic(phLevel(s.phAvg))}, ranging from ${phLo.toFixed(1)} (${acidic(phLevel(phLo))}) to ${phHi.toFixed(1)} (${acidic(phLevel(phHi))}).`
-      : `Parts of ${splitPlace} are ${splitList.join(", ").replace(/, ([^,]*)$/, " and $1")}.`;
-  const phPart = s.phSplit
-    ? `${s.omAvg !== null ? `${colorText ? "It has" : "Topsoil has"} ${omLevel(s.omAvg)} organic matter${salty ? ` and is ${saltLevel(s.ecAvg)}` : ""}. ` : ""}${phSentence}`
-    : null;
+      ? `Soil pH averages ${acidic(phLevel(s.phAvg))}, ranging from ${phLo.toFixed(1)} (${acidic(phLevel(phLo))}) to ${phHi.toFixed(1)} (${acidic(phLevel(phHi))})${salty}.`
+      : `Portions of the soil are ${splitList.join(", ").replace(/, ([^,]*)$/, " and $1")}${salty}.`;
   const topsoil = colorText
-    ? `Topsoil ${colorText}. ${phPart || `It's ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`}`
-    : phPart || `Topsoil is ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`;
+    ? `Topsoil ${colorText}${om}. ${phSentence}`
+    : `${s.omAvg !== null ? `Topsoil has ${omLevel(s.omAvg)} organic matter. ` : ""}${phSentence}`;
 
   // Problem areas. Most soils first (poor or too-fast drainage, little water),
   // then one sentence per landform, then unplaced hazards. Flooding leads.

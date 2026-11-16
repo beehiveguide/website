@@ -159,7 +159,9 @@ for (const town of towns) {
 
   const drainage = shares((c) => c.drainage)[0];
   const awcAvg = wavg(arable, (c) => c.awc);
-  const phAvg = wavg(arable, (c) => c.ph[1]);
+  // pH is for the root zone (top 20 inches, depth-weighted) when the survey has it, else the surface horizon
+  const rootPh = (c) => c.rootPh ?? c.ph[1];
+  const phAvg = wavg(arable, rootPh);
   // Rockiness: rock fragments (% of the soil by volume, top 20 inches), acre-weighted.
   // Levels follow the survey's texture modifiers: gravelly/cobbly 15-35%, very 35-60%,
   // extremely 60% or more. Stones and cobbles are named when large rock is 5% or more.
@@ -190,15 +192,15 @@ for (const town of towns) {
   // (groups: acidic under 6.6, neutral 6.6-7.3, alkaline over 7.3), largest first
   const PH_SPLIT_SHARE = 0.15;
   const phGroups = [[], [], []];
-  for (const c of arable) phGroups[c.ph[1] < 6.6 ? 0 : c.ph[1] <= 7.3 ? 1 : 2].push(c);
+  for (const c of arable) phGroups[rootPh(c) < 6.6 ? 0 : rootPh(c) <= 7.3 ? 1 : 2].push(c);
   const phShare = (g) => g.reduce((a, c) => a + c.acres, 0) / total;
   const phSplit = phGroups.filter((g) => phShare(g) >= PH_SPLIT_SHARE).length >= 2
     ? phGroups.filter((g) => g.length).map((g) => {
-        const avg = wavg(g, (c) => c.ph[1]);
-        const lo = Math.min(...g.map((c) => c.ph[1])), hi = Math.max(...g.map((c) => c.ph[1]));
+        const avg = wavg(g, rootPh);
+        const lo = Math.min(...g.map(rootPh)), hi = Math.max(...g.map(rootPh));
         // Name the group by its own pH level; a group that spans levels gets the plain word
         const level = phLevel(lo) === phLevel(hi) ? phLevel(avg).replace(/\bacid\b/, "acidic") : ["acidic", "neutral", "alkaline"][phGroups.indexOf(g)];
-        return { level, lo: round(Math.min(...g.map((c) => c.ph[1])), 1), hi: round(Math.max(...g.map((c) => c.ph[1])), 1), share: phShare(g) };
+        return { level, lo: round(lo, 1), hi: round(hi, 1), share: phShare(g) };
       }).sort((a, b) => b.share - a.share)
     : null;
   const phMin = Math.min(...arable.map((c) => c.ph[0] ?? c.ph[1]));

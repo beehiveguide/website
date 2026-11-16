@@ -177,7 +177,7 @@
         },
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 7,
           "hi": 7.2
         }
       ],
@@ -800,7 +800,7 @@
           "brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -995,7 +995,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 7.9,
       "phSplit": [
         {
           "level": "alkaline",
@@ -1004,7 +1004,7 @@
         },
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 6.8,
           "hi": 7
         }
       ],
@@ -1234,7 +1234,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -1406,7 +1406,7 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 7.9,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -2383,7 +2383,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -2542,7 +2542,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -2699,12 +2699,12 @@
           "brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.1,
       "phSplit": [
         {
-          "level": "moderately alkaline",
-          "lo": 7.9,
-          "hi": 8.2
+          "level": "alkaline",
+          "lo": 8.2,
+          "hi": 8.7
         },
         {
           "level": "neutral",
@@ -2992,7 +2992,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.8,
       "phMax": 9,
@@ -3201,7 +3201,7 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.1,
+      "phAvg": 7.2,
       "phSplit": [
         {
           "level": "neutral",
@@ -3214,9 +3214,9 @@
           "hi": 7.9
         },
         {
-          "level": "slightly acidic",
-          "lo": 6.1,
-          "hi": 6.5
+          "level": "acidic",
+          "lo": 6.4,
+          "hi": 6.6
         }
       ],
       "phMin": 5.6,
@@ -3398,7 +3398,7 @@
           "strong brown"
         ]
       },
-      "phAvg": 8.6,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 11,
@@ -3698,19 +3698,8 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.2,
-      "phSplit": [
-        {
-          "level": "neutral",
-          "lo": 7,
-          "hi": 7
-        },
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.2
-        }
-      ],
+      "phAvg": 7.6,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 8.4,
       "phHighFirst": false,
@@ -4048,7 +4037,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -4236,7 +4225,7 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -4440,7 +4429,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -4584,7 +4573,7 @@
           "brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.8,
       "phMax": 8.6,
@@ -4789,7 +4778,7 @@
           "strong brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -5010,8 +4999,8 @@
         },
         {
           "level": "alkaline",
-          "lo": 7.6,
-          "hi": 7.9
+          "lo": 7.7,
+          "hi": 8.1
         }
       ],
       "phMin": 6.6,
@@ -5343,7 +5332,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 7.3,
       "phMax": 9,
@@ -5496,7 +5485,7 @@
           "brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -5700,17 +5689,17 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 7.9,
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.7,
-          "hi": 8.8
+          "lo": 7.4,
+          "hi": 9
         },
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7
+          "hi": 7.1
         }
       ],
       "phMin": 6.1,
@@ -6113,7 +6102,7 @@
       ],
       "rock": null,
       "colors": null,
-      "phAvg": 9.3,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.9,
       "phMax": 11,
@@ -6369,7 +6358,7 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 7.9,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -7358,17 +7347,17 @@
       ],
       "rock": null,
       "colors": null,
-      "phAvg": 6.7,
+      "phAvg": 6.8,
       "phSplit": [
         {
           "level": "neutral",
-          "lo": 7,
+          "lo": 6.9,
           "hi": 7
         },
         {
-          "level": "acidic",
+          "level": "moderately acidic",
           "lo": 6,
-          "hi": 6.5
+          "hi": 6
         }
       ],
       "phMin": 5.6,
@@ -7637,12 +7626,12 @@
       ],
       "rock": null,
       "colors": null,
-      "phAvg": 7.8,
+      "phAvg": 8,
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.5,
-          "hi": 8.8
+          "lo": 7.6,
+          "hi": 8.9
         },
         {
           "level": "neutral",
@@ -8279,7 +8268,7 @@
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.2
+          "hi": 7.3
         }
       ],
       "phMin": 6.1,
@@ -8562,7 +8551,7 @@
           "brown"
         ]
       },
-      "phAvg": 7.7,
+      "phAvg": 7.9,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -8830,7 +8819,7 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.7,
+      "phAvg": 8,
       "phSplit": [
         {
           "level": "alkaline",
@@ -8839,7 +8828,7 @@
         },
         {
           "level": "neutral",
-          "lo": 7,
+          "lo": 7.1,
           "hi": 7.2
         }
       ],
@@ -9235,7 +9224,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -9428,7 +9417,7 @@
           "brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -9717,7 +9706,7 @@
           "dark reddish gray"
         ]
       },
-      "phAvg": 8.4,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -9888,7 +9877,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -10586,7 +10575,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -10824,7 +10813,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 7.5,
+      "phAvg": 7.6,
       "phSplit": [
         {
           "level": "alkaline",
@@ -10833,7 +10822,7 @@
         },
         {
           "level": "neutral",
-          "lo": 7,
+          "lo": 7.1,
           "hi": 7.2
         }
       ],
@@ -11963,7 +11952,7 @@
           "brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -12330,7 +12319,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -12839,8 +12828,19 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.7,
-      "phSplit": null,
+      "phAvg": 7.3,
+      "phSplit": [
+        {
+          "level": "neutral",
+          "lo": 7.1,
+          "hi": 7.1
+        },
+        {
+          "level": "moderately alkaline",
+          "lo": 7.9,
+          "hi": 7.9
+        }
+      ],
       "phMin": 7.4,
       "phMax": 8.4,
       "phHighFirst": false,
@@ -13455,7 +13455,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9.5,
@@ -13649,7 +13649,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.7,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -13982,7 +13982,7 @@
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.2
+          "hi": 7.3
         }
       ],
       "phMin": 6.1,
@@ -14441,7 +14441,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 6.1,
       "phMax": 9,
@@ -14628,19 +14628,8 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.7,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 7.9,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
@@ -14794,8 +14783,19 @@
           "dark brown"
         ]
       },
-      "phAvg": 7,
-      "phSplit": null,
+      "phAvg": 7.2,
+      "phSplit": [
+        {
+          "level": "alkaline",
+          "lo": 7.4,
+          "hi": 7.9
+        },
+        {
+          "level": "neutral",
+          "lo": 6.7,
+          "hi": 7.1
+        }
+      ],
       "phMin": 6.1,
       "phMax": 7.8,
       "phHighFirst": false,
@@ -15211,17 +15211,17 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.3,
+      "phAvg": 7.5,
       "phSplit": [
+        {
+          "level": "alkaline",
+          "lo": 7.6,
+          "hi": 8
+        },
         {
           "level": "neutral",
           "lo": 6.7,
           "hi": 7.2
-        },
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 7.9
         }
       ],
       "phMin": 6.1,
@@ -15440,7 +15440,7 @@
           "dark reddish brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -15569,7 +15569,7 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7,
+      "phAvg": 6.9,
       "phSplit": null,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -15697,7 +15697,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.8,
+      "phAvg": 8.7,
       "phSplit": null,
       "phMin": 7.9,
       "phMax": 9.6,
@@ -16167,7 +16167,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 6.1,
       "phMax": 9,
@@ -16335,19 +16335,8 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.8,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 8.8
-        },
-        {
-          "level": "neutral",
-          "lo": 6.7,
-          "hi": 7
-        }
-      ],
+      "phAvg": 7.9,
+      "phSplit": null,
       "phMin": 6.1,
       "phMax": 9.6,
       "phHighFirst": false,
@@ -17557,7 +17546,7 @@
           "brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -17791,13 +17780,13 @@
           "brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.9,
       "phMax": 9,
       "phHighFirst": false,
       "phMinWhere": null,
-      "phMaxWhere": "on foothill slopes",
+      "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
       "awcAvg": 0.11,
@@ -18088,7 +18077,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.5,
+      "phAvg": 8.6,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -19205,7 +19194,7 @@
       ],
       "rock": null,
       "colors": null,
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -19431,7 +19420,7 @@
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.2
+          "hi": 7.3
         },
         {
           "level": "slightly alkaline",
@@ -19935,7 +19924,7 @@
         {
           "level": "alkaline",
           "lo": 7.4,
-          "hi": 7.9
+          "hi": 8
         }
       ],
       "phMin": 6.6,
@@ -20237,7 +20226,7 @@
           "dark yellowish brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -20409,19 +20398,8 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.9,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.3
-        }
-      ],
+      "phAvg": 8,
+      "phSplit": null,
       "phMin": 6.1,
       "phMax": 9,
       "phHighFirst": true,
@@ -20555,7 +20533,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9.5,
@@ -21489,7 +21467,7 @@
           "yellowish brown"
         ]
       },
-      "phAvg": 8.4,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -21780,7 +21758,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -21946,7 +21924,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -22491,7 +22469,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.7,
+      "phAvg": 8.8,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -22901,12 +22879,12 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.7,
       "phSplit": [
         {
           "level": "alkaline",
           "lo": 7.4,
-          "hi": 8.6
+          "hi": 8.9
         },
         {
           "level": "neutral",
@@ -23495,7 +23473,7 @@
           "dark gray"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -23873,7 +23851,7 @@
       ],
       "rock": null,
       "colors": null,
-      "phAvg": 8,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -24282,8 +24260,8 @@
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.9,
-          "hi": 8.5
+          "lo": 8.2,
+          "hi": 8.7
         },
         {
           "level": "neutral",
@@ -24880,7 +24858,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -25379,17 +25357,17 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7,
+      "phAvg": 7.1,
       "phSplit": [
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 6.7,
           "hi": 7.2
         },
         {
           "level": "slightly alkaline",
           "lo": 7.4,
-          "hi": 7.8
+          "hi": 7.6
         }
       ],
       "phMin": 6.1,
@@ -25795,7 +25773,7 @@
         {
           "level": "alkaline",
           "lo": 7.5,
-          "hi": 8.2
+          "hi": 8.4
         },
         {
           "level": "neutral",
@@ -26418,7 +26396,7 @@
       ],
       "rock": null,
       "colors": null,
-      "phAvg": 8.5,
+      "phAvg": 8.6,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -26936,7 +26914,7 @@
           "dark gray"
         ]
       },
-      "phAvg": 8.6,
+      "phAvg": 8.7,
       "phSplit": null,
       "phMin": 7.9,
       "phMax": 9.6,
@@ -27232,8 +27210,19 @@
           "dark brown"
         ]
       },
-      "phAvg": 7,
-      "phSplit": null,
+      "phAvg": 7.2,
+      "phSplit": [
+        {
+          "level": "slightly alkaline",
+          "lo": 7.4,
+          "hi": 7.4
+        },
+        {
+          "level": "neutral",
+          "lo": 6.7,
+          "hi": 7
+        }
+      ],
       "phMin": 6.1,
       "phMax": 7.3,
       "phHighFirst": true,
@@ -27379,7 +27368,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.5,
+      "phAvg": 8.6,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -27718,7 +27707,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.5,
+      "phAvg": 8.6,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -28319,7 +28308,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -28622,7 +28611,7 @@
           "reddish brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 7.9,
       "phMax": 8.4,
@@ -28752,7 +28741,7 @@
           "dark yellowish brown"
         ]
       },
-      "phAvg": 7.7,
+      "phAvg": 7.9,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -28973,7 +28962,7 @@
           "yellowish red"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -29232,7 +29221,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -29704,7 +29693,18 @@
         ]
       },
       "phAvg": 7,
-      "phSplit": null,
+      "phSplit": [
+        {
+          "level": "neutral",
+          "lo": 6.6,
+          "hi": 7.2
+        },
+        {
+          "level": "slightly alkaline",
+          "lo": 7.4,
+          "hi": 7.6
+        }
+      ],
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
@@ -30503,7 +30503,7 @@
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.2
+          "hi": 7.3
         },
         {
           "level": "slightly alkaline",
@@ -30659,7 +30659,7 @@
           "grayish brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -30805,17 +30805,17 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 8,
       "phSplit": [
         {
           "level": "alkaline",
           "lo": 7.6,
-          "hi": 8.8
+          "hi": 9
         },
         {
           "level": "neutral",
-          "lo": 7,
-          "hi": 7
+          "lo": 7.1,
+          "hi": 7.1
         }
       ],
       "phMin": 6.6,
@@ -31737,11 +31737,11 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.2,
+      "phAvg": 7.3,
       "phSplit": [
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 7,
           "hi": 7.2
         },
         {
@@ -32447,12 +32447,12 @@
           "brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
       "phHighFirst": false,
-      "phMinWhere": null,
+      "phMinWhere": "in low spots",
       "phMaxWhere": null,
       "drainage": "well drained",
       "drainageVariation": null,
@@ -33022,19 +33022,8 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.6,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.8
-        },
-        {
-          "level": "neutral",
-          "lo": 7,
-          "hi": 7
-        }
-      ],
+      "phAvg": 7.9,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
       "phHighFirst": false,
@@ -33424,18 +33413,7 @@
         ]
       },
       "phAvg": 8,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
-        },
-        {
-          "level": "neutral",
-          "lo": 7,
-          "hi": 7.3
-        }
-      ],
+      "phSplit": null,
       "phMin": 6.1,
       "phMax": 9,
       "phHighFirst": true,
@@ -33621,7 +33599,7 @@
           "light gray"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -34002,7 +33980,7 @@
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.2
+          "hi": 7.3
         }
       ],
       "phMin": 6.1,
@@ -35065,17 +35043,17 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.4,
+      "phAvg": 7.7,
       "phSplit": [
         {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
+          "level": "alkaline",
+          "lo": 7.3,
+          "hi": 8.4
         },
         {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 7.9
+          "level": "neutral",
+          "lo": 7.1,
+          "hi": 7.2
         }
       ],
       "phMin": 6.6,
@@ -35314,17 +35292,17 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.3,
+      "phAvg": 7.6,
       "phSplit": [
         {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
+          "level": "alkaline",
+          "lo": 7.3,
+          "hi": 8.5
         },
         {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
+          "level": "neutral",
+          "lo": 7.1,
+          "hi": 7.2
         }
       ],
       "phMin": 6.6,
@@ -35735,7 +35713,23 @@
       },
       "colors": null,
       "phAvg": 7,
-      "phSplit": null,
+      "phSplit": [
+        {
+          "level": "neutral",
+          "lo": 6.6,
+          "hi": 7.2
+        },
+        {
+          "level": "slightly alkaline",
+          "lo": 7.4,
+          "hi": 7.6
+        },
+        {
+          "level": "neutral",
+          "lo": 6.5,
+          "hi": 6.5
+        }
+      ],
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
@@ -36127,7 +36121,7 @@
           "yellowish red"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -36402,7 +36396,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.4,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -36734,7 +36728,7 @@
       ],
       "rock": null,
       "colors": null,
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -37244,17 +37238,17 @@
           "brown"
         ]
       },
-      "phAvg": 7.7,
+      "phAvg": 7.8,
       "phSplit": [
         {
           "level": "alkaline",
           "lo": 7.4,
-          "hi": 8.2
+          "hi": 8.4
         },
         {
           "level": "neutral",
           "lo": 7,
-          "hi": 7.2
+          "hi": 7
         }
       ],
       "phMin": 6.6,
@@ -37869,16 +37863,16 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.7,
       "phSplit": [
         {
           "level": "alkaline",
           "lo": 7.4,
-          "hi": 8.3
+          "hi": 8.9
         },
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 7,
           "hi": 7.2
         }
       ],
@@ -38603,19 +38597,8 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.9,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.7,
-          "hi": 8.2
-        },
-        {
-          "level": "neutral",
-          "lo": 7,
-          "hi": 7
-        }
-      ],
+      "phAvg": 8,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 8.4,
       "phHighFirst": true,
@@ -39117,7 +39100,7 @@
           "dark yellowish brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -39600,7 +39583,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.4,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -39808,7 +39791,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -39943,7 +39926,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -40476,11 +40459,11 @@
         {
           "level": "alkaline",
           "lo": 7.4,
-          "hi": 8.3
+          "hi": 8.1
         },
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 6.7,
           "hi": 7.2
         }
       ],
@@ -41586,7 +41569,7 @@
           "brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -41742,7 +41725,7 @@
           "dark red"
         ]
       },
-      "phAvg": 8.4,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -41988,16 +41971,16 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 7.9,
       "phSplit": [
         {
           "level": "alkaline",
           "lo": 7.4,
-          "hi": 8.5
+          "hi": 8.6
         },
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 7,
           "hi": 7.2
         }
       ],
@@ -43273,7 +43256,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -43411,7 +43394,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -43599,7 +43582,7 @@
       "phSplit": [
         {
           "level": "slightly acidic",
-          "lo": 6.3,
+          "lo": 6.2,
           "hi": 6.3
         },
         {
@@ -43815,19 +43798,8 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.7,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 9.1
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 7.8,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
       "phHighFirst": false,
@@ -44601,19 +44573,8 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.7,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 7.8,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
@@ -45787,7 +45748,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.8,
       "phSplit": null,
       "phMin": 7.9,
       "phMax": 9,
@@ -46081,7 +46042,7 @@
       ],
       "rock": null,
       "colors": null,
-      "phAvg": 8.3,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -46797,7 +46758,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.4,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.9,
       "phMax": 9,
@@ -47080,7 +47041,7 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7,
+      "phAvg": 6.9,
       "phSplit": null,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -47286,8 +47247,19 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.2,
-      "phSplit": null,
+      "phAvg": 7.3,
+      "phSplit": [
+        {
+          "level": "neutral",
+          "lo": 7,
+          "hi": 7.2
+        },
+        {
+          "level": "alkaline",
+          "lo": 7.4,
+          "hi": 8.2
+        }
+      ],
       "phMin": 6.6,
       "phMax": 8.4,
       "phHighFirst": false,
@@ -48044,7 +48016,7 @@
         ]
       },
       "colors": null,
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -48433,7 +48405,7 @@
           "dark yellowish brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -48621,7 +48593,7 @@
           "gray"
         ]
       },
-      "phAvg": 7.4,
+      "phAvg": 7.5,
       "phSplit": [
         {
           "level": "alkaline",
@@ -48964,18 +48936,7 @@
         ]
       },
       "phAvg": 7.5,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 8.8
-        },
-        {
-          "level": "neutral",
-          "lo": 6.7,
-          "hi": 7
-        }
-      ],
+      "phSplit": null,
       "phMin": 6.1,
       "phMax": 9.6,
       "phHighFirst": false,
@@ -49400,8 +49361,8 @@
       "phAvg": 7.5,
       "phSplit": [
         {
-          "level": "moderately alkaline",
-          "lo": 7.9,
+          "level": "alkaline",
+          "lo": 7.6,
           "hi": 8.2
         },
         {
@@ -49410,9 +49371,9 @@
           "hi": 7.2
         },
         {
-          "level": "slightly acidic",
+          "level": "acidic",
           "lo": 6.3,
-          "hi": 6.3
+          "hi": 6.5
         }
       ],
       "phMin": 6.1,
@@ -49982,19 +49943,8 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.9,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 8.8
-        },
-        {
-          "level": "neutral",
-          "lo": 7,
-          "hi": 7
-        }
-      ],
+      "phAvg": 8.2,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
       "phHighFirst": false,
@@ -50464,24 +50414,8 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.4,
-      "phSplit": [
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        },
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 7.9
-        },
-        {
-          "level": "slightly acidic",
-          "lo": 6.5,
-          "hi": 6.5
-        }
-      ],
+      "phAvg": 7.5,
+      "phSplit": null,
       "phMin": 5.6,
       "phMax": 8.4,
       "phHighFirst": true,
@@ -50748,7 +50682,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -50967,7 +50901,7 @@
           "dark reddish gray"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -51368,7 +51302,7 @@
           "brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -51580,7 +51514,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -52282,7 +52216,7 @@
         },
         {
           "level": "alkaline",
-          "lo": 7.6,
+          "lo": 7.3,
           "hi": 8.5
         }
       ],
@@ -53015,7 +52949,7 @@
           "yellowish brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -53834,8 +53768,8 @@
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.7,
-          "hi": 8.8
+          "lo": 7.6,
+          "hi": 9
         },
         {
           "level": "neutral",
@@ -54652,7 +54586,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.5,
       "phMax": 9,
@@ -54870,7 +54804,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.4,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -55019,7 +54953,7 @@
           "yellowish red"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -55164,7 +55098,7 @@
           "brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 7,
       "phMax": 9,
@@ -55340,7 +55274,7 @@
           "very dark brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -55671,7 +55605,7 @@
           "dark reddish brown"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.7,
       "phSplit": null,
       "phMin": 6.1,
       "phMax": 8.4,
@@ -55824,7 +55758,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -55977,7 +55911,7 @@
         },
         {
           "level": "neutral",
-          "lo": 7,
+          "lo": 7.1,
           "hi": 7.2
         }
       ],
@@ -56143,19 +56077,8 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.6,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 7.7,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
@@ -56467,19 +56390,8 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.8,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 7.9,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
@@ -56797,17 +56709,17 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.4,
+      "phAvg": 7.5,
       "phSplit": [
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 6.7,
           "hi": 7.2
         },
         {
           "level": "alkaline",
           "lo": 7.4,
-          "hi": 8.3
+          "hi": 8.6
         }
       ],
       "phMin": 6.1,
@@ -57122,17 +57034,17 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 8.1,
       "phSplit": [
+        {
+          "level": "alkaline",
+          "lo": 7.4,
+          "hi": 9.6
+        },
         {
           "level": "neutral",
           "lo": 6.7,
           "hi": 7.2
-        },
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 9.9
         }
       ],
       "phMin": 6.1,
@@ -57555,7 +57467,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -57710,7 +57622,7 @@
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.2
+          "hi": 7.3
         },
         {
           "level": "slightly alkaline",
@@ -58057,16 +57969,16 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.5,
+      "phAvg": 7.6,
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.5,
-          "hi": 8.5
+          "lo": 7.4,
+          "hi": 8.7
         },
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 6.7,
           "hi": 7.2
         }
       ],
@@ -60368,7 +60280,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -60582,7 +60494,7 @@
         {
           "level": "alkaline",
           "lo": 7.6,
-          "hi": 8.4
+          "hi": 8.5
         },
         {
           "level": "neutral",
@@ -60794,8 +60706,19 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.2,
-      "phSplit": null,
+      "phAvg": 7.3,
+      "phSplit": [
+        {
+          "level": "neutral",
+          "lo": 7.1,
+          "hi": 7.2
+        },
+        {
+          "level": "alkaline",
+          "lo": 7.3,
+          "hi": 8.2
+        }
+      ],
       "phMin": 6.6,
       "phMax": 8.4,
       "phHighFirst": false,
@@ -62292,7 +62215,7 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -62535,8 +62458,19 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.1,
-      "phSplit": null,
+      "phAvg": 7.4,
+      "phSplit": [
+        {
+          "level": "slightly alkaline",
+          "lo": 7.6,
+          "hi": 7.6
+        },
+        {
+          "level": "neutral",
+          "lo": 6.7,
+          "hi": 7.2
+        }
+      ],
       "phMin": 6.1,
       "phMax": 7.8,
       "phHighFirst": true,
@@ -64138,12 +64072,12 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.7,
       "phSplit": [
         {
           "level": "alkaline",
           "lo": 7.4,
-          "hi": 8.2
+          "hi": 8.3
         },
         {
           "level": "neutral",
@@ -64628,7 +64562,7 @@
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.2
+          "hi": 7.3
         },
         {
           "level": "slightly alkaline",
@@ -64795,13 +64729,13 @@
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.5,
+          "lo": 7.3,
           "hi": 8.8
         },
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.3
+          "hi": 7.2
         }
       ],
       "phMin": 6.1,
@@ -65034,12 +64968,12 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.8,
       "phSplit": [
         {
           "level": "alkaline",
           "lo": 7.6,
-          "hi": 8.5
+          "hi": 9.7
         },
         {
           "level": "neutral",
@@ -65568,7 +65502,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -66437,16 +66371,16 @@
           "black"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.8,
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.5,
-          "hi": 8.3
+          "lo": 7.4,
+          "hi": 9
         },
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 6.7,
           "hi": 7.2
         }
       ],
@@ -66674,7 +66608,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 6.1,
       "phMax": 9,
@@ -66808,19 +66742,8 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.7,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.2
-        },
-        {
-          "level": "neutral",
-          "lo": 7,
-          "hi": 7.3
-        }
-      ],
+      "phAvg": 7.8,
+      "phSplit": null,
       "phMin": 6.1,
       "phMax": 9,
       "phHighFirst": false,
@@ -66985,7 +66908,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -67585,19 +67508,8 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.5,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 7.7,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
@@ -67916,19 +67828,8 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.8,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.8
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 7.9,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
       "phHighFirst": false,
@@ -70493,8 +70394,19 @@
           "black"
         ]
       },
-      "phAvg": 7.2,
-      "phSplit": null,
+      "phAvg": 7.3,
+      "phSplit": [
+        {
+          "level": "neutral",
+          "lo": 6.7,
+          "hi": 7.2
+        },
+        {
+          "level": "alkaline",
+          "lo": 7.3,
+          "hi": 8.5
+        }
+      ],
       "phMin": 6.1,
       "phMax": 9,
       "phHighFirst": false,
@@ -70752,17 +70664,17 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.4,
+      "phAvg": 7.7,
       "phSplit": [
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        },
         {
           "level": "alkaline",
           "lo": 7.6,
           "hi": 8.5
+        },
+        {
+          "level": "neutral",
+          "lo": 7.2,
+          "hi": 7.2
         }
       ],
       "phMin": 6.6,
@@ -71236,19 +71148,8 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.7,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.7,
-          "hi": 8.4
-        },
-        {
-          "level": "neutral",
-          "lo": 7.3,
-          "hi": 7.3
-        }
-      ],
+      "phAvg": 7.8,
+      "phSplit": null,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": true,
@@ -71386,7 +71287,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -72176,7 +72077,7 @@
           "dark reddish brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -72352,7 +72253,7 @@
           "very dark brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -72960,17 +72861,17 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.5,
+      "phAvg": 7.6,
       "phSplit": [
+        {
+          "level": "alkaline",
+          "lo": 7.4,
+          "hi": 9.6
+        },
         {
           "level": "neutral",
           "lo": 6.7,
           "hi": 7.2
-        },
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 9.9
         }
       ],
       "phMin": 6.1,
@@ -73550,7 +73451,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 8.5,
+      "phAvg": 8.7,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -73744,17 +73645,17 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.7,
+      "phAvg": 7.8,
       "phSplit": [
+        {
+          "level": "alkaline",
+          "lo": 7.4,
+          "hi": 9.7
+        },
         {
           "level": "neutral",
           "lo": 7,
           "hi": 7.2
-        },
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 9.1
         }
       ],
       "phMin": 6.6,
@@ -74392,7 +74293,7 @@
       ],
       "rock": null,
       "colors": null,
-      "phAvg": 8.3,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -78448,17 +78349,17 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.2,
+      "phAvg": 7.3,
       "phSplit": [
+        {
+          "level": "alkaline",
+          "lo": 7.4,
+          "hi": 8.6
+        },
         {
           "level": "neutral",
           "lo": 6.7,
           "hi": 7
-        },
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 8.5
         }
       ],
       "phMin": 6.1,
@@ -79854,7 +79755,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -80133,7 +80034,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.7,
       "phSplit": [
         {
           "level": "alkaline",
@@ -80142,7 +80043,7 @@
         },
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 7,
           "hi": 7.2
         }
       ],
@@ -80466,7 +80367,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -81671,8 +81572,19 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.7,
-      "phSplit": null,
+      "phAvg": 7.2,
+      "phSplit": [
+        {
+          "level": "neutral",
+          "lo": 7.1,
+          "hi": 7.1
+        },
+        {
+          "level": "moderately alkaline",
+          "lo": 7.9,
+          "hi": 7.9
+        }
+      ],
       "phMin": 7.4,
       "phMax": 8.4,
       "phHighFirst": false,
@@ -82170,19 +82082,8 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.8,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.9,
-          "hi": 8.5
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 8,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
@@ -82525,7 +82426,7 @@
           "black"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -82865,17 +82766,17 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.1,
       "phSplit": [
         {
           "level": "alkaline",
           "lo": 7.6,
-          "hi": 8.8
+          "hi": 9
         },
         {
           "level": "neutral",
           "lo": 7,
-          "hi": 7
+          "hi": 7.1
         }
       ],
       "phMin": 6.6,
@@ -84040,11 +83941,11 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.1,
+      "phAvg": 7.2,
       "phSplit": [
         {
           "level": "neutral",
-          "lo": 6.6,
+          "lo": 6.7,
           "hi": 7.2
         },
         {
@@ -84408,7 +84309,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -85003,18 +84904,7 @@
         ]
       },
       "phAvg": 8,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.8
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": true,
@@ -85177,19 +85067,8 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.9,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 9.1
-        },
-        {
-          "level": "neutral",
-          "lo": 7,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 8,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
       "phHighFirst": false,
@@ -85943,7 +85822,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -86072,7 +85951,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -86250,7 +86129,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -86407,8 +86286,8 @@
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.4,
-          "hi": 8.5
+          "lo": 7.3,
+          "hi": 8.3
         },
         {
           "level": "neutral",
@@ -86553,7 +86432,7 @@
           "dark reddish brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -88845,7 +88724,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -89865,18 +89744,7 @@
         ]
       },
       "phAvg": 7.3,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 7.9
-        },
-        {
-          "level": "neutral",
-          "lo": 6.7,
-          "hi": 7.2
-        }
-      ],
+      "phSplit": null,
       "phMin": 6.1,
       "phMax": 8.4,
       "phHighFirst": false,
@@ -90229,7 +90097,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 10,
@@ -91034,7 +90902,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -91807,7 +91675,7 @@
           "dark reddish brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 8.4,
@@ -92003,17 +91871,17 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.7,
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.6,
+          "lo": 7.3,
           "hi": 8.5
         },
         {
           "level": "neutral",
           "lo": 7,
-          "hi": 7.3
+          "hi": 7
         }
       ],
       "phMin": 6.1,
@@ -92192,7 +92060,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.5,
+      "phAvg": 8.6,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9.6,
@@ -92549,16 +92417,16 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.6,
+      "phAvg": 7.8,
       "phSplit": [
         {
           "level": "alkaline",
-          "lo": 7.9,
+          "lo": 7.6,
           "hi": 8.5
         },
         {
           "level": "neutral",
-          "lo": 7,
+          "lo": 7.2,
           "hi": 7.2
         }
       ],
@@ -93676,7 +93544,7 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 6.1,
       "phMax": 9,
@@ -93971,7 +93839,7 @@
           "very dark gray"
         ]
       },
-      "phAvg": 7.9,
+      "phAvg": 8.1,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
@@ -94184,7 +94052,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.3,
+      "phAvg": 8.5,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -94461,7 +94329,7 @@
           "yellowish red"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.3,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 11,
@@ -95632,7 +95500,7 @@
           "dark gray"
         ]
       },
-      "phAvg": 8.5,
+      "phAvg": 8.8,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -95797,7 +95665,7 @@
           "dark reddish brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -95948,19 +95816,8 @@
           "dark gray"
         ]
       },
-      "phAvg": 7.9,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.9,
-          "hi": 9.1
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 8,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9.6,
       "phHighFirst": false,
@@ -96206,7 +96063,7 @@
           "reddish brown"
         ]
       },
-      "phAvg": 8.2,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
@@ -96439,7 +96296,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.4,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -96582,17 +96439,17 @@
           "black"
         ]
       },
-      "phAvg": 7,
+      "phAvg": 6.9,
       "phSplit": [
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7
+          "hi": 6.9
         },
         {
-          "level": "moderately alkaline",
-          "lo": 7.9,
-          "hi": 7.9
+          "level": "slightly alkaline",
+          "lo": 7.6,
+          "hi": 7.6
         },
         {
           "level": "slightly acidic",
@@ -96753,7 +96610,7 @@
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.2
+          "hi": 7.3
         }
       ],
       "phMin": 6.1,
@@ -97715,7 +97572,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8.1,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -97934,19 +97791,8 @@
           "very dark brown"
         ]
       },
-      "phAvg": 7.5,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
-        },
-        {
-          "level": "neutral",
-          "lo": 7,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 7.6,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": false,
@@ -98189,7 +98035,7 @@
           "brown"
         ]
       },
-      "phAvg": 8.5,
+      "phAvg": 8.6,
       "phSplit": null,
       "phMin": 7.9,
       "phMax": 9,
@@ -98629,19 +98475,8 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.9,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.5,
-          "hi": 9.9
-        },
-        {
-          "level": "neutral",
-          "lo": 7.2,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 8.2,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 10,
       "phHighFirst": false,
@@ -98975,17 +98810,17 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.7,
+      "phAvg": 8,
       "phSplit": [
         {
           "level": "alkaline",
           "lo": 7.6,
-          "hi": 8.5
+          "hi": 8.7
         },
         {
           "level": "neutral",
-          "lo": 7,
-          "hi": 7
+          "lo": 7.1,
+          "hi": 7.1
         }
       ],
       "phMin": 6.6,
@@ -100603,7 +100438,7 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.7,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 6.6,
       "phMax": 10,
@@ -100899,19 +100734,8 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 9
-        },
-        {
-          "level": "neutral",
-          "lo": 7,
-          "hi": 7
-        }
-      ],
+      "phAvg": 8.3,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 9,
       "phHighFirst": true,
@@ -102504,7 +102328,7 @@
           "dark grayish brown"
         ]
       },
-      "phAvg": 8,
+      "phAvg": 8.2,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 9,
@@ -102850,7 +102674,7 @@
           "dark reddish brown"
         ]
       },
-      "phAvg": 7.8,
+      "phAvg": 8,
       "phSplit": null,
       "phMin": 7.4,
       "phMax": 8.4,
@@ -103365,17 +103189,17 @@
           "dark brown"
         ]
       },
-      "phAvg": 7.3,
+      "phAvg": 7.4,
       "phSplit": [
+        {
+          "level": "alkaline",
+          "lo": 7.4,
+          "hi": 8.5
+        },
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.3
-        },
-        {
-          "level": "alkaline",
-          "lo": 7.6,
-          "hi": 8.5
+          "hi": 7.2
         }
       ],
       "phMin": 6.1,
@@ -103606,7 +103430,7 @@
       "phSplit": [
         {
           "level": "slightly acidic",
-          "lo": 6.3,
+          "lo": 6.2,
           "hi": 6.3
         },
         {
@@ -103743,7 +103567,7 @@
         {
           "level": "neutral",
           "lo": 6.7,
-          "hi": 7.2
+          "hi": 7.3
         },
         {
           "level": "slightly alkaline",
@@ -104269,19 +104093,8 @@
           "very dark grayish brown"
         ]
       },
-      "phAvg": 7.8,
-      "phSplit": [
-        {
-          "level": "alkaline",
-          "lo": 7.4,
-          "hi": 9.9
-        },
-        {
-          "level": "neutral",
-          "lo": 6.6,
-          "hi": 7.2
-        }
-      ],
+      "phAvg": 8.1,
+      "phSplit": null,
       "phMin": 6.6,
       "phMax": 10,
       "phHighFirst": false,
