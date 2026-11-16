@@ -151,6 +151,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -764,6 +765,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "reddish brown",
@@ -959,6 +966,7 @@
           "landform": "on rock benches"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -1189,6 +1197,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -1348,6 +1357,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "grayish brown",
@@ -2137,6 +2152,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish yellow"
@@ -2314,6 +2330,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -2476,6 +2498,7 @@
           "landform": "on bottomland"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -2634,6 +2657,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish brown",
@@ -2909,6 +2933,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light reddish brown",
@@ -3115,6 +3140,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -3294,6 +3320,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very pale brown",
@@ -3441,6 +3468,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -3596,6 +3624,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -3933,6 +3962,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown"
@@ -4111,6 +4141,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very dark gray",
@@ -4316,6 +4347,7 @@
           "landform": "on bottomland"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -4457,6 +4489,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "grayish brown",
@@ -4659,6 +4697,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish yellow",
@@ -4871,6 +4910,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish brown"
@@ -5199,6 +5239,7 @@
           "landform": "on bottomland"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -5346,6 +5387,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red",
@@ -5547,6 +5589,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -5963,6 +6006,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 9.3,
       "phMin": 7.9,
@@ -6201,6 +6245,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red",
@@ -6366,6 +6411,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -7196,6 +7248,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 6.7,
       "phMin": 5.6,
@@ -7462,6 +7515,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 7.8,
       "phMin": 6.1,
@@ -8081,6 +8135,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 7.2,
       "phMin": 6.1,
@@ -8341,6 +8396,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -8606,6 +8667,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -8863,6 +8925,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red",
@@ -9002,6 +9065,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -9189,6 +9253,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -9467,6 +9537,12 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -9636,6 +9712,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brown",
@@ -10324,6 +10401,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -10555,6 +10639,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -10970,6 +11060,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -11142,6 +11233,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark gray",
@@ -11530,6 +11622,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -11669,6 +11762,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown"
@@ -11803,6 +11897,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown"
@@ -12026,6 +12127,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown"
@@ -12210,6 +12312,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very dark gray",
@@ -12354,6 +12457,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -12522,6 +12626,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very dark gray",
@@ -12636,6 +12741,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -13139,6 +13245,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -13330,6 +13437,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -13652,6 +13760,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -14107,6 +14216,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -14291,6 +14401,7 @@
           "landform": "on ancient lakeshore benches"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -14438,6 +14549,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "grayish brown",
@@ -14848,6 +14965,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -15071,6 +15189,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -15194,6 +15313,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -15318,6 +15444,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -15648,6 +15775,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -15784,6 +15912,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -15945,6 +16074,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -17152,6 +17282,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -17387,6 +17523,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown"
@@ -17679,6 +17816,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -18697,6 +18835,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -18807,6 +18946,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8.2,
       "phMin": 7.4,
@@ -19015,6 +19155,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -19144,6 +19285,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -19355,6 +19497,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -19490,6 +19633,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -19627,6 +19776,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -19786,6 +19936,7 @@
           "landform": "on land along streams"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pink",
@@ -19951,6 +20102,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -20093,6 +20245,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -20260,6 +20413,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": null,
       "phAvg": 8.5,
       "phMin": 7.9,
@@ -20414,6 +20573,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -20636,6 +20796,7 @@
           "landform": "on ancient lakeshore benches"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -20779,6 +20940,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -20993,6 +21155,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -21283,6 +21446,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -21452,6 +21616,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish brown",
@@ -21992,6 +22157,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -22173,6 +22339,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -22396,6 +22563,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark gray",
@@ -22981,6 +23149,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -23229,6 +23398,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -23368,6 +23538,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8,
       "phMin": 7.4,
@@ -23585,6 +23756,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown"
@@ -23750,6 +23922,13 @@
           "landform": "on bottomland"
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -24164,6 +24343,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very pale brown",
@@ -24334,6 +24514,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -24502,6 +24683,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -24696,6 +24878,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8.3,
       "phMin": 7.4,
@@ -24825,6 +25008,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -25219,6 +25409,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark yellowish brown",
@@ -25344,6 +25535,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark yellowish brown",
@@ -25547,6 +25744,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown"
@@ -25841,6 +26039,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8.5,
       "phMin": 7.4,
@@ -25999,6 +26198,7 @@
           "landform": "on rock benches"
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8.2,
       "phMin": 7.4,
@@ -26145,6 +26345,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -26337,6 +26538,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -26632,6 +26834,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -26773,6 +26976,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -27119,6 +27323,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -27713,6 +27918,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -28017,6 +28223,7 @@
           "landform": "on windblown sand benches"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish brown",
@@ -28145,6 +28352,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red",
@@ -28360,6 +28568,7 @@
           "landform": "on windblown sand benches"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -28617,6 +28826,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -28813,6 +29023,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -29080,6 +29291,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -29609,6 +29827,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown"
@@ -29872,6 +30091,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -30020,6 +30240,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -30164,6 +30385,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -30923,6 +31145,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -31079,6 +31302,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark grayish brown"
@@ -31776,6 +32005,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish brown",
@@ -31993,6 +32223,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -32176,6 +32407,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -32342,6 +32574,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -32729,6 +32962,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -32911,6 +33145,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -33150,6 +33385,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -33283,6 +33519,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -33419,6 +33656,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -33660,6 +33898,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -33847,6 +34086,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red",
@@ -34315,6 +34555,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -34548,6 +34789,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -34965,6 +35212,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": null,
       "phAvg": 7,
       "phMin": 6.1,
@@ -35344,6 +35598,7 @@
           "landform": "on windblown sand benches"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "red"
@@ -35615,6 +35870,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light yellowish brown",
@@ -35808,6 +36064,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -35957,6 +36214,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8.1,
       "phMin": 7.4,
@@ -36157,6 +36415,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -36449,6 +36708,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -36765,6 +37025,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brown",
@@ -36904,6 +37165,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brown",
@@ -37041,6 +37303,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -37763,6 +38026,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -38255,6 +38524,13 @@
           "landform": "on land along streams"
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "grayish brown",
@@ -38399,6 +38675,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -38579,6 +38861,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8,
       "phMin": 6.6,
@@ -38731,6 +39014,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -38939,6 +39223,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown"
@@ -39072,6 +39357,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown"
@@ -39191,6 +39477,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark yellowish brown",
@@ -39379,6 +39666,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "red"
@@ -39591,6 +39879,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -40692,6 +40981,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -40839,6 +41129,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -41077,6 +41374,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -42357,6 +42655,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -42493,6 +42792,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -42667,6 +42967,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark gray",
@@ -42873,6 +43179,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -43413,6 +43720,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -43640,6 +43948,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -44618,6 +44927,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown"
@@ -44816,6 +45126,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -44968,6 +45279,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light yellowish brown",
@@ -45122,6 +45434,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8.3,
       "phMin": 6.6,
@@ -45622,6 +45935,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish brown",
@@ -45814,6 +46128,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "light brownish gray",
@@ -46093,6 +46413,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -46294,6 +46620,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -46660,6 +46987,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark brown",
@@ -46811,6 +47139,7 @@
           "landform": "on ancient lake bottoms"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -47055,6 +47384,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": null,
       "phAvg": 8.2,
       "phMin": 7.4,
@@ -47268,6 +47604,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pinkish gray",
@@ -47421,6 +47758,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -47612,6 +47950,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark gray",
@@ -47801,6 +48140,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red",
@@ -47937,6 +48277,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -48374,6 +48715,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 7.5,
       "phMin": 6.1,
@@ -48690,6 +49032,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -48922,6 +49265,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -49393,6 +49737,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -49664,6 +50009,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown"
@@ -49875,6 +50221,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brown",
@@ -50277,6 +50624,7 @@
           "landform": "on bottomland"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light yellowish brown",
@@ -50481,6 +50829,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -50731,6 +51086,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "very",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -50966,6 +51328,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish yellow",
@@ -51164,6 +51527,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish brown",
@@ -51511,6 +51875,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -51865,6 +52230,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "pale brown",
@@ -52135,6 +52506,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -52420,6 +52792,12 @@
           "landform": "on ancient lakeshore benches"
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark brown",
@@ -52674,6 +53052,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8,
       "phMin": 6.6,
@@ -53470,6 +53849,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very pale brown",
@@ -53686,6 +54066,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light yellowish brown",
@@ -53838,6 +54219,7 @@
           "landform": "on rock benches"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red"
@@ -53969,6 +54351,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "reddish brown",
@@ -54145,6 +54534,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -54474,6 +54864,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -54625,6 +55016,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -54765,6 +55157,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -54925,6 +55318,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -55236,6 +55630,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -55555,6 +55950,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -55869,6 +56265,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -56285,6 +56682,7 @@
           "landform": "on bottomland"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish brown",
@@ -56435,6 +56833,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -56634,6 +57033,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -56770,6 +57170,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -58881,6 +59282,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light reddish brown",
@@ -59072,6 +59474,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -59277,6 +59680,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -59476,6 +59880,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -60838,6 +61248,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -60966,6 +61377,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -61205,6 +61617,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -61350,6 +61768,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brown"
@@ -61489,6 +61908,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 7.3,
       "phMin": 6.1,
@@ -62570,6 +62990,7 @@
           "landform": "on land along streams"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brown",
@@ -62789,6 +63210,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -63258,6 +63680,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -63413,6 +63836,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -63646,6 +64070,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark gray",
@@ -63890,6 +64315,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 7.7,
       "phMin": 7.4,
@@ -64164,6 +64590,7 @@
           "landform": "in low spots"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -64437,6 +64864,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -65029,6 +65457,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -65253,6 +65682,7 @@
           "landform": "on land along streams"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -65383,6 +65813,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -65553,6 +65984,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -66140,6 +66572,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "grayish brown",
@@ -66459,6 +66897,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -68001,6 +68440,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very pale brown",
@@ -68158,6 +68598,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -68382,6 +68823,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -68564,6 +69006,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light reddish brown"
@@ -69020,6 +69463,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark gray"
@@ -69271,6 +69715,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -69473,6 +69918,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -69727,6 +70178,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -69863,6 +70315,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -70653,6 +71106,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish brown",
@@ -70824,6 +71278,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -70967,6 +71422,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -71427,6 +71883,7 @@
           "landform": "on land along streams"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -72004,6 +72461,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -72199,6 +72657,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -72571,6 +73030,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -72845,6 +73305,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8.3,
       "phMin": 6.6,
@@ -76884,6 +77345,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -78277,6 +78739,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "red",
@@ -78551,6 +79014,12 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown",
@@ -78869,6 +79338,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -79915,6 +80385,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -80068,6 +80539,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very dark gray",
@@ -80298,6 +80770,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light reddish brown",
@@ -80438,6 +80911,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark brown"
@@ -80551,6 +81025,7 @@
           "landform": "on ancient lake bottoms"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -80894,6 +81369,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -81069,6 +81545,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown"
@@ -81220,6 +81697,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -82384,6 +82862,7 @@
           "landform": "on land along streams"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -82732,6 +83211,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -83059,6 +83539,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -83306,6 +83792,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -83471,6 +83958,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -84226,6 +84714,13 @@
           "landform": "on bottomland"
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": {
         "dry": [
           "brown"
@@ -84348,6 +84843,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -84527,6 +85023,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -84675,6 +85172,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -84815,6 +85313,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown"
@@ -85067,6 +85566,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -85777,6 +86277,7 @@
           "landform": "in low spots"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "red",
@@ -87092,6 +87593,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -87334,6 +87836,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pinkish gray",
@@ -87532,6 +88035,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -87748,6 +88252,7 @@
           "landform": "on bottomland"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brown",
@@ -87869,6 +88374,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark brown",
@@ -88104,6 +88610,7 @@
           "landform": "on land along streams"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -88332,6 +88839,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -88454,6 +88962,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -88986,6 +89495,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": null,
       "phAvg": 8.2,
       "phMin": 7.8,
@@ -89258,6 +89768,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -90030,6 +90541,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red",
@@ -90217,6 +90729,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -90396,6 +90909,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -90583,6 +91097,13 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly",
+          "cobbly"
+        ]
+      },
       "colors": null,
       "phAvg": 7.2,
       "phMin": 6.6,
@@ -90741,6 +91262,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -91534,6 +92061,12 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "grayish brown",
@@ -91699,6 +92232,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red"
@@ -91849,6 +92383,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown"
@@ -92139,6 +92674,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -92350,6 +92886,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -92629,6 +93166,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish yellow",
@@ -92793,6 +93331,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -93166,6 +93705,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light yellowish brown",
@@ -93779,6 +94319,7 @@
           "landform": "on land along streams"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "pale brown",
@@ -93942,6 +94483,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -94088,6 +94630,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark gray",
@@ -94341,6 +94884,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "reddish brown"
@@ -94565,6 +95109,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "pale brown"
@@ -94703,6 +95253,7 @@
           "landform": "on land along streams"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -94847,6 +95398,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -95104,6 +95656,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "red",
@@ -95570,6 +96123,12 @@
           "landform": "on ancient lake bottoms"
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "very dark grayish brown",
@@ -95799,6 +96358,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -96010,6 +96570,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -96255,6 +96816,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -96461,6 +97023,7 @@
           "landform": "on floodplains"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark gray",
@@ -96682,6 +97245,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -97014,6 +97578,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -98489,6 +99054,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray",
@@ -98626,6 +99192,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "grayish brown",
@@ -98920,6 +99487,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -100515,6 +101083,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "light brownish gray"
@@ -100671,6 +101240,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown"
@@ -100855,6 +101425,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "yellowish red",
@@ -101084,6 +101655,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "gray",
@@ -101358,6 +101930,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark gray",
@@ -101581,6 +102154,12 @@
           "landform": null
         }
       ],
+      "rock": {
+        "degree": "somewhat",
+        "words": [
+          "gravelly"
+        ]
+      },
       "colors": {
         "dry": [
           "dark gray",
@@ -101709,6 +102288,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -101857,6 +102437,7 @@
           "landform": "on foothill slopes"
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",
@@ -102031,6 +102612,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "brown",
@@ -102205,6 +102787,7 @@
           "landform": null
         }
       ],
+      "rock": null,
       "colors": {
         "dry": [
           "dark grayish brown",

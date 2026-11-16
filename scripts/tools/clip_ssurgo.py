@@ -120,6 +120,34 @@ tex = table("chtexturegrp", ["chkey", "texdesc", "rvindicator"])
 tex = tex[tex.chkey.isin(set(hz.chkey))].sort_values("rvindicator", ascending=False).drop_duplicates("chkey")
 hz = hz.merge(tex[["chkey", "texdesc"]], on="chkey", how="left")
 
+# Root zone (top 20 inches = 50 cm): depth-weighted pH and rock fragment volume
+# (% of the soil by volume), over all mineral horizons, not just the surface one
+ROOT_CM = 50
+hzr = table("chorizon", ["cokey", "chkey", "hzname", "desgnmaster", "hzdept_r", "hzdepb_r", "ph1to1h2o_r"])
+hzr = hzr[hzr.cokey.isin(cokeys) & hzr.hzdept_r.notna() & hzr.hzdepb_r.notna() & (hzr.hzdept_r < ROOT_CM)]
+hzr = hzr[~((hzr.desgnmaster == "O") | hzr.hzname.fillna("").str.match(r"^\d*O"))]
+fr = table("chfrags", ["chkey", "fragvol_r", "fragsize_r"])
+fr = fr[fr.chkey.isin(set(hzr.chkey)) & fr.fragvol_r.notna()]
+fr_all = fr.groupby("chkey").fragvol_r.sum()
+fr_cob = fr[fr.fragsize_r >= 75].groupby("chkey").fragvol_r.sum()  # cobbles and stones (75 mm, about 3 inches, and up)
+fr_big = fr[fr.fragsize_r >= 250].groupby("chkey").fragvol_r.sum()  # stones (250 mm, about 10 inches, and up)
+hzr = hzr.assign(
+    w=(hzr.hzdepb_r.clip(upper=ROOT_CM) - hzr.hzdept_r).clip(lower=0),
+    rock=hzr.chkey.map(fr_all).fillna(0).clip(upper=100),
+    big=hzr.chkey.map(fr_big).fillna(0).clip(upper=100),
+    cob=hzr.chkey.map(fr_cob).fillna(0).clip(upper=100))
+root_ph, root_rock, root_big, root_cob = {}, {}, {}, {}
+for cokey, g in hzr.groupby("cokey"):
+    wt = g.w.sum()
+    if wt <= 0:
+        continue
+    root_rock[cokey] = (g.rock * g.w).sum() / wt
+    root_big[cokey] = (g.big * g.w).sum() / wt
+    root_cob[cokey] = (g.cob * g.w).sum() / wt
+    gp = g[g.ph1to1h2o_r.notna()]
+    if gp.w.sum() > 0:
+        root_ph[cokey] = (gp.ph1to1h2o_r * gp.w).sum() / gp.w.sum()
+
 comp = comp.merge(hz, on="cokey", how="left").merge(mapunit, on="mukey", how="left")  # mapunit: name and farmland class
 
 def val(v):
@@ -150,6 +178,10 @@ for (name, gnis, fips), group in town_mu.groupby(["NAME", "GNIS", "FIPS"]):
                 "hardpanCm": val(hardpan.get(c.cokey)),
                 "claypanCm": val(claypan.get(c.cokey)),
                 "surfaceRockPct": val(surfrock.get(c.cokey)),
+                "rootPh": val(root_ph.get(c.cokey)),
+                "rootRockPct": val(root_rock.get(c.cokey)),
+                "rootBigRockPct": val(root_big.get(c.cokey)),  # stones, 250 mm and up
+                "rootCobbleRockPct": val(root_cob.get(c.cokey)),  # cobbles and stones, 75 mm and up
                 "waterTableCm": val(watertable.get(c.cokey)),
                 "flooding": flooding.get(c.cokey),
             })

@@ -160,6 +160,14 @@ for (const town of towns) {
   const drainage = shares((c) => c.drainage)[0];
   const awcAvg = wavg(arable, (c) => c.awc);
   const phAvg = wavg(arable, (c) => c.ph[1]);
+  // Rockiness: rock fragments (% of the soil by volume, top 20 inches), acre-weighted.
+  // Levels follow the survey's texture modifiers: gravelly/cobbly 15-35%, very 35-60%,
+  // extremely 60% or more. Stones and cobbles are named when large rock is 5% or more.
+  const rockPct = wavg(arable, (c) => c.rootRockPct || 0);
+  const cobblePct = wavg(arable, (c) => c.rootCobbleRockPct || 0); // cobbles and stones, 75 mm and up
+  const stonePct = wavg(arable, (c) => c.rootBigRockPct || 0); // stones, 250 mm and up
+  const rockDegree = rockPct >= 60 ? "extremely" : rockPct >= 35 ? "very" : rockPct >= 15 ? "somewhat" : null;
+  const rock = rockDegree ? { degree: rockDegree, words: ["gravelly", ...(cobblePct >= 5 ? ["cobbly"] : []), ...(stonePct >= 3 ? ["stony"] : [])] } : null;
   // Topsoil colors from the official series descriptions (surface layer, dry and
   // moist): series with 10% or more of the arable acres, when together they
   // cover 40% or more. Moist colors already named for dry soil are dropped.
@@ -312,6 +320,7 @@ for (const town of towns) {
     coarseAll: coarseWords(arable), // "sandy and gravelly", or null
     coarseByForm, // the same for each landform
     textures,
+    rock,
     colors,
     phAvg: round(phAvg, 1),
     phMin,

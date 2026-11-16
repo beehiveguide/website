@@ -261,10 +261,8 @@ function soilHtml(t) {
   const grouped = !tx.some((x) => x.landform) && plain.length && outliers.length && !tx.some((x) => /^stratified /.test(x.texture));
   let groupedText = null;
   if (grouped) {
-    const mods = [];
-    for (const x of outliers) for (const w of rockOf(x.texture)) if (!mods.includes(w)) mods.push(w);
-    if (outliers.some((x) => isSandy(x.texture))) mods.push("sand");
-    groupedText = `${listText(plain.map((x) => esc(x.texture)))} with varying degrees of ${listText(mods)}`;
+    const mods = outliers.some((x) => isSandy(x.texture)) ? ["sand"] : [];
+    groupedText = `${listText(plain.map((x) => esc(x.texture)))}${mods.length ? ` with varying degrees of ${listText(mods)}` : ""}`;
   }
   const opening = s.textures[0].pct >= 95
     ? `${scope} are nearly all ${esc(texWord(s.textures[0].texture))}.`
@@ -302,7 +300,7 @@ function soilHtml(t) {
     : newS.length ? `, darkening to ${listText(newS.map((f) => (f === "yellow" ? (s.colors.wet.find((c) => /yellow/.test(c)) || "yellow").replace(/\b(very dark|very pale|very|dark|light|pale|strong)\s+/g, "") : f)))} in places when moist`
     : lostGray ? `, becoming darker ${listText(wetS)} when moist`
     : s.colors.dry.some((c) => /\b(light|pale)\b/.test(c)) ? ", becoming darker when moist" : "";
-  const colorText = !s.colors ? null : `is ${listText(s.colors.dry)}${clause}`;
+  const colorText = !s.colors ? null : `is ${listText(s.colors.dry)}${clause ? ` (${clause.slice(2)})` : ""}`;
   const topsoil = colorText
     ? `Topsoil ${colorText}. It's ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`
     : `Topsoil is ${phLevel(s.phAvg)} (average pH ${s.phAvg.toFixed(1)})${salty}${om}.`;
@@ -404,7 +402,8 @@ function soilHtml(t) {
     );
   else if (f.statewide > 0) farm.push(`${f.statewide >= 95 ? "Nearly all" : `${f.statewide}%`} of ${place} is rated farmland of statewide importance.`);
 
-  const sentences = [opening, topsoil, ...problems, ...farm];
+  const rockSentence = s.rock ? `It's generally ${s.rock.degree} ${listText(s.rock.words)} as well.` : null;
+  const sentences = [opening, ...(rockSentence ? [rockSentence] : []), topsoil, ...problems, ...farm];
   return `<h3 class="soil-heading h4 mt-4 mb-2">Soil Properties</h3>
     <p class="mb-0">${sentences.join(" ")}</p>`;
 }
