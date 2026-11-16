@@ -551,7 +551,7 @@
     "section_html": {
       "churches": {
         "title": "Churches",
-        "html": "<p><a href=\"https://www.stelizabethsut.org/\">St. Elizabeth&rsquo;s Episcopal Church</a> is located in the community. The community is also home to the <a href=\"https://maps.churchofjesuschrist.org/wards/151556\">Whiterocks Branch</a> of The Church of Jesus Christ of Latter-day Saints, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt West Stake</a>.</p>"
+        "html": "<p><a href=\"https://www.stelizabethsut.org/\">St. Elizabeth&rsquo;s Episcopal Church</a> is located in the community. It's also home to the <a href=\"https://maps.churchofjesuschrist.org/wards/151556\">Whiterocks Branch</a> of The Church of Jesus Christ of Latter-day Saints, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt West Stake</a>.</p>"
       }
     },
     "add_sections": [
@@ -568,9 +568,7 @@
         "html": "<p>The Whiterocks Community and Broadband Center serves the area&rsquo;s residents. The community also has a gymnasium and a park with a small playground.</p>"
       }
     ],
-    "hide_sections": [
-      "schools"
-    ]
+    "hide_sections": ["schools"]
   },
   "Randlett": {
     "section_html": {
