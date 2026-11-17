@@ -509,7 +509,9 @@
       "alt": "Steadfast Jupiter golf shaft",
       "verified": true,
       "sizeKb": 43,
-      "bare": true
+      "title": "Steadfast Jupiter Driver Shaft",
+      "blurb": "A golf driver shaft built to fly straighter.",
+      "cta": "Shop Steadfast Golf"
     },
     {
       "brand": "Triple Bristle",
@@ -583,7 +585,8 @@
       "src": "https://www.awin1.com/cshow.php?s=4069944&v=47153&q=469018&r=3149357",
       "alt": "Sunjoy IceCove portable air conditioner",
       "verified": true,
-      "sizeKb": 88
+      "sizeKb": 88,
+      "disabled": true
     },
     {
       "brand": "Sunjoy",
@@ -596,7 +599,9 @@
       "alt": "Sunjoy IceCove portable air conditioner",
       "verified": true,
       "sizeKb": 105,
-      "bare": true
+      "title": "Sunjoy IceCove Portable AC",
+      "blurb": "A compact air conditioner for patios, garages, RVs and tents.",
+      "cta": "See the IceCove"
     }
   ],
   "text": [
