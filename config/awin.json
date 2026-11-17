@@ -458,6 +458,145 @@
       "verified": true,
       "sizeKb": 37,
       "pad": 2
+    },
+    {
+      "brand": "Alison",
+      "name": "Learn anytime, for free 1215x1215",
+      "width": 1215,
+      "height": 1215,
+      "shape": "tall",
+      "href": "https://www.awin1.com/cread.php?s=4549513&v=120101&q=584470&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4549513&v=120101&q=584470&r=3149357",
+      "alt": "Alison free online courses",
+      "verified": true,
+      "bare": true,
+      "sizeKb": 119
+    },
+    {
+      "brand": "Alison",
+      "name": "Learn anytime, for free 960x1200",
+      "width": 960,
+      "height": 1200,
+      "shape": "tall",
+      "href": "https://www.awin1.com/cread.php?s=4549511&v=120101&q=584470&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4549511&v=120101&q=584470&r=3149357",
+      "alt": "Alison free online courses",
+      "verified": true,
+      "bare": true,
+      "sizeKb": 92
+    },
+    {
+      "brand": "Procolored",
+      "name": "Turn your ideas into profit 1080x1080",
+      "width": 1080,
+      "height": 1080,
+      "shape": "tall",
+      "href": "https://www.awin1.com/cread.php?s=4509315&v=72313&q=524605&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4509315&v=72313&q=524605&r=3149357",
+      "alt": "Procolored K13 Lite garment printer",
+      "verified": true,
+      "sizeKb": 101,
+      "bare": true
+    },
+    {
+      "brand": "Steadfast Golf",
+      "name": "Straightest driver shaft 300x250",
+      "width": 300,
+      "height": 250,
+      "shape": "side",
+      "href": "https://www.awin1.com/cread.php?s=4241066&v=60391&q=553478&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4241066&v=60391&q=553478&r=3149357",
+      "alt": "Steadfast Jupiter golf shaft",
+      "verified": true,
+      "sizeKb": 43,
+      "bare": true
+    },
+    {
+      "brand": "Triple Bristle",
+      "name": "Clean smarter 728x90",
+      "width": 728,
+      "height": 90,
+      "shape": "banner",
+      "href": "https://www.awin1.com/cread.php?s=4570385&v=121760&q=586578&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4570385&v=121760&q=586578&r=3149357",
+      "alt": "Triple Bristle 3-sided toothbrush",
+      "verified": true,
+      "sizeKb": 36
+    },
+    {
+      "brand": "Triple Bristle",
+      "name": "3-sided clean 728x90",
+      "width": 728,
+      "height": 90,
+      "shape": "banner",
+      "href": "https://www.awin1.com/cread.php?s=4570383&v=121760&q=586578&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4570383&v=121760&q=586578&r=3149357",
+      "alt": "Triple Bristle 3-sided toothbrush",
+      "verified": true,
+      "sizeKb": 38
+    },
+    {
+      "brand": "Triple Bristle",
+      "name": "Clean smarter 300x250",
+      "width": 300,
+      "height": 250,
+      "shape": "side",
+      "href": "https://www.awin1.com/cread.php?s=4570375&v=121760&q=586578&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4570375&v=121760&q=586578&r=3149357",
+      "alt": "Triple Bristle 3-sided toothbrush",
+      "verified": true,
+      "sizeKb": 32,
+      "bare": true
+    },
+    {
+      "brand": "Sunjoy",
+      "name": "Outdoor living 728x90",
+      "width": 728,
+      "height": 90,
+      "shape": "banner",
+      "href": "https://www.awin1.com/cread.php?s=4742310&v=47153&q=601610&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4742310&v=47153&q=601610&r=3149357",
+      "alt": "Sunjoy gazebos and outdoor living",
+      "verified": true,
+      "sizeKb": 73
+    },
+    {
+      "brand": "Sunjoy",
+      "name": "Outdoor living 300x250",
+      "width": 300,
+      "height": 250,
+      "shape": "side",
+      "href": "https://www.awin1.com/cread.php?s=4742309&v=47153&q=601610&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4742309&v=47153&q=601610&r=3149357",
+      "alt": "Sunjoy gazebos and outdoor living",
+      "verified": true,
+      "sizeKb": 98,
+      "bare": true
+    },
+    {
+      "brand": "Sunjoy",
+      "name": "IceCove AC 728x90",
+      "width": 728,
+      "height": 90,
+      "shape": "banner",
+      "href": "https://www.awin1.com/cread.php?s=4069944&v=47153&q=469018&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4069944&v=47153&q=469018&r=3149357",
+      "alt": "Sunjoy IceCove portable air conditioner",
+      "verified": true,
+      "sizeKb": 88
+    },
+    {
+      "brand": "Sunjoy",
+      "name": "IceCove AC 300x250",
+      "width": 300,
+      "height": 250,
+      "shape": "side",
+      "href": "https://www.awin1.com/cread.php?s=4069937&v=47153&q=469018&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4069937&v=47153&q=469018&r=3149357",
+      "alt": "Sunjoy IceCove portable air conditioner",
+      "verified": true,
+      "sizeKb": 105,
+      "bare": true
     }
   ],
   "text": [
@@ -603,6 +742,21 @@
       "general"
     ],
     "Nature's Generator": [
+      "general"
+    ],
+    "Alison": [
+      "general"
+    ],
+    "Procolored": [
+      "general"
+    ],
+    "Steadfast Golf": [
+      "general"
+    ],
+    "Triple Bristle": [
+      "general"
+    ],
+    "Sunjoy": [
       "general"
     ]
   },

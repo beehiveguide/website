@@ -4,6 +4,15 @@ One page per Utah community, built from public data and hosted on Firebase.
 
 Run every command below from this `website` folder. You need Node.js (version 18 or newer).
 
+## Audience
+
+The site focuses on rural communities in Utah. It serves two groups:
+
+- Current rural residents, especially younger adults getting started in independent life, with local knowledge.
+- Back-to-the-land types and homesteaders moving to rural life in Utah.
+
+The site values civic mindedness, small businesses and local economies. A business gets listed only if it is local and independent.
+
 ## Folders
 
 - `sources/` has the raw downloads used to build the site. Each source has its own folder. When a source takes more than one download (PRISM, NOAA, GNIS search exports), those files share a subfolder.
