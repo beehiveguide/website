@@ -643,6 +643,12 @@
         "id": "recreation",
         "title": "Outdoor Recreation",
         "html": "<p>Tridell provides nearby recreation access to Mosby Mountain, <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/paradise-park-campground\">Paradise Park Campground</a> and reservoir and <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/whiterocks-campground\">Whiterocks Canyon</a> and river. Several high lakes in the <a href=\"https://wildlife.utah.gov/pdf/fishing/high-uintas-lakes-whiterocks.pdf\">Whiterocks River drainage</a> can be reached from Paradise Park.</p>"
+      },
+      {
+        "id": "schools",
+        "title": "Schools",
+        "before": "churches",
+        "html": "<p>Tridell&rsquo;s students attend <a href=\"https://www.uintah.net/o/les\">Lapoint Elementary School</a> (kindergarten&ndash;5th), <a href=\"https://www.uintah.net/o/ums\">Uintah Middle School</a> (6th&ndash;8th) and <a href=\"https://www.uintah.net/o/uhs\">Uintah High School</a> (9th&ndash;12th) in Vernal. The schools are part of the <a href=\"https://www.uintah.net/\">Uintah School District</a>.</p>"
       }
     ]
   },
@@ -667,6 +673,6 @@
         "html": "<p>Lapoint provides nearby recreation access to Mosby Mountain, <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/paradise-park-campground\">Paradise Park Campground</a> and reservoir and <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/whiterocks-campground\">Whiterocks Canyon</a>. Several high lakes in the <a href=\"https://wildlife.utah.gov/pdf/fishing/high-uintas-lakes-whiterocks.pdf\">Whiterocks River drainage</a> can be reached from Paradise Park. Beyond Lapoint, there&rsquo;s access to recreation in the mountains above Vernal, including Dry Fork Canyon, the <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/epic-adventures/scenic-byways-and-backways\">Red Cloud Loop</a> and <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/flaming-gorge-national-recreation-area-0\">Flaming Gorge National Recreation Area</a>.</p>"
       }
     ],
-    "schools_html": "<p><a href=\"http://www.uintah.net/schools/Lapoint%20Elementary/lapointindex.html\">Lapoint Elementary School</a> (kindergarten&ndash;5th) is part of the <a href=\"http://www.uintah.net/\">Uintah School District</a>.</p>"
+    "schools_html": "<p><a href=\"https://www.uintah.net/o/les\">Lapoint Elementary School</a> (kindergarten&ndash;5th) is part of the <a href=\"https://www.uintah.net/\">Uintah School District</a>. Lapoint&rsquo;s students attend <a href=\"https://www.uintah.net/o/ums\">Uintah Middle School</a> (6th&ndash;8th) and <a href=\"https://www.uintah.net/o/uhs\">Uintah High School</a> (9th&ndash;12th) in Vernal.</p>"
   }
 }
