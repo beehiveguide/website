@@ -476,10 +476,16 @@
         "title": "Community Events",
         "before": "parks, cemeteries",
         "html": "<p><a href=\"https://www.facebook.com/groups/1533760966920438/\">Myton Daze</a> is held at the end of June and includes a fair, parade, rodeo and fireworks.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p><a href=\"https://www.facebook.com/people/Myton-UTE-Petroleum/61553187757202/\">Ute Petroleum</a> is a gas station and truck stop with a deli, laundromat and showers. <a href=\"https://thespeedygoat.com/\">The Speedy Goat</a>, in Pleasant Valley, is a convenience store and cafe that serves breakfast and lunch, with grab-n-go items. <a href=\"https://hideout-steakhouse.com/\">Hideout Steakhouse &amp; BBQ</a>, west of Myton off Highway 40, serves lunch and dinner.</p>"
       }
     ],
     "section_html": {
-      "trails": "<p>The Myton Ball Park Path is a paved walking path at the ballpark. It is about 0.2 miles long.</p>"
+      "trails": "<p>The Myton Park Path is a paved walking path at the city park. It is about 0.2 miles long.</p>",
+      "parks, cemeteries": "<p>Myton&rsquo;s City Park features a pavilion, playground, field and walking path. The Myton City Cemetery is located in the community.</p>"
     }
   },
   "Roosevelt": {
@@ -502,7 +508,7 @@
       "hospitals": "<p><a href=\"https://ubh.org/\">Uintah Basin Healthcare</a> operates the hospital and clinic in Roosevelt.</p>",
       "colleges": "<p><a href=\"https://www.ubtech.edu\">Uintah Basin Technical College</a> and the <a href=\"https://statewide.usu.edu/uintahbasin/\">Utah State University Uintah Basin campus</a> are located in the city.</p>",
       "airports": "<p>The <a href=\"https://www.rooseveltcity.gov/164/Airport\">Roosevelt Municipal Airport</a> serves the city.</p>",
-      "parks, cemeteries": "<p>Roosevelt City operates five <a href=\"https://www.rooseveltcity.gov/381/Roosevelt-City-Parks\">parks</a>: Nature Park, Centennial Park, Old Mill Park, Central Park and Constitution Park. <a href=\"https://www.rooseveltcity.gov/165/Cemetery\">Roosevelt Memorial Park</a> is a cemetery located in the city.</p>"
+      "parks, cemeteries": "<p>Roosevelt City operates five <a href=\"https://www.rooseveltcity.gov/381/Roosevelt-City-Parks\">parks</a>: Nature Park, Centennial Park, Old Mill Park, Central Park and Constitution Park. <a href=\"https://www.rooseveltcity.gov/165/Cemetery\">Roosevelt Memorial Park</a> is a cemetery located in the community.</p>"
     },
     "move_before": {
       "airports": "hospitals"

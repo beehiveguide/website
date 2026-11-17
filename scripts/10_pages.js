@@ -1144,7 +1144,7 @@ function cemeteryHtml(t) {
     // "The Redmond Cemetery, located in the city, dates to 1876."
     const nm = c.link ? `<a href="${esc(c.link)}">${esc(c.name)}</a>` : esc(c.name);
     const name = /Cemetery$/.test(c.name) && !/^the /i.test(c.name) ? `The ${nm}` : nm;
-    return `<p>${name}${c.year ? `, located ${c.nearby ? "nearby" : `in ${placeWord(t)}`}, dates to ${c.year}.` : ` is ${/cemetery|graveyard/i.test(c.name) ? "" : "a cemetery "}located ${c.nearby ? "nearby" : `in ${placeWord(t)}`}.`}</p>`;
+    return `<p>${name}${c.year ? (/cemetery|graveyard/i.test(c.name) ? `${c.nearby ? ", located nearby," : ""} dates to ${c.year}.` : ` is a cemetery${c.nearby ? " located nearby" : ""} that dates to ${c.year}.`) : ` is ${/cemetery|graveyard/i.test(c.name) ? "" : "a cemetery "}located ${c.nearby ? "nearby" : "in the community"}.`}</p>`;
   }
   const items = list.map((c) => (c.link ? `<a href="${esc(c.link)}">${esc(c.name)}</a>` : esc(c.name)) + (c.year ? ` (${c.year})` : ""));
   if (list.length > BIG_LIST)
