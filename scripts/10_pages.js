@@ -2108,10 +2108,16 @@ function buildPage(t) {
     )
     .replace(
       /\s*<p[^>]*>\s*<a href=""[^>]*>Post Office<\/a>\s*<\/p>/,
-      (button) =>
-        t.postOfficeUrl
-          ? button.replace('<a href=""', `<a href="${t.postOfficeUrl}"`)
-          : "",
+      (button) => {
+        // ZIP Code from the community data (the ZIP area each town sits in)
+        const zip = t.zip;
+        const zipLabel = "ZIP Code";
+        if (!t.postOfficeUrl) return zip ? `\n      <p class="mt-3 mb-0"><small class="text-secondary font-sans"><strong>${zipLabel}:</strong> ${zip}</small></p>` : "";
+        let out = button.replace('<a href=""', `<a href="${t.postOfficeUrl}"`);
+        // ZIP Code shown beneath the Post Office button (config/zip_codes.json)
+        if (zip) out = out.replace("</a>", `</a>\n        <small class="d-block mt-2 text-secondary font-sans"><strong>${zipLabel}:</strong> ${zip}</small>`);
+        return out;
+      },
     )
     .replace(
       "<li>{Source}</li>",
