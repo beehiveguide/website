@@ -4,7 +4,7 @@ window.beehiveMap = (el, options = {}) => {
   const map = L.map(el, options);
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
   L.tileLayer(
-    "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}",
+    "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}",
     {
       maxNativeZoom: 16,
       maxZoom: 19,

@@ -423,7 +423,7 @@
       "<strong>Community history:</strong> <a href=\"https://historytogo.utah.gov/duchesne\">Utah History Encyclopedia, by John D. Barton</a>; <a href=\"https://www.riversimulator.org/Resources/History/UtahCounties/HistoryOfDuschesneCounty1996Barton.pdf\">A History of Duchesne County, by John D. Barton</a>; and <a href=\"https://www.familysearch.org/library/books/records/item/812119-redirect\">Early History of Duchesne County, compiled by Mildred Miles Dillman</a>"
     ],
     "section_html": {
-      "churches": "<p>Churches include <a href=\"https://www.baptistduchesne.com/\">First Baptist Church</a>, <a href=\"https://www.facebook.com/sthelenscatholichurch/\">Holy Spirit Catholic Mission</a> and The Church of Jesus Christ of Latter-day Saints, which has a <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5305950-01-01\">stake center</a> and <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5033802-01-01\">another meetinghouse</a> at the same intersection.</p>",
+      "churches": "<p>Churches include <a href=\"https://www.baptistduchesne.com/\">First Baptist Church</a>, <a href=\"https://www.facebook.com/sthelenscatholichurch/\">Holy Spirit Catholic Mission</a> and The Church of Jesus Christ of Latter-day Saints, which has a <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5305950-01-01\">stake center</a> and <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5033802-01-01\">another meetinghouse</a> on 130 South 300 W.</p>",
       "airports": "<p>The <a href=\"https://duchesnecityut.gov/airport-2/\">Duchesne Municipal Airport</a> serves the city.</p>"
     },
     "add_sections": [
@@ -551,7 +551,7 @@
     "section_html": {
       "churches": {
         "title": "Churches",
-        "html": "<p><a href=\"https://www.stelizabethsut.org/\">St. Elizabeth&rsquo;s Episcopal Church</a> is located in the community. It's also home to the <a href=\"https://maps.churchofjesuschrist.org/wards/151556\">Whiterocks Branch</a> of The Church of Jesus Christ of Latter-day Saints, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt West Stake</a>.</p>"
+        "html": "<p>Whiterocks is home to a <a href=\"https://maps.churchofjesuschrist.org/wards/151556\">branch</a> of The Church of Jesus Christ of Latter-day Saints, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt West Stake</a>. <a href=\"https://www.stelizabethsut.org/\">St. Elizabeth&rsquo;s Episcopal Church</a> is also located in the community.</p>"
       }
     },
     "add_sections": [
@@ -568,11 +568,17 @@
         "html": "<p>The Whiterocks Community and Broadband Center serves the area&rsquo;s residents. The community also has a gymnasium and a park with a small playground.</p>"
       }
     ],
-    "hide_sections": ["schools"]
+    "hide_sections": [
+      "schools"
+    ]
   },
   "Randlett": {
     "section_html": {
-      "churches": "<p>The <a href=\"https://www.stelizabethsut.org/\">Church of the Holy Spirit</a> (Episcopal) is located in Randlett. Latter-day Saints in the community meet as part of the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a>, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+      "churches": "<p>The <a href=\"https://www.stelizabethsut.org/\">Church of the Holy Spirit</a> (Episcopal) is located in Randlett. Latter-day Saints in the community meet as part of the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a>, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>",
+      "parks, cemeteries": {
+        "title": "Cemeteries",
+        "html": "<p>The Randlett Cemetery is a tribal cemetery. The nearby Avalon Cemetery also serves the community.</p>"
+      }
     },
     "add_sections": [
       {
