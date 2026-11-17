@@ -1884,7 +1884,7 @@ function servicesHtml(t) {
     ]);
   }
   // Outdoor Recreation is always the last section, after Businesses and Services
-  for (const word of ["trails", "recreation"]) {
+  for (const word of ["trails", "recreation", "hatchery"]) {
     const at = sections.findIndex(([, w]) => w === word);
     if (at >= 0) sections.push(...sections.splice(at, 1));
   }
