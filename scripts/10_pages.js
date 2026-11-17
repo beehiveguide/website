@@ -23,6 +23,71 @@ const paths = require("./lib/paths");
 const { AP_MONTHS } = require("./lib/ap_months");
 const { buildData: affiliateData } = require("./lib/affiliate");
 
+// Town maps: each town's UGRC municipal boundary, for the map zoom and the
+// outline. Returns { box: "south,west,north,east", outline: [[lat,lng],...] }
+// (a list of rings, or a list of those for multi-part towns), both "" for a
+// town with no UGRC boundary, and the page falls back to OpenStreetMap.
+const townBoundary = (() => {
+  try {
+    const { nameKey, readGeoJson, makeAreaFinder } = require("./lib/communities");
+    const r4 = (v) => Math.round(v * 1e4) / 1e4;
+    const byKey = {};
+    const byCensus = {};
+    const shape = (f) => {
+      const g = f.geometry;
+      if (!g) return null;
+      const polys = g.type === "Polygon" ? [g.coordinates] : g.type === "MultiPolygon" ? g.coordinates : [];
+      if (!polys.length) return null;
+      let w = Infinity, s = Infinity, e = -Infinity, n = -Infinity;
+      for (const poly of polys) for (const [x, y] of poly[0]) {
+        if (x < w) w = x; if (x > e) e = x;
+        if (y < s) s = y; if (y > n) n = y;
+      }
+      // GeoJSON is [lng, lat]; Leaflet wants [lat, lng]. Drop points that
+      // round to the same spot as the one before.
+      const ring = (pts) => {
+        const out = [];
+        for (const [x, y] of pts) {
+          const p = [r4(y), r4(x)];
+          const last = out[out.length - 1];
+          if (!last || last[0] !== p[0] || last[1] !== p[1]) out.push(p);
+        }
+        return out;
+      };
+      const parts = polys.map((poly) => poly.map(ring));
+      return {
+        f,
+        box: [s, w, n, e].map((v) => v.toFixed(4)).join(","),
+        outline: JSON.stringify(parts.length === 1 ? parts[0] : parts),
+      };
+    };
+    for (const f of readGeoJson("UtahMunicipalBoundaries")) {
+      const b = shape(f);
+      if (b) (byKey[nameKey(String(f.properties.NAME || ""))] ||= []).push(b);
+    }
+    // Census places (cities, towns and CDPs), matched by place code. Only
+    // used where UGRC has no boundary, so CDPs and other unincorporated
+    // places get one too. Made by scripts/tools/census_places_to_geojson.py.
+    const censusFile = require("path").join(paths.source("census", "place-boundaries"), "places.geojson");
+    if (fs.existsSync(censusFile)) {
+      for (const f of JSON.parse(fs.readFileSync(censusFile, "utf8")).features) {
+        const b = shape(f);
+        if (b) byCensus[f.properties.PLACEFP] = b;
+      }
+    }
+    return (t) => {
+      const list = byKey[nameKey(t.name)] || [];
+      // Places that share a name: use the boundary around the town's point
+      const hit = (list.length === 1 ? list[0] : list.find((b) => makeAreaFinder([b.f])(t.lng, t.lat).length))
+        || byCensus[t.censusCode];
+      return hit ? { box: hit.box, outline: hit.outline } : { box: "", outline: "" };
+    };
+  } catch (err) {
+    console.warn("  No UGRC municipal boundaries; town maps use OpenStreetMap");
+    return () => ({ box: "", outline: "" });
+  }
+})();
+
 const site = paths.readJson(paths.config("site.json"));
 const SOURCE_LIST = paths.readJson(paths.source("sources.json"));
 // The census source is named for its year, taken from the folder name
@@ -2053,6 +2118,8 @@ function buildPage(t) {
     // Map pin uses the full-precision coordinates
     "{Map Latitude}": String(t.lat),
     "{Map Longitude}": String(t.lng),
+    "{Map Bounds}": townBoundary(t).box,
+    "{Map Outline}": townBoundary(t).outline,
     "{Town Elevation}":
       t.elevationFt !== null ? `${num(t.elevationFt)} ft.` : NA,
     "{Town Population}": pop ? num(pop.count) : NA,

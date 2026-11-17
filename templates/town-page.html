@@ -74,6 +74,8 @@
             data-county="{County Name}"
             data-lat="{Map Latitude}"
             data-long="{Map Longitude}"
+            data-bounds="{Map Bounds}"
+            data-outline="{Map Outline}"
           ></div>
         </div>
         <a
@@ -128,15 +130,42 @@
     document.querySelectorAll(".town-map").forEach(async (el) => {
       const { town, state, county, lat, long } = el.dataset;
 
-      const map = beehiveMap(el);
+      const map = beehiveMap(el, { renderer: L.canvas() });
 
-      // Pin at the town's coordinates; its popup (templates/parts/town-popup.html)
-      // matches the full-screen map's
+      // Like the full-screen map after choosing a community: its orange hexagon
+      // dot with the blue pin on top. The pin opens the popup
+      // (templates/parts/town-popup.html), which matches the full-screen map's.
+      new BeehiveHexMarker([lat, long], {
+        radius: 5,
+        color: "#fff",
+        weight: 1.5,
+        fillColor: "#cc4b0c",
+        fillOpacity: 1,
+        interactive: false,
+      }).addTo(map);
       L.marker([lat, long]).addTo(map).bindPopup(`{Town Popup}`, {
         minWidth: 300,
         maxWidth: 380,
         className: "town-popup",
       });
+      // UGRC boundary: zoom to its box ("south,west,north,east") and draw its
+      // outline in the same style as the OpenStreetMap border below
+      const box = el.dataset.bounds;
+      if (box) {
+        const [s, w, n, e] = box.split(",").map(Number);
+        map.fitBounds([[s, w], [n, e]]);
+        if (el.dataset.outline) {
+          // Not clickable, so taps reach the marker inside it
+          L.polygon(JSON.parse(el.dataset.outline), {
+            interactive: false,
+            color: "#ffffff",
+            weight: 3,
+            opacity: 0.6,
+            fillOpacity: 0.05,
+          }).addTo(map);
+        }
+        return;
+      }
       // Without a town border, center on the pin
       const showPin = () => map.setView([lat, long], 14);
 
@@ -161,7 +190,7 @@
         const border =
           shape &&
           (shape.type === "Polygon" || shape.type === "MultiPolygon") &&
-          L.geoJSON(shape);
+          L.geoJSON(shape, { interactive: false });
         if (border && border.getBounds().pad(0.2).contains([lat, long])) {
           border.setStyle({
             color: "#ffffff",

@@ -89,35 +89,9 @@
       ["OpenStreetMap", `https://www.openstreetmap.org/search?query=${encodeURIComponent(name + ", Utah")}#map=14/${lat}/${lng}`],
     ].map(([n, u]) => `<a href="${u}" class="link-dark">${n}</a>`).join(" &middot; ");
 
-    // Dots are small hexagons with rounded corners, point up like the
-    // logo's, drawn on the canvas. Sized to cover about the same area as a
-    // circle of the same radius; taps still use the circle around it.
-    const HexMarker = L.CircleMarker.extend({
-      _updatePath() {
-        const r = this._renderer;
-        if (!r._drawing || this._empty()) return;
-        const ctx = r._ctx, p = this._point, R = this._radius * 1.12;
-        const pts = [];
-        for (let k = 0; k < 6; k++) {
-          const a = (Math.PI / 3) * k - Math.PI / 2;
-          pts.push([p.x + R * Math.cos(a), p.y + R * Math.sin(a)]);
-        }
-        // Start halfway along the last side, then round each corner
-        ctx.beginPath();
-        ctx.moveTo((pts[5][0] + pts[0][0]) / 2, (pts[5][1] + pts[0][1]) / 2);
-        for (let k = 0; k < 6; k++) {
-          const [x1, y1] = pts[k], [x2, y2] = pts[(k + 1) % 6];
-          ctx.arcTo(x1, y1, x2, y2, R * 0.3);
-        }
-        ctx.closePath();
-        ctx.lineJoin = "round";
-        r._fillStroke(ctx, this);
-      },
-    });
-
     // A small dot for every community; the chosen one gets a pin
     const dots = places.map(([name, county, lat, lng], i) =>
-      new HexMarker([lat, lng], { radius: 5, color: "#fff", weight: 1.5, fillColor: "#cc4b0c", fillOpacity: 1 })
+      new BeehiveHexMarker([lat, lng], { radius: 5, color: "#fff", weight: 1.5, fillColor: "#cc4b0c", fillOpacity: 1 })
         .bindTooltip(esc(name))
         // Stops here so the map's own click (leaving county view) doesn't fire
         .on("click", (e) => { L.DomEvent.stopPropagation(e); choose(i); })
