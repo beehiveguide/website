@@ -1789,6 +1789,9 @@ function governmentHtml(t) {
   // Skips blank entries (no name), which would leave "comes from ."
   const water = ((t.services && t.services.water) || []).filter((w) => w.name && w.name.trim());
   if (!gov && !water.length) return "";
+  // Hand-written fuller names for abbreviated UGRC water system names (config/water_names.json)
+  const waterNamesFix = paths.readJson(paths.config("water_names.json"));
+  water.forEach((w, i) => { if (waterNamesFix[w.name.trim()]) { const f = waterNamesFix[w.name.trim()]; water[i] = { ...w, ...(typeof f === "string" ? { name: f } : f) }; } });
   const named = (w) => (/(system|district|company|works|service|water|\bw?id\b|ssd|wcd)/i.test(w.name) ? withThe(w.name).replace(/^(?!the )/i, "the ") : w.name);
   // "the" stays outside the link: the <a>Alta Town Water System</a>
   const waterNames = water.map((w) => {

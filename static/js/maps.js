@@ -25,12 +25,19 @@ window.BeehiveHexMarker = L.CircleMarker.extend({
   },
 });
 
-// USDA NAIP aerial photos for the closest zooms (17 and 18), where USGS's
-// tiles run out. The USDA service makes each tile on request instead of
+// USDA NAIP aerial photos for the closest zoom, where USGS's tiles are
+// stretched too far. The USDA service makes each tile on request instead of
 // serving saved tiles, so this asks it for the picture covering each tile's
-// area (Web Mercator meters). "jpgpng" gives a JPEG, or a PNG with see-through
-// pixels where the USDA mosaic has gaps (parts of neighboring states), so the
-// USGS tiles underneath show there.
+// area (Web Mercator meters). The USDA mosaic has gaps in some neighboring
+// states, so the layer only asks for Utah (see UTAH_BOUNDS) and USGS tiles
+// show elsewhere.
+// First zoom that uses the USDA photos (the closest zoom is 18).
+const NAIP_FROM_ZOOM = 15;
+// true: USGS also stays on the map at NAIP_FROM_ZOOM, under the USDA photos,
+// so the map isn't gray while they load (both credits show at that zoom).
+// false: USGS is used only below it.
+const OVERLAP_ONE_ZOOM = true;
+const UTAH_BOUNDS = L.latLngBounds([36.95, -114.1], [42.05, -109.0]);
 window.BeehiveNaipLayer = L.TileLayer.extend({
   getTileUrl(coords) {
     const world = 2 * Math.PI * 6378137;
@@ -41,37 +48,85 @@ window.BeehiveNaipLayer = L.TileLayer.extend({
     return (
       "https://apps.geo.fpac.usda.gov/geo-imagery/rest/services/naip/conus_naip/ImageServer/exportImage" +
       `?bbox=${xmin},${ymax - tile},${xmin + tile},${ymax}` +
-      `&bboxSR=3857&imageSR=3857&size=${px},${px}&format=jpgpng&bandIds=0,1,2&f=image`
+      `&bboxSR=3857&imageSR=3857&size=${px},${px}&format=jpg&bandIds=0,1,2&f=image`
+    );
+  },
+});
+
+// Test overlay: USGS National Map roads and road names drawn over the
+// photos. Like the USDA photos, the service draws each picture on request
+// (a MapServer "export"). Tiles are 512 px so names get cut at tile edges less.
+window.BeehiveRoadsLayer = L.TileLayer.extend({
+  options: { tileSize: 512 },
+  getTileUrl(coords) {
+    const world = 2 * Math.PI * 6378137;
+    // 512 px tiles cover twice the area of 256 px ones at the same zoom
+    const tile = world / 2 ** (coords.z - 1);
+    const xmin = -world / 2 + coords.x * tile;
+    const ymax = world / 2 - coords.y * tile;
+    // Groups 13, 14 and 26, then highways and connecting roads (29-31).
+    // Names repeat along a road at a set spacing, which is redundant when
+    // zoomed out, so they come in as you get closer: highway names (19) from
+    // zoom 14 and route shields (16-18) from zoom 15. Local road names
+    // (20-21), local roads (32) and ramps (33) are left out.
+    const names = coords.z >= 14 ? ",19" : "";
+    const shields = coords.z >= 15 ? ",16,17,18" : "";
+    const show = `13,14,26,29,30,31${names}${shields}`;
+    return (
+      "https://carto.nationalmap.gov/arcgis/rest/services/transportation/MapServer/export" +
+      `?bbox=${xmin},${ymax - tile},${xmin + tile},${ymax}` +
+      `&bboxSR=3857&imageSR=3857&size=512,512&dpi=72&format=png32&transparent=true&layers=show:${show}&f=image`
     );
   },
 });
 
 // Shared setup for the site's Leaflet maps (town pages and the full-screen
 // map): aerial imagery and short credits.
+// Test switch: roads and road names over the photos from zoom 12 (off: too slow to load)
+const ROADS_OVERLAY = false;
+
 window.beehiveMap = (el, options = {}) => {
-  // 18 is as close as the USDA photos stay sharp
-  const map = L.map(el, { maxZoom: 18, ...options });
+  // 18 is as close as the USDA photos stay sharp. Panning stays within Utah
+  // (a little extra for towns at the border).
+  const map = L.map(el, {
+    maxZoom: 18,
+    maxBounds: UTAH_BOUNDS.pad(0.1),
+    maxBoundsViscosity: 1,
+    ...options,
+  });
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
-  L.tileLayer(
+  const usgs = L.tileLayer(
     "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}",
     {
       maxNativeZoom: 16,
       maxZoom: 18,
       attribution: 'Imagery: <a href="https://www.usgs.gov/programs/national-geospatial-program/national-map">USGS The National Map</a>',
     },
-  ).addTo(map);
-  // Sharper photos on top from zoom 17. The stretched USGS tiles stay
-  // underneath, so the map isn't blank while these load or where the USDA
-  // mosaic has gaps. The USDA layer is only on the map from zoom 17, so its
-  // credit shows only then (Leaflet ignores a layer's zoom range for credits).
+  );
+  // USDA photos start at NAIP_FROM_ZOOM, earlier than USGS's tiles run out so
+  // more of the site shows the newer photos. With OVERLAP_ONE_ZOOM off, only
+  // one imagery layer is on the map at a time, so the map is briefly gray
+  // while USDA tiles load.
   const naip = new BeehiveNaipLayer("", {
+    zIndex: 2, // above USGS however they were added
+    bounds: UTAH_BOUNDS,
     maxZoom: 18,
-    attribution: '<a href="https://naip-usdaonline.hub.arcgis.com">USDA NAIP</a>',
+    attribution: 'Imagery: <a href="https://naip-usdaonline.hub.arcgis.com">USDA NAIP</a>',
   });
+  const show = (layer, on) => {
+    if (on && !map.hasLayer(layer)) layer.addTo(map);
+    else if (!on && map.hasLayer(layer)) layer.remove();
+  };
+  // Leaflet ignores a layer's zoom range for credits, so layers are added and
+  // removed to keep each credit to the zooms where its layer is on the map.
   map.on("load zoomend", () => {
-    const close = map.getZoom() >= 17;
-    if (close && !map.hasLayer(naip)) naip.addTo(map);
-    else if (!close && map.hasLayer(naip)) naip.remove();
+    const z = map.getZoom();
+    show(usgs, z < NAIP_FROM_ZOOM + (OVERLAP_ONE_ZOOM ? 1 : 0));
+    show(naip, z >= NAIP_FROM_ZOOM);
   });
+  if (ROADS_OVERLAY) {
+    // On top of both photo layers; the USGS credit above already covers it
+    new BeehiveRoadsLayer("", { zIndex: 3, minZoom: 12, maxZoom: 18 }).addTo(map);
+  }
   return map;
 };

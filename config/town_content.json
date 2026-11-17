@@ -609,5 +609,37 @@
         "html": "<p>The Randlett Community Center and Park serves the area.</p>"
       }
     ]
+  },
+  "Tridell": {
+    "add_sections": [
+      {
+        "id": "park",
+        "title": "Community Center and Park",
+        "html": "<p>The community hosts the <a href=\"https://www.uintahfire.com/reserve.php\">Tridell Fire Station and Community Center</a>, available for public use. Tridell also has a <a href=\"https://recreation.uintah.gov/parks\">park</a> with pavilions and a playground.</p>"
+      },
+      {
+        "id": "churches",
+        "title": "Churches",
+        "html": "<p>The <a href=\"https://maps.churchofjesuschrist.org/wards/13641\">Tridell Ward</a> meets at the chapel in town. It&rsquo;s part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+      }
+    ]
+  },
+  "Lapoint": {
+    "section_html": {
+      "churches": "<p>A <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5153328-01-01\">Latter-day Saint meetinghouse</a> hosts the <a href=\"https://maps.churchofjesuschrist.org/wards/12335\">Lapoint</a> and <a href=\"https://maps.churchofjesuschrist.org/wards/176753\">Uinta River</a> wards of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+    },
+    "add_sections": [
+      {
+        "id": "park",
+        "title": "Park",
+        "html": "<p><a href=\"https://recreation.uintah.gov/parks\">Lapoint Community Park</a> features a playground, pavilions and a walking path. It also has a basketball court, volleyball pits, disc golf and baseball and sports fields.</p>"
+      },
+      {
+        "id": "businesses",
+        "title": "Businesses and Services",
+        "html": "<p><a href=\"https://www.facebook.com/p/Lapoint-Store-100063674288236/\">The Lapoint Store</a> is a &ldquo;true country store&rdquo; that sells groceries, fresh and local produce, craft items and <a href=\"https://www.4brospizza.com/\">4 Brothers</a> take-and-bake pizza. Liberty Corner Store is a <a href=\"https://stations.sinclairoil.com/ut/lapoint/6982-n-9500th-e\">Sinclair</a> gas station and convenience store with a hot case.</p>\n    <p><a href=\"https://loghomelogs.com/\">American Frontier Log Homes</a> sells house logs and other timber items. <a href=\"https://huberwoods.net/\">Huberwoods</a> sells wood poles and fence posts.</p>"
+      }
+    ],
+    "schools_html": "<p><a href=\"http://www.uintah.net/schools/Lapoint%20Elementary/lapointindex.html\">Lapoint Elementary School</a> (kindergarten&ndash;5th) is part of the <a href=\"http://www.uintah.net/\">Uintah School District</a>.</p>"
   }
 }
