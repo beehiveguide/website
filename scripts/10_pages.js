@@ -1883,6 +1883,11 @@ function servicesHtml(t) {
       [],
     ]);
   }
+  // Outdoor Recreation is always the last section, after Businesses and Services
+  for (const word of ["trails", "recreation"]) {
+    const at = sections.findIndex(([, w]) => w === word);
+    if (at >= 0) sections.push(...sections.splice(at, 1));
+  }
   if (!sections.length) return { html: "", parts: [], shown: [], labels: [], osm: "" };
   // Each part is its own section with an h2, styled like Growing Info
   const parts = sections.map(

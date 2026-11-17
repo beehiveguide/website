@@ -413,6 +413,11 @@
         "id": "businesses",
         "title": "Businesses and Services",
         "html": "<p><a href=\"https://www.facebook.com/people/Ketts-Neola-store-and-gift-shop/61555000460877/\">Kett's Neola Store</a> is a convenience store and gas station. It features grab-and-go breakfast and lunch, some fishing supplies, basic groceries and gift items.</p>"
+      },
+      {
+        "id": "recreation",
+        "title": "Outdoor Recreation",
+        "html": "<p>Neola provides nearby recreation access to Uinta Canyon, Dry Gulch, Pole Creek and Farm Creek mountains, linked via the Elkhorn Loop, as well as Whiterocks Canyon.</p>\n<p>Popular nearby trailheads include <a href=\"https://www.fs.usda.gov/r04/ashley/multimedia/videos/uinta-canyon-trailhead\">Uinta Canyon</a> and <a href=\"https://fs.usda.gov/r04/ashley/recreation/chepeta-lake-trailhead\">Chepeta</a> for access to the <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/high-uintas-wilderness\">High Uintas Wilderness Area</a>.</p>\n<p>Nearby campgrounds are <a href=\"https://fs.usda.gov/r04/ashley/recreation/uinta-canyon-campground\">Uinta Canyon</a>, <a href=\"https://fs.usda.gov/r04/ashley/recreation/uinta-river-group-campground\">Uinta River Group</a>, <a href=\"https://fs.usda.gov/r04/ashley/recreation/pole-creek-lake-campground\">Pole Creek Lake</a> and <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/whiterocks-campground\">Whiterocks Canyon</a>.</p>\n<p>The Uinta and Whiterocks rivers and their drainages can be reached from the area. A <a href=\"https://utetribe.com/fish-wildlife-management/\">license from the Ute Tribe</a> is required for fishing and recreating on tribal lands.</p>"
       }
     ]
   },
@@ -576,6 +581,18 @@
         "title": "Community Center and Park",
         "before": "parks, cemeteries",
         "html": "<p>The Whiterocks Community and Broadband Center serves the area&rsquo;s residents. The community also has a gymnasium and a park with a small playground.</p>"
+      },
+      {
+        "id": "recreation",
+        "title": "Outdoor Recreation",
+        "before": "churches",
+        "html": "<p>Whiterocks provides nearby recreation access to Whiterocks Canyon, Farm Creek, Mosby and Pole Creek mountains, as well as Uinta Canyon and Dry Gulch.</p>\n    <p>Campgrounds are located in <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/whiterocks-campground\">Whiterocks Canyon</a>, <a href=\"https://fs.usda.gov/r04/ashley/recreation/pole-creek-lake-campground\">Pole Creek Lake</a>, <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/paradise-park-campground\">Paradise Park</a>, <a href=\"https://fs.usda.gov/r04/ashley/recreation/uinta-canyon-campground\">Uinta Canyon</a> and <a href=\"https://fs.usda.gov/r04/ashley/recreation/uinta-river-group-campground\">Uinta River Group</a>.</p>\n    <p>The Uinta and Whiterocks rivers flow through the Whiterocks area. A <a href=\"https://utetribe.com/fish-wildlife-management/\">license from the Ute Tribe</a> is required for fishing and recreating on tribal lands.</p>\n    <p>The <a href=\"https://wildlife.utah.gov/pdf/fishing/high-uintas-lakes-whiterocks.pdf\">Whiterocks River drainage</a> has many lakes and streams in the <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/high-uintas-wilderness\">High Uintas</a>, reached from trailheads such as <a href=\"https://fs.usda.gov/r04/ashley/recreation/chepeta-lake-trailhead\">Chepeta Lake</a>, West Fork and Reader off the Elkhorn Loop and from Paradise Park. The <a href=\"https://www.fs.usda.gov/r04/ashley/multimedia/videos/uinta-canyon-trailhead\">Uinta Canyon</a> trailhead provides access to the Uinta River drainage.</p>"
+      },
+      {
+        "id": "hatchery",
+        "title": "Fish Hatchery",
+        "before": "parks, cemeteries",
+        "html": "<p>The <a href=\"https://wildlife.utah.gov/hatcheries\">Utah Division of Wildlife Resources</a> operates the Whiterocks State Fish Hatchery, which has been in operation since 1923.</p>"
       }
     ],
     "hide_sections": [
@@ -621,6 +638,11 @@
         "id": "churches",
         "title": "Churches",
         "html": "<p>The <a href=\"https://maps.churchofjesuschrist.org/wards/13641\">Tridell Ward</a> meets at the chapel in town. It&rsquo;s part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+      },
+      {
+        "id": "recreation",
+        "title": "Outdoor Recreation",
+        "html": "<p>Tridell provides nearby recreation access to Mosby Mountain, <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/paradise-park-campground\">Paradise Park Campground</a> and reservoir and <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/whiterocks-campground\">Whiterocks Canyon</a> and river. Several high lakes in the <a href=\"https://wildlife.utah.gov/pdf/fishing/high-uintas-lakes-whiterocks.pdf\">Whiterocks River drainage</a> can be reached from Paradise Park.</p>"
       }
     ]
   },
@@ -638,6 +660,11 @@
         "id": "businesses",
         "title": "Businesses and Services",
         "html": "<p><a href=\"https://www.facebook.com/p/Lapoint-Store-100063674288236/\">The Lapoint Store</a> is a &ldquo;true country store&rdquo; that sells groceries, fresh and local produce, craft items and <a href=\"https://www.4brospizza.com/\">4 Brothers</a> take-and-bake pizza. Liberty Corner Store is a <a href=\"https://stations.sinclairoil.com/ut/lapoint/6982-n-9500th-e\">Sinclair gas station</a> and convenience store with a hot case.</p>\n    <p><a href=\"https://loghomelogs.com/\">American Frontier Log Homes</a> sells house logs and other timber items. <a href=\"https://huberwoods.net/\">Huberwoods</a> sells wood poles and fence posts.</p>"
+      },
+      {
+        "id": "recreation",
+        "title": "Outdoor Recreation",
+        "html": "<p>Lapoint provides nearby recreation access to Mosby Mountain, <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/paradise-park-campground\">Paradise Park Campground</a> and reservoir and <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/whiterocks-campground\">Whiterocks Canyon</a>. Several high lakes in the <a href=\"https://wildlife.utah.gov/pdf/fishing/high-uintas-lakes-whiterocks.pdf\">Whiterocks River drainage</a> can be reached from Paradise Park. Beyond Lapoint, there&rsquo;s access to recreation in the mountains above Vernal, including Dry Fork Canyon, the <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/epic-adventures/scenic-byways-and-backways\">Red Cloud Loop</a> and <a href=\"https://www.fs.usda.gov/r04/ashley/recreation/flaming-gorge-national-recreation-area-0\">Flaming Gorge National Recreation Area</a>.</p>"
       }
     ],
     "schools_html": "<p><a href=\"http://www.uintah.net/schools/Lapoint%20Elementary/lapointindex.html\">Lapoint Elementary School</a> (kindergarten&ndash;5th) is part of the <a href=\"http://www.uintah.net/\">Uintah School District</a>.</p>"
