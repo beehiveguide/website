@@ -680,18 +680,24 @@
       {
         "id": "churches",
         "title": "Church",
-        "html": "<p>Latter-day Saints in the community are part of the <a href=\"https://maps.churchofjesuschrist.org/wards/176753\">Uinta River Ward</a>, which meets in Lapoint. The ward is part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+        "html": "<p>Latter-day Saints in the area are part of the <a href=\"https://maps.churchofjesuschrist.org/wards/176753\">Uinta River Ward</a>, which meets in Lapoint. The ward is part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
       }
-    ]
+    ],
+    "section_html": {
+      "police, fire": "<p>The <a href=\"http://records.uintah.utah.gov/residents/sheriff_s_office.php\">Uintah County Sheriff's Office</a> serves the area. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation. The Lapoint-Tridell Fire Department provides fire protection.</p>"
+    }
   },
   "Bennett": {
     "add_sections": [
       {
         "id": "churches",
         "title": "Church",
-        "html": "<p>Bennett is part of the <a href=\"https://maps.churchofjesuschrist.org/wards/176753\">Uinta River Ward</a>, which meets in Lapoint. The ward is part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+        "html": "<p>Latter-day Saints in the area are part of the <a href=\"https://maps.churchofjesuschrist.org/wards/176753\">Uinta River Ward</a>, which meets in Lapoint. The ward is part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
       }
-    ]
+    ],
+    "section_html": {
+      "police, fire": "<p>The <a href=\"http://records.uintah.utah.gov/residents/sheriff_s_office.php\">Uintah County Sheriff's Office</a> serves the area. The Ute Tribal Police Department has jurisdiction over tribal land within the Uintah and Ouray Reservation. The Lapoint-Tridell Fire Department provides fire protection.</p>"
+    }
   },
   "Gusher": {
     "add_sections": [
