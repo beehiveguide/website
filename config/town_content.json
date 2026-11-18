@@ -749,7 +749,7 @@
   },
   "Ballard": {
     "section_html": {
-      "churches": "<p>A Latter-day Saint chapel in Ballard is home to the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a>. The <a href=\"https://maps.churchofjesuschrist.org/wards/96474\">Ballard North Ward</a> meets at the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake Center</a> in Roosevelt.</p>",
+      "churches": "<p>Latter-day Saints in the area are split between the <a href=\"https://maps.churchofjesuschrist.org/wards/96474\">Ballard North Ward</a> on the north side of Highway 40 and the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a> on the south side. A chapel in Ballard is home to the Ballard Ward. The Ballard North Ward meets at the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake Center</a> in Roosevelt. Both wards are part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>",
       "parks, cemeteries": "<p><a href=\"https://recreation.uintah.gov/parks\">Ballard Park</a> offers a pavilion, a playground and a walking path.</p>"
     },
     "add_sections": [
@@ -762,11 +762,14 @@
     ]
   },
   "Fort Duchesne": {
-    "schools_html": "<p><a href=\"https://uintahriverwarriors.org\">Uintah River High</a> (9th&ndash;12th, alternative) is operated by the Ute Tribe.</p>\n    <p><a href=\"https://www.uintah.net/o/ees/\">Eagle View Elementary</a> (kindergarten&ndash;8th) is located between Fort Duchesne and Ballard. It&rsquo;s part of the <a href=\"https://www.uintah.net/\">Uintah School District</a>.</p>",
     "section_html": {
-      "churches": "<p><a href=\"https://dioslc.org/parishfinder\">Saint Kateri Tekakwitha Catholic Mission</a> is located in Fort Duchesne.</p>",
+      "churches": "<p><a href=\"https://dioslc.org/parishfinder\">Saint Kateri Tekakwitha Catholic Mission</a> is located in Fort Duchesne.</p>\n<p><a href=\"https://www.facebook.com/p/Community-Pentecostal-Church-100069079820419/\">Community Pentecostal Church</a> is also located in Fort Duchesne.</p>\n<p>Latter-day Saints in the community are split between the <a href=\"https://maps.churchofjesuschrist.org/wards/96474\">Ballard North Ward</a> on the north side of Highway 40 and the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a> on the south side. Both wards are part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>",
       "libraries": "<p>The <a href=\"https://library.utah.gov/directory/listing/ute-indian-tribe/\">Ute Indian Tribe Library</a> is located in the community.</p>",
-      "parks, cemeteries": "<p>The Uintah &amp; Ouray/Fort Duchesne Cemetery is a tribal cemetery.</p>"
+      "parks, cemeteries": "<p>The Uintah &amp; Ouray/Fort Duchesne Cemetery is a tribal cemetery.</p>",
+      "schools": {
+        "title": "Schools",
+        "html": "<p><a href=\"https://www.uintah.net/o/ees/\">Eagle View Elementary</a> (kindergarten&ndash;8th) is located between Fort Duchesne and Ballard. It&rsquo;s part of the <a href=\"https://www.uintah.net/\">Uintah School District</a>. <a href=\"https://uintahriverwarriors.org\">Uintah River High</a> (9th&ndash;12th, alternative) is operated by the Ute Tribe.</p>"
+      }
     }
   }
 }
