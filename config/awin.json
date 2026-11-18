@@ -601,6 +601,44 @@
       "sizeKb": 105,
       "title": "Sunjoy IceCove Portable AC",
       "cta": "See the IceCove"
+    },
+    {
+      "brand": "emanuals",
+      "name": "Dynamic 728x90",
+      "width": 728,
+      "height": 90,
+      "shape": "banner",
+      "href": "https://www.awin1.com/cread.php?s=3877641&v=114906&q=513666&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=3877641&v=114906&q=513666&r=3149357",
+      "alt": "emanuals repair manuals",
+      "verified": true,
+      "sizeKb": 26
+    },
+    {
+      "brand": "emanuals",
+      "name": "Dynamic 300x250",
+      "width": 300,
+      "height": 250,
+      "shape": "side",
+      "href": "https://www.awin1.com/cread.php?s=3877638&v=114906&q=513666&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=3877638&v=114906&q=513666&r=3149357",
+      "alt": "emanuals repair manuals",
+      "verified": true,
+      "sizeKb": 31,
+      "bare": true
+    },
+    {
+      "brand": "emanuals",
+      "name": "Dynamic 160x600",
+      "width": 160,
+      "height": 600,
+      "shape": "tall",
+      "href": "https://www.awin1.com/cread.php?s=3877629&v=114906&q=513666&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=3877629&v=114906&q=513666&r=3149357",
+      "alt": "emanuals repair manuals",
+      "verified": true,
+      "sizeKb": 38,
+      "bare": true
     }
   ],
   "text": [
@@ -761,6 +799,9 @@
       "general"
     ],
     "Sunjoy": [
+      "general"
+    ],
+    "emanuals": [
       "general"
     ]
   },
