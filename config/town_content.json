@@ -742,6 +742,9 @@
         "title": "Churches",
         "html": "<p>Latter-day Saints in the community are split between the <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5104025-01-01\">Neola wards</a> and the <a href=\"https://maps.churchofjesuschrist.org/wards/151556\">Whiterocks Branch</a>. Both are part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt West Stake</a>.</p>"
       }
+    ],
+    "hide_sections": [
+      "government"
     ]
   },
   "Ballard": {

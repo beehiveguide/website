@@ -29598,7 +29598,16 @@
     "soil": null,
     "postOfficeUrl": "",
     "schools": null,
-    "places": null,
+    "places": {
+      "cemeteries": [
+        {
+          "name": "Hayden Cemetery",
+          "note": "",
+          "url": "https://www.google.com/maps?q=40.405691,-109.972782",
+          "year": "1905"
+        }
+      ]
+    },
     "services": {
       "water": [
         {

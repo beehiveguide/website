@@ -96,6 +96,12 @@
       "town": "Leota",
       "note": "UGRC files it under Randlett, but it is in Leota.",
       "also_nearby": "Randlett"
+    },
+    {
+      "cemetery": "Hayden Cemetery",
+      "city": "\u00a0\u00a0",
+      "town": "Hayden",
+      "note": "UGRC lists no city for it; its directions say about 1 mile south of Hayden townsite."
     }
   ],
   "parks_to_cemeteries": [
