@@ -78,7 +78,13 @@ const townBoundary = (() => {
     return (t) => {
       const list = byKey[nameKey(t.name)] || [];
       // Places that share a name: use the boundary around the town's point
-      const hit = (list.length === 1 ? list[0] : list.find((b) => makeAreaFinder([b.f])(t.lng, t.lat).length))
+      // A lone boundary only counts when the town's point is at (or within about
+      // 5 km of) it: Independence in Uintah County is not Independence in Wasatch County
+      const near = (b) => {
+        const [s, w, n, e] = b.box.split(",").map(Number);
+        return t.lat >= s - 0.05 && t.lat <= n + 0.05 && t.lng >= w - 0.05 && t.lng <= e + 0.05;
+      };
+      const hit = (list.length === 1 ? (near(list[0]) ? list[0] : null) : list.find((b) => makeAreaFinder([b.f])(t.lng, t.lat).length))
         || byCensus[t.censusCode];
       return hit ? { box: hit.box, outline: hit.outline } : { box: "", outline: "" };
     };
@@ -108,6 +114,8 @@ const photos = paths.readJson(paths.config("photos.json"));
 // (config/town_content.json, keyed by town name). Links to other town pages
 // are written "name.html" and go through link() so clean links work.
 const townContent = paths.readJson(paths.config("town_content.json"));
+// Two towns can share a name: a "Name (County)" key wins over the plain "Name" key
+const byTown = (cfg, t) => cfg[`${t.name} (${t.county})`] || cfg[t.name];
 const schoolDistricts = paths.readJson(paths.config("school_districts.json"));
 const fireDepts = paths.readJson(paths.config("fire_departments.json"));
 const schoolAttend = paths.readJson(paths.config("school_attend.json"));
@@ -1165,7 +1173,7 @@ function safetyText(t) {
   // police sentence on its own
   const policeText = navajoFirst ? [tribal, county] : [first, tribal];
   // Fire department set by hand (config/fire_departments.json) when UGRC lists none
-  const fd = fireDepts[t.name];
+  const fd = byTown(fireDepts, t);
   const fire = fireText(t).sentences.length || !fd ? fireText(t).sentences : [`The ${fd.url ? `<a href="${esc(fd.url)}">${esc(fd.name)}</a>` : esc(fd.name)} provides fire protection.`];
   const text = [...policeText, ...fire]
     .filter(Boolean)
@@ -1593,7 +1601,7 @@ function churchItems(t, numerals = false) {
 
 function churchHtml(t) {
   // Ward set by hand (config/lds_wards.json): links the ward's page on the Church's meetinghouse locator
-  const ward = ldsWards[t.name];
+  const ward = byTown(ldsWards, t);
   if (ward && ward.meetinghouse) return `<p>A <a href="${esc(ward.url)}">Church of Jesus Christ of Latter-day Saints</a> meetinghouse is located in ${esc(t.name)}.${ward.extra ? ` ${ward.extra}` : ""}</p>`;
   if (ward) return `<p>Latter-day Saints in the community attend the <a href="${esc(ward.url)}">${esc(ward.name)}</a>${ward.stake ? `, in the ${ward.stakeUrl ? `<a href="${esc(ward.stakeUrl)}">${esc(ward.stake)}</a>` : esc(ward.stake)}` : ""}.${ward.extra ? ` ${ward.extra}` : ""}</p>`;
   const items = churchItems(t);
@@ -1832,7 +1840,7 @@ function servicesHtml(t) {
     ["Outdoor Recreation", "trails", trailsHtml(t), ["trail"]],
   ].filter(([, , body]) => body);
   // Hand-written sections replace the generated ones (config/town_content.json)
-  const custom = townContent[t.name];
+  const custom = byTown(townContent, t);
   if (custom && custom.sections) {
     sections.length = 0;
     custom.sections.forEach((c) => sections.push([c.title, c.id, customHtml(c.html), []]));
@@ -1902,7 +1910,7 @@ function servicesHtml(t) {
     shown: sections.map(([, word]) => word),
     labels: sections.flatMap(([, , , labels]) => labels),
     // "Churches" or "Places of worship", credited to OpenStreetMap
-    osm: !(custom && custom.sections) && sections.some(([, word]) => word === "churches") && churchItems(t).total > 0 && !ldsWards[t.name] && !(townContent[t.name] && townContent[t.name].section_html && townContent[t.name].section_html.churches)
+    osm: !(custom && custom.sections) && sections.some(([, word]) => word === "churches") && churchItems(t).total > 0 && !byTown(ldsWards, t) && !(byTown(townContent, t) && byTown(townContent, t).section_html && byTown(townContent, t).section_html.churches)
       ? (() => {
           const ci = churchItems(t);
           const one = ci.total === 1;
@@ -1986,7 +1994,7 @@ function buildPage(t) {
       intro.push(`<p class="lead mb-4 mb-lg-3">${esc(t.origin)}</p>`);
   }
   // Hand-written founding line, lead and source lines
-  const custom = townContent[t.name];
+  const custom = byTown(townContent, t);
   if (custom && (custom.founded || custom.lead)) {
     intro.length = 0;
     // With no hand-written year, the generated one stays, with its own source line

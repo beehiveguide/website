@@ -674,5 +674,73 @@
       }
     ],
     "schools_html": "<p><a href=\"https://www.uintah.net/o/les\">Lapoint Elementary School</a> (kindergarten&ndash;5th) is part of the <a href=\"https://www.uintah.net/\">Uintah School District</a>. Lapoint&rsquo;s students attend <a href=\"https://www.uintah.net/o/ums\">Uintah Middle School</a> (6th&ndash;8th) and <a href=\"https://www.uintah.net/o/uhs\">Uintah High School</a> (9th&ndash;12th) in Vernal.</p>"
+  },
+  "Leeton": {
+    "add_sections": [
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Latter-day Saints in the community are part of the <a href=\"https://maps.churchofjesuschrist.org/wards/176753\">Uinta River Ward</a>, which meets in Lapoint. The ward is part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+      }
+    ]
+  },
+  "Bennett": {
+    "add_sections": [
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Bennett is part of the <a href=\"https://maps.churchofjesuschrist.org/wards/176753\">Uinta River Ward</a>, which meets in Lapoint. The ward is part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+      }
+    ]
+  },
+  "Gusher": {
+    "add_sections": [
+      {
+        "id": "churches",
+        "title": "Churches",
+        "html": "<p>Latter-day Saints in the community are split between the <a href=\"https://maps.churchofjesuschrist.org/wards/176753\">Uinta River Ward</a> on the north side of Highway 40 and the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a> on the south side. Both wards are part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+      }
+    ]
+  },
+  "Leota": {
+    "add_sections": [
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Latter-day Saints in the community are part of the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a>, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+      }
+    ]
+  },
+  "Ouray": {
+    "add_sections": [
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Latter-day Saints in the community are part of the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a>, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+      }
+    ]
+  },
+  "Independence (Uintah)": {
+    "add_sections": [
+      {
+        "id": "churches",
+        "title": "Church",
+        "html": "<p>Latter-day Saints in the community are part of the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a>, in the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake</a>.</p>"
+      }
+    ]
+  },
+  "Hayden": {
+    "add_sections": [
+      {
+        "id": "churches",
+        "title": "Churches",
+        "html": "<p>Latter-day Saints in the community are split between the <a href=\"https://maps.churchofjesuschrist.org/meetinghouses/5104025-01-01\">Neola wards</a> and the <a href=\"https://maps.churchofjesuschrist.org/wards/151556\">Whiterocks Branch</a>. Both are part of the <a href=\"https://maps.churchofjesuschrist.org/stakes/507571\">Roosevelt West Stake</a>.</p>"
+      }
+    ]
+  },
+  "Ballard": {
+    "section_html": {
+      "churches": "<p>A Latter-day Saint chapel in Ballard is home to the <a href=\"https://maps.churchofjesuschrist.org/wards/10154\">Ballard Ward</a>. The <a href=\"https://maps.churchofjesuschrist.org/wards/96474\">Ballard North Ward</a> meets at the <a href=\"https://maps.churchofjesuschrist.org/stakes/516708\">Roosevelt East Stake Center</a> in Roosevelt.</p>"
+    }
   }
 }

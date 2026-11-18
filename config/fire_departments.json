@@ -43,5 +43,25 @@
   "Tridell": {
     "name": "Tridell Fire Station",
     "url": ""
+  },
+  "Leeton": {
+    "name": "Lapoint-Tridell Fire Department",
+    "url": ""
+  },
+  "Bennett": {
+    "name": "Lapoint-Tridell Fire Department",
+    "url": ""
+  },
+  "Gusher": {
+    "name": "Lapoint-Tridell Fire Department",
+    "url": ""
+  },
+  "Ballard": {
+    "name": "Roosevelt Fire Department",
+    "url": "https://www.rooseveltcity.gov/154/Fire"
+  },
+  "Independence (Uintah)": {
+    "name": "Roosevelt Fire Department",
+    "url": "https://www.rooseveltcity.gov/154/Fire"
   }
 }
