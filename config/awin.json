@@ -639,6 +639,45 @@
       "verified": true,
       "sizeKb": 38,
       "bare": true
+    },
+    {
+      "brand": "Ravin Crossbows",
+      "name": "728x90",
+      "width": 728,
+      "height": 90,
+      "shape": "banner",
+      "href": "https://www.awin1.com/cread.php?s=3898258&v=115809&q=515612&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=3898258&v=115809&q=515612&r=3149357",
+      "alt": "Ravin Crossbows",
+      "verified": true,
+      "sizeKb": 16
+    },
+    {
+      "brand": "Ravin Crossbows",
+      "name": "300x250",
+      "width": 300,
+      "height": 250,
+      "shape": "side",
+      "href": "https://www.awin1.com/cread.php?s=3898253&v=115809&q=515612&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=3898253&v=115809&q=515612&r=3149357",
+      "alt": "Ravin Crossbows",
+      "verified": true,
+      "sizeKb": 15,
+      "bare": true
+    },
+    {
+      "brand": "The Shutter Store",
+      "name": "Logo 500x500",
+      "width": 500,
+      "height": 500,
+      "shape": "box",
+      "href": "https://www.awin1.com/cread.php?s=4552092&v=120537&q=584892&r=3149357",
+      "src": "https://www.awin1.com/cshow.php?s=4552092&v=120537&q=584892&r=3149357",
+      "alt": "The Shutter Store logo",
+      "verified": true,
+      "sizeKb": 11,
+      "logo": true,
+      "logoWidth": 220
     }
   ],
   "text": [
@@ -733,6 +772,11 @@
       "title": "Nature's Generator",
       "blurb": "Portable solar generators and power stations.",
       "cta": "Shop solar power"
+    },
+    "The Shutter Store": {
+      "title": "The Shutter Store",
+      "blurb": "Custom-made plantation shutters.",
+      "cta": "Shop shutters"
     }
   },
   "brandTopics": {
@@ -802,6 +846,12 @@
       "general"
     ],
     "emanuals": [
+      "general"
+    ],
+    "Ravin Crossbows": [
+      "general"
+    ],
+    "The Shutter Store": [
       "general"
     ]
   },
